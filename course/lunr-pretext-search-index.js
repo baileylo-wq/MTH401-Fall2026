@@ -100,6 +100,42 @@ var ptx_lunr_docs = [
   "body": "  Sketch the field at the nine points where and take on the values , , and . (You don't necessarily need to draw the vectors to scale.)   "
 },
 {
+  "id": "activity-02-test",
+  "level": "1",
+  "url": "activity-02-test.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Introduction Activity",
+  "body": " Introduction Activity    This is the introduction to the activity.      This is the first exercise.    "
+},
+{
+  "id": "activity-02-test-3",
+  "level": "2",
+  "url": "activity-02-test.html#activity-02-test-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  This is the first exercise.   "
+},
+{
+  "id": "activities-6",
+  "level": "1",
+  "url": "activities-6.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Activity Title",
+  "body": " Activity Title    This is the introduction to the activity.      This is the first exercise.    "
+},
+{
+  "id": "activities-6-3",
+  "level": "2",
+  "url": "activities-6.html#activities-6-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  This is the first exercise.   "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",
