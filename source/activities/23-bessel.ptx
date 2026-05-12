@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>23: Bessel functions</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find a solution to Bessel's equation of order 1
+  <md>
+  x^2 y'' + xy' + (x^2 - 1^2) y = 0
+  </md>
+  that is bounded at <m>x=0</m>.   Use Mathematica to draw a graph of it.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find a solution to Bessel's equation of order 3/2
+  <md>
+  x^2 y'' + xy' + \left(x^2 - \left(\frac32\right)^2\right) y = 0
+  </md>
+  that is bounded at <m>x=0</m>.   Use Mathematica to draw a graph of it.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

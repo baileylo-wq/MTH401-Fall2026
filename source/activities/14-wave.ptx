@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>14: The wave equation</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Let's consider the wave equation in a string of length <m>L</m>
+  where both ends are clamped:
+  <md>
+<mrow>\frac{\partial^2 u}{\partial t^2} \amp  = \amp  v^2\frac{\partial^2 u}{\partial
+      x^2}</mrow>
+<mrow>u(0,t) \amp  = \amp  0</mrow>
+<mrow>u(L,t) \amp  = \amp  0</mrow>
+</md>
+  Find the general solution to this equation.  (What technique do you think you can apply here?)</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <introduction>
+      <p>The wave equation describes the acceleration of the string so we
+  need to specify its initial position and initial velocity.</p>
+    </introduction>
+    <task workspace="2.5in">
+      <statement>
+        <p>How does the form of the solution simplify when the string is
+  initially at rest: <m>\frac{\partial u}{\partial t}(x,0) = 0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How does the form of the solution simplify when the string is
+  initially at equilibrium: <m>u(x,0) = 0</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2.5in">
+    <statement>
+      <p>Suppose that the string is initially at rest and <m>u(x,0) =
+  f(x)</m>.  The double angle formulas say that
+  <md>
+    \sin(\alpha)\cos(\beta) = \frac12\left(\sin(\alpha+\beta) +
+      \sin(\alpha-\beta)\right).
+  </md>
+  Use this fact to show that the wave breaks into two pieces: a left-
+  and right-travelling wave.
+  <md>
+  u(x,t) = \frac12(f(x+vt) + f(x-vt)).
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>How do the solutions change if the ends are ``free'' rather than
+  clamped: 
+  <md>
+<mrow>\frac{\partial u}{\partial x}(0,t) \amp  = \amp  0</mrow>
+<mrow>\frac{\partial u}{\partial x}(L,t) \amp  = \amp  0</mrow>
+</md></p>
+    </statement>
+  </exercise>
+
+</worksheet>

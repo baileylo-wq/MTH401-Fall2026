@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>4: The operator ``del''</title>
+
+  <exercise workspace="2.5in">
+    <statement>
+      <p>Suppose that <m>\mbf F(x,y,z) = (F_1, F_2, F_3)</m>.  The
+  <em>divergence</em> of <m>\mbf F</m> is given by
+  <md>
+  \nabla\cdot\mbf F =
+  \left(
+    \frac{\partial}{\partial x},
+    \frac{\partial}{\partial y},
+    \frac{\partial}{\partial z}
+  \right)\cdot(F_1, F_2, F_3) =
+  \frac{\partial F_1}{\partial x} +
+  \frac{\partial F_2}{\partial y} +
+  \frac{\partial F_3}{\partial z}. 
+  </md>
+  Suppose that <m>\mbf F = (xy+yz, 3x+2yz, 2xy + z^2).</m>  Find the
+  divergence <m>\nabla\cdot \mbf F</m>, and notice that the divergence is a
+  function, rather than a field.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>The <em>curl</em> of <m>\mbf F</m> is
+  <md>
+  \nabla\times\mbf F =
+  \left|
+    \begin{array}{ccc}
+      \vec{i} \amp  \vec{j} \amp  \vec{k} \\
+      \frac{\partial}{\partial x}
+              \amp 
+                \frac{\partial}{\partial y}
+                        \amp 
+                          \frac{\partial}{\partial z}      \\
+      F_1 \amp  F_2 \amp  F_3 \\
+    \end{array}
+  \right| =
+  \left(
+    \pd{F_3}{y}-\pd{F_2}{z}, 
+    \pd{F_1}{z}-\pd{F_3}{x},
+    \pd{F_2}{x}-\pd{F_1}{y}
+  \right).
+  </md>
+  Find <m>\nabla\times\mbf F</m> where <m>\mbf F = (xy+yz, 3x+2yz, 2xy +
+  z^2)</m>, and notice that the result in this case is a new field.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>The divergence <m>\nabla\cdot\mbf F</m> can be defined for fields in
+  any dimension, but the curl <m>\nabla\times\mbf F</m> only works in
+  dimension three.  However, if we have a two-dimensional field <m>\mbf
+  F(x,y)=(F_1(x,y), F_2(x,y))</m>, we can view it as a three-dimensional
+  field by setting the third component to 0:  <m>\mbf F = (F_1, F_2,
+  0)</m>.  Then we have
+  <md>
+  \nabla \times F = \left(0,0,\pd{F_2}{x}-\pd{F_1}{y}\right),
+  </md>
+  which we often just think of as the function
+  <md>\nabla \times F = \pd{F_2}{x}-\pd{F_1}{y}.</md></p>
+      <p>Find <m>\nabla\times\mbf F</m> if <m>\mbf F(x,y) = (-y, x)</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Just as we found second derivatives in Calculus I, we can
+  differentiate twice using <m>\nabla</m> provided that we interpret
+  <m>\nabla</m> appropriately.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Start with the function <m>f(x,y,z)</m> and write the gradient <m>\nabla
+  f</m>.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Then find the curl of the gradient:  <m>\nabla\times\nabla f</m>.  (It's
+  kind of a yucky computation, but just be patient!)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does this say about the curl <m>\nabla\times\mbf F</m> of a
+  conservative field?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Now suppose that <m>\mbf F=(F_1, F_2, F_3)</m> and find the
+  divergence of the curl: <m>\nabla\cdot(\nabla\times\mbf F)</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2.5in">
+    <task workspace="2in">
+      <statement>
+        <p>If <m>f(x,y,z)</m> is a function, find an expression for the
+  divergence of the gradient: <m>\nabla\cdot\nabla f</m>.</p>
+        <p>We call this the <em>Laplacian</em> of <m>f</m> and denote it as
+  <m>\nabla^2f = \nabla\cdot\nabla f</m>.  It will play an important role
+  later in the course.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find <m>\nabla^2 \ln(x^2+y^2)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>F(x,y) =
+  \left(
+    -\frac{y}{x^2+y^2},
+    \frac{x}{x^2+y^2}
+  \right)</m>.
+  Find <m>\nabla\times\mbf F</m> and <m>\nabla \cdot \mbf F</m>.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

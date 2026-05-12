@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>34: Cauchy's integral formula</title>
+
+  <exercise workspace="3in">
+    <introduction>
+      <p>Suppose that <m>C</m> is the unit circle oriented in the
+  counterclockwise direction.  Evaluate the integrals</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p><m>\ds \oint_C \frac{e^{2z}}{z}~dz</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\ds \oint_C \frac{e^{2z}}{z^2}~dz</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p><m>\ds \oint_C \frac{e^{2z}}{z^3}~dz</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>Where is the function <m>f(z) = \frac{1}{z^2+1}</m> singular?  That
+  is, where is <m>z^2 + 1 = 0</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>We can write
+  <md>
+  f(z) = \frac{1}{z^2+1} = \frac{1}{(z+i)(z-i)} =
+  \frac{\frac{1}{z+i}}{z-i}.
+  </md>
+  Evaluate <m>\oint_{C_1} f(z)~dz</m> if <m>C_1</m> is the circle of radius 1 centered
+  at <m>i</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.5in">
+      <statement>
+        <p>In the same way, evaluate <m>\oint_{C_2} f(z)~dz</m> if <m>C_2</m> is the circle of
+  radius 1 centered at <m>-i</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>C_3</m> is the circle of 2 centered at 0.  Evaluate
+  <m>\oint_{C_3} f(z)~dz</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="3in">
+    <statement>
+      <p>If <m>C_1</m>, <m>C_2</m>, and <m>C_3</m> are the same circles as in the last
+  problem, evaluate
+  <md>
+  \int_{C_j}\frac{\sin z}{z^2+1}
+  </md>
+  for these three circles.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Where is the function <m>f(z) = \frac{1}{z^4+1}</m> singular?</p>
+    </statement>
+  </exercise>
+
+</worksheet>

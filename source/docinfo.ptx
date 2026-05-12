@@ -13,6 +13,23 @@
     \newcommand{\Z}{\mathbb Z}
     \newcommand{\Q}{\mathbb Q}
     \newcommand{\R}{\mathbb R}
+    \newcommand{\mbf}[1]{{\mathbf #1}}
+    \newcommand{\vs}[1]{\vspace{#1in}}
+    \newcommand{\work}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{r}}
+    \newcommand{\owork}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{r}}
+    \newcommand{\flux}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{s}}
+    \newcommand{\oflux}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{s}}
+    \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+    \newcommand{\pdtwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+    \newcommand{\fourier}{{\cal F}}
+    \newcommand{\cu}{{\cal U}}
+    \newcommand{\ds}{\displaystyle}
+    \renewcommand{\arg}{\text{Arg}}
+    \newcommand{\re}{\text{Real}}
+    \newcommand{\res}{\text{Res}}
+    \newcommand{\lineint}[2]{\int_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+    \newcommand{\olineint}[2]{\oint_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+    \newcommand{\nvec}{\mathbf{n}}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

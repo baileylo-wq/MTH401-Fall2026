@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>29: Complex arithmetic</title>
+
+  <exercise>
+    <task workspace="1in">
+      <statement>
+        <p>For both complex numbers <m>1+i</m> and <m>-2i</m>, plot the number below
+  and determine its modulus <m>|z|</m> and argument.  
+  Then express it in
+  polar form <m>re^{i\theta}</m>.</p>
+        <p>\includegraphics{figures/30-empty.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>For both complex numbers <m>2e^{3i\pi/4}</m> and <m>e^{-7i\pi/2}</m>, plot the
+  number below and determine its modulus and argument.  Then express
+  it in Cartesian form <m>a+bi</m>.</p>
+        <p>\includegraphics{figures/30-empty.eps}</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the products <m>(3+2i)(4-i)</m> and <m>(2e^{5i\pi/4})(4e^{-i\pi})</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>The <em>conjugate</em> of a complex number <m>a+bi</m> is the new
+  complex number <m>\overline{a+bi} = a-bi</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Plot the complex number <m>2-3i</m> and its conjugate <m>\overline{2-3i}</m>.
+  Then plot the complex number <m>4e^{3i\pi/4}</m> and its conjugate
+  <m>\overline{4e^{3i\pi/4}}</m>.</p>
+        <p>\includegraphics{figures/30-empty.eps}</p>
+      </statement>
+    </task>
+    <task workspace=".8in">
+      <statement>
+        <p>How can you write the conjugate <m>\overline{re^{i\theta}}</m> in polar
+  form?</p>
+      </statement>
+    </task>
+    <task workspace=".8in">
+      <statement>
+        <p>Find the product <m>(a+bi)(\overline{a+bi})</m>.  How is this quantity
+  related to the modulus <m>|a+bi|</m>?</p>
+      </statement>
+    </task>
+    <task workspace=".8in">
+      <statement>
+        <p>Explain why <m>\ds\frac1{a+bi} = \frac{\overline{a+bi}}{|a+bi|^2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace=".8in">
+      <statement>
+        <p>Find the reciprocal of <m>2+3i</m> and the reciprocal of <m>i</m>.</p>
+      </statement>
+    </task>
+    <task workspace=".8in">
+      <statement>
+        <p>Find the reciprocal of <m>2e^{3i\pi/4}</m>.  More generally, what is the
+  reciprocal of <m>re^{i\theta}</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Let's think about the function <m>f(z) = z^2</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Writing <m>z=x+iy</m>,
+  write <m>f(z)</m> in Cartesian form and identify functions <m>u(x,y)</m> and
+  <m>v(x,y)</m> such that <m>f(x+iy) = u(x,y) + iv(x,y)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>z=re^{i\theta}</m>, write <m>f(re^{i\theta})</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What are the conditions on <m>r</m> and <m>\theta</m> for <m>f(re^{i\theta}) =
+  -1</m>?  Remember that <m>\theta</m> is not restricted to lie in the
+  interval <m>0\leq\theta&lt;2\pi</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>f(z) =z^4</m>.  Find and plot all the complex numbers
+  where <m>f(z) = -1</m>.  If may be a good idea to think in terms of the
+  polar form of <m>z</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find and plot all the complex numbers where <m>z^8 = 1</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <task workspace="1in">
+      <statement>
+        <p>If we define <m>f(z) = e^{z} = e^{x+iy} = e^xe^{iy}</m>, find
+  functions <m>u(x,y)</m> and <m>v(x,y)</m> such that <m>e^{x+iy} = u(x,y) +
+  iv(x,y)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>e^{z_1} = e^{z_2}</m>.  What can you say about the
+  relationship between <m>z_1</m> and <m>z_2</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>26: The Fourier transform</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Explain why
+  <md>
+  \fourier[xf(x)] = -i\frac{d}{d\omega}\fourier[f].
+  </md>
+  It may be easiest to start with the right hand side.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Explain why the Shift Theorem is true:
+  <md>
+  \fourier[f(x-\beta)] = e^{i\omega\beta}\fourier[f].
+  </md>
+  Suggestion: try a change of variable <m>y=x-\beta</m>.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

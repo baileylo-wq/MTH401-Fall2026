@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>25: Laplace's equation on a cylinder</title>
+  <introduction>
+    <p>Today we're going to look at a final example just to see how
+everything fits together.  Let's consider Laplace's equation
+<m>\nabla^2 u = 0</m> in a cylinder of radius <m>R</m> and height <m>H</m> where we
+require <m>u=0</m> on the top and bottoms ``lids'' and allow <m>u</m> to be
+possibly non-zero on the curvy side.</p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>State the boundary conditions carefully.</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Now we're going to separate variables so let's try
+  <md>
+  u(r,\theta,z) = S(r,\theta) Z(z).
+  </md></p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>What differential equations do we find with separation of variables?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How do the boundary conditions translate into conditions on either
+  <m>S</m> or <m>Z</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Where is the Sturm-Liouville problem?  Is this a familiar
+  Sturm-Liouville problem?  Find the eigenvalues and eigenfunctions.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Let's move on the other equation.</p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>How will we solve it (hint:
+  separation of variables)?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Where is the Sturm-Liouville problem?  Is this a familiar
+  Sturm-Liouville problem?  Find the eigenvalues and eigenfunctions.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>There is one final differential equation for us to solve.  Is this a
+  familiar equation?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the solutions to this equation that are bounded in the
+  cylinder.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="3in">
+    <statement>
+      <p>Put everything together to write the general solution of the
+  equation.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose we know that <m>u(R,\theta,z) = f(\theta, z)</m>.  How would
+  we find the solution?</p>
+    </statement>
+  </exercise>
+
+</worksheet>

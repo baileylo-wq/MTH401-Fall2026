@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>37: Residues</title>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Explain why <m>\ds f(z) = \frac{\cos(2z)}{e^{3z} - 1}</m> has a simple pole
+  at <m>z_0 = 0</m>.  Then find <m>\res_0 f(z)</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <introduction>
+      <p>Let's consider the function <m>\ds f(z) = \frac{1}{1+z^4}</m>.</p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>What
+  are the singularities of this function;  that is, where is <m>1+z^4 =
+  0</m>?</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Find the residues at each of the singularities.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Evaluate the integral <m>\ds\int_{-\infty}^\infty \frac1{1+x^4}~dx</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2.5in">
+    <introduction>
+      <p>If <m>f(z)</m> has a pole of order two at <m>z_0</m>, then its Laurent
+  series looks like
+  <md>
+  f(z) = \frac{c_{-2}}{(z-z_0)^2} + \frac{c_{-1}}{z-z_0} + c_0 +
+  c_1(z-z_0) + \ldots.
+  </md>
+  Multiplying by <m>(z-z_0)^2</m>, we have
+  <md>
+  (z-z_0)^2f(z) = c_{-2} + c_{-1}(z-z_0) + c_0(z-z_0)^2 +
+  c_1(z-z_0)^3 + \ldots.
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Differentiate this expression to find the series representation of
+  <m>\frac{d}{dz}\left[(z-z_0)^2f(z)\right]</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now explain why <m>\ds \res_{z_0}f(z) = \lim_{z\to z_0} \frac{d}{dz}
+  \left[(z-z_0)^2f(z)\right]</m>.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Find the residues of the singularities of <m>\ds f(z) =
+  \frac{1}{(z^2+1)^2} = \frac{1}{(z-i)^2(z+i)^2}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now evaluate the integral <m>\ds \int_{-\infty}^\infty
+  \frac1{(1+x^2)^2}~dx</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>\ds f(z) = \frac{\cos(z)}{z^2 + 4}</m> and that <m>C_1</m> is
+  the circle of radius 2 centered at <m>2i</m>, <m>C_2</m> is the circle of
+  radius 2 centered at <m>-2i</m>, and <m>C_3</m> is the circle of radius 4
+  centered at the origin.</p>
+      <p>Evaluate <m>\ds \oint_{C_j}f(z)~dz</m> for each of these circles.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

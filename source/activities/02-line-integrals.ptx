@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>2. Evaluating line integrals</title>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>{\mathbf F}(x,y) = (x^2, xy)</m> and that <m>C_1</m>,
+  <m>C_2</m>, and <m>C_3</m> are curves as shown below.</p>
+    </introduction>
+    <task workspace="2.5in">
+      <statement>
+        <p>Evaluate the line
+  integrals
+  <md>
+  \lineint{C_1}{F}, ~~~
+  \lineint{C_2}{F}, ~~~
+  \lineint{C_3}{F}.
+  </md></p>
+        <p>\includegraphics{figures/02-curves.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find <m>\lineint{C}{F}</m> if <m>C</m> is the curve traversing the triangle in
+  the counter-clockwise direction.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the field <m>{\mathbf F}(x,y) = (x,y)</m> and suppose that
+  <m>C_1</m> is the upper half of the unit circle traversed in the
+  counter-clockwise direction starting at <m>(1,0)</m> and ending at
+  <m>(-1,0)</m>.   Suppose that <m>C_2</m> is the straight line segment
+  beginning at <m>(1,0)</m> and ending at <m>(-1,0)</m>.</p>
+    </introduction>
+    <task workspace="3.5in">
+      <statement>
+        <p>Find the line
+  integrals:
+  <md>
+  \lineint{C_1}{F}, ~~~
+  \lineint{C_2}{F}.
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1.7in">
+      <statement>
+        <p>Give a geometric explanation for the line integral along <m>C_1</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the line integral <m>\lineint{C}{F}</m> where <m>C</m> is the contour
+  that begins at <m>(1,0)</m>, traverses the upper half of the unit circle
+  to <m>(-1,0)</m> and then returns to <m>(1,0)</m> along the <m>x</m>-axis.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the field <m>{\mathbf F}(x,y) = (y^2, 2xy+3)</m>.</p>
+    </introduction>
+    <task workspace="4.8in">
+      <statement>
+        <p>Evaluate
+  the line integrals
+  <md>
+  \lineint{C_1+C_2}{F}, ~~~
+  \lineint{C_3}{F},
+  </md>
+  where <m>C_1</m>, <m>C_2</m>, and <m>C_3</m> are the curves from the first
+  problem.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Is it possible to write <m>{\mathbf F} = \nabla f</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that
+  <md>
+  {\mathbf F}(x,y) = \left(-\frac{y}{x^2+y^2},
+    \frac{x}{x^2+y^2}\right)
+  </md>
+  and <m>C</m> is the unit circle traversed one time in the
+  counter-clockwise direction.  Find the line integral <m>\lineint{C}{F}</m>.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

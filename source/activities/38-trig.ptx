@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>38: Trigonometric integrals</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Use residue calculus to evaluate
+  <md>\int_0^{2\pi}\frac{1}{2+\cos\theta}~d\theta.</md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Use residue calculus to evaluate
+  <md>\int_0^{2\pi}\frac{1}{9\sin^2\theta + 16\cos^2\theta}~d\theta.</md></p>
+    </statement>
+  </exercise>
+
+</worksheet>

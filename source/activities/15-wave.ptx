@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>15: The wave equation</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Solve the wave equation with boundary conditions and
+  initial conditions:   
+  <md>
+<mrow>\frac{\partial^2 u}{\partial t^2} \amp  = \amp  4\frac{\partial^2 u}{\partial
+      x^2}</mrow>
+<mrow>u(0,t) \amp  = \amp  0</mrow>
+<mrow>u(\pi,t) \amp  = \amp  0</mrow>
+<mrow>u(x,0) \amp  = \amp  \pi x-x^2</mrow>
+<mrow>\pd{u}{t}(x,0) \amp  = \amp  x</mrow>
+</md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the general solution when the ends are ``free'' rather than 
+  clamped: 
+  <md>
+<mrow>\pdtwo{u}{t} \amp  = \amp  4 \pdtwo{u}{x}</mrow>
+<mrow>\frac{\partial u}{\partial x}(0,t) \amp  = \amp  0</mrow>
+<mrow>\frac{\partial u}{\partial x}(L,t) \amp  = \amp  0</mrow>
+</md></p>
+    </statement>
+  </exercise>
+
+</worksheet>

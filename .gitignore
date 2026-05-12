@@ -16,6 +16,9 @@ generated-assets
 # don't track the executables.ptx file
 executables.ptx
 
+# don't track the latex source
+latex
+
 # don't track node packages
 node_modules
 

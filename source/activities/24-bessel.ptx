@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>24: PDEs on cylinders</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the general solution to the heat equation
+  <md>
+  \pd{u}{t} = \alpha \nabla^2 u
+  </md>
+  on a disk of radius <m>a</m> assuming the temperature on the boundary is
+  constantly zero.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the general solution to Laplace's equation <m>\nabla^2 u = 0</m>
+  in a cylinder of radius <m>R</m> and height <m>H</m> assuming that <m>u=0</m> on
+  the bottom of the cylinder and the curvy side but not necessarily
+  the top.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the general solution to the wave equation
+  <md>
+  \pdtwo{u}{t}=v^2\nabla^2 u
+  </md>
+  in a cylinder of radius <m>R</m> and height <m>H</m> assuming that <m>u=0</m> on
+  the boundary of the cylinder.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

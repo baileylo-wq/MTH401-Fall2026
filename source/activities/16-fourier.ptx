@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>16: General Fourier series</title>
+
+  <exercise>
+    <task workspace="3in">
+      <statement>
+        <p>Find the Fourier sine series for the function <m>f(x) = x</m> over
+  the interval <m>[0,1]</m>.  Plot an approximation to your series
+  along with the function <m>f(x)</m> over this interval.</p>
+      </statement>
+    </task>
+    <task workspace="3in">
+      <statement>
+        <p>Now find the Fourier cosine series for this function over the same
+  interval.  Plot an approximation to your series
+  along with the function <m>f(x)</m> over this interval.</p>
+        <p>You should see the Gibbs phenomenon in one case but not the other.
+  We'd like to understand why this happens.  Let's look at another
+  example.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="3in">
+      <statement>
+        <p>Find the general Fourier series for the function <m>f(x) = x^2 + x
+  + 1</m> over the interval <m>[-1,1]</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use Mathematica to graph the function <m>f(x)</m> and an approximation to
+  the Fourier series over the interval <m>[-1,1]</m>.  No matter how many
+  terms you add, your Fourier series should exhibit the ``Gibbs
+  phenomenon,'' which shows a lot of oscillations near the endpoints.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now graph just the Fourier series over the interval <m>[-4,4]</m>.  Here
+  you should see the periodicity in the Fourier series and the reason
+  for the Gibbs phenomenon as the Fourier series is trying to track
+  a discontinuity.</p>
+        <p>We'll discuss this as a class in a little while.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>
