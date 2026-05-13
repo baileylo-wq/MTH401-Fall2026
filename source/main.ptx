@@ -48,10 +48,10 @@
       </introduction>
 
       <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/01-intro-activity.ptx"/>
-      <xi:include href="./activities/1-Review.ptx"/>
-      <xi:include href="./activities/2-test.ptx"/>
-      <xi:include href="./activities/3-test2.ptx"/>
+      <!-- <xi:include href="./activities/01-intro-activity.ptx"/> -->
+      <!--<xi:include href="./activities/01-Review.ptx"/>-->
+      <!-- <xi:include href="./activities/2-test.ptx"/>
+      <xi:include href="./activities/3-test2.ptx"/> -->
 
 
       <xi:include href="./activities/01-review.ptx"/>

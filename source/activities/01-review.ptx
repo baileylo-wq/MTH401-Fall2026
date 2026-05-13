@@ -20,7 +20,7 @@
         Find the dot products <m>A\cdot A</m> and <m>A\cdot B</m>.
       </p>
     </statement>
-    <solution>
+    <solution component="week1">
       <p>
         <md>
           <mrow>
@@ -228,10 +228,25 @@
   <prefigure xmlns="https://prefigure.org" label="prefigure-line-integral">
     <diagram dimensions="(300,300)" margins="5">
       <coordinates bbox="(-1,-1,4,4)">
-        <grid-axes xlabel="x" ylabel="y"/>
+        <grid-axes spacings="((-1,1,4),(-1,1,4))" xlabel="x" ylabel="y"/>
         <vector v="(2,0)" tail="(1,1)" stroke="blue" head-location="0.8"/>
         <vector v="(0,2)" tail="(3,1)" stroke="blue" head-location="0.8"/>
         <vector v="(-2,-2)" tail="(3,3)" stroke="blue" head-location="0.8"/>
+        <label anchor="(2,1)" alignment="south" offset="(0,-5)">
+          <m>
+            \displaystyle C_1
+          </m>
+        </label>
+        <label anchor="(3,2)" alignment="east" offset="(5,0)">
+          <m>
+            \displaystyle C_2
+          </m>
+        </label>
+        <label anchor="(2,2)" alignment="northwest" offset="(2,2)">
+          <m>
+            \displaystyle C_3
+          </m>
+        </label>
       </coordinates>
     </diagram>
   </prefigure>
