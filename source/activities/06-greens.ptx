@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>6: Green's Theorem</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Use Green's Theorem to evaluate the line integral <m>\oint_C -y~dx
+  + x~dy</m> where <m>C</m> is the unit circle oriented in the
+  counterclockwise direction.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Evaluate the line integral <m>\oint_C y^2~dx + 3xy~dy</m> where <m>C</m>
+  is the curve shown below.  You may want to integrate in polar
+  coordinates.</p>
+      <p>\includegraphics{figures/green-contour.eps}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that <m>\mbf F= (xy, \arctan y)</m> and 
+  <m>C</m> is the simple closed curve shown below.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Evaluate the line
+  integral <m>\owork{C}{F}</m>.</p>
+        <p>\includegraphics{figures/green-contour-2.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use your result to find the line integral <m>\work{C'}{F}</m> where <m>C'</m>
+  is just the upper semi-circle of radius 3.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="0.33in">
+    <statement>
+      <p>Each of the fields below has a constant curl.  For each, state
+  whether the curl is negative, zero, or positive.</p>
+      <p>\begin{center}
+    \includegraphics{figures/05-field-radial.eps} \hspace*{24pt}
+    
+    \includegraphics{figures/05-field-angular.eps} \\
+    \includegraphics{figures/05-field-horizontal.eps} \hspace*{24pt}
+  \end{center}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <task workspace="1in">
+      <statement>
+        <p>Sketch the vector field <m>\mbf F(x,y) = (y,0)</m> below.</p>
+        <p>\begin{center}
+    \includegraphics{figures/empty.eps}
+  \end{center}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Judging from your sketch, is the circulation around the curve 
+  positive or negative?  Explain your thinking.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What about if the curve were shifted vertically?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Compute <m>\nabla\times\mbf F</m> and explain how the curl is connected
+  to the response to the previous two questions.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Consider the field <m>\mbf F(x,y) = \frac12(-y,x)</m> and suppose that <m>C</m>
+  is a closed curve bounding a region <m>D</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\oint_C
+  \mbf F\cdot d\mbf r</m> measures the area of <m>D</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Verify this is the case by evaluating the line integral directly
+  where <m>C</m> is the circle of radius <m>R</m> centered at the origin.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="1.5in">
+      <statement>
+        <p>Suppose that <m>C_1</m> and <m>C_2</m> are two paths that begin at the
+  same point and end at the same point and that <m>\nabla\times \mbf F = 0</m>
+  in the region in between <m>C_1</m> and <m>C_2</m>.  Explain why <m>\int_{C_1}
+  \mbf F\cdot d\mbf r = \int_{C_2} \mbf F\cdot d\mbf r</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>C</m> is a closed curve and <m>\nabla \times \mbf F = 0</m> in the
+  region <m>D</m> bounded by <m>C</m>, explain why <m>\oint_C \mbf\cdot d\mbf r =
+  0</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

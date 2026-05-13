@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Review</title>
+
+  <exercise workspace="4cm">
+    <statement>
+      <p>We computed each of the following in an earlier activity so I’d like you to remember
+what you found when we did that:
+<md>\nabla \times \nabla f, \quad\quad \nabla \cdot (\nabla \times {\bf F}), \quad \quad \nabla \cdot (\nabla f)</md></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that <m>{\bf F}(x,y,z) = (-y\cos z, xe^z, xy)</m>.</p>
+    </introduction>
+    <task workspace="3cm">
+      <statement>
+        <p>Find <m>\nabla \times {\bf F}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="3cm">
+      <statement>
+        <p>Is <term>F</term> a conservative field?  Explain your response.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>S</m> is the upper hemisphere of radius 1 centered at the origin, and <m>{\bf n}</m> is the normal direction to the curve with the vertical component pointing upward, find the flux of <m>{\bf F}</m> through <m>S</m> in the direction of <m>{\bf n}</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="3cm">
+    <statement>
+      <p>Suppose that <m>{\bf F} (x,y,z) = (x^3yz, xy^3z,xyz^3)</m> and that <m>S</m> is the sphere of radius 3 centered at the origin.  Find the flux of <m>\nabla \times {\bf F}</m> through <m>S</m> in the outward direction, that is <md>\oiint_S (\nabla \times {\bf F}) \cdot {\bf n} ~dA</md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="3cm">
+    <statement>
+      <p>Suppose that <m>{\bf F}(x,y) = (x,1)</m> and <m>C</m> is the curve shown with normal <m>{\bf n}</m>.  Find the flux of <m>{\bf F}</m> through <m>C</m> in the direction <m>{\bf n}</m>.
+\includegraphics[scale=.5]{pic}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>f(x,y) = x^2+3y+2</m> and <m>C</m> is the spiral parametrized as 
+<md>{\bf r}(t) = \left(e^{t/10}\cos t, e^{t/10} \sin t\right)</md>
+where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
+\includegraphics[scale=.5]{pic2}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="4cm">
+    <task workspace="4cm">
+      <statement>
+        <p>Find the work done by the force <m>{\bf F}(x,y) = (xy,y^2)</m> in moving an object along the straight line segment from <m>(0,0)</m> to <m>(2,4)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the work done by moving an object from the origin to <m>(2,0)</m> and then <m>(2,4)</m> along straight line segments.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="4cm">
+    <statement>
+      <p>Find the work done by the force <m>{\bf F}(x,y) = (xy,y^2)</m> in moving an object along the rectangle whose vertices are <m>(0,0), (3,0), (3,2), (0,2)</m> in the counter-clockwise direction.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>S</m> is the curvy part of the cylinder defined by <m>x^2+y^2 = 4</m> and <m>0\le z \le 2</m> (this is an open cylinder).  Find the flux of the field <m>{\bf F}(x,y,z) = (x,y,z)</m> through <m>S</m> in the outward direction.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="3cm">
+    <statement>
+      <p>Suppose that <m>{\bf F}(x,y)</m> is a field with <m>\nabla \times {\bf F} = 0</m> except at the two indicated points below with x's.  Suppose also that 
+<md>\oint_{C_1} {\bf F}\cdot ~d{\bf r} = 3, \quad \quad \oint_{C_2} {\bf F}\cdot ~d{\bf r} = -7</md>
+What is <m>\oint_{C} {\bf F}\cdot ~d{\bf r}</m>?
+\includegraphics[scale=.3]{pic3}</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Let <m>S</m> be a hollow conducting sphere with radius <m>R</m>, with charge density of <m>\sigma</m> distributed equally across the surface of the sphere where <m>\sigma</m> is positive.  (Just a reminder that the sphere is hollow and all charge lives on the surface of the sphere!)</p>
+    </introduction>
+    <task workspace="6cm">
+      <statement>
+        <p>Find the electric field both within the hollow sphere, and outside of the hollow sphere.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the electric potential at a distance <m>r</m> from the center of the sphere.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

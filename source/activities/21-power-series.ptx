@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>21: Series solutions of ODEs</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find a power series solution for the initial value problem
+  <md>
+  \begin{aligned}
+    y' + xy \amp  = 0 \\
+    y(0) \amp  = 1
+  \end{aligned}
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find power series solutions of the following differential
+  equation by finding the recurrence relation between the coefficients
+  and writing the first four terms of two linear independent
+  solutions.
+  <md>
+  y'' - xy' - y = 0.
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the general solution to the differential equation
+  <md>
+  y'' - 2xy' + 4y = 0.
+  </md></p>
+    </statement>
+  </exercise>
+
+</worksheet>

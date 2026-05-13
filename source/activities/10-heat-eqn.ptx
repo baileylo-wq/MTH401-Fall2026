@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>10: The heat equation</title>
+
+  <exercise workspace="1.5in">
+    <introduction>
+      <p>Consider the homogeneous partial differential equation with
+    boundary conditions:
+    <md>
+<mrow>\frac{\partial u}{\partial t} \amp  = \amp  7\frac{\partial^2
+        u}{\partial^2 x^2}</mrow>
+<mrow>u(0, t) \amp  = \amp  0</mrow>
+<mrow>u(10, t) \amp  = \amp  0</mrow>
+</md></p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>Verify that <m>u_1(x,t) = e^{-7\pi^2t/100}\sin\left(\frac{\pi
+        x}{10}\right)</m> is a solution (this means a solution to the
+    differential equation and the boundary conditions).</p>
+      </statement>
+    </task>
+    <task workspace="1.75in">
+      <statement>
+        <p>Also verify that <m>u_2(x,t) = e^{-28\pi^2t/100}\sin\left(\frac{2\pi
+        x}{10}\right)</m> is a solution.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Do you see a pattern that can help you identify other solutions?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now verify that <m>c_1u_1(x,t) + c_2u_2(x,t)</m> is a solution for any
+        constants <m>c_1</m> and <m>c_2</m>.  This is called the <em>principle
+          of superposition</em>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2in">
+    <introduction>
+      <p>Consider the heat equation
+    <md>
+    \frac{\partial u}{\partial t} = 4\frac{\partial^2 u}{\partial x^2}
+    </md>
+    where <m>u(x,t)</m> is the temperature in a beam of length <m>2</m> with
+    boundary conditions:
+    <md>
+<mrow>u(0,t) \amp  = \amp  50</mrow>
+<mrow>u(2,t) \amp  = \amp  80</mrow>
+</md></p>
+      <p>A time-independent solution is called a <em>steady-state</em>
+    solution <m>u_{ss}</m>;  that is, <m>\partial u_{ss}/\partial t = 0</m>.</p>
+    </introduction>
+    <task workspace="2.5in">
+      <statement>
+        <p>Find the steady-state solution <m>u_{ss}</m> to the heat equation with
+    these boundary conditions.</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Suppose that <m>u</m> is a solution to the
+    equation and boundary conditions above and <m>u_{ss}</m> is the
+    steady-state solution that you found.  Define a new function <m>v</m>
+    by <m>v = u- u_{ss}</m>.  What boundary conditions are satisfied by
+    <m>v</m>?  That is, what is <m>v(0,t)</m> and <m>v(2,t)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find a partial differential equation satisfied by <m>v</m>.  You could
+    do this by expressing <m>\frac{\partial v}{\partial t}</m> in terms of
+    <m>\frac{\partial u}{\partial t}</m> and <m>\frac{\partial^2
+      v}{\partial^2 x}</m> in terms of <m>\frac{\partial^2 u}{\partial^2
+      x}</m> and using the fact that <m>u</m> satisfies a PDE.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that we have a beam of length <m>1</m> and
+    consider the heat equation with a source
+    <md>
+    \frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2}+x.
+    </md>
+    and boundary conditions:
+    <md>
+<mrow>\frac{\partial u}{\partial x}(0, t) \amp  = \amp  0</mrow>
+<mrow>u(1, t) \amp  = \amp  100.</mrow>
+</md></p>
+    </introduction>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the steady-state solution <m>u_{ss}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use the steady-state solution to form a new equation and
+    boundary conditions for the function <m>v = u-u_{ss}</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

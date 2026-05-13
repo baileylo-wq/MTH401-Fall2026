@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>5: The divergence theorem</title>
+  <introduction>
+    <p>Remember that the flux of a field <m>F</m> across a curve <m>C</m> in the
+direction <m>\nvec</m> is <m>\int_C F\cdot\nvec ~ds</m>.  If the curve <m>C</m> is
+closed, then the Divergence Theorem tells us
+<md>
+\oint_C F\cdot\nvec~ds = \iint_D \nabla\cdot F~dA
+</md>
+where <m>D</m> is the region inside <m>C</m>.  However, it's important to
+remember that <m>C</m> {\bf{must be <em>closed</em>}} for the Divergence Theorem to
+apply.</p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that <m>F(x,y) = (x, -2)</m> and <m>C</m> is the line segment
+  joining the points <m>(-1,0)</m> and <m>(1,0)</m> with normal vector
+  <m>\nvec=(0,1)</m> pointing up.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find the flux of <m>F</m> through <m>C</m> in the direction <m>\nvec</m>, the
+  upward pointing normal.</p>
+        <p>\includegraphics{figures/05-curve.eps}</p>
+      </statement>
+    </task>
+    <task workspace="0.5in">
+      <statement>
+        <p>Suppose now that <m>C</m> is the closed curve shown below.  Use the
+  divergence theorem to find the flux of <m>F</m> across <m>C</m> in the outward
+  direction.</p>
+        <p>\includegraphics{figures/05-curve-b.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Using the two results you've found so far, find the flux of <m>F</m>
+  across the 
+  lower semi-circle in the downward direction.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Consider the field <m>F(x,y) = (x,y)</m> and the curve 
+  <m>C</m>, which is the circle of radius 3 centered at <m>(1,2)</m>.  Use the
+  divergence theorem to find
+  the flux of <m>F</m> out of <m>C</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="0.33in">
+    <statement>
+      <p>Each of the fields below has a constant divergence.  Identify
+  the field with a positive divergence, the one with zero divergence,
+  and the one with negative divergence.</p>
+      <p>\begin{center}
+    \includegraphics{figures/05-field-radial.eps} \hspace*{24pt}
+    
+    \includegraphics{figures/05-field-angular.eps} \\
+    \includegraphics{figures/05-field-horizontal.eps} \hspace*{24pt}
+  \end{center}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>The Divergence Theorem holds in any dimension, not just 2.  Find
+  the flux of the field <m>\mbf F(x,y,z) = (2x,y,-z)</m> out of the sphere of
+  radius 2 centered at the origin.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Find the flux of the field <m>\mbf F(x,y,z) = (0,0,z)</m> out of the
+  upper hemisphere of radius one sitting on the plane <m>z=1</m>.  
+  The Divergence Theorem will be helpful here, but be careful because
+  the surface given is not closed.  Can you add a piece to form a
+  closed surface?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that the field <m>\mbf F</m> measures the velocity of a
+  stream of water under everyday conditions (say, the Grand River).</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Use the Divergence Theorem to explain why you should expect
+  that <m>\nabla\cdot\mbf F = 0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why fields satisfying <m>\nabla\cdot\mbf F=0</m> are called <em>incompressible</em>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose that <m>S</m> is a closed surface bounding a 3-dimensional
+  region <m>E</m>.  If <m>f(x,y,z)</m> is a function, explain why the flux of
+  <m>\nabla f</m> out of <m>S</m> equals
+  <md>
+  \iint_S\nabla f\cdot {\mathbf n}~ dA = 
+  \iiint_E \nabla^2f~dV.
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Consider the field <m>F=((x^3-x^2)y, (y^3-2y^2+y)x, (z^2-1))</m> and
+  suppose that <m>E</m> is the unit cube where
+  <md>
+  0\leq x \leq 1, ~~~
+  0\leq y \leq 1, ~~~
+  0\leq z \leq 1.
+  </md>
+  Evaluate the triple integral <m>\iiint_E \nabla\cdot F~ dV</m>.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

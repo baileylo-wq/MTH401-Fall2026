@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>10: Vector calculus review</title>
+
+  <exercise workspace="2.5in">
+    <statement>
+      <p>Suppose that <m>\mbf F(x,y,z) = (x^3yz, xy^3z, xyz^3)</m> and that
+  <m>S</m> is the sphere of radius 3 centered at the origin.  Find the flux
+  of <m>\nabla\times \mbf F</m> through <m>S</m> in the outward direction.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>\mbf F(x,y) = (x,1)</m> and <m>C</m> is the curve shown
+  with normal <m>\mbf n</m>.  Find the flux of <m>\mbf F</m> through <m>C</m> in the
+  direction <m>\mbf n</m>.</p>
+      <p>\includegraphics{figures/09-flux.eps}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>f(x,y) = x^2+3y+2</m> and <m>C</m> is the spiral
+  parametrized as
+  <md>
+  \mbf r(t) = (e^{t/10}\cos t, e^{t/10}\sin t)
+  </md>
+  where <m>0\leq t \leq 2\pi</m>.  Find <m>\int_C \nabla f \cdot d\mbf r</m>.</p>
+      <p>\includegraphics{figures/09-spiral.eps}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the work done by the force <m>\mbf F(x,y) = (xy, y^2)</m> in
+  moving an object along the straight line segment from <m>(0,0)</m> to
+  <m>(2,4)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the work done by the same force in moving an object from the
+  origin to <m>(2,0)</m> and then <m>(2,4)</m> along straight line segments.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Find the work done by the force <m>\mbf F(x,y) = (xy, y^2)</m> in
+  moving an object along the rectangle, whose vertices are <m>(0,0)</m>,
+  <m>(3,0)</m>, <m>(3,2)</m>, and <m>(0,2)</m>, in the counter-clockwise direction.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>Suppose that <m>S</m> is the curvy part of the cylinder
+  <m>x^2 + y^2 = 4</m> where <m>0\leq z \leq 2</m>.  Find the flux of the field
+  <m>\mbf F(x,y,z) = (x,y,z)</m> through <m>S</m> in the outward direction.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>\mbf F(x,y)</m> is a field with <m>\nabla \times F = 0</m>
+  except at the two indicated points below.  Suppose also that 
+  <md>
+  \oint_{C_1} \mbf F \cdot d\mbf r = 3, ~~~
+  \oint_{C_2} \mbf F \cdot d\mbf r = -7.
+  </md>
+  What is <m>\oint_{C}\mbf F \cdot \mbf r</m>?</p>
+      <p>\includegraphics[scale=0.75]{figures/10-homotopy.png}</p>
+    </statement>
+  </exercise>
+
+</worksheet>

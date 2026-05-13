@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>30: Complex functions</title>
+
+  <exercise workspace="1.5in">
+    <introduction>
+      <p>Consider the function <m>f(z) = e^z = e^xe^{iy}</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Plot the points
+  <m>f(z)</m> when</p>
+        <p>\begin{minipage}{2.5in}
+    {
+      <m>\bullet~z=1</m></p>
+        <p><m>\bullet~z=1+i\pi/2</m></p>
+        <p><m>\bullet~z=1+i\pi</m></p>
+        <p><m>\bullet~z=1+i2\pi</m>
+    }
+  \end{minipage}
+  \begin{minipage}{2.5in}
+    {
+      \includegraphics{figures/30-empty.eps}
+    }
+  \end{minipage}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>As you vary <m>y</m>, describe the points <m>f(1+iy)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Plot...
+  \begin{minipage}{2.5in}
+    {
+      <m>\bullet~z=-1+i\pi/4</m></p>
+        <p><m>\bullet~z= 0+i\pi/4</m></p>
+        <p><m>\bullet~z=1+i\pi/4</m></p>
+        <p><m>\bullet~z=2+i\pi/4</m>
+    }
+  \end{minipage}
+  \begin{minipage}{2.5in}
+    {
+      \includegraphics{figures/30-empty.eps}
+    }
+  \end{minipage}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>As you vary <m>x</m>, describe the points <m>f(x+i\pi/4)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Since <m>f(z) = e^xe^{iy}</m>, what is <m>|f(z)|</m>?  What is <m>\arg(f(z))</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If we fix the value of <m>y=y_0</m>, what is the image of a horizontal
+  line <m>f(x + iy_0)</m> as <m>x</m> varies?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If we fix the value of <m>x=x_0</m>, what is the image of a vertical line
+  <m>f(x_0 + iy)</m> as <m>y</m> varies?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Given a square grid in the <m>z</m>-plane, sketch its image in the
+  <m>w=f(z)</m> plane.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <introduction>
+      <p>Remember that the natural logarithm is defined to be the inverse
+  of the exponential function;  that is, <m>\ln(z) = w</m> if <m>e^w = z</m>.</p>
+    </introduction>
+    <task workspace="1.5in">
+      <statement>
+        <p>Find the points <m>w</m> that satisfy <m>e^w = -1</m>.  How many are there and
+  how are they related to one another?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Defining <m>\log(x+yi) = u + iv</m> means that <m>e^{u+iv}=e^ue^{iv}=x+iy</m>.
+  Write <m>u</m> and <m>v</m> as functions of <m>x</m> and <m>y</m>.  Are both of these
+  functions continuously defined?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2in">
+    <introduction>
+      <p>Suppose that <m>m = 2e^{i\pi/4}</m> and suppose that <m>z</m> is complex
+  number.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>How does <m>|mz|</m> compare to <m>|z|</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How does <m>\arg(mz)</m> compare to <m>\arg(z)</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the geometric effect of multiplying <m>z</m> by <m>m</m> to obtain
+  <m>mz</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>f(z) = mz</m>.  
+  Given a square grid in the <m>z</m>-plane, sketch its image in the
+  <m>w=f(z)</m> plane.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="2in">
+    <introduction>
+      <p>Suppose that <m>f(z) = z^2</m>.  Let's write <m>z=re^{i\theta}</m> in
+  polar form.</p>
+    </introduction>
+    <task workspace=".6in">
+      <statement>
+        <p>What is <m>f(re^{i\theta})</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If we hold <m>r=r_0</m> fixed, what is the image of the circle
+  <m>f(r_0e^{i\theta})</m> as <m>\theta</m> varies?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If we hold <m>\theta=\theta_0</m> fixed, what is the image of the ray
+  <m>f(re^{i\theta})</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Instead of a square, rectangular grid, consider a ``polar grid'' in
+  the <m>z</m>-plane consisting of concentric circles centered at the
+  origin and radial lines emerging from the origin.  
+  Sketch such a
+  grid and then sketch the image of this grid.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Remember that <m>\ds\cos \theta = \frac{e^{i\theta} +
+    e^{-i\theta}}{2}</m>.  Suppose we define <m>\ds\cos(z) = \frac{e^{iz} +
+    e^{-iz}}{2}</m>.</p>
+    </introduction>
+    <task workspace="2.5in">
+      <statement>
+        <p>Find functions <m>u(x,y)</m> and <m>v(x,y)</m> such that
+  <m>\cos(x+iy) = u(x,y) + iv(x,y)</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the points <m>z</m> for which <m>\cos(z) = 2</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

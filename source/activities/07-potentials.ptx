@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>7: Finding potentials</title>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Let's consider the field <m>F(x,y) = (2xy,x^2)</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Verify that
+  <m>\nabla\times F = 0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>C_1</m> and <m>C_2</m> are two paths with the same initial and
+  final points, explain why <m>\work{C_1}{F} = \work{C_2}{F}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Let's find a potential function for <m>F</m> by choosing the basepoint <m>*
+  = (0,0)</m>.  For a point <m>(x_0, y_0)</m>, integrate over this curve <m>C</m>
+  to define
+  <md>
+  f(x_0,y_0) = \work{C}{F}.
+  </md></p>
+        <p>\includegraphics{figures/07-curve.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Verify that the function <m>f(x,y)</m> that you have found is a potential
+  for <m>F</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Consider the field
+  <md>
+  F(x,y) = \left(-\frac{y}{x^2+y^2}, \frac{x}{x^2+y^2}\right).
+  </md>
+  We have seen that <m>\nabla\times F = 0</m> but that the field is not
+  defined at the origin <m>(0,0)</m> so that the domain of the field is not
+  simply connected.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Let's try to find a potential function by integrating.  Choose the
+  basepoint to be <m>(1,0)</m>.  To define <m>f(x_0, y_0)</m>, integrate along
+  the positive <m>x</m>-axis and then along a circular arc traversed in the
+  counterclockwise direction.  What do you
+  find for <m>f(2,0)</m>?  <m>f(0,2)</m>?  <m>f(-2,0)</m>?  <m>f(0,-2)</m>?</p>
+        <p>\includegraphics{figures/07-radial.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is a general expression for <m>f(x_0, y_0)</m>?  It may be
+  helpful to think in terms of polar coordinates.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Why doesn't <m>f</m> define a potential function for <m>F</m> in the region
+  where <m>F</m> is defined?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>C</m> is the curve shown below, what is <m>\work{C}{F}</m>?</p>
+        <p>\includegraphics{figures/07-homotopy.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now imagine the two radial pieces of <m>C</m> coming together and explain
+  why <m>\work{C_1}{F} = \work{C_2}{F}</m> where <m>C_1</m> and <m>C_2</m> are the
+  two circles below.</p>
+        <p>\includegraphics{figures/07-homotopy-2.eps}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>C_1</m> and <m>C_2</m> are the two curves shown below, explain why
+  <m>\work{C_1}{F} = \work{C_2}{F}</m>.</p>
+        <p>\includegraphics[scale=0.7]{figures/07-homotopy-3.png}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find <m>\work{C}{F}</m> if <m>C</m> is the curve below.</p>
+        <p>\includegraphics[scale=0.7]{figures/07-homotopy-4.png}</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

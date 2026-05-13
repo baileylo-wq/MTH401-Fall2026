@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>36: Laurent series</title>
+  <introduction>
+    <p><md>
+<mrow>e^u \amp  = \amp  1 + u + \frac{u^2}{2!} + \frac{u^3}{3!} + \ldots +
+          \frac{u^n}{n!} + \ldots</mrow>
+<mrow>\sin(u) \amp  = \amp  u - \frac{u^3} {3!} + \frac{u^5}{5!} - \frac{u^7}{7!} +
+\ldots + (-1)^n\frac{u^{2n+1}}{(2n+1)!} + \ldots</mrow>
+<mrow>\cos(u) \amp  = \amp  1 - \frac{u^2}{2!} + \frac{u^4}{4!} - \frac{u^6}{6!} +
+\ldots + (-1)^n\frac{u^{2n}}{(2n)!} + \ldots</mrow>
+</md></p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <task workspace="2in">
+      <statement>
+        <p>Find the Laurent series for the function <m>f(z) =
+  \sin\left(\frac2z\right)</m> around the point <m>z_0 = 0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is <m>\res_0 f(z)</m>?
+  What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit circle?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that <m>f(z) = \frac{\cos(3z) - 1}{z^2}</m>.</p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>Find its
+  Laurent series about the point <m>z_0 = 0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the residue <m>\res_0 f(z)</m>?
+  What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit circle?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace=".8in">
+    <introduction>
+      <p>Suppose that <m>f(z) = \frac{\sin(2z^2)-2z^2}{z^{11}}</m>.</p>
+    </introduction>
+    <task workspace="2in">
+      <statement>
+        <p>Find its
+  Laurent series about the point <m>z_0 = 0</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the residue <m>\res_0 f(z)</m>?
+  What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit circle?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>There are three types of singularities that can be classified by
+  their Laurent series:
+  <md>
+  f(z) = \ldots + \frac{c_{-2}}{(z-z_0)^2} + \frac{c_{-1}}{z-z_0} +
+  c_0 + c_1 (z-z_0) + \ldots.
+  </md></p>
+      <ul>
+        <li><p><term>Removable singularity:</term>  <m>c_k = 0</m> if <m>k&lt;0</m>.</p></li>
+        <li><p><term>Pole:</term> There are only finitely many nonzero <m>c_k</m> with
+    <m>k</m> negative.</p></li>
+        <li><p><term>Essential singularity:</term> There are infinitely many nonzero
+    <m>c_k</m> with <m>k</m> negative.</p></li>
+      </ul>
+    </introduction>
+    <task workspace=".8in">
+      <statement>
+        <p>The first three examples illustrate each of these types.  Which is
+  which?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>The <em>order</em> of a pole is the smallest positive integer <m>M</m> where
+  <m>c_k = 0</m> if <m>k &lt; -M</m>.  What is the order of the pole from the first
+  three examples?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>f(z) = \frac{1}{z^2+1}</m>.  Find the singularities,
+  determine their types, and find their residues.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

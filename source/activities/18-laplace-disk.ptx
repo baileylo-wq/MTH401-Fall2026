@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>18: Laplace's equation</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the solution to Laplace's equation <m>\nabla^2 u</m> in a disk
+  of radius 2 assuming that the function on the boundary is
+  <md>
+  f(\theta) = \begin{cases} 1 \amp  \text{if } 0\leq \theta \leq \pi \\
+    0 \amp  \text{otherwise} \\
+  \end{cases}
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <task workspace="0.5in">
+      <statement>
+        <p>You can graph your solution using Mathematica.  However, because
+  the result is expressed in terms of polar coordinates, you can do
+  this using the <c>ParametericPlot3D</c> command.  If the solution is
+  <m>f(r,\theta)</m>, then you can say:</p>
+        <p><c>ParametricPlot3D[ \{r*Cos[theta], r*Sin[theta], your function
+    here\</c>, \{r, ...\}, \{theta, ...\}]}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Thinking of <m>u(r,\theta)</m> as a steady-state temperature
+  distribution, where is the warmest point on the disk?  Where is the
+  coldest point?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What is the value <m>u(0,\theta)</m> at the center of the disk?  
+  How can you easily determine it from the boundary values <m>f(\theta)</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

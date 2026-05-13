@@ -54,7 +54,50 @@
       <xi:include href="./activities/3-test2.ptx"/>
 
 
-      <!-- Add more xi:include files here to include them in the main course -->
+      <xi:include href="./activities/01-review.ptx"/>
+      <xi:include href="./activities/02-line-integrals.ptx"/>
+      <xi:include href="./activities/03-ftc-line-integrals.ptx"/>
+      <xi:include href="./activities/04-del.ptx"/>
+      <xi:include href="./activities/05-divergence-them.ptx"/>
+      <xi:include href="./activities/06-greens.ptx"/>
+      <xi:include href="./activities/07-potentials.ptx"/>
+      <xi:include href="./activities/08-gauss.ptx"/>
+      <xi:include href="./activities/09-review-includeGauss.ptx"/>
+      <xi:include href="./activities/09-review-noGauss.ptx"/>
+      <xi:include href="./activities/10-heat-eqn.ptx"/>
+      <xi:include href="./activities/10-review.ptx"/>
+      <xi:include href="./activities/11-sturm-liouville.ptx"/>
+      <xi:include href="./activities/12-fourier.ptx"/>
+      <xi:include href="./activities/13-solving-heat.ptx"/>
+      <xi:include href="./activities/14-wave.ptx"/>
+      <xi:include href="./activities/15-wave.ptx"/>
+      <xi:include href="./activities/16-fourier.ptx"/>
+      <xi:include href="./activities/17-fourier-2020.ptx"/>
+      <xi:include href="./activities/17-laplace-2020.ptx"/>
+      <xi:include href="./activities/17-laplace.ptx"/>
+      <xi:include href="./activities/18-laplace-disk.ptx"/>
+      <xi:include href="./activities/19-higher-dim.ptx"/>
+      <xi:include href="./activities/20-poisson.ptx"/>
+      <xi:include href="./activities/21-power-series.ptx"/>
+      <xi:include href="./activities/22-power-series.ptx"/>
+      <xi:include href="./activities/23-bessel.ptx"/>
+      <xi:include href="./activities/24-bessel.ptx"/>
+      <xi:include href="./activities/25-laplace-cylinder.ptx"/>
+      <xi:include href="./activities/26-fourier-intro.ptx"/>
+      <xi:include href="./activities/27-fourier-laplace.ptx"/>
+      <xi:include href="./activities/28-characteristics.ptx"/>
+      <xi:include href="./activities/29-complex-intro.ptx"/>
+      <xi:include href="./activities/30-complex-functions.ptx"/>
+      <xi:include href="./activities/31-cr.ptx"/>
+      <xi:include href="./activities/32-cr-2.ptx"/>
+      <xi:include href="./activities/33-contour.ptx"/>
+      <xi:include href="./activities/34-cauchy.ptx"/>
+      <xi:include href="./activities/35-taylor.ptx"/>
+      <xi:include href="./activities/36-laurent.ptx"/>
+      <xi:include href="./activities/37-residues.ptx"/>
+      <xi:include href="./activities/38-trig.ptx"/>
+      <xi:include href="./activities/39-fourier.ptx"/>
+      <xi:include href="./activities/40-pv.ptx"/>
     </chapter>
 
     <chapter xml:id="handouts">

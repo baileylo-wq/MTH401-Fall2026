@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>31: Cauchy-Riemann equations</title>
+
+  <exercise workspace="2.5in">
+    <statement>
+      <p>Use the Cauchy-Riemann equations to explain why the
+function <m>f(z)=e^z</m> is differentiable.  What is <m>f'(z)</m>?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2.5in">
+    <statement>
+      <p>Is the function <m>f(z)=\bar{z}</m> differentiable?  Explain why or
+  why not by appealing to the geometric operation performed by this
+  function.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>If <m>f(z) = u(x,y) + iv(x,y)</m> is differentiable, explain why <m>u</m>
+  and <m>v</m> are both harmonic.  In other words, explain why both
+  function satisfy Laplace's equation.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="4.5in">
+    <statement>
+      <p>Consider the function
+<md>
+\sin z=\frac{e^{iz}-e^{-iz}}{2i}.
+</md>
+Write <m>\sin(x+iy) = u(x,y) + iv(x,y)</m> and use the Cauchy-Riemann
+equations to verify that <m>\sin z</m> is a differentiable function.  What
+is its derivative?</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>f(z)</m> is differentiable everywhere and
+that <m>\re(f(z))=3</m> for all <m>z</m>.  Explain why
+<m>f</m> must be constant.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

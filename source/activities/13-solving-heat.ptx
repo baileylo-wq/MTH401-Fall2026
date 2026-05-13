@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>13: Solving the heat equation</title>
+  <introduction>
+    <p>Here are some examples of the heat equation along with boundary and
+initial conditions.  Find a solution for each and graph it using
+Mathematica.</p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <statement>
+      <p><md>
+  \begin{aligned}
+    \pd{u}{t} \amp  = 4 \pdtwo{u}{x} \\
+    u(0, t) \amp  = 0 \\
+    u(5, t) \amp  = 0 \\
+    u(x, 0) \amp  = x^2 - 5x
+  \end{aligned}
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p><md>
+  \begin{aligned}
+    \pd{u}{t} \amp  = 4 \pdtwo{u}{x} \\
+    \pd{u}{x}(0, t) \amp  = 0 \\
+    \pd{u}{x}(5, t) \amp  = 0 \\
+    u(x, 0) \amp  = x
+  \end{aligned}
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p><md>
+  \begin{aligned}
+    \pd{u}{t} \amp  = 4 \pdtwo{u}{x} + 8\\
+    u(0, t) \amp  = 0 \\
+    u(5, t) \amp  = 0 \\
+    u(x, 0) \amp  = 5x - x^2 
+  \end{aligned}
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p><md>
+  \begin{aligned}
+    \pd{u}{t} \amp  = 4 \pdtwo{u}{x} + 8\\
+    u(0, t) \amp  = 0 \\
+    u(5, t) \amp  = 0 \\
+    u(x, 0) \amp  = 0
+  \end{aligned}
+  </md></p>
+    </statement>
+  </exercise>
+
+</worksheet>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>20: Poisson's equation</title>
+  <introduction>
+    <p>Poisson's equation is the <term>steady-state</term> heat equation with a <term>source
+term</term>:
+<md>
+\nabla^2 u = S.
+</md></p>
+  </introduction>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Let's begin with the 1-dimensional situation (<m>\nabla^2u = u''(x)</m>) that we 
+  know how to solve (and, in fact, have already solved).  We'll find a
+  function <m>u(x)</m> that satisfies
+  <md>
+  \begin{aligned}
+    u''(x)= \frac{d^2u}{dx^2} \amp  = x \\
+    u(0) \amp  = 0 \\
+    u(1) \amp  = 0 \\
+  \end{aligned}
+  </md></p>
+      <p>The eigenvalues/functions of the associated Sturm-Liouville problem
+  are
+  <md>
+  k = (n\pi)^2, ~~~ X_n(x) = \sin(n\pi x).
+  </md>
+  We will write the solution <m>u(x)</m>  we're seeking as a linear
+  combination of eigenfunctions 
+  <md>
+  u(x) = \sum_{n=1}^\infty A_n\sin(n\pi x).
+  </md>
+  Then plugging this into <m>u''(x) = x</m> we need to solve:
+  <md>
+  u''(x) = \sum_{n=1}^\infty -A_n(n\pi)^2\sin(n\pi x) = x
+  </md></p>
+    </introduction>
+    <task workspace="1.3in">
+      <statement>
+        <p>Find the Fourier sine coefficients <m>A_n</m> for the above equation.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Write the solution <m>u(x)</m> to Poisson's equation as a Fourier
+  sine series.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>In an earlier homework problem, you found an explicit function
+  <m>u(x)</m> that solved Poisson's equation and boundary conditions.  Find
+  that function again by solving <m>u''(x) = x</m> with the given boundary
+  conditions.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Now find the Fourier sine series of your solution and verify that
+  it's the same series that you found earlier.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Consider Poisson's equation for a function <m>u(x,y)</m> on the
+  <m>1\times1</m> square: 
+  <md>
+  \nabla^2 u = xy
+  </md>
+  where <m>u=0</m> on the boundary of the square.  We have seen that the
+  eigenvalues/functions of the Laplacian on the square are
+  <md>
+  k = (n\pi)^2 + (m\pi)^2,~~~
+  X_{n,m} = \sin(n\pi x)\sin(m\pi y).
+  </md>
+Thus the general solution is
+  <md>
+  u(x,y) = \sum_{n,m=1}^\infty A_{n,m} \sin(n\pi x)\sin(m\pi y). 
+  </md></p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>We need to plug <m>u(x,y)</m> into our specific Poisson's equation to find <m>A_{n,m}</m>.  Find <m>\nabla^2u</m>, set it equal to <m>xy</m>.  You should get a double Fourier sine series.  Use that to find the coefficients <m>A_{n,m}</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use Mathematica to draw a graph of the solution on the <m>1\times1</m>
+  square.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the solution <m>u(x,y,z)</m> to Poisson's equation
+  <md>
+  \nabla^2 u = xyz
+  </md>
+  on the unit cube <m>0\leq x \leq 1, 0\leq y \leq 1, 0\leq z \leq 1</m>.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

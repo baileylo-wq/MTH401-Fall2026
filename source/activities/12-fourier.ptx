@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>12: Fourier series</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Let's consider the function <m>f(x) = x^2 - \pi x</m> on the interval
+  <m>[0,\pi]</m>.  Suppose that we want to find the Fourier sine series for
+  <m>f(x)</m>;  that is, we want to write
+  <md>
+  f(x) = \sum_{n=1}^\infty A_n\sin(nx).
+  </md>
+  We know that the Fourier coefficients are <md>A_n =
+  \frac2\pi\int_0^\pi f(x)\sin(nx)~dx.</md></p>
+      <p>Find the Fourier coefficients <m>A_n</m> and graph the function <m>f(x)</m>
+  and an approximation to your Fourier series over the interval
+  <m>[0,\pi]</m>.  Start with a small number of terms, say <m>n=1,\ldots,10</m>,
+  and then add more in.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Last time, we looked at another Sturm-Liouville problem:
+  <md>
+  \begin{aligned}
+    X'' \amp  = -k X \\
+    X'(0) \amp  = 0 \\
+    X'(L) \amp  = 0. \\
+  \end{aligned}
+  </md>
+  We saw that the eigenvalues and eigenfunctions are
+  <md>
+  \begin{aligned}
+    k = 0, ~~~ \amp  X_0 = 1 \\
+    k = \left(\frac {n\pi}{L}\right)^2, ~~~ \amp  X_n =
+    \cos\left(\frac{n\pi x}{L}\right) ~~~\mbox{if ~~} n 
+    = 1,2,\ldots 
+  \end{aligned}
+  </md>
+  It turns out that these eigenfunctions also satisfy an orthogonality
+  relationship (eigenfunctions from a Sturm-Liouville problem always
+  will): 
+  <md>
+  \int_0^L X_n(x)X_m(x)~dx = \left.
+    \begin{cases}
+      0, \amp  n \neq m \\
+      \frac L2 \amp  n = m &gt; 0 \\
+      L \amp  n = m = 0
+    \end{cases}
+  \right.
+  </md></p>
+      <p>Suppose we want to write a function as a Fourier cosine series:
+  <md>
+  f(x) = A_0 + 
+  \sum_{n=1}^\infty A_n\cos\left(\frac{n\pi x}{L}\right)
+  </md>
+  Find an expression for the Fourier
+  coefficients <m>A_n</m> (the expression for <m>A_0</m> will be a little
+  different than the expression for <m>A_n</m> with <m>n &gt; 0</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="3.5in">
+    <statement>
+      <p>Find the Fourier cosine coefficients for the function <m>f(x) = x</m>
+  on the interval <m>[0,10]</m> and graph the function <m>f(x)</m>
+  and an approximation to your Fourier series over the interval
+  <m>[0,10]</m>.  Start with a small number of terms, say <m>n=1,\ldots,10</m>,
+  and then add more in.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Find the Fourier sine series for the constant function <m>f(x) =
+  1</m> on the interval <m>[0,\pi]</m> and create a graph of the function and
+  an approximation of your series.  Then find the Fourier cosine
+  series for the same function over the same interval.</p>
+    </statement>
+  </exercise>
+
+</worksheet>

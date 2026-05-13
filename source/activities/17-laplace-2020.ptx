@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>Laplace's equation</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose we have a rectangular plate whose dimensions are
+  <m>10\times5</m>. Remember that Laplace's equation
+  <md>\nabla^2 u =\pdtwo{u}{x} +\pdtwo{u}{y} = 0</md>
+  describes the steady state temperature distribution <m>u(x,y)</m> in the
+  plate. 
+  Solve Laplace's equation
+  in the rectangle with the boundary conditions shown.  In particular,
+  <m>u=0</m> on the bottom, left, and right, and <m>u=1</m> on the top.</p>
+      <p>\includegraphics{figures/16-rect.eps}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that you have an infinite rectangular plate;  that is,
+  the plate is between <m>0\leq x\leq \pi</m> and <m>0\leq y</m>.  Solve Laplace's
+  equation in this plate with the boundary conditions
+  <md>
+<mrow>u(x,0) \amp  = \amp  1</mrow>
+<mrow>u(0, y) \amp  = \amp  0</mrow>
+<mrow>u(\pi, y) \amp  = \amp  0</mrow>
+<mrow>\lim_{y\to\infty}u(x,y)\amp =\amp 0</mrow>
+</md></p>
+    </statement>
+  </exercise>
+
+</worksheet>

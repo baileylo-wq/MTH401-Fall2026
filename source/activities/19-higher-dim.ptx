@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>19: Higher dimensional equations</title>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Consider a rectangular plate whose dimensions are <m>10\times5</m>.
+  Find the general solution <m>u(x,y,t)</m> to the heat equation in
+  the rectangle when the temperature along all four sides is 0.</p>
+      <p>\begin{minipage}{2.5in}
+    {</p>
+      <p>\begin{center}
+        \includegraphics{figures/20-rect.eps}
+      \end{center}</p>
+      <p>}
+  \end{minipage}
+  \begin{minipage}{2.5in}
+    {
+      <md>
+      \begin{aligned}
+        \pd{u}{t} \amp  = 2\nabla^2 u \\
+        u(x,0,t) \amp  = 0 \\
+        u(0,y,t) \amp  = 0 \\
+        u(10,y,t) \amp  = 0 \\
+        u(x,5,t) \amp  = 0
+      \end{aligned}
+      </md>
+    }
+  \end{minipage}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="3in">
+    <statement>
+      <p>Find the specific solution to this heat equation when the
+  initial temperature is <m>u(x,y,0) = y</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>How would you begin if the boundary conditions are not
+  homogeneous?  You don't need to totally work out the problem.
+  Instead, give a written description of what you would do.  You
+  should see that you've already solved all the pieces of this
+  problem.  (Feeling stuck?  What did we do in the 1-dimensional case
+  when we have non-homogeneous boundary conditions?)</p>
+      <p>\begin{minipage}{2.5in}
+    {</p>
+      <p>\begin{center}
+        \includegraphics{figures/16-rect.eps}
+      \end{center}</p>
+      <p>}
+  \end{minipage}
+  \begin{minipage}{2.5in}
+    {
+      <md>
+      \begin{aligned}
+        \pd{u}{t} \amp  = 2\nabla^2 u \\
+        u(x,0,t) \amp  = 0 \\
+        u(0,y,t) \amp  = 0 \\
+        u(10,y,t) \amp  = 0 \\
+        u(x,5,t) \amp  = 1
+      \end{aligned}
+      </md>
+    }
+  \end{minipage}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose now that we have a rectangular drum whose dimensions are
+  <m>10\times5</m>. 
+  Find the general solution <m>u(x,y,t)</m> to the wave equation in
+  the rectangle when the membrane is clamped at 0 along all four
+  sides.</p>
+      <p>\begin{minipage}{2.5in}
+    {</p>
+      <p>\begin{center}
+        \includegraphics{figures/20-rect.eps}
+      \end{center}</p>
+      <p>}
+  \end{minipage}
+  \begin{minipage}{2.5in}
+    {
+      <md>
+      \begin{aligned}
+        \pdtwo{u}{t} \amp  = 4\nabla^2 u \\
+        u(x,0,t) \amp  = 0 \\
+        u(0,y,t) \amp  = 0 \\
+        u(10,y,t) \amp  = 0 \\
+        u(x,5,t) \amp  = 0
+      \end{aligned}
+      </md>
+    }
+  \end{minipage}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>The <em>spectrum</em> of the drum is the set of fundamental
+  frequencies at which it vibrates.  These are the frequencies given
+  by the product solutions.  What are the three smallest frequencies?
+  (Mathematicians and physicists sometimes use different definitions
+  of frequencies;  we'll just say that the frequency of <m>\cos(\omega
+  t)</m> is <m>\omega</m>).</p>
+    </statement>
+  </exercise>
+
+</worksheet>

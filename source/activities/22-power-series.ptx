@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>22: Series solutions of ODEs</title>
+
+  <exercise>
+    <introduction>
+      <p>The following differential equation is known as the <em>Chebyshev</em> equation (<m>\alpha</m> is a constant):
+  <md>
+  (1-x^2)y'' - xy' + \alpha^2 y = 0.
+  </md></p>
+    </introduction>
+    <task workspace="4in">
+      <statement>
+        <p>Find two linearly independent solutions using our power series
+  method.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>\alpha</m> is a nonnegative integer <m>n</m>, explain why there is a
+  polynomial solution.  When normalized according to some convention,
+  these polynomials are known as <em>Chebyshev</em> polynomials.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Find the polynomial solutions when <m>n=0,1,2,3</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>The Laguerre differential equation is
+  <md>
+  xy'' + (1-x)y' + \lambda y = 0.
+  </md></p>
+    </introduction>
+    <task workspace="4in">
+      <statement>
+        <p>Find one solution to this equation by writing out the first five
+  terms.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why your solution is a polynomial if <m>\lambda = m</m>, a
+  non-negative integer.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>The Laguerre polynomial <m>L_m(x)</m> is this
+  polynomial normalized so that <m>L_m(0) = 1</m>.
+  Find <m>L_0(x)</m>, <m>L_1(x)</m>, <m>L_2(x)</m> and <m>L_3(x)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>The Legendre equation is
+  <md>
+  (1-x^2)y''-2xy'+\alpha(\alpha+1)y=0
+  </md> where <m>\alpha</m> is a constant.</p>
+    </introduction>
+    <task workspace="4in">
+      <statement>
+        <p>Find two linearly independent solutions of the Legendre equation.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Show that is <m>\alpha</m> is a nonnegative even integer <m>2n</m>, then one
+  solution reduces to a polynomial of degree <m>2n</m>.  Find the polynomials
+  corresponding to <m>\alpha=0,2</m> and <m>4</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Show that if <m>\alpha</m> is a positive odd integer <m>2n+1</m>,
+  then one solution reduces to a polynomial of degree <m>2n+1</m>.  Find the
+  polynomial solutions with <m>\alpha=1,3</m> and <m>5</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <task workspace="5.8in">
+      <statement>
+        <p>What happens when you try to solve Bessel's equation of order 1:
+  <md>
+  x^2y'' + xy' +(x^2 - 1^2)y = 0?
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Do you remember how to solve the equation
+  <md>
+  x^2y'' + 2xy'-3y = 0?
+  </md></p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

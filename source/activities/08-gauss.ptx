@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>8: Gauss' law and the divergence theorem</title>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that we have an infinitely thin charged plate whose
+  charge density is 13 Coulombs per square meter as shown on the
+  left.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>What does the symmetry of this situation imply about the
+  direction of the electric field and electric displacement vectors?</p>
+        <p>\begin{center}
+    \includegraphics[scale=0.7]{figures/pillbox.png}
+  \end{center}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose we take a Gaussian surface that is a cylinder of radius <m>r</m>
+  as shown on the right.  How much electric charge is contained within
+  the cylinder?  (Remember that all the charge is on the plate.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does Gauss' Law tell us about the strength of the electric
+  displacement <m>\mbf D</m> at a position <m>h</m> meters above the plate?
+  (What can you say about the flux of <m>\mbf D</m> through the curvy sides
+  of the cylinder?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that we want to create a potential <m>f</m> for the electric
+  field <m>\mbf E</m> (remember that <m>\mbf D = \epsilon_0 \mbf E</m>.  Let's
+  choose a basepoint <m>*</m> on the plate.  What is the value of the
+  potential <m>h</m> meters above the plate?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <introduction>
+      <p>Suppose that we have an infinitely thin, infinitely long charged
+  wire whose charge density is <m>\lambda</m> Coulombs per meter.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Choose a
+  cylindrical Gaussian surface of radius <m>r</m> and height <m>h</m> as shown
+  below.</p>
+        <p>\begin{center}
+    \includegraphics[scale=0.7]{figures/wire.png}
+  \end{center}</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>How much electric charge is inside the surface?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What does the symmetry of the situation say about the direction of
+  the electric field and electric displacement?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Use Gauss' Law to find the electric displacement and electric field
+  a distance <m>r</m> from the wire.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose we choose a basepoint <m>1</m> meter away from the wire.  Find
+  the electric potential <m>r</m> meters away from the wire.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>Suppose that we have a fluid whose velocity is given by the
+  field <m>\mbf F(x,y,z)</m> meters per second.  Suppose that the density
+  of the fluid is <m>\rho(x,y,z)</m> kilograms per meter<m>^3</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>E</m> is a three-dimensional region, what is the physical meaning
+  of <m>\iiint_E \rho~dV</m>?  (Thinking about units will help.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Suppose that <m>\mbf V = \rho \mbf F</m>.  What are the units on <m>V</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>S</m> is a surface, what is the physical meaning of <m>\iint_S \mbf
+  V \cdot \mbf n~ dA</m> if <m>\mbf n</m> is a field normal to <m>S</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>S</m> is a closed surface with outward normal <m>\mbf n</m> bounding a
+  region <m>E</m>, explain why 
+  <md>
+  \frac{d}{dt}\iiint_E \rho ~dV = -\oiint_S \mbf V\cdot\mbf n~dA,
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Explain why <m>\frac{\partial \rho}{\partial t} + \nabla \cdot \mbf
+  V = 0</m>.   This is called the <em>equation of continuity</em> and is an
+  expression of conservation of mass.</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

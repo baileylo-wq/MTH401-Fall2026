@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>3. The FTC of line integrals</title>
+
+  <exercise workspace="1.25in">
+    <introduction>
+      <p>Suppose that <m>{\mathbf F} = \nabla f</m> where <m>f(x,y) = 3x^2y -
+  \sin(x) + e^y</m>.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>Find the coordinates of the field <m>{\mathbf F}</m>.</p>
+      </statement>
+    </task>
+    <task workspace="1.25in">
+      <statement>
+        <p>Evaluate <m>\lineint{C_1}{F}</m> where <m>C_1</m> is the upper half of the unit
+  circle oriented in the counter-clockwise direction.</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>Evaluate <m>\lineint{C_2}{F}</m> where <m>C_2</m> is the straight line segment
+  from <m>(1,0)</m> to <m>(-1,0)</m>.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Suppose that <m>{\mathbf F}(x,y) = (2x, 3y)</m>.  Evaluate
+  <md>
+  \lineint{C_1}{F}, ~~~
+  \lineint{C_2}{F}
+  </md>
+  where <m>C_1</m> and <m>C_2</m> are the curves as shown below.</p>
+      <p>\includegraphics{figures/03-curves.eps}</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <task workspace="1in">
+      <statement>
+        <p>If <m>{\mathbf F}</m> is a conservative vector field, what is the
+  line integral <m>\lineint{C}{F}</m> is <m>C</m> is a closed curve;  that is,
+  <m>C</m> has the same initial and final point?  (Note:  we often write
+  such as integral as <m>\olineint{C}{F}</m> to denote the fact that <m>C</m> is
+  closed.)   Explain your response.</p>
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>Suppose that
+  <md>
+  {\mathbf F}(x,y) = \left(-\frac{y}{x^2+y^2},
+    \frac{x}{x^2+y^2}\right)
+  </md>
+  and <m>C</m> is the unit circle traversed one time in the
+  counter-clockwise direction.  Find the line integral
+  <m>\olineint{C}{F}</m>.  (You did this on Wednesday.)</p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>{\mathbf F}</m> conservative?  Explain your response.</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1.5in">
+    <statement>
+      <p>Suppose that <m>C</m> is the curve parametrized by
+  <m>{\mathbf r}(t) = (t^2, t^3, t-1)</m> where <m>1\leq t \leq 2</m>.  Evaluate
+  the line integral 
+  <md>
+  \int_C ye^z~dx + xe^z~dy + xye^z~dz.
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace=".2in">
+    <statement>
+      <p>Which, if either, of the fields below could be conservative?
+  Explain your response.</p>
+      <p>\begin{center}
+    \includegraphics{figures/03-field-a.eps} \hspace*{24pt}
+    \includegraphics{figures/03-field-b.eps}
+  \end{center}</p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>From MTH 203, you may remember that the second mixed partials of
+  a reasonable function <m>f(x,y)</m> are equal;  that is,
+  <md>
+  \frac{\partial^2 f}{\partial x\partial y} =
+  \frac{\partial^2 f}{\partial y\partial x}.
+  </md>
+  That is, it doesn't matter in which order we compute second mixed
+  partials.</p>
+      <p>This gives us a simple test to determine when a field <m>{\mathbf
+    F}(x,y)</m> is conservative.</p>
+    </introduction>
+    <task workspace="1in">
+      <statement>
+        <p>If <m>
+  {\mathbf F}(x,y) = (F_1(x,y), F_2(x,y))
+  </m>
+  is conservative, what relationship must hold between <m>F_1</m> and
+  <m>F_2</m>?</p>
+      </statement>
+    </task>
+    <task workspace="1.2in">
+      <statement>
+        <p>Verify that this relationship holds for the field in problems 1 and
+  2.</p>
+      </statement>
+    </task>
+    <task workspace=".7in">
+      <statement>
+        <p>Does this relationship hold for the field in problem 3?</p>
+      </statement>
+    </task>
+  </exercise>
+
+</worksheet>

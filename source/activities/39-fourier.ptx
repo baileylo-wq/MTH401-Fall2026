@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet>
+  <title>39: Fourier transforms</title>
+
+  <exercise>
+    <task workspace="4in">
+      <statement>
+        <p>Evaluate the integral
+  <md>
+  \int_{-\infty}^\infty\frac {e^{i2x}}{1+x^2}~dx,
+  </md></p>
+      </statement>
+    </task>
+    <task workspace="1in">
+      <statement>
+        <p>What about the more general Fourier transform
+  <md>
+  \int_{-\infty}^\infty\frac {e^{i\omega x}}{1+x^2}~dx,
+  </md>
+  where <m>\omega &gt; 0</m>?</p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>Evaluate the integral
+  <md>
+  \int_{-\infty}^\infty \frac{x\sin x}{4+x^2}~dx =
+  \im\left\{  \int_{-\infty}^\infty \frac{xe^{ix}}{4+x^2}~dx\right\}.
+  </md></p>
+    </statement>
+  </exercise>
+
+</worksheet>
