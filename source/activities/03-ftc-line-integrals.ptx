@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>3. The FTC of line integrals</title>
+  <alert>MTH 401</alert>
 
   <exercise workspace="1.25in">
     <introduction>
@@ -26,7 +27,7 @@
     </task>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="0.1in">
     <statement>
       <p>Suppose that <m>{\mathbf F}(x,y) = (2x, 3y)</m>.  Evaluate
   <md>
@@ -34,12 +35,43 @@
   \lineint{C_2}{F}
   </md>
   where <m>C_1</m> and <m>C_2</m> are the curves as shown below.</p>
-      <p>\includegraphics{figures/03-curves.eps}</p>
+  <image width="30%" margins="0% 70%">
+        <shortdescription>The graph of three line segments with directions, see description below.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-line-integral">
+        <diagram dimensions="(250,250)" margins="5">
+          <coordinates bbox="(-1,-1,4,4)">
+            <grid-axes spacings="((-1,1,4),(-1,1,4))" xlabel="x" ylabel="y"/>
+            <vector v="(-2,0)" tail="(2,0)" stroke="blue" head-location="0.8"/>
+            <vector v="(-2,2)" tail="(2,0)" stroke="blue" head-location="0.8"/>
+            <vector v="(0,2)" tail="(0,0)" stroke="blue" head-location="0.8"/>
+            <label anchor="(1.5,0)" alignment="south" offset="(0,-5)">
+              <m> \displaystyle C_1 </m>
+            </label>
+            <label anchor="(1,1)" alignment="ne" offset="(5,5)">
+              <m> \displaystyle C_2 </m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description>
+        <p>
+          Three directional curves are shown, <m>C_1</m> is the straight line from <m>(2,0)</m>
+          to <m>(0,0)</m>, <m>C_2</m> is the line from <m>(2,0)</m> to <m>(0,2)</m>, and 
+          the third line goes from <m>(0,0)</m> to <m>(0,2)</m>.
+        </p>
+      </description>
+  </image>  
+
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
-    <task workspace="1in">
+  <exercise>
+    <introduction>
+      <p>
+        Let's look at fields and the concept of a conservative field.
+      </p>
+    </introduction>
+    <task workspace="0.5in">
       <statement>
         <p>If <m>{\mathbf F}</m> is a conservative vector field, what is the
   line integral <m>\lineint{C}{F}</m> is <m>C</m> is a closed curve;  that is,
@@ -48,7 +80,7 @@
   closed.)   Explain your response.</p>
       </statement>
     </task>
-    <task workspace="2in">
+    <task workspace="1in">
       <statement>
         <p>Suppose that
   <md>
@@ -57,10 +89,10 @@
   </md>
   and <m>C</m> is the unit circle traversed one time in the
   counter-clockwise direction.  Find the line integral
-  <m>\olineint{C}{F}</m>.  (You did this on Wednesday.)</p>
+  <m>\olineint{C}{F}</m>.  (You did this last class.)</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.5in">
       <statement>
         <p>If <m>{\mathbf F}</m> conservative?  Explain your response.</p>
       </statement>
@@ -78,20 +110,42 @@
     </statement>
   </exercise>
 
-  <exercise workspace=".2in">
+  <exercise workspace=".5in">
     <statement>
       <p>Which, if either, of the fields below could be conservative?
   Explain your response.</p>
-      <p>\begin{center}
-    \includegraphics{figures/03-field-a.eps} \hspace*{24pt}
-    \includegraphics{figures/03-field-b.eps}
-  \end{center}</p>
+    <sidebyside widths="30% 30%">
+    <image>
+      <shortdescription>A vector field, all vectors point radially away from the origin.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-slope1">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>f(t,y) = (y[0],y[1])</definition>
+          <coordinates bbox="[-4,-4,4,4]">
+            <grid-axes xlabel="x" ylabel="y" decorations="no" />
+            <slope-field function="f" system="yes" arrows="yes"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <image>
+        <shortdescription>A vector field, all arrows points counter-clockwise in a cocentric circles centered around the origin.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-slope2">
+        <diagram dimensions="(300,300)" margins="5">
+          <definition>f(t,y) = (-y[1],y[0])</definition>
+          <coordinates bbox="[-4,-4,4,4]">
+            <grid-axes xlabel="x" ylabel="y" decorations="no" />
+            <slope-field function="f" system="yes" arrows="yes"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    </sidebyside>
     </statement>
   </exercise>
 
   <exercise>
     <introduction>
-      <p>From MTH 203, you may remember that the second mixed partials of
+      <p>From MTH 203 (Calculus III), you may remember that the second mixed partials of
   a reasonable function <m>f(x,y)</m> are equal;  that is,
   <md>
   \frac{\partial^2 f}{\partial x\partial y} =

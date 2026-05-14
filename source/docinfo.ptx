@@ -30,6 +30,7 @@
     \newcommand{\lineint}[2]{\int_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
     \newcommand{\olineint}[2]{\oint_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
     \newcommand{\nvec}{\mathbf{n}}
+    
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

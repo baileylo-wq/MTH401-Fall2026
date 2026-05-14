@@ -2,6 +2,8 @@
 <worksheet>
   <title>2. Evaluating line integrals</title>
 
+  <alert>MTH 401</alert>
+
   <exercise>
     <introduction>
       <p>Suppose that <m>{\mathbf F}(x,y) = (x^2, xy)</m> and that <m>C_1</m>,
@@ -16,8 +18,45 @@
   \lineint{C_2}{F}, ~~~
   \lineint{C_3}{F}.
   </md></p>
-        <p>\includegraphics{figures/02-curves.eps}</p>
+  <image width="35%" margins="0% 65%">
+        <shortdescription>
+          The graph of three line segments with directions.
+        </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-line-integral">
+        <diagram dimensions="(250,250)" margins="5">
+          <coordinates bbox="(-1,-1,4,4)">
+            <grid-axes spacings="((-1,1,4),(-1,1,4))" xlabel="x" ylabel="y"/>
+            <vector v="(2,0)" tail="(1,1)" stroke="blue" head-location="0.8"/>
+            <vector v="(0,2)" tail="(3,1)" stroke="blue" head-location="0.8"/>
+            <vector v="(-2,-2)" tail="(3,3)" stroke="blue" head-location="0.8"/>
+            <label anchor="(2,1)" alignment="south" offset="(0,-5)">
+              <m>
+                \displaystyle C_1
+              </m>
+            </label>
+            <label anchor="(3,2)" alignment="east" offset="(5,0)">
+              <m>
+                \displaystyle C_2
+              </m>
+            </label>
+            <label anchor="(2,2)" alignment="northwest" offset="(2,2)">
+              <m>
+                \displaystyle C_3
+              </m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description>
+        <p>
+          Three directional curves are shown, <m>C_1</m> is the straight line from <m>(1,1)</m>
+          to <m>(3,1)</m>, <m>C_2</m> is the line from <m>(3,1)</m> to <m>(3,3)</m>, and 
+          <m>C_3</m> is the line from <m>(1,1)</m> to <m>(3,3)</m>.
+        </p>
+      </description>
+    </image>
       </statement>
+    
     </task>
     <task workspace="1in">
       <statement>
@@ -63,7 +102,7 @@
     <introduction>
       <p>Consider the field <m>{\mathbf F}(x,y) = (y^2, 2xy+3)</m>.</p>
     </introduction>
-    <task workspace="4.8in">
+    <task workspace="4.0in">
       <statement>
         <p>Evaluate
   the line integrals
