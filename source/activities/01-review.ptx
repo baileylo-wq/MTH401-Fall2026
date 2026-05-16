@@ -4,6 +4,65 @@
 
   <alert>MTH 401</alert> 
   
+  <!--<subsection xml:id="subsec-">
+    <title>Topics we will use often.</title> -->
+    
+
+    <!--<subsubsection xml:id="subsubsec-">
+      <title>We will use the following often, so it's important we recall the following:</title>
+      <ul>
+    <li>
+      <p>
+        The dot product and the cross product.
+      </p>
+    </li>
+    <li>
+      <p>
+        How to parameterize a curve.
+      </p>
+    </li>
+    <li>
+      <p>
+        The gradient of a function.
+      </p>
+    </li>
+    <li>
+      <p>
+        Fields.
+      </p>
+    </li>
+  </ul>
+    </subsubsection>-->
+<objectives>
+  <introduction>
+    <p>
+    It's important we recall the following ideas which we will use throughout this class:
+    </p>
+  </introduction>
+  <ul>
+    <li>
+      <p>
+        The dot product and the cross product.
+      </p>
+    </li>
+    <li>
+      <p>
+        How to parameterize a curve.
+      </p>
+    </li>
+    <li>
+      <p>
+        The gradient of a function.
+      </p>
+    </li>
+    <li>
+      <p>
+        Fields.
+      </p>
+    </li>
+  </ul>
+</objectives>
+
 
 <exercise xml:id="exr-x">
   <introduction>
@@ -232,7 +291,7 @@
 
 
 
-
+  <!--</subsection>-->
 
 
 

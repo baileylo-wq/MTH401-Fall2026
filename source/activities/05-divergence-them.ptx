@@ -1,54 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>5: The divergence theorem</title>
-  <introduction>
-    <p>Remember that the flux of a field <m>F</m> across a curve <m>C</m> in the
-direction <m>\nvec</m> is <m>\int_C F\cdot\nvec ~ds</m>.  If the curve <m>C</m> is
-closed, then the Divergence Theorem tells us
+  
+  <alert>MTH 401</alert>
+
+<definition xml:id="def-flux">
+  <statement>
+    <p>
+      The flux of a field <m>\mbf F</m> across a curve <m>C</m> is <md>\ds \int_C \mbf F\cdot\nvec ~ds</md> where
+    <m>\nvec</m> is the normal vector to the curve. 
+    </p>
+  </statement>
+</definition>
+  <theorem xml:id="thm-2d-divergence">
+    <statement>
+      <p>
+        If the curve <m>C</m> is
+closed, then the <term>Divergence Theorem</term> in two dimensions tells us
 <md>
-\oint_C F\cdot\nvec~ds = \iint_D \nabla\cdot F~dA
+\oint_C \mbf F\cdot\nvec~ds = \iint_D \nabla\cdot \mbf F~dA
 </md>
-where <m>D</m> is the region inside <m>C</m>.  However, it's important to
-remember that <m>C</m> {\bf{must be <em>closed</em>}} for the Divergence Theorem to
-apply.</p>
-  </introduction>
+where <m>D</m> is the two-dimensional region inside the closed curve <m>C</m>.  That is, the total outward flux 
+of a field across a closed curve is equivalent to the double integral of the divergence of that field over the enclosed region.
+</p>
+<p> However, it's important to
+remember that <m>C</m> <em> must be <em>closed</em></em> for the Divergence Theorem to
+apply.
+      </p>
+    </statement>
+  </theorem>
+  
 
   <exercise workspace="1in">
     <introduction>
-      <p>Suppose that <m>F(x,y) = (x, -2)</m> and <m>C</m> is the line segment
+      <p>Suppose that <m>\mbf F(x,y) = (x, -2)</m> and <m>C</m> is the line segment
   joining the points <m>(-1,0)</m> and <m>(1,0)</m> with normal vector
   <m>\nvec=(0,1)</m> pointing up.</p>
     </introduction>
-    <task workspace="1in">
+    <task workspace="0in">
       <statement>
-        <p>Find the flux of <m>F</m> through <m>C</m> in the direction <m>\nvec</m>, the
+        <p>Find the flux of <m>\mbf F</m> through <m>C</m> in the direction <m>\nvec</m>, the
   upward pointing normal.</p>
-        <p>\includegraphics{figures/05-curve.eps}</p>
-      </statement>
+      
+       <image width="20%" margins="0% 80%">
+        <shortdescription>The flux going through a curve, see description below.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-4-flux1">
+        <diagram dimensions="(200,200)" margins="0">
+          <coordinates bbox="(-2,-2,2,2)">
+            <grid-axes spacings="((-2,1,2),(-2,1,2))" xlabel="x" ylabel="y"/>
+            
+            <vector v="(0,1)" tail="(-1,0)" stroke="red"/>
+            <vector v="(0,1)" tail="(-0.4,0)" stroke="red"/>
+            <vector v="(0,1)" tail="(0.4,0)" stroke="red"/>
+            <vector v="(0,1)" tail="(1,0)" stroke="red"/>
+            <line p1="(-1,0)" p2="(1,0)" stroke="blue" thickness="5"/>
+            <point p="(-1,0)" stroke="blue" fill="blue"/>
+            <point p="(1,0)" stroke="blue" fill="blue"/>
+            <label anchor="(0.4,0)" alignment="s" offset="(0,-5)">
+              <m>C</m>
+            </label>
+            <label anchor="(1,0.5)" alignment="e" offset="(5,0)">
+              <m>\nvec</m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description>
+        <p>
+          A curve <m>C</m> is shown that is the straight line between <m>(-1,0)</m>
+          and <m>(1,0)</m>, and the normal direction to the curve pointing upwards is also shown.
+        </p>
+      </description>
+  </image>  
+
+  </statement>
     </task>
-    <task workspace="0.5in">
+    <task workspace="0in">
       <statement>
         <p>Suppose now that <m>C</m> is the closed curve shown below.  Use the
-  divergence theorem to find the flux of <m>F</m> across <m>C</m> in the outward
+  divergence theorem to find the flux of <m>\mbf F</m> across <m>C</m> in the outward
   direction.</p>
-        <p>\includegraphics{figures/05-curve-b.eps}</p>
+      <image width="20%" margins="0% 80%">
+        <shortdescription>The flux going through a closed curve, see description below.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-4-flux2">
+        <diagram dimensions="(200,200)" margins="0">
+          <coordinates bbox="(-2,-2,2,2)">
+            <grid-axes spacings="((-2,1,2),(-2,1,2))" xlabel="x" ylabel="y"/>
+            <line p1="(-1,0)" p2="(1,0)" stroke="blue" thickness="5"/>
+            <arc center="(0,0)" radius="1" range="(180,360)" arrows="0"
+              stroke="blue" thickness="5" reverse="no"/>
+            <label anchor="(0.4,0)" alignment="n" offset="(0,5)">
+              <m>C</m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description>
+        <p>
+          A curve <m>C</m> is shown that consists of the straight line between <m>(-1,0)</m>
+          and <m>(1,0)</m>, and the half circle centered at the origin with a radius of 1 located in quadrants III and IV.
+        </p>
+      </description>
+  </image>  
+
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>Using the two results you've found so far, find the flux of <m>F</m>
-  across the 
-  lower semi-circle in the downward direction.</p>
+        <p>Using the two results you've found so far, find the flux of <m>\mbf F</m>
+  across only the
+  lower semi-circle (the bottom half of the unit circle).</p>
       </statement>
     </task>
   </exercise>
 
   <exercise workspace="1in">
     <statement>
-      <p>Consider the field <m>F(x,y) = (x,y)</m> and the curve 
+      <p>Consider the field <m>\mbf F(x,y) = (x,y)</m> and the curve 
   <m>C</m>, which is the circle of radius 3 centered at <m>(1,2)</m>.  Use the
   divergence theorem to find
-  the flux of <m>F</m> out of <m>C</m>.</p>
+  the flux of <m>\mbf F</m> out of <m>C</m>.</p>
     </statement>
   </exercise>
 
@@ -57,18 +128,70 @@ apply.</p>
       <p>Each of the fields below has a constant divergence.  Identify
   the field with a positive divergence, the one with zero divergence,
   and the one with negative divergence.</p>
-      <p>\begin{center}
-    \includegraphics{figures/05-field-radial.eps} \hspace*{24pt}
-    
-    \includegraphics{figures/05-field-angular.eps} \\
-    \includegraphics{figures/05-field-horizontal.eps} \hspace*{24pt}
-  \end{center}</p>
+
+<sidebyside widths="25% 25% 25%">
+    <image>
+      <shortdescription>A vector field, all vectors point radially away from the origin.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-5-slope1">
+        <diagram dimensions="(200,200)" margins="5">
+          <definition>f(t,y) = (y[0],y[1])</definition>
+          <coordinates bbox="[-4,-4,4,4]">
+            <grid-axes xlabel="x" ylabel="y" decorations="no" />
+            <slope-field function="f" system="yes" arrows="yes"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <image>
+        <shortdescription>A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-5-slope2">
+        <diagram dimensions="(200,200)" margins="5">
+          <definition>f(t,y) = (-y[1],y[0])</definition>
+          <coordinates bbox="[-4,-4,4,4]">
+            <grid-axes xlabel="x" ylabel="y" decorations="no" />
+            <slope-field function="f" system="yes" arrows="yes"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+        <image>
+        <shortdescription>A vector field, all arrows point point horizontally towards the y-axis.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-5-slope3">
+        <diagram dimensions="(200,200)" margins="5">
+          <definition>f(t,y) = (-y[0],0)</definition>
+          <coordinates bbox="[-4,-4,4,4]">
+            <grid-axes xlabel="x" ylabel="y" decorations="no" />
+            <slope-field function="f" system="yes" arrows="yes"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+  </sidebyside>
+
+  
     </statement>
   </exercise>
 
+  <p>
+    The <term>Divergence Theorem</term> holds in more than just two dimensions.  
+  </p>
+  <theorem xml:id="thm-3d-divergence-theorem">
+    <statement>
+      <p>
+        If <m>\mbf F</m> is a field in three dimensions across a <em>closed</em> surface <m>S</m> which enclosed the three dimensional region <m>E</m>, 
+        the <term>Divergence Theorem</term> in three dimensions, (also called <term>Gauss's Theorem</term>), says that the total outward flux of the field through <m>S</m> is equal to the triple integral of the divergence of the field over <m>E</m>.
+        That is, 
+        <md>
+          \oiint_C \mbf F \cdot \nvec ~dA = \iiint_E \nabla \cdot \mbf F ~dV
+        </md>
+        
+      </p>
+    </statement>
+  </theorem>
+  
   <exercise workspace="1in">
     <statement>
-      <p>The Divergence Theorem holds in any dimension, not just 2.  Find
+      <p>Find
   the flux of the field <m>\mbf F(x,y,z) = (2x,y,-z)</m> out of the sphere of
   radius 2 centered at the origin.</p>
     </statement>
@@ -106,9 +229,8 @@ apply.</p>
     <statement>
       <p>Suppose that <m>S</m> is a closed surface bounding a 3-dimensional
   region <m>E</m>.  If <m>f(x,y,z)</m> is a function, explain why the flux of
-  <m>\nabla f</m> out of <m>S</m> equals
+  <m>\nabla f</m> out of <m>S</m>, that is <m>\oiint_S\nabla f\cdot {\mathbf n}~ dA </m>, is equal to
   <md>
-  \iint_S\nabla f\cdot {\mathbf n}~ dA = 
   \iiint_E \nabla^2f~dV.
   </md></p>
     </statement>
@@ -116,14 +238,14 @@ apply.</p>
 
   <exercise workspace="1in">
     <statement>
-      <p>Consider the field <m>F=((x^3-x^2)y, (y^3-2y^2+y)x, (z^2-1))</m> and
+      <p>Consider the field <m>\ds \mbf F=((x^3-x^2)y, (y^3-2y^2+y)x, (z^2-1))</m> and
   suppose that <m>E</m> is the unit cube where
   <md>
   0\leq x \leq 1, ~~~
   0\leq y \leq 1, ~~~
   0\leq z \leq 1.
   </md>
-  Evaluate the triple integral <m>\iiint_E \nabla\cdot F~ dV</m>.</p>
+  Evaluate the triple integral <m>\iiint_E \nabla\cdot \mbf F~ dV</m>.</p>
     </statement>
   </exercise>
 

@@ -9,7 +9,7 @@
   <statement>
     <p>Let <m>\mbf F(x,y,z) = (F_1, F_2, F_3)</m>. 
       The
-  <em>divergence</em> of <m>\mbf F</m> is given by
+  <term>divergence</term> of <m>\mbf F</m> is given by
   <md> \displaystyle
   \nabla\cdot\mbf F  =
   \left(
@@ -25,10 +25,11 @@
   </statement>
 </definition>
 
+
 <definition xml:id="def-curl">
   <statement>
     <p>Let <m>\mbf F(x,y,z) = (F_1, F_2, F_3)</m>. 
-      The <em>curl</em> of <m>\mbf F</m> is
+      The <term>curl</term> of <m>\mbf F</m> is
       <md> \displaystyle
       \nabla\times\mbf F =
       \left|

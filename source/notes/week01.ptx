@@ -14,7 +14,49 @@
     <title>Monday 8/22</title>
 
     <p>
+      Let's test this out here
     </p>
+    <example>
+      example
+    </example>
+    <activity>
+      <introduction>
+        <p>
+          exercise
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            task a
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            task b here
+          </p>
+        </statement>
+      </task>
+    </activity>
+    <exercises xml:id="exercises-">
+      <exercise>
+        <introduction>
+          <p>
+            exercise one here
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              part a
+            </p>
+          </statement>
+        </task>
+      </exercise>
+      
+    </exercises>
   </subsection>
 
 

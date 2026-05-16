@@ -4,6 +4,22 @@
 
   <alert>MTH 401</alert>
 
+  <section xml:id="subsubsec-">
+    <title>Section 1: Vector Calculus</title>
+    <subsection>
+      <title>Part 1.1: Line Integrals</title>
+      
+      
+      <introduction>
+        <p>
+          The first portion of this class will look a little closer at vector calculus.
+          In particular, here we will focus on line integrals.
+        </p>
+      </introduction>
+    </subsection>
+  </section>
+    
+
   <exercise>
     <introduction>
       <p>Suppose that <m>{\mathbf F}(x,y) = (x^2, xy)</m> and that <m>C_1</m>,
@@ -132,5 +148,6 @@
   counter-clockwise direction.  Find the line integral <m>\lineint{C}{F}</m>.</p>
     </statement>
   </exercise>
+
 
 </worksheet>

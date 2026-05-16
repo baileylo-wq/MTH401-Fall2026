@@ -3,6 +3,28 @@
   <title>3. The FTC of line integrals</title>
   <alert>MTH 401</alert>
 
+  <definition xml:id="def-conservative-field">
+    <statement>
+      <p>
+        A field <m>\mbf F</m> is <term>conservative</term> if there exists some function <m>f</m>
+        for which <m>F = \nabla f</m>. The function <m>f</m> is called the <term>potential function for <m>\mbf F</m></term>.
+      </p>
+      <p>
+        (Note that physicists usually use <m>F=-\nabla f</m>, but it is essentially the same.)
+      </p>
+    </statement>
+  </definition>
+
+  <theorem xml:id="thm-conservative-FTC">
+    <statement>
+      <p>
+        The <term>FTC for line integrals</term>: if <m>\mbf F</m> is conservative and <m>\mbf F = \nabla f</m>, 
+        then <md>\lineint{C}{F} = f(Q)-f(P)</md> where <m>C</m> goes from point <m>P</m> to point <m>Q</m>.
+      </p>
+    </statement>
+  </theorem>
+  
+
   <exercise workspace="1.25in">
     <introduction>
       <p>Suppose that <m>{\mathbf F} = \nabla f</m> where <m>f(x,y) = 3x^2y -
@@ -73,9 +95,9 @@
     </introduction>
     <task workspace="0.5in">
       <statement>
-        <p>If <m>{\mathbf F}</m> is a conservative vector field, what is the
-  line integral <m>\lineint{C}{F}</m> is <m>C</m> is a closed curve;  that is,
-  <m>C</m> has the same initial and final point?  (Note:  we often write
+        <p>Assume <m>C</m> is a closed curve;  that is,
+  <m>C</m> has the same initial and final point. If <m>{\mathbf F}</m> is a conservative vector field, what is the
+  line integral <m>\lineint{C}{F}</m>.  (Note:  we often write
   such as integral as <m>\olineint{C}{F}</m> to denote the fact that <m>C</m> is
   closed.)   Explain your response.</p>
       </statement>
@@ -94,7 +116,7 @@
     </task>
     <task workspace="0.5in">
       <statement>
-        <p>If <m>{\mathbf F}</m> conservative?  Explain your response.</p>
+        <p>Is <m>{\mathbf F}</m> in the previous part conservative?  Explain your response.</p>
       </statement>
     </task>
   </exercise>
@@ -128,7 +150,7 @@
       </prefigure>
     </image>
     <image>
-        <shortdescription>A vector field, all arrows points counter-clockwise in a cocentric circles centered around the origin.</shortdescription>
+        <shortdescription>A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-3-slope2">
         <diagram dimensions="(300,300)" margins="5">
           <definition>f(t,y) = (-y[1],y[0])</definition>
