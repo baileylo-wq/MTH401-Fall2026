@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>6: Green's Theorem</title>
+  <title>1.5. Green's Theorem</title>
   <alert>MTH 401</alert>
 
   <theorem xml:id="thm-Greens-theorem">
@@ -108,11 +108,11 @@
     <image>
       <shortdescription>A vector field, all vectors point radially away from the origin.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve3">
-        <diagram dimensions="(200,200)" margins="5">
-          <definition>f(t,y) = (y[0],y[1])</definition>
+        <diagram dimensions="(180,180)" margins="5">
+          <definition>f(x,y) = (x,y)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f"/>
           </coordinates>
         </diagram>
       </prefigure>
@@ -120,11 +120,11 @@
     <image>
         <shortdescription>A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve4">
-        <diagram dimensions="(200,200)" margins="5">
-          <definition>f(t,y) = (-y[1],y[0])</definition>
+        <diagram dimensions="(180,180)" margins="5">
+          <definition>f(x,y) = (-y,x)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f"/>
           </coordinates>
         </diagram>
       </prefigure>
@@ -132,11 +132,11 @@
         <image>
         <shortdescription>A vector field, all arrows point point horizontally towards the y-axis.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve5">
-        <diagram dimensions="(200,200)" margins="5">
-          <definition>f(t,y) = (-y[0],0)</definition>
+        <diagram dimensions="(180,180)" margins="5">
+          <definition>f(x,y) = (-x,0)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f" thickness="2"/>
           </coordinates>
         </diagram>
       </prefigure>

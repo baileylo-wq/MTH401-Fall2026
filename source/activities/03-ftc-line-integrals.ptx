@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>3. The FTC of line integrals</title>
+  <title>1.2. The FTC of line integrals</title>
   <alert>MTH 401</alert>
 
   <definition xml:id="def-conservative-field">
@@ -140,11 +140,11 @@
     <image>
       <shortdescription>A vector field, all vectors point radially away from the origin.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-3-slope1">
-        <diagram dimensions="(300,300)" margins="5">
-          <definition>f(t,y) = (y[0],y[1])</definition>
+        <diagram dimensions="(200,200)" margins="5">
+          <definition>f(x,y) = (x,y)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f"/>
           </coordinates>
         </diagram>
       </prefigure>
@@ -152,11 +152,11 @@
     <image>
         <shortdescription>A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-3-slope2">
-        <diagram dimensions="(300,300)" margins="5">
-          <definition>f(t,y) = (-y[1],y[0])</definition>
+        <diagram dimensions="(200,200)" margins="5">
+          <definition>f(x,y) = (-y,x)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f"/>
           </coordinates>
         </diagram>
       </prefigure>

@@ -1,60 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>7: Finding potentials</title>
+  <title>1.6. Finding potentials</title>
 
-  <exercise workspace="1in">
+  <alert>MTH 401</alert>
+
+  <theorem xml:id="thm-conservative-implies-curl">
+    <statement>
+      <p>
+        If <m>\mbf F</m> is a conservative vector field (i.e. if <m>\mbf F = \nabla f</m> for some 
+        <m>f</m>), then <md>
+          \nabla \times \mbf F = \nabla \times (\nabla f) = \zerovec
+        </md>.
+      </p>
+    </statement>
+  </theorem>
+
+  <alert>However, the reverse is not always true without an additional condition!</alert>
+  
+  <theorem xml:id="thm-curl-implies-conservative">
+    <statement>  
+      <p>
+        If <m>\nabla \times \mbf F = \zerovec</m> in a simply connected domain <m>D</m>, then 
+        <m>\mbf F</m> is a conservative field within <m>D</m> and we can find a potential function in <m>D</m> such that <m>
+          \mbf F = \nabla f
+        </m> within the domain <m>D</m>. 
+      </p>
+    </statement>
+  </theorem>
+
+      <p>
+        To find the <term>potential function <m>f</m></term>, choose an arbitrary basepoint <m>*</m> 
+        and integrate over any path from that basepoint to some point 
+        <m>(x_0,y_0)</m>. Then the potential function is <md>f(x_0,y_0)= \work{C}{F}</md>.
+      </p>
+  
+
+  <exercise workspace="0in">
     <introduction>
-      <p>Let's consider the field <m>F(x,y) = (2xy,x^2)</m>.</p>
+      <p>Let's consider the field <m>\mbf F(x,y) = (2xy,x^2)</m>.</p>
     </introduction>
-    <task workspace="1in">
+    <task workspace="0.7in">
       <statement>
         <p>Verify that
-  <m>\nabla\times F = 0</m>.</p>
+  <m>\nabla\times \mbf F = 0</m>.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.7in">
       <statement>
         <p>Suppose that <m>C_1</m> and <m>C_2</m> are two paths with the same initial and
-  final points, explain why <m>\work{C_1}{F} = \work{C_2}{F}</m>.</p>
+  final points, explain why <m>\ds \work{C_1}{F} = \work{C_2}{F}</m>.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0in">
       <statement>
         <p>Let's find a potential function for <m>F</m> by choosing the basepoint <m>*
   = (0,0)</m>.  For a point <m>(x_0, y_0)</m>, integrate over this curve <m>C</m>
   to define
   <md>
-  f(x_0,y_0) = \work{C}{F}.
+  \ds f(x_0,y_0) = \work{C}{F}.
   </md></p>
-        <p>\includegraphics{figures/07-curve.eps}</p>
+       <image width="20%" margins="0% 80%">
+      <shortdescription>The curve in which we integrate over, see description.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic1">
+        <diagram dimensions="(150,150)" margins="0">
+    
+          <coordinates bbox="(-1,-1,4,4)">
+            <axes xlabel="x" ylabel="y" decorations="no" />
+            <path start="(0,0)" stroke="blue" arrows="1" thickness="3">
+              <lineto point="(3,0)"/>
+              <lineto point="(3,2)"/>
+            </path>
+            <point p="(0,0)" stroke="blue" fill="blue"></point>
+            <point p="(3,2)" stroke="blue" fill="blue"/>
+            <label anchor="(0,0)" alignment = "nw" offset="(-5,3)">
+              <m>* </m>
+            </label>
+            <label anchor="(3,2)" alignment="nw" offset="(-3,3)">
+              <m>(x_0, y_0)</m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description> 
+        <p> The path begins at the origin, travels along the x-axis until some value <m>x_0</m>, 
+      then travels vertically until it reaches the point <m>(x_0,y_0)</m>.</p>
+      </description>
+    </image>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.7in">
       <statement>
         <p>Verify that the function <m>f(x,y)</m> that you have found is a potential
-  for <m>F</m>.</p>
+  for <m>\mbf F</m>.</p>
       </statement>
     </task>
   </exercise>
 
-  <exercise>
+  <exercise workspace="0in">
     <introduction>
       <p>Consider the field
-  <md>
-  F(x,y) = \left(-\frac{y}{x^2+y^2}, \frac{x}{x^2+y^2}\right).
+  <md> 
+    \ds \mbf F(x,y) = \left(-\frac{y}{x^2+y^2}, \frac{x}{x^2+y^2}\right).
   </md>
-  We have seen that <m>\nabla\times F = 0</m> but that the field is not
+  We have seen that <m>\nabla\times \mbf F = 0</m> but that the field is not
   defined at the origin <m>(0,0)</m> so that the domain of the field is not
   simply connected.</p>
     </introduction>
+    <task workspace="0.5in">
+      <statement>
+        <p>Let's attempt to find a potential function by integrating.  Choose the
+  basepoint to be <m>(1,0)</m>.  To define <m>\ds f(x_0, y_0)</m>, integrate along
+  the positive <m>x</m>-axis and then along a circular arc traversed in the
+  counterclockwise direction. (Polar coordinates could be useful for part of this...) 
+  </p>
+        <image width="25%" margins="0% 75%">
+      <shortdescription>The curve in which we integrate over to find a potential function, see description.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic2">
+        <diagram dimensions="(150,150)" margins="5">
+    
+          <coordinates bbox="(-1,-1,7,7)">
+            <axes  decorations="no" />
+            <path start="(1,0)" stroke="blue" arrows="1" thickness="3">
+              <lineto point="(6,0)"/>
+              <arc center="(0,0)" radius="6" range="(0,60)"/>
+            </path>
+            <point p="(1,0)" stroke="blue" fill="blue"></point>
+            <point p="(6*cos(pi/3),6*sin(pi/3))" stroke="blue" fill="blue"></point>
+
+            <label anchor="(1,0)" alignment = "s" offset="(25,-3)">
+              <m>* = (1,0) </m>
+            </label>
+            <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
+              <m>(x_0, y_0)</m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description> 
+        <p>The path begins at the a basepoint <m>(1,0)</m>, travels right along the <m>x</m>-axis for some time, 
+      then travels along a circular arc centered at the origin until it reaches the point <m>(x_0,y_0)</m>.</p>
+      </description>
+    </image>
+  </statement>
+    </task>
     <task workspace="1in">
       <statement>
-        <p>Let's try to find a potential function by integrating.  Choose the
-  basepoint to be <m>(1,0)</m>.  To define <m>f(x_0, y_0)</m>, integrate along
-  the positive <m>x</m>-axis and then along a circular arc traversed in the
-  counterclockwise direction.  What do you
-  find for <m>f(2,0)</m>?  <m>f(0,2)</m>?  <m>f(-2,0)</m>?  <m>f(0,-2)</m>?</p>
-        <p>\includegraphics{figures/07-radial.eps}</p>
+        <p>
+          What do you
+  find for <m>f(2,0)</m>?  <m>f(0,2)</m>?  <m>f(-2,0)</m>?  <m>f(0,-2)</m>?
+        </p>
       </statement>
     </task>
     <task workspace="1in">
@@ -65,35 +159,126 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Why doesn't <m>f</m> define a potential function for <m>F</m> in the region
-  where <m>F</m> is defined?</p>
+        <p>Why doesn't <m>f</m> define a potential function for <m>\mbf F</m> in the region
+  where <m>\mbf F</m> is defined?</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0in">
       <statement>
-        <p>If <m>C</m> is the curve shown below, what is <m>\work{C}{F}</m>?</p>
-        <p>\includegraphics{figures/07-homotopy.eps}</p>
+        <p>Hmmm... Let's try to avoid the problem (the origin) by literally going around the problem.  If <m>C</m> is the curve shown below, what is <m>\work{C}{F}</m>?</p>
+        <image width="25%" margins="0% 75%">
+      <shortdescription>The closed curve in which we integrate over to find the work, see description.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic3">
+        <diagram dimensions="(150,150)" margins="5">
+    
+          <coordinates bbox="(-7,-7,7,7)">
+            <axes  decorations="no" />
+            <path start="(6,0)" stroke="blue" arrows="1" thickness="3">
+              <arc center="(0,0)" radius="6" range="(0,345)"/>
+              <lineto point="(2*cos(345),2*sin(345))"/>
+            </path>
+            <path start="(2*cos(345),2*sin(345))" stroke="blue" arrows="1" thickness="3">
+              <arc center="(0,0)" radius="2" range="(345,0)"/>
+              <lineto point="(6,0)"/>
+            </path>
+            <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
+              <m>C</m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description> 
+        <p>The path begins at a point on the positive <m>x</m>-axis, travels right along the <m>x</m>-axis for some time, 
+      then travels counterclockwise along a circular arc centered at the origin until it almost goes full circle, 
+      then it cuts left until just to the left and below the initial starting point on the positive <m>x</m>-axis,
+      then travels clockwise along a circular arc centered at the origin until it connects back with the initial point.
+      </p>
+      </description>
+    </image>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.1in">
       <statement>
-        <p>Now imagine the two radial pieces of <m>C</m> coming together and explain
-  why <m>\work{C_1}{F} = \work{C_2}{F}</m> where <m>C_1</m> and <m>C_2</m> are the
+        <p>Now imagine the two radial pieces of <m>C</m> merging together and explain
+  why <m>\ds \work{C_1}{F} = \work{C_2}{F}</m> where <m>C_1</m> and <m>C_2</m> are the
   two circles below.</p>
-        <p>\includegraphics{figures/07-homotopy-2.eps}</p>
+        <image width="20%" margins="0% 80%">
+      <shortdescription>Two co-centric circles around the origin traveling counterclockwise.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic4">
+        <diagram dimensions="(150,150)" margins="5">
+    
+          <coordinates bbox="(-7,-7,7,7)">
+            <axes  decorations="no" />
+            <arc center="(0,0)" radius="2" range="(40,400)" arrows="1"
+                stroke="blue" thickness="3" reverse="no" arrow-location="3"/>
+            <arc center="(0,0)" radius="6" range="(40,405)" arrows="1"
+                stroke="blue" thickness="3" reverse="no"/>
+            <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
+              <m>C_1</m>
+            </label>
+            <label anchor="(2,2)" offset="(5,0)">
+              <m>C_2</m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+      <description> 
+        <p>
+          Two circles are centered at the origin and oriented counterclockwise, 
+          with <m>C_1</m> the circle with a smaller radius and <m>C_2</m> the larger radius.
+      </p></description>
+    </image>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.1in">
       <statement>
         <p>If <m>C_1</m> and <m>C_2</m> are the two curves shown below, explain why
-  <m>\work{C_1}{F} = \work{C_2}{F}</m>.</p>
-        <p>\includegraphics[scale=0.7]{figures/07-homotopy-3.png}</p>
+  <m>\ds \work{C_1}{F} = \work{C_2}{F}</m>.</p>
+
+  <image width="25%" margins="0% 75%">
+      <shortdescription>Two "squiggly" co-centric curves around the origin traveling counterclockwise.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic5">
+        <diagram dimensions="(150,150)" margins="5">
+    
+          <coordinates bbox="(-7,-7,7,7)">
+            <axes  decorations="no" />
+            <spline points="((2,0),(2,1),(1,2),(-1,2),(-2,0),(-1,-2),(1,-1),(2,0))"
+            closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="2"/>
+            <spline points="((5,0),(4,4),(1,4),(-1,5),(-4,0),(-1,-5),(1,-3),(5,0))"
+            closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="1"/>
+            <label anchor="(4,3)" alignment="ne" offset="(4,3)">
+              <m>C_1</m>
+            </label>
+            <label anchor="(3,1)" offset="(1,4)">
+              <m>C_2</m>
+            </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.1in">
       <statement>
-        <p>Find <m>\work{C}{F}</m> if <m>C</m> is the curve below.</p>
-        <p>\includegraphics[scale=0.7]{figures/07-homotopy-4.png}</p>
+        <p>Find <m>\ds \work{C}{F}</m> if <m>C</m> is the curve below.</p>
+        <image width="25%" margins="0% 75%">
+      <shortdescription>One squiggly curve traversing the origin counterclockwise three times before crossing itself to connect back to its initial point.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic6">
+        <diagram dimensions="(150,150)" margins="5">
+    
+          <coordinates bbox="(-7,-7,7,7)">
+            <axes  decorations="no" />
+            <spline points="((1,1),(0.5,2),(-1,2),(-2,0),(-1,-2),(1,-2),(3,-1), (3,1),(1,4),(-2,3),(-4,0),(-2,-2),(0,-5),(3,-2),(5,0),(4,4),(1,6),(-3,5),(-6,0),(-3,-6),(1,-6),(4,-4),(6,0),(6,5),(4,6),(2.5,1),(1,1))"
+            closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="22.6"/>
+        
+            <label anchor="(-5,4)" alignment="ne" offset="(-4,3)">
+              <m>C</m>
+            </label>
+    
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
       </statement>
     </task>
   </exercise>

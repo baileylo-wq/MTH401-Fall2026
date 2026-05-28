@@ -1,26 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>8: Gauss' law and the divergence theorem</title>
+  <title>1.7. Gauss' Law and the Divergence Theorem</title>
+  <alert>MTH 401</alert>
+
+  <theorem xml:id="thm-gauss-law">
+    <statement>
+      <p>
+        <term>Gauss' Law</term>. Consider an electric field <m>\mbf E</m> through a closed surface <m>S</m>
+        which encloses the total charge <m>Q</m>. 
+      
+        Then the electric 
+        <em>flux</em> out of <m>S</m> is equal to
+        the total charge enclosed scaled by the permittivity constant, that is
+        <md>
+          \ds \text{flux}  = \oiint_S \mbf E \cdot ~d\mbf A = \oiint_S \mbf E \cdot \hat \nvec ~dA= \frac{Q}{\epsilon_0}
+        </md>
+        where  <m>\epsilon_0</m> is the <em>free space permittivity</em> constant (<m>\epsilon_0\approx 8.854\times 10^{-12}</m> Farads/meter) and 
+        <m>\hat n</m> is the <em>outward normal vector</em>.
+      </p>
+      <p>
+        The electric displacement, <m>\mbf D</m>, is given by <m>\mbf D = \epsilon_0 \mbf E</m>, thus equivalently 
+        <md>
+          \oiint_S \mbf D \cdot ~d\mbf A = \oiint_S \mbf D \cdot \hat \nvec ~dA = Q.
+        </md>
+        Using the divergence theorem where <m>\rho</m> is the total volume charge density (charge per unit volume), the <term>differential form of Gauss' Law</term> is:
+        <md>
+          \ds \nabla \cdot \mbf E = \frac{\rho}{\epsilon_0}
+        </md>.
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+        To find the <term>electric potential <m>\phi</m></term>, choose a path <m>C</m> from an arbitrary basepoint <m>*</m> 
+       to some point <m>(x,y)</m>. Then <md>\phi(x,y)= \work{C}{E}</md>.
+      </p>
+  
 
   <exercise workspace="1in">
     <introduction>
       <p>Suppose that we have an infinitely thin charged plate whose
   charge density is 13 Coulombs per square meter as shown on the
-  left.</p>
+  left below.</p>
     </introduction>
-    <task workspace="1in">
+    <task workspace="0in">
       <statement>
         <p>What does the symmetry of this situation imply about the
   direction of the electric field and electric displacement vectors?</p>
-        <p>\begin{center}
-    \includegraphics[scale=0.7]{figures/pillbox.png}
-  \end{center}</p>
+             <image width="45%" margins="0% 55%">
+      <shortdescription>Arrows indicate the <m>x,y,z</m>-axes. A plane shown on the left in the <m>x,y</m>-plane, and on the right is a copy of the plane with a cylinder oriented such that the plane cuts the cylinder exactly in half and so that the plane makes a circular slice through the cylinder.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-8-gauss1">
+        <diagram dimensions="(350,100)" margins="5">
+          <definition>points=((0.6,0.4),(4.8,0.4),(5.8,2.4),(1.6,2.4))</definition>
+    <definition>points2=((6.2,0.4),(10.4,0.4),(11.4,2.4),(7.2,2.4))</definition>
+    <definition>f(x)=-0.1*sqrt(1 - ((x-8.8)/(0.8))^2)+2.1</definition>
+    <definition>g(x)=-0.1*sqrt(1 - ((x-8.8)/(0.8))^2)+1.45</definition>
+          <coordinates bbox="(0,0,12,3)">
+            <axes  decorations="no" axes="none"/>
+            <polygon points="points" stroke="black" closed="yes" fill="gray" fill-opacity="0.2"/>
+            <polygon points="points2" stroke="black" closed="yes" fill="gray" fill-opacity="0.2"/>
+            <path start="(8.0,2.1)" stroke="none" closed="yes" fill="white">
+              <lineto point="(8.0,1.45)" />
+              <graph function="g" domain="(8,9.6)"/>
+              <lineto point="(9.6,2.1)" />
+              <graph function="f" />
+            </path>
+            <ellipse center="(8.8,2.1)" axes="(.8,0.1)" stroke="blue" rotate="0" degrees="no" fill="white"/>
+            <ellipse center="(8.8,.8)" axes="(.8,0.1)" stroke="blue" rotate="0" degrees="no" dash="2.3"  opacity="0.4"/>
+            <ellipse center="(8.8,1.45)" axes="(.8,0.1)" stroke="blue" rotate="0" degrees="no" dash="2.3" fill="gray" opacity="0.4"/>
+            <line p1="(8.0,2.1)" p2="(8.0,1.45)" stroke="blue"/>
+            <line p1="(9.6,2.1)" p2="(9.6,1.45)" stroke="blue"/>
+            <line p1="(8.0,.8)" p2="(8.0,1.45)" stroke="blue" dash="2.3" opacity="0.4"/>
+            <line p1="(9.6,.8)" p2="(9.6,1.45)" stroke="blue" dash="2.3" opacity="0.4"/>
+            <vector v="(1,0)" tail="(0.9,0.6)" thickness="2"/>
+            <vector v="(0,1)" tail="(0.9,0.6)" thickness="2"/>
+            <vector v="(1/sqrt(5),2/sqrt(5))" tail="(0.9,0.6)" thickness="2"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
         <p>Suppose we take a Gaussian surface that is a cylinder of radius <m>r</m>
-  as shown on the right.  How much electric charge is contained within
+  as shown on the right above.  How much electric charge is contained within
   the cylinder?  (Remember that all the charge is on the plate.)</p>
       </statement>
     </task>
@@ -29,13 +93,13 @@
         <p>What does Gauss' Law tell us about the strength of the electric
   displacement <m>\mbf D</m> at a position <m>h</m> meters above the plate?
   (What can you say about the flux of <m>\mbf D</m> through the curvy sides
-  of the cylinder?</p>
+  of the cylinder?)</p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>Suppose that we want to create a potential <m>f</m> for the electric
-  field <m>\mbf E</m> (remember that <m>\mbf D = \epsilon_0 \mbf E</m>.  Let's
+        <p>Suppose that we want to create a potential <m>\phi</m> for the electric
+  field <m>\mbf E</m> (remember that <m>\mbf D = \epsilon_0 \mbf E</m>).  Let's
   choose a basepoint <m>*</m> on the plate.  What is the value of the
   potential <m>h</m> meters above the plate?</p>
       </statement>
@@ -47,19 +111,36 @@
       <p>Suppose that we have an infinitely thin, infinitely long charged
   wire whose charge density is <m>\lambda</m> Coulombs per meter.</p>
     </introduction>
-    <task workspace="1in">
+    <task workspace="0in">
       <statement>
         <p>Choose a
   cylindrical Gaussian surface of radius <m>r</m> and height <m>h</m> as shown
-  below.</p>
-        <p>\begin{center}
-    \includegraphics[scale=0.7]{figures/wire.png}
-  \end{center}</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>How much electric charge is inside the surface?</p>
+  below. How much electric charge is inside the surface?</p>
+             <image width="20%" margins="0% 80%">
+      <shortdescription>Arrows indicate the <m>x,y,z</m>-axes. A wire extends vertically, and a cylinder gaussian surface is wrapped symmetrically around the wire.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-8-gauss2">
+        <diagram dimensions="(200,200)" margins="5">
+          <coordinates bbox="(7,1,10.5,2.5)">
+            <axes  decorations="no" axes="none"/>
+            <definition>f(x)=-0.1*sqrt(1 - ((x-8.8)/(0.8))^2)+1.45</definition>
+            <ellipse center="(8.8,2.1)" axes="(.8,0.1)" stroke="blue" rotate="0" degrees="no" fill="white"/>
+            <ellipse center="(8.8,1.45)" axes="(.8,0.1)" stroke="blue" rotate="0" degrees="no" dash="2.3" fill="gray" opacity="0.4"/>
+
+            <line p1="(8.0,2.1)" p2="(8.0,1.45)" stroke="blue"/>
+            <line p1="(9.6,2.1)" p2="(9.6,1.45)" stroke="blue"/>
+            <line p1="(8.8,1)" p2="(8.8,1.34)" stroke="blue"/>
+            <line p1="(8.8,1.34)" p2="(8.8,2)" stroke="blue" dash="2" opacity="0.8"/>
+            <line p1="(8.8,2)" p2="(8.8,2.5)" stroke="blue"/>
+            <path start="(8,1.45)" stroke="blue" closed="no">
+              <graph function="f" domain="(8.0,9.6)"/>
+            </path>
+            <vector v="(0.4,0)" tail="(7.5,1.45)" thickness="2"/>
+            <vector v="(0,0.4)" tail="(7.5,1.45)" thickness="2"/>
+            <vector v="(2*0.4/sqrt(5),1*0.4/sqrt(5))" tail="(7.5,1.45)" thickness="2"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
       </statement>
     </task>
     <task workspace="1in">
@@ -96,31 +177,40 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Suppose that <m>\mbf V = \rho \mbf F</m>.  What are the units on <m>V</m>?</p>
+        <p>Suppose that <m>\mbf U = \rho \mbf F</m>.  What are the units on <m>U</m>?</p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>If <m>S</m> is a surface, what is the physical meaning of <m>\iint_S \mbf
-  V \cdot \mbf n~ dA</m> if <m>\mbf n</m> is a field normal to <m>S</m>?</p>
+        <p>If <m>S</m> is a surface, what is the physical meaning of <m>\ds \iint_S \mbf
+  U \cdot \hat\nvec~ dA</m> if <m>\hat \nvec</m> is the outward normal to <m>S</m>? (Think units again...)</p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>If <m>S</m> is a closed surface with outward normal <m>\mbf n</m> bounding a
+        <p>If <m>S</m> is a closed surface with outward normal <m>\hat \nvec</m> bounding a
   region <m>E</m>, explain why 
   <md>
-  \frac{d}{dt}\iiint_E \rho ~dV = -\oiint_S \mbf V\cdot\mbf n~dA,
+  \ds \frac{d}{dt}\iiint_E \rho ~dV = -\oiint_S \mbf U\cdot\hat \nvec~dA,
   </md></p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>Explain why <m>\frac{\partial \rho}{\partial t} + \nabla \cdot \mbf
-  V = 0</m>.   This is called the <em>equation of continuity</em> and is an
+        <p>Explain why <m>\ds \frac{\partial \rho}{\partial t} + \nabla \cdot \mbf
+  U = 0</m>.   This is called the <term>continuity equation</term> which describes the transport of mass and is an
   expression of conservation of mass.</p>
       </statement>
     </task>
   </exercise>
 
+  <p>
+    Fun fact: <term>Continuity equations</term> are stronger, local versions of conservation laws.  For example, the 
+    <term>Law of Conservation of Mass</term> says that matter cannot be created or destroyed in an isolated system, 
+    that is, the total mass is conserved. But it does not say that matter cannot teleport!  Matter that disappears
+    from one area and reappears instantaneously in another area within the system would be completely acceptable 
+    according to the conservation law. The continuity 
+    equation says more: mass is <em>locally</em> conserved. Matter cannot be created nor destroyed, and it also cannot teleport. It can only move 
+    through a continuous flow. The way that mass flows is described by its flux. (Other quantities with continuity equations include energy, momentum, electric charge, ...)
+  </p>
 </worksheet>

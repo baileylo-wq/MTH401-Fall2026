@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>5: The divergence theorem</title>
+  <title>1.4. The Divergence Theorem</title>
   
   <alert>MTH 401</alert>
 
 <definition xml:id="def-flux">
   <statement>
     <p>
-      The flux of a field <m>\mbf F</m> across a curve <m>C</m> is <md>\ds \int_C \mbf F\cdot\nvec ~ds</md> where
-    <m>\nvec</m> is the normal vector to the curve. 
+      The flux of a field <m>\mbf F</m> across a curve <m>C</m> is <md>\ds \int_C \mbf F\cdot\hat\nvec ~ds</md> where
+    <m>\hat\nvec</m> is the <em>outward normal vector</em> to the curve. 
     </p>
   </statement>
 </definition>
@@ -18,7 +18,7 @@
         If the curve <m>C</m> is
 closed, then the <term>Divergence Theorem</term> in two dimensions tells us
 <md>
-\oint_C \mbf F\cdot\nvec~ds = \iint_D \nabla\cdot \mbf F~dA
+\oint_C \mbf F\cdot\hat \nvec~ds = \iint_D \nabla\cdot \mbf F~dA
 </md>
 where <m>D</m> is the two-dimensional region inside the closed curve <m>C</m>.  That is, the total outward flux 
 of a field across a closed curve is equivalent to the double integral of the divergence of that field over the enclosed region.
@@ -35,11 +35,11 @@ apply.
     <introduction>
       <p>Suppose that <m>\mbf F(x,y) = (x, -2)</m> and <m>C</m> is the line segment
   joining the points <m>(-1,0)</m> and <m>(1,0)</m> with normal vector
-  <m>\nvec=(0,1)</m> pointing up.</p>
+  <m>\hat \nvec=(0,1)</m> pointing up.</p>
     </introduction>
     <task workspace="0in">
       <statement>
-        <p>Find the flux of <m>\mbf F</m> through <m>C</m> in the direction <m>\nvec</m>, the
+        <p>Find the flux of <m>\mbf F</m> through <m>C</m> in the direction <m>\hat \nvec</m>, the
   upward pointing normal.</p>
       
        <image width="20%" margins="0% 80%">
@@ -60,7 +60,7 @@ apply.
               <m>C</m>
             </label>
             <label anchor="(1,0.5)" alignment="e" offset="(5,0)">
-              <m>\nvec</m>
+              <m>\hat \nvec</m>
             </label>
           </coordinates>
         </diagram>
@@ -68,7 +68,7 @@ apply.
       <description>
         <p>
           A curve <m>C</m> is shown that is the straight line between <m>(-1,0)</m>
-          and <m>(1,0)</m>, and the normal direction to the curve pointing upwards is also shown.
+          and <m>(1,0)</m>, and the normal vector to the curve pointing upwards is also shown.
         </p>
       </description>
   </image>  
@@ -78,7 +78,7 @@ apply.
     <task workspace="0in">
       <statement>
         <p>Suppose now that <m>C</m> is the closed curve shown below.  Use the
-  divergence theorem to find the flux of <m>\mbf F</m> across <m>C</m> in the outward
+  divergence theorem to find the flux of <m>\mbf F</m> across <m>C</m> in the outward normal
   direction.</p>
       <image width="20%" margins="0% 80%">
         <shortdescription>The flux going through a closed curve, see description below.</shortdescription>
@@ -133,11 +133,11 @@ apply.
     <image>
       <shortdescription>A vector field, all vectors point radially away from the origin.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-5-slope1">
-        <diagram dimensions="(200,200)" margins="5">
-          <definition>f(t,y) = (y[0],y[1])</definition>
+        <diagram dimensions="(180,180)" margins="5">
+          <definition>f(x,y) = (x,y)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f" />
           </coordinates>
         </diagram>
       </prefigure>
@@ -145,11 +145,11 @@ apply.
     <image>
         <shortdescription>A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-5-slope2">
-        <diagram dimensions="(200,200)" margins="5">
-          <definition>f(t,y) = (-y[1],y[0])</definition>
+        <diagram dimensions="(180,180)" margins="5">
+          <definition>f(x,y) = (-y,x)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f" />
           </coordinates>
         </diagram>
       </prefigure>
@@ -157,11 +157,11 @@ apply.
         <image>
         <shortdescription>A vector field, all arrows point point horizontally towards the y-axis.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-5-slope3">
-        <diagram dimensions="(200,200)" margins="5">
-          <definition>f(t,y) = (-y[0],0)</definition>
+        <diagram dimensions="(180,180)" margins="5">
+          <definition>f(x,y) = (-x,0)</definition>
           <coordinates bbox="[-4,-4,4,4]">
             <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <slope-field function="f" system="yes" arrows="yes"/>
+            <vector-field function="f" />
           </coordinates>
         </diagram>
       </prefigure>
@@ -182,7 +182,7 @@ apply.
         the <term>Divergence Theorem</term> in three dimensions, (also called <term>Gauss's Theorem</term>), says that the total outward flux of the field through <m>S</m> is equal to the triple integral of the divergence of the field over <m>E</m>.
         That is, 
         <md>
-          \oiint_C \mbf F \cdot \nvec ~dA = \iiint_E \nabla \cdot \mbf F ~dV
+          \ds \oiint_C \mbf F \cdot \hat \nvec ~dA = \iiint_E \nabla \cdot \mbf F ~dV
         </md>
         
       </p>
