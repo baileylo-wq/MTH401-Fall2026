@@ -66,8 +66,6 @@
       <xi:include href="./activities/14-wave.ptx"/>
       <xi:include href="./activities/15-wave.ptx"/>
       <xi:include href="./activities/16-fourier.ptx"/>
-      <xi:include href="./activities/17-fourier-2020.ptx"/>
-      <xi:include href="./activities/17-laplace-2020.ptx"/>
       <xi:include href="./activities/17-laplace.ptx"/>
       <xi:include href="./activities/18-laplace-disk.ptx"/>
       <xi:include href="./activities/19-higher-dim.ptx"/>

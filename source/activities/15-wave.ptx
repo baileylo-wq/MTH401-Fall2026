@@ -1,31 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>15: The wave equation</title>
+  <title>2.6. The wave equation continued</title>
 
-  <exercise workspace="1in">
+  <alert>MTH 401</alert>
+  <p>
+    Let's put a few things together now.  We want to solve the equation with both specified boundary
+    conditions AND initial conditions.  
+  </p>
+  <remark>
+    <p>Words of wisdom:  It is 
+  generally a good idea to start by identifying which are the boundary conditions and 
+  which are the initial conditions, what is the length of the string, and
+  also determine if any part of this, such as the equation with the corresponding boundary conditions, is something 
+  we have previously solved...
+  </p>
+  </remark>
+
+
+  <exercise workspace="4.5in">
     <statement>
-      <p>Solve the wave equation with boundary conditions and
-  initial conditions:   
+      <p>Solve the wave equation with fixed boundary conditions (the 
+        ends of the string are clamped) and
+  initial conditions where both initial position and initial velocity are non-zero. 
   <md>
-<mrow>\frac{\partial^2 u}{\partial t^2} \amp  = \amp  4\frac{\partial^2 u}{\partial
+<mrow>\frac{\partial^2 u}{\partial t^2} \amp  =   4\frac{\partial^2 u}{\partial
       x^2}</mrow>
-<mrow>u(0,t) \amp  = \amp  0</mrow>
-<mrow>u(\pi,t) \amp  = \amp  0</mrow>
-<mrow>u(x,0) \amp  = \amp  \pi x-x^2</mrow>
-<mrow>\pd{u}{t}(x,0) \amp  = \amp  x</mrow>
+<mrow>u(0,t) \amp  =   0</mrow>
+<mrow>u(\pi,t) \amp  =   0</mrow>
+<mrow>u(x,0) \amp  =   \pi x-x^2</mrow>
+<mrow>\pd{u}{t}(x,0)  \amp  =  x</mrow>
 </md></p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+
+  <definition xml:id="def-free-ends">
     <statement>
-      <p>Find the general solution when the ends are ``free'' rather than 
-  clamped: 
+        <p>When an end is <em>fixed</em> or <em>clamped</em> at the boundary <m>x=a</m>, 
+          the boundary condition is <m>u(a,t)=0</m>. 
+        We've seen this a lot. 
+        </p> 
+        <p>When the 
+        end is <term>free</term> instead, we have a different boundary condition: 
+        <md>\ds \frac{\partial u}{\partial x}(a,t) = 0</md>. 
+      </p>
+    </statement>
+  </definition>
+  <exercise workspace="4in">
+    <statement>
+      <p>
+        Find the general solution to the following wave equation when the ends are <em>free</em> rather than 
+  clamped. (Note no initial conditions are given so alas we can only find the general solution here.) 
   <md>
-<mrow>\pdtwo{u}{t} \amp  = \amp  4 \pdtwo{u}{x}</mrow>
-<mrow>\frac{\partial u}{\partial x}(0,t) \amp  = \amp  0</mrow>
-<mrow>\frac{\partial u}{\partial x}(L,t) \amp  = \amp  0</mrow>
+<mrow>\pdtwo{u}{t} \amp  =   4 \pdtwo{u}{x}</mrow>
+<mrow>\frac{\partial u}{\partial x}(0,t) \amp  =   0</mrow>
+<mrow>\frac{\partial u}{\partial x}(L,t) \amp  =   0</mrow>
 </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="4in">
+    <statement>
+      <p>
+        Let's go back to the first problem and make one small change. Instead of 
+        clamped ends, we'll assume both ends are free. Though we'll keep the wave speed and initial 
+        conditions the same.
+      </p>
+      <p>
+        That is, solve the wave equation with the following boundary conditions and initial conditions:
+        <md>
+          <mrow>\frac{\partial^2 u}{\partial t^2} \amp  =   4\frac{\partial^2 u}{\partial
+      x^2}</mrow>
+<mrow>\frac{\partial u}{\partial x}(0,t) \amp  =   0</mrow>
+<mrow>\frac{\partial u}{\partial x}(\pi,t) \amp  =   0</mrow>
+<mrow>u(x,0) \amp  =   \pi x-x^2</mrow>
+<mrow>\pd{u}{t}(x,0)  \amp  =  x</mrow>
+        </md>
+        
+      </p>
     </statement>
   </exercise>
 

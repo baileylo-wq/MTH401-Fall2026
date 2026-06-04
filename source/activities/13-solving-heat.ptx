@@ -1,13 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>13: Solving the heat equation</title>
+  <title>2.4 Solving the heat equation</title>
+  <alert>MTH 401</alert>
+
+<remark>
+  <p>
+    General steps to solving the heat equation:
+    <dl>
+      <li>
+        <title>Step 1:</title>
+        <p>
+          Is it a homogeneous equation with homogeneous boundary conditions? If not, make it so.
+        </p>
+      </li>
+      <li>
+        <title>Step 2:</title>
+        <p>
+          Separation of variables.
+        </p>
+      </li>
+      <li>
+        <title>Step 3:</title>
+        <p>
+          Identify and solve the Sturm-Lioville problem.
+        </p>
+      </li>
+      <li>
+        <title>Step 4:</title>
+        <p>
+          Solve temporal differential equation, write product solutions, use superposition to write general solution.
+        </p>
+      </li>
+      <li>
+        <title>Step 5:</title>
+        <p>
+          Find Fourier Coefficients.
+        </p>
+      </li>
+    </dl>
+  </p>
+</remark>
+
   <introduction>
     <p>Here are some examples of the heat equation along with boundary and
 initial conditions.  Find a solution for each and graph it using
-Mathematica.</p>
+Mathematica (recommended, can use other technology).</p>
   </introduction>
 
-  <exercise workspace="1in">
+   <exercise workspace="3in">
+    <statement>
+      <p><md>
+  \begin{aligned}
+    \pd{u}{t} \amp  = 4 \pdtwo{u}{x} \\
+    u(0, t) \amp  = 0 \\
+    u(5, t) \amp  = 0 \\
+    u(x, 0) \amp  = 3\sin\left(\frac{\pi x}{5}\right)
+  \end{aligned}
+  </md></p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="5in">
     <statement>
       <p><md>
   \begin{aligned}
@@ -20,7 +73,7 @@ Mathematica.</p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p><md>
   \begin{aligned}
@@ -33,7 +86,7 @@ Mathematica.</p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p><md>
   \begin{aligned}
@@ -46,7 +99,7 @@ Mathematica.</p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p><md>
   \begin{aligned}

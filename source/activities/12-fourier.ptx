@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>12: Fourier series</title>
+  <title>2.3. Fourier Sine and Cosine series</title>
 
-  <exercise workspace="1in">
+  <alert>MTH 401</alert>
+
+  <definition xml:id="def-fourier-sine-series">
+    <statement>
+      <p>
+        For <m>0\le x \le L</m>, a <term>Fourier Sine Series</term> has the form
+        <md>
+          \ds f(x) = \sum\limits_{n=1}^{\infty} A_n \sin\left(\frac{n \pi x}{L}\right)
+        </md>
+        where <m>A_n</m> are the <term>Fourier Sine Coefficients for <m>f(x)</m></term>, given by
+        <md>
+          \ds A_n = \frac{2}{L} \int_{0}^L f(x) \sin\left(\frac{n \pi x}{L}\right) ~dx.
+        </md>
+      </p>
+    </statement>
+  </definition>
+
+  
+
+  <exercise workspace="2in">
     <statement>
       <p>Let's consider the function <m>f(x) = x^2 - \pi x</m> on the interval
   <m>[0,\pi]</m>.  Suppose that we want to find the Fourier sine series for
@@ -10,16 +29,15 @@
   <md>
   f(x) = \sum_{n=1}^\infty A_n\sin(nx).
   </md>
-  We know that the Fourier coefficients are <md>A_n =
-  \frac2\pi\int_0^\pi f(x)\sin(nx)~dx.</md></p>
-      <p>Find the Fourier coefficients <m>A_n</m> and graph the function <m>f(x)</m>
+ </p>
+      <p>Find the Fourier coefficients <m>A_n</m> (perhaps with technology?) and graph the function <m>f(x)</m>
   and an approximation to your Fourier series over the interval
   <m>[0,\pi]</m>.  Start with a small number of terms, say <m>n=1,\ldots,10</m>,
   and then add more in.</p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="3in">
     <statement>
       <p>Last time, we looked at another Sturm-Liouville problem:
   <md>
@@ -55,11 +73,38 @@
   f(x) = A_0 + 
   \sum_{n=1}^\infty A_n\cos\left(\frac{n\pi x}{L}\right)
   </md>
-  Find an expression for the Fourier
-  coefficients <m>A_n</m> (the expression for <m>A_0</m> will be a little
-  different than the expression for <m>A_n</m> with <m>n &gt; 0</m>.</p>
+  Use the fact that <m>\ds X_n = \cos\left(\frac{n\pi x}{L}\right)</m> thus <m>\ds f(x) = A_0X_0 + \sum_{n=1}^{\infty} A_n X_n</m> along with orthogonality
+  to find an expression for the Fourier
+  coefficients <m>A_n</m> (<m>A_0</m> will be a little
+  different than <m>A_n</m> with <m>n &gt; 0</m>).</p>
     </statement>
   </exercise>
+
+
+  <definition xml:id="def-fourier-cosine-series">
+    <statement>
+      <p>
+        For <m>0\le x \le L</m>, a <term>Fourier Cosine Series</term> has the form
+        <md>
+          \ds f(x) = A_0 + \sum\limits_{n=1}^{\infty} A_n \cos\left(\frac{n \pi x}{L}\right)
+        </md>
+        with <m>A_0</m> and <m>A_n</m> with <m>n>0</m> called the <term>Fourier Cosine Coefficients for <m>f(x)</m></term> given by 
+        <md>
+          <mrow>
+          \ds A_0 \amp = \frac{1}{L} \int_{0}^L f(x) ~dx
+          </mrow>
+          <mrow>
+          \ds A_n \amp = \frac{2}{L} \int_{0}^L f(x) \cos\left(\frac{n \pi x}{L}\right) ~dx.
+          </mrow>
+        </md>
+
+      </p>
+    </statement>
+  </definition>
+<p>
+    Does this definition match what you found in problem 2?  (If it doesn't, let's talk!)
+</p>
+
 
   <exercise workspace="3.5in">
     <statement>
@@ -71,7 +116,7 @@
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="3in">
     <statement>
       <p>Find the Fourier sine series for the constant function <m>f(x) =
   1</m> on the interval <m>[0,\pi]</m> and create a graph of the function and

@@ -290,8 +290,11 @@
 
 
 
-
-  <!--</subsection>-->
+<!--  
+<image source="images/pic.png" width="50%">
+    <description><p>A graph on five vertices. One of the vertices is isolated, while the other four form a path on four vertices.</p></description>
+</image>
+-->
 
 
 

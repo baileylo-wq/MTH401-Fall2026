@@ -4,7 +4,7 @@
   <alert>MTH 401</alert>
 
     <section xml:id="subsubsec-heat-wave">
-    <title>Section 2: The Heat and Wave Equations</title>
+    <title>Section 2: Partial Differential Equations in the form of the Heat and Wave Equations</title>
     <subsection>
       <title>Part 2.1: Introduction to the Heat Equation in One Dimension
       </title>
@@ -12,21 +12,24 @@
       <introduction>
         <p>
           We'll spend some time focusing on partial differential equations and how to solve them, 
-        specifically focusing on the heat and the wave equation.  In this worksheet we'll begin by focusing on the heat equation, and investigate 
+        specifically focusing on the heat and the wave equations (which use similar methods to solve).  In this worksheet we'll begin by focusing on the heat equation, and investigate 
         solutions and steady-states.
         </p>
       </introduction>
     </subsection>
   </section>
 
-  <theorem xml:id="thm-heat-eqn-1d">
+  <definition xml:id="def-heat-eqn-1d">
     <statement>
       <p>
         The <term>heat equation</term> with constant <m>\alpha</m> and heat source <m>S</m> is:
         <md>
           \ds \frac{\partial u}{\partial t} = \alpha \nabla^2 u + S
         </md>
-        where <m>\ds \nabla^2 u= \frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}</m> is the Laplacian of <m>u</m>.  If <m>S=0</m> the equation is called <term>homogeneous</term>.
+        where <m>\ds \nabla^2 u= \frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}</m> is the Laplacian of <m>u</m>.  
+      </p>
+      <p>
+        If <m>S=0</m> the equation is called <term>homogeneous</term>.
       </p>
       <p>
         In one dimension the heat equation simplifies to
@@ -35,30 +38,30 @@
         </md>
       </p>
     </statement>
-  </theorem>
+  </definition>
   
 
   <exercise>
     <introduction>
-      <p>Consider the homogeneous partial differential equation with
+      <p>Consider the homogeneous partial differential equation with homogeneous
     boundary conditions:
     <md>
-<mrow>\frac{\partial u}{\partial t} \amp  = \amp  7\frac{\partial^2
+<mrow>\ds \frac{\partial u}{\partial t} \amp  =  7\frac{\partial^2
         u}{\partial^2 x^2}</mrow>
-<mrow>u(0, t) \amp  = \amp  0</mrow>
-<mrow>u(10, t) \amp  = \amp  0</mrow>
+<mrow>u(0, t) \amp  =   0</mrow>
+<mrow>u(10, t) \amp  =   0</mrow>
 </md></p>
     </introduction>
-    <task workspace="1.5in">
+    <task workspace="1.3in">
       <statement>
-        <p>Verify that <m>u_1(x,t) = e^{-7\pi^2t/100}\sin\left(\frac{\pi
+        <p>Verify that <m> \ds u_1(x,t) = e^{-7\pi^2t/100}\sin\left(\frac{\pi
         x}{10}\right)</m> is a solution (this means a solution to the
     differential equation and the boundary conditions).</p>
       </statement>
     </task>
-    <task workspace="1.3in">
+    <task workspace="1.1in">
       <statement>
-        <p>Also verify that <m>u_2(x,t) = e^{-28\pi^2t/100}\sin\left(\frac{2\pi
+        <p>Also verify that <m>\ds u_2(x,t) = e^{-28\pi^2t/100}\sin\left(\frac{2\pi
         x}{10}\right)</m> is a solution.</p>
       </statement>
     </task>
@@ -76,25 +79,41 @@
     </task>
   </exercise>
 
+    <principle xml:id="principle-superposition">
+    <statement>
+      <p>
+        The <term>Superposition Principal</term> states that if <m>u_1</m> and <m>u_2</m> are 
+        independent solutions to a linear partial differential equation, then a linear combination
+        of <m>u_1</m> and <m>u_2</m> is also a solution.
+      </p>
+    </statement>
+  </principle>
+
   <exercise>
     <introduction>
       <p>Consider the heat equation
     <md>
-    \frac{\partial u}{\partial t} = 4\frac{\partial^2 u}{\partial x^2}
+    \ds \frac{\partial u}{\partial t} = 4\frac{\partial^2 u}{\partial x^2}
     </md>
     where <m>u(x,t)</m> is the temperature in a beam of length <m>2</m> with
     boundary conditions:
     <md>
-<mrow>u(0,t) \amp  = \amp  50</mrow>
-<mrow>u(2,t) \amp  = \amp  80</mrow>
+<mrow>u(0,t) \amp  =   50</mrow>
+<mrow>u(2,t) \amp  =   80</mrow>
 </md></p>
+      <p>
+        Notice the boundary conditions are not homogeneous (not equal zero).  This will actually 
+        present a problem for us later if we try to solve it directly.  So 
+        we need to find a workaround using something called the steady-state solution.
+      </p>
       <p>A time-independent solution is called a <em>steady-state</em>
-    solution <m>u_{ss}</m>;  that is, <m>\partial u_{ss}/\partial t = 0</m>.</p>
+    solution <m>\ds u_{ss}</m>;  that is, <m>\ds \frac{\partial u_{ss}}{\partial t} = 0</m>.</p>
     </introduction>
     <task workspace="1.5in">
       <statement>
         <p>Find the steady-state solution <m>u_{ss}</m> to the heat equation with
-    these boundary conditions.</p>
+    these boundary conditions. Hint: start from what it means to be the steady state solution and work backwards using simple antiderivatives to 
+  find <m>u_ss</m>, then make sure the constants satisfy the boundary conditions.</p>
       </statement>
     </task>
     <task workspace="1.25in">
@@ -109,9 +128,9 @@
     <task workspace="1in">
       <statement>
         <p>Find a partial differential equation (PDE) satisfied by <m>v</m>.  You could
-    do this by expressing <m>\frac{\partial v}{\partial t}</m> in terms of
-    <m>\frac{\partial u}{\partial t}</m> and <m>\frac{\partial^2
-      v}{\partial^2 x}</m> in terms of <m>\frac{\partial^2 u}{\partial^2
+    do this by expressing <m>\ds \frac{\partial v}{\partial t}</m> in terms of
+    <m>\ds \frac{\partial u}{\partial t}</m> and <m>\ds \frac{\partial^2
+      v}{\partial^2 x}</m> in terms of <m>\ds \frac{\partial^2 u}{\partial^2
       x}</m> and using the fact that <m>u</m> satisfies a PDE.</p>
       </statement>
     </task>
@@ -122,15 +141,15 @@
       <p>Suppose that we have a beam of length <m>1</m> and
     consider the heat equation with a source
     <md>
-    \frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2}+x.
+    \ds \frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2}+x.
     </md>
     and boundary conditions:
     <md>
-<mrow>\frac{\partial u}{\partial x}(0, t) \amp  = \amp  0</mrow>
-<mrow>u(1, t) \amp  = \amp  100.</mrow>
+<mrow>\frac{\partial u}{\partial x}(0, t)   \amp =  0</mrow>
+<mrow>u(1, t)  \amp =   100.</mrow>
 </md></p>
     </introduction>
-    <task workspace="1.5in">
+    <task workspace="1in">
       <statement>
         <p>Find the steady-state solution <m>u_{ss}</m>.</p>
       </statement>
@@ -142,5 +161,8 @@
       </statement>
     </task>
   </exercise>
+
+
+
 
 </worksheet>

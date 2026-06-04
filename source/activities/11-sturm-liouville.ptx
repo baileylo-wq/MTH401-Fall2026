@@ -1,52 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>11: Solving a Sturm-Liouville problem</title>
+  <title>2.2. Solving a Sturm-Liouville problem</title>
+
+  <alert>MTH 401</alert>
+
+
+
+  <definition xml:id="def-sturm-liouville">
+    <statement>
+      <p>
+      A general <term>Sturm-Liouville problem</term> has the form 
+      <md>
+        <mrow>\ds \frac{d}{dx}\left[p(x)\frac{du}{dx}\right] + q(x)u \amp = -\lambda \omega(x)u </mrow>
+        <mrow> u(a) \amp = c_1</mrow>
+        <mrow> u(b) \amp = c_2</mrow>
+      </md>
+      where <m>a, b</m> are the extreme boundary conditions of <m>x</m>. Solving a problem means finding the 
+     the <term>eigenvalues</term>, <m>\lambda</m>, that correspond to non-trivial solutions, and then find the 
+      corresponding solutions or <term>eigenfunctions</term> <m>u = u(x)</m> associated to each <m>\lambda</m>.
+    </p>
+    </statement>
+  </definition>
+
+    
+  <remark>
+    <p>
+      We'll mostly focus on the simpler form of the problem: (not always called <m>X</m>!):
+      <md>
+        <mrow> X'' \amp = -kX </mrow>
+        <mrow>X(a) \amp = 0 </mrow>
+        <mrow>X(b) \amp = 0. </mrow>
+      </md>
+    </p>
+  </remark>
+
+
+  <exercise>
   <introduction>
-    <p>We're going to consider the homogeneous heat equation when the ends
-are insulated.  This means we have
+    <p>Consider the homogeneous heat equation when the ends
+are insulated, i.e.
 <md>
-<mrow>\frac{\partial u}{\partial t} \amp  = \amp  6\frac{\partial^2
+<mrow>\ds \frac{\partial u}{\partial t} \amp  =   6\frac{\partial^2
                                       u}{\partial^2 x^2}</mrow>
-<mrow>\pd{u}{x}(0, t) \amp  = \amp  0</mrow>
-<mrow>\pd{u}{x}(10, t) \amp  = \amp  0</mrow>
+<mrow>\ds \pd{u}{x}(0, t) \amp  =   0</mrow>
+<mrow>\ds \pd{u}{x}(10, t) \amp  =   0</mrow>
 </md></p>
   </introduction>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>We'll start by applying separation of variables;  that is, we'll
-  look for a solution that has the form
-  <md>
-  u(x,t) = X(x) T(t).
-  </md>
-  Writing the solution in this form enables us to write the partial
-  derivatives of <m>u</m> in terms of ordinary derivatives of <m>X</m> and <m>T</m>.
-  Find those partial derivatives, substitute into the heat equation,
+    <task workspace="1.8in">
+      <statement>
+      <p>First apply separation of variables;  that is, 
+  look for a solution with the form
+  <m> u(x,t) = X(x) T(t).</m>
+  This will enable us to write the partial
+  derivatives of <m>u</m> in terms of simpler ordinary derivatives of <m>X</m> and <m>T</m>.
+  Find <m>\frac{\partial u}{\partial t}, \frac{\partial^2 u}{\partial^2 x^2}</m> in terms of <m>X(x), T(t)</m>, 
+  substitute into the heat equation,
   and rearrange the equation so that all occurrences of <m>x</m> are on one
   side and all the occurrences of <m>t</m> are on the other.  This leads to
   a separation constant <m>-k</m>.  You should then find (a) an ordinary
   differential equation for <m>T</m>, (b) an ordinary differential equation
   for <m>X</m>, and (c) two boundary conditions for <m>X</m>.</p>
     </statement>
-  </exercise>
+  </task>
 
-  <exercise workspace="2.3in">
+
+  <task>
     <statement>
       <p>The differential equation and boundary conditions for <m>X</m> are
   called a <em>Sturm-Liouville</em> problem.  As in the video, look for
   eigenvalues <m>k</m> and eigenfunctions <m>X</m> by considering</p>
-      <p><term>Case 1</term>:  <m>k &lt; 0</m> so that <m>k=-m^2</m>.  The differential equation
+<task workspace="1.8in">
+  <statement>
+    <p>
+      <term>Case 1</term>:  <m>k &lt; 0</m> so that <m>k=-m^2</m>.  The differential equation
   <m>X''=m^2X</m> has solutions that are linear combinations of a growing
-  and decaying exponential.</p>
-      <p><term>Case 2</term>:  <m>k = 0</m> so the differential equation for <m>X</m> is
-  <m>X''=0</m>.</p>
-      <p><term>Case 3</term>:  <m>k &gt; 0</m> so that <m>k=m^2</m>.  The differential equation
+  and decaying exponential.
+    </p>
+  </statement>
+</task>
+<task workspace="1.8in">
+  <statement>
+    <p>
+      <term>Case 2</term>:  <m>k = 0</m> so the differential equation for <m>X</m> is
+  <m>X''=0</m>.
+    </p>
+  </statement>
+</task>
+<task workspace="1.8in">
+  <statement>
+    <p>
+      <term>Case 3</term>:  <m>k &gt; 0</m> so that <m>k=m^2</m>.  The differential equation
   <m>X''=-m^2X</m> has solutions that are linear combinations of a sine and
-  a cosine function.</p>
+  a cosine function.
+    </p>
+  </statement>
+</task>
+    
     </statement>
-  </exercise>
+  </task>
 
-  <exercise workspace="1.5in">
+  <task workspace="1in">
     <statement>
       <p>Summarize your findings by stating the eigenvalues and
   eigenfunctions to this Sturm-Liouville problem:
@@ -58,26 +112,27 @@ are insulated.  This means we have
   \end{aligned}
   </md></p>
     </statement>
-  </exercise>
+  </task>
 
-  <exercise workspace="1.5in">
+  <task workspace="1.5in">
     <statement>
       <p>When <m>L=10</m>, sketch the graphs of the eigenfunctions
   corresponding to the three smallest eigenvalues.</p>
     </statement>
-  </exercise>
+  </task>
 
-  <exercise workspace="1.5in">
+  <task workspace="1.5in">
     <statement>
       <p>For each eigenvalue, solve the differential equation for <m>T(t)</m>.</p>
     </statement>
-  </exercise>
+  </task>
 
-  <exercise workspace="1in">
+  <task workspace="1in">
     <statement>
-      <p>Write the general solution to the heat equation with boundary
-  conditions on the first page.</p>
+      <p>Write the general solution to the original heat equation with boundary
+  conditions given on the first page.</p>
     </statement>
+  </task>
   </exercise>
 
 </worksheet>
