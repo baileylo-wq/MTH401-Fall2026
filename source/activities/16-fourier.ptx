@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>16: General Fourier series</title>
+  <title>2.7. General Fourier series</title>
+
+  <alert>MTH 401</alert>
+
+  <definition xml:id="def-general-fourier-series">
+    <statement>
+      <p>
+        Let <m>f(x)</m> be a function on the interval <m>[-L,L]</m>. Then the 
+        <term>fourier series</term> for <m>f</m> on <m>[-L,L]</m> is 
+        <md>
+         \ds f(x) = A_0 + \sum\limits_{n=1}^{\infty} \left[ A_n \cos\left(\frac{n \pi x}{L}\right)
+         + B_n \sin\left(\frac{n \pi x}{L}\right)\right]
+        </md>
+        with coefficients <m>A_0</m> and <m>A_n, B_n</m> for <m>n=1, 2, \ldots</m> given by
+        <md>
+          <mrow>A_0 \amp = \frac{1}{2L}\int_{-L}^{L} f(x) ~dx </mrow>
+          <mrow>A_n \amp = \frac{1}{L}\int_{-L}^{L} f(x)\cos\left(\frac{n\pi x}{L}\right) ~dx </mrow>
+          <mrow>B_n \amp = \frac{1}{L}\int_{-L}^{L} f(x)\sin\left(\frac{n\pi x}{L}\right) ~dx </mrow>
+        </md>
+        
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-odd-even-functions">
+    <statement>
+      <p>
+        Recall <m>f(x)</m> is an <term>even function</term> if <m>f(x) = f(-x)</m>, and 
+        <m>f(x)</m> is an <term>odd function</term> if <m>{f(x)=-f(-x)}</m>.
+      </p>
+    </statement>
+  </definition>
 
   <exercise>
+    <introduction>
+      <p>
+        First recall the Fourier sine and cosine series on <m>[0,L]</m> (not than the general Fourier series yet).
+      </p>
+    </introduction>
     <task workspace="3in">
       <statement>
         <p>Find the Fourier sine series for the function <m>f(x) = x</m> over
@@ -10,31 +46,37 @@
   along with the function <m>f(x)</m> over this interval.</p>
       </statement>
     </task>
-    <task workspace="3in">
+    <task workspace="2.5in">
       <statement>
-        <p>Now find the Fourier cosine series for this function over the same
-  interval.  Plot an approximation to your series
+        <p>Now find the Fourier cosine series for this function <m>f(x) = x</m> over the same
+  interval <m>[0,1]</m>.  Plot an approximation to your series
   along with the function <m>f(x)</m> over this interval.</p>
-        <p>You should see the Gibbs phenomenon in one case but not the other.
-  We'd like to understand why this happens.  Let's look at another
-  example.</p>
       </statement>
     </task>
   </exercise>
 
+   <p>You should see the <term>Gibbs phenomenon</term>, an oscillating behavior at an endpoint,
+     in one case but not the other.
+  We'd like to understand why this happens.  </p>
+
   <exercise>
-    <task workspace="3in">
+    <introduction>
+      <p>
+        Let's look at another example.
+      </p>
+    </introduction>
+    <task workspace="2.5in">
       <statement>
-        <p>Find the general Fourier series for the function <m>f(x) = x^2 + x
+        <p>Find the <em>general Fourier series</em> for the function <m>f(x) = x^2 + x
   + 1</m> over the interval <m>[-1,1]</m>.</p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>Use Mathematica to graph the function <m>f(x)</m> and an approximation to
+        <p>Use Mathematica (or your choice of technology) to graph the function <m>f(x)</m> and an approximation to
   the Fourier series over the interval <m>[-1,1]</m>.  No matter how many
-  terms you add, your Fourier series should exhibit the ``Gibbs
-  phenomenon,'' which shows a lot of oscillations near the endpoints.</p>
+  terms you add in the series approximation, your Fourier series should exhibit the <em>Gibbs
+  phenomenon</em>, which shows a lot of oscillations near the endpoints.</p>
       </statement>
     </task>
     <task workspace="1in">
@@ -43,7 +85,14 @@
   you should see the periodicity in the Fourier series and the reason
   for the Gibbs phenomenon as the Fourier series is trying to track
   a discontinuity.</p>
-        <p>We'll discuss this as a class in a little while.</p>
+        
+      </statement>
+    </task>
+    <task workspace="2in">
+      <statement>
+        <p>
+          Stay tuned! We'll discuss this as a class in a little while.
+        </p>
       </statement>
     </task>
   </exercise>

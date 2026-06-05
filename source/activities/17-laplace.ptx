@@ -1,26 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>17: Laplace's equation</title>
+  <title>2.8. Laplace's equation in rectangular coordinates</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="1in">
+  <definition xml:id="def-laplace-eqn">
+    <statement>
+      <p>
+        <term>Laplace's equation</term> describes a system in a steady-state, or a state of 
+        equilibrium, which does not depend on time.  It is given by
+        <md>
+          \nabla^2 u = 0,
+        </md>
+        where <m>\ds \nabla^2 u = \pdtwo{u}{x} + \pdtwo{u}{y}</m> for <m>u(x,y)</m> in two dimensions.
+      </p>
+      <p>
+        Solutions of Laplace's equation are called <term>harmonic functions</term>.
+      </p>
+    </statement>
+  </definition>
+
+  <exercise workspace="3in">
     <statement>
       <p>Suppose we have a rectangular plate whose dimensions are
-  <m>10\times5</m>. Remember that Laplace's equation
-  <md>\nabla^2 u =\pdtwo{u}{x} +\pdtwo{u}{y} = 0</md>
+  <m>10\times5</m>. Then Laplace's equation
   describes the steady state temperature distribution <m>u(x,y)</m> in the
-  plate.  Solve Laplace's equation in the rectangle with the boundary
-  conditions shown.  In particular, <m>u=0</m> on the bottom, left, and
-  right, and <m>u=1</m> on the top.  You should be able to draw the graph
-  of the solution as well.</p>
-      <p>\begin{minipage}{2.5in}
-    {</p>
-      <p>\begin{center}
-        \includegraphics{figures/16-rect.eps}
-      \end{center}</p>
-      <p>}
-  \end{minipage}
-  \begin{minipage}{2.5in}
-    {
+  plate (steady state of the heat equation here).  Solve Laplace's equation in the rectangle with the boundary
+  conditions shown.  In particular, <m>u=1</m> on the top and <m>0</m> on the other sides.  
+  <!--You should be able to draw the graph
+  of the solution as well.-->
+  </p>
+
+<sidebyside width="20% 25%">
+ 
+  <image width="20%" margins="0% 80%">
+      <shortdescription>A rectangle with the bottom left corner at the origin extending 10 units right and 5 units up.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-17-pic1">
+        <diagram dimensions="(200,200)" margins="5">
+    
+          <coordinates bbox="(-1.5,-1.5,12,7)">
+            <axes  decorations="no" xlabel="x" ylabel="y" hticks="(0,10,10)"
+            vticks="(0,5,5)" hlabels="(0,10,10)" vlabels="(0,5,5)"/>
+            <rectangle lower-left="(0,0)" dimensions="(10,5)"
+               fill="gray" thickness="2" stroke="black" opacity="0.5" />
+          <label anchor="(5,0)" alignment="s">
+           <m>0</m>
+          </label>
+          <label anchor="(0,2.5)" alignment="w">
+           <m>0</m>
+          </label>
+          <label anchor="(10,2.5)" alignment="e">
+           <m>0</m>
+          </label>
+          <label anchor="(5,5)" alignment="n">
+           <m>1</m>
+          </label>
+    
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    
+    <p>
       <md>
       \begin{aligned}
         \nabla^2 u \amp  = 0 \\
@@ -29,31 +69,74 @@
         u(10,y) \amp  = 0 \\
         u(x,5) \amp  = 1
       \end{aligned}
-      </md></p>
-      <p>}
-  \end{minipage}</p>
+      </md>
+    </p>
+     
+</sidebyside>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p>Suppose that you have an infinite rectangular plate;  that is,
   the plate is between <m>0\leq x\leq \pi</m> and <m>0\leq y</m>.  Solve Laplace's
-  equation in this plate with the boundary conditions
-  <md>
-<mrow>u(x,0) \amp  = \amp  1</mrow>
-<mrow>u(0, y) \amp  = \amp  0</mrow>
-<mrow>u(\pi, y) \amp  = \amp  0</mrow>
-<mrow>\lim_{y\to\infty}u(x,y)\amp =\amp 0</mrow>
-</md></p>
+  equation in this plate with the boundary conditions given.
+      </p>
+  <sidebyside width="20% 25%">
+ 
+  <image width="20%" margins="0% 80%">
+      <shortdescription>An open rectangle with the bottom left corner at the origin extending pi units right and infinite units up.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-17-pic2">
+        <diagram dimensions="(200,200)" margins="5">
+    
+          <coordinates bbox="(-1.5,-1.5,pi+1.5,8.5)">
+            <axes  decorations="no" xlabel="x" ylabel="y" hticks="(0,10,10)"
+            hlabels="(0,10,10)" />
+          <line p1="(0,0)" p2="(0,8)" arrows="1" thickness="5" />
+          <line p1="(pi,0)" p2="(pi,8)" arrows="1" thickness="5" />
+          <line p1="(0,0)" p2="(pi,0)" arrows="0" thickness="5" />
+          <label anchor="(pi/2,0)" alignment="s">
+           <m>1</m>
+          </label>
+          <label anchor="(0,2.5)" alignment="w">
+           <m>0</m>
+          </label>
+          <label anchor="(pi,2.5)" alignment="e">
+           <m>0</m>
+          </label>
+          <label anchor="(pi/2,7)" alignment="ne" offset="(1,14)">
+           <m>o</m>
+          </label>
+
+          <path start="(pi/2,6)" closed="no" arrows="1" stroke="black" thickness="3">
+      <rlineto point="(0,2)"
+               decoration="wave; number=1; dimensions=(10,10)"/>
+    </path>
+    
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    
+    <p>
+      <md>
+      \begin{aligned}
+        u(x,0) \amp  = 1 \\
+        u(0,y) \amp  = 0 \\
+        u(\pi,y) \amp  = 0 \\
+        \lim\limits_{y\rightarrow\infty} u(x,y) \amp  = 0
+      \end{aligned}
+      </md>
+    </p>
+</sidebyside>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p>How would the solution to the first problem be different if we
   change the  
-  boundary conditions?</p>
+  boundary conditions?  (P.S. Can you identify what the boundary conditions mean physically?)</p>
       <p><md>
   \begin{aligned}
     \nabla^2 u \amp  = 0 \\

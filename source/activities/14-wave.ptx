@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>2.5. The wave equation intro</title>
+  <title>2.5. The wave equation Intro</title>
   <alert>MTH 401</alert>
+
 
 
   <definition xml:id="def-wave-eqn-1d">
@@ -35,7 +36,7 @@
 <mrow>u(0,t) \amp  =  0</mrow>
 <mrow>u(L,t) \amp  =  0</mrow>
 </md>
-  Find the general solution to this equation.  (What technique do you think you can apply here? What technique do we usually turn to?)</p>
+  Find the general solution to this equation. (We use the steps steps as if to solve the heat equation. What technique do you think you can apply here? What technique do we usually turn to?)</p>
     </statement>
   </exercise>
 

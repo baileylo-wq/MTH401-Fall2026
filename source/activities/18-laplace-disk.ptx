@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>18: Laplace's equation</title>
+  <title>2.9. Laplace's equation in a disk</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="1in">
+<definition xml:id="def-laplace-eqn-polar">
+    <statement>
+      <p>
+        <term>Laplace's equation</term> describes a system in a steady-state, or a state of 
+        equilibrium, which does not depend on time.  For <m>u(r,\theta)</m> in polar 
+        coordinates for a two dimensional disk, Laplace's equation becomes
+        <md>
+          \nabla^2 u = \pdtwo{u}{r} + \frac1r \frac{\partial u}{\partial r} + \frac1{r^2}\pdtwo{u}{\theta}= 0.
+        </md>
+      </p>
+      <p>
+        For a disk of radius <m>a</m>, the boundary condition then becomes <m>u(a,\theta) = f(\theta)</m>
+        for some function <m>f(\theta)</m>. The implicit boundary conditions due to the periodicity
+        of <m>\theta</m> are <m>u(r,\pi) = u(r,-\pi)</m> and 
+        <m>\ds {\frac{\partial u}{\partial \theta}(r, \pi) = \frac{\partial u}{\partial \theta}(r, -\pi)}</m>, 
+        along with <m>|u(0,\theta)| &lt; \infty</m> representing no singularities at the origin.
+      </p>
+    </statement>
+  </definition>
+
+
+  <exercise workspace="3in">
     <statement>
       <p>Find the solution to Laplace's equation <m>\nabla^2 u</m> in a disk
   of radius 2 assuming that the function on the boundary is
@@ -15,24 +37,34 @@
   </exercise>
 
   <exercise>
-    <task workspace="0.5in">
+    <introduction>
+      <p>
+        Let's see what it looks like.
+      </p>
+    </introduction>
+    <task workspace="0.2in">
       <statement>
         <p>You can graph your solution using Mathematica.  However, because
   the result is expressed in terms of polar coordinates, you can do
-  this using the <c>ParametericPlot3D</c> command.  If the solution is
-  <m>f(r,\theta)</m>, then you can say:</p>
-        <p><c>ParametricPlot3D[ \{r*Cos[theta], r*Sin[theta], your function
-    here\</c>, \{r, ...\}, \{theta, ...\}]}</p>
+  this using the <c>ParametericPlot3D</c> command.  To plot a function
+  <m>function</m> for a radius that goes from <m>{0 \le r \le a}</m> 
+  and an angle that goes between <m>{b \le \theta \le c}</m>, type
+      </p>
+      <p>
+      <c>
+        ParametricPlot3D[ {r*Cos[theta], r*Sin[theta], function, {r, 0, a}, {theta, b, c}]}
+  </c>
+  </p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="1.5in">
       <statement>
         <p>Thinking of <m>u(r,\theta)</m> as a steady-state temperature
   distribution, where is the warmest point on the disk?  Where is the
   coldest point?</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="3in">
       <statement>
         <p>What is the value <m>u(0,\theta)</m> at the center of the disk?  
   How can you easily determine it from the boundary values <m>f(\theta)</m>?</p>
