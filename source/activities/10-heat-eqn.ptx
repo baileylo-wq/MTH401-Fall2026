@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>2.1. The heat equation</title>
+  <title>2.1. Intro to PDEs and the heat equation</title>
   <alert>MTH 401</alert>
 
     <section xml:id="subsubsec-heat-wave">
-    <title>Section 2: Partial Differential Equations in the form of the Heat and Wave Equations</title>
+    <title>Section 2: Partial Differential Equations in the context of the Heat and Wave Equations</title>
     <subsection>
       <title>Part 2.1: Introduction to the Heat Equation in One Dimension
       </title>
