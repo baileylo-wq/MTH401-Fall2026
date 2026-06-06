@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>22: Series solutions of ODEs</title>
+  <title>2.13. Series solutions of famous ODEs</title>
+  <alert>MTH 401</alert>
+
 
   <exercise>
     <introduction>
-      <p>The following differential equation is known as the <em>Chebyshev</em> equation (<m>\alpha</m> is a constant):
+      <p>The following differential equation is known as the <term>Chebyshev equation</term> (<m>\alpha</m> is a constant):
   <md>
   (1-x^2)y'' - xy' + \alpha^2 y = 0.
   </md></p>
@@ -15,14 +17,14 @@
   method.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.5in">
       <statement>
         <p>If <m>\alpha</m> is a nonnegative integer <m>n</m>, explain why there is a
   polynomial solution.  When normalized according to some convention,
-  these polynomials are known as <em>Chebyshev</em> polynomials.</p>
+  these polynomials are known as <term>Chebyshev</term> polynomials.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.8in">
       <statement>
         <p>Find the polynomial solutions when <m>n=0,1,2,3</m>.</p>
       </statement>
@@ -31,7 +33,7 @@
 
   <exercise>
     <introduction>
-      <p>The Laguerre differential equation is
+      <p>The <term>Laguerre differential equation</term> is
   <md>
   xy'' + (1-x)y' + \lambda y = 0.
   </md></p>
@@ -42,7 +44,7 @@
   terms.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.5in">
       <statement>
         <p>Explain why your solution is a polynomial if <m>\lambda = m</m>, a
   non-negative integer.</p>
@@ -50,7 +52,7 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>The Laguerre polynomial <m>L_m(x)</m> is this
+        <p>The <term>Laguerre polynomial</term> <m>L_m(x)</m> is this
   polynomial normalized so that <m>L_m(0) = 1</m>.
   Find <m>L_0(x)</m>, <m>L_1(x)</m>, <m>L_2(x)</m> and <m>L_3(x)</m>.</p>
       </statement>
@@ -59,12 +61,12 @@
 
   <exercise>
     <introduction>
-      <p>The Legendre equation is
+      <p>The <term>Legendre equation</term> is
   <md>
   (1-x^2)y''-2xy'+\alpha(\alpha+1)y=0
   </md> where <m>\alpha</m> is a constant.</p>
     </introduction>
-    <task workspace="4in">
+    <task workspace="3.5in">
       <statement>
         <p>Find two linearly independent solutions of the Legendre equation.</p>
       </statement>
@@ -72,7 +74,7 @@
     <task workspace="1in">
       <statement>
         <p>Show that is <m>\alpha</m> is a nonnegative even integer <m>2n</m>, then one
-  solution reduces to a polynomial of degree <m>2n</m>.  Find the polynomials
+  solution reduces to a polynomial of degree <m>2n</m> (called a <term>Legendre polynomial</term>).  Find the polynomials
   corresponding to <m>\alpha=0,2</m> and <m>4</m>.</p>
       </statement>
     </task>
@@ -86,14 +88,25 @@
   </exercise>
 
   <exercise>
-    <task workspace="5.8in">
+    <introduction>
+      <p>
+        The original purpose of using power series to solve differential equations 
+        was to solve Bessel's equation, which came up when trying to solve the wave 
+        equation in a disk.  Let's return to that...
+      </p>
+    </introduction>
+    <task workspace="4in">
       <statement>
-        <p>What happens when you try to solve Bessel's equation of order 1:
+        <p>What happens when you <em>try</em> to use power series to solve <term>Bessel's equation of order 1</term>:
   <md>
   x^2y'' + xy' +(x^2 - 1^2)y = 0?
   </md></p>
       </statement>
     </task>
+    <p>
+      Well this seems like a problem. And there is a great method to overcome it, which we will discuss
+      more next class.  As a very relevant aside...
+    </p>
     <task workspace="1in">
       <statement>
         <p>Do you remember how to solve the equation

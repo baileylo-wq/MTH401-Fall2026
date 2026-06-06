@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>21: Series solutions of ODEs</title>
+  <title>2.12. Series solutions of ODEs intro</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="1in">
+  <p>
+    Sovling the wave equation on a disk results in Bessel's equation of order 
+    <m>n</m>, a differential equation that requires a solution using <term>power series</term>.
+    A <term>power series</term> centered at <m>x=a</m> has the form
+    <md>
+      <mrow>
+      y(x) \amp = a_0 + a_1(x-a)+a_2(x-a)^2+a_3(x-a)^3+\cdots 
+      </mrow>
+      <mrow>
+      \amp = \sum\limits_{n=0}^{\infty} a_n(x-a)^n.
+      </mrow>
+    </md>
+     Most often we use a power series centered around <m>x=0</m>: <m>y(x) = \sum\limits_{n=0}^{\infty} a_nx^n</m>.
+  </p>
+  <p>
+    We essentially "guess" the solution is in the form of a power series, then plug in our guess into the 
+    differential equation and solve for the constants that make it true.
+  </p>
+
+  <exercise workspace="5in">
     <statement>
       <p>Find a power series solution for the initial value problem
   <md>
@@ -14,7 +34,7 @@
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p>Find power series solutions of the following differential
   equation by finding the recurrence relation between the coefficients
@@ -26,9 +46,9 @@
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
-      <p>Find the general solution to the differential equation
+      <p>Use power series to find the general solution to the differential equation
   <md>
   y'' - 2xy' + 4y = 0.
   </md></p>

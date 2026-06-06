@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>23: Bessel functions</title>
+  <title>2.14. Bessel functions of the first kind</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="1in">
+  <definition xml:id="def-bessel-function">
+    <statement>
+      <p>
+        Recall that <term>Bessel's equation of order <m>n</m></term> is
+        <md>
+          x^2 y'' + xy'+(x^2-n^2)y = 0.
+        </md>
+        Solutions are found using the Method of Frobenius, that is assuming it has the form 
+        <m>{y(x)=a_0 x^p + a_1 x^{p+1}+a_2x^{p+2}+\cdots}</m> for some unknown <m>p</m> and 
+        solving for the coefficients.
+      </p>
+      <p>
+        For <term>Bessel's functions of the first kind</term> we take <m>p = n</m>.
+        We find that all odd coefficients are zero (<m>{a_1 = a_3 = a_5 = \ldots = 0}</m>),
+        the coefficient <m>a_0</m> is a free variable, and the other
+        even coefficients are 
+        <md>
+          a_{2m} = \frac{-a_{2(m-1)}}{4m(n+m)}
+        </md>
+        for <m>m=1, 2, 3, \ldots</m>. The solution to the order <m>n</m> equation is denoted <m>J_n(x)</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <exercise workspace="3in">
     <statement>
       <p>Find a solution to Bessel's equation of order 1
   <md>
@@ -12,14 +37,40 @@
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
-      <p>Find a solution to Bessel's equation of order 3/2
+      <p>We are not limited to integers. Find a solution to Bessel's equation of order 3/2
   <md>
   x^2 y'' + xy' + \left(x^2 - \left(\frac32\right)^2\right) y = 0
   </md>
   that is bounded at <m>x=0</m>.   Use Mathematica to draw a graph of it.</p>
     </statement>
   </exercise>
+
+  <p>
+    <em>Fun facts!</em>  
+    <ul>
+      <li>
+        <p>
+          Bessel functions of integer order show up when solving problems in cylindrical 
+    coordinate systems, and but half-integer orders of Bessel functions (<m>n=m+\frac12</m>)
+    appear in spherical problems.  
+        </p>
+      </li>
+      <li>
+        <p>
+          When solving Bessel's equation of order <m>n</m>, if we take <m>p=-n</m>
+    then we will find <term>Bessel's functions of the second kind</term>, which we denote <m>Y_n(x)</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Hankel functions</term> are complex functions that come from combining Bessel functions of the first and second kind, 
+          so <m>H_n^{(1)} = J_n+iY_n</m> are Hankel functions of the first kind, and <m>H_n^{(2)} = J_n-iY_n</m> are 
+          of the second kind. (We won't get into these...)
+        </p>
+      </li>
+    </ul>
+  </p>
 
 </worksheet>

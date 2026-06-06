@@ -3,31 +3,15 @@
   <title>2.10. Higher dimensional equations</title>
   <alert>MTH 401</alert>
 
-  <definition xml:id="def-double-fourier-sine-series">
-    <statement>
-      <p>
-        Let <m>f(x,y)</m> be a function for <m>x</m> on the interval <m>[0,L]</m> and <m>y</m>
-        on the interval <m>[0,H]</m>. Then the 
-        <term>double Fourier sine series</term> for <m>f</m> is 
-        <md>
-         \ds f(x,y) = \sum\limits_{n=1}^{\infty}\sum\limits_{m=1}^{\infty}  A_{n,m} \sin\left(\frac{m \pi y}{H}\right)
-         \sin\left(\frac{n \pi x}{L}\right)
-        </md>
-        with coefficients
-        <md>
-          A_{n,m}  = \frac{2}{L}\frac{2}{H}\int_{0}^{L}\int_0^H f(x,y)\sin\left(\frac{m\pi y}{H}\right)\sin\left(\frac{n\pi x}{L}\right) ~dy~dx.
-        </md>
-      </p>
-    </statement>
-  </definition>
+
 
   <exercise workspace="5in">
     <statement>
       <p>Consider a rectangular plate whose dimensions are <m>10\times5</m>.
   Find the general solution <m>u(x,y,t)</m> to the heat equation in
   the rectangle when the temperature along all four sides is 0.</p>
-      <sidebyside width="20% 25%">
- 
+      
+<sidebyside width="20% 25%">
   <image width="20%" margins="0% 80%">
       <shortdescription>A rectangle with the bottom left corner at the origin extending 10 units right and 5 units up.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-19-pic1">
@@ -72,6 +56,30 @@
     </statement>
   </exercise>
 
+
+    <definition xml:id="def-double-fourier-sine-series">
+    <statement>
+      <p>
+        Let <m>f(x,y)</m> be a function for <m>x</m> on the interval <m>[0,L]</m> and <m>y</m>
+        on the interval <m>[0,H]</m>. Then the 
+        <term>double Fourier sine series</term> for <m>f</m> is 
+        <md>
+         \ds f(x,y) = \sum\limits_{n=1}^{\infty}\sum\limits_{m=1}^{\infty}  A_{n,m} \sin\left(\frac{m \pi y}{H}\right)
+         \sin\left(\frac{n \pi x}{L}\right)
+        </md>
+        with coefficients
+        <md>
+          A_{n,m}  = \frac{2}{L}\frac{2}{H}\int_{0}^{L}\int_0^H f(x,y)\sin\left(\frac{m\pi y}{H}\right)\sin\left(\frac{n\pi x}{L}\right) ~dy~dx.
+        </md>
+      </p>
+    </statement>
+  </definition>
+  <remark>
+    <p>
+      Note, the double Fourier sine series is helpful when you are looking for the specific solution, not a general solution. (Do you know why?)
+    </p>
+  </remark>
+
   <exercise workspace="3in">
     <statement>
       <p>Find the specific solution to this heat equation when the
@@ -79,7 +87,7 @@
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="3in">
     <statement>
       <p>How would you begin if the boundary conditions are not
   homogeneous?  You don't need to totally work out the problem.
@@ -87,64 +95,110 @@
   should see that you've already solved all the pieces of this
   problem.  (Feeling stuck?  What did we do in the 1-dimensional case
   when we have non-homogeneous boundary conditions?)</p>
-      <p>\begin{minipage}{2.5in}
-    {</p>
-      <p>\begin{center}
-        \includegraphics{figures/16-rect.eps}
-      \end{center}</p>
-      <p>}
-  \end{minipage}
-  \begin{minipage}{2.5in}
-    {
+      <sidebyside width="20% 25%">
+  <image width="20%" margins="0% 80%">
+      <shortdescription>A rectangle with the bottom left corner at the origin extending 10 units right and 5 units up.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-19-pic2">
+        <diagram dimensions="(200,200)" margins="5">
+    
+          <coordinates bbox="(-1.5,-1.5,12,7)">
+            <axes  decorations="no" xlabel="x" ylabel="y" hticks="(0,10,10)"
+            vticks="(0,5,5)" hlabels="(0,10,10)" vlabels="(0,5,5)"/>
+            <rectangle lower-left="(0,0)" dimensions="(10,5)"
+               fill="gray" thickness="2" stroke="black" opacity="0.5" />
+          <label anchor="(5,0)" alignment="s">
+           <m>0</m>
+          </label>
+          <label anchor="(0,2.5)" alignment="w">
+           <m>0</m>
+          </label>
+          <label anchor="(10,2.5)" alignment="e">
+           <m>0</m>
+          </label>
+          <label anchor="(5,5)" alignment="n">
+           <m>1</m>
+          </label>
+    
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    
+    <p>
       <md>
       \begin{aligned}
-        \pd{u}{t} \amp  = 2\nabla^2 u \\
-        u(x,0,t) \amp  = 0 \\
-        u(0,y,t) \amp  = 0 \\
-        u(10,y,t) \amp  = 0 \\
-        u(x,5,t) \amp  = 1
+        \frac{\partial u}{\partial t} \amp  = 2 \nabla^2 u \\
+        u(x,0) \amp  = 0 \\
+        u(0,y) \amp  = 0 \\
+        u(10,y) \amp  = 0 \\
+        u(x,5) \amp  = 1
       \end{aligned}
       </md>
-    }
-  \end{minipage}</p>
+    </p>
+     
+</sidebyside>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="3in">
     <statement>
       <p>Suppose now that we have a rectangular drum whose dimensions are
   <m>10\times5</m>. 
   Find the general solution <m>u(x,y,t)</m> to the wave equation in
   the rectangle when the membrane is clamped at 0 along all four
   sides.</p>
-      <p>\begin{minipage}{2.5in}
-    {</p>
-      <p>\begin{center}
-        \includegraphics{figures/20-rect.eps}
-      \end{center}</p>
-      <p>}
-  \end{minipage}
-  \begin{minipage}{2.5in}
-    {
+      <sidebyside width="20% 25%">
+  <image width="20%" margins="0% 80%">
+      <shortdescription>A rectangle with the bottom left corner at the origin extending 10 units right and 5 units up.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-19-pic3">
+        <diagram dimensions="(200,200)" margins="5">
+    
+          <coordinates bbox="(-1.5,-1.5,12,7)">
+            <axes  decorations="no" xlabel="x" ylabel="y" hticks="(0,10,10)"
+            vticks="(0,5,5)" hlabels="(0,10,10)" vlabels="(0,5,5)"/>
+            <rectangle lower-left="(0,0)" dimensions="(10,5)"
+               fill="gray" thickness="2" stroke="black" opacity="0.5" />
+          <label anchor="(5,0)" alignment="s">
+           <m>0</m>
+          </label>
+          <label anchor="(0,2.5)" alignment="w">
+           <m>0</m>
+          </label>
+          <label anchor="(10,2.5)" alignment="e">
+           <m>0</m>
+          </label>
+          <label anchor="(5,5)" alignment="n">
+           <m>0</m>
+          </label>
+    
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    
+    <p>
       <md>
       \begin{aligned}
-        \pdtwo{u}{t} \amp  = 4\nabla^2 u \\
-        u(x,0,t) \amp  = 0 \\
-        u(0,y,t) \amp  = 0 \\
-        u(10,y,t) \amp  = 0 \\
-        u(x,5,t) \amp  = 0
+        \frac{\partial u}{\partial t} \amp  = 4 \nabla^2 u \\
+        u(x,0) \amp  = 0 \\
+        u(0,y) \amp  = 0 \\
+        u(10,y) \amp  = 0 \\
+        u(x,5) \amp  = 0
       \end{aligned}
       </md>
-    }
-  \end{minipage}</p>
+    </p>
+     
+</sidebyside>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="0.8in">
     <statement>
-      <p>The <em>spectrum</em> of the drum is the set of fundamental
+      <p>The <term>spectrum</term> of the drum is the set of fundamental
   frequencies at which it vibrates.  These are the frequencies given
   by the product solutions.  What are the three smallest frequencies?
+  </p>
+  <p>
   (Mathematicians and physicists sometimes use different definitions
   of frequencies;  we'll just say that the frequency of <m>\cos(\omega
   t)</m> is <m>\omega</m>).</p>

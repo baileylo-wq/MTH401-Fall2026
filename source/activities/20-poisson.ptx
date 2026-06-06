@@ -1,61 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>20: Poisson's equation</title>
-  <introduction>
-    <p>Poisson's equation is the <term>steady-state</term> heat equation with a <term>source
-term</term>:
+  <title>2.11. Poisson's equation</title>
+
+  <alert>MTH 401</alert>
+
+  <definition xml:id="def-Poisson-equation">
+    <statement>
+      <p>
+        Poisson's equation is the <term>steady-state</term> heat equation (no change in time) with a <term>source
+term</term> <m>Q</m>:
 <md>
-\nabla^2 u = S.
-</md></p>
-  </introduction>
+\nabla^2 u = Q.
+</md>
+      </p>
+    </statement>
+  </definition>
+
+  <remark>
+    <p>
+      To solve Poisson's equation, you first find the solution to the associated 
+      problem <m>{\nabla^2 u = -k u}</m>, 
+      then plug that solution into <m>{\nabla^2 u = Q}</m> and solve for the coefficients that make it true.
+    </p>
+  </remark>
+
+
 
   <exercise workspace="1in">
     <introduction>
-      <p>Let's begin with the 1-dimensional situation (<m>\nabla^2u = u''(x)</m>) that we 
+      <p>Let's begin with the 1-dimensional situation (<m>\ds \nabla^2u = u''(x) = \frac{d^2 u}{dx^2}</m>) that we 
   know how to solve (and, in fact, have already solved).  We'll find a
   function <m>u(x)</m> that satisfies
   <md>
   \begin{aligned}
-    u''(x)= \frac{d^2u}{dx^2} \amp  = x \\
+    u''(x) \amp  = x \\
     u(0) \amp  = 0 \\
     u(1) \amp  = 0 \\
   \end{aligned}
   </md></p>
-      <p>The eigenvalues/functions of the associated Sturm-Liouville problem
+      <p>The associated Sturm-Liouville problem is <m>X'' = -kX</m> since it is a 
+        one dimensional problem.  The eigenvalues/functions of the associated Sturm-Liouville problem
   are
   <md>
   k = (n\pi)^2, ~~~ X_n(x) = \sin(n\pi x).
   </md>
-  We will write the solution <m>u(x)</m>  we're seeking as a linear
-  combination of eigenfunctions 
+  The solution <m>u(x)</m>  we're seeking is a linear
+  combination of those eigenfunctions and has the form 
   <md>
   u(x) = \sum_{n=1}^\infty A_n\sin(n\pi x).
   </md>
-  Then plugging this into <m>u''(x) = x</m> we need to solve:
+  For this particular problem, we need this solution <m>u(x)</m> to satisfy 
+  <m>u''(x) = x</m>. So we plug the solution we have so far into this requirement, (which requires 
+  taking <m>u''(x)</m> as seen on the left in what follows):
   <md>
-  u''(x) = \sum_{n=1}^\infty -A_n(n\pi)^2\sin(n\pi x) = x
-  </md></p>
+  \sum_{n=1}^\infty -A_n(n\pi)^2\sin(n\pi x) = x.
+  </md>
+This is a Fourier sine series with slightly different coefficients than we've seen!  We can solve this.
+</p>
     </introduction>
     <task workspace="1.3in">
       <statement>
-        <p>Find the Fourier sine coefficients <m>A_n</m> for the above equation.</p>
+        <p>Find the Fourier sine coefficients <m>-A_n(n\pi)^2</m> and then find <m>A_n</m> for the above equation.</p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>Write the solution <m>u(x)</m> to Poisson's equation as a Fourier
+        <p>Plug the coefficients back into <m>u(x)</m>. This is the solution to this Poisson's equation in one dimension as a Fourier
   sine series.</p>
       </statement>
     </task>
     <task workspace="1in">
       <statement>
-        <p>In an earlier homework problem, you found an explicit function
-  <m>u(x)</m> that solved Poisson's equation and boundary conditions.  Find
-  that function again by solving <m>u''(x) = x</m> with the given boundary
-  conditions.</p>
+        <p>Let's use a different approach and verify our solution above. Since we 
+          have a relatiely simple second derivative <m>u''(x) = x</m>, 
+          we can explicitly solve this by integrating.  After integrating twice to 
+          find a general function <m>u(x)</m>, apply the boundary conditions given to find the 
+          specific solution for this problem.  
+        </p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="2in">
       <statement>
         <p>Now find the Fourier sine series of your solution and verify that
   it's the same series that you found earlier.</p>
@@ -63,30 +87,31 @@ term</term>:
     </task>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise>
     <introduction>
       <p>Consider Poisson's equation for a function <m>u(x,y)</m> on the
   <m>1\times1</m> square: 
   <md>
   \nabla^2 u = xy
   </md>
-  where <m>u=0</m> on the boundary of the square.  We have seen that the
-  eigenvalues/functions of the Laplacian on the square are
+  where <m>u=0</m> on the boundary of the square.  We have seen that the equation 
+  <m>\nabla^2 u = -ku</m> (called the Hemholtz equation) on the square has
+  eigenvalues/functions
   <md>
-  k = (n\pi)^2 + (m\pi)^2,~~~
+  k = (n\pi)^2 + (m\pi)^2,~~~~~~~~~
   X_{n,m} = \sin(n\pi x)\sin(m\pi y).
   </md>
-Thus the general solution is
+Thus we assume the general solution to <m>\nabla^2 u = xy</m> has the form
   <md>
   u(x,y) = \sum_{n,m=1}^\infty A_{n,m} \sin(n\pi x)\sin(m\pi y). 
   </md></p>
     </introduction>
-    <task workspace="1in">
+    <task workspace="3in">
       <statement>
-        <p>We need to plug <m>u(x,y)</m> into our specific Poisson's equation to find <m>A_{n,m}</m>.  Find <m>\nabla^2u</m>, set it equal to <m>xy</m>.  You should get a double Fourier sine series.  Use that to find the coefficients <m>A_{n,m}</m>?</p>
+        <p>We need to plug <m>u(x,y)</m> into our specific Poisson's equation to find <m>A_{n,m}</m>.  Find <m>\nabla^2u</m>, set it equal to <m>xy</m>.  You should get a double Fourier sine series.  Use that to find the coefficients <m>A_{n,m}</m>.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.5in">
       <statement>
         <p>Use Mathematica to draw a graph of the solution on the <m>1\times1</m>
   square.</p>
@@ -94,9 +119,9 @@ Thus the general solution is
     </task>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="6in">
     <statement>
-      <p>Find the solution <m>u(x,y,z)</m> to Poisson's equation
+      <p>Your turn.  Find the solution <m>u(x,y,z)</m> to Poisson's equation
   <md>
   \nabla^2 u = xyz
   </md>

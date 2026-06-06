@@ -22,19 +22,19 @@
   <definition xml:id="def-heat-eqn-1d">
     <statement>
       <p>
-        The <term>heat equation</term> with constant <m>\alpha</m> and heat source <m>S</m> is:
+        The <term>heat equation</term> with constant <m>\alpha</m> and heat source <m>Q</m> is:
         <md>
-          \ds \frac{\partial u}{\partial t} = \alpha \nabla^2 u + S
+          \ds \frac{\partial u}{\partial t} = \alpha \nabla^2 u + Q
         </md>
         where <m>\ds \nabla^2 u= \frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}</m> is the Laplacian of <m>u</m>.  
       </p>
       <p>
-        If <m>S=0</m> the equation is called <term>homogeneous</term>.
+        If <m>Q=0</m> the equation is called <term>homogeneous</term>.
       </p>
       <p>
         In one dimension the heat equation simplifies to
         <md>
-          \ds \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2} + S.
+          \ds \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2} + Q.
         </md>
       </p>
     </statement>
