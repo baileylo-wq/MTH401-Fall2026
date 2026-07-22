@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefig-tetris-5-figure" width="85" height="110" viewBox="0 0 85 110">
+  <defs>
+    <clipPath id="prefig-tetris-5-clipPath-0">
+      <rect x="5.0" y="5.0" width="75.0" height="100.0"/>
+    </clipPath>
+    <clipPath id="prefig-tetris-5-clipPath-1">
+      <rect x="5.0" y="5.0" width="75.0" height="100.0"/>
+    </clipPath>
+    <clipPath id="prefig-tetris-5-boundary-clip">
+      <path id="prefig-tetris-5-boundary" d="M 5.0 80.0 L 55.0 80.0 L 55.0 55.0 L 30.0 55.0 L 30.0 5.0 L 5.0 5.0 Z" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#prefig-tetris-5-boundary-clip)">
+    <g id="prefig-tetris-5-grid" stroke="gray" stroke-width="1">
+      <line x1="5.0" y1="105.0" x2="5.0" y2="5.0"/>
+      <line x1="30.0" y1="105.0" x2="30.0" y2="5.0"/>
+      <line x1="55.0" y1="105.0" x2="55.0" y2="5.0"/>
+      <line x1="80.0" y1="105.0" x2="80.0" y2="5.0"/>
+      <line x1="5.0" y1="105.0" x2="80.0" y2="105.0"/>
+      <line x1="5.0" y1="80.0" x2="80.0" y2="80.0"/>
+      <line x1="5.0" y1="55.0" x2="80.0" y2="55.0"/>
+      <line x1="5.0" y1="30.0" x2="80.0" y2="30.0"/>
+      <line x1="5.0" y1="5.0" x2="80.0" y2="5.0"/>
+    </g>
+  </g>
+  <use href="#prefig-tetris-5-boundary" id="prefig-tetris-5-use-0" stroke="black" stroke-width="2" fill="none"/>
+</svg>

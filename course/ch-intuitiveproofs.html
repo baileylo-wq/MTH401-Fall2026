@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Intuitive Proofs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MTH 401: Math for the Physical Sciences">
+<meta property="book:author" content="Lora Bailey">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.0.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MTH 401: Math for the Physical Sciences</span> <span class="subtitle">Fall 2026</span></a></h1>
+<p class="byline">Lora Bailey</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\mbf}[1]{{\mathbf #1}}
+\newcommand{\vs}[1]{\vspace{#1in}}
+\newcommand{\work}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\owork}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\flux}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\oflux}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdtwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\fourier}{{\cal F}}
+\newcommand{\cu}{{\cal U}}
+\newcommand{\ds}{\displaystyle}
+\renewcommand{\arg}{\text{Arg}}
+\newcommand{\re}{\text{Real}}
+\newcommand{\res}{\text{Res}}
+\newcommand{\lineint}[2]{\int_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\olineint}[2]{\oint_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\nvec}{\mathbf{n}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-week-01.html#exercises-" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-intuitiveproofs.html" class="internal"><span class="title">Intuitive Proofs</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-2" class="internal"><span class="title">What is Mathematics?  What is a proof?  Why do we prove things?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-3" class="internal"><span class="title">Section 1.1 - Chessboard Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-4" class="internal"><span class="title">10 Things To Know</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-5" class="internal"><span class="title">Conjecturing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-6" class="internal"><span class="title">The Wason Selection Test - Testing Truth.</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-7" class="internal"><span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-8" class="internal"><span class="title">Section 1.3 - The Pigeonhole Principle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-intuitiveproofs.html#ch-intuitiveproofs-9" class="internal"><span class="title">Play, Conjecture, Prove \#1 - The Game SET</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">1. Review of Calculus III</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">2. Evaluating line integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">3. The FTC of line integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-7.html" class="internal"><span class="title">4: The operator ``del’’</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-8.html" class="internal"><span class="title">5: The divergence theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="title">6: Green’s Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-10.html" class="internal"><span class="title">7: Finding potentials</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-11.html" class="internal"><span class="title">8: Gauss’ law and the divergence theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-12.html" class="internal"><span class="title">Review</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-13.html" class="internal"><span class="title">9: Vector calculus review</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-14.html" class="internal"><span class="title">10: The heat equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-15.html" class="internal"><span class="title">10: Vector calculus review</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-16.html" class="internal"><span class="title">11: Solving a Sturm-Liouville problem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-17.html" class="internal"><span class="title">12: Fourier series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-18.html" class="internal"><span class="title">13: Solving the heat equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-19.html" class="internal"><span class="title">14: The wave equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-20.html" class="internal"><span class="title">15: The wave equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-21.html" class="internal"><span class="title">16: General Fourier series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-22.html" class="internal"><span class="title">General Fourier series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-23.html" class="internal"><span class="title">Laplace’s equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">17: Laplace’s equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">18: Laplace’s equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">19: Higher dimensional equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">20: Poisson’s equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">21: Series solutions of ODEs</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">22: Series solutions of ODEs</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">23: Bessel functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-31.html" class="internal"><span class="title">24: PDEs on cylinders</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-32.html" class="internal"><span class="title">25: Laplace’s equation on a cylinder</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-33.html" class="internal"><span class="title">26: The Fourier transform</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-34.html" class="internal"><span class="title">27: The Fourier transform</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-35.html" class="internal"><span class="title">28: Method of characteristics (Lab)</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-36.html" class="internal"><span class="title">29: Complex arithmetic</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-37.html" class="internal"><span class="title">30: Complex functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-38.html" class="internal"><span class="title">31: Cauchy-Riemann equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-39.html" class="internal"><span class="title">32: Cauchy-Riemann equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-40.html" class="internal"><span class="title">33: Contour integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-41.html" class="internal"><span class="title">34: Cauchy’s integral formula</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-42.html" class="internal"><span class="title">35: Taylor series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-43.html" class="internal"><span class="title">36: Laurent series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-44.html" class="internal"><span class="title">37: Residues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-45.html" class="internal"><span class="title">38: Trigonometric integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-46.html" class="internal"><span class="title">39: Fourier transforms</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-47.html" class="internal"><span class="title">40: Principal values of integrals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-intuitiveproofs"><h2 class="heading hide-type">
+<span class="type">Chapter</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intuitive Proofs</span>
+</h2>
+<section class="subsection" id="ch-intuitiveproofs-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What is Mathematics?  What is a proof?  Why do we prove things?</span>
+</h3>
+<div class="para" id="ch-intuitiveproofs-2-2">
+<em class="emphasis">What happens next? Does it always work? How many are there? Why does it work? What if we tried this instead?</em><div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-2-3">Questions such as these are at the heart of mathematics, where we seek to identify, understand, and explain patterns.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: What is Mathematics?  What is a proof?  Why do we prove things?"><a href="#ch-intuitiveproofs-2" title="Copy heading and permalink for Subsection: What is Mathematics?  What is a proof?  Why do we prove things?" aria-label="Copy heading and permalink for Subsection: What is Mathematics?  What is a proof?  Why do we prove things?">🔗</a></div></section><section class="subsection" id="ch-intuitiveproofs-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 1.1 - Chessboard Problems</span>
+</h3>
+<div class="para" id="ch-intuitiveproofs-3-2">My favorite parts of mathematics are ones that feel like games. The domino covering problem that you read about for today’s class is one of them!<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-3-3">Here’s reminders of definitions and propositions from your text:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="ch-intuitiveproofs-3-4"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="ch-intuitiveproofs-3-4-1-1">A <dfn class="terminology">perfect cover</dfn> of an <span class="process-math">\(m\times n\)</span> board with <span class="process-math">\(2\times 1\)</span> dominoes is an arrangement of those dominoes on the chessboard with no squares left uncovered, and no dominoes stacked or left hanging off the end.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2"><a href="#ch-intuitiveproofs-3-4" title="Copy heading and permalink for Definition 2" aria-label="Copy heading and permalink for Definition 2">🔗</a></div></article><article class="proposition theorem-like" id="ch-intuitiveproofs-3-5"><h4 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="ch-intuitiveproofs-3-5-1-1">There exists a perfect cover of an <span class="process-math">\(8\times 8\)</span> chessboard.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 3"><a href="#ch-intuitiveproofs-3-5" title="Copy heading and permalink for Proposition 3" aria-label="Copy heading and permalink for Proposition 3">🔗</a></div></article><div class="para" id="ch-intuitiveproofs-3-6">Proof idea:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="proposition theorem-like" id="ch-intuitiveproofs-3-7"><h4 class="heading">
+<span class="type">Proposition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="ch-intuitiveproofs-3-7-1-1">If one crosses out the top-left square of an <span class="process-math">\(8\times 8\)</span> chessboard, the remaining squares cannot be perfectly covered by dominoes.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proposition 4"><a href="#ch-intuitiveproofs-3-7" title="Copy heading and permalink for Proposition 4" aria-label="Copy heading and permalink for Proposition 4">🔗</a></div></article><div class="para" id="ch-intuitiveproofs-3-8">Proof idea:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-3-9">The author then proceeds to ask the following questions:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="ch-intuitiveproofs-3-10">
+<li id="ch-intuitiveproofs-3-10-1">
+<div class="para" id="ch-intuitiveproofs-3-10-1-1">
+<dfn class="terminology">Question 1:</dfn> If I remove two squares of different colors from an <span class="process-math">\(8\times 8\)</span> chessboard, must the result have a perfect cover?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ch-intuitiveproofs-3-10-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-3-10-2">
+<div class="para" id="ch-intuitiveproofs-3-10-2-1">
+<dfn class="terminology">Question 2:</dfn> If I remove four squares - two black, two white - from an <span class="process-math">\(8\times 8\)</span> chessboard, must the result have a perfect cover?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ch-intuitiveproofs-3-10-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-3-10-3">
+<div class="para" id="ch-intuitiveproofs-3-10-3-1">
+<dfn class="terminology">Question 3:</dfn> For every pair of positive integers <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{,}\)</span> does there exist a perfect cover of the <span class="process-math">\(m\times n\)</span> chessboard by <span class="process-math">\(2\times 1\)</span> dominoes?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-10-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ch-intuitiveproofs-3-10-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="ch-intuitiveproofs-3-11">What are some other questions we could ask?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="ch-intuitiveproofs-3-12"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="ch-intuitiveproofs-3-12-1-1">Explore one of the questions from the previous page with your team!<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activity 2"><a href="#ch-intuitiveproofs-3-12" title="Copy heading and permalink for Activity 2" aria-label="Copy heading and permalink for Activity 2">🔗</a></div></article><article class="activity project-like" id="ch-intuitiveproofs-3-13"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="introduction" id="ch-intuitiveproofs-3-13-1">
+<div class="para" id="ch-intuitiveproofs-3-13-1-1">The game <em class="emphasis">Tetris</em> is played with five different shapes - the five shapes that can be obtained by piecing together 4 unit squares:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-tetris"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;grid-template-columns:15.7894736842105% 15.7894736842105% 15.7894736842105% 15.7894736842105% 15.7894736842105%;column-gap:5%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/tetris-1.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/tetris-2.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/tetris-3.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/tetris-4.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/tetris-5.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Five <em class="emphasis">Tetris</em> pieces<div class="autopermalink" data-description="Figure 5"><a href="#fig-tetris" title="Copy heading and permalink for Figure 5" aria-label="Copy heading and permalink for Figure 5">🔗</a></div></figcaption></figure><figure class="figure figure-like" id="fig-prefigure-tetris"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:20% 20% 20% 20% 20%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/prefig-tetris-1.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/prefig-tetris-2.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/prefig-tetris-3.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/prefig-tetris-4.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/prefig-tetris-5.svg" role="img" class="contained" alt="A Tetris piece"></div></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Five <em class="emphasis">Tetris</em> pieces in PreFigure<div class="autopermalink" data-description="Figure 6"><a href="#fig-prefigure-tetris" title="Copy heading and permalink for Figure 6" aria-label="Copy heading and permalink for Figure 6">🔗</a></div></figcaption></figure><div class="para" id="ch-intuitiveproofs-3-13-1-4">For the questions below, we also allow these pieces to be ``flipped over."<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-13-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ch-intuitiveproofs-3-13-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ch-intuitiveproofs-3-13-2-1-1">Is it possible to perfectly cover a <span class="process-math">\(4\times 5\)</span> chessboard using each of these shapes exactly once? Prove that it is impossible, or show by example that it is possible.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-13-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#ch-intuitiveproofs-3-13-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-3-13-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ch-intuitiveproofs-3-13-3-1-1">Is it possible to perfectly cover an <span class="process-math">\(8\times 5\)</span> chessboard using each of these shapes exactly twice? Prove that it is impossible, or show by example that it is possible.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-13-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#ch-intuitiveproofs-3-13-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Activity 3"><a href="#ch-intuitiveproofs-3-13" title="Copy heading and permalink for Activity 3" aria-label="Copy heading and permalink for Activity 3">🔗</a></div></article><div class="para" id="ch-intuitiveproofs-3-14">Sage can do modular arithmetic!<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="ch-intuitiveproofs-3-15" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">R = IntegerModRing(7)
+a = R(3)
+b = R(4)
+a * b
+</script></div>
+<div class="autopermalink" data-description="Subsection: Section 1.1 - Chessboard Problems"><a href="#ch-intuitiveproofs-3" title="Copy heading and permalink for Subsection: Section 1.1 - Chessboard Problems" aria-label="Copy heading and permalink for Subsection: Section 1.1 - Chessboard Problems">🔗</a></div></section><section class="subsection" id="ch-intuitiveproofs-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">10 Things To Know</span>
+</h3>
+<ol class="decimal" id="ch-intuitiveproofs-4-2">
+<li id="ch-intuitiveproofs-4-2-1">
+<div class="para" id="ch-intuitiveproofs-4-2-1-1">Math 210 may be the most important course in the mathematics major.  Many future courses rely heavily on it (315, 331, 350, 408, 441, 450, 495, and more) and it is helpful in many others (204, 205, 304, 360, 402, 498 and more).  <em class="emphasis">More than this, being a critical and independent thinker, creative problem solver, and excellent communicator are incredibly valuable professional skills</em>.  To be a math major, it is important to become reasonably good at the kinds of things we do in Math 210 and to find all of them familiar.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ch-intuitiveproofs-4-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-2">
+<div class="para" id="ch-intuitiveproofs-4-2-2-1">Get to know your classmates.  Be an active participant in class.  Use class time to build understanding.  Use ``rough draft language.’’  Be honest with yourself about your understanding.  Be unafraid to struggle and/or fail.  Ask questions.  Our meetings will be structured to encourage these behaviors.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ch-intuitiveproofs-4-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-3">
+<div class="para" id="ch-intuitiveproofs-4-2-3-1">On working in small groups with others:  for effective group work, what do you need your group mates to do?  what do you need your group mates <em class="emphasis">not</em> to do?  What do you need Professor Keough to do? What do you need to do? (on a note card, write your thoughts on each question; then share with your group and update as needed, then submit your notecards to me) Random groups will be assigned for the first  month in the course in order to find who you work well with.  Then we will work toward more consistent and stable seating arrangements.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ch-intuitiveproofs-4-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-4">
+<div class="para" id="ch-intuitiveproofs-4-2-4-1">Use drop-in hours.  Five minutes of conversation with your professor can sometimes be at least as effective as an hour on your own. <em class="emphasis">Use drop-in hours.</em>  Ask for an appointment if drop-in hours don’t work for you.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#ch-intuitiveproofs-4-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-5">
+<div class="para" id="ch-intuitiveproofs-4-2-5-1">Work on Math 210 5 days a week, 8-10 hours a week. \begin{enumerate} \item Preview activities for each class day (30-60 minutes per class: 1-2 hours each week); \item 3-5 ``weekly practice’’ homework exercises each week (1.5-2 hours per week: 20-30 minutes per exercise, plus preparing for 3 short presentations over the course of the semester); \item Overall reading, studying, and summarizing, including making a notecard for the check point (2-3 hours each week); \item Proof portfolio problems (3-4 hours a week).  The portfolio project will begin by the end of the 2nd week of class.  During the first two weeks of the course, expect to spend some time invested to learn how to use \LaTeX~(with support from me), which is the typesetting software we will use for all of our professional writing. \end{enumerate}<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#ch-intuitiveproofs-4-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-6">
+<div class="para" id="ch-intuitiveproofs-4-2-6-1">
+<em class="emphasis">Your textbook is designed just for you.  It is made to be read, to be worked on, and to have notes taken.</em><div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#ch-intuitiveproofs-4-2-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-7">
+<div class="para" id="ch-intuitiveproofs-4-2-7-1">GVSU has a Math 210 YouTube Channel: \href{http://gvsu.edu/s/GW}{\texttt{http://gvsu.edu/s/GW}}. (Note - this follows a different order than our textbook!)<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#ch-intuitiveproofs-4-2-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-8">
+<div class="para" id="ch-intuitiveproofs-4-2-8-1">Be certain to fully read the syllabus.  Meet with me, in-person, for 5 minutes, within the first 3 weeks of the semester.  Just to get to know one another a bit and so you know where the PCS is located  If posted drop-in hours don’t work, email me for an appointment: \texttt{keoulaur@gvsu.edu}.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8"><a href="#ch-intuitiveproofs-4-2-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-9">
+<div class="para" id="ch-intuitiveproofs-4-2-9-1">In the "<span class="process-math">\(\checkmark\)</span> Weekly To Do <span class="process-math">\(\checkmark\)</span>" document on Blackboard I’ll post what needs to be done for the following week after class on Thursday.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9"><a href="#ch-intuitiveproofs-4-2-9" title="Copy heading and permalink for Item 9" aria-label="Copy heading and permalink for Item 9">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-4-2-10">
+<div class="para" id="ch-intuitiveproofs-4-2-10-1">I want you to be successful.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-4-2-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 10"><a href="#ch-intuitiveproofs-4-2-10" title="Copy heading and permalink for Item 10" aria-label="Copy heading and permalink for Item 10">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: 10 Things To Know"><a href="#ch-intuitiveproofs-4" title="Copy heading and permalink for Subsection: 10 Things To Know" aria-label="Copy heading and permalink for Subsection: 10 Things To Know">🔗</a></div></section><section class="subsection" id="ch-intuitiveproofs-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conjecturing</span>
+</h3>
+<div class="para" id="ch-intuitiveproofs-5-2">More advanced mathematics is often considerably different from algebra and calculus.  Rather than using algorithms to solve a collection of similar problems, we are interested in other things:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-5-3">
+<em class="emphasis">A mathematician, like a painter or a poet, is a maker of patterns.  If her patterns are more permanent than theirs, it is because they are made with ideas. The mathematician’s patterns, like the painter’s or the poet’s, must be beautiful; the ideas, like the colours or the words, must fit together in a harmonious way. Beauty is the first test: there is no permanent place in the world for ugly mathematics.</em><div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-5-4">-G. H. Hardy  (1877 - 1947)<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-5-5">
+<dfn class="terminology">On patterns and conjectures.</dfn>  Go with your group to the whiteboard.  As directed, work on <dfn class="terminology">one</dfn> of the following prompts. (I will take pictures of your work and post.)<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="ch-intuitiveproofs-5-6">
+<li id="ch-intuitiveproofs-5-6-1">
+<div class="para logical" id="ch-intuitiveproofs-5-6-1-1">
+<div class="para">Consider the expression</div>
+<div class="displaymath process-math" id="ch-intuitiveproofs-5-6-1-1-1">
+\begin{equation*}
+1 + (-1)^n (2n-1).
+\end{equation*}
+</div>
+<div class="para">Evaluate this expression for at least 10 different integer values of <span class="process-math">\(n\text{,}\)</span> including some negative values and 0, as well as positive ones. What conjectures can you make regarding this expression and the related numbers you find?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ch-intuitiveproofs-5-6-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-5-6-2">
+<div class="para logical" id="ch-intuitiveproofs-5-6-2-1">
+<div class="para">Consider the equation</div>
+<div class="displaymath process-math" id="ch-intuitiveproofs-5-6-2-1-1">
+\begin{equation*}
+2x + 5y = 41.
+\end{equation*}
+</div>
+<div class="para">Can you find an ordered pair <span class="process-math">\((x,y)\)</span> of integers that makes the equation true?  If yes, can you characterize all such ordered pairs?  If not, why not? What conjecture(s) can you make about this equation?  About related equations?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ch-intuitiveproofs-5-6-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-5-6-3">
+<div class="para logical" id="ch-intuitiveproofs-5-6-3-1">
+<div class="para">Consider the expression</div>
+<div class="displaymath process-math" id="ch-intuitiveproofs-5-6-3-1-1">
+\begin{equation*}
+7^k - 2^k.
+\end{equation*}
+</div>
+<div class="para">Evaluate this expression for at least 10 different natural number values of <span class="process-math">\(k\text{.}\)</span> What conjectures can you make regarding this expression and the numbers you find?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-5-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ch-intuitiveproofs-5-6-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: Conjecturing"><a href="#ch-intuitiveproofs-5" title="Copy heading and permalink for Subsection: Conjecturing" aria-label="Copy heading and permalink for Subsection: Conjecturing">🔗</a></div></section><section class="subsection" id="ch-intuitiveproofs-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Wason Selection Test - Testing Truth.</span>
+</h3>
+<ol class="decimal" id="ch-intuitiveproofs-6-2">
+<li id="ch-intuitiveproofs-6-2-1">
+<div class="para" id="ch-intuitiveproofs-6-2-1-1">A mathematician places a set of four cards on a table, each of which has a number on one side and a colored patch on the other side. She claims the following: if a card shows an even number on one face, then its opposite face is red The visible faces of the cards show 3, 8, red, and blue. Which card(s) must you turn over in order to test the truth of her claim? Carefully explain.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ch-intuitiveproofs-6-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-6-2-2">
+<div class="para" id="ch-intuitiveproofs-6-2-2-1">It is a well known law in the United States that you must be 21 to consume alcohol.  Suppose now that four cards are placed on the table each of which has an age on one side and a beverage on the other.  The visible faces of the cards show 16, 22, coca-cola, and beer. If each card represents a person at the party, which card(s) must you check to make sure everyone at the party is a law abiding citizen.  That is, which card(s) must you turn over to verify the proposition: if one is consuming an alcoholic beverage then one is over the age of 21 How does this relate to the previous problem?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ch-intuitiveproofs-6-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="ch-intuitiveproofs-6-3">Statements of the form ``If... then..." are called conditional statements. We will explore conditional statements a lot in MTH 210. What must we do to establish that a conditional statement is true?  What is the only way that a conditional statement can be false?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: The Wason Selection Test - Testing Truth."><a href="#ch-intuitiveproofs-6" title="Copy heading and permalink for Subsection: The Wason Selection Test - Testing Truth." aria-label="Copy heading and permalink for Subsection: The Wason Selection Test - Testing Truth.">🔗</a></div></section><section class="subsection" id="ch-intuitiveproofs-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Counterexamples</span>
+</h3>
+<div class="para" id="ch-intuitiveproofs-7-2">
+<em class="emphasis">Disproving a conjecture, or showing a statement is false.</em><div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-7-3">There are several types of mathematical statements that we might disprove. Here’s 3 types:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ch-intuitiveproofs-7-4">
+<li id="ch-intuitiveproofs-7-4-1">
+<div class="para" id="ch-intuitiveproofs-7-4-1-1">For all (blah), (bleh).<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-intuitiveproofs-7-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-7-4-2">
+<div class="para" id="ch-intuitiveproofs-7-4-2-1">There exists a (doodle) that (doddles).<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-intuitiveproofs-7-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-7-4-3">
+<div class="para" id="ch-intuitiveproofs-7-4-3-1">If (loppity), then (luppity).<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-intuitiveproofs-7-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="ch-intuitiveproofs-7-5">Disproving each of them is a little different. Let’s start, as the chapter title says, with your intuition about how you would disprove these.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="ch-intuitiveproofs-7-6"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<article class="task exercise-like" id="ch-intuitiveproofs-7-6-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="introduction" id="ch-intuitiveproofs-7-6-1-1"><div class="para" id="ch-intuitiveproofs-7-6-1-1-1">Disprove the following statements:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ch-intuitiveproofs-7-6-1-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="ch-intuitiveproofs-7-6-1-2-1-1">For all natural numbers<details class="ptx-footnote" aria-live="polite" id="ch-intuitiveproofs-7-6-1-2-1-1-1"><summary class="ptx-footnote__number" title="Footnote 1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ch-intuitiveproofs-7-6-1-2-1-1-1">The natural numbers, denoted <span class="process-math">\(\mathbb{N}\text{,}\)</span> are the set <span class="process-math">\(\{1,2,3,\dots\}\text{.}\)</span>
+</div></details> <span class="process-math">\(n\text{,}\)</span> <span class="process-math">\(n&lt;n^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-6-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.a.i"><a href="#ch-intuitiveproofs-7-6-1-2" title="Copy heading and permalink for Task 4.a.i" aria-label="Copy heading and permalink for Task 4.a.i">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-7-6-1-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="ch-intuitiveproofs-7-6-1-3-1-1">There exists a perfect covering of an <span class="process-math">\(8\times 8\)</span> chessboard with the top left and bottom right corners removed using dominoes.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-6-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.a.ii"><a href="#ch-intuitiveproofs-7-6-1-3" title="Copy heading and permalink for Task 4.a.ii" aria-label="Copy heading and permalink for Task 4.a.ii">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-7-6-1-4"><h6 class="heading"><span class="codenumber">(iii)</span></h6>
+<div class="para" id="ch-intuitiveproofs-7-6-1-4-1-1">If <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are odd integers, and <span class="process-math">\(c\)</span> is any integer<details class="ptx-footnote" aria-live="polite" id="ch-intuitiveproofs-7-6-1-4-1-1-4"><summary class="ptx-footnote__number" title="Footnote 2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="ch-intuitiveproofs-7-6-1-4-1-1-4">The integers, denoted <span class="process-math">\(\mathbb{Z}\text{,}\)</span> are the set <span class="process-math">\(\{\dots,-3,-2,-1,0,1,2,3,\dots\}\text{.}\)</span> The odd integers are <span class="process-math">\(\{\dots, -5,-3,-1,1,3,5,\dots\}\text{.}\)</span>
+</div></details>, then <span class="process-math">\(cb+ca\)</span> is an odd integer.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-6-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.a.iii"><a href="#ch-intuitiveproofs-7-6-1-4" title="Copy heading and permalink for Task 4.a.iii" aria-label="Copy heading and permalink for Task 4.a.iii">🔗</a></div></article><div class="autopermalink" data-description="Task 4.a"><a href="#ch-intuitiveproofs-7-6-1" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-7-6-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ch-intuitiveproofs-7-6-2-1-1">How was it different to write a disproof for each type of statement? How was it similar?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-7-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#ch-intuitiveproofs-7-6-2" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><div class="autopermalink" data-description="Activity 4"><a href="#ch-intuitiveproofs-7-6" title="Copy heading and permalink for Activity 4" aria-label="Copy heading and permalink for Activity 4">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Counterexamples"><a href="#ch-intuitiveproofs-7" title="Copy heading and permalink for Subsection: Counterexamples" aria-label="Copy heading and permalink for Subsection: Counterexamples">🔗</a></div></section><section class="subsection" id="ch-intuitiveproofs-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 1.3 - The Pigeonhole Principle</span>
+</h3>
+<div class="para" id="ch-intuitiveproofs-8-2">As a reminder, here’s the statement of the pigeonhole principle:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-8-3">
+<dfn class="terminology">Principle 1.5</dfn> (<em class="emphasis">The pigeonhole principle</em>). The principle has a simple form and a general form. Assume <span class="process-math">\(k\)</span> and <span class="process-math">\(n\)</span> are positive integers. <details class="ptx-footnote" aria-live="polite" id="ch-intuitiveproofs-8-3-5"><summary class="ptx-footnote__number" title="Footnote 3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="ch-intuitiveproofs-8-3-5">The positive integers are these numbers: 1,2,3,4.... We will call these the natural numbers, and denote <span class="process-math">\(\mathbb{N}\text{,}\)</span> but mathematicians disagree about whether <span class="process-math">\(0\)</span> is a natural number, so the author writes positive integers.</div></details><div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-8-4">
+<dfn class="terminology">Simple form:</dfn> If <span class="process-math">\(n+1\)</span> objects are placed into <span class="process-math">\(n\)</span> boxes, then at least one box has at least two objects in it.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-8-5">
+<dfn class="terminology">General form:</dfn> If <span class="process-math">\(kn+1\)</span> objects are placed into <span class="process-math">\(n\)</span> boxes, then at least one box has at least <span class="process-math">\(k+1\)</span> objects in it.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="ch-intuitiveproofs-8-6"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<article class="task exercise-like" id="ch-intuitiveproofs-8-6-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="introduction" id="ch-intuitiveproofs-8-6-1-1"><div class="para" id="ch-intuitiveproofs-8-6-1-1-1">Let’s begin with some true/false questions. Explain your answers.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ch-intuitiveproofs-8-6-1-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-1-2-1-1">True/False: If <span class="process-math">\(201\)</span> objects are placed in <span class="process-math">\(100\)</span> boxes, then every box has at least 2 items.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.a.i"><a href="#ch-intuitiveproofs-8-6-1-2" title="Copy heading and permalink for Task 5.a.i" aria-label="Copy heading and permalink for Task 5.a.i">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-1-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-1-3-1-1">True/False: If <span class="process-math">\(100^2\)</span> objects are placed in <span class="process-math">\(100\)</span> boxes, then no box is empty.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.a.ii"><a href="#ch-intuitiveproofs-8-6-1-3" title="Copy heading and permalink for Task 5.a.ii" aria-label="Copy heading and permalink for Task 5.a.ii">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-1-4"><h6 class="heading"><span class="codenumber">(iii)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-1-4-1-1">True/False: Given <span class="process-math">\(501\)</span> objects placed in <span class="process-math">\(100\)</span> boxes, at least one box has <span class="process-math">\(5\)</span> objects in it.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.a.iii"><a href="#ch-intuitiveproofs-8-6-1-4" title="Copy heading and permalink for Task 5.a.iii" aria-label="Copy heading and permalink for Task 5.a.iii">🔗</a></div></article><div class="autopermalink" data-description="Task 5.a"><a href="#ch-intuitiveproofs-8-6-1" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ch-intuitiveproofs-8-6-2-1-1">Read (aloud) pages 17-18 of your textbook (starting at Mathematical Examples and ending before Proposition 1.10) with your team. Pause every paragraph (at least) to ask questions, and rephrase what you have read.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.b"><a href="#ch-intuitiveproofs-8-6-2" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-3"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="introduction" id="ch-intuitiveproofs-8-6-3-1"><div class="para" id="ch-intuitiveproofs-8-6-3-1-1">In the following, identify what version of the pigeonhole principle are you using, what the objects and boxes are, and what any variables are (<span class="process-math">\(n\)</span> and <span class="process-math">\(k\)</span>). Suppose you deal a pile of cards, face down, from a shuffled deck of cards (this is a standard 52-card deck, where each card is one of 4 suits and one of 13 ranks). How many must you deal until you are guaranteed...<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="ch-intuitiveproofs-8-6-3-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-3-2-1-1">five of the same suit?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.c.i"><a href="#ch-intuitiveproofs-8-6-3-2" title="Copy heading and permalink for Task 5.c.i" aria-label="Copy heading and permalink for Task 5.c.i">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-3-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-3-3-1-1">two of the same rank?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.c.ii"><a href="#ch-intuitiveproofs-8-6-3-3" title="Copy heading and permalink for Task 5.c.ii" aria-label="Copy heading and permalink for Task 5.c.ii">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-3-4"><h6 class="heading"><span class="codenumber">(iii)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-3-4-1-1">three of the same rank?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.c.iii"><a href="#ch-intuitiveproofs-8-6-3-4" title="Copy heading and permalink for Task 5.c.iii" aria-label="Copy heading and permalink for Task 5.c.iii">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-3-5"><h6 class="heading"><span class="codenumber">(iv)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-3-5-1-1">four of the same rank?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.c.iv"><a href="#ch-intuitiveproofs-8-6-3-5" title="Copy heading and permalink for Task 5.c.iv" aria-label="Copy heading and permalink for Task 5.c.iv">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-3-6"><h6 class="heading"><span class="codenumber">(v)</span></h6>
+<div class="para" id="ch-intuitiveproofs-8-6-3-6-1-1">two of one rank and three of another?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.c.v"><a href="#ch-intuitiveproofs-8-6-3-6" title="Copy heading and permalink for Task 5.c.v" aria-label="Copy heading and permalink for Task 5.c.v">🔗</a></div></article><div class="autopermalink" data-description="Task 5.c"><a href="#ch-intuitiveproofs-8-6-3" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div></article><article class="task exercise-like" id="ch-intuitiveproofs-8-6-4"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ch-intuitiveproofs-8-6-4-1-1">Paul Erd\"{o}s was a Hungarian mathematician famous for problem solving. Here’s his favorite problem to give: \begin{quote} Given any 101 integers from <span class="process-math">\(\{1,2,3,\dots, 200\}\)</span> at least one these numbers will divide another. \end{quote} This problem is a challenge and will introduce a few ideas which we have not yet discussed, but the goal for this chapter is to get our feet wet, to have fun proving some interesting things, and to push your problem solving skills. Discuss with your team - what could the boxes be? How do we sort into the boxes?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-8-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.d"><a href="#ch-intuitiveproofs-8-6-4" title="Copy heading and permalink for Task 5.d" aria-label="Copy heading and permalink for Task 5.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 5"><a href="#ch-intuitiveproofs-8-6" title="Copy heading and permalink for Activity 5" aria-label="Copy heading and permalink for Activity 5">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Section 1.3 - The Pigeonhole Principle"><a href="#ch-intuitiveproofs-8" title="Copy heading and permalink for Subsection: Section 1.3 - The Pigeonhole Principle" aria-label="Copy heading and permalink for Subsection: Section 1.3 - The Pigeonhole Principle">🔗</a></div></section><section class="subsection" id="ch-intuitiveproofs-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Play, Conjecture, Prove \#1 - The Game SET</span>
+</h3>
+<div class="para" id="ch-intuitiveproofs-9-2">To provide us with an initial playground for exploring some mathematical ideas, meet the wonderful card game <dfn class="terminology">SET</dfn> (if you’ve never played it before).  It is filled with superb mathematical ideas.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-9-3">SET: Each card in the deck has three symbols on it, characterized by four attributes:<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ch-intuitiveproofs-9-4">
+<li id="ch-intuitiveproofs-9-4-1">
+<div class="para" id="ch-intuitiveproofs-9-4-1-1">
+<dfn class="terminology">number</dfn>: one, two, or three symbols;<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-intuitiveproofs-9-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-9-4-2">
+<div class="para" id="ch-intuitiveproofs-9-4-2-1">
+<dfn class="terminology">color</dfn>: red, purple, or green;<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-intuitiveproofs-9-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-9-4-3">
+<div class="para" id="ch-intuitiveproofs-9-4-3-1">
+<dfn class="terminology">shading</dfn>: empty, striped, or solid;<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-intuitiveproofs-9-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch-intuitiveproofs-9-4-4">
+<div class="para" id="ch-intuitiveproofs-9-4-4-1">
+<dfn class="terminology">shape</dfn>: oval, diamond, or squiggle.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-intuitiveproofs-9-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="ch-intuitiveproofs-9-5">
+<em class="emphasis">Every possible combination appears in the deck exactly once</em>.  A ``<dfn class="terminology">set</dfn>’’ comprises three cards for which each attribute is independently either all the same or all different. It’s important to note that the number of attributes that are the same can vary. On the document camera, let’s find some examples among the 12 cards present.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch-intuitiveproofs-9-6">\hrulefill<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="ch-intuitiveproofs-9-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="ch-intuitiveproofs-9-7-1-1">At your table in your group of 3-4 students, play several hands of SET.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ch-intuitiveproofs-9-7-1-2">After you have each found a couple of sets, stop playing and do the following:  develop some mathematically significant questions about the game SET.  Your main task is to <em class="emphasis">ask questions</em>.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ch-intuitiveproofs-9-7-1-3">After you have stated several questions, choose at least one of them and use your question to make a <em class="emphasis">conjecture</em>.  (A conjecture is a mathematical statement that you think might be true.)<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ch-intuitiveproofs-9-7-1-4">What is a theorem?  What is a proof? What’s the difference between a conjecture and a theorem?<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ch-intuitiveproofs-9-7-1-5">
+<dfn class="terminology">Theorem.</dfn>  (The Fundamental Theorem of SET)  Given any two cards from the deck in SET, those two cards determine a _____.  Said differently,    \<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ch-intuitiveproofs-9-7-1-6">
+<em class="emphasis">Proof.</em>  Choose any two cards in the deck.  Consider one of the four attributes.  Either the two cards are _____ in that attribute or they are _____.  If they are the same, then the third card in the set must be _____ in that attribute; if they are different, then the third card in the set must have the _____ _____ of that attribute.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ch-intuitiveproofs-9-7-1-7">Since this happens for each of the four attributes, the four traits of the potential third card are _____ determined.  Moreover, since every possible combination of the four attributes appears exactly once in the deck, we know that such a card exists, and hence there is _____ set that contains the original  two given cards.<div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ch-intuitiveproofs-9-7-1-8">For the first ``Play, Conjecture, Prove" problem (Proof Portfolio Problem \#1), you can pick one of the questions you asked with your team, explore an answer, and prove something. I have a deck of SET cards that I keep in my office.  You can borrow it any time you’d like.  Maybe some enterprising student would like to organize a SET tournament sometime this semester <span class="process-math">\(\ldots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch-intuitiveproofs-9-7-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activity 6"><a href="#ch-intuitiveproofs-9-7" title="Copy heading and permalink for Activity 6" aria-label="Copy heading and permalink for Activity 6">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Play, Conjecture, Prove \#1 - The Game SET"><a href="#ch-intuitiveproofs-9" title="Copy heading and permalink for Subsection: Play, Conjecture, Prove \#1 - The Game SET" aria-label="Copy heading and permalink for Subsection: Play, Conjecture, Prove \#1 - The Game SET">🔗</a></div></section><div class="autopermalink" data-description="Chapter: Intuitive Proofs"><a href="#ch-intuitiveproofs" title="Copy heading and permalink for Chapter: Intuitive Proofs" aria-label="Copy heading and permalink for Chapter: Intuitive Proofs">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script data-pretext-tools-frame-bridge="true">
+(function () {
+  if (window.__ptxFrameBridge) { return; }
+  window.__ptxFrameBridge = true;
+  function report() {
+    try {
+      parent.postMessage({
+        command: 'ptxFramePath',
+        path: location.pathname + location.search + location.hash
+      }, '*');
+    } catch (e) { /* not framed */ }
+  }
+  report();
+  window.addEventListener('hashchange', report);
+  window.addEventListener('pageshow', report);
+  window.addEventListener('message', function (event) {
+    if (event.data && event.data.command === 'ptxFrameReload') {
+      location.reload();
+    }
+  });
+})();
+</script>
+</body>
+</html>

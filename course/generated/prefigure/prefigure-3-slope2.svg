@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-3-slope2-figure" width="210" height="210" viewBox="0 0 210 210">
+  <defs>
+    <clipPath id="prefigure-3-slope2-clipPath-0">
+      <rect x="5.0" y="5.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <clipPath id="prefigure-3-slope2-clipPath-1">
+      <rect x="5.0" y="5.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <marker id="prefigure-3-slope2-arrow-head-end-2_None_24_60-blue" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="prefigure-3-slope2-arrow-head-end-2_None_24_60-blue-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <g id="prefigure-3-slope2-grid-axes">
+    <g id="prefigure-3-slope2-grid" stroke="#ccc" stroke-width="1">
+      <line x1="5.0" y1="205.0" x2="5.0" y2="5.0"/>
+      <line x1="30.0" y1="205.0" x2="30.0" y2="5.0"/>
+      <line x1="55.0" y1="205.0" x2="55.0" y2="5.0"/>
+      <line x1="80.0" y1="205.0" x2="80.0" y2="5.0"/>
+      <line x1="105.0" y1="205.0" x2="105.0" y2="5.0"/>
+      <line x1="130.0" y1="205.0" x2="130.0" y2="5.0"/>
+      <line x1="155.0" y1="205.0" x2="155.0" y2="5.0"/>
+      <line x1="180.0" y1="205.0" x2="180.0" y2="5.0"/>
+      <line x1="205.0" y1="205.0" x2="205.0" y2="5.0"/>
+      <line x1="5.0" y1="205.0" x2="205.0" y2="205.0"/>
+      <line x1="5.0" y1="180.0" x2="205.0" y2="180.0"/>
+      <line x1="5.0" y1="155.0" x2="205.0" y2="155.0"/>
+      <line x1="5.0" y1="130.0" x2="205.0" y2="130.0"/>
+      <line x1="5.0" y1="105.0" x2="205.0" y2="105.0"/>
+      <line x1="5.0" y1="80.0" x2="205.0" y2="80.0"/>
+      <line x1="5.0" y1="55.0" x2="205.0" y2="55.0"/>
+      <line x1="5.0" y1="30.0" x2="205.0" y2="30.0"/>
+      <line x1="5.0" y1="5.0" x2="205.0" y2="5.0"/>
+    </g>
+    <g id="prefigure-3-slope2-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-3-slope2-line-18" x1="5.0" y1="105.0" x2="205.0" y2="105.0" stroke="black" stroke-width="2"/>
+      <line id="prefigure-3-slope2-line-19" x1="105.0" y1="205.0" x2="105.0" y2="5.0" stroke="black" stroke-width="2"/>
+    </g>
+    <g id="prefigure-3-slope2-label-0" transform="translate(201.0,101.0) translate(-10.4,-8.2)">
+      <g id="prefigure-3-slope2-g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-3-slope2-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-3-slope2-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-3-slope2-label-1" transform="translate(109.0,9.0) translate(0.0,-0.0)">
+      <g id="prefigure-3-slope2-g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-3-slope2-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-3-slope2-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <g id="prefigure-3-slope2-group-0">
+    <line id="prefigure-3-slope2-line-20" x1="5.0" y1="205.0" x2="22.1" y2="222.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-21" x1="5.0" y1="180.0" x2="17.6" y2="196.8" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-22" x1="5.0" y1="155.0" x2="13.3" y2="171.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-23" x1="5.0" y1="130.0" x2="9.1" y2="146.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-24" x1="5.0" y1="105.0" x2="5.0" y2="121.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-25" x1="5.0" y1="80.0" x2="0.9" y2="96.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-26" x1="5.0" y1="55.0" x2="-3.3" y2="71.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-27" x1="5.0" y1="30.0" x2="-7.6" y2="46.8" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-28" x1="5.0" y1="5.0" x2="-12.1" y2="22.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-29" x1="30.0" y1="205.0" x2="46.8" y2="217.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-30" x1="30.0" y1="180.0" x2="42.4" y2="192.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-31" x1="30.0" y1="155.0" x2="38.0" y2="167.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-32" x1="30.0" y1="130.0" x2="33.9" y2="141.8" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-33" x1="30.0" y1="105.0" x2="30.0" y2="116.7" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-34" x1="30.0" y1="80.0" x2="26.1" y2="91.8" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-35" x1="30.0" y1="55.0" x2="22.0" y2="67.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-36" x1="30.0" y1="30.0" x2="17.6" y2="42.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-37" x1="30.0" y1="5.0" x2="13.2" y2="17.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-38" x1="55.0" y1="205.0" x2="71.6" y2="213.3" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-39" x1="55.0" y1="180.0" x2="67.1" y2="188.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-40" x1="55.0" y1="155.0" x2="62.7" y2="162.7" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-41" x1="55.0" y1="130.0" x2="58.6" y2="137.2" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-42" x1="55.0" y1="105.0" x2="55.0" y2="112.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-43" x1="55.0" y1="80.0" x2="51.4" y2="87.2" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-44" x1="55.0" y1="55.0" x2="47.3" y2="62.7" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-45" x1="55.0" y1="30.0" x2="42.9" y2="38.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-46" x1="55.0" y1="5.0" x2="38.4" y2="13.3" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-47" x1="80.0" y1="205.0" x2="96.4" y2="209.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-48" x1="80.0" y1="180.0" x2="91.8" y2="183.9" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-49" x1="80.0" y1="155.0" x2="87.2" y2="158.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-50" x1="80.0" y1="130.0" x2="83.0" y2="133.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-51" x1="80.0" y1="105.0" x2="80.0" y2="107.3" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-52" x1="80.0" y1="80.0" x2="77.0" y2="83.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-53" x1="80.0" y1="55.0" x2="72.8" y2="58.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-54" x1="80.0" y1="30.0" x2="68.2" y2="33.9" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-55" x1="80.0" y1="5.0" x2="63.6" y2="9.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-56" x1="105.0" y1="205.0" x2="121.4" y2="205.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-57" x1="105.0" y1="180.0" x2="116.7" y2="180.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-58" x1="105.0" y1="155.0" x2="112.0" y2="155.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-59" x1="105.0" y1="130.0" x2="107.3" y2="130.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-60" x1="105.0" y1="80.0" x2="102.7" y2="80.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-61" x1="105.0" y1="55.0" x2="98.0" y2="55.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-62" x1="105.0" y1="30.0" x2="93.3" y2="30.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-63" x1="105.0" y1="5.0" x2="88.6" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-64" x1="130.0" y1="205.0" x2="146.4" y2="200.9" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-65" x1="130.0" y1="180.0" x2="141.8" y2="176.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-66" x1="130.0" y1="155.0" x2="137.2" y2="151.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-67" x1="130.0" y1="130.0" x2="133.0" y2="127.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-68" x1="130.0" y1="105.0" x2="130.0" y2="102.7" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-69" x1="130.0" y1="80.0" x2="127.0" y2="77.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-70" x1="130.0" y1="55.0" x2="122.8" y2="51.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-71" x1="130.0" y1="30.0" x2="118.2" y2="26.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-72" x1="130.0" y1="5.0" x2="113.6" y2="0.9" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-73" x1="155.0" y1="205.0" x2="171.6" y2="196.7" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-74" x1="155.0" y1="180.0" x2="167.1" y2="172.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-75" x1="155.0" y1="155.0" x2="162.7" y2="147.3" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-76" x1="155.0" y1="130.0" x2="158.6" y2="122.8" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-77" x1="155.0" y1="105.0" x2="155.0" y2="98.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-78" x1="155.0" y1="80.0" x2="151.4" y2="72.8" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-79" x1="155.0" y1="55.0" x2="147.3" y2="47.3" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-80" x1="155.0" y1="30.0" x2="142.9" y2="22.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-81" x1="155.0" y1="5.0" x2="138.4" y2="-3.3" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-82" x1="180.0" y1="205.0" x2="196.8" y2="192.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-83" x1="180.0" y1="180.0" x2="192.4" y2="167.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-84" x1="180.0" y1="155.0" x2="188.0" y2="142.9" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-85" x1="180.0" y1="130.0" x2="183.9" y2="118.2" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-86" x1="180.0" y1="105.0" x2="180.0" y2="93.3" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-87" x1="180.0" y1="80.0" x2="176.1" y2="68.2" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-88" x1="180.0" y1="55.0" x2="172.0" y2="42.9" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-89" x1="180.0" y1="30.0" x2="167.6" y2="17.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-90" x1="180.0" y1="5.0" x2="163.2" y2="-7.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-91" x1="205.0" y1="205.0" x2="222.1" y2="187.9" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-92" x1="205.0" y1="180.0" x2="217.6" y2="163.2" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-93" x1="205.0" y1="155.0" x2="213.3" y2="138.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-94" x1="205.0" y1="130.0" x2="209.1" y2="113.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-95" x1="205.0" y1="105.0" x2="205.0" y2="88.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-96" x1="205.0" y1="80.0" x2="200.9" y2="63.6" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-97" x1="205.0" y1="55.0" x2="196.7" y2="38.4" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-98" x1="205.0" y1="30.0" x2="192.4" y2="13.2" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-3-slope2-line-99" x1="205.0" y1="5.0" x2="187.9" y2="-12.1" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-3-slope2-arrow-head-end-2_None_24_60-blue)"/>
+  </g>
+</svg>

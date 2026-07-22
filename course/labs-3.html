@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>28: Method of characteristics (Lab)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MTH 401: Math for the Physical Sciences">
+<meta property="book:author" content="Lora Bailey">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MTH 401: Math for the Physical Sciences</span> <span class="subtitle">Fall 2026</span></a></h1>
+<p class="byline">Lora Bailey</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="labs.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="labs.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\mbf}[1]{{\mathbf #1}}
+\newcommand{\vs}[1]{\vspace{#1in}}
+\newcommand{\work}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\owork}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\flux}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\oflux}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdtwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\fourier}{{\cal F}}
+\newcommand{\cu}{{\cal U}}
+\newcommand{\ds}{\displaystyle}
+\renewcommand{\arg}{\text{Arg}}
+\newcommand{\re}{\text{Real}}
+\newcommand{\res}{\text{Res}}
+\newcommand{\lineint}[2]{\int_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\olineint}[2]{\oint_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\nvec}{\mathbf{n}}
+\newcommand{\zerovec}{\mathbf{0}}
+\newcommand{\oiint}{∯}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-week-01.html#exercises-" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="labs.html" class="internal"><span class="title">Labs</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="labs-3.html" class="internal"><span class="title">28: Method of characteristics (Lab)</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">0. Review of Calculus III</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">1.1. Evaluating line integrals</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-4.html#subsubsec-vector-calculus" class="internal"><span class="title">Section 1: Vector Calculus</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-4.html#subsubsec-vector-calculus-2" class="internal"><span class="title">Part 1.1: Line Integrals</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">1.2. The FTC of line integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">1.3. The operator ``del’’</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-7.html" class="internal"><span class="title">1.4. The Divergence Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-8.html" class="internal"><span class="title">1.5. Green’s Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="title">1.6. Finding potentials</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-10.html" class="internal"><span class="title">1.7. Gauss’ Law and the Divergence Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-11.html" class="internal"><span class="title">1.8. Review of Vector Calculus</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-12.html" class="internal"><span class="title">2.1. Intro to PDEs and the heat equation</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-12.html#subsubsec-heat-wave" class="internal"><span class="title">Section 2: Partial Differential Equations in the context of the Heat and Wave Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-12.html#subsubsec-heat-wave-2" class="internal"><span class="title">Part 2.1: Introduction to the Heat Equation in One Dimension</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-13.html" class="internal"><span class="title">2.2. Solving a Sturm-Liouville problem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-14.html" class="internal"><span class="title">2.3. Fourier Sine and Cosine series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-15.html" class="internal"><span class="title">2.4 Solving the heat equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-16.html" class="internal"><span class="title">2.5. The wave equation Intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-17.html" class="internal"><span class="title">2.6. The wave equation continued</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-18.html" class="internal"><span class="title">2.7. General Fourier series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-19.html" class="internal"><span class="title">2.8. Laplace’s equation in rectangular coordinates</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-20.html" class="internal"><span class="title">2.9. Laplace’s equation in a disk</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-21.html" class="internal"><span class="title">2.10. Higher dimensional equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-22.html" class="internal"><span class="title">2.11. Poisson’s equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-23.html" class="internal"><span class="title">2.12. Series solutions of ODEs intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">2.13. Series solutions of famous ODEs</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">2.14. Bessel functions of the first kind</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">2.15. PDEs on cylinders</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">2.16. Putting it all together - Laplace’s equation on a cylinder</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">2.17. The Fourier transform intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">2.18. The final Fourier transform applied to Laplace’s Equation</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">3.1. Complex arithmetic</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-30.html#subsubsec-complex-analysis" class="internal"><span class="title">Section 3: Complex Analysis</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-30.html#subsubsec-complex-analysis-2" class="internal"><span class="title">Part 3.1: Complex Arithmetic</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-31.html" class="internal"><span class="title">3.2. Complex functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-32.html" class="internal"><span class="title">3.3. Cauchy-Riemann equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-33.html" class="internal"><span class="title">3.4. Cauchy-Riemann equations part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-34.html" class="internal"><span class="title">3.5. Contour integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-35.html" class="internal"><span class="title">34: Cauchy’s integral formula</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-36.html" class="internal"><span class="title">35: Taylor series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-37.html" class="internal"><span class="title">36: Laurent series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-38.html" class="internal"><span class="title">37: Residues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-39.html" class="internal"><span class="title">38: Trigonometric integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-40.html" class="internal"><span class="title">39: Fourier transforms</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-41.html" class="internal"><span class="title">40: Principal values of integrals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="labs-3" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">28: Method of characteristics (Lab)</span><div class="print-links"><a href="?printpreview=labs-3" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="introduction" id="labs-3-2">
+<div class="para" id="labs-3-2-1">We’re going to see an application of the wave equation, in traffic!  Specifically, we’re going to determine how traffic is actually a {\underline{shock wave}}!<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-2">\section*{Traffic Flows}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-3">Let’s take a 1-way highway, and look at a stretch of road.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-4">\begin{center} \includegraphics[scale = 0.6]{highway} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-5">Define:<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="labs-3-2-6">
+<li id="labs-3-2-6-1">
+<div class="para" id="labs-3-2-6-1-1">
+<span class="process-math">\(\rho(x,t)\)</span> = density of cars at position <span class="process-math">\(x\)</span> at time <span class="process-math">\(t\text{,}\)</span>  units = {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="labs-3-2-6-2">
+<div class="para" id="labs-3-2-6-2-1">
+<span class="process-math">\(v(x,t)\)</span> = velocity of the cars at position <span class="process-math">\(x\)</span> at time <span class="process-math">\(t\text{,}\)</span>  units = {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="labs-3-2-7">So a car that begins at <span class="process-math">\(x\)</span> ends up at <span class="process-math">\(x+v \Delta t\)</span> after some short time interval <span class="process-math">\(\Delta t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-8">Then the product:<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-9">
+<span class="process-math">\(\rho(x,t) v(x,t)\)</span> = {\underline{}} , units = {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-10">We’re going to focus on the density function, <span class="process-math">\(\rho(x,t)\text{,}\)</span> and come up with a mathematical model.  We find something useful if we consider the number <span class="process-math">\(N\)</span> of cars in an interval <span class="process-math">\(\left[a,b\right]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-11">\begin{center} \includegraphics[scale = 0.6]{N} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-12">
+<div class="para">We can get <span class="process-math">\(N\)</span> by integrating the density over the interval <span class="process-math">\(\left[a,b\right]\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="labs-3-2-12-3">
+\begin{equation*}
+N(t) = \int_a^b \rho(x,t) \ dx.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-13">If <span class="process-math">\(N\)</span> is the total number of cars in the interval, then the rate of change of the number of cars in this interval is (switch the order of the operators and put everything under an integral):<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-14">
+<div class="displaymath process-math" id="labs-3-2-14-1">
+\begin{equation*}
+\frac{dN}{dt} =  {\underline{~~~}} =  {\underline{~~~}}    
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-15">We can approach this same quantity from a different perspective, a law of conservation.  The rate of change of the number of cars in <span class="process-math">\(\left[a,b\right]\)</span> is the difference in the rate at which cars enter the interval on the left at <span class="process-math">\(a\text{,}\)</span> and the rate at which cars leave on the right at <span class="process-math">\(b\text{.}\)</span>  Can we write this also as an integral from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-16">
+<div class="displaymath process-math" id="labs-3-2-16-1">
+\begin{equation*}
+\frac{dN}{dt} = (\rho v)|_{x=a} - (\rho v)|_{x = b} =  -\left((\rho v)|_{x=b} - (\rho v)|_{x = a}\right) = {\underline{~~~}}    
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-17">
+<div class="para">Altogether we have</div>
+<div class="displaymath process-math" id="labs-3-2-17-1">
+\begin{equation*}
+\frac{dN}{dt} = \int_a^b \frac{\partial \rho}{\partial t} \ dx = -  \int_a^b \frac{\partial (\rho v)}{\partial x} \ dx. 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-18">
+<div class="para">Rearrange 2 parts of the equation above to get an integral equal to 0.</div>
+<div class="displaymath process-math" id="labs-3-2-18-1">
+\begin{equation*}
+{\underline{~~~}} = 0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-19">
+<div class="para">Since this is true for EVERY interval <span class="process-math">\(\left[a,b\right]\text{,}\)</span> then it must be true that the integrand itself is zero, and we end up with the following equation:</div>
+<div class="displaymath process-math" id="labs-3-2-19-2">
+\begin{equation*}
+{\underline{~~~}} = 0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-20">This is the partial differential equation we want to focus on. And we can think of the density function as a wave, the highway is like our string, and the value of the density function is like the height of the string.  Of course there is a maximum density of traffic on the road, but we can divide by the maximum density and thus we can assume here that <span class="process-math">\(0\le \rho\le 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="labs-3-2-21">
+<li id="labs-3-2-21-1">
+<div class="para" id="labs-3-2-21-1-1">
+<span class="process-math">\(\rho = \)</span> {\underline{}} corresponds to max density: bumper-to-bumper traffic.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-21-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="labs-3-2-21-2">
+<div class="para" id="labs-3-2-21-2-1">
+<span class="process-math">\(\rho \approx \)</span> {\underline{}} corresponds to min density: almost no cars on the road.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-21-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-21-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="labs-3-2-21-3">
+<div class="para" id="labs-3-2-21-3-1">
+<span class="process-math">\(\rho = \frac14\)</span>  may correspond to an example such as {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-21-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-21-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para logical" id="labs-3-2-22">
+<div class="para">Let’s examine velocity here...  It is certainly reasonable to assume velocity <span class="process-math">\(v\)</span> depends on density of traffic <span class="process-math">\(\rho\text{.}\)</span>  When there are no cars on the road (<span class="process-math">\(\rho  = \)</span> {\underline{}}), traffic will move at its maximum speed.  Let</div>
+<div class="displaymath process-math" id="labs-3-2-22-4">
+\begin{equation*}
+c = \text{ max speed of traffic.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-23">We expect that when density increases, the speed <span class="process-math">\(v\)</span> will decrease, and that when there is bumper-to-bumper traffic, (<span class="process-math">\(\rho = \)</span> {\underline{}}), no one is moving and so <span class="process-math">\(v = {\underline{~~~}}\text{.}\)</span>  Draw a linear possibility on the graph below and determine the equation for <span class="process-math">\(v(\rho)\)</span> that corresponds to it.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-24">\begin{center} \includegraphics[scale = 0.5]{vgraph} \hspace{2cm}  $v(\rho) = {\underline{\hspace{3cm}}}$ \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-25">This may seem like an overly simplistic assumption, but Lighthill and Whitham describe experimental evidence that justifies its use.  (See references.)<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-26">
+<div class="para">Ok, we have an equation for <span class="process-math">\(v\text{.}\)</span>  Let’s plug that in to our PDE.  We now have:</div>
+<div class="displaymath process-math" id="labs-3-2-26-2">
+\begin{equation*}
+\frac{\partial \rho}{\partial t} + \frac{\partial (c(1-\rho)\rho)}{\partial x} = 0.
+\end{equation*}
+</div>
+<div class="para">Calculus to the rescue, our final expression is:</div>
+<div class="displaymath process-math" id="labs-3-2-26-3">
+\begin{equation*}
+\frac{\partial \rho}{\partial t} + c(1-2\rho) \frac{\partial \rho}{\partial x} = 0.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-27">\section*{Method of Characteristics} How do we solve this?  Let’s assume we have an initial density function <span class="process-math">\(\rho(x,0)\text{.}\)</span>  We want to describe how <span class="process-math">\(\rho(x,t)\)</span> for later times. (Note: this is not the movement of individual cars, but the density which is an aggregated measure of all the cars positions.)<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="labs-3-2-28">
+<li id="labs-3-2-28-1">
+<div class="para" id="labs-3-2-28-1-1">Start at some initial point <span class="process-math">\((x_0,\rho_0)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-28-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-28-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="labs-3-2-28-2">
+<div class="para" id="labs-3-2-28-2-1">We are used to: fixing <span class="process-math">\(x_0\)</span> and seeing how <span class="process-math">\(\rho(x,t)\)</span> changes over time at position <span class="process-math">\(x_0\text{.}\)</span> <dfn class="terminology">What we do instead:</dfn> we fix <span class="process-math">\(\rho_0\text{,}\)</span> and determine the path <span class="process-math">\(x(t)\)</span> we need to take over time to keep that constant value of density, <span class="process-math">\(\rho_0\text{.}\)</span> That is, we find <span class="process-math">\(x(t)\)</span> such that <span class="process-math">\(\rho(x(t), t) = \rho_0\text{!}\)</span> (Think of density <span class="process-math">\(\rho\)</span> as a wave, so we look for the path of the point starting at <span class="process-math">\((x_0,\rho_0)\)</span> so the height of the wave doesn’t change!  Like a level curve...)<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-28-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-28-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para logical" id="labs-3-2-29">
+<div class="para">But, since <span class="process-math">\(\rho(x(t),t) = \rho_0\text{,}\)</span> a CONSTANT, so with the help of multivariable calculus we know:</div>
+<div class="displaymath process-math" id="labs-3-2-29-2">
+\begin{equation*}
+\frac{d\rho}{dt} = \frac{\partial \rho}{\partial t} + \frac{dx}{dt}\frac{\partial \rho}{\partial x} = {\underline{~~~}} 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-30">
+<div class="para">Compare this to the final expression we had just before we entered the territory of Method of Characteristics.  In order to match the two equations, we must have:</div>
+<div class="displaymath process-math" id="labs-3-2-30-1">
+\begin{equation*}
+{\underline{~~~}} =  {\underline{~~~}}  
+\end{equation*}
+</div>
+<div class="para">This is the speed of our wave!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-3-2-31">
+<div class="para">Because we are looking for where <span class="process-math">\(\rho(x(t),t) = \rho_0\text{,}\)</span> we can sub in <span class="process-math">\(\rho_0\)</span> for <span class="process-math">\(\rho\text{,}\)</span> meaning that the path our point takes is</div>
+<div class="displaymath process-math" id="labs-3-2-31-4">
+\begin{equation*}
+x(t) = c(1-2\rho_0)t + x_0.
+\end{equation*}
+</div>
+<div class="para">So an initial point <span class="process-math">\(x_0\)</span> moves to the left or right with speed <span class="process-math">\(c(1-2\rho_0)\)</span> (<span class="process-math">\(c\)</span> is the max velocity possible of the cars, the wave has speed <span class="process-math">\(c(1-2\rho_0)\)</span>).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-32">
+<dfn class="terminology">Context check:</dfn><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="labs-3-2-33">
+<li id="labs-3-2-33-1">
+<div class="para" id="labs-3-2-33-1-1">If <span class="process-math">\(\rho_0 = 0\)</span> (minimum density), then <span class="process-math">\(x_0\)</span> moves with speed {\underline{}} to the {\underline{}}.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-33-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-33-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="labs-3-2-33-2">
+<div class="para" id="labs-3-2-33-2-1">If <span class="process-math">\(\rho_0 = 1/2\)</span> (middle density), then <span class="process-math">\(x_0\)</span> moves with speed {\underline{}} to the {\underline{}}.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-33-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-33-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="labs-3-2-33-3">
+<div class="para" id="labs-3-2-33-3-1">If <span class="process-math">\(\rho_0 = 1\)</span> (maximum density), then <span class="process-math">\(x_0\)</span> moves with speed {\underline{}} to the {\underline{}}.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-33-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#labs-3-2-33-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="labs-3-2-34">At what initial density do we move to the right as fast as possible?   {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-35">At what initial density do we move to the left as fast as possible?   {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-36">At initial densities <span class="process-math">\(0&lt;\rho_0 &lt; 1/2\text{,}\)</span> does the initial <span class="process-math">\(x_0\)</span> move to the right or left?   {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-37">At initial densities <span class="process-math">\(1/2&lt;\rho_0 &lt; 1\text{,}\)</span> does the initial <span class="process-math">\(x_0\)</span> move to the right or left?   {\underline{}}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-3-2-38">We finally get to apply all we know.  Since the speed of our density ``wave’’ depends on <span class="process-math">\(\rho_0\text{,}\)</span> we need an initial density ``wave’’, i.e. an initial curve for <span class="process-math">\(\rho(x,0)\text{.}\)</span>  Let’s look at several examples and apply the Method of Characteristics.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-2-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="exercise exercise-like" id="labs-3-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="labs-3-3-1-1">Take the initial density to be <span class="process-math">\(\rho(x,0)\)</span> as shown below, one point <span class="process-math">\((x_0,\rho_0)\)</span> is marked.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-2">\begin{center} \includegraphics[scale = 0.5]{d0_2} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-3">As time passes, the value <span class="process-math">\(\rho_0\)</span> will stay the same (so the <span class="process-math">\(y\)</span>-coordinate will stay the same), while the <span class="process-math">\(x\)</span>-coordinate will move left or right with a speed of <span class="process-math">\(c(1-\rho_0)\text{.}\)</span>  Since <span class="process-math">\(\rho_0\)</span> is just smaller than 0.25, what is the velocity that corresponds to this initial point <span class="process-math">\((x_0,\rho_0)\text{?}\)</span>  Does our <span class="process-math">\(x\)</span>-coordinate move left or right?  Draw an arrow in the graph above representing this movement.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-4">Then look at various other initial points, and determine if that initial point will move left or right in the same.  Draw in arrows representing the movement of this initial ``wave.’’  Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of <span class="process-math">\(c\)</span> should be about twice as long as an arrow representing a speed of <span class="process-math">\(c/2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-5">Connect the tips of the arrows to show how the wave has changed over time, that is sketch <span class="process-math">\(\rho(x,1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-6">You should notice the wave ``shears’’; this is called the <dfn class="terminology">shear rule</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-7">Think about a situation where everyone is stopped at a traffic light, as shown below.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-8">\begin{center} \includegraphics[scale = 0.5]{stop_1} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-3-1-9">Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving).  According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave’’?  Draw the ``wave’’ at a later time.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-3-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#labs-3-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-3-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="labs-3-4-1-1">Well that’s cool and all, but I did promise you shock waves.  Consider the following initial density curve, <span class="process-math">\(\rho(x,0)\text{,}\)</span> where now our curve is increasing.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-2">\begin{center} \includegraphics[scale = 0.5]{d0_3} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-3">As before, we consider the density at later times.  Draw in the arrows to show which way each point on the curve moves at a later time, and sketch a later curve.  (It should shear in a similar way.)<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-4">If we let enough time pass, we may notice that we have faster moving points on the wave that trail slower moving points.  Eventually, the faster moving points overtake the slower points, leading to some points that appear to take on 3 distinct densities!  Is this possible?<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-5">So, we’ve introduced a discontinuity, and this is our shock wave! Where multiple values try to happen all at once.  On the bottom of the discontinuity we have some density <span class="process-math">\(\rho_1\text{,}\)</span> and at the top of the discontinuity we have some other density <span class="process-math">\(\rho_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-6">\begin{center} \includegraphics[scale = 0.5]{d0_5} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-7">Context: You’re traveling down a one-lane highway; what does this situation represent?<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-8">It turns out that the shock waves moves with a speed that is equal to the average of the speeds on either side of the shock, so the average of the speed at <span class="process-math">\(\rho_1\)</span> and <span class="process-math">\(\rho_2\text{.}\)</span>  This, along with the shear rule, tells us how traffic moves when the stop light suddenly turns red.  We’ll see two resulting shock waves, as traffic piles up behind the light and clears out in front of the light.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-9">\begin{center} \includegraphics[scale = 0.38]{stop_2} $\rightarrow$ \includegraphics[scale = 0.38]{stop_3} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-10">If we turn the light green, the shear rule will apply to the second shock wave where traffic is piled up, and the traffic (the shock wave) will begin to move to the right through the light.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-11">\begin{center} \includegraphics[scale = 0.38]{stop_4} $\rightarrow$ \includegraphics[scale = 0.38]{stop_5} \end{center}<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-3-4-1-12">If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.<div class="autopermalink" data-description="Paragraph"><a href="#labs-3-4-1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#labs-3-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: 28: Method of characteristics (Lab)"><a href="#labs-3" title="Copy heading and permalink for Worksheet: 28: Method of characteristics (Lab)" aria-label="Copy heading and permalink for Worksheet: 28: Method of characteristics (Lab)">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="labs.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script data-pretext-tools-frame-bridge="true">
+(function () {
+  if (window.__ptxFrameBridge) { return; }
+  window.__ptxFrameBridge = true;
+  function report() {
+    try {
+      parent.postMessage({
+        command: 'ptxFramePath',
+        path: location.pathname + location.search + location.hash
+      }, '*');
+    } catch (e) { /* not framed */ }
+  }
+  report();
+  window.addEventListener('hashchange', report);
+  window.addEventListener('pageshow', report);
+  window.addEventListener('message', function (event) {
+    if (event.data && event.data.command === 'ptxFrameReload') {
+      location.reload();
+    }
+  });
+})();
+</script>
+</body>
+</html>
