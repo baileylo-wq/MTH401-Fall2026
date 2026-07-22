@@ -1,8 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>27: The Fourier transform</title>
+  <title>2.18. The final Fourier transform applied to Laplace's Equation</title>
+  <alert>MTH 401</alert>
+Recall
+<definition xml:id="def-fourier-transform-">
+  <statement>
+    <p>
+      The <term>Fourier Transform</term> of a function <m>f(x)</m> denoted <m>\mathcal{F}[f](\omega)</m> or simply <m>\mathcal{F}[f]</m> is
+      <md>
+        \mathcal{F}[f](\omega) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty} f(x)e^{i\omega x}~dx.
+      </md>
+      Note we input a function of <m>x</m> and output a function of <m>\omega</m>. The 
+      <term>Inverse Fourier Transform</term> <m>\mathcal{F}^{-1}</m> is
+      <md>
+        f(x) = \int\limits_{-\infty}^{\infty} \mathcal{F}(\omega)e^{-i\omega x}~d\omega.
+      </md>
+    </p>
+  </statement>
+</definition>
 
-  <exercise workspace="1in">
+<fact xml:id="fact-fourier-transform-properties">
+  <statement>
+    <p>
+      <term>Properties of the Fourier Transform:</term>
+      <ol>
+        <li> Spatial derivatives become multiplication:
+          <md>
+            \mathcal{F}[f'] = -i\omega \mathcal{F}[f]
+          </md>
+        </li>
+        <li>Fourier transform applied to Gaussian Distributions:
+          <md>
+            \mathcal{F}[\frac{\pi}{m}e^{\frac{-x^2}{4m}}] = e^{-m\omega^2}
+          </md>
+        </li>
+        <li>Fourier transform of convolution of functions:
+          <md>
+          \mathcal{F}[f]\mathcal{F}[g] = \frac1{2\pi} \mathcal{F}[f * g]
+          </md>
+        </li>
+        <li>Temporal derivative independent of Fourier transform:
+          <md>
+            \mathcal{F}[\pd{u}{t}] = \frac{\partial}{\partial t} \mathcal{F}[u]
+          </md>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</fact>
+
+<remark>
+  <p>
+    To solve the heat or wave equation using Fourier Transforms:
+    <dl>
+      <li>
+        <title>Step 1</title>
+        <p>
+          Take the Fourier Transform of both sides.
+        </p>
+      </li>
+      <li>
+        <title>Step 2</title>
+        <p>
+          Solve in frequency world: <m>\mathcal{F}[u(x,t)] = \mathcal{F}[\ldots]</m>.
+        </p>
+      </li>
+      <li>
+        <title>Step 3</title>
+        <p>
+          Apply the Inverse Fourier Transform to both sides to get <m>u(x,t)</m>.
+        </p>
+      </li>
+    </dl>
+  </p>
+</remark>
+
+  <exercise workspace="5in">
     <statement>
       <p>If <m>\alpha&gt;0</m> is a constant, explain why
   <md>
@@ -19,25 +92,25 @@
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p>Solve Laplace's equation <m>\nabla^2 u = 0</m> for the function
-  <m>u(x,y)</m> on the upper-half plane (where <m>y\geq 0</m>) with the boundary
+  <m>u(x,y)</m> on the upper-half plane (where <m>{y\geq 0}</m>) with the boundary
   conditions
   <md>
   \begin{aligned}
-    \lim_{y\to0} u(x,y) \amp  = 0 \\
+    \lim_{y\to\infty} u(x,y) \amp  = 0 \\
     u(x,0) \amp  = f(x)
   \end{aligned}
   </md>
   Start by defining the Fourier transform
   <md>
-  \cu(\omega, y) = \frac{1}{2\pi}\int_{-\infty}^\infty
+  \mathcal{F}[u(x,y)] = \cu(\omega, y) = \frac{1}{2\pi}\int_{-\infty}^\infty
   u(x,y)e^{i\omega x}~dx
   </md>
   and explain why
   <md>
-  \cu(\omega, y) = \fourier[f]e^{-|\omega| y}.
+  \fourier[u(x,y)] = \fourier[f]e^{-|\omega| y}.
   </md></p>
     </statement>
   </exercise>

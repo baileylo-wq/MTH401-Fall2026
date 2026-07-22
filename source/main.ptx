@@ -37,6 +37,20 @@
 
     </chapter>
 
+    <chapter xml:id="labs">
+      <title>Labs</title>
+
+      <introduction>
+        <p>
+          These are copies of the lab activities distributed during the semester.
+        </p>
+      </introduction>
+
+      <!-- Lab worksheets -->
+      <xi:include href="./labs/28-characteristics.ptx"/>
+      <!-- Other documents could go here, like a schedule, project description, etc. -->
+    </chapter>
+
 
     <chapter xml:id="activities">
       <title>In-Class Activities</title>
@@ -77,7 +91,7 @@
       <xi:include href="./activities/25-laplace-cylinder.ptx"/>
       <xi:include href="./activities/26-fourier-intro.ptx"/>
       <xi:include href="./activities/27-fourier-laplace.ptx"/>
-      <xi:include href="./activities/28-characteristics.ptx"/>
+      
       <xi:include href="./activities/29-complex-intro.ptx"/>
       <xi:include href="./activities/30-complex-functions.ptx"/>
       <xi:include href="./activities/31-cr.ptx"/>

@@ -1,97 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>33: Contour integrals</title>
+    <title>3.5. Contour integrals</title>
 
-  <exercise workspace="3.5in">
-    <introduction>
-      <p>Evaluate <m>\int_C z~dz</m> where</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p><m>C</m> is the straight line from <m>0</m> to <m>1+i</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p><m>C</m> is the contour consisting of straight line segments from
-  <m>0</m> to <m>1</m> and from <m>1</m> to <m>1+i</m>.</p>
-      </statement>
-    </task>
-  </exercise>
+    <alert>
+        MTH 401
+    </alert>
 
-  <exercise workspace="1.5in">
-    <task workspace="3in">
-      <statement>
-        <p>Evaluate <m>\oint_C \overline{z}~dz</m> where <m>C</m> is the unit square
-  (<m>0\leq x \leq 1</m> and <m>0\leq y \leq 1</m>)
-  traversed in the counterclockwise direction.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Suppose that <m>C</m> is a closed contour bounding a region whose area is
-  <m>A</m>.  Use Green's theorem to explain why <m>\oint_C \overline{z}~dz =
-  2iA</m>.</p>
-      </statement>
-    </task>
-  </exercise>
+    <exercise workspace="3.5in">
+        <introduction>
+            <p>
+                Evaluate <m>\int_C z~dz</m> where
+            </p>
+        </introduction>
 
-  <exercise workspace="2in">
-    <introduction>
-      <p>Suppose that <m>C</m> is the unit circle traversed in the
-  counterclockwise direction.</p>
-    </introduction>
-    <task workspace="3in">
-      <statement>
-        <p>Parameterize the unit circle as <m>z(t) =
-  e^{it}</m> to evaluate</p>
-        <p>\begin{enumerate}
-  \item <m>\oint_C z~dz</m>.</p>
-        <p>\item <m>\oint_C z^3~dz</m>.</p>
-        <p>\item <m>\oint_C \frac1z~dz</m>.</p>
-        <p>\item <m>\oint_C \frac1{z^3}~dz</m>.
-\end{enumerate}</p>
-      </statement>
-    </task>
-    <task workspace="2in">
-      <statement>
-        <p>What is the general rule for <m>\oint_Cz^n~dz</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Now suppose that <m>C</m> is the circle of radius <m>R</m> centered at the
-  origin parametrized as <m>z(t) = Re^{it}</m>.  What do you find for
-  <m>\oint_C z^n~dz</m>?</p>
-      </statement>
-    </task>
-  </exercise>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>C</m> is the straight line from <m>0</m> to <m>1+i</m>.
+                </p>
+            </statement>
+        </task>
 
-  <exercise>
-    <introduction>
-      <p>Suppose that <m>C</m> is a closed contour and that <m>f(z)</m> is complex
-  differentiable in the region <m>D</m> inside <m>C</m>.</p>
-    </introduction>
-    <task workspace="3in">
-      <statement>
-        <p>Write <m>\oint_C f(z)~dz</m> as a line integral in terms of <m>dx</m> and
-  <m>dy</m>.  Then apply the Green's Theorem to evaluate the contour
-  integral.  What do you find for the value of <m>\oint_Cf(z)~dz</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1.5in">
-      <statement>
-        <p>On the first page, you evaluated <m>\oint_C \overline{z}~dz</m> around
-  the unit square.  Explain why your result shows that <m>\overline{z}</m>
-  is not complex differntiable.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Since <m>z^n</m> is differentiable if <m>n\geq 0</m>, give another
-  explanation for why <m>\oint_C z^n = 0</m> if <m>C</m> is the unit circle.</p>
-      </statement>
-    </task>
-  </exercise>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    <m>C</m> is the contour consisting of straight line segments
+                    from <m>0</m> to <m>1</m> and from <m>1</m> to <m>1+i</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 
+    <exercise workspace="1.5in">
+        <task workspace="3in">
+            <statement>
+                <p>
+                    Evaluate <m>\oint_C \overline{z}~dz</m> where <m>C</m> is
+                    the unit square ( <m>0\leq x \leq 1</m> and
+                    <m>0\leq y \leq 1</m> ) traversed in the counterclockwise
+                    direction.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Suppose that <m>C</m> is a closed contour bounding a region
+                    whose area is <m>A</m>.
+                    Use Green's theorem to explain why
+                    <m>\oint_C \overline{z}~dz = 2iA</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that <m>C</m> is the unit circle traversed in the
+                counterclockwise direction.
+            </p>
+        </introduction>
+
+        <task>
+            <introduction>
+                <p>
+                    Parameterize the unit circle as <m>z(t) = e^{it}</m> to
+                    evaluate
+                </p>
+            </introduction>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        <m>\oint_C z~dz</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        <m>\oint_C z^3~dz</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        <m>\oint_C \frac1z~dz</m>
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1in">
+                <statement>
+                    <p>
+                        <m>\oint_C \frac1{z^3}~dz</m>
+                    </p>
+                </statement>
+            </task>
+        </task>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    What is the general rule for <m>\oint_Cz^n~dz</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Now suppose that <m>C</m> is the circle of radius <m>R</m>
+                    centered at the origin parametrized as
+                    <m>z(t) = Re^{it}</m>.
+                    What do you find for <m>\oint_C z^n~dz</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that <m>C</m> is a closed contour and that <m>f(z)</m>
+                is complex differentiable in the region <m>D</m> inside
+                <m>C</m>.
+            </p>
+        </introduction>
+
+        <task workspace="3in">
+            <statement>
+                <p>
+                    Write <m>\oint_C f(z)~dz</m> as a line integral in terms of
+                    <m>dx</m> and <m>dy</m>.
+                    Then apply the Green's Theorem to evaluate the contour
+                    integral.
+                    What do you find for the value of <m>\oint_Cf(z)~dz</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1.5in">
+            <statement>
+                <p>
+                    On the first page, you evaluated
+                    <m>\oint_C \overline{z}~dz</m> around the unit square.
+                    Explain why your result shows that <m>\overline{z}</m> is
+                    not complex differntiable.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Since <m>z^n</m> is differentiable if <m>n\geq 0</m>, give
+                    another explanation for why <m>\oint_C z^n = 0</m> if
+                    <m>C</m> is the unit circle.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>

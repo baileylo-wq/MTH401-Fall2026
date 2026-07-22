@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>31: Cauchy-Riemann equations</title>
+  <title>3.3. Cauchy-Riemann equations</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="2.5in">
+  <definition xml:id="def-cauchy-riemann-eqns">
+    <statement>
+      <p>
+        For a complex function <m>f(z) = u(z) + i v(z)</m> for <m>z = x+iy</m>, the <term>Cauchy-Riemann equations</term> are 
+        <md>
+          \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \ \ \ \ \ \ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+        </md>.
+      </p>
+    </statement>
+  </definition>
+
+
+  <theorem xml:id="thm-complex-diff">
+    <statement>
+      <p>
+        Let <m>z = x+iy</m>. A complex function <m>f(z) = u(z)+iv(z)</m> is <term>complex differentiable</term> 
+        (i.e. <term>analytic</term> i.e. <term>holomorphic</term>) if and only if the 
+        Cauchy-Riemann equations hold. (It works both ways!) The complex derivative of <m>f(z)</m>, if it exists,
+         is
+        <md>
+          f'(z) = \frac{\partial u}{\partial x} + i \frac{\partial v}{\partial x}.
+        </md>
+      </p>
+    </statement>
+  </theorem>
+  
+
+  
+
+  <exercise workspace="1.6in">
     <statement>
       <p>Use the Cauchy-Riemann equations to explain why the
 function <m>f(z)=e^z</m> is differentiable.  What is <m>f'(z)</m>?</p>
     </statement>
   </exercise>
 
-  <exercise workspace="2.5in">
+  <exercise workspace="1.6in">
     <statement>
       <p>Is the function <m>f(z)=\bar{z}</m> differentiable?  Explain why or
   why not by appealing to the geometric operation performed by this
@@ -17,24 +47,49 @@ function <m>f(z)=e^z</m> is differentiable.  What is <m>f'(z)</m>?</p>
     </statement>
   </exercise>
 
+  <definition xml:id="def-harmonic">
+    <statement>
+      <p>
+        A <term>harmonic function</term> <m>f(x,y)</m> is a twice-continuously differentiable function that satisfies 
+        <em>Laplace's equation</em>, i.e. <m>\nabla^2 f = 0</m>, or in other words
+        <md>
+          \frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} = 0.
+        </md>
+      </p>
+    </statement>
+  </definition>
+
   <exercise workspace="1in">
     <statement>
-      <p>If <m>f(z) = u(x,y) + iv(x,y)</m> is differentiable, explain why <m>u</m>
-  and <m>v</m> are both harmonic.  In other words, explain why both
-  function satisfy Laplace's equation.</p>
+      <p>If <m>f(z) = u(x,y) + iv(x,y)</m> is complex differentiable, explain why <m>u</m>
+  and <m>v</m> are both harmonic.</p>
     </statement>
   </exercise>
 
-  <exercise workspace="4.5in">
-    <statement>
+  <exercise>
+    <introduction>
       <p>Consider the function
 <md>
 \sin z=\frac{e^{iz}-e^{-iz}}{2i}.
 </md>
-Write <m>\sin(x+iy) = u(x,y) + iv(x,y)</m> and use the Cauchy-Riemann
-equations to verify that <m>\sin z</m> is a differentiable function.  What
-is its derivative?</p>
-    </statement>
+</p>
+</introduction>
+<task workspace="2in">
+  <statement>
+    <p>
+      Write <m>\sin(x+iy) = u(x,y) + iv(x,y)</m> and use the Cauchy-Riemann
+equations to verify that <m>\sin z</m> is a complex differentiable function. 
+    </p>
+  </statement>
+</task>
+<task workspace="0.5in">
+  <statement>
+    <p>
+       What
+is its derivative?
+    </p>
+  </statement>
+</task>
   </exercise>
 
   <exercise workspace="1in">
@@ -42,7 +97,39 @@ is its derivative?</p>
       <p>Suppose that <m>f(z)</m> is differentiable everywhere and
 that <m>\re(f(z))=3</m> for all <m>z</m>.  Explain why
 <m>f</m> must be constant.</p>
+
     </statement>
   </exercise>
+
+<!-->
+  <exercise>
+    <introduction>
+      <p>
+        one layer
+      </p>
+    </introduction>
+    <task>
+      <introduction>
+        <p>
+        two layer
+      </p>
+      </introduction>
+             <task>
+        <statement>
+          <p>
+            three layer
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            four
+          </p>
+        </statement>
+      </task>
+    </task>
+  </exercise>
+  <-->
 
 </worksheet>

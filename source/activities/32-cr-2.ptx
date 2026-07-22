@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>32: Cauchy-Riemann equations</title>
+  <title>3.4. Cauchy-Riemann equations part 2</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="3in">
+  <remark>
+    <p>
+      Recall the <term>Cauchy-Riemann equations</term>
+        for a complex function <m>{f(z) = u(z) + i v(z)}</m> with <m>{z = x+iy}</m> are
+        <md>
+          \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \ \ \ \ \ \ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+        </md>.
+      </p>
+  </remark>
+
+  
+
+
+  <exercise >
+    <introduction>
+      <p>Consider the function <m>\ds f(z) = \frac1z</m>.</p>
+</introduction>
+  <task workspace="0.5in">
     <statement>
-      <p>Write the function <m>f(z) = \frac1z</m> as
-  <md>
+      <p>
+         Write <m>f(z)</m> in the form 
+  <m>
   f(x+iy) = u(x,y) + iv(x,y).
-  </md>
-  Then verify that <m>f(z)</m> is differentiable and find its
-  derivative <m>f'(z)</m>.</p>
+  </m>
+      </p>
     </statement>
+  </task>
+  <task workspace = "2in">
+    <statement>
+      <p>
+        Verify that <m>f(z)</m> is complex differentiable and find its
+  derivative <m>f'(z)</m>.
+      </p>
+    </statement>
+  </task>
   </exercise>
 
   <exercise workspace="2in">
     <statement>
       <p>Suppose that <m>u(x,y) = xy</m>.  Find a possible function <m>v(x,y)</m>
-  that makes <m>f(z) = u(x,y) + iv(x,y)</m> differentiable.  Can you write
+  that makes <m>{f(z) = u(x,y) + iv(x,y)}</m> complex differentiable.  Can you write
   your function purely in terms of <m>z</m> (rather than <m>x</m> and <m>y</m>)?</p>
     </statement>
   </exercise>
@@ -27,7 +54,7 @@
   way that 
   <m>f'(x)</m> is defined in Calc I (that is,
   <m>
-  f(z) - f(z_0) \approx f'(z_0)(z-z_0)
+  {f(z) - f(z_0) \approx f'(z_0)(z-z_0)}
   </m>)
   all the usual rules that you know from Calc I (power rule,
   product rule, quotient rule, chain rule) still hold.</p>
@@ -45,21 +72,29 @@
     </task>
   </exercise>
 
-  <exercise workspace="2in">
+  <definition xml:id="def-polya-vector">
     <statement>
-      <p>If we have a complex function <m>f(z) = u(x,y) + iv(x,y)</m>, we can
-  define its associated ``Polya vector field'':
+      <p>
+        If we have a complex function <m>f(z) = u(x,y) + iv(x,y)</m>, we can
+  define its associated <term>Polya vector field</term>:
   <md>
-  F(x,y) = (u(x,y), -v(x,y)).
+  \mbf F(x,y) = (u(x,y), -v(x,y)).
   </md>
-  Explain why <m>f(z)</m> is differentiable if and only if <m>\nabla\cdot F =
-  0</m> and <m>\nabla\times F = 0</m>.</p>
+      </p>
     </statement>
-  </exercise>
+  </definition>
 
   <exercise workspace="2in">
     <statement>
-      <p>If <m>f(z) = u(x,y) + iv(x,y)</m> is differentiable, explain why
+      <p>
+  Explain why <m>f(z)</m> is complex differentiable if and only if <m>\nabla\cdot \mbf F =
+  0</m> and <m>\nabla\times \mbf F = 0</m> for its Polya vector field <m>\mbf F</m>.</p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>If <m>f(z) = u(x,y) + iv(x,y)</m> is complex differentiable, explain why
   <m>\nabla u</m> and <m>\nabla v</m> are orthogonal to one another.</p>
     </statement>
   </exercise>

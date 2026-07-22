@@ -1,76 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>30: Complex functions</title>
+  <title>3.2. Complex functions</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="1.5in">
+    <introduction>
+    <p>
+      We want to spend some time exploring complex functions <m>f(z)</m> where <m>z = x+iy</m>.
+    </p>
+  </introduction>
+
+  <exercise >
     <introduction>
       <p>Consider the function <m>f(z) = e^z = e^xe^{iy}</m>.</p>
     </introduction>
-    <task workspace="1in">
+    <task workspace="0in">
       <statement>
-        <p>Plot the points
+        <p>Plot the following points, and describe what happens to <m>f(1+iy)</m> as <m>y</m> varies.
   <m>f(z)</m> when</p>
-        <p>\begin{minipage}{2.5in}
-    {
-      <m>\bullet~z=1</m></p>
-        <p><m>\bullet~z=1+i\pi/2</m></p>
-        <p><m>\bullet~z=1+i\pi</m></p>
-        <p><m>\bullet~z=1+i2\pi</m>
-    }
-  \end{minipage}
-  \begin{minipage}{2.5in}
-    {
-      \includegraphics{figures/30-empty.eps}
-    }
-  \end{minipage}</p>
+<sidebyside widths="23% 77%">
+  <image>
+    <shortdescription>Coordinates to plot complex numbers.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3.2-grid1">
+        <diagram dimensions="(250,250)" margins="5">
+          <coordinates bbox="(-4,-4,4,4)">
+            <grid-axes  xlabel="Re(z)" ylabel="Im(z)"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <ul>
+      <li>
+        <p>
+          <m>\ds z=1+i\frac{\pi}{2}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>z=1+i\pi</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>z=1+i2\pi</m>
+        </p>
+      </li>
+    </ul>
+</sidebyside>
+
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0in">
       <statement>
-        <p>As you vary <m>y</m>, describe the points <m>f(1+iy)</m>.</p>
-      </statement>
+        <p>Plot the following points, and describe what happens to <m>\ds f(x+i\frac{\pi}{4})</m> as <m>y</m> varies.</p>
+ <sidebyside widths="23% 77%">
+  <image>
+    <shortdescription>Coordinates to plot complex numbers.</shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3.2-grid2">
+        <diagram dimensions="(250,250)" margins="5">
+          <coordinates bbox="(-4,-4,4,4)">
+            <grid-axes  xlabel="Re(z)" ylabel="Im(z)"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <ul>
+      <li>
+        <p>
+          <m>\ds z=-1+i\frac{\pi}{4}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\ds z= 0+i\frac{\pi}4</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\ds z=1+i\frac{\pi}4</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\ds z=2+i\frac{\pi}4</m>
+        </p>
+      </li>
+    </ul>
+</sidebyside>
+    </statement>
     </task>
-    <task workspace="1in">
-      <statement>
-        <p>Plot...
-  \begin{minipage}{2.5in}
-    {
-      <m>\bullet~z=-1+i\pi/4</m></p>
-        <p><m>\bullet~z= 0+i\pi/4</m></p>
-        <p><m>\bullet~z=1+i\pi/4</m></p>
-        <p><m>\bullet~z=2+i\pi/4</m>
-    }
-  \end{minipage}
-  \begin{minipage}{2.5in}
-    {
-      \includegraphics{figures/30-empty.eps}
-    }
-  \end{minipage}</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>As you vary <m>x</m>, describe the points <m>f(x+i\pi/4)</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
+    <task workspace="0.7in">
       <statement>
         <p>Since <m>f(z) = e^xe^{iy}</m>, what is <m>|f(z)|</m>?  What is <m>\arg(f(z))</m>?</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.7in">
       <statement>
         <p>If we fix the value of <m>y=y_0</m>, what is the image of a horizontal
   line <m>f(x + iy_0)</m> as <m>x</m> varies?</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.7in">
       <statement>
         <p>If we fix the value of <m>x=x_0</m>, what is the image of a vertical line
   <m>f(x_0 + iy)</m> as <m>y</m> varies?</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.9in">
       <statement>
         <p>Given a square grid in the <m>z</m>-plane, sketch its image in the
   <m>w=f(z)</m> plane.</p>
@@ -78,12 +113,12 @@
     </task>
   </exercise>
 
-  <exercise workspace="1.5in">
+  <exercise>
     <introduction>
       <p>Remember that the natural logarithm is defined to be the inverse
   of the exponential function;  that is, <m>\ln(z) = w</m> if <m>e^w = z</m>.</p>
     </introduction>
-    <task workspace="1.5in">
+    <task workspace="1in">
       <statement>
         <p>Find the points <m>w</m> that satisfy <m>e^w = -1</m>.  How many are there and
   how are they related to one another?</p>
@@ -91,16 +126,16 @@
     </task>
     <task workspace="1in">
       <statement>
-        <p>Defining <m>\log(x+yi) = u + iv</m> means that <m>e^{u+iv}=e^ue^{iv}=x+iy</m>.
+        <p>Defining <m>\ln(x+iy) = u + iv</m> means that <m>e^{u+iv}=e^ue^{iv}=x+iy</m>.
   Write <m>u</m> and <m>v</m> as functions of <m>x</m> and <m>y</m>.  Are both of these
   functions continuously defined?</p>
       </statement>
     </task>
   </exercise>
 
-  <exercise workspace="2in">
+  <exercise>
     <introduction>
-      <p>Suppose that <m>m = 2e^{i\pi/4}</m> and suppose that <m>z</m> is complex
+      <p>Suppose that <m>\ds m = 2e^{i\frac{\pi}4}</m> and suppose that <m>z</m> is complex
   number.</p>
     </introduction>
     <task workspace="1in">
@@ -128,7 +163,7 @@
     </task>
   </exercise>
 
-  <exercise workspace="2in">
+  <exercise >
     <introduction>
       <p>Suppose that <m>f(z) = z^2</m>.  Let's write <m>z=re^{i\theta}</m> in
   polar form.</p>
@@ -163,7 +198,7 @@
 
   <exercise>
     <introduction>
-      <p>Remember that <m>\ds\cos \theta = \frac{e^{i\theta} +
+      <p>Remember that <m>\ds\cos(\theta) = \frac{e^{i\theta} +
     e^{-i\theta}}{2}</m>.  Suppose we define <m>\ds\cos(z) = \frac{e^{iz} +
     e^{-iz}}{2}</m>.</p>
     </introduction>

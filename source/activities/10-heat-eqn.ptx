@@ -3,9 +3,9 @@
   <title>2.1. Intro to PDEs and the heat equation</title>
   <alert>MTH 401</alert>
 
-    <section xml:id="subsubsec-heat-wave">
+    <subsection xml:id="subsubsec-heat-wave">
     <title>Section 2: Partial Differential Equations in the context of the Heat and Wave Equations</title>
-    <subsection>
+    <subsubsection>
       <title>Part 2.1: Introduction to the Heat Equation in One Dimension
       </title>
       
@@ -16,8 +16,8 @@
         solutions and steady-states.
         </p>
       </introduction>
-    </subsection>
-  </section>
+    </subsubsection>
+  </subsection>
 
   <definition xml:id="def-heat-eqn-1d">
     <statement>

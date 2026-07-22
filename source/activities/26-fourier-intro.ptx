@@ -1,18 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>26: The Fourier transform</title>
+  <title>2.17. The Fourier transform intro</title>
+  <alert>MTH 401</alert>
 
-  <exercise workspace="1in">
+  <introduction>
+    <p>
+      The Fourier Transform is an incredibly powerful tool that can help use solve PDEs.
+      Some properties first...
+    </p>
+  </introduction>
+
+  <fact xml:id="fact-eulers-formula">
+    <statement>
+      <p>
+        <term>Euler's Formula</term> states (some rearrangment)
+        <md>
+          <mrow> e^{i\theta} = \cos(\theta)+i\sin(\theta), ~~~~~ \amp ~~~~~ \cos(\theta) = \frac12\left(e^{i\theta}+e^{-i\theta}\right)</mrow>
+          <mrow> e^{-i\theta} = \cos(\theta)-i\sin(\theta), ~~~~~ \amp ~~~~~ \sin(\theta) = \frac1{2i}\left(e^{i\theta}-e^{-i\theta}\right)</mrow>
+        </md>        
+      </p>
+    </statement>
+  </fact>
+
+<definition xml:id="def-fourier-transform">
+  <statement>
+    <p>
+      The <term>Fourier Transform</term> of a function <m>f(x)</m> denoted <m>\mathcal{F}[f](\omega)</m> or simply <m>\mathcal{F}[f]</m> is
+      <md>
+        \mathcal{F}[f](\omega) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty} f(x)e^{i\omega x}~dx.
+      </md>
+      Note we input a function of <m>x</m> and output a function of <m>\omega</m>. The 
+      <term>Inverse Fourier Transform</term> <m>\mathcal{F}^{-1}</m> is
+      <md>
+        f(x) = \int\limits_{-\infty}^{\infty} \mathcal{F}(\omega)e^{-i\omega x}~d\omega.
+      </md>
+    </p>
+  </statement>
+</definition>
+
+<fact xml:id="fact-fourier-derivative-property">
+  <statement>
+    <p>
+      <term>Differentiation property of the Fourier Transform:</term> for a function <m>f(x)</m>, 
+      <md>
+        \mathcal{F}[f'] = -i\omega \mathcal{F}[f].
+      </md>
+      Derivatives in spatial land are simply multiplications in frequency land!
+    </p>
+  </statement>
+</fact>
+
+  <exercise workspace="6in">
     <statement>
       <p>Explain why
   <md>
   \fourier[xf(x)] = -i\frac{d}{d\omega}\fourier[f].
   </md>
-  It may be easiest to start with the right hand side.</p>
+  It may be easiest to start with the right hand side and plug in the definition of <m>\mathcal{F}[f]</m>.</p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <theorem xml:id="thm-shift-theorem">
+    <statement>
+      <p>
+        The <term>Shift Theorem</term> states that 
+        <md>
+          \mathcal{F}[f(x-\beta)] = e^{i\omega\beta}\mathcal{F}[f].
+        </md>
+        This an important theorem for the Fourier Transforms, suggesting you can 
+        shift the input variable <m>x</m> by some amount <m>\beta</m> before applying a 
+        Fourier Transform, and it results in <m>e^{i\omega\beta}</m> multiplied
+        by the Fourier Transform of the unshifted function. 
+      </p>
+    </statement>
+  </theorem>
+  
+  <exercise workspace="5in">
     <statement>
       <p>Explain why the Shift Theorem is true:
   <md>

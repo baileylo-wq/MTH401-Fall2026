@@ -202,7 +202,7 @@
         <p>Now imagine the two radial pieces of <m>C</m> merging together and explain
   why <m>\ds \work{C_1}{F} = \work{C_2}{F}</m> where <m>C_1</m> and <m>C_2</m> are the
   two circles below.</p>
-        <image width="20%" margins="0% 80%">
+    <image width="20%" margins="0% 80%">
       <shortdescription>Two co-centric circles around the origin traveling counterclockwise.</shortdescription>
       <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic4">
         <diagram dimensions="(150,150)" margins="5">

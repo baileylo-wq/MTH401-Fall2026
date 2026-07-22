@@ -4,9 +4,9 @@
 
   <alert>MTH 401</alert>
 
-  <section xml:id="subsubsec-vector-calculus">
+  <subsection xml:id="subsubsec-vector-calculus">
     <title>Section 1: Vector Calculus</title>
-    <subsection>
+    <subsubsection>
       <title>Part 1.1: Line Integrals</title>
       
       <introduction>
@@ -15,8 +15,8 @@
           In particular, here we will focus on line integrals.
         </p>
       </introduction>
-    </subsection>
-  </section>
+    </subsubsection>
+  </subsection>
     
 
   <exercise>
