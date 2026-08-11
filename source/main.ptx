@@ -47,7 +47,12 @@
       </introduction>
 
       <!-- Lab worksheets -->
+      <xi:include href="./labs/4.5-OperatorsIntuitionLab2.ptx"/>
+      <xi:include href="./labs/10.5Lab4HeatEqn.ptx"/>
+      <xi:include href="./labs/13.5Viz.ptx"/>
+      <xi:include href="./labs/24.5Lab.ptx"/>
       <xi:include href="./labs/28-characteristics.ptx"/>
+      
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
 

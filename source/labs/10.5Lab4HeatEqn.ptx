@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Lab: Heat Intuition</title>
+
+    <introduction>
+        <p>
+            <term>The homogeneous heat equation in one dimension</term> is given
+            by:
+            <md>
+                \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
+            </md>
+            or equivalently if we use subscript notation for derivatives:
+            <md>
+                u_t = \alpha u_{xx}
+            </md>
+        </p>
+
+        <p>
+            This is actually a diffusion equation, describing how things
+            diffuse.
+            Heat is just one thing that's easy to think about. (But this equation applies to many situations!)
+        </p>
+    </introduction>
+
+    <exercise workspace="1cm">
+        <statement>
+            <p>
+                Where does the constant <m>\alpha</m> (called the thermal
+                diffusivity) come from?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider a very slim metal rod with two candles placed beneath
+                it as shown below.
+            </p>
+        </introduction>
+
+        <task workspace="0in">
+            <statement>
+                <p>
+                    Assume we wait a little while for the rod to begin to heat,
+                    and then we take the two candles away.
+                    Draw the heat distribution along the rod at that moment we
+                    remove the candles.
+                    A good way to do this would be to color dark and dense spots
+                    with your pencil (or pen) as high heat, and unmarked spots
+                    as cold.
+                </p>
+
+                <image source="images/candles.png" width="75%">
+                  <shortdescription>A metal rod with two candles positioned equal distance below it.</shortdescription>
+                </image>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    If we assume the rod is slim enough (small enough radius),
+                    then what can we say about the temperature on the cross
+                    section of the rod (one slice that looks like a circle)?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    Because of the last question, how many spatial coordinates
+                    do we actually need to consider?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    If we assume the rod is insulated, then what does that mean
+                    about the heat dispersing through the rod?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="0in">
+            <statement>
+                <p>
+                    For the rest of this problem, assume the rod is slim enough,
+                    and insulated.
+                    Take <m>u(x,t)</m> to be the temperature of the rod at
+                    position <m>x</m> at time <m>t</m>.
+                    Take <m>t=0</m> to be when we first remove the candles, and
+                    draw the temperature distribution <m>u(x,0)</m> below as a
+                    function of space.
+                    (Note, the rod is included again for reference, you can
+                    redraw the heat distribution here or refer to part (a).)
+                </p>
+
+                <image source="images/u0plot.png" width="75%">
+                  <shortdescription>The metal rod lined up above the x axis, with the y axis
+                    representing the heat at time 0.
+                  </shortdescription>
+                </image>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    Now let time pass.
+                    What is going to happen to the temperature of the rod at the
+                    hot spots?
+                    What is going to happen to the temperature at the cold
+                    spots?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    On the plot you drew in part (e), draw arrows along your
+                    curve representing how temperature will change at that point
+                    after some amount of time has passed since the candles were removed.
+                    (Up arrow means the temperature will increase, down arrow
+                    means the temperature will decrease, and the relative length
+                    of the arrows should represent if it changes more or changes
+                    less at that point.)
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1.7cm">
+            <statement>
+                <p>
+                    How are the arrows you drew related to the concavity?
+                    i.e.
+                    the spatial second derivative?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    If the arrows represent the change in temperature over time,
+                    and the arrows are also related to the concavity as
+                    described above, then what equation describes the change in
+                    temperature over time (i.e.
+                    <m>\frac{\partial u}{\partial t}</m> or <m>u_t</m> )?
+                    Hint: it should look familiar!
+                </p>
+                
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    Is <m>\alpha</m> going to be positive or negative?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+</worksheet>

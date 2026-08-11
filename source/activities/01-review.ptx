@@ -1,13 +1,11 @@
 <worksheet>
-  <title> 0. Review of Calculus III </title>
+    <title>0. Review of Calculus III</title>
 
-
-  <alert>MTH 401</alert> 
-  
-  <!--<subsection xml:id="subsec-">
+    <alert>
+        MTH 401
+    </alert>
+    <!--<subsection xml:id="subsec-">
     <title>Topics we will use often.</title> -->
-    
-
     <!--<subsubsection xml:id="subsubsec-">
       <title>We will use the following often, so it's important we recall the following:</title>
       <ul>
@@ -33,133 +31,147 @@
     </li>
   </ul>
     </subsubsection>-->
-<objectives>
-  <introduction>
-    <p>
-    It's important we recall the following ideas which we will use throughout this class:
-    </p>
-  </introduction>
-  <ul>
-    <li>
-      <p>
-        The dot product and the cross product.
-      </p>
-    </li>
-    <li>
-      <p>
-        How to parameterize a curve.
-      </p>
-    </li>
-    <li>
-      <p>
-        The gradient of a function.
-      </p>
-    </li>
-    <li>
-      <p>
-        Fields.
-      </p>
-    </li>
-  </ul>
-</objectives>
+    <objectives>
+        <introduction>
+            <p>
+                It's important we recall the following ideas which we will use
+                throughout this class:
+            </p>
+        </introduction>
 
+        <ul>
+            <li>
+                <p>
+                    The dot product and the cross product.
+                </p>
+            </li>
 
-<exercise xml:id="exr-x">
-  <introduction>
-    <p>
-      Consider the vectors
-        <md>
-          <mrow> A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3). </mrow>
-        </md>
-    </p>
-  </introduction>
-  <task workspace="0.6in">
-    <statement>
-      <p>
-        Find the dot products <m>A\cdot A</m> and <m>A\cdot B</m>.
-      </p>
-    </statement>
-    <solution component="week1">
-      <p>
-        <md>
-          <mrow>
+            <li>
+                <p>
+                    How to parameterize a curve.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The gradient of a function.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Fields.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+
+    <exercise xml:id="exr-x">
+        <introduction>
+            <p>
+                Consider the vectors
+                <md>
+                    <mrow> A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3). </mrow>
+                </md>
+            </p>
+        </introduction>
+
+        <task workspace="0.6in">
+            <statement>
+                <p>
+                    Find the dot products <m>A\cdot A</m> and <m>A\cdot B</m>.
+                </p>
+            </statement>
+
+            <solution component="week1">
+                <p>
+                    <md>
+                        <mrow>
             A\cdot A \amp = 2^2 + (-3)^2+2^2  = 17
           </mrow>
-          <mrow>
+                        <mrow>
             A\cdot B \amp =(2)(-1)+(-3)(0)+(2)(3) =4
           </mrow>
-        </md>
-      </p>
-    </solution>
-    <answer>
-      <p>
-        <md>
-          A\cdot A = 17, \ \ \ A\cdot B = 4
-        </md>
-      </p>
-    </answer>
-  </task>
-  <task workspace="0.6in">
-    <statement>
-      <p>
-        How does this help you find the length of <m>A</m>?
-      </p>
-    </statement>
-   <!--> <answer>...</answer> <-->
-  </task>
-  <task workspace="0.6in">
-    <statement>
-      <p>
-        What is the angle between <m>A</m> and <m>B</m>?
-      </p>
-    </statement>
-    <!--> <answer>...</answer> <-->
-  </task>
-  <task workspace="0.6in">
-    <statement>
-      <p>
-        How can the dot product detect when two vectors are orthogonal?
-      </p>
-    </statement>
-    <!--> <answer>...</answer> <-->
-  </task>
-  <task workspace="0.6in">
-    <statement>
-      <p>
-        If <m>C</m> is a vector and <m>C\cdot C=0</m>, what does this say about <m>C</m>?
-      </p>
-    </statement>
-    <!--> <answer>...</answer> <-->
-  </task>
-  <task workspace="0.8in">
-    <statement>
-      <p>
-        Find the cross product <m>A\times B</m>.
-      </p>
-    </statement>
-    <!--> <answer>...</answer> <-->
-  </task>
-  <task workspace="0.6in">
-    <statement>
-      <p>
-        Describe in words how you would find the direction in which <m>A\times B</m> points.
-      </p>
-    </statement>
-    <!--> <answer>...</answer> <-->
-  </task>
-  <task workspace="0.8in">
-    <statement>
-      <p>
-        What is <m> A\times A</m>?
-      </p>
-    </statement>
-    <!--> <answer>...</answer> <-->
-  </task>
-</exercise>
+                    </md>
+                </p>
+            </solution>
 
+            <answer>
+                <p>
+                    <md>
+                        A\cdot A = 17, \ \ \ A\cdot B = 4
+                    </md>
+                </p>
+            </answer>
+        </task>
 
+        <task workspace="0.6in">
+            <statement>
+                <p>
+                    How does this help you find the length of <m>A</m>?
+                </p>
+            </statement>
+            <!--> <answer>...</answer> <-->
+        </task>
 
-<!-->
+        <task workspace="0.6in">
+            <statement>
+                <p>
+                    What is the angle between <m>A</m> and <m>B</m>?
+                </p>
+            </statement>
+            <!--> <answer>...</answer> <-->
+        </task>
+
+        <task workspace="0.6in">
+            <statement>
+                <p>
+                    How can the dot product detect when two vectors are
+                    orthogonal?
+                </p>
+            </statement>
+            <!--> <answer>...</answer> <-->
+        </task>
+
+        <task workspace="0.6in">
+            <statement>
+                <p>
+                    If <m>C</m> is a vector and <m>C\cdot C=0</m>, what does
+                    this say about <m>C</m>?
+                </p>
+            </statement>
+            <!--> <answer>...</answer> <-->
+        </task>
+
+        <task workspace="0.8in">
+            <statement>
+                <p>
+                    Find the cross product <m>A\times B</m>.
+                </p>
+            </statement>
+            <!--> <answer>...</answer> <-->
+        </task>
+
+        <task workspace="0.6in">
+            <statement>
+                <p>
+                    Describe in words how you would find the direction in which
+                    <m>A\times B</m> points.
+                </p>
+            </statement>
+            <!--> <answer>...</answer> <-->
+        </task>
+
+        <task workspace="0.8in">
+            <statement>
+                <p>
+                    What is <m> A\times A</m>?
+                </p>
+            </statement>
+            <!--> <answer>...</answer> <-->
+        </task>
+    </exercise>
+    <!-->
 <image width="40%">
   <prefigure xmlns="https://prefigure.org" label="prefigure-rectangle">
     <diagram dimensions="(300,300)" margins="5">
@@ -174,128 +186,152 @@
   </prefigure>
 </image>
 <-->
+    <exercise>
+        <introduction>
+            <p>
+                Shown below are a line and a circle.
+            </p>
+            <!--><image source="figures/01-line.eps" /><p /><image source="figures/01-circle.eps" /> <-->
+            <sidebyside widths="30% 30%">
+                <image>
+                    <shortdescription>
+                        The graph of a line, see description below for more
+                        information.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-line">
+                        <diagram dimensions="(250,250)" margins="5">
+                            <definition>
+                                f(x)=1.5-1/2*x
+                            </definition>
+                            <coordinates bbox="(-4,-4,4,4)">
+                                <grid-axes xlabel="x" ylabel="y"/>
+                                <graph at="graph" function="f"/>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
 
+                    <description>
+                        <p>
+                            The graph of a line that goes through the points
+                            <m>(-1,2)</m> and <m>(1,1)</m>.
+                        </p>
+                    </description>
+                </image>
 
-<exercise>
-  <introduction>
-    <p>
-      Shown below are a line and a circle. 
-    </p>
-    <!--><image source="figures/01-line.eps" /><p /><image source="figures/01-circle.eps" /> <-->
-    <sidebyside widths="30% 30%">
-    <image>
-      <shortdescription>The graph of a line, see description below for more information.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-line">
-        <diagram dimensions="(250,250)" margins="5">
-          <definition>f(x)=1.5-1/2*x</definition>
-          <coordinates bbox="(-4,-4,4,4)">
-            <grid-axes xlabel="x" ylabel="y"/>
-            <graph at="graph" function="f"/>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description>
-        <p>
-          The graph of a line that goes through the points <m>(-1,2)</m> and <m>(1,1)</m>.
-        </p>
-      </description>
-    </image>
-    <image>
-        <shortdescription>The graph of a circle, see description below for more information.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-circle">
-        <diagram dimensions="(250,250)" margins="5">
-          <coordinates bbox="(-4,-4,4,4)">
-            <grid-axes xlabel="x" ylabel="y"/>
-            <circle center="(-1,1)" radius="2" stroke="blue"/>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description>
-        <p>
-          The graph of a circle with radius <m>2</m> centered at <m>(-1,-1)</m>.
-        </p>
-      </description>
-    </image>
-    </sidebyside>
-  </introduction>
-  <task workspace="0.5in">
-    <statement>
-      <p>
-        Create a parametrization for each of the curves. 
-      </p>
-    </statement>
-  </task>
-  <task workspace="0.5in">
-    <statement>
-      <p>
-        What choices have you made in forming your parametrizations and how might your parametrizations differ from a classmate's?
-      </p>
-    </statement>
-  </task>
-</exercise>
+                <image>
+                    <shortdescription>
+                        The graph of a circle, see description below for more
+                        information.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-circle">
+                        <diagram dimensions="(250,250)" margins="5">
+                            <coordinates bbox="(-4,-4,4,4)">
+                                <grid-axes xlabel="x" ylabel="y"/>
+                                <circle center="(-1,1)" radius="2" stroke="blue"/>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
 
+                    <description>
+                        <p>
+                            The graph of a circle with radius <m>2</m> centered
+                            at <m>(-1,-1)</m>.
+                        </p>
+                    </description>
+                </image>
+            </sidebyside>
+        </introduction>
 
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Create a parametrization for each of the curves.
+                </p>
+            </statement>
+        </task>
 
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    What choices have you made in forming your parametrizations
+                    and how might your parametrizations differ from a
+                    classmate's?
+                </p>
+            </statement>
+        </task>
+    </exercise>
 
-<exercise>
-  <introduction>
-    <p>
-      Consider the function <m>f(x,y) = x^{2} - 2xy + y</m>.
-    </p>
-  </introduction>
-  <task workspace="0.8in">
-    <statement>
-      <p>
-        Find the gradient <m>\nabla f(x,y)</m>.
-      </p>
-    </statement>
-  </task>
-  <task workspace="0.8in">
-    <statement>
-      <p>
-        If you are at the point <m>(1,1)</m>, what is the gradient there?
-      </p>
-    </statement>
-  </task>
-  <task workspace="0.8in">
-    <statement>
-      <p>
-        Suppose <m>f(x,y)</m> is measuring the elevation of a landscape in feet. In what direction should you move from the point <m>(1,1)</m> to move most steeply uphill? In what direction should you move to stay at the same elevation?
-      </p>
-    </statement>
-  </task>
-  <task workspace="0.8in">
-    <statement>
-      <p>
-        Suppose your motion in the plane is given by the function <m>r(t) = (t^{2}, t^{3})</m>. What is your location at time <m>t=1</m> and what is your velocity?
-      </p>
-    </statement>
-  </task>
-  <task workspace="0.8in">
-    <statement>
-      <p>
-        If <m>t</m> is measured in seconds, at what rate, in feet per second, are you moving uphill at <m>t=1</m>?
-      </p>
-    </statement>
-  </task>
-</exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function <m>f(x,y) = x^{2} - 2xy + y</m>.
+            </p>
+        </introduction>
 
-<exercise workspace="1in">
-  <introduction>
-    <p>
-      Sketch the field <m>F(x,y) = (y^{2}, 2x)</m> at the nine points <m>(x,y)</m> where <m>x</m> and <m>y</m> take on the values <m>-1</m>, <m>0</m>, and <m>1</m>. (You don't necessarily need to draw the vectors to scale.)
-    </p>
-  </introduction>
-</exercise>
+        <task workspace="0.8in">
+            <statement>
+                <p>
+                    Find the gradient <m>\nabla f(x,y)</m>.
+                </p>
+            </statement>
+        </task>
 
+        <task workspace="0.8in">
+            <statement>
+                <p>
+                    If you are at the point <m>(1,1)</m>, what is the gradient
+                    there?
+                </p>
+            </statement>
+        </task>
 
+        <task workspace="0.8in">
+            <statement>
+                <p>
+                    Suppose <m>f(x,y)</m> is measuring the elevation of a
+                    landscape in feet.
+                    In what direction should you move from the point
+                    <m>(1,1)</m> to move most steeply uphill?
+                    In what direction should you move to stay at the same
+                    elevation?
+                </p>
+            </statement>
+        </task>
 
-<!--  
+        <task workspace="0.8in">
+            <statement>
+                <p>
+                    Suppose your motion in the plane is given by the function
+                    <m>r(t) = (t^{2}, t^{3})</m>.
+                    What is your location at time <m>t=1</m> and what is your
+                    velocity?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="0.8in">
+            <statement>
+                <p>
+                    If <m>t</m> is measured in seconds, at what rate, in feet
+                    per second, are you moving uphill at <m>t=1</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="1in">
+        <introduction>
+            <p>
+                Sketch the field <m>F(x,y) = (y^{2}, 2x)</m> at the nine points
+                <m>(x,y)</m> where <m>x</m> and <m>y</m> take on the values
+                <m>-1</m>, <m>0</m>, and <m>1</m>.
+                (You don't necessarily need to draw the vectors to scale.)
+            </p>
+        </introduction>
+    </exercise>
+    <!--  
 <image source="images/pic.png" width="50%">
     <description><p>A graph on five vertices. One of the vertices is isolated, while the other four form a path on four vertices.</p></description>
 </image>
 -->
-
-
-
 </worksheet>

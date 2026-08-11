@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>38: Trigonometric integrals</title>
+    <title>3.10. Trigonometric Integrals</title>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>Use residue calculus to evaluate
-  <md>\int_0^{2\pi}\frac{1}{2+\cos\theta}~d\theta.</md></p>
-    </statement>
-  </exercise>
+    <alert>
+        MTH 401
+    </alert>
+    <introduction>
+      <p>
+        Trig integrals are difficult (if not impossible) to solve when restricted to real numbers. 
+        But in complex land, they aren't nearly as terrible. It is wise to recall 
+        <term>Euler's formula</term> (and its rearrangements)
+        <md>
+          <mrow> e^{i\theta} = \cos(\theta)+i\sin(\theta), ~~~~~ \amp ~~~~~ \cos(\theta) = \frac12\left(e^{i\theta}+e^{-i\theta}\right)</mrow>
+          <mrow> e^{-i\theta} = \cos(\theta)-i\sin(\theta), ~~~~~ \amp ~~~~~ \sin(\theta) = \frac1{2i}\left(e^{i\theta}-e^{-i\theta}\right)</mrow>
+        </md>   
+       
+      </p>
+    </introduction>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>Use residue calculus to evaluate
-  <md>\int_0^{2\pi}\frac{1}{9\sin^2\theta + 16\cos^2\theta}~d\theta.</md></p>
-    </statement>
-  </exercise>
+    <remark>
+      <p>
+         Specifically on the unit circle we have <m>{z = e^{i\theta}}</m> where <m>{0\le \theta \le 2\pi}</m>, 
+        and thus <m>{\frac1z = e^{-i\theta}}</m>. Therefore we can further rewrite Euler's formula:
+        <md>
+          <mrow> \cos(\theta)  \amp = \frac{e^{i\theta}+e^{-i\theta}}2 = \frac12\left(z+\frac1z\right)</mrow>
+          <mrow> \sin(\theta)  \amp = \frac{e^{i\theta}-e^{-i\theta}}{2i} = \frac1{2i}\left(z-\frac1z\right)</mrow>
+        </md>
+      </p>
+    </remark>
 
+    <exercise workspace="5in">
+        <statement>
+            <p>
+                Use residue calculus to evaluate
+                <md>
+                    \int_0^{2\pi}\frac{1}{2+\cos\theta}~d\theta.
+                </md>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="5in">
+        <statement>
+            <p>
+                Use residue calculus to evaluate
+                <md>
+                    \int_0^{2\pi}\frac{1}{9\sin^2\theta + 16\cos^2\theta}~d\theta.
+                </md>
+            </p>
+        </statement>
+    </exercise>
 </worksheet>

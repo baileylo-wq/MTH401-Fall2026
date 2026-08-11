@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-.8in}
+\setlength{\textheight}{9.5in}
+
+\usepackage{palatino, amsmath, graphicx}
+
+\newcommand{\real}{{\bf R}}
+\newcommand{\maple}[1]{\medskip\hspace{.25in}\begin{tt} > {\bf #1}
+  \end{tt}\medskip} 
+\newcommand{\response}[1]{\medskip\begin{center}{\em #1}
+  \end{center}\medskip} 
+\newcommand{\task}[1]{\medskip \begin{quote} {\em Task #1}
+  \end{quote}\medskip} 
+
+
+\input epsf.sty
+\begin{document}
+
+\noindent
+{\bf Mathematics 401} \\
+{\bf Lab} \\
+
+\begin{center}
+{\Large {\bf The Wave Equation - Applied}}
+\end{center}
+
+\begin{enumerate}
+\item here
+
+
+\noindent You've probably heard this before, but everything is a simple harmonic oscillator!  Thus everything uses the wave equation.  Why don't we see wave-like behaviors too often in everyday life?
+
+De Broglie figured out that particles of mass $m$ (in kg), traveling with velocity $v$ (in m/s) have a wavelength $\lambda$ (called a ``de Broglie wavelength'') given by 
+
+$$\lambda = \frac{h}{mv}$$
+where $h = 6.626 \times 10^{-34}$ kg*m$^2$/s (Planck's constant!).
+
+Sanity check:  If the fastest baseball pitch ever recorded is $46.7$ m/s, and a baseball has a mass of $0.145$ kg, what is the wavelength in meters?  
+\vspace{2cm}
+
+Keeping in mind the diameter of a proton is around $0.84 \times 10^{-15}$ meters, should we expect to see wave-like behavior from a baseball pitch?
+\vspace{2cm}
+
+
+An electron on the other hand has mass on the order of $10^{-31}$.  Should we expect to see wave-like behavior of an electron?  
+
+\vspace{2cm}
+
+Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.''  In the ground-state energy, an electron has a velocity of $2.2 \times 10^{6}$ m/s.  If the mass of an electron is about $9.1 \times 10^{-31}$ kg, what is the de Broglie wavelength for an electron in the ground state?
+
+\vspace{3cm}
+
+Note, the diameter of a hydrogen atom is about $1.2 \times 10^{-10}$ meters.  Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?
+
+\vspace{1cm}
+\newpage
+
+Standing waves, like a string fixed at both ends, are also quantized.  Only certain wavelengths are allowed, which makes it similar to electrons.  Similar to the wave equation we've been studying in class, Schrodinger's equation models electrons as matter waves.  If we are in just one spatial dimension $x$, Schrodinger's equation says 
+
+$$i\hbar\frac{\partial}{\partial t} \Psi(x,t) = \left[ -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V(x,t) \right]\Psi(x,t).$$
+
+Does this look at all familiar?  $\Psi(x,t)$ is a wave function and actually produces a complex number, where $|\Psi^2(x,t)|$ gives a probability density function, the probability of finding an electron within a specific region of space.  $V(x,t)$ is the potential, which represents which state the particle is existing in.   Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate.  A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates.  Sound familiar?
+
+
+An electron acts like a wave where it doesn't exist in anyone particular location but it is spread out through an entire atom.  Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.  
+
+A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0\% probability of being found.  The shapes of orbitals are shown below:
+
+\includegraphics[scale=1]{orbitals}
+
+
+For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where $\Psi(r,\theta,\phi)$, and the solution of Schrodinger's equation can be solved by separation of all three variables, 
+
+$$\Psi(r, \theta,\phi )= R(r)\Theta(\theta)\Phi(\phi),$$
+or just separating the radial piece $R(r)$ from the other two variables $\theta$ and $\phi$ where $Y_{\ell}^m(\theta,\phi)$ are called the spherical harmonics of degree $\ell$ and order $m$ (looks a lot like Bessel's function!) we then have  
+
+$$\Psi(r, \theta,\phi )= R(r)Y_{\ell}^m(\theta,\phi).$$
+This is the only atom for which we have an exact solution currently.  Each solution state is given by
+
+$$\Psi_{n,\ell,m}(r,\theta,\phi) = \sqrt{\left(\frac{2}{na_0}\right)^3 \frac{n-\ell-1)!}{2n[(n+\ell)!]}}e^{-r/na_0} \left(\frac{2r}{na_0}\right)^{\ell} L_{n-\ell-1}^{2\ell+1}\left(\frac{2r}{na_0}\right) Y_{\ell}^m(\theta,\phi).$$
+($a_0$ is the Bohr radius).  Interestingly, $L_{n-\ell-1}^{2\ell+1}(\cdots)$ are Laguerre polynomials (we looked at those when finding power series solutions!), $n = 1,2, \ldots$, $\ell=0, 1, \ldots n-1$, $m=-\ell, \ldots, \ell$.  
+
+See any similarities to what we've been studying?  Don't worry, I won't make you solve it by hand. 
+
+................. Switching gears here, let's talk about resonance.  
+
+Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate.  We could force it to vibrate at a different frequency, but that is not it's natural frequency.  
+
+Even a metal plate has natural frequencies.  If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines.  For an analogous picture - think about a one-dimensional string fixed at the ends.  And location where the string doesn't go up or down is a node.  So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on.  When we extend this to a two-dimensional plate, those nodal locations are now lines.  
+
+So the sand will move away from the vibrating regions and cluster along the nodal lines.  And this movement happens almost instantly.  These are called Chladni figures, and different natural resonant frequencies will produce different figures.  See some below:
+
+\includegraphics[scale=1]{Chladni}
+
+Story time (not well-verified by Dr. Bailey but perhaps you'll find it interesting enough to look into it?).  The ancient Egyptians knew all about resonate frequencies.  In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1/seconds).  The exact value depends on your position and altitude on Earth. 
+
+The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic).  And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz!  Matching the earth's natural frequency!  And the King's Chamber was built so that it's resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!  
+
+So earth acts as a tuning fork, and Giza is tuned to it.  To help capture it, Giza had pure quartz disks permanently placed to ``carry'' the natural frequency, just like the first radios used crystal receivers.  
+
+
+
+
+
+\end{enumerate}
+
+
+
+\end{document}

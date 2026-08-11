@@ -7,7 +7,20 @@
         MTH 401
     </alert>
 
-    <exercise workspace="3.5in">
+    <definition xml:id="def-contour-integral">
+        <statement>
+            <p>
+                For a function <m>f(z)=u+iv</m> where <m>z=x+iy</m>, a
+                <term>contour integral</term> on a curve <m>C</m> has the form
+                (in rectangular coordinates)
+                <md>
+                    \int\limits_C f(z)~dz = \int\limits_C (u+iv)(dx+idy) = \int\limits_C u~dx - v~dy + i\int_C v~dx + u~dy.
+                </md>
+            </p>
+        </statement>
+    </definition>
+
+    <exercise>
         <introduction>
             <p>
                 Evaluate <m>\int_C z~dz</m> where
@@ -25,15 +38,20 @@
         <task workspace="1in">
             <statement>
                 <p>
-                    <m>C</m> is the contour consisting of straight line segments
+                    <m>C</m> is the contour consisting of two straight line segments
                     from <m>0</m> to <m>1</m> and from <m>1</m> to <m>1+i</m>.
                 </p>
             </statement>
         </task>
     </exercise>
 
-    <exercise workspace="1.5in">
-        <task workspace="3in">
+    <exercise >
+        <introduction>
+            <p>
+                Let's consider the slightly more interesting function <m>f(z)=\overline{z}</m>.
+            </p>
+        </introduction>
+        <task workspace="1in">
             <statement>
                 <p>
                     Evaluate <m>\oint_C \overline{z}~dz</m> where <m>C</m> is
@@ -44,19 +62,19 @@
             </statement>
         </task>
 
-        <task workspace="1in">
+        <task workspace="1.4in">
             <statement>
                 <p>
                     Suppose that <m>C</m> is a closed contour bounding a region
                     whose area is <m>A</m>.
                     Use Green's theorem to explain why
-                    <m>\oint_C \overline{z}~dz = 2iA</m>.
+                    <m>{\oint_C \overline{z}~dz = 2iA}</m>.
                 </p>
             </statement>
         </task>
     </exercise>
 
-    <exercise>
+    <exercise >
         <introduction>
             <p>
                 Suppose that <m>C</m> is the unit circle traversed in the
@@ -64,48 +82,44 @@
             </p>
         </introduction>
 
-        <task>
-            <introduction>
+        <task workspace="3in" >
+            <statement>
                 <p>
                     Parameterize the unit circle as <m>z(t) = e^{it}</m> to
-                    evaluate
+                    evaluate the following:
                 </p>
-            </introduction>
+                <ul>
+                    <li>
+                        <p>
+                            <m>\oint\limits_C z~dz</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\oint\limits_C z^3~dz</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\oint\limits_C \frac1z~dz</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\oint\limits_C \frac1{z^3}~dz</m>
+                        </p>
+                    </li>
+                </ul>
+            </statement>
 
-            <task workspace="1in">
-                <statement>
-                    <p>
-                        <m>\oint_C z~dz</m>
-                    </p>
-                </statement>
-            </task>
+    
 
-            <task workspace="1in">
-                <statement>
-                    <p>
-                        <m>\oint_C z^3~dz</m>
-                    </p>
-                </statement>
-            </task>
+    
 
-            <task workspace="1in">
-                <statement>
-                    <p>
-                        <m>\oint_C \frac1z~dz</m>
-                    </p>
-                </statement>
-            </task>
 
-            <task workspace="1in">
-                <statement>
-                    <p>
-                        <m>\oint_C \frac1{z^3}~dz</m>
-                    </p>
-                </statement>
-            </task>
         </task>
 
-        <task workspace="2in">
+        <task workspace="1in">
             <statement>
                 <p>
                     What is the general rule for <m>\oint_Cz^n~dz</m>?
@@ -134,7 +148,7 @@
             </p>
         </introduction>
 
-        <task workspace="3in">
+        <task workspace="2in">
             <statement>
                 <p>
                     Write <m>\oint_C f(z)~dz</m> as a line integral in terms of
@@ -146,10 +160,10 @@
             </statement>
         </task>
 
-        <task workspace="1.5in">
+        <task workspace="1in">
             <statement>
                 <p>
-                    On the first page, you evaluated
+                    At the beginning of this worksheet, you evaluated
                     <m>\oint_C \overline{z}~dz</m> around the unit square.
                     Explain why your result shows that <m>\overline{z}</m> is
                     not complex differntiable.
@@ -161,7 +175,7 @@
             <statement>
                 <p>
                     Since <m>z^n</m> is differentiable if <m>n\geq 0</m>, give
-                    another explanation for why <m>\oint_C z^n = 0</m> if
+                    another explanation for why <m>{\oint_C z^n = 0}</m> if
                     <m>C</m> is the unit circle.
                 </p>
             </statement>

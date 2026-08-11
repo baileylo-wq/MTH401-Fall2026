@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>40: Principal values of integrals</title>
+  <title>3.12. Principal Values of Integrals</title>
+  <alert>MTH 401</alert>
+
+  <fact xml:id="fact-fourier-easier">
+    <statement>
+      <p>
+        Often, an "easier" way to solve real integrals is to make them complex integrals. 
+        With trig integrals, it is also generally "easier" to solve the Fourier transform 
+        first, and then take the real or imaginary part appropriately using Euler's formula.
+      </p>
+      <p>
+        That is, 
+        <md>
+          <mrow>\int\limits_{-\infty}^{\infty} f(x) \cos(\alpha x)~dx \amp = \text{Re}\left(\int\limits_{-\infty}^{\infty} f(x)e^{\alpha i x}~dx\right) </mrow>
+          <mrow>\int\limits_{-\infty}^{\infty} f(x) \sin(\alpha x)~dx \amp = \text{Im}\left(\int\limits_{-\infty}^{\infty} f(x)e^{\alpha i x}~dx\right) </mrow>
+        </md>
+        
+      </p>
+    </statement>
+  </fact>
+
+  <remark>
+    <p>
+      The <term>Cauchy principal value</term> is a method for assigning values to 
+      specific improper integrals that would otherwise be undefined. For us, this means 
+      we want to evaluate an integral that has a 
+      singularity that falls on the real line. 
+    </p>
+    <p>
+      The value of this otherwise undefined integral is called the <term>principal value</term>.
+      We can turn the real integral into a contour integral that travels the upper half plane.  
+      Then singularities in the upper half plane (and not on the real line) contribute <m>2\pi i</m> 
+      times their residues, as we have previously seen.
+      Singularities on the real line contribute to the contour integral halfway between <m>0</m> and <m>2\pi i</m>, or just <m>\pi i</m>.
+      That is, 
+      <md>
+        \int\limits_{-\infty}^{\infty}f(x)~dx = \ \ \pi i \left(\sum\limits_{z_j \text{ sings on real line}} \text{Res}_{z_j} f(z)\right) + 2\pi i \left(\sum\limits_{z_j \text{ sings in upper half plane}} \text{Res}_{z_j} f(z)\right).
+      </md>
+      
+    </p>
+  </remark>
 
   <exercise workspace="4in">
     <statement>
@@ -14,34 +54,34 @@
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p>In quantum mechanics, determining the intensity of scattered
   particles as a function of the cross section <m>\sigma</m> leads to an
   integral of the form
   <md>
-  I(\sigma) = \int_{-\infty}^{+\infty} \frac{x \sin x}{x^2- \sigma^2} ~dx,
+  I(\sigma) = \int\limits_{-\infty}^{+\infty} \frac{x \sin x}{x^2- \sigma^2} ~dx,
   </md>
   where <m>\sigma</m> is real and positive.  Using the theory of residues,
   evaluate the integral <m>I(\sigma)</m>, interpreted as the principal value.</p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p>Evaluate <md>\int_{-\infty}^\infty \frac{1}{x^4+5x^2+4}~dx.</md></p>
     </statement>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="5in">
     <statement>
       <p>Find the principal value of the integral
   <md>
-  \int_{-\infty}^\infty\frac{e^{ix}}{x}~dx
+  \int\limits_{-\infty}^\infty\frac{e^{ix}}{x}~dx
   </md>
   and use your result to evaluate
   <md>
-  \int_{-\infty}^\infty\frac{\sin x}{x}~dx.
+  \int\limits_{-\infty}^\infty\frac{\sin x}{x}~dx.
   </md></p>
     </statement>
   </exercise>

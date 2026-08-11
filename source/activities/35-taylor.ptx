@@ -1,102 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>35: Taylor series</title>
-  <introduction>
-    <p><md>
-<mrow>e^u \amp  = \amp  1 + u + \frac{u^2}{2!} + \frac{u^3}{3!} + \ldots +
-          \frac{u^n}{n!} + \ldots</mrow>
-<mrow>\sin(u) \amp  = \amp  u - \frac{u^3} {3!} + \frac{u^5}{5!} - \frac{u^7}{7!} +
-\ldots + (-1)^n\frac{u^{2n+1}}{(2n+1)!} + \ldots</mrow>
-<mrow>\cos(u) \amp  = \amp  1 - \frac{u^2}{2!} + \frac{u^4}{4!} - \frac{u^6}{6!} +
-\ldots + (-1)^n\frac{u^{2n}}{(2n)!} + \ldots</mrow>
-<mrow>\frac 1{1-u} \amp  = \amp  1 + u + u^2 + \ldots + u^n + \ldots</mrow>
-</md></p>
-  </introduction>
+    <title>3.7. Taylor Series</title>
 
-  <exercise workspace="1in">
-    <introduction>
-      <p>We can get new power series from old ones.  For instance, the
-  Taylor series for <m>f(z)=e^{3z}</m>, can be found using the series for
-  <m>e^u</m> above and setting <m>u = 3z</m>.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>What do you find for the Taylor series of <m>f(z) = e^{3z}</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the Taylor series for <m>g(z) = e^{3z} - 1</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>You can factor out a ``<m>z</m>'' from <m>g(z)</m> to write <m>g(z)= zh(z)</m>.
-  What is <m>h(0)</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Suppose that <m>C</m> is the unit circle oriented in the counterclockwise
-  direction.  Evaluate the contour integral
-  <md>
-  \oint_C \frac{1}{e^{3z} - 1}~dz = \oint_C\frac{1}{zh(z)}~dz = 
-  \oint_C \frac{1/h(z)}{z}.</md></p>
-      </statement>
-    </task>
-  </exercise>
+    <alert>
+        MTH 401
+    </alert>
 
-  <exercise workspace="1in">
-    <introduction>
-      <p>If <m>f(z_0) = 0</m>, then the Taylor series looks like
-  <md>
-  \begin{aligned}
+    <remark>
+        <p>
+            Here are four common <term>Taylor series</term> we will want to use:
+            <md>
+                <mrow>e^u \amp  =   1 + u + \frac{u^2}{2!} + \frac{u^3}{3!} + \ldots +
+                   \frac{u^n}{n!} + \ldots</mrow>
+                <mrow>\sin(u) \amp  =   u - \frac{u^3} {3!} + \frac{u^5}{5!} - \frac{u^7}{7!} +
+                  \ldots + (-1)^n\frac{u^{2n+1}}{(2n+1)!} + \ldots</mrow>
+                <mrow>\cos(u) \amp  =   1 - \frac{u^2}{2!} + \frac{u^4}{4!} - \frac{u^6}{6!} +
+                    \ldots + (-1)^n\frac{u^{2n}}{(2n)!} + \ldots</mrow>
+                <mrow>\frac 1{1-u} \amp  =  1 + u + u^2 + \ldots + u^n + \ldots</mrow>
+            </md>
+            Note the last one is the geometric series, and holds only if
+            <m>|u|\lt 1</m>. All work for complex numbers too!
+        </p>
+    </remark>
+
+    <exercise>
+        <introduction>
+            <p>
+                We can get new power series from old ones.
+                For instance, the Taylor series for <m>f(z)=e^{3z}</m>, can be
+                found using the series for <m>e^u</m> above and setting
+                <m>u = 3z</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What do you find for the Taylor series of
+                    <m>f(z) = e^{3z}</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the Taylor series for <m>g(z) = e^{3z} - 1</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    You can factor out a `` <m>z</m> '' from <m>g(z)</m> to
+                    write <m>g(z)= zh(z)</m>.
+                    What is <m>h(0)</m>?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Suppose that <m>C</m> is the unit circle oriented in the
+                    counterclockwise direction.
+                    Evaluate the contour integral
+                    <md>
+                        \oint_C \frac{1}{e^{3z} - 1}~dz = \oint_C\frac{1}{zh(z)}~dz = 
+  \oint_C \frac{1/h(z)}{z} = \ldots
+                    </md>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <definition xml:id="def-zero-order-k">
+        <statement>
+            <p>
+                If <m>f(z_0) = 0</m>, then the Taylor series can be written as:
+                <md>
+                    \begin{aligned}
     f(z) \amp  = f(z_0) + f'(z_0)(z-z_0) + \frac{f''(z_0)}{2}(z-z_0)^2 +
     \ldots \\
     \amp  = f'(z_0)(z-z_0) + \frac{f''(z_0)}{2}(z-z_0)^2 +
     \ldots \\
     \amp  = (z-z_0)^k h(z) \\
   \end{aligned}
-  </md>
-  for some <m>k</m>.  We say that <m>f(z)</m> has a zero of order <m>k</m> in this
-  case.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Consider the function <m>f(z) = \sin(z^2)</m> and write out its Taylor
-  series.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the order of the zero at <m>z=0</m>?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>If <m>g(z) = \sin(z^3) - z^3</m>, what is the order of the zero at <m>z=0</m>?</p>
-      </statement>
-    </task>
-  </exercise>
+                </md>
+                for some <m>k</m>.
+                In this case, we say that <m>f(z)</m> has a
+                <term>zero of order <m>k</m></term>.
+            </p>
+        </statement>
+    </definition>
 
-  <exercise>
-    <introduction>
-      <p>Suppose that <m>f(z) = \cot(z^2) = \frac{\cos(z^2)}{\sin(z^2)}</m>.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Explain why you can write
-  <md>
-  \cot(z^2) = \frac{h(z)}{z^2}.
-  </md></p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Evaluate the contour integral <m>\oint_C \cot(z^2)~dz</m> where <m>C</m> is
-  the unit circle traversed in the counterclockwise direction.</p>
-      </statement>
-    </task>
-  </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Let's first look at some composite functions involving
+                <m>\sin(z)</m>.
+            </p>
+        </introduction>
 
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Consider the function <m>f(z) = \sin(z^2)</m> and write out
+                    its Taylor series.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the order of the zero at <m>z=0</m> for the
+                    <m>f(z)</m> in part (a)?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    If <m>g(z) = \sin(z^3) - z^3</m>, what is the order of the
+                    zero at <m>z=0</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that
+                <m>\ds f(z) = \cot(z^2) = \frac{\cos(z^2)}{\sin(z^2)}</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain why you can write
+                    <md>
+                        \cot(z^2) = \frac{h(z)}{z^2}.
+                    </md>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Evaluate the contour integral <m>\oint_C \cot(z^2)~dz</m>
+                    where <m>C</m> is the unit circle traversed in the
+                    counterclockwise direction.
+                </p>
+            </statement>
+        </task>
+    </exercise>
 </worksheet>

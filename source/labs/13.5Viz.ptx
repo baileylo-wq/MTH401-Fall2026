@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Lab: Heat Visualization</title>
+
+    <subsection xml:id="subsec-1-dimension">
+        <title>One Dimension</title>
+
+    </subsection>
+
+    <introduction>
+        <p>
+            Let's visualize worksheet 13 and see what is actually going on with
+            our solution to the heat equation.
+        </p>
+
+        <p>
+            For each one of these problems, we have a beam of length <m>5</m>,
+            and we have the same properties of the materials to give use
+            <m>\alpha=4</m>.
+            Those are fixed, and we look at the effect of changing other aspects
+            of the problem.
+        </p>
+
+        <p>
+            Run the code cell below to set up the animation.
+            It will print "Done!" when it has finished.
+            You want to make sure you evaluate this initial cell, so that the
+            necessary libraries and functions are loaded and defined.
+            Then continue on to run animations for the problems from the
+            previous worksheet.
+            (Note, some of the code may take a bit to run, "patience young
+            grasshopper!")
+        </p>
+    </introduction>
+    <sage language="sage">
+        <input>
+            import numpy as np
+            import matplotlib.pyplot as plt
+            import matplotlib.animation as animation
+            from matplotlib.animation import FuncAnimation
+            from matplotlib import rc
+            rc('animation', html='jshtml')
+
+            fig, ax = plt.subplots()
+
+            def animate(i):
+                ax.clear()
+                ax.plot(x,u(x,i*.1)) # Plot the curve
+                ax.set_xlabel('x')
+                ax.set_ylabel('u(x,t)')
+                ax.annotate('Time t = '+str(i*.1), (-1,ylim[1]),color='red',size = 14)
+                ax.set_xlim([-1,6])
+                ax.set_ylim(ylim)
+                #ax.set_aspect('equal', adjustable='box')
+            print('Done!')
+        </input>
+    </sage>
+
+    <exercise workspace="0cm">
+        <introduction>
+            <p>
+                The code below shows the solution to problem 2:
+                <md>
+                    <mrow>\frac{\partial u}{\partial t} \amp = \alpha \frac{\partial^2 u}{\partial x^2} </mrow>
+                    <mrow>u(0,t) \amp = 0 </mrow>
+                    <mrow>u(5,t) \amp = 0 </mrow>
+                    <mrow>u(x,0) \amp = x^2 - 5x </mrow>
+                </md>
+                Run the code to animate the solution over time.
+                Then think about the following questions...
+            </p>
+            <sage language="sage">
+                <input>
+                    def u(x,t):
+                        N=range(1,10)
+                        u_n=[]
+                        for n in N:
+                            u_n.append(100*(-1+(-1)**n)/(n**3*np.pi**3)*np.exp(-4*(np.pi/5)**2*t)*np.sin(np.pi*x/5))
+                        return np.sum(u_n,axis=0)
+
+                    ylim=[-8,1]
+                    x=np.linspace(0,5,100)
+
+                    ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+                    ani
+
+                </input>
+            </sage>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    What's the only difference between this problem and the
+                    previous problem?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Does the solution look like <m>u(x,0)</m> initially?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What happens to the curve over time?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Where does all the heat go over time?
+                    Why?
+                    What happens to the endpoints?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="0cm">
+        <introduction>
+            <p>
+                The code below shows the solution to problem 3:
+                <md>
+                    <mrow>\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} </mrow>
+                    <mrow>\frac{\partial u}{\partial x}(0,t) \amp = 0 </mrow>
+                    <mrow>\frac{\partial u}{\partial x}(5,t) \amp = 0 </mrow>
+                    <mrow>u(x,0) \amp = x </mrow>
+                </md>
+                Run the code to animate the solution over time.
+                Then think about the following questions...
+            </p>
+            <sage language="sage">
+                <input>
+                    def u(x,t):
+                        N=range(1,30)
+                        u_n=[]
+                        for n in N:
+                            u_n.append(10*(-1+(-1)**n)/(n**2*np.pi**2)*np.exp(-4*(np.pi/5)**2*t)*np.cos(np.pi*x/5))
+                        return np.sum(u_n,axis=0)+5/2
+
+                    ylim=[-1,6]
+                    x=np.linspace(0,5,100)
+
+                    ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+                    ani
+
+                </input>
+            </sage>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    What's the big difference with the bounds of this problem
+                    and the previous problem?
+                    <em>These bounds mean the beam is insulated at both ends.</em>
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Does the solution look like <m>u(x,0)</m> initially?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What happens to the bounds over time?
+                    Does this mess with the boundary conditions?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What happens to the curve over time?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Why doesn't the heat go to 0 over time like in previous
+                    problems?
+                    Where does the heat go?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="0cm">
+        <introduction>
+            <p>
+                The code below shows the solution to problem 4:
+                <md>
+                    <mrow>\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} +8 </mrow>
+                    <mrow>u(0,t) \amp = 0 </mrow>
+                    <mrow>u(5,t) \amp = 0 </mrow>
+                    <mrow>u(x,0) \amp = 5x-x^2 </mrow>
+                </md>
+                Run the code to animate the solution over time.
+                Then think about the following questions...
+            </p>
+            <sage language="sage">
+                <input>
+                    def u(x,t):
+                        return -x**2+5*x
+
+                    ylim=[-1,7]
+                    x=np.linspace(0,5,100)
+
+                    ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+
+                    ani
+
+                </input>
+            </sage>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    What's the big difference between this problem
+                    and the previous problem?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Does the solution look like <m>u(x,0)</m> initially?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What happens to the bounds over time?
+                    Does this mess with the boundary conditions?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What happens to the curve over time?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Why doesn't the heat go to 0 over time like in previous
+                    problems?
+                    Where does the heat go?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="0cm">
+        <introduction>
+            <p>
+                The code below shows the solution to problem 5:
+                <md>
+                    <mrow>\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} +8 </mrow>
+                    <mrow>u(0,t) \amp = 0 </mrow>
+                    <mrow>u(5,t) \amp = 0 </mrow>
+                    <mrow>u(x,0) \amp = 0 </mrow>
+                </md>
+                Run the code to animate the solution over time.
+                Then think about the following questions...
+            </p>
+            <sage language="sage">
+                <input>
+                    def u(x,t):
+                        N=range(1,10)
+                        u_n=[]
+                        for n in N:
+                            u_n.append(-x**2+5*x+100*(-1+(-1)**n)/(n**3*np.pi**3)*np.exp(-4*(np.pi/5)**2*t)*np.sin(np.pi*x/5))
+                        return np.sum(u_n,axis=0)
+
+                    ylim=[-1,60]
+                    x=np.linspace(0,5,100)
+
+                    ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+
+                    ani
+
+                </input>
+            </sage>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    What's the big difference between this problem and the
+                    previous one?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What does the <m>+8</m> in the equation mean in the physical
+                    context of the beam?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Does the solution look like <m>u(x,0)</m> initially?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What happens to the curve over time?
+                    Why does the heat behave so differently than all the other
+                    problems so far?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <subsection xml:id="subsec-Higher-Dimensions">
+        <title>Higher Dimensions</title>
+    </subsection>
+       
+
+        <exercise>
+            <introduction>
+                 <p>
+            Eventually, we will look in 2 or 3 dimensions.
+            So let's explore numerical solutions to the heat equation in 2
+            dimensions.
+        </p>
+            </introduction>
+        <task>
+            <introduction>
+                <p>
+                    
+            To start, let's take a square plate of length <m>55</m>, and for each
+            time step we'll numerically solve the heat equation and put it all
+            together.
+            Let's assume that the left, right, and bottom of the plate are fixed
+            at a temperature of <m>0</m>, and the top of the plate is fixed at a
+            temperature of <m>100</m>.
+            It's not super realistic, but it's a good starting point.
+            Run the cell below to animate the plate and show the heat over time.
+            (Note - it'll take a literal 30 seconds, but it's worth the wait!)
+                    </p>
+     
+        <sage>
+            <input>
+                import numpy as np
+                import matplotlib.pyplot as plt
+                import matplotlib.animation as animation
+                from matplotlib.animation import FuncAnimation
+
+                plate_length = 55
+                max_iter_time = 500
+
+                alpha = 2.0
+                delta_x = 1
+
+                # Calculated params
+                delta_t = .1 #(delta_x ** 2)/(4 * alpha)
+                gamma = (alpha * delta_t) / (delta_x ** 2)
+
+                # Initialize solution: the grid of u(k, i, j)
+                u = np.empty((max_iter_time, plate_length, plate_length))
+
+                # Initial condition everywhere inside the grid
+                u_initial = 0.0
+
+                # Boundary conditions (fixed temperature)
+                u_top = 100.0
+                u_left = 0.0
+                u_bottom = 0.0
+                u_right = 0.0
+
+                # Set the initial condition
+                u.fill(u_initial)
+
+                # Set the boundary conditions
+                u[:, (plate_length-1):, :] = u_top
+                u[:, :, :1] = u_left
+                u[:, :1, 1:] = u_bottom
+                u[:, :, (plate_length-1):] = u_right
+
+                #def calculate(u):
+                for k in range(0, max_iter_time-1, 1):
+                    for i in range(1, plate_length-1, delta_x):
+                        for j in range(1, plate_length-1, delta_x):
+                            u[k + 1, i, j] = gamma * (u[k][i+1][j] + u[k][i-1][j] + u[k][i][j+1] + u[k][i][j-1] - 4*u[k][i][j]) + u[k][i][j]
+
+                fig, ax = plt.subplots()
+                cax = ax.pcolormesh(range(0,plate_length), range(0,plate_length), u[0,:-1, :-1], cmap=plt.cm.jet,vmin=0,vmax=100)
+                fig.colorbar(cax)
+
+                def animate2(i):
+                    cax.set_array(u[i*3,:-1, :-1].flatten())
+                    ax.set_title('Time t = '+str(3*i*delta_t))
+
+                anim = animation.FuncAnimation(fig, animate2, interval=100, frames=int((max_iter_time - 1)/3),repeat=False)
+
+                anim
+                print('Done!')
+            </input>
+        </sage>
+    </introduction>
+            <task>
+                <statement>
+                    <p>
+                        What happens to the heat over time?
+
+                    </p>
+                            <p>
+            For more details about how we solve this numerically, check out: <url href="https://levelup.gitconnected.com/solving-2d-heat-equation-numerically-using-python-3334004aa01a"/>.  (Note, the code is adapted and not the same, but the methods are the same.)
+
+        </p>
+                </statement>
+            </task>
+            
+        </task>
+
+
+    
+
+
+        </exercise>
+    
+</worksheet>

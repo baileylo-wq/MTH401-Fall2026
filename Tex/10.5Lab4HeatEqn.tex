@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-.8in}
+\setlength{\textheight}{9.5in}
+
+\usepackage{palatino, amsmath, graphicx}
+
+\newcommand{\real}{{\bf R}}
+\newcommand{\maple}[1]{\medskip\hspace{.25in}\begin{tt} > {\bf #1}
+  \end{tt}\medskip} 
+\newcommand{\response}[1]{\medskip\begin{center}{\em #1}
+  \end{center}\medskip} 
+\newcommand{\task}[1]{\medskip \begin{quote} {\em Task #1}
+  \end{quote}\medskip} 
+
+
+\input epsf.sty
+\begin{document}
+
+\noindent
+{\bf Mathematics 401} \\
+{\bf Lab 4} \\
+
+\begin{center}
+{\Large {\bf The homogeneous heat equation intuitively in one dimension.}}
+\end{center}
+
+\noindent {\bf{The homogeneous heat equation in 1 dimension}} is given by:
+$$\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}$$
+or equivalently if we use subscript notation for derivatives:
+$$u_t = \alpha u_{xx}$$
+
+\noindent This is actually a diffusion equation, describing how things diffuse.  Heat is just one thing that's easy to think about.
+
+
+\begin{enumerate}
+\item Where does the constant $\alpha$ (called the thermal diffusivity) come from?
+
+\vspace{2cm}
+
+\item Consider a very slim metal rod with two candles placed beneath it as shown below.  
+
+\begin{enumerate}
+\item Assume we wait a little while for the rod to begin to heat, and then we take the two candles away.  Draw the heat distribution along the rod at that moment we remove the candles.  A good way to do this would be to color dark and dense spots with your pencil (or pen) as high heat, and unmarked spots as cold.  
+
+\begin{center}
+\includegraphics[scale=.6]{candles}
+\end{center}
+
+\item If we assume the rod is slim enough (small enough radius), then what can we say about the temperature on the cross section of the rod (one slice that looks like a circle)?
+
+
+\vspace{2cm}
+
+\item Because of the last question, how many spatial coordinates do we actually need to consider?
+
+\vspace{1.5cm}
+ 
+\item If we assume the rod is insulated, then what does that mean about the heat dispersing through the rod?
+
+\newpage
+
+\item For the rest of this problem, assume the rod is slim enough, and insulated.  Take $u(x,t)$ to be the temperature of the rod at position $x$ at time $t$.  Take $t=0$ to be when we first remove the candles, and draw the temperature distribution $u(x,0)$ below as a function of space.  (Note, the rod is included again for reference, you can redraw the heat distribution here or refer to part (a).)
+
+\includegraphics[scale=.6]{u0plot}
+
+\item Now let time pass.  What is going to happen to the temperature of the rod at the hot spots?  What is going to happen to the temperature at the cold spots?
+
+
+\vspace{2cm}
+
+\item On the plot you drew in part (e), draw arrows along your curve representing how temperature will change at that point after some amount of time.  (Up arrow means the temperature will increase, down arrow means the temperature will decrease, and the relative length of the arrows should represent if it changes more or changes less at that point.)
+
+\vspace{2cm}
+
+\item How are the arrows you drew related to the concavity?  i.e. the spatial second derivative?
+
+\vspace{2cm}
+
+\item If the arrows represent the change in temperature over time, and the arrows are also related to the concavity as described above, then what equation describes the change in temperature over time (i.e. $\frac{\partial u}{\partial t}$ or $u_t$)?  Hint - it should look familiar!
+
+\vspace{2cm}
+
+
+\item Is $\alpha$ going to be positive or negative?
+
+
+
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+\end{document}

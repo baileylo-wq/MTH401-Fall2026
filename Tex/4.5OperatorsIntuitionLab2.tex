@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}
+
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-.8in}
+\setlength{\textheight}{9.5in}
+
+\usepackage{palatino, amsmath, graphicx}
+
+\newcommand{\real}{{\bf R}}
+\newcommand{\maple}[1]{\medskip\hspace{.25in}\begin{tt} > {\bf #1}
+  \end{tt}\medskip} 
+\newcommand{\response}[1]{\medskip\begin{center}{\em #1}
+  \end{center}\medskip} 
+\newcommand{\task}[1]{\medskip \begin{quote} {\em Task #1}
+  \end{quote}\medskip} 
+
+
+\input epsf.sty
+\begin{document}
+
+\noindent
+{\bf Mathematics 401} \\
+{\bf Lab 2} \\
+
+\begin{center}
+{\Large {\bf Let's get some intuition behind gradient, divergence, curl, and the Laplacian.}}
+\end{center}
+
+\section*{Gradient}
+Imagine you are hiking on a hill.  The gradient is the steepest way to climb the hill.  In this case, the hill is a surface with an $x$ and $y$ coordinate, and the elevation $h$ would be a function of $x$ and $y$.  The gradient of $h$, $\nabla h(x,y)$, points in the direction of steepest ascent.  
+\begin{enumerate}
+\item  If you are standing on the hill at the location $(4,4)$ and you know that $\nabla h(4,4) = (2,7)$, then which direction should you go to take the steepest path up the hill?
+
+\vspace{2.5cm}
+
+\item Check out the graph below of $-x^4+4(x^2-y^2)-3$ on the left, and it's gradient field to the right.
+
+\includegraphics[scale=.6]{f.png}
+\includegraphics[scale=.5]{gr2.png}
+
+Why do the two peaks of the function correspond to points on the gradient field plot where the surrounding arrows are pointed inwards towards those points?
+
+\vspace{2cm}
+
+What would the gradient field of a function look like near the local minimum of the function?
+
+\newpage
+
+\item  Recall that the gradient is always perpendicular to the level curves.  (A level curve of a function is where the function value is equal to the same constant everywhere along that curve.)  Let's explore why this is true, using the function $f(x,y) = xy$ graphed below on the left, and the contour map showing the level curves with the gradient field plotted below on the right.
+
+\includegraphics[scale=.7]{xy.png}
+\includegraphics[scale=.4]{gradient.png}
+
+To see why the gradient is always perpendicular to the level curves, let's take a particular contour line and zoom in.  For example, let's take the contour line where $f(x,y) = 2$.  We know $\nabla f$ points in the direction in which $f$ increases the most rapidly, so we can think of this direction in two ways:  
+
+\begin{tabular}{p{3in}p{3in}}
+(a) Choose a fixed step size, and find the direction in which that step size increases $f$ the most. & (b) Choose a fixed increase in $f$, and find the direction in which the path to increase $f$ by that amount is the shortest.\\
+\includegraphics[scale=.4]{step1.png}&
+\includegraphics[scale=.4]{step2.png}
+\end{tabular}
+
+Either way, you're trying to maximize the rise over run of $f$, either by maximizing the rise as in method (a), or minimizing the run as in method (b).  
+
+If we zoom in close enough, the contour lines start to look like what?
+
+\vspace{1cm}
+
+What is the shortest path from one line to another that is parallel to it?
+
+\vspace{1cm}
+
+So why will the gradient always be perpendicular to the contour lines?
+
+\end{enumerate}
+\newpage
+
+\section*{Divergence}
+The divergence is the flux density, or the amount of flux (flow) entering or leaving a point.  In other words, it's the tendency of a field to flow outward (positive divergence) or inward (negative divergence) to a point.  So it's almost like what happens on average around that point.  A source would have a positive divergence, a sink would have a negative divergence.
+
+If you measure flux in bananas, a positive divergence means your location is a source of bananas, ``the Donkey Kong jackpot".  
+\begin{enumerate}\setcounter{enumi}{3}
+\item  Take the following field $\vec F = (2x-y,y^2)$ shown below:   
+
+\includegraphics[scale=.3]{flow.png}
+
+If we imagine placing particles on a grid covering the plot as shown on the bottom left, and press ``Play'' so that the particles ``flow" along the trajectory of the arrows, then regions that tend to become less dense (i.e. the particles scatter or ``diverge'') have a positive divergence.  Regions that tend to become more dense (i.e. the particles collect and attract in this region) have a negative divergence.  The picture below on the right shows the particles after a second of ``flow'' along the vector field.
+
+\includegraphics[scale=.3]{f1.png} \ \includegraphics[scale=.3]{f2.png}
+
+What region(s) looks to have a positive divergence?  What region(s) look to have a negative divergence?
+
+\vspace{2cm}
+
+\item On the following dots, draw an example of a field with positive divergence, one with negative divergence, and one with a divergence of zero.  
+
+\includegraphics[scale=.5]{dot.png}\includegraphics[scale=.5]{dot.png}\includegraphics[scale=.5]{dot.png}
+
+\item Note that we can also visualize divergence in 3 dimensions.  However, we can calculate the divergence in any dimension, it just doesn't have a nice picture to go along with it.
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{Curl}
+The curl is the ``circulation density" of your field.  Imagine sticking a propeller in the middle of your vector field.  The curl is the tendency of the propeller to be turned by the vector field (think torque), and the propeller will turn in the direction of your curl.  
+
+We could also imagine making a cup of tea.   The faster you stir the tea in your teacup, the larger your curl.  And a tiny propeller will turn in the direction of that curl as well.    
+\begin{enumerate}\setcounter{enumi}{6}
+\item  A conservative field is ``fair," that is the amount of work to move between two points is the same no matter what path you take.  So in other words, if you go from point $A$ to point $B$, the amount of work you ``put in'' is the same you ``get back'' by going back from point $B$ to point $A$.  Gravity for example is conservative - you might need to work to get up a hill, but you get the same amount of work back (or a ``free ride'') falling back down the hill.
+
+With that point of view, is a river flowing downstream a conservative field?  Why or why not?  (You can think of it in terms of energy spent.)
+
+\vspace{1cm}
+
+Is a whirlpool a conservative field?  Why or why not?
+
+\vspace{1cm}
+
+Will a conservative field have a curl?
+
+\vspace{1cm}
+
+\item Wrap your fingers of your right-hand around so the curve inward, and your thumb will point in the direction of the curl (by convention).  So if the curl indicates motion in the counter-clockwise direction, is the curl positive or negative?
+
+\vspace{1cm}
+
+\item As we saw, the divergence of the curl of a field is always 0.   Let's take a look at why this is true in 2 dimensions - picture a very small circular disk.  The curl of the field is the part of the field that ``rotates'' an object around the center of the disk.  If we picture fluid on a grid within the disk, the curl measures the rotational part of field within the disk.  Note, that the rotational part of the field doesn't have anything to do with carrying the fluid out of the disk.
+
+The divergence measures how the fluid flows out of the disk given the flow of the vector field.  So why would the divergence of the curl be 0?
+
+ 
+
+\end{enumerate}
+
+
+
+\newpage
+
+\section*{Laplacian}
+Imagine again that we're making tea.  Initially you fill your teacup with hot water, and put your teabag inside.  Over time, the water starts getting darker.  That is, the tea is starting to diffuse.  The laplacian tells you how homogeneous your mixture is.  Over time the tea will become more and more ``well-mixed'', that is more and more homogenous, and your laplacian will get smaller.  
+\begin{enumerate}\setcounter{enumi}{3}
+\item  The Laplacian of a function $f$ is the divergence of the gradient of $f$, that is $\nabla \cdot \nabla f$.  It's kind of like a second derivative (how your function bends at a point).  
+
+Recall the gradient of $f$ tells you the direction in which $f$ is \underline{\hspace{6cm}}.
+
+The divergence of a vector field tells you the flow, or how much the fluid particles are diverging away from that spot.  
+
+So let's look at some hills, and let's look at the lowest point at that hill to be our point (a local minimum).  The direction of steepest ascent is uphill everywhere around that point, so the gradient field of $f$ at the local minimum will have the arrows pointing outward, or away from out point.  If we picture that field, the point looks like a source.  So will the divergence be large at this point, or small at this point?  Will it be positive or negative or zero?
+
+\vspace{2cm}
+
+
+Now take the highest point on our hill (a local maximum).  Everywhere around that point is lower than our point, so direction of steepest ascent will point inwards, towards our point.  If we picture the gradient field, our point will look like a sink.  Will the divergence be large at this point, or small at this point?  Will it be positive or negative or zero?
+
+\vspace{2cm}
+
+Let's look at the analogous 2-dimensional calculus example of the second derivative.  The graph below has a local maximum at $x=0$ and a local minimum at about $x=2$.   
+
+\includegraphics[scale=.5]{2d.png}
+
+Is the second derivative positive, negative, or zero at $x=0$?
+
+\vspace{1cm}
+
+Is the second derivative positive, negative, or zero at $x=2$?
+
+\vspace{1cm}
+
+Does this match with the Laplacian (the divergence of the gradient) of our 2-dimensional hill?
+
+
+\newpage
+
+So the Laplacian is measuring a ``change in change''.  When the field goes from a small amount of change at one point, to a huge amount of change at another point, the Laplacian will be large (there is a large change in change).  When the field is changing by amount the same amount as points nearby, the Laplacian will be small (there is a small change in change).
+
+\end{enumerate}
+
+
+
+
+\end{document}

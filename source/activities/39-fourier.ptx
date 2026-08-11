@@ -1,35 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>39: Fourier transforms</title>
+    <title>3.11. Fourier Transforms</title>
 
-  <exercise>
-    <task workspace="4in">
-      <statement>
-        <p>Evaluate the integral
-  <md>
-  \int_{-\infty}^\infty\frac {e^{i2x}}{1+x^2}~dx,
-  </md></p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What about the more general Fourier transform
-  <md>
-  \int_{-\infty}^\infty\frac {e^{i\omega x}}{1+x^2}~dx,
-  </md>
-  where <m>\omega &gt; 0</m>?</p>
-      </statement>
-    </task>
-  </exercise>
+    <alert>
+        MTH 401
+    </alert>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>Evaluate the integral
-  <md>
-  \int_{-\infty}^\infty \frac{x\sin x}{4+x^2}~dx =
-  \im\left\{  \int_{-\infty}^\infty \frac{xe^{ix}}{4+x^2}~dx\right\}.
-  </md></p>
-    </statement>
-  </exercise>
+    <introduction>
+        <p>
+            You may recall the <term>Fourier transform</term> of a function
+            <m>f(x)</m> had the form
+            <md>
+                {\mathcal{F}[f] = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty} f(x)e^{i\omega x}~dx}.
+            </md>
+            It is thus useful to be able to solve that integral.
+        </p>
+    </introduction>
 
+    <theorem xml:id="thm-fourier-complex">
+        <statement>
+            <p>
+                If <m>f(x)</m> is a rational function
+                <m>{f(x) = \frac{P(x)}{Q(x)}}</m> with
+                <m>{\text{deg}(Q) \ge \text{deg}(P)+1}</m>, and
+                <m>{\omega \gt 0}</m> then
+                <md>
+                    \int\limits_{-\infty}^{\infty} \frac{P(x)}{Q(x)}e^{i\omega x}~dx = 2\pi i \sum\limits_{z_j \text{ sings in upper half plane}} \text{Res}_{z_j} \frac{P(z)}{Q(z)}e^{i\omega z}
+                </md>
+            </p>
+        </statement>
+    </theorem>
+
+    <remark>
+        <p>
+            That is, as long as the degree of the denominator is sufficiently
+            larger than that of the numerator, instead of solving the integral
+            restricted to the real plane, we can turn to complex land, find the
+            singularities of <m>\ds \frac{P(z)}{Q(z)}</m> in the upper half
+            plane, find the residues of those singularities for
+            <m>\ds {\frac{P(z)}{Q(z)}e^{i\omega z}}</m>, then plug in and sum!
+        </p>
+    </remark>
+
+    <exercise>
+        <introduction>
+            <p>
+                A specific fourier transform example for <m>\omega = 2</m>.
+            </p>
+        </introduction>
+
+        <task workspace="3in">
+            <statement>
+                <p>
+                    Evaluate the integral
+                    <md>
+                        \int_{-\infty}^\infty\frac {e^{i2x}}{1+x^2}~dx,
+                    </md>
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What about the more general Fourier transform
+                    <md>
+                        \int_{-\infty}^\infty\frac {e^{i\omega x}}{1+x^2}~dx,
+                    </md>
+                    where <m>\omega &gt; 0</m>?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="3in">
+        <statement>
+            <p>
+                Evaluate the integral
+                <md>
+                    \int_{-\infty}^\infty \frac{x\sin x}{4+x^2}~dx =
+  \text{Imag}\left\{  \int_{-\infty}^\infty \frac{xe^{ix}}{4+x^2}~dx\right\}.
+                </md>
+                That is, solve the Fourier transform first, then take the
+                imaginary part of your answer.
+            </p>
+        </statement>
+    </exercise>
 </worksheet>

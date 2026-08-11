@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
-  <title>37: Residues</title>
+  <title>3.9. Residues</title>
+  <alert>MTH 401</alert>
+
+  <definition xml:id="def-simple-pole">
+    <statement>
+      <p>
+        A <term>simple pole</term> is a pole of order 1, that is the Laurent series
+        has only the coefficient <m>c_{-1} \ne 0</m> in the principal part. 
+      </p>
+    </statement>
+  </definition>
+
+  <theorem xml:id="thm-identify-simple-pole">
+    <statement>
+      <p>
+        For a complex function <m>f(z)</m> that can be written as a rational function
+        <m>{f(z)=\frac{g(z)}{h(z)}}</m>, <m>f(z)</m> has a <term>simple pole</term>
+        at <m>z_0</m> if the following hold:
+        <ol>
+          <li>
+            <p>
+              <m>g(z_0)\ne 0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>h(z_0)=0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>h'(z_0) \ne 0</m>
+            </p>
+          </li>
+        </ol>
+        In this case (and only this case!), the residue for a simple pole is 
+        <md>
+          \text{Res}_{z_0} f(z) = \text{Res}_{z_0}\frac{g(z)}{h(z)} = \frac{g(z_0)}{h'(z_0)}.
+        </md>
+        
+      </p>
+    </statement>
+  </theorem>
+
+  <theorem xml:id="thm-ML-inequality">
+    <statement>
+      <p>
+        Consider a curve <m>C</m> such that the length of <m>C</m> is <m>L</m>, and a 
+        function <m>f(z)</m> such that the modulus <m>|f(z)|\le M</m>. Then the <term>ML inequality</term>
+        states that 
+        <md>
+          \left|\int_C f(z)~dz\right| \le ML.
+        </md>
+        
+      </p>
+    </statement>
+  </theorem>
+  
+  
 
   <exercise workspace="2in">
     <statement>
@@ -9,30 +67,30 @@
     </statement>
   </exercise>
 
-  <exercise workspace="2in">
+  <exercise >
     <introduction>
       <p>Let's consider the function <m>\ds f(z) = \frac{1}{1+z^4}</m>.</p>
     </introduction>
-    <task workspace="2in">
+    <task workspace="1.6in">
       <statement>
         <p>What
   are the singularities of this function;  that is, where is <m>1+z^4 =
-  0</m>?</p>
+  0</m>? (Polar form? It may help...)</p>
       </statement>
     </task>
     <task workspace="2in">
       <statement>
-        <p>Find the residues at each of the singularities.</p>
+        <p>Find the residues at each of the singularities. (Would still recommend polar form...)</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="2in">
       <statement>
-        <p>Evaluate the integral <m>\ds\int_{-\infty}^\infty \frac1{1+x^4}~dx</m>.</p>
+        <p>Evaluate the integral <m>\ds\int_{-\infty}^\infty \frac1{1+x^4}~dx</m>. (Draw a contour... What singularities matter?)</p>
       </statement>
     </task>
   </exercise>
 
-  <exercise workspace="2.5in">
+  <exercise >
     <introduction>
       <p>If <m>f(z)</m> has a pole of order two at <m>z_0</m>, then its Laurent
   series looks like
@@ -58,13 +116,13 @@
   \left[(z-z_0)^2f(z)\right]</m>.</p>
       </statement>
     </task>
-    <task workspace="2in">
+    <task workspace="1.7in">
       <statement>
         <p>Find the residues of the singularities of <m>\ds f(z) =
   \frac{1}{(z^2+1)^2} = \frac{1}{(z-i)^2(z+i)^2}</m>.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="2in">
       <statement>
         <p>Now evaluate the integral <m>\ds \int_{-\infty}^\infty
   \frac1{(1+x^2)^2}~dx</m>.</p>
@@ -72,7 +130,7 @@
     </task>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="3in">
     <statement>
       <p>Suppose that <m>\ds f(z) = \frac{\cos(z)}{z^2 + 4}</m> and that <m>C_1</m> is
   the circle of radius 2 centered at <m>2i</m>, <m>C_2</m> is the circle of

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Lab: Heat Visualization</title>
+
+    <alert>
+        MTH 401
+    </alert>
+
+    <introduction>
+        <p>
+            Let's get some intuition behind gradient, divergence, curl, and the
+            Laplacian.
+        </p>
+    </introduction>
+
+    <subsection xml:id="subsec-gradient">
+        <title>Gradient</title>
+
+        <p>
+            Imagine you are hiking on a hill.
+            The <term>gradient</term> is the steepest way to climb the hill.
+            In this case, the hill is a surface with an <m>x</m> and <m>y</m>
+            coordinates, and the elevation <m>h</m> would be a function of
+            <m>x</m> and <m>y</m>.
+            The gradient of <m>h</m>, <m>\nabla h(x,y)</m>, points in the
+            direction of steepest ascent.
+        </p>
+    </subsection>
+
+    <exercise workspace="1cm">
+        <statement>
+            <p>
+                If you are standing on the hill at the location <m>(4,4)</m> and
+                you know that <m>{\nabla h(4,4) = (2,7)}</m>, then which
+                direction should you go to take the steepest path up the hill?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Check out the graph below of <m>{-x^4+4(x^2-y^2)-3}</m> on the
+                left, and it's gradient field to the right.
+            </p>
+
+            <sidebyside widths="40% 30%">
+                <image source="images/f.png">
+                    <shortdescription>
+                        The 3 dimensional plot of the function.
+                    </shortdescription>
+                </image>
+
+                <image source="images/gr2.png">
+                    <shortdescription>
+                        The gradient field of the function.
+                    </shortdescription>
+                </image>
+            </sidebyside>
+        </introduction>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    Why do the two peaks of the function correspond to points on
+                    the gradient field plot where the surrounding arrows are
+                    pointed inwards towards those points?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    What would the gradient field of a function look like near
+                    the local minimum of the function?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Recall that the gradient is always perpendicular to the level
+                curves.
+                (A level curve of a function is where the function value is
+                equal to the same constant everywhere along that curve.) Let's
+                explore why this is true, using the function
+                <m>{f(x,y) = xy}</m> graphed below on the left, and the contour
+                map showing the level curves with the gradient field plotted
+                below on the right.
+            </p>
+
+            <sidebyside widths="40% 40%">
+                <image source="images/xy.png">
+                    <shortdescription>
+                        The 3 dimensional graph of the function.
+                    </shortdescription>
+                </image>
+
+                <image source="images/gradient.png">
+                    <shortdescription>
+                        The gradient field of the function.
+                    </shortdescription>
+                </image>
+            </sidebyside>
+
+            <p>
+                To see why the gradient is always perpendicular to the level
+                curves, let's take a particular contour line and zoom in.
+                For example, let's take the contour line where
+                <m>{f(x,y) = 2}</m>.
+                We know <m>\nabla f</m> points in the direction in which
+                <m>f</m> increases the most rapidly, so we can think of this
+                direction in two ways:
+            </p>
+
+            <sidebyside widths="48% 48%">
+                <p>
+                    Choose a fixed step size, and find the direction in which
+                    that step size increases <m>f</m> the most.
+                </p>
+
+                <p>
+                    Choose a fixed increase in <m>f</m>, and find the direction
+                    in which the path to increase <m>f</m> by that amount is the
+                    shortest.
+                </p>
+            </sidebyside>
+
+            <sidebyside widths="48% 48%">
+                <image source="images/step1.png">
+                    <shortdescription>
+                        Given steps of equal size in all directions, which one
+                        increases the function value the most?
+                    </shortdescription>
+                </image>
+
+                <image source="images/step2.png">
+                    <shortdescription>
+                        Of all the steps that increase the function value by a
+                        specific amount, which one is the shortest?
+                    </shortdescription>
+                </image>
+            </sidebyside>
+
+            <p>
+                Either way, you're trying to maximize the rise over run of
+                <m>f</m>, either by maximizing the rise as in method on the
+                left, or minimizing the run as in method on the right.
+            </p>
+        </introduction>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    If we zoom in close enough, the contour lines start to look
+                    like what?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    What is the shortest path from one line to another that is
+                    parallel to it?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    So why will the gradient always be perpendicular to the
+                    contour lines?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <subsection xml:id="subsec-divergence">
+        <title>Divergence</title>
+
+        <p>
+            The divergence is the flux density, or the amount of flux (flow)
+            entering or leaving a point.
+            In other words, it's the tendency of a field to flow outward
+            (positive divergence) or inward (negative divergence) to a point.
+            So it's almost like what happens on average around that point.
+            A source would have a positive divergence, a sink would have a
+            negative divergence.
+        </p>
+
+        <p>
+            If you measure flux in bananas, a positive divergence means your
+            location is a source of bananas, “the Donkey Kong jackpot”.
+        </p>
+    </subsection>
+
+    <exercise>
+        <introduction>
+            <p>
+                Take the following field <m>\vec F = (2x-y,y^2)</m> shown below:
+                <image source="images/flow.png" width="30%">
+                    <shortdescription>The gradient field.</shortdescription>
+                </image>
+                If we imagine placing particles on a grid covering the plot as
+                shown on the bottom left, and press ``Play'' so that the
+                particles ``flow" along the trajectory of the arrows, then
+                regions that tend to become less dense (i.e.
+                the particles scatter or ``diverge'') have a positive
+                divergence.
+                Regions that tend to become more dense (i.e.
+                the particles collect and attract in this region) have a
+                negative divergence.
+                The picture below on the right shows the particles after a
+                second of ``flow'' along the vector field.
+            </p>
+
+            <sidebyside widths="45% 45%">
+                <image source="images/f1.png">
+                    <shortdescription>
+                        The initial trajectory of particles placed evenly spaced
+                        on a grid under this field.
+                    </shortdescription>
+                </image>
+
+                <image source="images/f2.png">
+                    <shortdescription>
+                        The particles on the grid after a short time where the
+                        particles have "flowed" along the vector field.
+                    </shortdescription>
+                </image>
+            </sidebyside>
+        </introduction>
+
+        <task workspace="1.5cm">
+            <statement>
+                <p>
+                    What region(s) looks to have a positive divergence?
+                    What region(s) look to have a negative divergence?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="0in">
+        <statement>
+            <p>
+                On the following dots, draw an example of a field with positive
+                divergence, one with negative divergence, and one with a
+                divergence of zero.
+            </p>
+
+            <sidebyside widths="25% 25% 25%">
+                <image source="images/dot.png">
+                    <shortdescription>
+                        A dot on which you are asked to draw a field with
+                        positive divergence.
+                    </shortdescription>
+                </image>
+
+                <image source="images/dot.png">
+                    <shortdescription>
+                        A dot on which you are asked to draw a field with
+                        negative divergence.
+                    </shortdescription>
+                </image>
+
+                <image source="images/dot.png">
+                    <shortdescription>
+                        A dot on which you are asked to draw a field with zero
+                        divergence.
+                    </shortdescription>
+                </image>
+            </sidebyside>
+        </statement>
+    </exercise>
+
+    <p>
+        Note that we can also visualize divergence in 3 dimensions.
+        However, we can calculate the divergence in any dimension, it just
+        doesn't have a nice picture to go along with it.
+    </p>
+
+    <subsection xml:id="subsec-curl">
+        <title>Curl</title>
+
+        <p>
+            The curl is the ``circulation density" of your field.
+            Imagine sticking a propeller in the middle of your vector field.
+            The curl is the tendency of the propeller to be turned by the vector
+            field (think torque), and the propeller will turn in the direction
+            of your curl.
+        </p>
+
+        <p>
+            We could also imagine making a cup of tea.
+            The faster you stir the tea in your teacup, the larger your curl.
+            And a tiny propeller will turn in the direction of that curl as
+            well.
+        </p>
+    </subsection>
+
+    <exercise>
+        <introduction>
+            <p>
+                A conservative field is ``fair," that is the amount of work to
+                move between two points is the same no matter what path you
+                take.
+                So in other words, if you go from point <m>A</m> to point <m>B</m>, the
+                amount of work you ``put in'' is the same you ``get back'' by
+                going back from point <m>B</m> to point <m>A</m>.
+                Gravity for example is conservative - you might need to work to
+                get up a hill, but you get the same amount of work back (or a
+                ``free ride'') falling back down the hill.
+            </p>
+        </introduction>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    With that point of view, is a river flowing downstream a
+                    conservative field?
+                    Why or why not?
+                    (You can think of it in terms of energy spent.)
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    Is a whirlpool a conservative field?
+                    Why or why not?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1cm">
+            <statement>
+                <p>
+                    Will a conservative field have a curl?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="1cm">
+        <statement>
+            <p>
+                Wrap your fingers of your right-hand around so the curve inward,
+                and your thumb will point in the direction of the curl (by
+                convention).
+                So if the curl indicates motion in the counter-clockwise
+                direction, is the curl positive or negative?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="1cm">
+        <statement>
+            <p>
+                As we saw, the divergence of the curl of a field is always 0.
+                Let's take a look at why this is true in 2 dimensions - picture
+                a very small circular disk.
+                The curl of the field is the part of the field that ``rotates''
+                an object around the center of the disk.
+                If we picture fluid on a grid within the disk, the curl measures
+                the rotational part of field within the disk.
+                Note, that the rotational part of the field doesn't have
+                anything to do with carrying the fluid out of the disk.
+            </p>
+
+            <p>
+                The divergence measures how the fluid flows out of the disk
+                given the flow of the vector field.
+                So why would the divergence of the curl be 0?
+            </p>
+        </statement>
+    </exercise>
+
+    <subsection xml:id="subsec-laplacian">
+        <title>Laplacian</title>
+
+        <p>
+            Imagine again that we're making tea.
+            Initially you fill your teacup with hot water, and put your teabag
+            inside.
+            Over time, the water starts getting darker.
+            That is, the tea is starting to diffuse.
+            The laplacian tells you how homogeneous your mixture is.
+            Over time the tea will become more and more ``well-mixed'', that is
+            more and more homogenous, and your laplacian will get smaller.
+        </p>
+    </subsection>
+
+    <exercise>
+        <introduction>
+            <p>
+                The Laplacian of a function <m>f</m> is the divergence of the
+                gradient of <m>f</m>, that is <m>{\nabla \cdot \nabla f}</m>.
+                It's kind of like a second derivative (how your function bends
+                at a point).
+            </p>
+
+            <p>
+                Recall the gradient of <m>f</m> tells you the direction in which <m>f</m>
+                is <fillin characters="10" />.
+            </p>
+
+            <p>
+                The divergence of a vector field tells you the flow, or how much
+                the fluid particles are diverging away from that spot.
+            </p>
+        </introduction>
+
+        <task workspace="1.5cm">
+            <statement>
+                <p>
+                    So let's look at some hills, and let's look at the lowest
+                    point at that hill to be our point (a local minimum).
+                    The direction of steepest ascent is uphill everywhere around
+                    that point, so the gradient field of <m>f</m> at the local
+                    minimum will have the arrows pointing outward, or away from
+                    out point.
+                    If we picture that field, the point looks like a source.
+                    So will the divergence be large at this point, or small at
+                    this point?
+                    Will it be positive or negative or zero?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1.5cm">
+            <statement>
+                <p>
+                    Now take the highest point on our hill (a local maximum).
+                    Everywhere around that point is lower than our point, so
+                    direction of steepest ascent will point inwards, towards our
+                    point.
+                    If we picture the gradient field, our point will look like a
+                    sink.
+                    Will the divergence be large at this point, or small at this
+                    point?
+                    Will it be positive or negative or zero?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <introduction>
+                <p>
+                    Let's look at the analogous 2-dimensional calculus example
+                    of the second derivative.
+                    The graph below has a local maximum at <m>x=0</m> and a local
+                    minimum at about <m>x=2</m>.
+                </p>
+
+                <image width="35%">
+                    <shortdescription>
+                        The graph of a cubic polynomial with roots at 0 and 2.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-lab1">
+                        <diagram dimensions="(180,180)" margins="5">
+                            <definition>
+                                f(x) = x^2*(x-2)
+                            </definition>
+                            <coordinates bbox="[-2,-6,4,5]">
+                                <grid-axes xlabel="x" ylabel="y" decorations="yes"/>
+                                <graph function="f"/>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                </image>
+            </introduction>
+
+            <task workspace="1cm">
+                <statement>
+                    <p>
+                        Is the second derivative positive, negative, or zero at
+                        <m>x=0</m>?
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1cm">
+                <statement>
+                    <p>
+                        Is the second derivative positive, negative, or zero at
+                        <m>x=2</m>?
+                    </p>
+                </statement>
+            </task>
+
+            <task workspace="1cm">
+                <statement>
+                    <p>
+                        Does this match with the Laplacian (the divergence of
+                        the gradient) of our 2-dimensional hill?
+                    </p>
+                </statement>
+            </task>
+        </task>
+    </exercise>
+
+    <p>
+        So the Laplacian is measuring a ``change in change''.
+        When the field goes from a small amount of change at one point, to a
+        huge amount of change at another point, the Laplacian will be large
+        (there is a large change in change).
+        When the field is changing by amount the same amount as points nearby,
+        the Laplacian will be small (there is a small change in change).
+    </p>
+</worksheet>

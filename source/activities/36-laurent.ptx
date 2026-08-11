@@ -1,104 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>36: Laurent series</title>
-  <introduction>
-    <p><md>
-<mrow>e^u \amp  = \amp  1 + u + \frac{u^2}{2!} + \frac{u^3}{3!} + \ldots +
-          \frac{u^n}{n!} + \ldots</mrow>
-<mrow>\sin(u) \amp  = \amp  u - \frac{u^3} {3!} + \frac{u^5}{5!} - \frac{u^7}{7!} +
-\ldots + (-1)^n\frac{u^{2n+1}}{(2n+1)!} + \ldots</mrow>
-<mrow>\cos(u) \amp  = \amp  1 - \frac{u^2}{2!} + \frac{u^4}{4!} - \frac{u^6}{6!} +
-\ldots + (-1)^n\frac{u^{2n}}{(2n)!} + \ldots</mrow>
-</md></p>
-  </introduction>
+    <title>3.8. Laurent Series</title>
 
-  <exercise workspace="1in">
-    <task workspace="2in">
-      <statement>
-        <p>Find the Laurent series for the function <m>f(z) =
-  \sin\left(\frac2z\right)</m> around the point <m>z_0 = 0</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is <m>\res_0 f(z)</m>?
-  What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit circle?</p>
-      </statement>
-    </task>
-  </exercise>
+    <alert>
+        MTH 401
+    </alert>
 
-  <exercise workspace="1in">
-    <introduction>
-      <p>Suppose that <m>f(z) = \frac{\cos(3z) - 1}{z^2}</m>.</p>
-    </introduction>
-    <task workspace="2in">
-      <statement>
-        <p>Find its
-  Laurent series about the point <m>z_0 = 0</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the residue <m>\res_0 f(z)</m>?
-  What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit circle?</p>
-      </statement>
-    </task>
-  </exercise>
+    <definition xml:id="def-laurent-series">
+        <statement>
+            <p>
+                A <term>Laurent series</term> centered at <m>z_0</m> represents
+                a complex function <m>f(z)</m> as an infinite series of both
+                positive and negative powers of <m>z-z_0</m>.
+                It has the form
+                <md>
+                    f(z) = \ldots + c_{-2}(z-z_0)^{-2} + c_{-1}(z-z_0)^{-1} + c_0 + c_1(z-z_0)+c_2(z-z_0)^2+\ldots
+                </md>
+                with all negative powers collectively forming the
+                <term>principal part</term> and the nonnegative powers
+                collectively forming the <term>Taylor series</term>.
+            </p>
 
-  <exercise workspace=".8in">
-    <introduction>
-      <p>Suppose that <m>f(z) = \frac{\sin(2z^2)-2z^2}{z^{11}}</m>.</p>
-    </introduction>
-    <task workspace="2in">
-      <statement>
-        <p>Find its
-  Laurent series about the point <m>z_0 = 0</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is the residue <m>\res_0 f(z)</m>?
-  What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit circle?</p>
-      </statement>
-    </task>
-  </exercise>
+            <p>
+                Coefficients in the <term>principal part</term> with
+                <m>n \lt 0</m> can be found using
+                <md>
+                    c_n = \frac{1}{2\pi i}\oint\limits_C \frac{f(z)}{(z-z_0)^{-n+1}}~dz
+                </md>
+                while coefficients in the <term>Taylor series</term> part with
+                <m>n\ge 0</m> are
+                <md>
+                    c_n = \frac{1}{2\pi i}\oint\limits_C \frac{f(z)}{(z-z_0)^{n+1}}~dz.
+                </md>
+            </p>
+        </statement>
+    </definition>
 
-  <exercise>
-    <introduction>
-      <p>There are three types of singularities that can be classified by
-  their Laurent series:
-  <md>
-  f(z) = \ldots + \frac{c_{-2}}{(z-z_0)^2} + \frac{c_{-1}}{z-z_0} +
+    <remark>
+        <p>
+            We rarely use those formulas to find the coefficients <m>c_n</m>,
+            rather we usually use our Taylor series knowledge instead.
+        </p>
+
+        <p>
+            Recall again the following <term>Taylor series</term>:
+            <md>
+                <mrow>e^u \amp  =   1 + u + \frac{u^2}{2!} + \frac{u^3}{3!} + \ldots +
+                        \frac{u^n}{n!} + \ldots</mrow>
+                <mrow>\sin(u) \amp  =   u - \frac{u^3} {3!} + \frac{u^5}{5!} - \frac{u^7}{7!} +
+                    \ldots + (-1)^n\frac{u^{2n+1}}{(2n+1)!} + \ldots</mrow>
+                <mrow>\cos(u) \amp  =   1 - \frac{u^2}{2!} + \frac{u^4}{4!} - \frac{u^6}{6!} +
+                      \ldots + (-1)^n\frac{u^{2n}}{(2n)!} + \ldots</mrow>
+            </md>
+        </p>
+    </remark>
+
+    <definition xml:id="def-residue">
+        <statement>
+            <p>
+                The coefficient <m>c_{-1}</m> in the Laurent series of a complex
+                function <m>f(z)</m> is called the <term>residue</term> of
+                <m>f(z)</m> at <term>z-z_0</term>, denoted
+                <md>
+                    \text{Res}_{z_0} f(z).
+                </md>
+                If <m>f(z)</m> has only one singularity at <m>z_0</m> and
+                <m>z_0</m> is inside <m>C</m>, then
+                <md>
+                    \oint\limits_C f(z)~dz = 2\pi i  \ \text{Res}_{z_0}f(z).
+                </md>
+            </p>
+        </statement>
+    </definition>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider the function
+                <m>\ds f(z) = \sin\left(\frac2z\right)</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the Laurent series for the function <m>f(z)</m> around
+                    the point <m>z_0 = 0</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is <m>\res_0 f(z)</m>?
+                    What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit
+                    circle?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="1in">
+        <introduction>
+            <p>
+                Suppose that <m>f(z) = \frac{\cos(3z) - 1}{z^2}</m>.
+            </p>
+        </introduction>
+
+        <task workspace="2in">
+            <statement>
+                <p>
+                    Find the Laurent series for <m>f(z)</m> about the point
+                    <m>z_0 = 0</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the residue <m>\res_0 f(z)</m>?
+                    What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit
+                    circle?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that <m>f(z) = \frac{\sin(2z^2)-2z^2}{z^{11}}</m>.
+            </p>
+        </introduction>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the Laurent series for <m>f(z)</m> about the point
+                    <m>z_0 = 0</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the residue <m>\res_0 f(z)</m>?
+                    What is <m>\oint_C f(z)~dz</m> if <m>C</m> is the unit
+                    circle?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <definition xml:id="def-singularities">
+        <statement>
+            <p>
+                There are three types of singularities that can be classified by
+                their Laurent series given by
+                <md>
+                    f(z) = \ldots + \frac{c_{-2}}{(z-z_0)^2} + \frac{c_{-1}}{z-z_0} +
   c_0 + c_1 (z-z_0) + \ldots.
-  </md></p>
-      <ul>
-        <li><p><term>Removable singularity:</term>  <m>c_k = 0</m> if <m>k&lt;0</m>.</p></li>
-        <li><p><term>Pole:</term> There are only finitely many nonzero <m>c_k</m> with
-    <m>k</m> negative.</p></li>
-        <li><p><term>Essential singularity:</term> There are infinitely many nonzero
-    <m>c_k</m> with <m>k</m> negative.</p></li>
-      </ul>
-    </introduction>
-    <task workspace=".8in">
-      <statement>
-        <p>The first three examples illustrate each of these types.  Which is
-  which?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>The <em>order</em> of a pole is the smallest positive integer <m>M</m> where
-  <m>c_k = 0</m> if <m>k &lt; -M</m>.  What is the order of the pole from the first
-  three examples?</p>
-      </statement>
-    </task>
-  </exercise>
+                </md>
+                The three types are classified by how many coefficients
+                <m>c_k</m> corresponding to negative powers ( <m>k\lt 0</m> )
+                are nonzero.
+            </p>
 
-  <exercise workspace="1in">
-    <statement>
-      <p>Suppose that <m>f(z) = \frac{1}{z^2+1}</m>.  Find the singularities,
-  determine their types, and find their residues.</p>
-    </statement>
-  </exercise>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <term>Removable singularity:</term> <m>c_k = 0</m>
+                            if <m>k&lt;0</m>.
+                        </p>
+                    </li>
 
+                    <li>
+                        <p>
+                            <term>Pole:</term> There are only finitely many
+                            nonzero <m>c_k</m> with <m>k</m> negative.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <term>Essential singularity:</term> There are
+                            infinitely many nonzero <m>c_k</m> with <m>k</m>
+                            negative.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </definition>
+
+    <definition xml:id="def-order">
+        <statement>
+            <p>
+                The <term>order</term> of a pole (see definition above) is the
+                smallest positive integer <m>M</m> where <m>c_k = 0</m> if
+                <m>k &lt; -M</m>.
+            </p>
+        </statement>
+    </definition>
+
+    <exercise>
+        <introduction>
+            <p>
+                Identify.
+            </p>
+        </introduction>
+
+        <task workspace=".8in">
+            <statement>
+                <p>
+                    The first three examples illustrate each of these types.
+                    Which is which?
+                </p>
+            </statement>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is the order of the pole from the first three examples?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise workspace="4in">
+        <statement>
+            <p>
+                Suppose that <m>f(z) = \frac{1}{z^2+1}</m>.
+                Find the singularities, determine their types, and find their
+                residues.
+            </p>
+        </statement>
+    </exercise>
 </worksheet>
