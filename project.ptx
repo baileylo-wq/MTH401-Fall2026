@@ -6,6 +6,8 @@
     <!-- Main course for html or pdf -->
     <target name="course" source="main.ptx" format="html"
             publication="publication.ptx" deploy-dir="course" />
+    <target name="prof-version" source="main.ptx" format="html"
+            publication="publication3-solns.ptx" deploy-dir="prof-version" />
     <target name="print" source="main.ptx" format="pdf"
             output-filename="course.pdf" publication="publication.ptx" />
 

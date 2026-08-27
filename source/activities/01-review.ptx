@@ -83,7 +83,7 @@
                 </p>
             </statement>
 
-            <solution component="week1">
+            <solution component="aaa-soln">
                 <p>
                     <md>
                         <mrow>
@@ -95,14 +95,6 @@
                     </md>
                 </p>
             </solution>
-
-            <answer>
-                <p>
-                    <md>
-                        A\cdot A = 17, \ \ \ A\cdot B = 4
-                    </md>
-                </p>
-            </answer>
         </task>
 
         <task workspace="0.6in">
