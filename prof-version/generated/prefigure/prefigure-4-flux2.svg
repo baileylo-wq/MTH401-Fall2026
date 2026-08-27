@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-4-flux2-figure" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="prefigure-4-flux2-clipPath-0">
+      <rect x="0.0" y="0.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <clipPath id="prefigure-4-flux2-clipPath-1">
+      <rect x="0.0" y="0.0" width="200.0" height="200.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-4-flux2-grid-axes">
+    <g id="prefigure-4-flux2-grid" stroke="#ccc" stroke-width="1">
+      <line x1="0.0" y1="200.0" x2="0.0" y2="0.0"/>
+      <line x1="50.0" y1="200.0" x2="50.0" y2="0.0"/>
+      <line x1="100.0" y1="200.0" x2="100.0" y2="0.0"/>
+      <line x1="150.0" y1="200.0" x2="150.0" y2="0.0"/>
+      <line x1="200.0" y1="200.0" x2="200.0" y2="0.0"/>
+      <line x1="0.0" y1="200.0" x2="200.0" y2="200.0"/>
+      <line x1="0.0" y1="150.0" x2="200.0" y2="150.0"/>
+      <line x1="0.0" y1="100.0" x2="200.0" y2="100.0"/>
+      <line x1="0.0" y1="50.0" x2="200.0" y2="50.0"/>
+      <line x1="0.0" y1="0.0" x2="200.0" y2="0.0"/>
+    </g>
+    <g id="prefigure-4-flux2-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-4-flux2-line-10" x1="0.0" y1="100.0" x2="200.0" y2="100.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-4-flux2-line-11" x1="50.0" y1="103.0" x2="50.0" y2="97.0"/>
+        <line id="prefigure-4-flux2-line-12" x1="150.0" y1="103.0" x2="150.0" y2="97.0"/>
+      </g>
+      <line id="prefigure-4-flux2-line-13" x1="100.0" y1="200.0" x2="100.0" y2="0.0" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-4-flux2-line-14" x1="97.0" y1="150.0" x2="103.0" y2="150.0"/>
+        <line id="prefigure-4-flux2-line-15" x1="97.0" y1="50.0" x2="103.0" y2="50.0"/>
+      </g>
+    </g>
+    <g id="prefigure-4-flux2-label-0" transform="translate(196.0,96.0) translate(-10.4,-8.2)">
+      <g id="prefigure-4-flux2-g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-4-flux2-MJX-2-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-4-flux2-MJX-2-TEX-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-4-flux2-label-1" transform="translate(104.0,4.0) translate(0.0,-0.0)">
+      <g id="prefigure-4-flux2-g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-4-flux2-MJX-3-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-4-flux2-MJX-3-TEX-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-4-flux2-label-2" transform="translate(50.0,111.0) translate(-7.5,-0.0)">
+      <g id="prefigure-4-flux2-g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-4-flux2-MJX-4-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-4-flux2-MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 1">
+                <use data-c="2D" xlink:href="#prefigure-4-flux2-MJX-4-TEX-N-2D"/>
+                <use data-c="31" xlink:href="#prefigure-4-flux2-MJX-4-TEX-N-31" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-4-flux2-label-3" transform="translate(150.0,111.0) translate(-4.5,-0.0)">
+      <g id="prefigure-4-flux2-g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-4-flux2-MJX-5-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-4-flux2-MJX-5-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-4-flux2-label-4" transform="translate(89.0,150.0) translate(-15.1,-6.0)">
+      <g id="prefigure-4-flux2-g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-4-flux2-MJX-6-TEX-N-2D" d="M11 179V252H277V179H11Z"/>
+            <path id="prefigure-4-flux2-MJX-6-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="hyphen 1">
+                <use data-c="2D" xlink:href="#prefigure-4-flux2-MJX-6-TEX-N-2D"/>
+                <use data-c="31" xlink:href="#prefigure-4-flux2-MJX-6-TEX-N-31" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-4-flux2-label-5" transform="translate(89.0,50.0) translate(-9.0,-6.0)">
+      <g id="prefigure-4-flux2-g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-4-flux2-MJX-7-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-4-flux2-MJX-7-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <line id="prefigure-4-flux2-line-16" x1="50.0" y1="100.0" x2="150.0" y2="100.0" stroke="blue" stroke-width="5" fill="none"/>
+  <path id="prefigure-4-flux2-path-0" d="M 50.0 100.0 L 50.0 101.6 L 50.1 103.1 L 50.2 104.7 L 50.4 106.3 L 50.6 107.8 L 50.9 109.4 L 51.2 110.9 L 51.6 112.4 L 52.0 113.9 L 52.4 115.5 L 53.0 116.9 L 53.5 118.4 L 54.1 119.9 L 54.8 121.3 L 55.4 122.7 L 56.2 124.1 L 57.0 125.5 L 57.8 126.8 L 58.6 128.1 L 59.5 129.4 L 60.5 130.6 L 61.5 131.9 L 62.5 133.1 L 63.6 134.2 L 64.6 135.4 L 65.8 136.4 L 66.9 137.5 L 68.1 138.5 L 69.4 139.5 L 70.6 140.5 L 71.9 141.4 L 73.2 142.2 L 74.5 143.0 L 75.9 143.8 L 77.3 144.6 L 78.7 145.2 L 80.1 145.9 L 81.6 146.5 L 83.1 147.0 L 84.5 147.6 L 86.1 148.0 L 87.6 148.4 L 89.1 148.8 L 90.6 149.1 L 92.2 149.4 L 93.7 149.6 L 95.3 149.8 L 96.9 149.9 L 98.4 150.0 L 100.0 150.0 L 101.6 150.0 L 103.1 149.9 L 104.7 149.8 L 106.3 149.6 L 107.8 149.4 L 109.4 149.1 L 110.9 148.8 L 112.4 148.4 L 113.9 148.0 L 115.5 147.6 L 116.9 147.0 L 118.4 146.5 L 119.9 145.9 L 121.3 145.2 L 122.7 144.6 L 124.1 143.8 L 125.5 143.0 L 126.8 142.2 L 128.1 141.4 L 129.4 140.5 L 130.6 139.5 L 131.9 138.5 L 133.1 137.5 L 134.2 136.4 L 135.4 135.4 L 136.4 134.2 L 137.5 133.1 L 138.5 131.9 L 139.5 130.6 L 140.5 129.4 L 141.4 128.1 L 142.2 126.8 L 143.0 125.5 L 143.8 124.1 L 144.6 122.7 L 145.2 121.3 L 145.9 119.9 L 146.5 118.4 L 147.0 116.9 L 147.6 115.5 L 148.0 113.9 L 148.4 112.4 L 148.8 110.9 L 149.1 109.4 L 149.4 107.8 L 149.6 106.3 L 149.8 104.7 L 149.9 103.1 L 150.0 101.6" stroke="blue" stroke-width="5" fill="none"/>
+  <g id="prefigure-4-flux2-label-6" transform="translate(120.0,91.0) translate(-6.9,-13.2)">
+    <g id="prefigure-4-flux2-g-6">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="13.752px" height="13.160px" role="img" focusable="false" viewBox="0 -705 760 727" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-4-flux2-MJX-8-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="upper C">
+              <use data-c="1D436" xlink:href="#prefigure-4-flux2-MJX-8-TEX-I-1D436"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lab: Heat Visualization</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MTH 401: Math for the Physical Sciences">
+<meta property="book:author" content="Lora Bailey">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.8';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.5ef53875c58b216b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.4086707389d4fb5b.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MTH 401: Math for the Physical Sciences</span> <span class="subtitle">Fall 2026</span></a></h1>
+<p class="byline">Lora Bailey</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="labs-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="labs.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="labs-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\mbf}[1]{{\mathbf #1}}
+\newcommand{\vs}[1]{\vspace{#1in}}
+\newcommand{\work}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\owork}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\flux}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\oflux}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdtwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\fourier}{{\cal F}}
+\newcommand{\cu}{{\cal U}}
+\newcommand{\ds}{\displaystyle}
+\renewcommand{\arg}{\text{Arg}}
+\newcommand{\re}{\text{Real}}
+\newcommand{\res}{\text{Res}}
+\newcommand{\lineint}[2]{\int_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\olineint}[2]{\oint_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\nvec}{\mathbf{n}}
+\newcommand{\zerovec}{\mathbf{0}}
+\newcommand{\oiint}{∯}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-week-01.html#exercises-" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="labs.html" class="internal"><span class="title">Labs</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="labs-3.html" class="internal"><span class="title">Lab: Heat Visualization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-gradient" class="internal"><span class="title">Gradient</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-divergence" class="internal"><span class="title">Divergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-curl" class="internal"><span class="title">Curl</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-laplacian" class="internal"><span class="title">Laplacian</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-4.html" class="internal"><span class="title">Lab: Heat Intuition</span></a></div></li>
+<li class="toc-item toc-worksheet contains-active">
+<div class="toc-title-box"><a href="labs-5.html" class="internal"><span class="title">Lab: Heat Visualization</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-5.html#subsec-1-dimension" class="internal"><span class="title">One Dimension</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-5.html#subsec-Higher-Dimensions" class="internal"><span class="title">Higher Dimensions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-6.html" class="internal"><span class="title">Lab</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-7.html" class="internal"><span class="title">28: Method of characteristics (Lab)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">0. Review of Calculus III</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">1.1. Evaluating line integrals</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-4.html#subsubsec-vector-calculus" class="internal"><span class="title">Section 1: Vector Calculus</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-4.html#subsubsec-vector-calculus-2" class="internal"><span class="title">Part 1.1: Line Integrals</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">1.2. The FTC of line integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">1.3. The operator ``del’’</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-7.html" class="internal"><span class="title">1.4. The Divergence Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-8.html" class="internal"><span class="title">1.5. Green’s Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="title">1.6. Finding potentials</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-10.html" class="internal"><span class="title">1.7. Gauss’ Law and the Divergence Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-11.html" class="internal"><span class="title">1.8. Review of Vector Calculus</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-12.html" class="internal"><span class="title">2.1. Intro to PDEs and the heat equation</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-12.html#subsubsec-heat-wave" class="internal"><span class="title">Section 2: Partial Differential Equations in the context of the Heat and Wave Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-12.html#subsubsec-heat-wave-2" class="internal"><span class="title">Part 2.1: Introduction to the Heat Equation in One Dimension</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-13.html" class="internal"><span class="title">2.2. Solving a Sturm-Liouville problem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-14.html" class="internal"><span class="title">2.3. Fourier Sine and Cosine series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-15.html" class="internal"><span class="title">2.4 Solving the heat equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-16.html" class="internal"><span class="title">2.5. The wave equation Intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-17.html" class="internal"><span class="title">2.6. The wave equation continued</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-18.html" class="internal"><span class="title">2.7. General Fourier series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-19.html" class="internal"><span class="title">2.8. Laplace’s equation in rectangular coordinates</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-20.html" class="internal"><span class="title">2.9. Laplace’s equation in a disk</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-21.html" class="internal"><span class="title">2.10. Higher dimensional equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-22.html" class="internal"><span class="title">2.11. Poisson’s equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-23.html" class="internal"><span class="title">2.12. Series solutions of ODEs intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">2.13. Series solutions of famous ODEs</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">2.14. Bessel functions of the first kind</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">2.15. PDEs on cylinders</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">2.16. Putting it all together - Laplace’s equation on a cylinder</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">2.17. The Fourier transform intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">2.18. The final Fourier transform applied to Laplace’s Equation</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">3.1. Complex arithmetic</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-30.html#subsubsec-complex-analysis" class="internal"><span class="title">Section 3: Complex Analysis</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-30.html#subsubsec-complex-analysis-2" class="internal"><span class="title">Part 3.1: Complex Arithmetic</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-31.html" class="internal"><span class="title">3.2. Complex functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-32.html" class="internal"><span class="title">3.3. Cauchy-Riemann equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-33.html" class="internal"><span class="title">3.4. Cauchy-Riemann equations part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-34.html" class="internal"><span class="title">3.5. Contour integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-35.html" class="internal"><span class="title">3.6. Cauchy’s Integral Formula</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-36.html" class="internal"><span class="title">3.7. Taylor Series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-37.html" class="internal"><span class="title">3.8. Laurent Series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-38.html" class="internal"><span class="title">3.9. Residues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-39.html" class="internal"><span class="title">3.10. Trigonometric Integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-40.html" class="internal"><span class="title">3.11. Fourier Transforms</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-41.html" class="internal"><span class="title">3.12. Principal Values of Integrals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="labs-5" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lab: Heat Visualization</span><div class="print-links"><a href="?printpreview=labs-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="subsection" id="subsec-1-dimension">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">One Dimension</span>
+</h3>
+<div class="autopermalink" data-description="Subsection: One Dimension"><a href="#subsec-1-dimension" title="Copy heading and permalink for Subsection: One Dimension" aria-label="Copy heading and permalink for Subsection: One Dimension">🔗</a></div>
+</section>
+<section class="introduction" id="labs-5-3">
+<div class="para" id="labs-5-3-1">Let’s visualize worksheet 13 and see what is actually going on with our solution to the heat equation.<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-5-3-2">For each one of these problems, we have a beam of length <span class="process-math">\(5\text{,}\)</span> and we have the same properties of the materials to give use <span class="process-math">\(\alpha=4\text{.}\)</span> Those are fixed, and we look at the effect of changing other aspects of the problem.<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-5-3-3">Run the code cell below to set up the animation. It will print "Done!" when it has finished. You want to make sure you evaluate this initial cell, so that the necessary libraries and functions are loaded and defined. Then continue on to run animations for the problems from the previous worksheet. (Note, some of the code may take a bit to run, "patience young grasshopper!")<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div id="labs-5-4" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from matplotlib.animation import FuncAnimation
+from matplotlib import rc
+rc('animation', html='jshtml')
+
+fig, ax = plt.subplots()
+
+def animate(i):
+    ax.clear()
+    ax.plot(x,u(x,i*.1)) # Plot the curve
+    ax.set_xlabel('x')
+    ax.set_ylabel('u(x,t)')
+    ax.annotate('Time t = '+str(i*.1), (-1,ylim[1]),color='red',size = 14)
+    ax.set_xlim([-1,6])
+    ax.set_ylim(ylim)
+    #ax.set_aspect('equal', adjustable='box')
+print('Done!')
+</script></div>
+<article class="exercise exercise-like" id="labs-5-5"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="labs-5-5-1">
+<div class="para logical" id="labs-5-5-1-1">
+<div class="para">The code below shows the solution to problem 2:</div>
+<div class="displaymath process-math" id="labs-5-5-1-1-1">
+\begin{align*}
+\frac{\partial u}{\partial t} \amp = \alpha \frac{\partial^2 u}{\partial x^2} \\
+u(0,t) \amp = 0 \\
+u(5,t) \amp = 0 \\
+u(x,0) \amp = x^2 - 5x 
+\end{align*}
+</div>
+<div class="para">Run the code to animate the solution over time. Then think about the following questions...</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="labs-5-5-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">def u(x,t):
+    N=range(1,10)
+    u_n=[]
+    for n in N:
+        u_n.append(100*(-1+(-1)**n)/(n**3*np.pi**3)*np.exp(-4*(np.pi/5)**2*t)*np.sin(np.pi*x/5))
+    return np.sum(u_n,axis=0)
+
+ylim=[-8,1]
+x=np.linspace(0,5,100)
+
+ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+ani
+</script></div>
+</div>
+<article class="task exercise-like" id="labs-5-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="labs-5-5-2-1-1">What’s the only difference between this problem and the previous problem?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 1.a"><a href="#labs-5-5-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="labs-5-5-3-1-1">Does the solution look like <span class="process-math">\(u(x,0)\)</span> initially?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 1.b"><a href="#labs-5-5-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-5-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="labs-5-5-4-1-1">What happens to the curve over time?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 1.c"><a href="#labs-5-5-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-5-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="labs-5-5-5-1-1">Where does all the heat go over time? Why? What happens to the endpoints?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 1.d"><a href="#labs-5-5-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#labs-5-5" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-5-6"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="labs-5-6-1">
+<div class="para logical" id="labs-5-6-1-1">
+<div class="para">The code below shows the solution to problem 3:</div>
+<div class="displaymath process-math" id="labs-5-6-1-1-1">
+\begin{align*}
+\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} \\
+\frac{\partial u}{\partial x}(0,t) \amp = 0 \\
+\frac{\partial u}{\partial x}(5,t) \amp = 0 \\
+u(x,0) \amp = x 
+\end{align*}
+</div>
+<div class="para">Run the code to animate the solution over time. Then think about the following questions...</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="labs-5-6-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">def u(x,t):
+    N=range(1,30)
+    u_n=[]
+    for n in N:
+        u_n.append(10*(-1+(-1)**n)/(n**2*np.pi**2)*np.exp(-4*(np.pi/5)**2*t)*np.cos(np.pi*x/5))
+    return np.sum(u_n,axis=0)+5/2
+
+ylim=[-1,6]
+x=np.linspace(0,5,100)
+
+ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+ani
+</script></div>
+</div>
+<article class="task exercise-like" id="labs-5-6-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="labs-5-6-2-1-1">What’s the big difference with the bounds of this problem and the previous problem? <em class="emphasis">These bounds mean the beam is insulated at both ends.</em><div class="autopermalink" data-description="Paragraph"><a href="#labs-5-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#labs-5-6-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="labs-5-6-3-1-1">Does the solution look like <span class="process-math">\(u(x,0)\)</span> initially?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#labs-5-6-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-6-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="labs-5-6-4-1-1">What happens to the bounds over time? Does this mess with the boundary conditions?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 2.c"><a href="#labs-5-6-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-6-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="labs-5-6-5-1-1">What happens to the curve over time?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 2.d"><a href="#labs-5-6-5" title="Copy heading and permalink for Task 2.d" aria-label="Copy heading and permalink for Task 2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-6-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="labs-5-6-6-1-1">Why doesn’t the heat go to 0 over time like in previous problems? Where does the heat go?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 2.e"><a href="#labs-5-6-6" title="Copy heading and permalink for Task 2.e" aria-label="Copy heading and permalink for Task 2.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#labs-5-6" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-5-7"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="labs-5-7-1">
+<div class="para logical" id="labs-5-7-1-1">
+<div class="para">The code below shows the solution to problem 4:</div>
+<div class="displaymath process-math" id="labs-5-7-1-1-1">
+\begin{align*}
+\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} +8 \\
+u(0,t) \amp = 0 \\
+u(5,t) \amp = 0 \\
+u(x,0) \amp = 5x-x^2 
+\end{align*}
+</div>
+<div class="para">Run the code to animate the solution over time. Then think about the following questions...</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="labs-5-7-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">def u(x,t):
+    return -x**2+5*x
+
+ylim=[-1,7]
+x=np.linspace(0,5,100)
+
+ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+
+ani
+</script></div>
+</div>
+<article class="task exercise-like" id="labs-5-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="labs-5-7-2-1-1">What’s the big difference between this problem and the previous problem?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#labs-5-7-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="labs-5-7-3-1-1">Does the solution look like <span class="process-math">\(u(x,0)\)</span> initially?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#labs-5-7-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-7-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="labs-5-7-4-1-1">What happens to the bounds over time? Does this mess with the boundary conditions?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 3.c"><a href="#labs-5-7-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-7-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="labs-5-7-5-1-1">What happens to the curve over time?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 3.d"><a href="#labs-5-7-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-7-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="labs-5-7-6-1-1">Why doesn’t the heat go to 0 over time like in previous problems? Where does the heat go?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-7-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 3.e"><a href="#labs-5-7-6" title="Copy heading and permalink for Task 3.e" aria-label="Copy heading and permalink for Task 3.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#labs-5-7" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-5-8"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="labs-5-8-1">
+<div class="para logical" id="labs-5-8-1-1">
+<div class="para">The code below shows the solution to problem 5:</div>
+<div class="displaymath process-math" id="labs-5-8-1-1-1">
+\begin{align*}
+\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} +8 \\
+u(0,t) \amp = 0 \\
+u(5,t) \amp = 0 \\
+u(x,0) \amp = 0 
+\end{align*}
+</div>
+<div class="para">Run the code to animate the solution over time. Then think about the following questions...</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="labs-5-8-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">def u(x,t):
+    N=range(1,10)
+    u_n=[]
+    for n in N:
+        u_n.append(-x**2+5*x+100*(-1+(-1)**n)/(n**3*np.pi**3)*np.exp(-4*(np.pi/5)**2*t)*np.sin(np.pi*x/5))
+    return np.sum(u_n,axis=0)
+
+ylim=[-1,60]
+x=np.linspace(0,5,100)
+
+ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+
+ani
+</script></div>
+</div>
+<article class="task exercise-like" id="labs-5-8-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="labs-5-8-2-1-1">What’s the big difference between this problem and the previous one?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 4.a"><a href="#labs-5-8-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-8-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="labs-5-8-3-1-1">What does the <span class="process-math">\(+8\)</span> in the equation mean in the physical context of the beam?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 4.b"><a href="#labs-5-8-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-8-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="labs-5-8-4-1-1">Does the solution look like <span class="process-math">\(u(x,0)\)</span> initially?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 4.c"><a href="#labs-5-8-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="labs-5-8-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="labs-5-8-5-1-1">What happens to the curve over time? Why does the heat behave so differently than all the other problems so far?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-8-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0cm"></div>
+<div class="autopermalink" data-description="Task 4.d"><a href="#labs-5-8-5" title="Copy heading and permalink for Task 4.d" aria-label="Copy heading and permalink for Task 4.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#labs-5-8" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<section class="subsection" id="subsec-Higher-Dimensions">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Higher Dimensions</span>
+</h3>
+<div class="autopermalink" data-description="Subsection: Higher Dimensions"><a href="#subsec-Higher-Dimensions" title="Copy heading and permalink for Subsection: Higher Dimensions" aria-label="Copy heading and permalink for Subsection: Higher Dimensions">🔗</a></div>
+</section>
+<article class="exercise exercise-like" id="labs-5-10"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="labs-5-10-1">
+<div class="para" id="labs-5-10-1-1">Eventually, we will look in 2 or 3 dimensions. So let’s explore numerical solutions to the heat equation in 2 dimensions.<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="labs-5-10-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="introduction" id="labs-5-10-2-1">
+<div class="para" id="labs-5-10-2-1-1">To start, let’s take a square plate of length <span class="process-math">\(55\text{,}\)</span> and for each time step we’ll numerically solve the heat equation and put it all together. Let’s assume that the left, right, and bottom of the plate are fixed at a temperature of <span class="process-math">\(0\text{,}\)</span> and the top of the plate is fixed at a temperature of <span class="process-math">\(100\text{.}\)</span> It’s not super realistic, but it’s a good starting point. Run the cell below to animate the plate and show the heat over time. (Note - it’ll take a literal 30 seconds, but it’s worth the wait!)<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div id="labs-5-10-2-1-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from matplotlib.animation import FuncAnimation
+
+plate_length = 55
+max_iter_time = 500
+
+alpha = 2.0
+delta_x = 1
+
+# Calculated params
+delta_t = .1 #(delta_x ** 2)/(4 * alpha)
+gamma = (alpha * delta_t) / (delta_x ** 2)
+
+# Initialize solution: the grid of u(k, i, j)
+u = np.empty((max_iter_time, plate_length, plate_length))
+
+# Initial condition everywhere inside the grid
+u_initial = 0.0
+
+# Boundary conditions (fixed temperature)
+u_top = 100.0
+u_left = 0.0
+u_bottom = 0.0
+u_right = 0.0
+
+# Set the initial condition
+u.fill(u_initial)
+
+# Set the boundary conditions
+u[:, (plate_length-1):, :] = u_top
+u[:, :, :1] = u_left
+u[:, :1, 1:] = u_bottom
+u[:, :, (plate_length-1):] = u_right
+
+#def calculate(u):
+for k in range(0, max_iter_time-1, 1):
+    for i in range(1, plate_length-1, delta_x):
+        for j in range(1, plate_length-1, delta_x):
+            u[k + 1, i, j] = gamma * (u[k][i+1][j] + u[k][i-1][j] + u[k][i][j+1] + u[k][i][j-1] - 4*u[k][i][j]) + u[k][i][j]
+
+fig, ax = plt.subplots()
+cax = ax.pcolormesh(range(0,plate_length), range(0,plate_length), u[0,:-1, :-1], cmap=plt.cm.jet,vmin=0,vmax=100)
+fig.colorbar(cax)
+
+def animate2(i):
+    cax.set_array(u[i*3,:-1, :-1].flatten())
+    ax.set_title('Time t = '+str(3*i*delta_t))
+
+anim = animation.FuncAnimation(fig, animate2, interval=100, frames=int((max_iter_time - 1)/3),repeat=False)
+
+anim
+print('Done!')
+</script></div>
+</div>
+<article class="task exercise-like" id="labs-5-10-2-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="labs-5-10-2-2-1-1">What happens to the heat over time?<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-10-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="labs-5-10-2-2-1-2">For more details about how we solve this numerically, check out: <a class="external" href="https://levelup.gitconnected.com/solving-2d-heat-equation-numerically-using-python-3334004aa01a" target="_blank"><code class="code-inline tex2jax_ignore">https://levelup.gitconnected.com/solving-2d-heat-equation-numerically-using-python-3334004aa01a</code></a>.  (Note, the code is adapted and not the same, but the methods are the same.)<div class="autopermalink" data-description="Paragraph"><a href="#labs-5-10-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 5.a.i"><a href="#labs-5-10-2-2" title="Copy heading and permalink for Task 5.a.i" aria-label="Copy heading and permalink for Task 5.a.i">🔗</a></div>
+</article><div class="autopermalink" data-description="Task 5.a"><a href="#labs-5-10-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#labs-5-10" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article><div class="autopermalink" data-description="Worksheet: Lab: Heat Visualization"><a href="#labs-5" title="Copy heading and permalink for Worksheet: Lab: Heat Visualization" aria-label="Copy heading and permalink for Worksheet: Lab: Heat Visualization">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="labs-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="labs-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

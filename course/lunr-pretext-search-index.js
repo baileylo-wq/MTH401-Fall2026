@@ -69,40 +69,256 @@ var ptx_lunr_docs = [
   "url": "labs-3.html",
   "type": "Worksheet",
   "number": "",
-  "title": "28: Method of characteristics (Lab)",
-  "body": " 28: Method of characteristics (Lab)   We're going to see an application of the wave equation, in traffic! Specifically, we're going to determine how traffic is actually a {\\underline{shock wave}}!  \\section*{Traffic Flows}  Let's take a 1-way highway, and look at a stretch of road.  \\begin{center} \\includegraphics[scale = 0.6]{highway} \\end{center}  Define:   = density of cars at position at time , units = {\\underline{}}  = velocity of the cars at position at time , units = {\\underline{}}   So a car that begins at ends up at after some short time interval .  Then the product:  = {\\underline{}} , units = {\\underline{}}  We're going to focus on the density function, , and come up with a mathematical model. We find something useful if we consider the number of cars in an interval .  \\begin{center} \\includegraphics[scale = 0.6]{N} \\end{center}  We can get by integrating the density over the interval :  If is the total number of cars in the interval, then the rate of change of the number of cars in this interval is (switch the order of the operators and put everything under an integral):   We can approach this same quantity from a different perspective, a law of conservation. The rate of change of the number of cars in is the difference in the rate at which cars enter the interval on the left at , and the rate at which cars leave on the right at . Can we write this also as an integral from to ?   Altogether we have  Rearrange 2 parts of the equation above to get an integral equal to 0.  Since this is true for EVERY interval , then it must be true that the integrand itself is zero, and we end up with the following equation:  This is the partial differential equation we want to focus on. And we can think of the density function as a wave, the highway is like our string, and the value of the density function is like the height of the string. Of course there is a maximum density of traffic on the road, but we can divide by the maximum density and thus we can assume here that .   {\\underline{}} corresponds to max density: bumper-to-bumper traffic.  {\\underline{}} corresponds to min density: almost no cars on the road.  may correspond to an example such as {\\underline{}}   Let's examine velocity here... It is certainly reasonable to assume velocity depends on density of traffic . When there are no cars on the road ( {\\underline{}}), traffic will move at its maximum speed. Let  We expect that when density increases, the speed will decrease, and that when there is bumper-to-bumper traffic, ( {\\underline{}}), no one is moving and so . Draw a linear possibility on the graph below and determine the equation for that corresponds to it.  \\begin{center} \\includegraphics[scale = 0.5]{vgraph} \\hspace{2cm} $v(\\rho) = {\\underline{\\hspace{3cm}}}$ \\end{center}  This may seem like an overly simplistic assumption, but Lighthill and Whitham describe experimental evidence that justifies its use. (See references.)  Ok, we have an equation for . Let's plug that in to our PDE. We now have: Calculus to the rescue, our final expression is:  \\section*{Method of Characteristics} How do we solve this? Let's assume we have an initial density function . We want to describe how for later times. (Note: this is not the movement of individual cars, but the density which is an aggregated measure of all the cars positions.)   Start at some initial point .  We are used to: fixing and seeing how changes over time at position . What we do instead: we fix , and determine the path we need to take over time to keep that constant value of density, . That is, we find such that ! (Think of density as a wave, so we look for the path of the point starting at so the height of the wave doesn't change! Like a level curve...)   But, since , a CONSTANT, so with the help of multivariable calculus we know:  Compare this to the final expression we had just before we entered the territory of Method of Characteristics. In order to match the two equations, we must have: This is the speed of our wave!  Because we are looking for where , we can sub in for , meaning that the path our point takes is So an initial point moves to the left or right with speed ( is the max velocity possible of the cars, the wave has speed ).  Context check:   If (minimum density), then moves with speed {\\underline{}} to the {\\underline{}}.  If (middle density), then moves with speed {\\underline{}} to the {\\underline{}}.  If (maximum density), then moves with speed {\\underline{}} to the {\\underline{}}.   At what initial density do we move to the right as fast as possible? {\\underline{}}  At what initial density do we move to the left as fast as possible? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  We finally get to apply all we know. Since the speed of our density ``wave'' depends on , we need an initial density ``wave'', i.e. an initial curve for . Let's look at several examples and apply the Method of Characteristics.     Take the initial density to be as shown below, one point is marked.  \\begin{center} \\includegraphics[scale = 0.5]{d0_2} \\end{center}  As time passes, the value will stay the same (so the -coordinate will stay the same), while the -coordinate will move left or right with a speed of . Since is just smaller than 0.25, what is the velocity that corresponds to this initial point ? Does our -coordinate move left or right? Draw an arrow in the graph above representing this movement.  Then look at various other initial points, and determine if that initial point will move left or right in the same. Draw in arrows representing the movement of this initial ``wave.'' Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of should be about twice as long as an arrow representing a speed of .  Connect the tips of the arrows to show how the wave has changed over time, that is sketch .  You should notice the wave ``shears''; this is called the shear rule .  Think about a situation where everyone is stopped at a traffic light, as shown below.  \\begin{center} \\includegraphics[scale = 0.5]{stop_1} \\end{center}  Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave''? Draw the ``wave'' at a later time.      Well that's cool and all, but I did promise you shock waves. Consider the following initial density curve, , where now our curve is increasing.  \\begin{center} \\includegraphics[scale = 0.5]{d0_3} \\end{center}  As before, we consider the density at later times. Draw in the arrows to show which way each point on the curve moves at a later time, and sketch a later curve. (It should shear in a similar way.)  If we let enough time pass, we may notice that we have faster moving points on the wave that trail slower moving points. Eventually, the faster moving points overtake the slower points, leading to some points that appear to take on 3 distinct densities! Is this possible?  So, we've introduced a discontinuity, and this is our shock wave! Where multiple values try to happen all at once. On the bottom of the discontinuity we have some density , and at the top of the discontinuity we have some other density .  \\begin{center} \\includegraphics[scale = 0.5]{d0_5} \\end{center}  Context: You're traveling down a one-lane highway; what does this situation represent?  It turns out that the shock waves moves with a speed that is equal to the average of the speeds on either side of the shock, so the average of the speed at and . This, along with the shear rule, tells us how traffic moves when the stop light suddenly turns red. We'll see two resulting shock waves, as traffic piles up behind the light and clears out in front of the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_2} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_3} \\end{center}  If we turn the light green, the shear rule will apply to the second shock wave where traffic is piled up, and the traffic (the shock wave) will begin to move to the right through the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_4} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_5} \\end{center}  If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.    "
+  "title": "Lab: Heat Visualization",
+  "body": " Lab: Heat Visualization  MTH 401   Let's get some intuition behind gradient, divergence, curl, and the Laplacian.    Gradient  Imagine you are hiking on a hill. The gradient is the steepest way to climb the hill. In this case, the hill is a surface with an and coordinates, and the elevation would be a function of and . The gradient of , , points in the direction of steepest ascent.     If you are standing on the hill at the location and you know that , then which direction should you go to take the steepest path up the hill?      Check out the graph below of on the left, and it's gradient field to the right.    The 3 dimensional plot of the function.    The gradient field of the function.       Why do the two peaks of the function correspond to points on the gradient field plot where the surrounding arrows are pointed inwards towards those points?      What would the gradient field of a function look like near the local minimum of the function?       Recall that the gradient is always perpendicular to the level curves. (A level curve of a function is where the function value is equal to the same constant everywhere along that curve.) Let's explore why this is true, using the function graphed below on the left, and the contour map showing the level curves with the gradient field plotted below on the right.    The 3 dimensional graph of the function.    The gradient field of the function.    To see why the gradient is always perpendicular to the level curves, let's take a particular contour line and zoom in. For example, let's take the contour line where . We know points in the direction in which increases the most rapidly, so we can think of this direction in two ways:   Choose a fixed step size, and find the direction in which that step size increases the most.  Choose a fixed increase in , and find the direction in which the path to increase by that amount is the shortest.     Given steps of equal size in all directions, which one increases the function value the most?    Of all the steps that increase the function value by a specific amount, which one is the shortest?    Either way, you're trying to maximize the rise over run of , either by maximizing the rise as in method on the left, or minimizing the run as in method on the right.     If we zoom in close enough, the contour lines start to look like what?      What is the shortest path from one line to another that is parallel to it?      So why will the gradient always be perpendicular to the contour lines?      Divergence  The divergence is the flux density, or the amount of flux (flow) entering or leaving a point. In other words, it's the tendency of a field to flow outward (positive divergence) or inward (negative divergence) to a point. So it's almost like what happens on average around that point. A source would have a positive divergence, a sink would have a negative divergence.  If you measure flux in bananas, a positive divergence means your location is a source of bananas, “the Donkey Kong jackpot”.     Take the following field shown below:  The gradient field.  If we imagine placing particles on a grid covering the plot as shown on the bottom left, and press ``Play'' so that the particles ``flow\" along the trajectory of the arrows, then regions that tend to become less dense (i.e. the particles scatter or ``diverge'') have a positive divergence. Regions that tend to become more dense (i.e. the particles collect and attract in this region) have a negative divergence. The picture below on the right shows the particles after a second of ``flow'' along the vector field.    The initial trajectory of particles placed evenly spaced on a grid under this field.    The particles on the grid after a short time where the particles have \"flowed\" along the vector field.       What region(s) looks to have a positive divergence? What region(s) look to have a negative divergence?       On the following dots, draw an example of a field with positive divergence, one with negative divergence, and one with a divergence of zero.    A dot on which you are asked to draw a field with positive divergence.    A dot on which you are asked to draw a field with negative divergence.    A dot on which you are asked to draw a field with zero divergence.      Note that we can also visualize divergence in 3 dimensions. However, we can calculate the divergence in any dimension, it just doesn't have a nice picture to go along with it.   Curl  The curl is the ``circulation density\" of your field. Imagine sticking a propeller in the middle of your vector field. The curl is the tendency of the propeller to be turned by the vector field (think torque), and the propeller will turn in the direction of your curl.  We could also imagine making a cup of tea. The faster you stir the tea in your teacup, the larger your curl. And a tiny propeller will turn in the direction of that curl as well.     A conservative field is ``fair,\" that is the amount of work to move between two points is the same no matter what path you take. So in other words, if you go from point to point , the amount of work you ``put in'' is the same you ``get back'' by going back from point to point . Gravity for example is conservative - you might need to work to get up a hill, but you get the same amount of work back (or a ``free ride'') falling back down the hill.     With that point of view, is a river flowing downstream a conservative field? Why or why not? (You can think of it in terms of energy spent.)      Is a whirlpool a conservative field? Why or why not?      Will a conservative field have a curl?       Wrap your fingers of your right-hand around so the curve inward, and your thumb will point in the direction of the curl (by convention). So if the curl indicates motion in the counter-clockwise direction, is the curl positive or negative?      As we saw, the divergence of the curl of a field is always 0. Let's take a look at why this is true in 2 dimensions - picture a very small circular disk. The curl of the field is the part of the field that ``rotates'' an object around the center of the disk. If we picture fluid on a grid within the disk, the curl measures the rotational part of field within the disk. Note, that the rotational part of the field doesn't have anything to do with carrying the fluid out of the disk.  The divergence measures how the fluid flows out of the disk given the flow of the vector field. So why would the divergence of the curl be 0?     Laplacian  Imagine again that we're making tea. Initially you fill your teacup with hot water, and put your teabag inside. Over time, the water starts getting darker. That is, the tea is starting to diffuse. The laplacian tells you how homogeneous your mixture is. Over time the tea will become more and more ``well-mixed'', that is more and more homogenous, and your laplacian will get smaller.     The Laplacian of a function is the divergence of the gradient of , that is . It's kind of like a second derivative (how your function bends at a point).  Recall the gradient of tells you the direction in which is .  The divergence of a vector field tells you the flow, or how much the fluid particles are diverging away from that spot.     So let's look at some hills, and let's look at the lowest point at that hill to be our point (a local minimum). The direction of steepest ascent is uphill everywhere around that point, so the gradient field of at the local minimum will have the arrows pointing outward, or away from out point. If we picture that field, the point looks like a source. So will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Now take the highest point on our hill (a local maximum). Everywhere around that point is lower than our point, so direction of steepest ascent will point inwards, towards our point. If we picture the gradient field, our point will look like a sink. Will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Let's look at the analogous 2-dimensional calculus example of the second derivative. The graph below has a local maximum at and a local minimum at about .   The graph of a cubic polynomial with roots at 0 and 2.    f(x) = x^2*(x-2)            Is the second derivative positive, negative, or zero at ?      Is the second derivative positive, negative, or zero at ?      Does this match with the Laplacian (the divergence of the gradient) of our 2-dimensional hill?      So the Laplacian is measuring a ``change in change''. When the field goes from a small amount of change at one point, to a huge amount of change at another point, the Laplacian will be large (there is a large change in change). When the field is changing by amount the same amount as points nearby, the Laplacian will be small (there is a small change in change).  "
 },
 {
-  "id": "labs-3-2-28-2-1",
+  "id": "subsec-gradient-2",
   "level": "2",
-  "url": "labs-3.html#labs-3-2-28-2-1",
+  "url": "labs-3.html#subsec-gradient-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "gradient "
+},
+{
+  "id": "labs-3-5",
+  "level": "2",
+  "url": "labs-3.html#labs-3-5",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  If you are standing on the hill at the location and you know that , then which direction should you go to take the steepest path up the hill?   "
+},
+{
+  "id": "labs-3-6",
+  "level": "2",
+  "url": "labs-3.html#labs-3-6",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Check out the graph below of on the left, and it's gradient field to the right.    The 3 dimensional plot of the function.    The gradient field of the function.       Why do the two peaks of the function correspond to points on the gradient field plot where the surrounding arrows are pointed inwards towards those points?      What would the gradient field of a function look like near the local minimum of the function?    "
+},
+{
+  "id": "labs-3-7",
+  "level": "2",
+  "url": "labs-3.html#labs-3-7",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Recall that the gradient is always perpendicular to the level curves. (A level curve of a function is where the function value is equal to the same constant everywhere along that curve.) Let's explore why this is true, using the function graphed below on the left, and the contour map showing the level curves with the gradient field plotted below on the right.    The 3 dimensional graph of the function.    The gradient field of the function.    To see why the gradient is always perpendicular to the level curves, let's take a particular contour line and zoom in. For example, let's take the contour line where . We know points in the direction in which increases the most rapidly, so we can think of this direction in two ways:   Choose a fixed step size, and find the direction in which that step size increases the most.  Choose a fixed increase in , and find the direction in which the path to increase by that amount is the shortest.     Given steps of equal size in all directions, which one increases the function value the most?    Of all the steps that increase the function value by a specific amount, which one is the shortest?    Either way, you're trying to maximize the rise over run of , either by maximizing the rise as in method on the left, or minimizing the run as in method on the right.     If we zoom in close enough, the contour lines start to look like what?      What is the shortest path from one line to another that is parallel to it?      So why will the gradient always be perpendicular to the contour lines?    "
+},
+{
+  "id": "labs-3-9",
+  "level": "2",
+  "url": "labs-3.html#labs-3-9",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Take the following field shown below:  The gradient field.  If we imagine placing particles on a grid covering the plot as shown on the bottom left, and press ``Play'' so that the particles ``flow\" along the trajectory of the arrows, then regions that tend to become less dense (i.e. the particles scatter or ``diverge'') have a positive divergence. Regions that tend to become more dense (i.e. the particles collect and attract in this region) have a negative divergence. The picture below on the right shows the particles after a second of ``flow'' along the vector field.    The initial trajectory of particles placed evenly spaced on a grid under this field.    The particles on the grid after a short time where the particles have \"flowed\" along the vector field.       What region(s) looks to have a positive divergence? What region(s) look to have a negative divergence?    "
+},
+{
+  "id": "labs-3-10",
+  "level": "2",
+  "url": "labs-3.html#labs-3-10",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  On the following dots, draw an example of a field with positive divergence, one with negative divergence, and one with a divergence of zero.    A dot on which you are asked to draw a field with positive divergence.    A dot on which you are asked to draw a field with negative divergence.    A dot on which you are asked to draw a field with zero divergence.     "
+},
+{
+  "id": "labs-3-13",
+  "level": "2",
+  "url": "labs-3.html#labs-3-13",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  A conservative field is ``fair,\" that is the amount of work to move between two points is the same no matter what path you take. So in other words, if you go from point to point , the amount of work you ``put in'' is the same you ``get back'' by going back from point to point . Gravity for example is conservative - you might need to work to get up a hill, but you get the same amount of work back (or a ``free ride'') falling back down the hill.     With that point of view, is a river flowing downstream a conservative field? Why or why not? (You can think of it in terms of energy spent.)      Is a whirlpool a conservative field? Why or why not?      Will a conservative field have a curl?    "
+},
+{
+  "id": "labs-3-14",
+  "level": "2",
+  "url": "labs-3.html#labs-3-14",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Wrap your fingers of your right-hand around so the curve inward, and your thumb will point in the direction of the curl (by convention). So if the curl indicates motion in the counter-clockwise direction, is the curl positive or negative?   "
+},
+{
+  "id": "labs-3-15",
+  "level": "2",
+  "url": "labs-3.html#labs-3-15",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  As we saw, the divergence of the curl of a field is always 0. Let's take a look at why this is true in 2 dimensions - picture a very small circular disk. The curl of the field is the part of the field that ``rotates'' an object around the center of the disk. If we picture fluid on a grid within the disk, the curl measures the rotational part of field within the disk. Note, that the rotational part of the field doesn't have anything to do with carrying the fluid out of the disk.  The divergence measures how the fluid flows out of the disk given the flow of the vector field. So why would the divergence of the curl be 0?   "
+},
+{
+  "id": "labs-3-17",
+  "level": "2",
+  "url": "labs-3.html#labs-3-17",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "",
+  "body": "  The Laplacian of a function is the divergence of the gradient of , that is . It's kind of like a second derivative (how your function bends at a point).  Recall the gradient of tells you the direction in which is .  The divergence of a vector field tells you the flow, or how much the fluid particles are diverging away from that spot.     So let's look at some hills, and let's look at the lowest point at that hill to be our point (a local minimum). The direction of steepest ascent is uphill everywhere around that point, so the gradient field of at the local minimum will have the arrows pointing outward, or away from out point. If we picture that field, the point looks like a source. So will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Now take the highest point on our hill (a local maximum). Everywhere around that point is lower than our point, so direction of steepest ascent will point inwards, towards our point. If we picture the gradient field, our point will look like a sink. Will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Let's look at the analogous 2-dimensional calculus example of the second derivative. The graph below has a local maximum at and a local minimum at about .   The graph of a cubic polynomial with roots at 0 and 2.    f(x) = x^2*(x-2)            Is the second derivative positive, negative, or zero at ?      Is the second derivative positive, negative, or zero at ?      Does this match with the Laplacian (the divergence of the gradient) of our 2-dimensional hill?     "
+},
+{
+  "id": "labs-4",
+  "level": "1",
+  "url": "labs-4.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Lab: Heat Intuition",
+  "body": " Lab: Heat Intuition    The homogeneous heat equation in one dimension is given by: or equivalently if we use subscript notation for derivatives:   This is actually a diffusion equation, describing how things diffuse. Heat is just one thing that's easy to think about. (But this equation applies to many situations!)     Where does the constant (called the thermal diffusivity) come from?      Consider a very slim metal rod with two candles placed beneath it as shown below.     Assume we wait a little while for the rod to begin to heat, and then we take the two candles away. Draw the heat distribution along the rod at that moment we remove the candles. A good way to do this would be to color dark and dense spots with your pencil (or pen) as high heat, and unmarked spots as cold.   A metal rod with two candles positioned equal distance below it.       If we assume the rod is slim enough (small enough radius), then what can we say about the temperature on the cross section of the rod (one slice that looks like a circle)?      Because of the last question, how many spatial coordinates do we actually need to consider?      If we assume the rod is insulated, then what does that mean about the heat dispersing through the rod?      For the rest of this problem, assume the rod is slim enough, and insulated. Take to be the temperature of the rod at position at time . Take to be when we first remove the candles, and draw the temperature distribution below as a function of space. (Note, the rod is included again for reference, you can redraw the heat distribution here or refer to part (a).)   The metal rod lined up above the x axis, with the y axis representing the heat at time 0.       Now let time pass. What is going to happen to the temperature of the rod at the hot spots? What is going to happen to the temperature at the cold spots?      On the plot you drew in part (e), draw arrows along your curve representing how temperature will change at that point after some amount of time has passed since the candles were removed. (Up arrow means the temperature will increase, down arrow means the temperature will decrease, and the relative length of the arrows should represent if it changes more or changes less at that point.)      How are the arrows you drew related to the concavity? i.e. the spatial second derivative?      If the arrows represent the change in temperature over time, and the arrows are also related to the concavity as described above, then what equation describes the change in temperature over time (i.e. or )? Hint: it should look familiar!      Is going to be positive or negative?     "
+},
+{
+  "id": "labs-4-2-1",
+  "level": "2",
+  "url": "labs-4.html#labs-4-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The homogeneous heat equation in one dimension "
+},
+{
+  "id": "labs-4-3",
+  "level": "2",
+  "url": "labs-4.html#labs-4-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Where does the constant (called the thermal diffusivity) come from?   "
+},
+{
+  "id": "labs-4-4",
+  "level": "2",
+  "url": "labs-4.html#labs-4-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider a very slim metal rod with two candles placed beneath it as shown below.     Assume we wait a little while for the rod to begin to heat, and then we take the two candles away. Draw the heat distribution along the rod at that moment we remove the candles. A good way to do this would be to color dark and dense spots with your pencil (or pen) as high heat, and unmarked spots as cold.   A metal rod with two candles positioned equal distance below it.       If we assume the rod is slim enough (small enough radius), then what can we say about the temperature on the cross section of the rod (one slice that looks like a circle)?      Because of the last question, how many spatial coordinates do we actually need to consider?      If we assume the rod is insulated, then what does that mean about the heat dispersing through the rod?      For the rest of this problem, assume the rod is slim enough, and insulated. Take to be the temperature of the rod at position at time . Take to be when we first remove the candles, and draw the temperature distribution below as a function of space. (Note, the rod is included again for reference, you can redraw the heat distribution here or refer to part (a).)   The metal rod lined up above the x axis, with the y axis representing the heat at time 0.       Now let time pass. What is going to happen to the temperature of the rod at the hot spots? What is going to happen to the temperature at the cold spots?      On the plot you drew in part (e), draw arrows along your curve representing how temperature will change at that point after some amount of time has passed since the candles were removed. (Up arrow means the temperature will increase, down arrow means the temperature will decrease, and the relative length of the arrows should represent if it changes more or changes less at that point.)      How are the arrows you drew related to the concavity? i.e. the spatial second derivative?      If the arrows represent the change in temperature over time, and the arrows are also related to the concavity as described above, then what equation describes the change in temperature over time (i.e. or )? Hint: it should look familiar!      Is going to be positive or negative?    "
+},
+{
+  "id": "labs-5",
+  "level": "1",
+  "url": "labs-5.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Lab: Heat Visualization",
+  "body": " Lab: Heat Visualization   One Dimension    Let's visualize worksheet 13 and see what is actually going on with our solution to the heat equation.  For each one of these problems, we have a beam of length , and we have the same properties of the materials to give use . Those are fixed, and we look at the effect of changing other aspects of the problem.  Run the code cell below to set up the animation. It will print \"Done!\" when it has finished. You want to make sure you evaluate this initial cell, so that the necessary libraries and functions are loaded and defined. Then continue on to run animations for the problems from the previous worksheet. (Note, some of the code may take a bit to run, \"patience young grasshopper!\")      The code below shows the solution to problem 2: Run the code to animate the solution over time. Then think about the following questions...      What's the only difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the curve over time?      Where does all the heat go over time? Why? What happens to the endpoints?       The code below shows the solution to problem 3: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference with the bounds of this problem and the previous problem? These bounds mean the beam is insulated at both ends.       Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?       The code below shows the solution to problem 4: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?       The code below shows the solution to problem 5: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous one?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why does the heat behave so differently than all the other problems so far?      Higher Dimensions     Eventually, we will look in 2 or 3 dimensions. So let's explore numerical solutions to the heat equation in 2 dimensions.     To start, let's take a square plate of length , and for each time step we'll numerically solve the heat equation and put it all together. Let's assume that the left, right, and bottom of the plate are fixed at a temperature of , and the top of the plate is fixed at a temperature of . It's not super realistic, but it's a good starting point. Run the cell below to animate the plate and show the heat over time. (Note - it'll take a literal 30 seconds, but it's worth the wait!)      What happens to the heat over time?  For more details about how we solve this numerically, check out: . (Note, the code is adapted and not the same, but the methods are the same.)      "
+},
+{
+  "id": "labs-5-5",
+  "level": "2",
+  "url": "labs-5.html#labs-5-5",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The code below shows the solution to problem 2: Run the code to animate the solution over time. Then think about the following questions...      What's the only difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the curve over time?      Where does all the heat go over time? Why? What happens to the endpoints?    "
+},
+{
+  "id": "labs-5-6",
+  "level": "2",
+  "url": "labs-5.html#labs-5-6",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  The code below shows the solution to problem 3: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference with the bounds of this problem and the previous problem? These bounds mean the beam is insulated at both ends.       Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?    "
+},
+{
+  "id": "labs-5-7",
+  "level": "2",
+  "url": "labs-5.html#labs-5-7",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  The code below shows the solution to problem 4: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?    "
+},
+{
+  "id": "labs-5-8",
+  "level": "2",
+  "url": "labs-5.html#labs-5-8",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  The code below shows the solution to problem 5: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous one?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why does the heat behave so differently than all the other problems so far?    "
+},
+{
+  "id": "labs-5-10",
+  "level": "2",
+  "url": "labs-5.html#labs-5-10",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Eventually, we will look in 2 or 3 dimensions. So let's explore numerical solutions to the heat equation in 2 dimensions.     To start, let's take a square plate of length , and for each time step we'll numerically solve the heat equation and put it all together. Let's assume that the left, right, and bottom of the plate are fixed at a temperature of , and the top of the plate is fixed at a temperature of . It's not super realistic, but it's a good starting point. Run the cell below to animate the plate and show the heat over time. (Note - it'll take a literal 30 seconds, but it's worth the wait!)      What happens to the heat over time?  For more details about how we solve this numerically, check out: . (Note, the code is adapted and not the same, but the methods are the same.)     "
+},
+{
+  "id": "labs-6",
+  "level": "1",
+  "url": "labs-6.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Lab",
+  "body": " Lab   {\\Large The Wave Equation - Applied     here  You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by  where kg*m \/s (Planck's constant!).  Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?  Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?  An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?  Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?  Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?  Standing waves, like a string fixed at both ends, are also quantized. Only certain wavelengths are allowed, which makes it similar to electrons. Similar to the wave equation we've been studying in class, Schrodinger's equation models electrons as matter waves. If we are in just one spatial dimension , Schrodinger's equation says   Does this look at all familiar? is a wave function and actually produces a complex number, where gives a probability density function, the probability of finding an electron within a specific region of space. is the potential, which represents which state the particle is existing in. Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate. A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates. Sound familiar?  An electron acts like a wave where it doesn't exist in anyone particular location but it is spread out through an entire atom. Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.  A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0\\% probability of being found. The shapes of orbitals are shown below:  \\includegraphics[scale=1]{orbitals}  For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where , and the solution of Schrodinger's equation can be solved by separation of all three variables,  or just separating the radial piece from the other two variables and where are called the spherical harmonics of degree and order (looks a lot like Bessel's function!) we then have  This is the only atom for which we have an exact solution currently. Each solution state is given by  ( is the Bohr radius). Interestingly, are Laguerre polynomials (we looked at those when finding power series solutions!), , , .  See any similarities to what we've been studying? Don't worry, I won't make you solve it by hand.  ................. Switching gears here, let's talk about resonance.  Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate. We could force it to vibrate at a different frequency, but that is not it's natural frequency.  Even a metal plate has natural frequencies. If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines. For an analogous picture - think about a one-dimensional string fixed at the ends. And location where the string doesn't go up or down is a node. So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on. When we extend this to a two-dimensional plate, those nodal locations are now lines.  So the sand will move away from the vibrating regions and cluster along the nodal lines. And this movement happens almost instantly. These are called Chladni figures, and different natural resonant frequencies will produce different figures. See some below:  \\includegraphics[scale=1]{Chladni}  Story time (not well-verified by Dr. Bailey but perhaps you'll find it interesting enough to look into it?). The ancient Egyptians knew all about resonate frequencies. In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1\/seconds). The exact value depends on your position and altitude on Earth.  The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic). And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz! Matching the earth's natural frequency! And the King's Chamber was built so that it's resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!  So earth acts as a tuning fork, and Giza is tuned to it. To help capture it, Giza had pure quartz disks permanently placed to ``carry'' the natural frequency, just like the first radios used crystal receivers.    "
+},
+{
+  "id": "labs-6-2-1",
+  "level": "2",
+  "url": "labs-6.html#labs-6-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Wave Equation - Applied "
+},
+{
+  "id": "labs-6-3",
+  "level": "2",
+  "url": "labs-6.html#labs-6-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  here  You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by  where kg*m \/s (Planck's constant!).  Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?  Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?  An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?  Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?  Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?  Standing waves, like a string fixed at both ends, are also quantized. Only certain wavelengths are allowed, which makes it similar to electrons. Similar to the wave equation we've been studying in class, Schrodinger's equation models electrons as matter waves. If we are in just one spatial dimension , Schrodinger's equation says   Does this look at all familiar? is a wave function and actually produces a complex number, where gives a probability density function, the probability of finding an electron within a specific region of space. is the potential, which represents which state the particle is existing in. Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate. A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates. Sound familiar?  An electron acts like a wave where it doesn't exist in anyone particular location but it is spread out through an entire atom. Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.  A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0\\% probability of being found. The shapes of orbitals are shown below:  \\includegraphics[scale=1]{orbitals}  For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where , and the solution of Schrodinger's equation can be solved by separation of all three variables,  or just separating the radial piece from the other two variables and where are called the spherical harmonics of degree and order (looks a lot like Bessel's function!) we then have  This is the only atom for which we have an exact solution currently. Each solution state is given by  ( is the Bohr radius). Interestingly, are Laguerre polynomials (we looked at those when finding power series solutions!), , , .  See any similarities to what we've been studying? Don't worry, I won't make you solve it by hand.  ................. Switching gears here, let's talk about resonance.  Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate. We could force it to vibrate at a different frequency, but that is not it's natural frequency.  Even a metal plate has natural frequencies. If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines. For an analogous picture - think about a one-dimensional string fixed at the ends. And location where the string doesn't go up or down is a node. So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on. When we extend this to a two-dimensional plate, those nodal locations are now lines.  So the sand will move away from the vibrating regions and cluster along the nodal lines. And this movement happens almost instantly. These are called Chladni figures, and different natural resonant frequencies will produce different figures. See some below:  \\includegraphics[scale=1]{Chladni}  Story time (not well-verified by Dr. Bailey but perhaps you'll find it interesting enough to look into it?). The ancient Egyptians knew all about resonate frequencies. In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1\/seconds). The exact value depends on your position and altitude on Earth.  The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic). And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz! Matching the earth's natural frequency! And the King's Chamber was built so that it's resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!  So earth acts as a tuning fork, and Giza is tuned to it. To help capture it, Giza had pure quartz disks permanently placed to ``carry'' the natural frequency, just like the first radios used crystal receivers.   "
+},
+{
+  "id": "labs-7",
+  "level": "1",
+  "url": "labs-7.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "28: Method of characteristics (Lab)",
+  "body": " 28: Method of characteristics (Lab)   We're going to see an application of the wave equation, in traffic! Specifically, we're going to determine how traffic is actually a {\\underline{shock wave}}!  \\section*{Traffic Flows}  Let's take a 1-way highway, and look at a stretch of road.  \\begin{center} \\includegraphics[scale = 0.6]{highway} \\end{center}  Define:     = density of cars at position at time , units = {\\underline{}}     = velocity of the cars at position at time , units = {\\underline{}}    So a car that begins at ends up at after some short time interval .  Then the product:   = {\\underline{}} , units = {\\underline{}}  We're going to focus on the density function, , and come up with a mathematical model. We find something useful if we consider the number of cars in an interval .  \\begin{center} \\includegraphics[scale = 0.6]{N} \\end{center}  We can get by integrating the density over the interval :   If is the total number of cars in the interval, then the rate of change of the number of cars in this interval is (switch the order of the operators and put everything under an integral):     We can approach this same quantity from a different perspective, a law of conservation. The rate of change of the number of cars in is the difference in the rate at which cars enter the interval on the left at , and the rate at which cars leave on the right at . Can we write this also as an integral from to ?     Altogether we have   Rearrange 2 parts of the equation above to get an integral equal to 0.   Since this is true for EVERY interval , then it must be true that the integrand itself is zero, and we end up with the following equation:   This is the partial differential equation we want to focus on. And we can think of the density function as a wave, the highway is like our string, and the value of the density function is like the height of the string. Of course there is a maximum density of traffic on the road, but we can divide by the maximum density and thus we can assume here that .     {\\underline{}} corresponds to max density: bumper-to-bumper traffic.     {\\underline{}} corresponds to min density: almost no cars on the road.     may correspond to an example such as {\\underline{}}    Let's examine velocity here... It is certainly reasonable to assume velocity depends on density of traffic . When there are no cars on the road ( {\\underline{}}), traffic will move at its maximum speed. Let   We expect that when density increases, the speed will decrease, and that when there is bumper-to-bumper traffic, ( {\\underline{}}), no one is moving and so . Draw a linear possibility on the graph below and determine the equation for that corresponds to it.  \\begin{center} \\includegraphics[scale = 0.5]{vgraph} \\hspace{2cm} $v(\\rho) = {\\underline{\\hspace{3cm}}}$ \\end{center}  This may seem like an overly simplistic assumption, but Lighthill and Whitham describe experimental evidence that justifies its use. (See references.)  Ok, we have an equation for . Let's plug that in to our PDE. We now have: Calculus to the rescue, our final expression is:   \\section*{Method of Characteristics} How do we solve this? Let's assume we have an initial density function . We want to describe how for later times. (Note: this is not the movement of individual cars, but the density which is an aggregated measure of all the cars positions.)    Start at some initial point .    We are used to: fixing and seeing how changes over time at position . What we do instead: we fix , and determine the path we need to take over time to keep that constant value of density, . That is, we find such that ! (Think of density as a wave, so we look for the path of the point starting at so the height of the wave doesn't change! Like a level curve...)    But, since , a CONSTANT, so with the help of multivariable calculus we know:   Compare this to the final expression we had just before we entered the territory of Method of Characteristics. In order to match the two equations, we must have: This is the speed of our wave!  Because we are looking for where , we can sub in for , meaning that the path our point takes is So an initial point moves to the left or right with speed ( is the max velocity possible of the cars, the wave has speed ).   Context check:     If (minimum density), then moves with speed {\\underline{}} to the {\\underline{}}.    If (middle density), then moves with speed {\\underline{}} to the {\\underline{}}.    If (maximum density), then moves with speed {\\underline{}} to the {\\underline{}}.    At what initial density do we move to the right as fast as possible? {\\underline{}}  At what initial density do we move to the left as fast as possible? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  We finally get to apply all we know. Since the speed of our density ``wave'' depends on , we need an initial density ``wave'', i.e. an initial curve for . Let's look at several examples and apply the Method of Characteristics.     Take the initial density to be as shown below, one point is marked.  \\begin{center} \\includegraphics[scale = 0.5]{d0_2} \\end{center}  As time passes, the value will stay the same (so the -coordinate will stay the same), while the -coordinate will move left or right with a speed of . Since is just smaller than 0.25, what is the velocity that corresponds to this initial point ? Does our -coordinate move left or right? Draw an arrow in the graph above representing this movement.  Then look at various other initial points, and determine if that initial point will move left or right in the same. Draw in arrows representing the movement of this initial ``wave.'' Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of should be about twice as long as an arrow representing a speed of .  Connect the tips of the arrows to show how the wave has changed over time, that is sketch .  You should notice the wave ``shears''; this is called the shear rule .  Think about a situation where everyone is stopped at a traffic light, as shown below.  \\begin{center} \\includegraphics[scale = 0.5]{stop_1} \\end{center}  Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave''? Draw the ``wave'' at a later time.      Well that's cool and all, but I did promise you shock waves. Consider the following initial density curve, , where now our curve is increasing.  \\begin{center} \\includegraphics[scale = 0.5]{d0_3} \\end{center}  As before, we consider the density at later times. Draw in the arrows to show which way each point on the curve moves at a later time, and sketch a later curve. (It should shear in a similar way.)  If we let enough time pass, we may notice that we have faster moving points on the wave that trail slower moving points. Eventually, the faster moving points overtake the slower points, leading to some points that appear to take on 3 distinct densities! Is this possible?  So, we've introduced a discontinuity, and this is our shock wave! Where multiple values try to happen all at once. On the bottom of the discontinuity we have some density , and at the top of the discontinuity we have some other density .  \\begin{center} \\includegraphics[scale = 0.5]{d0_5} \\end{center}  Context: You're traveling down a one-lane highway; what does this situation represent?  It turns out that the shock waves moves with a speed that is equal to the average of the speeds on either side of the shock, so the average of the speed at and . This, along with the shear rule, tells us how traffic moves when the stop light suddenly turns red. We'll see two resulting shock waves, as traffic piles up behind the light and clears out in front of the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_2} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_3} \\end{center}  If we turn the light green, the shear rule will apply to the second shock wave where traffic is piled up, and the traffic (the shock wave) will begin to move to the right through the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_4} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_5} \\end{center}  If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.    "
+},
+{
+  "id": "labs-7-2-28-2-1",
+  "level": "2",
+  "url": "labs-7.html#labs-7-2-28-2-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "What we do instead: "
 },
 {
-  "id": "labs-3-2-32",
+  "id": "labs-7-2-32",
   "level": "2",
-  "url": "labs-3.html#labs-3-2-32",
+  "url": "labs-7.html#labs-7-2-32",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Context check: "
 },
 {
-  "id": "labs-3-3",
+  "id": "labs-7-3",
   "level": "2",
-  "url": "labs-3.html#labs-3-3",
+  "url": "labs-7.html#labs-7-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Take the initial density to be as shown below, one point is marked.  \\begin{center} \\includegraphics[scale = 0.5]{d0_2} \\end{center}  As time passes, the value will stay the same (so the -coordinate will stay the same), while the -coordinate will move left or right with a speed of . Since is just smaller than 0.25, what is the velocity that corresponds to this initial point ? Does our -coordinate move left or right? Draw an arrow in the graph above representing this movement.  Then look at various other initial points, and determine if that initial point will move left or right in the same. Draw in arrows representing the movement of this initial ``wave.'' Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of should be about twice as long as an arrow representing a speed of .  Connect the tips of the arrows to show how the wave has changed over time, that is sketch .  You should notice the wave ``shears''; this is called the shear rule .  Think about a situation where everyone is stopped at a traffic light, as shown below.  \\begin{center} \\includegraphics[scale = 0.5]{stop_1} \\end{center}  Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave''? Draw the ``wave'' at a later time.   "
 },
 {
-  "id": "labs-3-4",
+  "id": "labs-7-4",
   "level": "2",
-  "url": "labs-3.html#labs-3-4",
+  "url": "labs-7.html#labs-7-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
@@ -115,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "0. Review of Calculus III",
-  "body": " 0. Review of Calculus III  MTH 401      It's important we recall the following ideas which we will use throughout this class:     The dot product and the cross product.    How to parameterize a curve.    The gradient of a function.    Fields.       Consider the vectors      Find the dot products and .                How does this help you find the length of ?       What is the angle between and ?       How can the dot product detect when two vectors are orthogonal?       If is a vector and , what does this say about ?       Find the cross product .       Describe in words how you would find the direction in which points.       What is ?         Shown below are a line and a circle.     The graph of a line, see description below for more information.    f(x)=1.5-1\/2*x         The graph of a line that goes through the points and .     The graph of a circle, see description below for more information.           The graph of a circle with radius centered at .        Create a parametrization for each of the curves.      What choices have you made in forming your parametrizations and how might your parametrizations differ from a classmate's?       Consider the function .     Find the gradient .      If you are at the point , what is the gradient there?      Suppose is measuring the elevation of a landscape in feet. In what direction should you move from the point to move most steeply uphill? In what direction should you move to stay at the same elevation?      Suppose your motion in the plane is given by the function . What is your location at time and what is your velocity?      If is measured in seconds, at what rate, in feet per second, are you moving uphill at ?       Sketch the field at the nine points where and take on the values , , and . (You don't necessarily need to draw the vectors to scale.)     "
+  "body": " 0. Review of Calculus III  MTH 401      It's important we recall the following ideas which we will use throughout this class:     The dot product and the cross product.    How to parameterize a curve.    The gradient of a function.    Fields.       Consider the vectors      Find the dot products and .      How does this help you find the length of ?       What is the angle between and ?       How can the dot product detect when two vectors are orthogonal?       If is a vector and , what does this say about ?       Find the cross product .       Describe in words how you would find the direction in which points.       What is ?         Shown below are a line and a circle.     The graph of a line, see description below for more information.    f(x)=1.5-1\/2*x         The graph of a line that goes through the points and .     The graph of a circle, see description below for more information.           The graph of a circle with radius centered at .        Create a parametrization for each of the curves.      What choices have you made in forming your parametrizations and how might your parametrizations differ from a classmate's?       Consider the function .     Find the gradient .      If you are at the point , what is the gradient there?      Suppose is measuring the elevation of a landscape in feet. In what direction should you move from the point to move most steeply uphill? In what direction should you move to stay at the same elevation?      Suppose your motion in the plane is given by the function . What is your location at time and what is your velocity?      If is measured in seconds, at what rate, in feet per second, are you moving uphill at ?       Sketch the field at the nine points where and take on the values , , and . (You don't necessarily need to draw the vectors to scale.)     "
 },
 {
   "id": "activities-3-3",
@@ -133,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Consider the vectors      Find the dot products and .                How does this help you find the length of ?       What is the angle between and ?       How can the dot product detect when two vectors are orthogonal?       If is a vector and , what does this say about ?       Find the cross product .       Describe in words how you would find the direction in which points.       What is ?     "
+  "body": "  Consider the vectors      Find the dot products and .      How does this help you find the length of ?       What is the angle between and ?       How can the dot product detect when two vectors are orthogonal?       If is a vector and , what does this say about ?       Find the cross product .       Describe in words how you would find the direction in which points.       What is ?     "
 },
 {
   "id": "activities-3-5",
@@ -2014,43 +2230,52 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "3.5. Contour integrals",
-  "body": " 3.5. Contour integrals  MTH 401    Evaluate where     is the straight line from to .      is the contour consisting of straight line segments from to and from to .        Evaluate where is the unit square ( and ) traversed in the counterclockwise direction.      Suppose that is a closed contour bounding a region whose area is . Use Green's theorem to explain why .       Suppose that is the unit circle traversed in the counterclockwise direction.     Parameterize the unit circle as to evaluate  \\begin{enumerate} \\item .  \\item .  \\item .  \\item . \\end{enumerate}      What is the general rule for ?      Now suppose that is the circle of radius centered at the origin parametrized as . What do you find for ?       Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      On the first page, you evaluated around the unit square. Explain why your result shows that is not complex differntiable.      Since is differentiable if , give another explanation for why if is the unit circle.     "
+  "body": " 3.5. Contour integrals  MTH 401    For a function where , a contour integral on a curve has the form (in rectangular coordinates)       Evaluate where      is the straight line from to .       is the contour consisting of two straight line segments from to and from to .       Let's consider the slightly more interesting function .     Evaluate where is the unit square ( and ) traversed in the counterclockwise direction.      Suppose that is a closed contour bounding a region whose area is . Use Green's theorem to explain why .       Suppose that is the unit circle traversed in the counterclockwise direction.     Parameterize the unit circle as to evaluate the following:                            What is the general rule for ?      Now suppose that is the circle of radius centered at the origin parametrized as . What do you find for ?       Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      At the beginning of this worksheet, you evaluated around the unit square. Explain why your result shows that is not complex differntiable.      Since is differentiable if , give another explanation for why if is the unit circle.     "
 },
 {
-  "id": "activities-34-3",
+  "id": "def-contour-integral",
   "level": "2",
-  "url": "activities-34.html#activities-34-3",
-  "type": "Worksheet Exercise",
-  "number": "1",
+  "url": "activities-34.html#def-contour-integral",
+  "type": "Definition",
+  "number": "45",
   "title": "",
-  "body": "  Evaluate where     is the straight line from to .      is the contour consisting of straight line segments from to and from to .    "
+  "body": "  For a function where , a contour integral on a curve has the form (in rectangular coordinates)    "
 },
 {
   "id": "activities-34-4",
   "level": "2",
   "url": "activities-34.html#activities-34-4",
   "type": "Worksheet Exercise",
-  "number": "2",
+  "number": "1",
   "title": "",
-  "body": "   Evaluate where is the unit square ( and ) traversed in the counterclockwise direction.      Suppose that is a closed contour bounding a region whose area is . Use Green's theorem to explain why .    "
+  "body": "  Evaluate where      is the straight line from to .       is the contour consisting of two straight line segments from to and from to .    "
 },
 {
   "id": "activities-34-5",
   "level": "2",
   "url": "activities-34.html#activities-34-5",
   "type": "Worksheet Exercise",
-  "number": "3",
+  "number": "2",
   "title": "",
-  "body": "  Suppose that is the unit circle traversed in the counterclockwise direction.     Parameterize the unit circle as to evaluate  \\begin{enumerate} \\item .  \\item .  \\item .  \\item . \\end{enumerate}      What is the general rule for ?      Now suppose that is the circle of radius centered at the origin parametrized as . What do you find for ?    "
+  "body": "  Let's consider the slightly more interesting function .     Evaluate where is the unit square ( and ) traversed in the counterclockwise direction.      Suppose that is a closed contour bounding a region whose area is . Use Green's theorem to explain why .    "
 },
 {
   "id": "activities-34-6",
   "level": "2",
   "url": "activities-34.html#activities-34-6",
   "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Suppose that is the unit circle traversed in the counterclockwise direction.     Parameterize the unit circle as to evaluate the following:                            What is the general rule for ?      Now suppose that is the circle of radius centered at the origin parametrized as . What do you find for ?    "
+},
+{
+  "id": "activities-34-7",
+  "level": "2",
+  "url": "activities-34.html#activities-34-7",
+  "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      On the first page, you evaluated around the unit square. Explain why your result shows that is not complex differntiable.      Since is differentiable if , give another explanation for why if is the unit circle.    "
+  "body": "  Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      At the beginning of this worksheet, you evaluated around the unit square. Explain why your result shows that is not complex differntiable.      Since is differentiable if , give another explanation for why if is the unit circle.    "
 },
 {
   "id": "activities-35",
@@ -2058,40 +2283,49 @@ var ptx_lunr_docs = [
   "url": "activities-35.html",
   "type": "Worksheet",
   "number": "",
-  "title": "34: Cauchy’s integral formula",
-  "body": " 34: Cauchy's integral formula    Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the integrals     .      .      .        Where is the function singular? That is, where is ?      We can write Evaluate if is the circle of radius 1 centered at .      In the same way, evaluate if is the circle of radius 1 centered at .      Suppose that is the circle of 2 centered at 0. Evaluate .       If , , and are the same circles as in the last problem, evaluate for these three circles.      Where is the function singular?    "
+  "title": "3.6. Cauchy’s Integral Formula",
+  "body": " 3.6. Cauchy's Integral Formula  MTH 401     Cauchy's Integral Formula says that if is a complex differentiable function inside a closed curve , then the following hold (where is the derivative of ):       Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the integrals      .       .       .       Consider the function .     Where is the function singular? That is, where is ?      Let's be clever and use Cauchy's Integral Formula. We can write Evaluate if is the circle of radius 1 centered at . (Hint: Determine which part of this rewritten formula is complex differentiable inside .)      In the same way, evaluate if is the circle of radius 1 centered at .      Suppose that is the circle of 2 centered at 0. Evaluate .       If , , and are the same circles as in the last problem, evaluate for these three circles.      Where is the function singular?    "
 },
 {
-  "id": "activities-35-2",
+  "id": "thm-Cauchy-Integral-Formula",
   "level": "2",
-  "url": "activities-35.html#activities-35-2",
-  "type": "Worksheet Exercise",
-  "number": "1",
+  "url": "activities-35.html#thm-Cauchy-Integral-Formula",
+  "type": "Theorem",
+  "number": "46",
   "title": "",
-  "body": "  Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the integrals     .      .      .    "
-},
-{
-  "id": "activities-35-3",
-  "level": "2",
-  "url": "activities-35.html#activities-35-3",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": "   Where is the function singular? That is, where is ?      We can write Evaluate if is the circle of radius 1 centered at .      In the same way, evaluate if is the circle of radius 1 centered at .      Suppose that is the circle of 2 centered at 0. Evaluate .    "
+  "body": "   Cauchy's Integral Formula says that if is a complex differentiable function inside a closed curve , then the following hold (where is the derivative of ):    "
 },
 {
   "id": "activities-35-4",
   "level": "2",
   "url": "activities-35.html#activities-35-4",
   "type": "Worksheet Exercise",
-  "number": "3",
+  "number": "1",
   "title": "",
-  "body": "  If , , and are the same circles as in the last problem, evaluate for these three circles.   "
+  "body": "  Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the integrals      .       .       .    "
 },
 {
   "id": "activities-35-5",
   "level": "2",
   "url": "activities-35.html#activities-35-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the function .     Where is the function singular? That is, where is ?      Let's be clever and use Cauchy's Integral Formula. We can write Evaluate if is the circle of radius 1 centered at . (Hint: Determine which part of this rewritten formula is complex differentiable inside .)      In the same way, evaluate if is the circle of radius 1 centered at .      Suppose that is the circle of 2 centered at 0. Evaluate .    "
+},
+{
+  "id": "activities-35-6",
+  "level": "2",
+  "url": "activities-35.html#activities-35-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  If , , and are the same circles as in the last problem, evaluate for these three circles.   "
+},
+{
+  "id": "activities-35-7",
+  "level": "2",
+  "url": "activities-35.html#activities-35-7",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
@@ -2103,35 +2337,53 @@ var ptx_lunr_docs = [
   "url": "activities-36.html",
   "type": "Worksheet",
   "number": "",
-  "title": "35: Taylor series",
-  "body": " 35: Taylor series       We can get new power series from old ones. For instance, the Taylor series for , can be found using the series for above and setting .     What do you find for the Taylor series of ?      What is the Taylor series for ?      You can factor out a `` '' from to write . What is ?      Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the contour integral       If , then the Taylor series looks like for some . We say that has a zero of order in this case.     Consider the function and write out its Taylor series.      What is the order of the zero at ?      If , what is the order of the zero at ?       Suppose that .     Explain why you can write      Evaluate the contour integral where is the unit circle traversed in the counterclockwise direction.     "
+  "title": "3.7. Taylor Series",
+  "body": " 3.7. Taylor Series  MTH 401   Here are four common Taylor series we will want to use: Note the last one is the geometric series, and holds only if . All work for complex numbers too!     We can get new power series from old ones. For instance, the Taylor series for , can be found using the series for above and setting .     What do you find for the Taylor series of ?      What is the Taylor series for ?      You can factor out a `` '' from to write . What is ?      Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the contour integral        If , then the Taylor series can be written as: for some . In this case, we say that has a zero of order .      Let's first look at some composite functions involving .     Consider the function and write out its Taylor series.      What is the order of the zero at for the in part (a)?      If , what is the order of the zero at ?       Suppose that .     Explain why you can write       Evaluate the contour integral where is the unit circle traversed in the counterclockwise direction.     "
 },
 {
   "id": "activities-36-3",
   "level": "2",
   "url": "activities-36.html#activities-36-3",
-  "type": "Worksheet Exercise",
-  "number": "1",
+  "type": "Remark",
+  "number": "47",
   "title": "",
-  "body": "  We can get new power series from old ones. For instance, the Taylor series for , can be found using the series for above and setting .     What do you find for the Taylor series of ?      What is the Taylor series for ?      You can factor out a `` '' from to write . What is ?      Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the contour integral    "
+  "body": " Here are four common Taylor series we will want to use: Note the last one is the geometric series, and holds only if . All work for complex numbers too!  "
 },
 {
   "id": "activities-36-4",
   "level": "2",
   "url": "activities-36.html#activities-36-4",
   "type": "Worksheet Exercise",
-  "number": "2",
+  "number": "1",
   "title": "",
-  "body": "  If , then the Taylor series looks like for some . We say that has a zero of order in this case.     Consider the function and write out its Taylor series.      What is the order of the zero at ?      If , what is the order of the zero at ?    "
+  "body": "  We can get new power series from old ones. For instance, the Taylor series for , can be found using the series for above and setting .     What do you find for the Taylor series of ?      What is the Taylor series for ?      You can factor out a `` '' from to write . What is ?      Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the contour integral     "
 },
 {
-  "id": "activities-36-5",
+  "id": "def-zero-order-k",
   "level": "2",
-  "url": "activities-36.html#activities-36-5",
+  "url": "activities-36.html#def-zero-order-k",
+  "type": "Definition",
+  "number": "48",
+  "title": "",
+  "body": "  If , then the Taylor series can be written as: for some . In this case, we say that has a zero of order .   "
+},
+{
+  "id": "activities-36-6",
+  "level": "2",
+  "url": "activities-36.html#activities-36-6",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let's first look at some composite functions involving .     Consider the function and write out its Taylor series.      What is the order of the zero at for the in part (a)?      If , what is the order of the zero at ?    "
+},
+{
+  "id": "activities-36-7",
+  "level": "2",
+  "url": "activities-36.html#activities-36-7",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Suppose that .     Explain why you can write      Evaluate the contour integral where is the unit circle traversed in the counterclockwise direction.    "
+  "body": "  Suppose that .     Explain why you can write       Evaluate the contour integral where is the unit circle traversed in the counterclockwise direction.    "
 },
 {
   "id": "activities-37",
@@ -2139,49 +2391,94 @@ var ptx_lunr_docs = [
   "url": "activities-37.html",
   "type": "Worksheet",
   "number": "",
-  "title": "36: Laurent series",
-  "body": " 36: Laurent series        Find the Laurent series for the function around the point .      What is ? What is if is the unit circle?       Suppose that .     Find its Laurent series about the point .      What is the residue ? What is if is the unit circle?       Suppose that .     Find its Laurent series about the point .      What is the residue ? What is if is the unit circle?       There are three types of singularities that can be classified by their Laurent series:   Removable singularity:  if .  Pole: There are only finitely many nonzero with negative.  Essential singularity: There are infinitely many nonzero with negative.      The first three examples illustrate each of these types. Which is which?      The order of a pole is the smallest positive integer where if . What is the order of the pole from the first three examples?       Suppose that . Find the singularities, determine their types, and find their residues.    "
+  "title": "3.8. Laurent Series",
+  "body": " 3.8. Laurent Series  MTH 401    A Laurent series centered at represents a complex function as an infinite series of both positive and negative powers of . It has the form with all negative powers collectively forming the principal part and the nonnegative powers collectively forming the Taylor series .  Coefficients in the principal part with can be found using while coefficients in the Taylor series part with are      We rarely use those formulas to find the coefficients , rather we usually use our Taylor series knowledge instead.  Recall again the following Taylor series :      The coefficient in the Laurent series of a complex function is called the residue of at z-z_0 , denoted If has only one singularity at and is inside , then       Consider the function .     Find the Laurent series for the function around the point .      What is ? What is if is the unit circle?       Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?       Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?       There are three types of singularities that can be classified by their Laurent series given by The three types are classified by how many coefficients corresponding to negative powers ( ) are nonzero.      Removable singularity:  if .     Pole: There are only finitely many nonzero with negative.     Essential singularity: There are infinitely many nonzero with negative.         The order of a pole (see definition above) is the smallest positive integer where if .      Identify.     The first three examples illustrate each of these types. Which is which?      What is the order of the pole from the first three examples?       Suppose that . Find the singularities, determine their types, and find their residues.    "
 },
 {
-  "id": "activities-37-3",
+  "id": "def-laurent-series",
   "level": "2",
-  "url": "activities-37.html#activities-37-3",
-  "type": "Worksheet Exercise",
-  "number": "1",
+  "url": "activities-37.html#def-laurent-series",
+  "type": "Definition",
+  "number": "49",
   "title": "",
-  "body": "   Find the Laurent series for the function around the point .      What is ? What is if is the unit circle?    "
+  "body": "  A Laurent series centered at represents a complex function as an infinite series of both positive and negative powers of . It has the form with all negative powers collectively forming the principal part and the nonnegative powers collectively forming the Taylor series .  Coefficients in the principal part with can be found using while coefficients in the Taylor series part with are    "
 },
 {
   "id": "activities-37-4",
   "level": "2",
   "url": "activities-37.html#activities-37-4",
-  "type": "Worksheet Exercise",
-  "number": "2",
+  "type": "Remark",
+  "number": "50",
   "title": "",
-  "body": "  Suppose that .     Find its Laurent series about the point .      What is the residue ? What is if is the unit circle?    "
+  "body": " We rarely use those formulas to find the coefficients , rather we usually use our Taylor series knowledge instead.  Recall again the following Taylor series :   "
 },
 {
-  "id": "activities-37-5",
+  "id": "def-residue",
   "level": "2",
-  "url": "activities-37.html#activities-37-5",
-  "type": "Worksheet Exercise",
-  "number": "3",
+  "url": "activities-37.html#def-residue",
+  "type": "Definition",
+  "number": "51",
   "title": "",
-  "body": "  Suppose that .     Find its Laurent series about the point .      What is the residue ? What is if is the unit circle?    "
+  "body": "  The coefficient in the Laurent series of a complex function is called the residue of at z-z_0 , denoted If has only one singularity at and is inside , then    "
 },
 {
   "id": "activities-37-6",
   "level": "2",
   "url": "activities-37.html#activities-37-6",
   "type": "Worksheet Exercise",
-  "number": "4",
+  "number": "1",
   "title": "",
-  "body": "  There are three types of singularities that can be classified by their Laurent series:   Removable singularity:  if .  Pole: There are only finitely many nonzero with negative.  Essential singularity: There are infinitely many nonzero with negative.      The first three examples illustrate each of these types. Which is which?      The order of a pole is the smallest positive integer where if . What is the order of the pole from the first three examples?    "
+  "body": "  Consider the function .     Find the Laurent series for the function around the point .      What is ? What is if is the unit circle?    "
 },
 {
   "id": "activities-37-7",
   "level": "2",
   "url": "activities-37.html#activities-37-7",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?    "
+},
+{
+  "id": "activities-37-8",
+  "level": "2",
+  "url": "activities-37.html#activities-37-8",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?    "
+},
+{
+  "id": "def-singularities",
+  "level": "2",
+  "url": "activities-37.html#def-singularities",
+  "type": "Definition",
+  "number": "52",
+  "title": "",
+  "body": "  There are three types of singularities that can be classified by their Laurent series given by The three types are classified by how many coefficients corresponding to negative powers ( ) are nonzero.      Removable singularity:  if .     Pole: There are only finitely many nonzero with negative.     Essential singularity: There are infinitely many nonzero with negative.      "
+},
+{
+  "id": "def-order",
+  "level": "2",
+  "url": "activities-37.html#def-order",
+  "type": "Definition",
+  "number": "53",
+  "title": "",
+  "body": "  The order of a pole (see definition above) is the smallest positive integer where if .   "
+},
+{
+  "id": "activities-37-11",
+  "level": "2",
+  "url": "activities-37.html#activities-37-11",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Identify.     The first three examples illustrate each of these types. Which is which?      What is the order of the pole from the first three examples?    "
+},
+{
+  "id": "activities-37-12",
+  "level": "2",
+  "url": "activities-37.html#activities-37-12",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
@@ -2193,40 +2490,67 @@ var ptx_lunr_docs = [
   "url": "activities-38.html",
   "type": "Worksheet",
   "number": "",
-  "title": "37: Residues",
-  "body": " 37: Residues    Explain why has a simple pole at . Then find .      Let's consider the function .     What are the singularities of this function; that is, where is ?      Find the residues at each of the singularities.      Evaluate the integral .       If has a pole of order two at , then its Laurent series looks like Multiplying by , we have     Differentiate this expression to find the series representation of .      Now explain why .      Find the residues of the singularities of .      Now evaluate the integral .       Suppose that and that is the circle of radius 2 centered at , is the circle of radius 2 centered at , and is the circle of radius 4 centered at the origin.  Evaluate for each of these circles.    "
+  "title": "3.9. Residues",
+  "body": " 3.9. Residues  MTH 401    A simple pole is a pole of order 1, that is the Laurent series has only the coefficient in the principal part.      For a complex function that can be written as a rational function , has a simple pole at if the following hold:                 In this case (and only this case!), the residue for a simple pole is       Consider a curve such that the length of is , and a function such that the modulus . Then the ML inequality states that       Explain why has a simple pole at . Then find .      Let's consider the function .     What are the singularities of this function; that is, where is ? (Polar form? It may help...)      Find the residues at each of the singularities. (Would still recommend polar form...)      Evaluate the integral . (Draw a contour... What singularities matter?)       If has a pole of order two at , then its Laurent series looks like Multiplying by , we have     Differentiate this expression to find the series representation of .      Now explain why .      Find the residues of the singularities of .      Now evaluate the integral .       Suppose that and that is the circle of radius 2 centered at , is the circle of radius 2 centered at , and is the circle of radius 4 centered at the origin.  Evaluate for each of these circles.    "
 },
 {
-  "id": "activities-38-2",
+  "id": "def-simple-pole",
   "level": "2",
-  "url": "activities-38.html#activities-38-2",
+  "url": "activities-38.html#def-simple-pole",
+  "type": "Definition",
+  "number": "54",
+  "title": "",
+  "body": "  A simple pole is a pole of order 1, that is the Laurent series has only the coefficient in the principal part.   "
+},
+{
+  "id": "thm-identify-simple-pole",
+  "level": "2",
+  "url": "activities-38.html#thm-identify-simple-pole",
+  "type": "Theorem",
+  "number": "55",
+  "title": "",
+  "body": "  For a complex function that can be written as a rational function , has a simple pole at if the following hold:                 In this case (and only this case!), the residue for a simple pole is    "
+},
+{
+  "id": "thm-ML-inequality",
+  "level": "2",
+  "url": "activities-38.html#thm-ML-inequality",
+  "type": "Theorem",
+  "number": "56",
+  "title": "",
+  "body": "  Consider a curve such that the length of is , and a function such that the modulus . Then the ML inequality states that    "
+},
+{
+  "id": "activities-38-6",
+  "level": "2",
+  "url": "activities-38.html#activities-38-6",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Explain why has a simple pole at . Then find .   "
 },
 {
-  "id": "activities-38-3",
+  "id": "activities-38-7",
   "level": "2",
-  "url": "activities-38.html#activities-38-3",
+  "url": "activities-38.html#activities-38-7",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Let's consider the function .     What are the singularities of this function; that is, where is ?      Find the residues at each of the singularities.      Evaluate the integral .    "
+  "body": "  Let's consider the function .     What are the singularities of this function; that is, where is ? (Polar form? It may help...)      Find the residues at each of the singularities. (Would still recommend polar form...)      Evaluate the integral . (Draw a contour... What singularities matter?)    "
 },
 {
-  "id": "activities-38-4",
+  "id": "activities-38-8",
   "level": "2",
-  "url": "activities-38.html#activities-38-4",
+  "url": "activities-38.html#activities-38-8",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  If has a pole of order two at , then its Laurent series looks like Multiplying by , we have     Differentiate this expression to find the series representation of .      Now explain why .      Find the residues of the singularities of .      Now evaluate the integral .    "
 },
 {
-  "id": "activities-38-5",
+  "id": "activities-38-9",
   "level": "2",
-  "url": "activities-38.html#activities-38-5",
+  "url": "activities-38.html#activities-38-9",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
@@ -2238,26 +2562,44 @@ var ptx_lunr_docs = [
   "url": "activities-39.html",
   "type": "Worksheet",
   "number": "",
-  "title": "38: Trigonometric integrals",
-  "body": " 38: Trigonometric integrals    Use residue calculus to evaluate      Use residue calculus to evaluate    "
+  "title": "3.10. Trigonometric Integrals",
+  "body": " 3.10. Trigonometric Integrals  MTH 401   Trig integrals are difficult (if not impossible) to solve when restricted to real numbers. But in complex land, they aren't nearly as terrible. It is wise to recall Euler's formula (and its rearrangements)     Specifically on the unit circle we have where , and thus . Therefore we can further rewrite Euler's formula:      Use residue calculus to evaluate       Use residue calculus to evaluate     "
 },
 {
-  "id": "activities-39-2",
+  "id": "activities-39-3-1",
   "level": "2",
-  "url": "activities-39.html#activities-39-2",
+  "url": "activities-39.html#activities-39-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Euler's formula "
+},
+{
+  "id": "activities-39-4",
+  "level": "2",
+  "url": "activities-39.html#activities-39-4",
+  "type": "Remark",
+  "number": "57",
+  "title": "",
+  "body": " Specifically on the unit circle we have where , and thus . Therefore we can further rewrite Euler's formula:   "
+},
+{
+  "id": "activities-39-5",
+  "level": "2",
+  "url": "activities-39.html#activities-39-5",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Use residue calculus to evaluate   "
+  "body": "  Use residue calculus to evaluate    "
 },
 {
-  "id": "activities-39-3",
+  "id": "activities-39-6",
   "level": "2",
-  "url": "activities-39.html#activities-39-3",
+  "url": "activities-39.html#activities-39-6",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Use residue calculus to evaluate   "
+  "body": "  Use residue calculus to evaluate    "
 },
 {
   "id": "activities-40",
@@ -2265,26 +2607,53 @@ var ptx_lunr_docs = [
   "url": "activities-40.html",
   "type": "Worksheet",
   "number": "",
-  "title": "39: Fourier transforms",
-  "body": " 39: Fourier transforms     Evaluate the integral      What about the more general Fourier transform where ?       Evaluate the integral    "
+  "title": "3.11. Fourier Transforms",
+  "body": " 3.11. Fourier Transforms  MTH 401   You may recall the Fourier transform of a function had the form It is thus useful to be able to solve that integral.     If is a rational function with , and then      That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!     A specific fourier transform example for .     Evaluate the integral       What about the more general Fourier transform where ?       Evaluate the integral That is, solve the Fourier transform first, then take the imaginary part of your answer.    "
 },
 {
-  "id": "activities-40-2",
+  "id": "activities-40-3-1",
   "level": "2",
-  "url": "activities-40.html#activities-40-2",
+  "url": "activities-40.html#activities-40-3-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Fourier transform "
+},
+{
+  "id": "thm-fourier-complex",
+  "level": "2",
+  "url": "activities-40.html#thm-fourier-complex",
+  "type": "Theorem",
+  "number": "58",
+  "title": "",
+  "body": "  If is a rational function with , and then    "
+},
+{
+  "id": "activities-40-5",
+  "level": "2",
+  "url": "activities-40.html#activities-40-5",
+  "type": "Remark",
+  "number": "59",
+  "title": "",
+  "body": " That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!  "
+},
+{
+  "id": "activities-40-6",
+  "level": "2",
+  "url": "activities-40.html#activities-40-6",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "   Evaluate the integral      What about the more general Fourier transform where ?    "
+  "body": "  A specific fourier transform example for .     Evaluate the integral       What about the more general Fourier transform where ?    "
 },
 {
-  "id": "activities-40-3",
+  "id": "activities-40-7",
   "level": "2",
-  "url": "activities-40.html#activities-40-3",
+  "url": "activities-40.html#activities-40-7",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Evaluate the integral   "
+  "body": "  Evaluate the integral That is, solve the Fourier transform first, then take the imaginary part of your answer.   "
 },
 {
   "id": "activities-41",
@@ -2292,40 +2661,58 @@ var ptx_lunr_docs = [
   "url": "activities-41.html",
   "type": "Worksheet",
   "number": "",
-  "title": "40: Principal values of integrals",
-  "body": " 40: Principal values of integrals    Consider the integral where the integrand has a singularity at . Find the principal value of this integral by integrating around a small loop going above the singularity.      In quantum mechanics, determining the intensity of scattered particles as a function of the cross section leads to an integral of the form where is real and positive. Using the theory of residues, evaluate the integral , interpreted as the principal value.      Evaluate      Find the principal value of the integral and use your result to evaluate    "
+  "title": "3.12. Principal Values of Integrals",
+  "body": " 3.12. Principal Values of Integrals  MTH 401    Often, an \"easier\" way to solve real integrals is to make them complex integrals. With trig integrals, it is also generally \"easier\" to solve the Fourier transform first, and then take the real or imaginary part appropriately using Euler's formula.  That is,      The Cauchy principal value is a method for assigning values to specific improper integrals that would otherwise be undefined. For us, this means we want to evaluate an integral that has a singularity that falls on the real line.  The value of this otherwise undefined integral is called the principal value . We can turn the real integral into a contour integral that travels the upper half plane. Then singularities in the upper half plane (and not on the real line) contribute times their residues, as we have previously seen. Singularities on the real line contribute to the contour integral halfway between and , or just . That is,      Consider the integral where the integrand has a singularity at . Find the principal value of this integral by integrating around a small loop going above the singularity.      In quantum mechanics, determining the intensity of scattered particles as a function of the cross section leads to an integral of the form where is real and positive. Using the theory of residues, evaluate the integral , interpreted as the principal value.      Evaluate      Find the principal value of the integral and use your result to evaluate    "
 },
 {
-  "id": "activities-41-2",
+  "id": "fact-fourier-easier",
   "level": "2",
-  "url": "activities-41.html#activities-41-2",
+  "url": "activities-41.html#fact-fourier-easier",
+  "type": "Fact",
+  "number": "60",
+  "title": "",
+  "body": "  Often, an \"easier\" way to solve real integrals is to make them complex integrals. With trig integrals, it is also generally \"easier\" to solve the Fourier transform first, and then take the real or imaginary part appropriately using Euler's formula.  That is,    "
+},
+{
+  "id": "activities-41-4",
+  "level": "2",
+  "url": "activities-41.html#activities-41-4",
+  "type": "Remark",
+  "number": "61",
+  "title": "",
+  "body": " The Cauchy principal value is a method for assigning values to specific improper integrals that would otherwise be undefined. For us, this means we want to evaluate an integral that has a singularity that falls on the real line.  The value of this otherwise undefined integral is called the principal value . We can turn the real integral into a contour integral that travels the upper half plane. Then singularities in the upper half plane (and not on the real line) contribute times their residues, as we have previously seen. Singularities on the real line contribute to the contour integral halfway between and , or just . That is,   "
+},
+{
+  "id": "activities-41-5",
+  "level": "2",
+  "url": "activities-41.html#activities-41-5",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Consider the integral where the integrand has a singularity at . Find the principal value of this integral by integrating around a small loop going above the singularity.   "
 },
 {
-  "id": "activities-41-3",
+  "id": "activities-41-6",
   "level": "2",
-  "url": "activities-41.html#activities-41-3",
+  "url": "activities-41.html#activities-41-6",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  In quantum mechanics, determining the intensity of scattered particles as a function of the cross section leads to an integral of the form where is real and positive. Using the theory of residues, evaluate the integral , interpreted as the principal value.   "
 },
 {
-  "id": "activities-41-4",
+  "id": "activities-41-7",
   "level": "2",
-  "url": "activities-41.html#activities-41-4",
+  "url": "activities-41.html#activities-41-7",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Evaluate   "
 },
 {
-  "id": "activities-41-5",
+  "id": "activities-41-8",
   "level": "2",
-  "url": "activities-41.html#activities-41-5",
+  "url": "activities-41.html#activities-41-8",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
