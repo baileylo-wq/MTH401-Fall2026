@@ -173,7 +173,7 @@
   </g>
   <path id="prefigure-line-integral-path-0" stroke="blue" stroke-width="4" fill="none" marker-mid="url(#prefigure-line-integral-arrow-head-mid-4_None_24_60-blue)" d="M 105.0 155.0 L 185.0 155.0 L 205.0 155.0"/>
   <path id="prefigure-line-integral-path-1" stroke="blue" stroke-width="4" fill="none" marker-mid="url(#prefigure-line-integral-arrow-head-mid-4_None_24_60-blue)" d="M 205.0 155.0 L 205.0 75.0 L 205.0 55.0"/>
-  <path id="prefigure-line-integral-path-2" stroke="blue" stroke-width="4" fill="none" marker-mid="url(#prefigure-line-integral-arrow-head-mid-4_None_24_60-blue)" d="M 205.0 55.0 L 125.0 135.0 L 105.0 155.0"/>
+  <path id="prefigure-line-integral-path-2" stroke="blue" stroke-width="4" fill="none" marker-mid="url(#prefigure-line-integral-arrow-head-mid-4_None_24_60-blue)" d="M 105.0 155.0 L 175.0 85.0 L 205.0 55.0"/>
   <g id="prefigure-line-integral-label-8" transform="translate(155.0,164.0) translate(-10.4,-0.0)">
     <g id="prefigure-line-integral-g-8">
       <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -2.712px" width="20.840px" height="15.472px" role="img" focusable="false" viewBox="0 -705 1151.6 855" x="0.0" y="0.0">
