@@ -43,7 +43,7 @@
             <grid-axes spacings="((-1,1,4),(-1,1,4))" xlabel="x" ylabel="y"/>
             <vector v="(2,0)" tail="(1,1)" stroke="blue" head-location="0.8"/>
             <vector v="(0,2)" tail="(3,1)" stroke="blue" head-location="0.8"/>
-            <vector v="(-2,-2)" tail="(3,3)" stroke="blue" head-location="0.8"/>
+            <vector v="(2,2)" tail="(1,1)" stroke="blue" head-location="0.7"/>
             <label anchor="(2,1)" alignment="south" offset="(0,-5)">
               <m>
                 \displaystyle C_1
@@ -77,6 +77,16 @@
       <statement>
         <p>Find <m>\lineint{C}{F}</m> if <m>C</m> is the curve traversing the triangle in
   the counter-clockwise direction.</p>
+      </statement>
+    </task>
+
+    <task workspace="0.5in">
+      <statement>
+        <p>
+          Notice that the combined path of <m>C_1+C_2</m> starts and stops at the 
+          same points as the path of <m>C_3</m>. Does <m>\lineint{C_1+C_2}{F} = \lineint{C_3}{F}</m>?
+          That is, does the path matter or are all line integrals independent of path?
+        </p>
       </statement>
     </task>
   </exercise>
