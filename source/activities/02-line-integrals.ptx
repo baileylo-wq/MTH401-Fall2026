@@ -109,7 +109,7 @@
   </md></p>
       </statement>
     </task>
-    <task workspace="1.7in">
+    <task workspace="1in">
       <statement>
         <p>Give a geometric explanation for the line integral along <m>C_1</m>.</p>
       </statement>
@@ -127,7 +127,7 @@
     <introduction>
       <p>Consider the field <m>{\mathbf F}(x,y) = (y^2, 2xy+3)</m>.</p>
     </introduction>
-    <task workspace="4.0in">
+    <task workspace="3.0in">
       <statement>
         <p>Evaluate
   the line integrals
@@ -146,7 +146,7 @@
     </task>
   </exercise>
 
-  <exercise workspace="1in">
+  <exercise workspace="4in">
     <statement>
       <p>Suppose that
   <md>
