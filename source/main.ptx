@@ -21,21 +21,9 @@
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
 
-    <chapter xml:id="course-notes">
-      <title>Course Notes</title>
+    
 
-      <introduction>
-        <p>
-          The following notes are intended to remind you what we covered each week.
-          They are not a substitute for attending class and not a substitute for reading the textbook.
-        </p>
-      </introduction>
-
-      <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
-      <!-- etc. -->
-
-    </chapter>
+    
 
     <chapter xml:id="labs">
       <title>Labs</title>
