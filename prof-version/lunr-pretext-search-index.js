@@ -7,52 +7,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Syllabus",
-  "body": " Syllabus  MTH 401       First Things First  Things to keep in mind throughout this course.    The whole point of education is to change your mind: to make your mind better than it used to be. Be open to changing what, how, and why you think about mathematics, and work hard to train your mind to get better at thinking about mathematics and thinking generally.     I want you to be successful. I define “successful” in MTH 401 to include: changing your mind by learning a lot (see #1), developing a deep understanding of the mathematics behind the physical sciences that you can demonstrate to others, becoming able to apply ideas in math to solve interesting problems, working well with your classmates, and improving your ability to communicate about complex ideas with clarity and precision. I do not think of success in terms of letter grades.    Strive to  embrace struggle and have a growth mindset. Nothing that is worth doing comes easily, and struggle and even failure are a valuable and necessary part of growth (think about playing the piano, hitting a golf ball, being a good friend … all are difficult and require mistakes and failure in order to get better). Be prepared to be sometimes frustrated with the course. Work to have a growth mindset: the whole reason you are taking the class is to learn new things and make sense of them. Persistence and hard work count for a lot -- in this class and in life.     Learn from and with others. In almost any career, you’ll work as part of a team. Doing so will require you to be a contributor, be a communicator, and be a supporter. As most people don’t get to choose their co-workers, we also need to develop our ability to work with a wide range of people; you’ll be even better as a co-worker if you can appreciate others and the unique contributions they bring. Every day in class, you’ll have the opportunity to work with peers to learn with and learn from them. Indeed, we want to be a community for one another: be positive, be kind, and be caring. I will.     Embrace learning actively. The only person who can learn and develop understanding in your own mind is you. While I cannot learn for you, I can and will offer an environment that supports your learning with structured work inside and outside of class designed to help you make more sense of calculus. Through all of it, I will be here to support you with perspective and guidance.     Take good care of yourself and others. We are tired, and we are busy. It’s more important than ever that you sleep well, exercise, practice good hygiene, and seek help when you need it. If you are struggling with physical or mental health, you can talk to me about how you are doing without judgment and I will help you find support from professional resources.     Equity. We live in a world where not all groups of people are treated equitably. Please know that I am fully committed to all forms of equity and that in all aspects of this course I will not tolerate language, ideas, or behavior that are hostile to marginalized or oppressed groups, such as racism, sexism, homophobia, transphobia, and xenophobia. In new situations, people are sometimes uncertain about what language and ideas could be hostile or offensive. If you feel unsure, I am more than willing to discuss these issues with you privately. I will always treat these conversations confidentially, with respect, and without judgment.       Course Information      Course  MTH 401: Math for the Physical Sciences    Instructor  Dr. Lora Bailey    Email   baileylo@gvsu.edu     Office  MAK A-2-112, 616-331-2321    Class Meetings  MW 10:00 - 11:50am, MAK D-1-117    Office Hours  Mondays 3:00 - 4:00pm (MAK A-2-610)  Wednesdays 9:00 - 9:50am (MAK A-2-610)  Thursdays 11:00 - 11:50am (MAK A-2-610)    Course web page   Blackboard     Prerequisite  PHY 231 and either MTH 302 or 304 or permission of instructor.    Textbook and course materials  There is no required textbook for this course. However, there are two references I can recommend to you: Mathematical Methods in the Physical Sciences by Mary L. Boas and Applied Partial Differential Equations by Richard Haberman. If you are planning on graduate study in physics, Boas’ book could be a good investment for you.       What to call me  Please call me Dr. Bailey or Prof. Bailey. Please feel free to contact me at any time! Email is the best way to reach me ( baileylo@gvsu.edu ).    Email Policy  I will check email several times a day Monday-Friday between 9am-5pm. Please do not expect immediate responses or responses outside of those times, and plan appropriately.    Office Hours  Office hours are times I guarantee I will be available to you, and do not require an appointment – walk right in! Whether it be related to this course, or resources that you might find useful, or career opportunities, or current events, or... This is time for you, and I'm happy to talk about whatever is on your mind.  I understand these times may not be available for everyone, and can meet with you by appointment (either in person or Zoom) – just send me an email and we will find a time that works for both of us. I want you to succeed!    AI Policy  This is complicated, and we'll talk about it in class, but please don’t use generative AI to complete any assignments or to check your work in this course. You may think:   “I will be using AI in my career.” With the current state of AI, you won’t be using it to learn new ways of thinking, like we’re trying to do in our course. AI will help you develop an understanding of mathematics.     I only use it to check my work when I don’t feel totally confident. I am part of a math education research study that investigates how students learn math from textbooks. Interviews with students clearly show how using AI causes students to become less confident over time since they come to trust what comes from AI more than they trust their own work. Learning will be challenging and facing challenges requires you to have the confidence that you can do it. Please don’t surrender the trust that you have in your own abilities.     Here is one research study, among many others:  Your Brain on ChatGPT . From the abstract:  Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels. These results raise concerns about the long-term educational implications of LLM reliance and underscore the need for deeper inquiry into AI's role in learning.      Phone policy  Inside our classroom, please keep your phone stored with your belongings and away from your work space, unless you have an exceptional situation such as concern for a friend or family member. This includes time when you are waiting for class to begin as this provides everyone with the opportunity to develop productive working relationships.  We live in an age where your attention is being monetized by others, and it is not readily apparent the price that you are paying. An overwhelming amount of research, however, plainly shows how disruptive this technology is to your learning. “On the scale between candy and crack cocaine, it’s closer to crack cocaine,” Mr. Anderson [former editor of Wired magazine] said of screens.     Technology  If you have a laptop\/tablet\/Chromebook, please bring it to class. We will not use it all the time, but we will use free tools, such as Desmos or Mathematica or Python, all of which you can access for free.    Communication  I will be posting assignments, activities, and other relevant information on our course Blackboard page. I will also be communicating with you frequently through email. Please make sure that you check your Grand Valley email on a daily basis. Please don’t send messages to me through Blackboard’s messaging system because I am unlikely to see them in a timely fashion.    Late work and deadline freebies  While assignments will always have due dates, I recognize that life happens and that you don’t owe me an explanation when it does. Throughout the semester, you are allowed to submit an assignment late on three occasions provided you write to me beforehand and let me know when you will complete it. Please note that this policy does not apply to the final exam. If you are habitually having a hard time handing things in on time, please come and talk with me.    Attendance  This is a fully in person class, and everyone is expected to attend each day unless extenuating circumstances prevent attendance. If that happens, please email Dr. Bailey ASAP and make a plan to stay on top of the work. Attendance is critical to your success in this class, as well as the success of those around you.     About this course     Course Description from the Catalog  An introduction to the mathematics most relevant for the physical sciences and physical problems that demonstrate its need. Topics include vector analysis, including line and surface integrals, complex differentiable functions, and partial differential equations and Sturm-Liouville problems. This course introduces a diverse collection of mathematical topics that are practical tools for physical scientists. We will first study calculus in higher dimensions through line integrals, surface integrals and extensions of the Fundamental Theorem of Calculus. We will then explore some basic partial differential equations, such as the heat equation, wave equation, and Laplace’s equation, as well as some tools for understanding solutions to them. Finally, we will study complex differentiable functions and their contour integrals. All mathematical topics will be presented as fundamental tools for understanding problems that arise in the physical sciences. These problems will also supply a wealth of intuition about the mathematics.    Course Objectives  After successful completion of this course, you will be able to…   Evaluate line integrals of vector fields directly using parametrization of the curve.    Apply the Fundamental Theorem of Line Integrals to evaluate line integrals.    Compute physical quantities, such as work, using line integrals.    Evaluate surface integrals of vector fields using a parametrization of the surface.    Apply Stokes Theorem or the divergence theorem to evaluate surface integrals.    Compute physical quantities, such as flux, using surface integrals.    Identify complex differentiable functions.    Compute line integrals of complex differentiable functions.    Apply Cauchy’s theorem and use of residues to evaluate line integrals of complex differentiable functions.    Apply complex differentiable function theory to solve problems in two-dimensional electrostatics and fluid flow.    Describe the physical origins of some partial differential equations, such as the heat and wave equations.    Apply separation of variables and Sturm-Liouville theory, including Fourier analysis, to find explicit solutions to partial differential equations.    Utilize special mathematical functions, such as Legendre polynomials and Bessel functions, in the solution of physical problems.       Workload  This is a four-credit class that aims to introduce you to a great deal of important mathematics and physical motivation. In addition, these topics are preparing you in important ways for further study in graduate school (if that path is of interest to you). You should therefore expect to work hard for this course. Moreover, I am assuming that you have sufficient academic maturity to assimilate ideas, either independently or with classmates, outside of class, to promptly identify areas where you are finding difficulty, and to seek out help from me when this happens. Please do not allow yourself to fall behind —you will find it much more difficult to catch up than to stay on top of the material. I have high expectations of you in this course and will provide a lot of support to help you realize them.  Questions are always encouraged, never judged, and always answered to the best of abilities.      Assessments and Grades   The overall grades  Assigning grades is the probably the most frustrating aspect of teaching. Each of you is a unique learner who brings a different perspective and background into our course. It’s therefore important to build some flexibility into any grading scheme. Given below is the percentage required to obtain a particular grade. However, I reserve the right to raise your grade if I see that you are working diligently and that you grow intellectually during the semester.    A  A-  B+  B  B-  C+  C  C-  D+  D  F    93%  90%  87%  83%  80%  77%  73%  70%  67%  63%  63%      Determination of Grades  Your grade in this class will be determined in the following way:   Daily Prep - 10%  There will be videos and questions about the videos before most class days. They will be accessible in Desmos, and the questions will be graded based on effort and participation, not correctness.    Homework - 35%  There will be a set of homework exercises to complete roughly every week. These homework sets are crucial for your learning as they will help you develop a working understanding of important concepts that we will develop in class. You are encouraged to work in a small group and discuss homework problems with one another. Your written submission, however, should be written by yourself and should reflect your own understanding. You are also encouraged to resubmit assignments for up to two weeks after feedback has been given.    Midterm Exams - 35%  There will be three midterm take-home. Exams will be open book and open notes but not open Internet. You will have at least one week to work on them.    Final Exam - 20%  You will have a final exam for this class. More details will be given to you closer to that time.       Written work expectations  One important part of mathematics is its emphasis on the clear and careful presentation of reasoning. This includes clearly stating the problem, making important observations in complete sentences, writing additional thoughts to clarify symbolic expressions, and showing a clear overall progression from problem to solution. The quality of your communication will count in all of your graded work. You will generally be marked on the methods used to solve a problem rather than just the final answer; answers alone will receive little credit. Therefore, it is very important that you include all of your work when writing a solution. The clarity with which you express your thinking will be an important part of your grade as well.  Please take advantage of the opportunity to resubmit homework assignments after incorporating my feedback. I want you to be motivated from within , not by a somewhat arbitrary grade, and I want to allow you the opportunity to make mistakes and learn from them. It is my belief that you will learn more if you are internally motivated and able to resubmit your work.  \"The goal of training a mathematician is not achieved by producing correct homework.\" ~Terry Tao. Terry Tao is a very famous mathematician. You can read his full essay for free, Mathematics in the Age of AI .    Feedback or concerns  Any thoughts, concerns, ideas are welcome, including those concerning either your performance or mine. Please let me know if there is something that is working well for you or if I can be doing better.     Other Information   Resources  I am a resource for you, and so are your classmates. You may also need help with other aspects of life that go beyond our coursework.   If you have special needs because of learning, physical, or other disabilities, please contact Student Accessibility Resources. They will help arrange accommodations; please inform me of any ways I can be supportive.    If you have difficulty affording groceries or accessing sufficient food to eat every day, or if you lack a safe and stable place to live, I encourage you to visit Replenish, a food and living resource for GVSU students.    Mental health concerns, including overwhelming stress, excessive worry, difficulty participating in daily activities, and changes in mood, appetite, or sleep patterns can interfere with your academic performance. College student surveys report that roughly 1 out of 3 students screen positive for a current mental health concern (Healthy Minds Study). GVSU values your health and wellness and provides services to support your mental health. If you would like mental health support or are concerned for another member of our campus community, reach out to the University Counseling Center for free resources, self-help options, and services. Also, visit Campus Recreation & Wellness for additional health and wellness programming.    If you are comfortable doing so, you are welcome to speak with me about your circumstances so that I can advocate for you and connect you with other campus resources.       Key Dates    September 4  Last Day to Add or Drop (5pm)  September 25  75% Tuition Refund deadline  October 22  Mid-term Grades available  October 26-27  Fall Break (no classes)  November 13  Withdrawal Deadline (5pm)  November 25-29  Thanksgiving Recess (no classes)  December 12  Classes End  December 14-18  Final Exams (see Registrar page for schedule)    More information is available at the University academic calendar.   Please inform me if you withdraw from the class. If you stop working on assignments or logging into Blackboard, you are NOT automatically withdrawn from the course. Failure to follow proper withdrawal procedures will result in a grade of F.    University Policies  This course is subject to these GVSU policies.     Academic Integrity Policies  Students are expected to be familiar with and comply with GVSU’s academic misconduct policies and procedures (sections 5.1 and 6.1) in the Student Code: The Anchor of Student Rights and Responsibilities. I generally have a zero-tolerance policy for academic misconduct, and all suspected violations will result in a referral to the Student Integrity Team in the Dean of Students Office. If you have any doubts or questions about what constitutes academic misconduct, please do not hesitate to contact me.  Plagiarism: Any ideas or material taken from another source for either written or oral presentation must be fully acknowledged. Offering the work of someone else as one’s own is plagiarism. The language or ideas taken from another may range from isolated formulas, sentences, or paragraphs to entire articles copied from books, periodicals, speeches, or the writing of other students. The offering of materials assembled or collected by others in the form of projects or collections without acknowledgment also is considered plagiarism. Any student who fails to give credit in written or oral work for the ideas or materials that have been taken from another is guilty of plagiarism.    Classroom and Campus Safety  Classroom and campus safety are our shared responsibility. Please familiarize yourself with the classroom emergency placard, which contains important information that could prove useful should an emergency arise. Emergency situations could include a fire alarm, tornado warning, medical emergency, or hostile intruder, and our response might consist of evacuating MAK Hall in an orderly manner, moving as a group to a different location in the building, rendering assistance to a class member, or staying put and locking the classroom door. Please make sure to have your primary mobile number listed in Banner so that you will automatically receive any campus alerts.  Additional information about campus safety can be found at the following sites:   Directions for ﻿﻿ enabling additional contact means to the campus alert system.     Emergency alert information     ﻿﻿List of campus tornado safety locations      ﻿﻿Medical emergencies and campus AED locations:      ﻿﻿Active shooter response        Religious Accomodation  In accordance with the Religious Inclusion Policy, GVSU will provide reasonable accommodations for faculty, staff and students to observe their religious beliefs, except where accommodating the request would result in undue hardship on the University in its mission, operation or in meeting its academic standards. If you would like to request a reasonable accommodation, please complete this form and submit it to your professor within the first two weeks of each semester or as soon as reasonably possible.    Changes  I reserve the right to make changes to this syllabus. Any changes made will be announced on Blackboard and in class as well as marked in this file.    "
-},
-{
-  "id": "notes-week-01",
-  "level": "1",
-  "url": "notes-week-01.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22  Let's test this out here  example    exercise     task a      task b here        exercise one here     part a        Wednesday 8\/24      Friday 8\/26     "
-},
-{
-  "id": "notes-week-01-3-3",
-  "level": "2",
-  "url": "notes-week-01.html#notes-week-01-3-3",
-  "type": "Example",
-  "number": "1",
-  "title": "",
-  "body": "example "
-},
-{
-  "id": "notes-week-01-3-4",
-  "level": "2",
-  "url": "notes-week-01.html#notes-week-01-3-4",
-  "type": "Activity",
-  "number": "1",
-  "title": "",
-  "body": "  exercise     task a      task b here    "
-},
-{
-  "id": "exercises--1",
-  "level": "2",
-  "url": "notes-week-01.html#exercises--1",
-  "type": "Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  exercise one here     part a    "
-},
-{
-  "id": "notes-week-02",
-  "level": "1",
-  "url": "notes-week-02.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 2",
-  "body": " Week 2   Monday      Wednesday      Friday     "
+  "body": " Syllabus  MTH 401       First Things First  Things to keep in mind throughout this course.    The whole point of education is to change your mind: to make your mind better than it used to be. Be open to changing what, how, and why you think about mathematics, and work hard to train your mind to get better at thinking about mathematics and thinking generally.     I want you to be successful. I define “successful” in MTH 401 to include: changing your mind by learning a lot (see #1), developing a deep understanding of the mathematics behind the physical sciences that you can demonstrate to others, becoming able to apply ideas in math to solve interesting problems, working well with your classmates, and improving your ability to communicate about complex ideas with clarity and precision. I do not think of success in terms of letter grades.    Strive to  embrace struggle and have a growth mindset. Nothing that is worth doing comes easily, and struggle and even failure are a valuable and necessary part of growth (think about playing the piano, hitting a golf ball, being a good friend … all are difficult and require mistakes and failure in order to get better). Be prepared to be sometimes frustrated with the course. Work to have a growth mindset: the whole reason you are taking the class is to learn new things and make sense of them. Persistence and hard work count for a lot -- in this class and in life.     Learn from and with others. In almost any career, you’ll work as part of a team. Doing so will require you to be a contributor, be a communicator, and be a supporter. As most people don’t get to choose their co-workers, we also need to develop our ability to work with a wide range of people; you’ll be even better as a co-worker if you can appreciate others and the unique contributions they bring. Every day in class, you’ll have the opportunity to work with peers to learn with and learn from them. Indeed, we want to be a community for one another: be positive, be kind, and be caring. I will.     Embrace learning actively. The only person who can learn and develop understanding in your own mind is you. While I cannot learn for you, I can and will offer an environment that supports your learning with structured work inside and outside of class designed to help you make more sense of calculus. Through all of it, I will be here to support you with perspective and guidance.     Take good care of yourself and others. We are tired, and we are busy. It’s more important than ever that you sleep well, exercise, practice good hygiene, and seek help when you need it. If you are struggling with physical or mental health, you can talk to me about how you are doing without judgment and I will help you find support from professional resources.     Equity. We live in a world where not all groups of people are treated equitably. Please know that I am fully committed to all forms of equity and that in all aspects of this course I will not tolerate language, ideas, or behavior that are hostile to marginalized or oppressed groups, such as racism, sexism, homophobia, transphobia, and xenophobia. In new situations, people are sometimes uncertain about what language and ideas could be hostile or offensive. If you feel unsure, I am more than willing to discuss these issues with you privately. I will always treat these conversations confidentially, with respect, and without judgment.       Course Information      Course  MTH 401: Math for the Physical Sciences    Instructor  Dr. Lora Bailey    Email   baileylo@gvsu.edu     Office  MAK A-2-112, 616-331-2321    Class Meetings  MW 10:00 - 11:50am, MAK D-1-117    Office Hours  Mondays 3:00 - 4:00pm (MAK A-2-610)  Wednesdays 9:00 - 9:50am (MAK A-2-610)  Thursdays 11:00 - 11:50am (MAK A-2-610)    Course web page   Blackboard     Prerequisite  PHY 231 and either MTH 302 or 304 or permission of instructor.    Textbook and course materials  There is no required textbook for this course. However, there are two references I can recommend to you: Mathematical Methods in the Physical Sciences by Mary L. Boas and Applied Partial Differential Equations by Richard Haberman. If you are planning on graduate study in physics, Boas’ book could be a good investment for you.       What to call me  Please call me Dr. Bailey or Prof. Bailey. Please feel free to contact me at any time! Email is the best way to reach me ( baileylo@gvsu.edu ).    Email Policy  I will check email several times a day Monday-Friday between 9am-5pm. Please do not expect immediate responses or responses outside of those times, and plan appropriately.    Office Hours  Office hours are times I guarantee I will be available to you, and do not require an appointment – walk right in! Whether it be related to this course, or resources that you might find useful, or career opportunities, or current events, or... This is time for you, and I'm happy to talk about whatever is on your mind.  I understand these times may not be available for everyone, and can meet with you by appointment (either in person or Zoom) – just send me an email and we will find a time that works for both of us. I want you to succeed!    AI Policy  This is complicated, and we'll talk about it in class, but please don’t use generative AI to complete any assignments or to check your work in this course. You may think:   “I will be using AI in my career.” With the current state of AI, you won’t be using it to learn new ways of thinking, like we’re trying to do in our course. AI will help you develop an understanding of mathematics.     I only use it to check my work when I don’t feel totally confident. I am part of a math education research study that investigates how students learn math from textbooks. Interviews with students clearly show how using AI causes students to become less confident over time since they come to trust what comes from AI more than they trust their own work. Learning will be challenging and facing challenges requires you to have the confidence that you can do it. Please don’t surrender the trust that you have in your own abilities.     Here is one research study, among many others:  Your Brain on ChatGPT . From the abstract:  Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels. These results raise concerns about the long-term educational implications of LLM reliance and underscore the need for deeper inquiry into AI's role in learning.      Phone policy  Inside our classroom, please keep your phone stored with your belongings and away from your work space, unless you have an exceptional situation such as concern for a friend or family member. This includes time when you are waiting for class to begin as this provides everyone with the opportunity to develop productive working relationships.  We live in an age where your attention is being monetized by others, and it is not readily apparent the price that you are paying. An overwhelming amount of research, however, plainly shows how disruptive this technology is to your learning. “On the scale between candy and crack cocaine, it’s closer to crack cocaine,” Mr. Anderson [former editor of Wired magazine] said of screens.     Technology  If you have a laptop\/tablet\/Chromebook, please bring it to class. We will not use it all the time, but we will use free tools, such as Desmos or Mathematica or Python, all of which you can access for free.    Communication  I will be posting assignments, activities, and other relevant information on our course Blackboard page. I will also be communicating with you frequently through email. Please make sure that you check your Grand Valley email on a daily basis. Please don’t send messages to me through Blackboard’s messaging system because I am unlikely to see them in a timely fashion.    Late work and deadline freebies  While assignments will always have due dates, I recognize that life happens and that you don’t owe me an explanation when it does. Throughout the semester, you are allowed to submit an assignment late on three occasions provided you write to me beforehand and let me know when you will complete it. Please note that this policy does not apply to the final exam. If you are habitually having a hard time handing things in on time, please come and talk with me.    Attendance  This is a fully in person class, and everyone is expected to attend each day unless extenuating circumstances prevent attendance. If that happens, please email Dr. Bailey ASAP and make a plan to stay on top of the work. Attendance is critical to your success in this class, as well as the success of those around you.     About this course     Course Description from the Catalog  An introduction to the mathematics most relevant for the physical sciences and physical problems that demonstrate its need. Topics include vector analysis, including line and surface integrals, complex differentiable functions, and partial differential equations and Sturm-Liouville problems. This course introduces a diverse collection of mathematical topics that are practical tools for physical scientists. We will first study calculus in higher dimensions through line integrals, surface integrals and extensions of the Fundamental Theorem of Calculus. We will then explore some basic partial differential equations, such as the heat equation, wave equation, and Laplace’s equation, as well as some tools for understanding solutions to them. Finally, we will study complex differentiable functions and their contour integrals. All mathematical topics will be presented as fundamental tools for understanding problems that arise in the physical sciences. These problems will also supply a wealth of intuition about the mathematics.    Course Objectives  After successful completion of this course, you will be able to…   Evaluate line integrals of vector fields directly using parametrization of the curve.    Apply the Fundamental Theorem of Line Integrals to evaluate line integrals.    Compute physical quantities, such as work, using line integrals.    Evaluate surface integrals of vector fields using a parametrization of the surface.    Apply Stokes Theorem or the divergence theorem to evaluate surface integrals.    Compute physical quantities, such as flux, using surface integrals.    Identify complex differentiable functions.    Compute line integrals of complex differentiable functions.    Apply Cauchy’s theorem and use of residues to evaluate line integrals of complex differentiable functions.    Apply complex differentiable function theory to solve problems in two-dimensional electrostatics and fluid flow.    Describe the physical origins of some partial differential equations, such as the heat and wave equations.    Apply separation of variables and Sturm-Liouville theory, including Fourier analysis, to find explicit solutions to partial differential equations.    Utilize special mathematical functions, such as Legendre polynomials and Bessel functions, in the solution of physical problems.       Workload  This is a four-credit class that aims to introduce you to a great deal of important mathematics and physical motivation. In addition, these topics are preparing you in important ways for further study in graduate school (if that path is of interest to you). You should therefore expect to work hard for this course. Moreover, I am assuming that you have sufficient academic maturity to assimilate ideas, either independently or with classmates, outside of class, to promptly identify areas where you are finding difficulty, and to seek out help from me when this happens. Please do not allow yourself to fall behind —you will find it much more difficult to catch up than to stay on top of the material. I have high expectations of you in this course and will provide a lot of support to help you realize them.  Questions are always encouraged, never judged, and always answered to the best of abilities.      Assessments and Grades   The overall grades  Assigning grades is the probably the most frustrating aspect of teaching. Each of you is a unique learner who brings a different perspective and background into our course. It’s therefore important to build some flexibility into any grading scheme. Given below is the percentage required to obtain a particular grade. However, I reserve the right to raise your grade if I see that you are working diligently and that you grow intellectually during the semester.    A  A-  B+  B  B-  C+  C  C-  D+  D  F    93%  90%  87%  83%  80%  77%  73%  70%  67%  63%  63%      Determination of Grades  Your grade in this class will be determined in the following way:   Daily Prep - 10%  There will be videos and questions about the videos before most class days. They will be accessible in Amplify, and the questions will be graded based on effort and participation, not correctness.    Homework - 35%  There will be a set of homework exercises to complete roughly every week. These homework sets are crucial for your learning as they will help you develop a working understanding of important concepts that we will develop in class. You are encouraged to work in a small group and discuss homework problems with one another. Your written submission, however, should be written by yourself and should reflect your own understanding. You are also encouraged to resubmit assignments for up to two weeks after feedback has been given.    Midterm Exams - 35%  There will be three midterm take-home. Exams will be open book and open notes but not open Internet. You will have at least one week to work on them.    Final Exam - 20%  You will have a final exam for this class. More details will be given to you closer to that time.       Written work expectations  One important part of mathematics is its emphasis on the clear and careful presentation of reasoning. This includes clearly stating the problem, making important observations in complete sentences, writing additional thoughts to clarify symbolic expressions, and showing a clear overall progression from problem to solution. The quality of your communication will count in all of your graded work. You will generally be marked on the methods used to solve a problem rather than just the final answer; answers alone will receive little credit. Therefore, it is very important that you include all of your work when writing a solution. The clarity with which you express your thinking will be an important part of your grade as well.  Please take advantage of the opportunity to resubmit homework assignments after incorporating my feedback. I want you to be motivated from within , not by a somewhat arbitrary grade, and I want to allow you the opportunity to make mistakes and learn from them. It is my belief that you will learn more if you are internally motivated and able to resubmit your work.  \"The goal of training a mathematician is not achieved by producing correct homework.\" ~Terry Tao. Terry Tao is a very famous mathematician. You can read his full essay for free, Mathematics in the Age of AI .    Feedback or concerns  Any thoughts, concerns, ideas are welcome, including those concerning either your performance or mine. Please let me know if there is something that is working well for you or if I can be doing better.     Other Information   Resources  I am a resource for you, and so are your classmates. You may also need help with other aspects of life that go beyond our coursework.   If you have special needs because of learning, physical, or other disabilities, please contact Student Accessibility Resources. They will help arrange accommodations; please inform me of any ways I can be supportive.    If you have difficulty affording groceries or accessing sufficient food to eat every day, or if you lack a safe and stable place to live, I encourage you to visit Replenish, a food and living resource for GVSU students.    Mental health concerns, including overwhelming stress, excessive worry, difficulty participating in daily activities, and changes in mood, appetite, or sleep patterns can interfere with your academic performance. College student surveys report that roughly 1 out of 3 students screen positive for a current mental health concern (Healthy Minds Study). GVSU values your health and wellness and provides services to support your mental health. If you would like mental health support or are concerned for another member of our campus community, reach out to the University Counseling Center for free resources, self-help options, and services. Also, visit Campus Recreation & Wellness for additional health and wellness programming.    If you are comfortable doing so, you are welcome to speak with me about your circumstances so that I can advocate for you and connect you with other campus resources.       Key Dates    September 4  Last Day to Add or Drop (5pm)  September 25  75% Tuition Refund deadline  October 22  Mid-term Grades available  October 26-27  Fall Break (no classes)  November 13  Withdrawal Deadline (5pm)  November 25-29  Thanksgiving Recess (no classes)  December 12  Classes End  December 14-18  Final Exams (see Registrar page for schedule)    More information is available at the University academic calendar.   Please inform me if you withdraw from the class. If you stop working on assignments or logging into Blackboard, you are NOT automatically withdrawn from the course. Failure to follow proper withdrawal procedures will result in a grade of F.    University Policies  This course is subject to these GVSU policies.     Academic Integrity Policies  Students are expected to be familiar with and comply with GVSU’s academic misconduct policies and procedures (sections 5.1 and 6.1) in the Student Code: The Anchor of Student Rights and Responsibilities. I generally have a zero-tolerance policy for academic misconduct, and all suspected violations will result in a referral to the Student Integrity Team in the Dean of Students Office. If you have any doubts or questions about what constitutes academic misconduct, please do not hesitate to contact me.  Plagiarism: Any ideas or material taken from another source for either written or oral presentation must be fully acknowledged. Offering the work of someone else as one’s own is plagiarism. The language or ideas taken from another may range from isolated formulas, sentences, or paragraphs to entire articles copied from books, periodicals, speeches, or the writing of other students. The offering of materials assembled or collected by others in the form of projects or collections without acknowledgment also is considered plagiarism. Any student who fails to give credit in written or oral work for the ideas or materials that have been taken from another is guilty of plagiarism.    Classroom and Campus Safety  Classroom and campus safety are our shared responsibility. Please familiarize yourself with the classroom emergency placard, which contains important information that could prove useful should an emergency arise. Emergency situations could include a fire alarm, tornado warning, medical emergency, or hostile intruder, and our response might consist of evacuating MAK Hall in an orderly manner, moving as a group to a different location in the building, rendering assistance to a class member, or staying put and locking the classroom door. Please make sure to have your primary mobile number listed in Banner so that you will automatically receive any campus alerts.  Additional information about campus safety can be found at the following sites:   Directions for ﻿﻿ enabling additional contact means to the campus alert system.     Emergency alert information     ﻿﻿List of campus tornado safety locations      ﻿﻿Medical emergencies and campus AED locations:      ﻿﻿Active shooter response        Religious Accomodation  In accordance with the Religious Inclusion Policy, GVSU will provide reasonable accommodations for faculty, staff and students to observe their religious beliefs, except where accommodating the request would result in undue hardship on the University in its mission, operation or in meeting its academic standards. If you would like to request a reasonable accommodation, please complete this form and submit it to your professor within the first two weeks of each semester or as soon as reasonably possible.    Changes  I reserve the right to make changes to this syllabus. Any changes made will be announced on Blackboard and in class as well as marked in this file.    "
 },
 {
   "id": "labs-3",
@@ -428,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-5.html#def-conservative-field",
   "type": "Definition",
-  "number": "2",
+  "number": "1",
   "title": "",
   "body": "  A field is conservative if there exists some function for which . The function is called the potential function for .  (Note that physicists usually use , but it is essentially the same.)   "
 },
@@ -437,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-5.html#thm-conservative-FTC",
   "type": "Theorem",
-  "number": "3",
+  "number": "2",
   "title": "",
   "body": "  The FTC for line integrals : if is conservative and , then where goes from point to point .   "
 },
@@ -509,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-6.html#def-divergence",
   "type": "Definition",
-  "number": "4",
+  "number": "3",
   "title": "",
   "body": "  Let . The divergence of is given by    "
 },
@@ -518,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-6.html#def-curl",
   "type": "Definition",
-  "number": "5",
+  "number": "4",
   "title": "",
   "body": "  Let . The curl of is    "
 },
@@ -599,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-7.html#def-flux",
   "type": "Definition",
-  "number": "6",
+  "number": "5",
   "title": "",
   "body": "  The flux of a field across a curve is where is the outward normal vector to the curve.   "
 },
@@ -608,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-7.html#thm-2d-divergence",
   "type": "Theorem",
-  "number": "7",
+  "number": "6",
   "title": "",
   "body": "  If the curve is closed, then the Divergence Theorem in two dimensions tells us where is the two-dimensional region inside the closed curve . That is, the total outward flux of a field across a closed curve is equivalent to the double integral of the divergence of that field over the enclosed region.  However, it's important to remember that  must be closed for the Divergence Theorem to apply.   "
 },
@@ -653,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-7.html#thm-3d-divergence-theorem",
   "type": "Theorem",
-  "number": "8",
+  "number": "7",
   "title": "",
   "body": "  If is a field in three dimensions across a closed surface which enclosed the three dimensional region , the Divergence Theorem in three dimensions, (also called Gauss's Theorem ), says that the total outward flux of the field through is equal to the triple integral of the divergence of the field over . That is,    "
 },
@@ -716,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-8.html#thm-Greens-theorem",
   "type": "Theorem",
-  "number": "9",
+  "number": "8",
   "title": "",
   "body": "   Green's Theorem: For a two-dimensional field and a closed curve that is oriented counterclockwise (positively oriented) and that encloses the region , the work done by along is .   "
 },
@@ -797,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-9.html#thm-conservative-implies-curl",
   "type": "Theorem",
-  "number": "10",
+  "number": "9",
   "title": "",
   "body": "  If is a conservative vector field (i.e. if for some ), then .   "
 },
@@ -806,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-9.html#thm-curl-implies-conservative",
   "type": "Theorem",
-  "number": "11",
+  "number": "10",
   "title": "",
   "body": "  If in a simply connected domain , then is a conservative field within and we can find a potential function in such that within the domain .   "
 },
@@ -851,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-10.html#thm-gauss-law",
   "type": "Theorem",
-  "number": "12",
+  "number": "11",
   "title": "",
   "body": "   Gauss' Law . Consider an electric field through a closed surface which encloses the total charge . Then the electric flux out of is equal to the total charge enclosed scaled by the permittivity constant, that is where is the free space permittivity constant ( Farads\/meter) and is the outward normal vector .  The electric displacement, , is given by , thus equivalently Using the divergence theorem where is the total volume charge density (charge per unit volume), the differential form of Gauss' Law is: .   "
 },
@@ -1013,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-12.html#def-heat-eqn-1d",
   "type": "Definition",
-  "number": "13",
+  "number": "12",
   "title": "",
   "body": "  The heat equation with constant and heat source is: where is the Laplacian of .  If the equation is called homogeneous .  In one dimension the heat equation simplifies to    "
 },
@@ -1031,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-12.html#principle-superposition",
   "type": "Principle",
-  "number": "14",
+  "number": "13",
   "title": "",
   "body": "  The Superposition Principal states that if and are independent solutions to a linear partial differential equation, then a linear combination of and is also a solution.   "
 },
@@ -1067,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-13.html#def-sturm-liouville",
   "type": "Definition",
-  "number": "15",
+  "number": "14",
   "title": "",
   "body": "  A general Sturm-Liouville problem has the form where are the extreme boundary conditions of . Solving a problem means finding the the eigenvalues , , that correspond to non-trivial solutions, and then find the corresponding solutions or eigenfunctions  associated to each .   "
 },
@@ -1076,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-13.html#activities-13-4",
   "type": "Remark",
-  "number": "16",
+  "number": "15",
   "title": "",
   "body": " We'll mostly focus on the simpler form of the problem: (not always called !):   "
 },
@@ -1103,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-14.html#def-fourier-sine-series",
   "type": "Definition",
-  "number": "17",
+  "number": "16",
   "title": "",
   "body": "  For , a Fourier Sine Series has the form where are the Fourier Sine Coefficients for , given by    "
 },
@@ -1130,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-14.html#def-fourier-cosine-series",
   "type": "Definition",
-  "number": "18",
+  "number": "17",
   "title": "",
   "body": "  For , a Fourier Cosine Series has the form with and with called the Fourier Cosine Coefficients for given by    "
 },
@@ -1166,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-15.html#activities-15-3",
   "type": "Remark",
-  "number": "19",
+  "number": "18",
   "title": "",
   "body": " General steps to solving the heat equation:   Step 1:  Is it a homogeneous equation with homogeneous boundary conditions? If not, make it so.    Step 2:  Separation of variables.    Step 3:  Identify and solve the Sturm-Lioville problem.    Step 4:  Solve temporal differential equation, write product solutions, use superposition to write general solution.    Step 5:  Find Fourier Coefficients.     "
 },
@@ -1229,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-16.html#def-wave-eqn-1d",
   "type": "Definition",
-  "number": "20",
+  "number": "19",
   "title": "",
   "body": "  The wave equation representing the height of the string in one dimension with wave speed (representing the propagation speed of the wave), constant horizontal tension (i.e. the string is perfectly elastic ), and density , is: In three dimensions the wave equation becomes where is the Laplacian of .   "
 },
@@ -1283,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-17.html#activities-17-4",
   "type": "Remark",
-  "number": "21",
+  "number": "20",
   "title": "",
   "body": " Words of wisdom: It is generally a good idea to start by identifying which are the boundary conditions and which are the initial conditions, what is the length of the string, and also determine if any part of this, such as the equation with the corresponding boundary conditions, is something we have previously solved...  "
 },
@@ -1301,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-17.html#def-free-ends",
   "type": "Definition",
-  "number": "22",
+  "number": "21",
   "title": "",
   "body": "  When an end is fixed or clamped at the boundary , the boundary condition is . We've seen this a lot.  When the end is free instead, we have a different boundary condition: .   "
 },
@@ -1337,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-18.html#def-general-fourier-series",
   "type": "Definition",
-  "number": "23",
+  "number": "22",
   "title": "",
   "body": "  Let be a function on the interval . Then the fourier series for on is with coefficients and for given by    "
 },
@@ -1346,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-18.html#def-odd-even-functions",
   "type": "Definition",
-  "number": "24",
+  "number": "23",
   "title": "",
   "body": "  Recall is an even function if , and is an odd function if .   "
 },
@@ -1391,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-19.html#def-laplace-eqn",
   "type": "Definition",
-  "number": "25",
+  "number": "24",
   "title": "",
   "body": "   Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. It is given by where for in two dimensions.  Solutions of Laplace's equation are called harmonic functions .   "
 },
@@ -1436,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-20.html#def-laplace-eqn-polar",
   "type": "Definition",
-  "number": "26",
+  "number": "25",
   "title": "",
   "body": "   Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. For in polar coordinates for a two dimensional disk, Laplace's equation becomes   For a disk of radius , the boundary condition then becomes for some function . The implicit boundary conditions due to the periodicity of are and , along with representing no singularities at the origin.   "
 },
@@ -1481,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-21.html#def-double-fourier-sine-series",
   "type": "Definition",
-  "number": "27",
+  "number": "26",
   "title": "",
   "body": "  Let be a function for on the interval and on the interval . Then the double Fourier sine series for is with coefficients    "
 },
@@ -1490,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-21.html#activities-21-5",
   "type": "Remark",
-  "number": "28",
+  "number": "27",
   "title": "",
   "body": " Note, the double Fourier sine series is helpful when you are looking for the specific solution, not a general solution. (Do you know why?)  "
 },
@@ -1544,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-22.html#def-Poisson-equation",
   "type": "Definition",
-  "number": "29",
+  "number": "28",
   "title": "",
   "body": "  Poisson's equation is the steady-state heat equation (no change in time) with a source term  :    "
 },
@@ -1553,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-22.html#activities-22-4",
   "type": "Remark",
-  "number": "30",
+  "number": "29",
   "title": "",
   "body": " To solve Poisson's equation, you first find the solution to the associated problem , then plug that solution into and solve for the coefficients that make it true.  "
 },
@@ -1688,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-25.html#def-bessel-function",
   "type": "Definition",
-  "number": "31",
+  "number": "30",
   "title": "",
   "body": "  Recall that Bessel's equation of order is Solutions are found using the Method of Frobenius, that is assuming it has the form for some unknown and solving for the coefficients.  For Bessel's functions of the first kind we take . We find that all odd coefficients are zero ( ), the coefficient is a free variable, and the other even coefficients are for . The solution to the order equation is denoted .   "
 },
@@ -1832,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#fact-eulers-formula",
   "type": "Fact",
-  "number": "32",
+  "number": "31",
   "title": "",
   "body": "   Euler's Formula states (some rearrangment)    "
 },
@@ -1841,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#def-fourier-transform",
   "type": "Definition",
-  "number": "33",
+  "number": "32",
   "title": "",
   "body": "  The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is    "
 },
@@ -1850,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#fact-fourier-derivative-property",
   "type": "Fact",
-  "number": "34",
+  "number": "33",
   "title": "",
   "body": "   Differentiation property of the Fourier Transform: for a function , Derivatives in spatial land are simply multiplications in frequency land!   "
 },
@@ -1868,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#thm-shift-theorem",
   "type": "Theorem",
-  "number": "35",
+  "number": "34",
   "title": "",
   "body": "  The Shift Theorem states that This an important theorem for the Fourier Transforms, suggesting you can shift the input variable by some amount before applying a Fourier Transform, and it results in multiplied by the Fourier Transform of the unshifted function.   "
 },
@@ -1895,7 +1850,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-29.html#def-fourier-transform-",
   "type": "Definition",
-  "number": "36",
+  "number": "35",
   "title": "",
   "body": "  The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is    "
 },
@@ -1904,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-29.html#fact-fourier-transform-properties",
   "type": "Fact",
-  "number": "37",
+  "number": "36",
   "title": "",
   "body": "   Properties of the Fourier Transform:   Spatial derivatives become multiplication:   Fourier transform applied to Gaussian Distributions:   Fourier transform of convolution of functions:   Temporal derivative independent of Fourier transform:      "
 },
@@ -1913,7 +1868,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-29.html#activities-29-5",
   "type": "Remark",
-  "number": "38",
+  "number": "37",
   "title": "",
   "body": " To solve the heat or wave equation using Fourier Transforms:   Step 1  Take the Fourier Transform of both sides.    Step 2  Solve in frequency world: .    Step 3  Apply the Inverse Fourier Transform to both sides to get .     "
 },
@@ -1949,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-30.html#fact-euler-again",
   "type": "Fact",
-  "number": "39",
+  "number": "38",
   "title": "",
   "body": "  Recall some facts. Firstly the imaginary number  where . Recall Euler's formula :  Cartesian form of a complex number: , where the real part of is and the imaginary part is . (Note the imaginary part is a real number!) The polar form is where is the modulus and is the argument .   "
 },
@@ -2075,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-32.html#def-cauchy-riemann-eqns",
   "type": "Definition",
-  "number": "40",
+  "number": "39",
   "title": "",
   "body": "  For a complex function for , the Cauchy-Riemann equations are .   "
 },
@@ -2084,7 +2039,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-32.html#thm-complex-diff",
   "type": "Theorem",
-  "number": "41",
+  "number": "40",
   "title": "",
   "body": "  Let . A complex function is complex differentiable (i.e. analytic i.e. holomorphic ) if and only if the Cauchy-Riemann equations hold. (It works both ways!) The complex derivative of , if it exists, is    "
 },
@@ -2111,7 +2066,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-32.html#def-harmonic",
   "type": "Definition",
-  "number": "42",
+  "number": "41",
   "title": "",
   "body": "  A harmonic function  is a twice-continuously differentiable function that satisfies Laplace's equation , i.e. , or in other words    "
 },
@@ -2156,7 +2111,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-33.html#activities-33-3",
   "type": "Remark",
-  "number": "43",
+  "number": "42",
   "title": "",
   "body": " Recall the Cauchy-Riemann equations for a complex function with are .  "
 },
@@ -2192,7 +2147,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-33.html#def-polya-vector",
   "type": "Definition",
-  "number": "44",
+  "number": "43",
   "title": "",
   "body": "  If we have a complex function , we can define its associated Polya vector field :    "
 },
@@ -2228,7 +2183,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-34.html#def-contour-integral",
   "type": "Definition",
-  "number": "45",
+  "number": "44",
   "title": "",
   "body": "  For a function where , a contour integral on a curve has the form (in rectangular coordinates)    "
 },
@@ -2282,7 +2237,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-35.html#thm-Cauchy-Integral-Formula",
   "type": "Theorem",
-  "number": "46",
+  "number": "45",
   "title": "",
   "body": "   Cauchy's Integral Formula says that if is a complex differentiable function inside a closed curve , then the following hold (where is the derivative of ):    "
 },
@@ -2336,7 +2291,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-36.html#activities-36-3",
   "type": "Remark",
-  "number": "47",
+  "number": "46",
   "title": "",
   "body": " Here are four common Taylor series we will want to use: Note the last one is the geometric series, and holds only if . All work for complex numbers too!  "
 },
@@ -2354,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-36.html#def-zero-order-k",
   "type": "Definition",
-  "number": "48",
+  "number": "47",
   "title": "",
   "body": "  If , then the Taylor series can be written as: for some . In this case, we say that has a zero of order .   "
 },
@@ -2390,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-laurent-series",
   "type": "Definition",
-  "number": "49",
+  "number": "48",
   "title": "",
   "body": "  A Laurent series centered at represents a complex function as an infinite series of both positive and negative powers of . It has the form with all negative powers collectively forming the principal part and the nonnegative powers collectively forming the Taylor series .  Coefficients in the principal part with can be found using while coefficients in the Taylor series part with are    "
 },
@@ -2399,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#activities-37-4",
   "type": "Remark",
-  "number": "50",
+  "number": "49",
   "title": "",
   "body": " We rarely use those formulas to find the coefficients , rather we usually use our Taylor series knowledge instead.  Recall again the following Taylor series :   "
 },
@@ -2408,7 +2363,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-residue",
   "type": "Definition",
-  "number": "51",
+  "number": "50",
   "title": "",
   "body": "  The coefficient in the Laurent series of a complex function is called the residue of at z-z_0 , denoted If has only one singularity at and is inside , then    "
 },
@@ -2444,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-singularities",
   "type": "Definition",
-  "number": "52",
+  "number": "51",
   "title": "",
   "body": "  There are three types of singularities that can be classified by their Laurent series given by The three types are classified by how many coefficients corresponding to negative powers ( ) are nonzero.      Removable singularity:  if .     Pole: There are only finitely many nonzero with negative.     Essential singularity: There are infinitely many nonzero with negative.      "
 },
@@ -2453,7 +2408,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-order",
   "type": "Definition",
-  "number": "53",
+  "number": "52",
   "title": "",
   "body": "  The order of a pole (see definition above) is the smallest positive integer where if .   "
 },
@@ -2489,7 +2444,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-38.html#def-simple-pole",
   "type": "Definition",
-  "number": "54",
+  "number": "53",
   "title": "",
   "body": "  A simple pole is a pole of order 1, that is the Laurent series has only the coefficient in the principal part.   "
 },
@@ -2498,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-38.html#thm-identify-simple-pole",
   "type": "Theorem",
-  "number": "55",
+  "number": "54",
   "title": "",
   "body": "  For a complex function that can be written as a rational function , has a simple pole at if the following hold:                 In this case (and only this case!), the residue for a simple pole is    "
 },
@@ -2507,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-38.html#thm-ML-inequality",
   "type": "Theorem",
-  "number": "56",
+  "number": "55",
   "title": "",
   "body": "  Consider a curve such that the length of is , and a function such that the modulus . Then the ML inequality states that    "
 },
@@ -2570,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-39.html#activities-39-4",
   "type": "Remark",
-  "number": "57",
+  "number": "56",
   "title": "",
   "body": " Specifically on the unit circle we have where , and thus . Therefore we can further rewrite Euler's formula:   "
 },
@@ -2615,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-40.html#thm-fourier-complex",
   "type": "Theorem",
-  "number": "58",
+  "number": "57",
   "title": "",
   "body": "  If is a rational function with , and then    "
 },
@@ -2624,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-40.html#activities-40-5",
   "type": "Remark",
-  "number": "59",
+  "number": "58",
   "title": "",
   "body": " That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!  "
 },
@@ -2660,7 +2615,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-41.html#fact-fourier-easier",
   "type": "Fact",
-  "number": "60",
+  "number": "59",
   "title": "",
   "body": "  Often, an \"easier\" way to solve real integrals is to make them complex integrals. With trig integrals, it is also generally \"easier\" to solve the Fourier transform first, and then take the real or imaginary part appropriately using Euler's formula.  That is,    "
 },
@@ -2669,7 +2624,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-41.html#activities-41-4",
   "type": "Remark",
-  "number": "61",
+  "number": "60",
   "title": "",
   "body": " The Cauchy principal value is a method for assigning values to specific improper integrals that would otherwise be undefined. For us, this means we want to evaluate an integral that has a singularity that falls on the real line.  The value of this otherwise undefined integral is called the principal value . We can turn the real integral into a contour integral that travels the upper half plane. Then singularities in the upper half plane (and not on the real line) contribute times their residues, as we have previously seen. Singularities on the real line contribute to the contour integral halfway between and , or just . That is,   "
 },
