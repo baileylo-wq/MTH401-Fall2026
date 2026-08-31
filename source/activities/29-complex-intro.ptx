@@ -48,7 +48,7 @@
   polar form <m>re^{i\theta}</m>.</p>
         <image width="25%" margins="0% 75%">
     <shortdescription>Coordinates to plot complex numbers.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-3.1-grid1">
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-1-grid1">
         <diagram dimensions="(250,250)" margins="5">
           <coordinates bbox="(-4,-4,4,4)">
             <grid-axes  xlabel="Re(z)" ylabel="Im(z)"/>
@@ -65,7 +65,7 @@
   it in Cartesian form <m>a+bi</m>.</p>
   <image width="25%" margins="0% 75%">
     <shortdescription>Coordinates to plot complex numbers.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-3.1-grid2">
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-1-grid2">
         <diagram dimensions="(250,250)" margins="5">
           <coordinates bbox="(-4,-4,4,4)">
             <grid-axes  xlabel="Re(z)" ylabel="Im(z)"/>
@@ -95,7 +95,7 @@
   <m>\overline{4e^{3i\pi/4}}</m>.</p>
         <image width="25%" margins="0% 75%">
     <shortdescription>Coordinates to plot complex numbers.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-3.1-grid3">
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-1-grid3">
         <diagram dimensions="(250,250)" margins="5">
           <coordinates bbox="(-4,-4,4,4)">
             <grid-axes  xlabel="Re(z)" ylabel="Im(z)"/>

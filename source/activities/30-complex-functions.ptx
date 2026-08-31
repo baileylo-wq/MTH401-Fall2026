@@ -20,7 +20,7 @@
 <sidebyside widths="23% 77%">
   <image>
     <shortdescription>Coordinates to plot complex numbers.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-3.2-grid1">
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-2-grid1">
         <diagram dimensions="(250,250)" margins="5">
           <coordinates bbox="(-4,-4,4,4)">
             <grid-axes  xlabel="Re(z)" ylabel="Im(z)"/>
@@ -55,7 +55,7 @@
  <sidebyside widths="23% 77%">
   <image>
     <shortdescription>Coordinates to plot complex numbers.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-3.2-grid2">
+      <prefigure xmlns="https://prefigure.org" label="prefigure-3-2-grid2">
         <diagram dimensions="(250,250)" margins="5">
           <coordinates bbox="(-4,-4,4,4)">
             <grid-axes  xlabel="Re(z)" ylabel="Im(z)"/>
