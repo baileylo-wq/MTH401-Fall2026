@@ -269,7 +269,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -288,7 +291,9 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">0. Review of Calculus III</span><div class="print-links"><a href="?printpreview=activities-3" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<em class="alert">MTH 401</em>
+<div class="para" id="activities-3-2">
+<em class="alert">MTH 401</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="objectives goal-like" id="activities-3-3"><h2 class="heading"><span class="type">Objectives</span></h2>
 <div class="introduction" id="activities-3-3-1">
 <div class="para" id="activities-3-3-1-1">It’s important we recall the following ideas which we will use throughout this class:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -333,11 +338,32 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="exr-x-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="exr-x-2-1-1">Find the dot products <span class="process-math">\(A\cdot A\)</span> and <span class="process-math">\(A\cdot B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="exr-x-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-2-2-1">
+<span class="process-math">\(A\cdot A  = 2^2 + (-3)^2+2^2  = 17\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exr-x-2-2-2">
+<span class="process-math">\(A\cdot B  =(2)(-1)+(-3)(0)+(2)(3) =4\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.a.1"><a tabindex="-1" href="#exr-x-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.6in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#exr-x-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="exr-x-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="exr-x-3-1-1">How does this help you find the length of <span class="process-math">\(A\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exr-x-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-3-2-1">
+<span class="process-math">\(|A| = \sqrt{A\cdot A} = \sqrt{17}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.b.1"><a tabindex="-1" href="#exr-x-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="0.6in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#exr-x-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
@@ -345,11 +371,31 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="exr-x-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="exr-x-4-1-1">What is the angle between <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="exr-x-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-4-2-1">
+<span class="process-math">\(A\cdot B = |A| |B| \cos{\theta}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exr-x-4-2-2">
+<span class="process-math">\(\theta = \cos^{-1}{\frac{A\cdot B}{|A| |B|}} = \cos^{-1}{\frac{4}{\sqrt{17}\sqrt{10}}} \approx 72.134^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.c.1"><a tabindex="-1" href="#exr-x-4-2" title="Copy heading and permalink for Solution 1.c.1" aria-label="Copy heading and permalink for Solution 1.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.6in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#exr-x-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="exr-x-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
 <div class="para" id="exr-x-5-1-1">How can the dot product detect when two vectors are orthogonal?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exr-x-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-5-2-1">Two vectors are orthogonal if and only if their dot product is 0.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.d.1"><a tabindex="-1" href="#exr-x-5-2" title="Copy heading and permalink for Solution 1.d.1" aria-label="Copy heading and permalink for Solution 1.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="0.6in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#exr-x-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
@@ -357,11 +403,31 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="exr-x-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
 <div class="para" id="exr-x-6-1-1">If <span class="process-math">\(C\)</span> is a vector and <span class="process-math">\(C\cdot C=0\text{,}\)</span> what does this say about <span class="process-math">\(C\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="exr-x-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-6-2-1">
+<span class="process-math">\(C\)</span> is orthogonal to itself, so <span class="process-math">\(C\)</span> is the zero vector.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.e.1"><a tabindex="-1" href="#exr-x-6-2" title="Copy heading and permalink for Solution 1.e.1" aria-label="Copy heading and permalink for Solution 1.e.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.6in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.e"><a tabindex="-1" href="#exr-x-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
 </article>
 <article class="task exercise-like" id="exr-x-7"><h3 class="heading"><span class="codenumber">(f)</span></h3>
 <div class="para" id="exr-x-7-1-1">Find the cross product <span class="process-math">\(A\times B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exr-x-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-7-2-1">
+<span class="process-math">\(A\times B = \begin{vmatrix}\vec{i} \amp \vec{j}\amp \vec{k}
+\\ 2\amp-3 \amp 2 \\ -1 \amp 0 \amp 3\end{vmatrix} =
+(-9,-8,-3)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.f.1"><a tabindex="-1" href="#exr-x-7-2" title="Copy heading and permalink for Solution 1.f.1" aria-label="Copy heading and permalink for Solution 1.f.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="0.8in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.f"><a tabindex="-1" href="#exr-x-7" title="Copy heading and permalink for Task 1.f" aria-label="Copy heading and permalink for Task 1.f">🔗</a></div>
@@ -369,11 +435,28 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="exr-x-8"><h3 class="heading"><span class="codenumber">(g)</span></h3>
 <div class="para" id="exr-x-8-1-1">Describe in words how you would find the direction in which <span class="process-math">\(A\times B\)</span> points.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="exr-x-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-8-2-1">Right palm points in direction of <span class="process-math">\(A\text{,}\)</span> fingers sweep towards <span class="process-math">\(B\text{,}\)</span> your thumb points in the direction of <span class="process-math">\(A\times B\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.g.1"><a tabindex="-1" href="#exr-x-8-2" title="Copy heading and permalink for Solution 1.g.1" aria-label="Copy heading and permalink for Solution 1.g.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.6in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.g"><a tabindex="-1" href="#exr-x-8" title="Copy heading and permalink for Task 1.g" aria-label="Copy heading and permalink for Task 1.g">🔗</a></div>
 </article>
 <article class="task exercise-like" id="exr-x-9"><h3 class="heading"><span class="codenumber">(h)</span></h3>
 <div class="para" id="exr-x-9-1-1">What is <span class="process-math">\(A\times A\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exr-x-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exr-x-9-2-1">
+<span class="process-math">\(A\times A=\vec{0}\)</span> since <span class="process-math">\(A\)</span> is parallel to itself<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exr-x-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.h.1"><a tabindex="-1" href="#exr-x-9-2" title="Copy heading and permalink for Solution 1.h.1" aria-label="Copy heading and permalink for Solution 1.h.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="0.8in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.h"><a tabindex="-1" href="#exr-x-9" title="Copy heading and permalink for Task 1.h" aria-label="Copy heading and permalink for Task 1.h">🔗</a></div>
@@ -403,6 +486,21 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="activities-3-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activities-3-5-2-1-1">Create a parametrization for each of the curves.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-3-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-3-5-2-2-1">There are many different parameterizations.  One way is:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-3-5-2-2-2">For the line, choose <span class="process-math">\(\vec{r}_0=(1,1)\text{,}\)</span> then the line moves along by <span class="process-math">\(\vec{v}=(2,-1)\text{,}\)</span> so <span class="process-math">\({\vec{r}(t)=(1,1)+t(2,1)
+= (1+2t, 1-t)}
+\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-5-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-3-5-2-2-3">For the circle, it has center <span class="process-math">\(\vec{r}_0=(-1,1)\)</span> and radius <span class="process-math">\(\rho = 2\text{,}\)</span> so <span class="process-math">\({\vec{r}(t) = (-1,1) + 2(\cos{t}, \sin{t}) 
+= (-1 + 2\cos{t}, 1+2\sin{t})}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-5-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.a.1"><a tabindex="-1" href="#activities-3-5-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activities-3-5-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
@@ -421,11 +519,29 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="activities-3-6-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activities-3-6-2-1-1">Find the gradient <span class="process-math">\(\nabla f(x,y)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-3-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-3-6-2-2-1">
+<span class="process-math">\(\ds \nabla f = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y} \right) = (2x-2y, -2x+1)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.a.1"><a tabindex="-1" href="#activities-3-6-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.8in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activities-3-6-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-3-6-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-3-6-3-1-1">If you are at the point <span class="process-math">\((1,1)\text{,}\)</span> what is the gradient there?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-3-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-3-6-3-2-1">
+<span class="process-math">\(\nabla f(1,1) = (0,-1)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.b.1"><a tabindex="-1" href="#activities-3-6-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="0.8in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activities-3-6-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
@@ -433,11 +549,29 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="activities-3-6-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="activities-3-6-4-1-1">Suppose <span class="process-math">\(f(x,y)\)</span> is measuring the elevation of a landscape in feet. In what direction should you move from the point <span class="process-math">\((1,1)\)</span> to move most steeply uphill? In what direction should you move to stay at the same elevation?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-3-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-3-6-4-2-1">The gradient points in the direction of steepest ascent, so you should go in the direction <span class="process-math">\((0,-1)\)</span> to go uphill the fastest. The gradient is perpendicular to the level curve ( where elevation is the same ), so <span class="process-math">\((1,0)\)</span> since it’s perpendicular to the gradient at that point.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.c.1"><a tabindex="-1" href="#activities-3-6-4-2" title="Copy heading and permalink for Solution 3.c.1" aria-label="Copy heading and permalink for Solution 3.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.8in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#activities-3-6-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-3-6-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
 <div class="para" id="activities-3-6-5-1-1">Suppose your motion in the plane is given by the function <span class="process-math">\(r(t) = (t^{2}, t^{3})\text{.}\)</span> What is your location at time <span class="process-math">\(t=1\)</span> and what is your velocity?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-3-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-3-6-5-2-1">location: <span class="process-math">\(\vec{r}(1) = (1,1)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-3-6-5-2-2">velocity: <span class="process-math">\(\vec{v}(t) = \vec{r}'(t) = (2t, 3t^2)\)</span> so <span class="process-math">\(\vec{v}(1) = (2,3)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.d.1"><a tabindex="-1" href="#activities-3-6-5-2" title="Copy heading and permalink for Solution 3.d.1" aria-label="Copy heading and permalink for Solution 3.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="0.8in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.d"><a tabindex="-1" href="#activities-3-6-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
@@ -445,14 +579,28 @@ A \amp = (2,-3,2),  \amp  B \amp= (-1,0,3).
 <article class="task exercise-like" id="activities-3-6-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
 <div class="para" id="activities-3-6-6-1-1">If <span class="process-math">\(t\)</span> is measured in seconds, at what rate, in feet per second, are you moving uphill at <span class="process-math">\(t=1\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-3-6-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-3-6-6-2-1">
+<span class="process-math">\(\ds \frac{\partial f}{\partial t} = \nabla f(1,1) \cdot \vec{v}(1) = (0,-1)\cdot (2,3) = -3\)</span> ft/s<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-6-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.e.1"><a tabindex="-1" href="#activities-3-6-6-2" title="Copy heading and permalink for Solution 3.e.1" aria-label="Copy heading and permalink for Solution 3.e.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.8in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.e"><a tabindex="-1" href="#activities-3-6-6" title="Copy heading and permalink for Task 3.e" aria-label="Copy heading and permalink for Task 3.e">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-3-6" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-3-7"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="introduction" id="activities-3-7-1">
 <div class="para" id="activities-3-7-1-1">Sketch the field <span class="process-math">\(F(x,y) = (y^{2}, 2x)\)</span> at the nine points <span class="process-math">\((x,y)\)</span> where <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> take on the values <span class="process-math">\(-1\text{,}\)</span> <span class="process-math">\(0\text{,}\)</span> and <span class="process-math">\(1\text{.}\)</span> (You don’t necessarily need to draw the vectors to scale.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="generated/prefigure/prefigure-401-0-soln.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#activities-3-7-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#activities-3-7" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
