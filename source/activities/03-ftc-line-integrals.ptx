@@ -3,9 +3,11 @@
 <worksheet>
     <title>1.2. The FTC of line integrals</title>
 
+    <p>
     <alert>
         MTH 401
     </alert>
+  </p>
 
     <definition xml:id="def-conservative-field">
         <statement>

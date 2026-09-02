@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>1.1. Evaluating line integrals</title>
-
+<p>
   <alert>MTH 401</alert>
+</p>
 
   <subsection xml:id="subsubsec-vector-calculus">
     <title>Section 1: Vector Calculus</title>
