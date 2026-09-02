@@ -109,7 +109,7 @@
       <title>Homework</title>
 
       <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
+      <xi:include href="./homework/hw01.ptx"/>
 
     </chapter>
 

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 1</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, September 14 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <alert>Instructions:</alert>
+            <p>
+                Homework submissions should represent your very best work.
+                Your work should be neat, clearly presented and complete.
+                In particular, include complete sentences, where appropriate, to
+                explain your thinking.
+                Include the problems in the order given below and be sure to
+                allow plenty of room for your work.
+                You will generally be marked on the methods used to solve a
+                problem rather than just the final answer; answers alone will
+                receive little credit.
+            </p>
+        </p>
+    </introduction>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that <m>\vec{A}(t)</m> and <m>\vec{B}(t)</m> are two
+                vector-valued functions.
+                Explain why
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    <m>\frac{d}{dt}(\vec{A}\cdot\vec{B}) = \left(\frac{d}{dt}\vec{A}\right) \cdot\vec{B}+ \vec{A}\cdot\frac{d}{dt}\vec{B}</m>.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    <m>\frac{d}{dt}(\vec{A}\times\vec{B}) = \left(\frac{d}{dt}\vec{A}\right) \times\vec{B}+ \vec{A}\times\frac{d}{dt}\vec{B}</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <p>
+        <em>Note:</em> These relationships are important because they help us
+        work with vector-valued quantities without reference to their individual
+        components.
+        You will want to use these relationships in the following problems.
+    </p>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that an object's position as it moves through space is
+                given by the function <m>\vec{r}(t)</m>.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    If the object moves in a circle centered at the origin, we
+                    know that <m>|\vec r(t)|</m> is constant.
+                    Explain why <m>\vec r \cdot \vec r</m> is constant, and then
+                    use the results of problem 1(a) to explain why the velocity
+                    and position functions are orthogonal.
+                    (The object is not necessarily moving at constant speed.)
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If an object moves with constant speed, we know
+                    <m>|\vec v(t)|</m> is constant.
+                    Explain why <m>\vec v \cdot \vec v</m> is constant, and then
+                    use the results of problem 1(a) to explain why the
+                    acceleration and velocity functions are orthogonal.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose an object moves under a central force <mdash/> that is,
+                the force vector is always parallel to the position vector.
+                By Newton's second law, this implies that the acceleration is
+                always parallel to the position.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Explain why the vector function
+                    <m>\vec{h}=\vec{r}\times\vec{v}</m> is constant.
+                    Hint: use problem 1(b).
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Explain why <m>\vec{h}\cdot\vec{r}= 0</m> and use this
+                    observation to explain why the object moves in a plane.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose again that an object is moving under a central force (as
+                in problem 3, so the force vector is always parallel to the
+                position vector, which is always parallel to the acceleration,
+                and we can use the results of problem 3) and that we have chosen
+                a coordinate system so that it moves in the <m>xy</m>-plane.
+                Using polar coordinates, we will write
+                <md>
+                    \vec{r}= \rho(t)\cos(\theta(t)) ~\vec{i}+ \rho(t)\sin(\theta(t)) ~\vec{j},
+                </md>
+                where <m>\rho</m> and <m>\theta</m> are functions of time
+                <m>t</m>.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Show that <m>\vec{h}= \rho^{2}\frac{d\theta}{dt}\vec{k}</m>,
+                    (where <m>\vec h = \vec r \times \vec v</m> as in problem
+                    3).
+                    Note that you will first need to find <m>\vec{v}</m> from 
+                    <m>\vec{r}</m>, in which case both the chain rule and the 
+                    product rule may come in handy.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The line between an object and the object it is orienting
+                    (such as a planet and the sun) sweeps out an amount of area
+                    <m>A(t)</m> in space that depends on time, as shown below.
+                </p>
+            
+           <image width="35%">
+            <shortdescription>A planet orbiting the sun with the area A(t) sweeping out as the planet orbits.</shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-401-hw1-1">
+                <diagram dimensions="(300,180)" margins="5">
+                    <coordinates bbox="(0,0,8,6)">
+                        <define-shapes>
+                            <ellipse at="A" center="(4,3)" axes="(2.6,3)" rotate="82"/>
+                            <polygon at="C" points="((6.9,3.5),(4.5,3),(3.2,5.5),(10,10))" closed="yes"/>
+                            <polygon at="B" points="((6.9,3.5),(4.5,3),(3.2,5.5))" closed="no"/>
+                        </define-shapes>
+                        <shape shapes="B" stroke="black"/>
+                        <shape shapes="A,C" operation="intersection" fill="lightgray" stroke="black"/>
+                        <shape shapes="B,A" operation="difference" fill="magenta" stroke="black"/>
+                        <shape shape="A" stroke="black"/>
+                        <shape shape="B" stroke="black"/>
+                        <label anchor="(6,3.6)" alignment="nw">
+                            <m>
+                                A(t)
+                            </m>
+                        </label>
+                        <point p="(4.5,3)" alignment="southwest" fill="white">
+                            Sun
+                        </point>
+                        <point p="(3.2,5.5)" alignment="northwest" fill="white">
+                            Planet
+                        </point>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+           </image>
+
+     
+
+    <p>
+        In Math 202 or 203 (Calc 2 or Calc 3), you may have seen how to compute
+        area in polar coordinates.
+        To summarize, if <m>\rho(\theta(t))</m> expresses the distance from the
+        origin as a function of <m>\theta</m> (which is a function of <m>t</m>
+        ), then the area between the curve and the origin is
+        <md>
+            A = \int_{\theta_0}^{\theta(t)}\frac{1}{2} (\rho(\tau))^{2}~d\tau.
+        </md>
+        Use the Fundamental Theorem of Calculus to find <m>\frac{dA}{dt}</m> and
+        explain why it is constant.
+        Hint: when you take the derivative of the antiderivative, you end up at
+        the original function, however you need to account for the fact that
+        <m>\theta</m> is a function of <m>t</m> and use the chain rule where
+        appropriate.
+    </p>
+
+    <p>
+        <em>Note:</em> This is Kepler's second law, which says that the line
+        joining the origin to the object sweeps out equal areas in equal times.
+    </p>
+
+                </statement>
+        </task>
+        
+    </exercise>
+
+
+<!--
+ <exercise>
+        <introduction>
+            <p>
+                Find the work done by the force <m>\vec{F}=(x^{2}y,-xy^{2})</m>
+                when it moves an object from <m>(1,1)</m> to <m>(4,2)</m> along
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    the straight line segment joining the points.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    the path of line segments connecting <m>(1,1)</m>,
+                    <m>(1,2)</m>, and <m>(4,2)</m>.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    -->
+
+   
+    <exercise>
+        <statement>
+            <p>
+                Is the following force field conservative:
+                <md>
+                    \vec{F}=(y,x,z)?
+                </md>
+            </p>
+
+            <p>
+                Find the work done by the force <m>F</m> in moving an object
+                around the unit circle in the <m>xy</m>-plane.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the work done by the force
+                <md>
+                    \vec{F}=(-y,x,z)
+                </md>
+                in moving an object from <m>(1,0,0)</m> to <m>(-1,0,\pi)</m>
+                along the helix <md>{\vec{r}(t)=(\cos t,\sin t, t)}</md>.
+                (Hint: <m>\vec{r}(t)</m> is the parameterization of the curve
+                with <m>{x(t) = \cos t}</m>, <m>{y(t)=\sin t,}</m> <m>{z(t) = t}</m>.)
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Near the surface of the earth, we approximate the gravitational
+                force on an object of mass <m>m</m> by
+                <md>\vec{F}_{near}=-mg\vec{k}= (0,0,-mg)</md>.
+                Further away from the surface of the earth, the gravitational
+                force at position <m>\vec{r}= (x,y,z)</m> is
+                <md>
+                    \vec{F}_{far}=-\frac{C}{r^{3}}\vec{r},
+                </md>
+                where <m>C</m> is a constant and
+                <m>r=|\vec{r}| = \sqrt{x^{2}+y^{2}+z^{2}}</m>.
+                Note: For the gravitational force further away from the surface
+                of the earth, you will need to rewrite <m>\vec F_{far}</m> as a vector
+                by expressing <m>r</m> and <m>\vec r</m> in terms of <m>x,y</m>
+                and <m>z</m>.
+            </p>
+
+            <p>
+                Show that both fields are conservative and find a potential for
+                <m>\vec{F}_{near}</m>.  Bonus points if you can also find a potential for
+                <m>\vec{F}_{far}</m>.
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
+
+
+

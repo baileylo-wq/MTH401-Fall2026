@@ -1,0 +1,182 @@
+<TODO type="unknown-macro">
+    <!--todo: unknown macro "\documentclass"-->
+    <c>\documentclass</c>
+</TODO>
+
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{9.0in}
+
+\usepackage{palatino, amsmath, graphicx}
+
+\newcommand{\real}{{\bf R}}
+\newcommand{\maple}[1]{\medskip\hspace{.25in}\begin{tt} > {\bf #1}
+  \end{tt}\medskip} 
+\newcommand{\response}[1]{\medskip\begin{center}{\em #1}
+  \end{center}\medskip} 
+\newcommand{\task}[1]{\medskip \begin{quote} {\em Task #1}
+  \end{quote}\medskip} 
+
+
+\input epsf.sty
+\begin{document}
+
+\noindent
+{\bf Mathematics 401} \\
+{\bf Homework 1} \\
+{\bf Due:  Monday, September 9 at 11:59pm}
+
+\bigskip
+\medskip Homework submissions should represent your very best work.
+Your work should be neat, clearly presented and complete.  In
+particular, include complete sentences, where appropriate, to explain your thinking.  Include the problems in the order given below and be
+sure to allow plenty of room for your work.  You will generally be marked on the methods used to solve a problem rather than just the final
+answer; answers alone will receive little credit. 
+
+\medskip
+
+To submit the first assignment, scan it using any scanning software available to you (ex: DocScanner, CamScanner, Google Drive for android, the Notes app for iPhone, etc.), and submit the scanned work to Blackboard under Homework 1. 
+
+\begin{enumerate}
+% \item Prove the {\em Jacobi identity}:
+% $$
+% \vec{A}\times(\vec{B}\times\vec{C}) + 
+% \vec{B}\times(\vec{C}\times\vec{A}) + 
+% \vec{C}\times(\vec{A}\times\vec{B}) = 0.
+% $$
+
+\item Suppose that $\vec{A}(t)$ and $\vec{B}(t)$ are two vector-valued
+  functions.  Explain why
+  
+\begin{enumerate}
+ \item $\frac{d}{dt} (\vec{A}\cdot\vec{B}) = \left(\frac{d}{dt}\vec{A}\right)
+  \cdot\vec{B} + \vec{A}\cdot\frac{d}{dt}\vec{B}$.
+
+ \item $\frac{d}{dt} (\vec{A}\times\vec{B}) = \left(\frac{d}{dt}\vec{A}\right)
+  \times\vec{B} + \vec{A}\times\frac{d}{dt}\vec{B}$.
+\end{enumerate}
+
+  \medskip {\em Note:}  These relationships are important because they
+  help us work with vector-valued quantities without reference to
+  their individual components.  You will want to use these
+  relationships in the following problems.
+
+\item Suppose that an object's position as it moves through space is
+  given by the function $\vec{r}(t)$.
+
+  \begin{enumerate}
+  \item If the object moves in a circle centered at the origin, we know that $|\vec r(t)|$ is constant.  Explain why $\vec r \cdot \vec r$ is constant, and then
+  use the results of problem 1(a) to explain why the velocity and
+  position functions are orthogonal.  (The object is not necessarily
+  moving at constant speed.)
+
+ \item If an object moves with constant speed, we know $|\vec v(t)|$ is constant.  Explain why $\vec v \cdot \vec v$ is constant, and then use the results of problem 1(a) to 
+  explain why the acceleration and velocity functions are
+  orthogonal.
+ \end{enumerate}
+
+\item Suppose an object moves under a central force---that is, the
+  force vector is always parallel to the position vector.  By Newton's
+  second law, this implies that the acceleration is always parallel to
+  the position.  
+
+  \begin{enumerate}
+  \item Explain why the vector function $\vec{h}=\vec{r}\times\vec{v}$ is
+  constant.  Hint: use problem 1(b).
+
+\item Explain why $\vec{h}\cdot\vec{r} = 0$
+  and use this observation to explain why the object moves in a plane.
+\end{enumerate}
+
+\newpage
+\item Suppose again that an object is moving under a central force (as in problem 3, so the force vector is always parallel to the position vector, which is always parallel to the acceleration, and we can use the results of problem 3) and
+  that we have chosen a coordinate system so that it moves in
+  the $xy$-plane.  Using polar coordinates, we will write
+  $$
+  \vec{r} = \rho(t)\cos(\theta(t)) ~\vec{i} + \rho(t)\sin(\theta(t)) ~\vec{j},
+  $$
+  where $\rho$ and $\theta$ are functions of time $t$.
+
+  \medskip
+ \begin{enumerate}
+ \item Show that $\vec{h} = \rho^2\frac{d\theta}{dt}\vec{k}$, (where $\vec h = \vec r \times \vec v$ as in problem 3).  Note that the chain rule may come in handy, and so will the product rule.
+
+  \medskip
+  \item The line between an object and the object it is orienting (such as a planet and the sun) sweeps out an amount of area $A(t)$ in space that depends on time, as shown below.
+  
+  \begin{center}
+    \includegraphics{01-ellipse.eps}
+  \end{center}  
+  
+  In Math 202 or 203, you may have seen how to compute area in
+  polar coordinates.  To summarize, if $\rho(\theta(t))$ expresses the
+  distance from the origin as a function of $\theta$ (which is a function of $t$), then the area
+  between the curve and the origin is
+  $$
+  A = \int_{\theta_0}^{\theta(t)} \frac12 (\rho(\tau))^2~d\tau.
+  $$
+  Use the Fundamental Theorem of Calculus to find $\frac{dA}{dt}$ and
+  explain why it is constant.  Hint: when you take the derivative of the antiderivative, you end up at the original function, however you need to account for the fact that $\theta$ is a function of $t$ and use the chain rule where appropriate.
+
+  {\em Note:} This is Kepler's second law, which says that the line
+  joining the origin to the object sweeps out equal areas in equal
+  times. 
+   \end{enumerate}
+  
+\item Find the work done by the force $\vec{F}=(x^2y,-xy^2)$ when it
+  moves an object from $(1,1)$ to $(4,2)$ along 
+
+  \medskip
+   \begin{enumerate}
+   \item the straight line segment joining the points.  %Ans:  86/3
+
+  \medskip
+  \item the path of line segments connecting $(1,1)$, $(1,2)$,  and $(4,2)$. 
+   \end{enumerate}
+
+
+%%\item Find the work done by $\vec{F}=(2xy-3, x^2)$ in moving an object from $(1,0)$ to $(0,1)$ along
+  %Ans:  3 for all
+%   \begin{enumerate}
+%  \item a straight line segment.
+%  \medskip
+%  \item a circular arc centered at the origin.
+%  \medskip
+%  \item a vertical segment to $(1,1)$, followed by a horizontal segment.
+% \end{enumerate}
+
+\item Is the following force field conservative:
+  $$
+  \vec{F}=(y,x,z)?
+  $$
+
+  Find the work done by the force $F$ in moving an object around the
+  unit circle in the $xy$-plane.
+
+\item Find the work done by the force
+  $$
+  \vec{F}=(-y,x,z)
+  $$
+  in moving an object from $(1,0,0)$ to $(-1,0,\pi)$ along the helix
+  $\vec{r}(t)=(\cos t,\sin t, t)$.  (Hint:  $\vec{r}(t)$ is the parameterization of the curve with $x(t) = \cos t, y(t)=\sin t, z(t) = t$.)
+  
+\item Near the surface of the earth, we approximate the gravitational
+  force on an object of mass $m$ by $\vec{F}=-mg\vec{k} = (0,0,-mg)$.  Further
+  away from the surface of the earth, the gravitational force at
+  position $\vec{r} = (x,y,z)$ is
+  $$
+  \vec{F}=-\frac{C}{r^3}\vec{r},
+  $$
+  where $C$ is a constant and $r=|\vec{r}| = \sqrt{x^2+y^2+z^2}$.  Note: For the gravitational force further away from the surface of the earth, you will need to
+  rewrite $\vec F$ as a vector by expressing $r$ and $\vec r$ in terms of $x,y$ and $z$.
+
+  Show that both fields are conservative and find a potential for each.
+
+
+\end{enumerate}
+
+
+\end{document}
