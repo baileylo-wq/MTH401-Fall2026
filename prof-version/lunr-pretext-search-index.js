@@ -376,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "1.2. The FTC of line integrals",
-  "body": " 1.2. The FTC of line integrals  MTH 401    A field is conservative if there exists some function for which . The function is called the potential function for .  (Note that physicists usually use , but it is essentially the same.)      The FTC for line integrals : if is conservative and , then where goes from point to point .      Suppose that where .     Find the coordinates of the field .      Evaluate where is the upper half of the unit circle oriented in the counter-clockwise direction.      Evaluate where is the straight line segment from to .       Suppose that . Evaluate where and are the curves as shown below.   The graph of three line segments with directions, see description below.          \\displaystyle C_1    \\displaystyle C_2       Three directional curves are shown, is the straight line from to , is the line from to , and the third line goes from to .        Let's look at fields and the concept of a conservative field.     Assume is a closed curve; that is, has the same initial and final point. If is a conservative vector field, what is the line integral . (Note: we often write such as integral as to denote the fact that is closed.) Explain your response.      Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral . (You did this last class.)      Is in the previous part conservative? Explain your response.       Suppose that is the curve parametrized by where . Evaluate the line integral      Which, if either, of the fields below could be conservative? Explain your response.    A vector field, all vectors point radially away from the origin.    f(x,y) = (x,y)          A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.    f(x,y) = (-y,x)              From MTH 203 (Calculus III), you may remember that the second mixed partials of a reasonable function are equal; that is, That is, it doesn't matter in which order we compute second mixed partials.  This gives us a simple test to determine when a field is conservative.     If is conservative, what relationship must hold between and ?      Verify that this relationship holds for the field in problems 1 and 2.      Does this relationship hold for the field in problem 3?     "
+  "body": " 1.2. The FTC of line integrals  MTH 401    A field is conservative if there exists some function for which . The function is called the potential function for .  (Note that physicists usually use , but it is essentially the same.)      The FTC for line integrals : if is conservative and , then where goes from point to point .      Suppose that where .     Find the coordinates of the field .      Evaluate where is the upper half of the unit circle oriented in the counter-clockwise direction.      Evaluate where is the straight line segment from to .       Suppose that . Evaluate where and are the curves as shown below ( has two pieces!).   The graph of three line segments with directions, see description below.          \\displaystyle C_1    \\displaystyle C_2       Three directional curves are shown, is the straight line from to , is the line from to , and the third line goes from to .        Let's look closer at fields and the concept of a conservative field.     Assume is a closed curve; that is, has the same initial and final point. If is a conservative vector field, what is the line integral ? (Note: we often write such as integral as to denote the fact that is closed.) Explain your response.      Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral . (You did this last worksheet.)      Is in the previous part conservative? Explain your response.       Suppose that is the curve parametrized by where . Evaluate the line integral       Which, if either, of the fields below could be conservative? Explain your response.    A vector field, all vectors point radially away from the origin.    f(x,y) = (x,y)          A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.    f(x,y) = (-y,x)              From MTH 203 (Calculus III), you may remember that the second mixed partials of a reasonable function are equal; that is, That is, it doesn't matter in which order we compute second mixed partials.  This gives us a simple test to determine when a field is conservative.     If is conservative, what relationship must hold between and ?      Verify that this relationship holds for the field in problems 1 and 2.      Does this relationship hold for the field in problem 3?     "
 },
 {
   "id": "def-conservative-field",
@@ -412,7 +412,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Suppose that . Evaluate where and are the curves as shown below.   The graph of three line segments with directions, see description below.          \\displaystyle C_1    \\displaystyle C_2       Three directional curves are shown, is the straight line from to , is the line from to , and the third line goes from to .     "
+  "body": "  Suppose that . Evaluate where and are the curves as shown below ( has two pieces!).   The graph of three line segments with directions, see description below.          \\displaystyle C_1    \\displaystyle C_2       Three directional curves are shown, is the straight line from to , is the line from to , and the third line goes from to .     "
 },
 {
   "id": "activities-5-7",
@@ -421,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Let's look at fields and the concept of a conservative field.     Assume is a closed curve; that is, has the same initial and final point. If is a conservative vector field, what is the line integral . (Note: we often write such as integral as to denote the fact that is closed.) Explain your response.      Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral . (You did this last class.)      Is in the previous part conservative? Explain your response.    "
+  "body": "  Let's look closer at fields and the concept of a conservative field.     Assume is a closed curve; that is, has the same initial and final point. If is a conservative vector field, what is the line integral ? (Note: we often write such as integral as to denote the fact that is closed.) Explain your response.      Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral . (You did this last worksheet.)      Is in the previous part conservative? Explain your response.    "
 },
 {
   "id": "activities-5-8",
@@ -430,7 +430,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Suppose that is the curve parametrized by where . Evaluate the line integral   "
+  "body": "  Suppose that is the curve parametrized by where . Evaluate the line integral    "
 },
 {
   "id": "activities-5-9",
@@ -2674,13 +2674,76 @@ var ptx_lunr_docs = [
   "body": " Handouts    "
 },
 {
-  "id": "homework",
+  "id": "homework-2",
   "level": "1",
-  "url": "homework.html",
-  "type": "Chapter",
+  "url": "homework-2.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "Homework",
-  "body": " Homework    "
+  "title": "Homework 1",
+  "body": " Homework 1    MTH 401    Due: Monday, September 14 at the beginning of class. You will turn in a paper copy!    Instructions:  Homework submissions should represent your very best work. Your work should be neat, clearly presented and complete. In particular, include complete sentences, where appropriate, to explain your thinking. Include the problems in the order given below and be sure to allow plenty of room for your work. You will generally be marked on the methods used to solve a problem rather than just the final answer; answers alone will receive little credit.      Suppose that and are two vector-valued functions. Explain why      .       .      Note: These relationships are important because they help us work with vector-valued quantities without reference to their individual components. You will want to use these relationships in the following problems.    Suppose that an object's position as it moves through space is given by the function .     If the object moves in a circle centered at the origin, we know that is constant. Explain why is constant, and then use the results of problem 1(a) to explain why the velocity and position functions are orthogonal. (The object is not necessarily moving at constant speed.)      If an object moves with constant speed, we know is constant. Explain why is constant, and then use the results of problem 1(a) to explain why the acceleration and velocity functions are orthogonal.       Suppose an object moves under a central force that is, the force vector is always parallel to the position vector. By Newton's second law, this implies that the acceleration is always parallel to the position.     Explain why the vector function is constant. Hint: use problem 1(b).      Explain why and use this observation to explain why the object moves in a plane.       Suppose again that an object is moving under a central force (as in problem 3, so the force vector is always parallel to the position vector, which is always parallel to the acceleration, and we can use the results of problem 3) and that we have chosen a coordinate system so that it moves in the -plane. Using polar coordinates, we will write where and are functions of time .     Show that , (where as in problem 3). Note that you will first need to find from , in which case both the chain rule and the product rule may come in handy.      The line between an object and the object it is orienting (such as a planet and the sun) sweeps out an amount of area in space that depends on time, as shown below.   A planet orbiting the sun with the area A(t) sweeping out as the planet orbits.                A(t)   Sun  Planet      In Math 202 or 203 (Calc 2 or Calc 3), you may have seen how to compute area in polar coordinates. To summarize, if expresses the distance from the origin as a function of (which is a function of ), then the area between the curve and the origin is Use the Fundamental Theorem of Calculus to find and explain why it is constant. Hint: when you take the derivative of the antiderivative, you end up at the original function, however you need to account for the fact that is a function of and use the chain rule where appropriate.   Note: This is Kepler's second law, which says that the line joining the origin to the object sweeps out equal areas in equal times.        Is the following force field conservative:   Find the work done by the force in moving an object around the unit circle in the -plane.      Find the work done by the force in moving an object from to along the helix . (Hint: is the parameterization of the curve with ,  .)      Near the surface of the earth, we approximate the gravitational force on an object of mass by . Further away from the surface of the earth, the gravitational force at position is where is a constant and . Note: For the gravitational force further away from the surface of the earth, you will need to rewrite as a vector by expressing and in terms of and .  Show that both fields are conservative and find a potential for . Bonus points if you can also find a potential for .    "
+},
+{
+  "id": "homework-2-3",
+  "level": "2",
+  "url": "homework-2.html#homework-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose that and are two vector-valued functions. Explain why      .       .    "
+},
+{
+  "id": "homework-2-5",
+  "level": "2",
+  "url": "homework-2.html#homework-2-5",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose that an object's position as it moves through space is given by the function .     If the object moves in a circle centered at the origin, we know that is constant. Explain why is constant, and then use the results of problem 1(a) to explain why the velocity and position functions are orthogonal. (The object is not necessarily moving at constant speed.)      If an object moves with constant speed, we know is constant. Explain why is constant, and then use the results of problem 1(a) to explain why the acceleration and velocity functions are orthogonal.    "
+},
+{
+  "id": "homework-2-6",
+  "level": "2",
+  "url": "homework-2.html#homework-2-6",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Suppose an object moves under a central force that is, the force vector is always parallel to the position vector. By Newton's second law, this implies that the acceleration is always parallel to the position.     Explain why the vector function is constant. Hint: use problem 1(b).      Explain why and use this observation to explain why the object moves in a plane.    "
+},
+{
+  "id": "homework-2-7",
+  "level": "2",
+  "url": "homework-2.html#homework-2-7",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose again that an object is moving under a central force (as in problem 3, so the force vector is always parallel to the position vector, which is always parallel to the acceleration, and we can use the results of problem 3) and that we have chosen a coordinate system so that it moves in the -plane. Using polar coordinates, we will write where and are functions of time .     Show that , (where as in problem 3). Note that you will first need to find from , in which case both the chain rule and the product rule may come in handy.      The line between an object and the object it is orienting (such as a planet and the sun) sweeps out an amount of area in space that depends on time, as shown below.   A planet orbiting the sun with the area A(t) sweeping out as the planet orbits.                A(t)   Sun  Planet      In Math 202 or 203 (Calc 2 or Calc 3), you may have seen how to compute area in polar coordinates. To summarize, if expresses the distance from the origin as a function of (which is a function of ), then the area between the curve and the origin is Use the Fundamental Theorem of Calculus to find and explain why it is constant. Hint: when you take the derivative of the antiderivative, you end up at the original function, however you need to account for the fact that is a function of and use the chain rule where appropriate.   Note: This is Kepler's second law, which says that the line joining the origin to the object sweeps out equal areas in equal times.    "
+},
+{
+  "id": "homework-2-8",
+  "level": "2",
+  "url": "homework-2.html#homework-2-8",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Is the following force field conservative:   Find the work done by the force in moving an object around the unit circle in the -plane.   "
+},
+{
+  "id": "homework-2-9",
+  "level": "2",
+  "url": "homework-2.html#homework-2-9",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Find the work done by the force in moving an object from to along the helix . (Hint: is the parameterization of the curve with ,  .)   "
+},
+{
+  "id": "homework-2-10",
+  "level": "2",
+  "url": "homework-2.html#homework-2-10",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Near the surface of the earth, we approximate the gravitational force on an object of mass by . Further away from the surface of the earth, the gravitational force at position is where is a constant and . Note: For the gravitational force further away from the surface of the earth, you will need to rewrite as a vector by expressing and in terms of and .  Show that both fields are conservative and find a potential for . Bonus points if you can also find a potential for .   "
 }
 ]
 

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-401-hw1-1-figure" width="310" height="190" viewBox="0 0 310 190">
+  <defs>
+    <clipPath id="prefigure-401-hw1-1-clipPath-0">
+      <rect x="5.0" y="5.0" width="300.0" height="180.0"/>
+    </clipPath>
+    <clipPath id="prefigure-401-hw1-1-clipPath-1">
+      <rect x="5.0" y="5.0" width="300.0" height="180.0"/>
+    </clipPath>
+    <path id="prefigure-401-hw1-1-A" d="M 168.6 17.8 L 161.5 17.1 L 154.5 16.8 L 147.5 16.8 L 140.4 17.1 L 133.5 17.7 L 126.6 18.6 L 119.8 19.8 L 113.2 21.3 L 106.8 23.1 L 100.5 25.1 L 94.4 27.5 L 88.6 30.1 L 83.1 33.0 L 77.8 36.1 L 72.8 39.5 L 68.2 43.0 L 63.9 46.8 L 60.0 50.8 L 56.4 54.9 L 53.2 59.2 L 50.5 63.7 L 48.1 68.2 L 46.2 72.9 L 44.7 77.6 L 43.6 82.5 L 43.0 87.3 L 42.8 92.3 L 43.0 97.2 L 43.7 102.1 L 44.9 107.0 L 46.4 111.8 L 48.4 116.6 L 50.8 121.2 L 53.7 125.8 L 56.9 130.3 L 60.5 134.6 L 64.5 138.7 L 68.8 142.7 L 73.5 146.5 L 78.5 150.1 L 83.8 153.5 L 89.4 156.7 L 95.3 159.6 L 101.4 162.2 L 107.7 164.6 L 114.2 166.7 L 120.8 168.5 L 127.6 170.1 L 134.5 171.3 L 141.4 172.2 L 148.5 172.9 L 155.5 173.2 L 162.5 173.2 L 169.6 172.9 L 176.5 172.3 L 183.4 171.4 L 190.2 170.2 L 196.8 168.7 L 203.2 166.9 L 209.5 164.9 L 215.6 162.5 L 221.4 159.9 L 226.9 157.0 L 232.2 153.9 L 237.2 150.5 L 241.8 147.0 L 246.1 143.2 L 250.0 139.2 L 253.6 135.1 L 256.8 130.8 L 259.5 126.3 L 261.9 121.8 L 263.8 117.1 L 265.3 112.4 L 266.4 107.5 L 267.0 102.7 L 267.2 97.7 L 267.0 92.8 L 266.3 87.9 L 265.1 83.0 L 263.6 78.2 L 261.6 73.4 L 259.2 68.8 L 256.3 64.2 L 253.1 59.7 L 249.5 55.4 L 245.5 51.3 L 241.2 47.3 L 236.5 43.5 L 231.5 39.9 L 226.2 36.5 L 220.6 33.3 L 214.7 30.4 L 208.6 27.8 L 202.3 25.4 L 195.8 23.3 L 189.2 21.5 L 182.4 19.9 L 175.5 18.7 Z" stroke-width="2"/>
+    <path id="prefigure-401-hw1-1-C" d="M 263.8 80.0 L 173.8 95.0 L 125.0 20.0 L 380.0 -115.0 Z" stroke-width="2" clip-path="url(#prefigure-401-hw1-1-clipPath-1)"/>
+    <path id="prefigure-401-hw1-1-B" d="M 263.8 80.0 L 173.8 95.0 L 125.0 20.0" stroke-width="2" clip-path="url(#prefigure-401-hw1-1-clipPath-1)"/>
+  </defs>
+  <use href="#prefigure-401-hw1-1-B" id="prefigure-401-hw1-1-use-0" stroke="black" stroke-width="2" fill="none"/>
+  <path d="M 161.5 17.1 L 154.5 16.8 L 147.5 16.8 L 140.4 17.1 L 133.5 17.7 L 128.0 18.4 L 125.0 20.0 L 173.8 95.0 L 263.8 80.0 L 264.0 79.6 L 263.6 78.2 L 261.6 73.4 L 259.2 68.8 L 256.3 64.2 L 253.1 59.7 L 249.5 55.4 L 245.5 51.3 L 241.2 47.3 L 236.5 43.5 L 231.5 39.9 L 226.2 36.5 L 220.6 33.3 L 214.7 30.4 L 208.6 27.8 L 202.3 25.4 L 195.8 23.3 L 189.2 21.5 L 182.4 19.9 L 175.5 18.7 L 168.6 17.8 L 161.5 17.1 z" id="prefigure-401-hw1-1-path-0" stroke="black" stroke-width="2" fill="#ccc"/>
+  <use href="#prefigure-401-hw1-1-A" id="prefigure-401-hw1-1-use-1" stroke="black" stroke-width="2" fill="none"/>
+  <use href="#prefigure-401-hw1-1-B" id="prefigure-401-hw1-1-use-2" stroke="black" stroke-width="2" fill="none"/>
+  <g id="prefigure-401-hw1-1-label-0" transform="translate(226.0,73.0) translate(-34.2,-18.1)">
+    <g id="prefigure-401-hw1-1-g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -4.528px" width="34.192px" height="18.096px" role="img" focusable="false" viewBox="0 -750 1889 1000" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-401-hw1-1-MJX-2-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"/>
+          <path id="prefigure-401-hw1-1-MJX-2-TEX-N-2061" d=""/>
+          <path id="prefigure-401-hw1-1-MJX-2-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/>
+          <path id="prefigure-401-hw1-1-MJX-2-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"/>
+          <path id="prefigure-401-hw1-1-MJX-2-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math" data-semantic-type="appl" data-semantic-role="simple function" data-semantic-annotation="clearspeak:simple" data-semantic-id="6" data-semantic-children="0,4" data-semantic-content="5,0" data-semantic-speech="upper A left parenthesis t right parenthesis">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="simple function" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-parent="6" data-semantic-operator="appl" data-semantic-speech="upper A">
+              <use data-c="1D434" xlink:href="#prefigure-401-hw1-1-MJX-2-TEX-I-1D434"/>
+            </g>
+            <g data-mml-node="mo" data-semantic-type="punctuation" data-semantic-role="application" data-semantic-id="5" data-semantic-parent="6" data-semantic-added="true" data-semantic-operator="appl" data-semantic-speech="of" transform="translate(750,0)">
+              <use data-c="2061" xlink:href="#prefigure-401-hw1-1-MJX-2-TEX-N-2061"/>
+            </g>
+            <g data-mml-node="mrow" data-semantic-type="fenced" data-semantic-role="leftright" data-semantic-id="4" data-semantic-children="2" data-semantic-content="1,3" data-semantic-parent="6" data-semantic-speech="left parenthesis t right parenthesis" transform="translate(750,0)">
+              <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="open" data-semantic-id="1" data-semantic-parent="4" data-semantic-operator="fenced" data-semantic-speech="left parenthesis">
+                <use data-c="28" xlink:href="#prefigure-401-hw1-1-MJX-2-TEX-N-28"/>
+              </g>
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="2" data-semantic-parent="4" data-semantic-speech="t" transform="translate(389,0)">
+                <use data-c="1D461" xlink:href="#prefigure-401-hw1-1-MJX-2-TEX-I-1D461"/>
+              </g>
+              <g data-mml-node="mo" data-semantic-type="fence" data-semantic-role="close" data-semantic-id="3" data-semantic-parent="4" data-semantic-operator="fenced" data-semantic-speech="right parenthesis" transform="translate(750,0)">
+                <use data-c="29" xlink:href="#prefigure-401-hw1-1-MJX-2-TEX-N-29"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-401-hw1-1-g-0">
+    <g transform="translate(168.8,100.0) translate(-26.6,-0.0)">
+      <g id="prefigure-401-hw1-1-g-3">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.4">Sun</text>
+      </g>
+    </g>
+    <circle cx="173.8" cy="95.0" r="4" stroke="black" stroke-width="2" fill="white"/>
+  </g>
+  <g id="prefigure-401-hw1-1-g-1">
+    <g transform="translate(120.0,15.0) translate(-43.9,-10.8)">
+      <g id="prefigure-401-hw1-1-g-4">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.6">Planet</text>
+      </g>
+    </g>
+    <circle cx="125.0" cy="20.0" r="4" stroke="black" stroke-width="2" fill="white"/>
+  </g>
+</svg>
