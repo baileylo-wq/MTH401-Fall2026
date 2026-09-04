@@ -53,6 +53,11 @@
                     Find the coordinates of the field <m>{\mathbf F}</m>.
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                <m>\ds \mathbf F= \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)=(6xy-\cos x, 3x^2+e^y)</m>
+              </p>
+            </solution>
         </task>
 
         <task workspace="1.25in">
@@ -63,6 +68,16 @@
                     counter-clockwise direction.
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                <md>\lineint{C_1}{F}=\lineint{C_1}{\nabla f} = f(-1,0) - f(1,0)</md>
+                <md>
+                  = (-\sin(-1)+1)-(-\sin(1)+1) = \sin(1)+1+\sin(1)-1 = 2\sin(1)
+                </md>
+                This uses <m>\sin(-1)=-\sin(1)</m> since <m>\sin(x)</m> is an odd function, but you do 
+                not need to simplify all the way to here.
+              </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -72,6 +87,11 @@
                     straight line segment from <m>(1,0)</m> to <m>(-1,0)</m>.
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                It's a conservative field so path doesn't matter.  It's still <m>2\sin(1)</m>.
+              </p>
+            </solution>
         </task>
     </exercise>
 
@@ -124,6 +144,19 @@
                 </description>
             </image>
         </statement>
+        <solution component="show-soln">
+              <p>
+                If <m>\mathbf F</m> is conservative, this problem becomes nicer!  And it is! 
+                <md>
+                  \mathbf F = \nabla f = (2x,3y)
+                </md>
+                so <m>f = x^2+\frac32 y^2</m> (plus any constant but we'll choose 0) works!
+                <md>
+                  \lineint{C_1}{F} = \lineint{C_2}{F} = f(0,2) - f(2,0)=6-4=2.
+                </md>
+                
+              </p>
+            </solution>
     </exercise>
 
     <exercise>
@@ -145,6 +178,14 @@
                     closed.) Explain your response.
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                If we have a closed curve <m>C</m>, it starts and ends at the same point <m>P</m>. 
+                Since <m>\mathbf F</m> is conservative, there exists some function <m>f</m> such that 
+                <m>\mathbf F = \nabla f</m>, so <m>\lineint{C}{F} = f(P)-f(P) = 0</m>. Work over a closed curve is 
+                always zero in a conservative field.
+              </p>
+            </solution>
         </task>
 
         <task workspace="1in">
@@ -161,6 +202,24 @@
                     (You did this last worksheet.)
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                See last worksheet and spare yourself busy work.  But it looks like this:
+              </p>
+              <p>
+            Parameterization <md>x = \cos(t), y=\sin(t)</md> (or <m>\vec{r}(t)=(\cos(t),\sin(t))</m>), with
+                <m>0\le t \le 2\pi</m>.  Then <m>dx = -\sin(t)dt, dy=\cos(t)dt</m> (or <m>d\vec{r}(t)=(-\sin(t)dt,\cos(t)dt)</m>), 
+                but also <md>x^2+y^2 = \cos^2(t)+\sin^2(t)=1</md> so 
+                the integral becomes <md>\lineint{C}{F}=\int_{C}\frac{-y}{x^2+y^2}dx + \frac{x}{x^2+y^2}dy </md>
+                <md>=
+                   \int_0^{2\pi} -\sin t(-\sin t) + \cos t(\cos t) dt 
+                </md><md>= \int_0^{2\pi} \sin^2(t) + \cos^2(t) dt
+                </md><md>  = \int_0^{2\pi} 1 dt</md><md> = 2\pi</md>
+          </p>
+          <p>
+            Notice it is not zero.
+          </p>
+            </solution>
         </task>
 
         <task workspace="0.5in">
@@ -170,6 +229,11 @@
                     Explain your response.
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                Nope!  If it was a conservative field this integral would be 0 since it's a closed curve.
+              </p>
+            </solution>
         </task>
     </exercise>
 
@@ -185,6 +249,19 @@
                 </md>
             </p>
         </statement>
+        <solution component="show-soln">
+              <p>
+                Let's try the conservative trick because that seems much nicer than integration by parts five times. 
+                Picking apart the integral which is <m>\lineint{C}{F}</m>, we are looking for <md>\mathbf F =
+                  (ye^z, xe^z, xye^z) = \nabla f.
+                </md>
+                So <m>f(x,y,z)=xye^z</m>!. 
+                <md>
+                  \lineint{C}{F} = f(t=2) - f(t=1) = f(4,8,1) - f(1,1,0) = 32e - 1
+                </md>
+                
+              </p>
+            </solution>
     </exercise>
 
     <exercise workspace=".5in">
@@ -232,6 +309,59 @@
                 </image>
             </sidebyside>
         </statement>
+        <solution component="show-soln">
+              <p>
+                Think about closed curves, and the work done on them. For the first picture, it 
+                seems that any closed curve you could draw would have the work be zero, but the second 
+                one you can find a closed curve that is not zero. So the second field cannot be conservative. (Examples
+                of closed curves shown below, but there are many you can draw.)
+              </p>
+              <sidebyside widths="30% 30%">
+                <image>
+                    <shortdescription>
+                        A vector field, all vectors point radially away from the
+                        origin.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-3-slope1-soln">
+                        <diagram dimensions="(200,200)" margins="5">
+                            <definition>
+                                f(x,y) = (x,y)
+                            </definition>
+                            <coordinates bbox="[-4,-4,4,4]">
+                                <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+                                
+                                <vector-field function="f"/>
+                                <arc center="(0,0)" radius="2" stroke="red" arrows="1" range="(20,380)"/>
+                                <arc center="(0,0)" radius="4"  stroke="red" range="(295,335)" arrows="1"/>
+                                <arc center="(0,0)" radius="3"  stroke="red" range="(295,335)" />
+                                <line p1="(3*cos(295 * 2*pi/360), 3*sin(295* 2*pi/360))" p2="(4*cos(295* 2*pi/360),4*sin(295* 2*pi/360))" stroke="red" />
+                                <line p1="(3*cos(335* 2*pi/360), 3*sin(335* 2*pi/360))" p2="(4*cos(335* 2*pi/360),4*sin(335* 2*pi/360))" stroke="red"  />
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                    
+                </image>
+
+                <image>
+                    <shortdescription>
+                        A vector field, all arrows points counter-clockwise in a
+                        co-centric circles centered around the origin.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-3-slope2-soln">
+                        <diagram dimensions="(200,200)" margins="5">
+                            <definition>
+                                f(x,y) = (-y,x)
+                            </definition>
+                            <coordinates bbox="[-4,-4,4,4]">
+                                <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+                                <vector-field function="f"/>
+                                <arc center="(0,0)" radius="2" stroke="red" range="(20,380)" arrows="1" />
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                </image>
+            </sidebyside>
+            </solution>
     </exercise>
 
     <exercise>
@@ -265,6 +395,24 @@
                     and <m>F_2</m>?
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                So we must have <m>\nabla f = (F_1, F_2)</m>, which means <m>{F_1 = \frac{\partial f}{\partial x}}</m>
+                and <m>{F_2 = \frac{\partial f}{\partial y}}</m>. Since the second mixed partial derivatives are equal, then
+                <md>
+                  \frac{\partial }{\partial x}\left(\frac{\partial f}{\partial y}\right) = 
+                  \frac{\partial }{\partial x}\left(F_2\right) = 
+                  \frac{\partial }{\partial y}\left(F_1\right)=
+                  \frac{\partial }{\partial y}\left(\frac{\partial f}{\partial x}\right) 
+                </md>
+                so in other words if <m>\mathbf F=(F_1,F_2)</m> is a conservative field, we must have 
+                <md>
+                  \frac{\partial }{\partial x}\left(F_2\right) = 
+                  \frac{\partial }{\partial y}\left(F_1\right)
+                </md>
+                
+              </p>
+            </solution>
         </task>
 
         <task workspace="1.2in">
@@ -274,6 +422,22 @@
                     problems 1 and 2.
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                Problem 1: <m>\ds \mathbf F= (6xy-\cos x, 3x^2+e^y)</m>, 
+                <md>
+                  \frac{\partial }{\partial x}\left(F_2\right) = 6x = \frac{\partial }{\partial y}\left(F_1\right)
+                </md>.
+                Check.
+              </p>
+              <p>
+                Problem 2: <m>\ds \mathbf F= (2x,3y)</m>, 
+                <md>
+                  \frac{\partial }{\partial x}\left(F_2\right) = 0 = \frac{\partial }{\partial y}\left(F_1\right)
+                </md>.
+                Check.
+              </p>
+            </solution>
         </task>
 
         <task workspace=".7in">
@@ -282,6 +446,21 @@
                     Does this relationship hold for the field in problem 3?
                 </p>
             </statement>
+            <solution component="show-soln">
+              <p>
+                <m>\ds \mathbf F= \left(-\frac{y}{x^2+y^2},
+    \frac{x}{x^2+y^2}\right)</m>, so
+                <md>
+                  \frac{\partial }{\partial x}\left(F_2\right) = \frac{x^2+y^2 - 2x^2}{(x^2+y^2)^2}=\frac{-x^2+y^2}{(x^2+y^2)^2}
+                </md>
+                <md>    
+                  \frac{\partial }{\partial y}\left(F_1\right) = \frac{(x^2+y^2)(-1) - (-y)(2y)}{(x^2+y^2)^2}=\frac{-x^2+y^2}{(x^2+y^2)^2}
+                </md>
+                
+                Huh.  So the relationship holds, but it isn't a conservative field... So this relationship is not quite enough to prove 
+                the field is conservative.  There seems to be one thing missing (we'll get there...)
+              </p>
+            </solution>
         </task>
     </exercise>
 </worksheet>
