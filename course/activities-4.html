@@ -269,7 +269,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -326,11 +329,64 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div></details>
 </div>
+<div class="solutions">
+<details id="activities-4-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-4-2-2-1">
+<div class="para">
+<span class="process-math">\(C_1\text{:}\)</span> parameterization <span class="process-math">\(x=x, y=1, 1\le x\le 3\text{.}\)</span> So <span class="process-math">\(dx = dx, dy=0\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-4-2-2-1-4">
+\begin{equation*}
+\lineint{C_1}{F} = \int_1^3 x^2 dx + x(1)(0)=\left.\frac13 x^3\right|_1^3 = 9-\frac13=\frac{26}{3}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-4-4-2-2-2">
+<div class="para">
+<span class="process-math">\(C_2\text{:}\)</span> parameterization <span class="process-math">\(x=3, y=y, 1\le y\le 3\text{.}\)</span> So <span class="process-math">\(dx = 0, dy=dy\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-4-2-2-2-4">
+\begin{equation*}
+\lineint{C_2}{F} = \int_1^3 9(0) + 3ydy=\left.\frac32 y^2\right|_1^3 = \frac32(9-1)=12
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-4-4-2-2-3">
+<div class="para">
+<span class="process-math">\(C_3\text{:}\)</span> parameterization <span class="process-math">\(x=x, y=x, 1\le y\le 3\text{.}\)</span> So <span class="process-math">\(dx = dx, dy=dy\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-4-2-2-3-4">
+\begin{equation*}
+\lineint{C_3}{F} = \int_1^3 x^2dx + x^2dx=\left.\frac23 x^3\right|_1^3 = \frac23(27-1)=\frac{52}{3}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-4-4-2-2-4">Could also have parameterized with <span class="process-math">\(t\)</span> or another way!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.a.1"><a tabindex="-1" href="#activities-4-4-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="2.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#activities-4-4-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-4-4-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-4-4-3-1-1">Find <span class="process-math">\(\lineint{C}{F}\)</span> if <span class="process-math">\(C\)</span> is the curve traversing the triangle in the counter-clockwise direction.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-4-3-2-1">
+<span class="process-math">\(\lineint{C}{F} = \lineint{C_1}{F}+\lineint{C_2}{F}-\lineint{C_3}{F}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-4-4-3-2-2">
+<span class="process-math">\(=\frac{26}{3} + 12 - \frac{52}{3} = \frac{10}{3}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.b.1"><a tabindex="-1" href="#activities-4-4-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#activities-4-4-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
@@ -338,13 +394,21 @@ eBookConfig.enable_chatcodes =  false;
 <article class="task exercise-like" id="activities-4-4-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="activities-4-4-4-1-1">Notice that the combined path of <span class="process-math">\(C_1+C_2\)</span> starts and stops at the same points as the path of <span class="process-math">\(C_3\text{.}\)</span> Does <span class="process-math">\(\lineint{C_1+C_2}{F} = \lineint{C_3}{F}\text{?}\)</span> That is, does the path matter or are all line integrals independent of path?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-4-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-4-4-2-1">No they are not the same.  The path seems to matter here.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.c.1"><a tabindex="-1" href="#activities-4-4-4-2" title="Copy heading and permalink for Solution 1.c.1" aria-label="Copy heading and permalink for Solution 1.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#activities-4-4-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activities-4-4" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-4-5"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="introduction" id="activities-4-5-1">
-<div class="para" id="activities-4-5-1-1">Consider the field <span class="process-math">\({\mathbf F}(x,y) = (x,y)\)</span> and suppose that <span class="process-math">\(C_1\)</span> is the upper half of the unit circle traversed in the counter-clockwise direction starting at <span class="process-math">\((1,0)\)</span> and ending at <span class="process-math">\((-1,0)\text{.}\)</span>   Suppose that <span class="process-math">\(C_2\)</span> is the straight line segment beginning at <span class="process-math">\((1,0)\)</span> and ending at <span class="process-math">\((-1,0)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-4-5-1-1">Consider the field <span class="process-math">\({\mathbf F}(x,y) = (x,y)\)</span> and suppose that <span class="process-math">\(C_1\)</span> is the upper half of the unit circle traversed in the counter-clockwise direction starting at <span class="process-math">\((1,0)\)</span> and ending at <span class="process-math">\((-1,0)\text{.}\)</span> Suppose that <span class="process-math">\(C_2\)</span> is the straight line segment beginning at <span class="process-math">\((1,0)\)</span> and ending at <span class="process-math">\((-1,0)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-4-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
@@ -358,17 +422,60 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-4-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-5-2-2-1">
+<div class="para">
+<span class="process-math">\(C_1\text{:}\)</span>  Parameterization <span class="process-math">\(x = \cos(t), y=\sin(t)\)</span> (or <span class="process-math">\(\vec{r}(t)=(\cos(t),\sin(t))\)</span>), with <span class="process-math">\(0\le t \le \pi\text{.}\)</span>  Then <span class="process-math">\(dx = -\sin(t)dt, dy=\cos(t)dt\)</span> (or <span class="process-math">\(d\vec{r}(t)=(-\sin(t)dt,\cos(t)dt)\)</span>), so the integral becomes</div>
+<div class="displaymath process-math" id="activities-4-5-2-2-1-7">
+\begin{equation*}
+\lineint{C_1}{F}=\int_{C_1}xdx + ydy = \int_0^{\pi} \cos(t)(-\sin t) + \sin t(\cos t) dt =0
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-4-5-2-2-2">
+<div class="para">
+<span class="process-math">\(C_2\text{:}\)</span>  Parameterization <span class="process-math">\(x = x, y=0\)</span> (or <span class="process-math">\(\vec{r}(x)=(x,0)\)</span>), with <span class="process-math">\(x \rightarrow 1 \rightarrow -1\text{.}\)</span>  Then <span class="process-math">\(dx = dx, dy=0\)</span> (or <span class="process-math">\(d\vec{r}(x)=(dx,0)\)</span>), so the integral becomes</div>
+<div class="displaymath process-math" id="activities-4-5-2-2-2-7">
+\begin{equation*}
+\lineint{C_2}{F}=\int_{C_2}xdx + ydy = \int_1^{-1} xdx+0= \left.\frac12 x^2 \right|_1^{-1} = \frac12(1-1) =0
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.a.1"><a tabindex="-1" href="#activities-4-5-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="3.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activities-4-5-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-4-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-4-5-3-1-1">Give a geometric explanation for the line integral along <span class="process-math">\(C_1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-4-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-3-2-1">On the unit circle (the path along <span class="process-math">\(C_1\)</span>), <span class="process-math">\(d\vec{r}\)</span> points tangent to the unit circle, and <span class="process-math">\(\vec{F}\)</span> points outward, orthogonal to the <span class="process-math">\(d\vec{r}\text{.}\)</span>  So <span class="process-math">\(\vec{F}\)</span> and <span class="process-math">\(d\vec{r}\)</span> have a dot product of 0 along the whole curve, so the sum is also naturally zero.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.b.1"><a tabindex="-1" href="#activities-4-5-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#activities-4-5-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-4-5-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="activities-4-5-4-1-1">Find the line integral <span class="process-math">\(\lineint{C}{F}\)</span> where <span class="process-math">\(C\)</span> is the contour that begins at <span class="process-math">\((1,0)\text{,}\)</span> traverses the upper half of the unit circle to <span class="process-math">\((-1,0)\)</span> and then returns to <span class="process-math">\((1,0)\)</span> along the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-4-5-4-2-1">
+<span class="process-math">\(\lineint{C}{F} = \lineint{C_1}{F} - \lineint{C_2}{F} = 0-0=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.c.1"><a tabindex="-1" href="#activities-4-5-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#activities-4-5-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
@@ -391,11 +498,78 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">where <span class="process-math">\(C_1\text{,}\)</span> <span class="process-math">\(C_2\text{,}\)</span> and <span class="process-math">\(C_3\)</span> are the curves from the first problem.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-4-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-6-2-2-1">
+<div class="para">
+<span class="process-math">\(C_1\text{:}\)</span> parameterization <span class="process-math">\(x=x, y=1, 1\le x\le 3\text{.}\)</span> So <span class="process-math">\(dx = dx, dy=0\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-6-2-2-1-4">
+\begin{equation*}
+\lineint{C_1}{F} = \int_{C_1} y^2 dx + (2xy+3)dy=
+\int_1^3 1 dx + 0=\left.x\right|_1^3 = 2
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-4-6-2-2-2">
+<div class="para">
+<span class="process-math">\(C_2\text{:}\)</span> parameterization <span class="process-math">\(x=3, y=y, 1\le y\le 3\text{.}\)</span> So <span class="process-math">\(dx = 0, dy=dy\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-6-2-2-2-4">
+\begin{equation*}
+\lineint{C_2}{F} = \int_1^3 0 + 2*3*y+3dy=\left.(3 y^2 + 3y)\right|_1^3 = 30
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-4-6-2-2-3">
+<div class="para">Thus</div>
+<div class="displaymath process-math" id="activities-4-6-2-2-3-1">
+\begin{equation*}
+\lineint{C_1+C_2}{F} = \lineint{C_1}{F}+\lineint{C_2}{F} = 2 + 30 = 32.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-4-6-2-2-4">
+<div class="para">
+<span class="process-math">\(C_3\text{:}\)</span> parameterization <span class="process-math">\(x=x, y=x, 1\le y\le 3\text{.}\)</span> So <span class="process-math">\(dx = dx, dy=dy\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="activities-4-6-2-2-4-4">
+\begin{equation*}
+\lineint{C_3}{F} = \int_1^3 x^2+2x^2+3dx= \left.(x^3+3x)\right|_1^3 = 32
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-4-6-2-2-5">They’re the same... interesting.  Could also have parameterized with <span class="process-math">\(t\)</span> or another way!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-2-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.a.1"><a tabindex="-1" href="#activities-4-6-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="3.0in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activities-4-6-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-4-6-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-4-6-3-1-1">Is it possible to write <span class="process-math">\({\mathbf F} = \nabla f\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-6-3-2-1">
+<div class="para">If so, then <span class="process-math">\(\mathbf F = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}) = (y^2, 2xy+3)\text{.}\)</span> One possibility seems to be</div>
+<div class="displaymath process-math" id="activities-4-6-3-2-1-2">
+\begin{equation*}
+f = xy^2+3y\text{.}
+\end{equation*}
+</div>
+<div class="para">(Could add any constant.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.b.1"><a tabindex="-1" href="#activities-4-6-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activities-4-6-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
@@ -410,9 +584,59 @@ eBookConfig.enable_chatcodes =  false;
 \frac{x}{x^2+y^2}\right)
 \end{equation*}
 </div>
-<div class="para">and <span class="process-math">\(C\)</span> is the unit circle traversed one time in the counter-clockwise direction.  Find the line integral <span class="process-math">\(\lineint{C}{F}\text{.}\)</span>
+<div class="para">and <span class="process-math">\(C\)</span> is the unit circle traversed one time in the counter-clockwise direction. Find the line integral <span class="process-math">\(\lineint{C}{F}\text{.}\)</span>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-4-7-2-1">
+<div class="para">Parameterization</div>
+<div class="displaymath process-math" id="activities-4-7-2-1-1">
+\begin{equation*}
+x = \cos(t), y=\sin(t)
+\end{equation*}
+</div>
+<div class="para">(or <span class="process-math">\(\vec{r}(t)=(\cos(t),\sin(t))\)</span>), with <span class="process-math">\(0\le t \le 2\pi\text{.}\)</span>  Then <span class="process-math">\(dx = -\sin(t)dt, dy=\cos(t)dt\)</span> (or <span class="process-math">\(d\vec{r}(t)=(-\sin(t)dt,\cos(t)dt)\)</span>), but also</div>
+<div class="displaymath process-math" id="activities-4-7-2-1-6">
+\begin{equation*}
+x^2+y^2 = \cos^2(t)+\sin^2(t)=1
+\end{equation*}
+</div>
+<div class="para">so the integral becomes</div>
+<div class="displaymath process-math" id="activities-4-7-2-1-7">
+\begin{equation*}
+\lineint{C}{F}=\int_{C}\frac{-y}{x^2+y^2}dx + \frac{x}{x^2+y^2}dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-4-7-2-1-8">
+\begin{equation*}
+=
+\int_0^{2\pi} -\sin t(-\sin t) + \cos t(\cos t) dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-4-7-2-1-9">
+\begin{equation*}
+= \int_0^{2\pi} \sin^2(t) + \cos^2(t) dt
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-4-7-2-1-10">
+\begin{equation*}
+= \int_0^{2\pi} 1 dt
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-4-7-2-1-11">
+\begin{equation*}
+= 2\pi
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-4-7-2-2">Notice it is not zero.  This is an important example.  We’ll come back to this.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-4-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#activities-4-7-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="4in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#activities-4-7" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>

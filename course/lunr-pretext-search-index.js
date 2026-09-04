@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "1.1. Evaluating line integrals",
-  "body": " 1.1. Evaluating line integrals   MTH 401    Section 1: Vector Calculus   Part 1.1: Line Integrals   The first portion of this class will look a little closer at vector calculus. In particular, here we will focus on line integrals.       Suppose that and that , , and are curves as shown below.     Evaluate the line integrals   The graph of three line segments with directions.          \\displaystyle C_1    \\displaystyle C_2    \\displaystyle C_3       Three directional curves are shown, is the straight line from to , is the line from to , and is the line from to .        Find if is the curve traversing the triangle in the counter-clockwise direction.      Notice that the combined path of starts and stops at the same points as the path of . Does ? That is, does the path matter or are all line integrals independent of path?       Consider the field and suppose that is the upper half of the unit circle traversed in the counter-clockwise direction starting at and ending at . Suppose that is the straight line segment beginning at and ending at .     Find the line integrals:      Give a geometric explanation for the line integral along .      Find the line integral where is the contour that begins at , traverses the upper half of the unit circle to and then returns to along the -axis.       Consider the field .     Evaluate the line integrals where , , and are the curves from the first problem.      Is it possible to write ?       Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral .    "
+  "body": " 1.1. Evaluating line integrals   MTH 401    Section 1: Vector Calculus   Part 1.1: Line Integrals   The first portion of this class will look a little closer at vector calculus. In particular, here we will focus on line integrals.       Suppose that and that , , and are curves as shown below.     Evaluate the line integrals    The graph of three line segments with directions.          \\displaystyle C_1    \\displaystyle C_2    \\displaystyle C_3       Three directional curves are shown, is the straight line from to , is the line from to , and is the line from to .       : parameterization . So .    : parameterization . So .    : parameterization . So .   Could also have parameterized with or another way!      Find if is the curve traversing the triangle in the counter-clockwise direction.              Notice that the combined path of starts and stops at the same points as the path of . Does ? That is, does the path matter or are all line integrals independent of path?    No they are not the same. The path seems to matter here.       Consider the field and suppose that is the upper half of the unit circle traversed in the counter-clockwise direction starting at and ending at . Suppose that is the straight line segment beginning at and ending at .     Find the line integrals:      : Parameterization (or ), with . Then (or ), so the integral becomes    : Parameterization (or ), with . Then (or ), so the integral becomes       Give a geometric explanation for the line integral along .    On the unit circle (the path along ), points tangent to the unit circle, and points outward, orthogonal to the . So and have a dot product of 0 along the whole curve, so the sum is also naturally zero.      Find the line integral where is the contour that begins at , traverses the upper half of the unit circle to and then returns to along the -axis.            Consider the field .     Evaluate the line integrals where , , and are the curves from the first problem.     : parameterization . So .    : parameterization . So .   Thus    : parameterization . So .   They're the same... interesting. Could also have parameterized with or another way!      Is it possible to write ?    If so, then . One possibility seems to be . (Could add any constant.)       Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral .    Parameterization (or ), with . Then (or ), but also so the integral becomes    Notice it is not zero. This is an important example. We'll come back to this.    "
 },
 {
   "id": "activities-4-4",
@@ -340,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that and that , , and are curves as shown below.     Evaluate the line integrals   The graph of three line segments with directions.          \\displaystyle C_1    \\displaystyle C_2    \\displaystyle C_3       Three directional curves are shown, is the straight line from to , is the line from to , and is the line from to .        Find if is the curve traversing the triangle in the counter-clockwise direction.      Notice that the combined path of starts and stops at the same points as the path of . Does ? That is, does the path matter or are all line integrals independent of path?    "
+  "body": "  Suppose that and that , , and are curves as shown below.     Evaluate the line integrals    The graph of three line segments with directions.          \\displaystyle C_1    \\displaystyle C_2    \\displaystyle C_3       Three directional curves are shown, is the straight line from to , is the line from to , and is the line from to .       : parameterization . So .    : parameterization . So .    : parameterization . So .   Could also have parameterized with or another way!      Find if is the curve traversing the triangle in the counter-clockwise direction.              Notice that the combined path of starts and stops at the same points as the path of . Does ? That is, does the path matter or are all line integrals independent of path?    No they are not the same. The path seems to matter here.    "
 },
 {
   "id": "activities-4-5",
@@ -349,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Consider the field and suppose that is the upper half of the unit circle traversed in the counter-clockwise direction starting at and ending at . Suppose that is the straight line segment beginning at and ending at .     Find the line integrals:      Give a geometric explanation for the line integral along .      Find the line integral where is the contour that begins at , traverses the upper half of the unit circle to and then returns to along the -axis.    "
+  "body": "  Consider the field and suppose that is the upper half of the unit circle traversed in the counter-clockwise direction starting at and ending at . Suppose that is the straight line segment beginning at and ending at .     Find the line integrals:      : Parameterization (or ), with . Then (or ), so the integral becomes    : Parameterization (or ), with . Then (or ), so the integral becomes       Give a geometric explanation for the line integral along .    On the unit circle (the path along ), points tangent to the unit circle, and points outward, orthogonal to the . So and have a dot product of 0 along the whole curve, so the sum is also naturally zero.      Find the line integral where is the contour that begins at , traverses the upper half of the unit circle to and then returns to along the -axis.         "
 },
 {
   "id": "activities-4-6",
@@ -358,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Consider the field .     Evaluate the line integrals where , , and are the curves from the first problem.      Is it possible to write ?    "
+  "body": "  Consider the field .     Evaluate the line integrals where , , and are the curves from the first problem.     : parameterization . So .    : parameterization . So .   Thus    : parameterization . So .   They're the same... interesting. Could also have parameterized with or another way!      Is it possible to write ?    If so, then . One possibility seems to be . (Could add any constant.)    "
 },
 {
   "id": "activities-4-7",
@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral .   "
+  "body": "  Suppose that and is the unit circle traversed one time in the counter-clockwise direction. Find the line integral .    Parameterization (or ), with . Then (or ), but also so the integral becomes    Notice it is not zero. This is an important example. We'll come back to this.   "
 },
 {
   "id": "activities-5",
