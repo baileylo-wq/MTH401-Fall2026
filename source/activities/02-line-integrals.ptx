@@ -1,163 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>1.1. Evaluating line integrals</title>
-<p>
-  <alert>MTH 401</alert>
-</p>
+    <title>1.1. Evaluating line integrals</title>
 
-  <subsection xml:id="subsubsec-vector-calculus">
-    <title>Section 1: Vector Calculus</title>
-    <subsubsection>
-      <title>Part 1.1: Line Integrals</title>
-      
-      <introduction>
-        <p>
-          The first portion of this class will look a little closer at vector calculus.
-          In particular, here we will focus on line integrals.
-        </p>
-      </introduction>
-    </subsubsection>
-  </subsection>
-    
+    <p>
+        <alert>MTH 401</alert>
+    </p>
 
-  <exercise>
-    <introduction>
-      <p>Suppose that <m>{\mathbf F}(x,y) = (x^2, xy)</m> and that <m>C_1</m>,
-  <m>C_2</m>, and <m>C_3</m> are curves as shown below.</p>
-    </introduction>
-    <task workspace="2.5in">
-      <statement>
-        <p>Evaluate the line
-  integrals
-  <md>
-  \lineint{C_1}{F}, ~~~
-  \lineint{C_2}{F}, ~~~
-  \lineint{C_3}{F}.
-  </md></p>
-  <image width="35%" margins="0% 65%">
-        <shortdescription>
-          The graph of three line segments with directions.
-        </shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-line-integral">
-        <diagram dimensions="(250,250)" margins="5">
-          <coordinates bbox="(-1,-1,4,4)">
-            <grid-axes spacings="((-1,1,4),(-1,1,4))" xlabel="x" ylabel="y"/>
-            <vector v="(2,0)" tail="(1,1)" stroke="blue" head-location="0.8"/>
-            <vector v="(0,2)" tail="(3,1)" stroke="blue" head-location="0.8"/>
-            <vector v="(2,2)" tail="(1,1)" stroke="blue" head-location="0.7"/>
-            <label anchor="(2,1)" alignment="south" offset="(0,-5)">
-              <m>
-                \displaystyle C_1
-              </m>
-            </label>
-            <label anchor="(3,2)" alignment="east" offset="(5,0)">
-              <m>
-                \displaystyle C_2
-              </m>
-            </label>
-            <label anchor="(2,2)" alignment="northwest" offset="(2,2)">
-              <m>
-                \displaystyle C_3
-              </m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description>
-        <p>
-          Three directional curves are shown, <m>C_1</m> is the straight line from <m>(1,1)</m>
-          to <m>(3,1)</m>, <m>C_2</m> is the line from <m>(3,1)</m> to <m>(3,3)</m>, and 
-          <m>C_3</m> is the line from <m>(1,1)</m> to <m>(3,3)</m>.
-        </p>
-      </description>
-    </image>
-      </statement>
-    
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find <m>\lineint{C}{F}</m> if <m>C</m> is the curve traversing the triangle in
-  the counter-clockwise direction.</p>
-      </statement>
-    </task>
+    <subsection xml:id="subsubsec-vector-calculus">
+        <title>Section 1: Vector Calculus</title>
 
-    <task workspace="0.5in">
-      <statement>
-        <p>
-          Notice that the combined path of <m>C_1+C_2</m> starts and stops at the 
-          same points as the path of <m>C_3</m>. Does <m>\lineint{C_1+C_2}{F} = \lineint{C_3}{F}</m>?
-          That is, does the path matter or are all line integrals independent of path?
-        </p>
-      </statement>
-    </task>
-  </exercise>
+        <subsubsection>
+            <title>Part 1.1: Line Integrals</title>
 
-  <exercise>
-    <introduction>
-      <p>Consider the field <m>{\mathbf F}(x,y) = (x,y)</m> and suppose that
-  <m>C_1</m> is the upper half of the unit circle traversed in the
-  counter-clockwise direction starting at <m>(1,0)</m> and ending at
-  <m>(-1,0)</m>.   Suppose that <m>C_2</m> is the straight line segment
-  beginning at <m>(1,0)</m> and ending at <m>(-1,0)</m>.</p>
-    </introduction>
-    <task workspace="3.5in">
-      <statement>
-        <p>Find the line
-  integrals:
-  <md>
-  \lineint{C_1}{F}, ~~~
+            <introduction>
+                <p>
+                    The first portion of this class will look a little closer at
+                    vector calculus.
+                    In particular, here we will focus on line integrals.
+                </p>
+            </introduction>
+        </subsubsection>
+    </subsection>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that <m>{\mathbf F}(x,y) = (x^2, xy)</m> and that
+                <m>C_1</m>, <m>C_2</m>, and <m>C_3</m> are curves as shown
+                below.
+            </p>
+        </introduction>
+
+        <task workspace="2.5in">
+            <statement>
+                <p>
+                    Evaluate the line integrals
+                    <md>
+                        \lineint{C_1}{F}, ~~~
+                        \lineint{C_2}{F}, ~~~
+                        \lineint{C_3}{F}.
+                    </md>
+                </p>
+
+                <image width="35%" margins="0% 65%">
+                    <shortdescription>
+                        The graph of three line segments with directions.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-line-integral">
+                        <diagram dimensions="(250,250)" margins="5">
+                            <coordinates bbox="(-1,-1,4,4)">
+                                <grid-axes spacings="((-1,1,4),(-1,1,4))" xlabel="x" ylabel="y"/>
+                                <vector v="(2,0)" tail="(1,1)" stroke="blue" head-location="0.8"/>
+                                <vector v="(0,2)" tail="(3,1)" stroke="blue" head-location="0.8"/>
+                                <vector v="(2,2)" tail="(1,1)" stroke="blue" head-location="0.7"/>
+                                <label anchor="(2,1)" alignment="south" offset="(0,-5)">
+                                    <m>
+                                        \displaystyle C_1
+                                    </m>
+                                </label>
+                                <label anchor="(3,2)" alignment="east" offset="(5,0)">
+                                    <m>
+                                        \displaystyle C_2
+                                    </m>
+                                </label>
+                                <label anchor="(2,2)" alignment="northwest" offset="(2,2)">
+                                    <m>
+                                        \displaystyle C_3
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+
+                    <description>
+                        <p>
+                            Three directional curves are shown, <m>C_1</m> is
+                            the straight line from <m>(1,1)</m> to <m>(3,1)</m>,
+                            <m>C_2</m> is the line from <m>(3,1)</m> to
+                            <m>(3,3)</m>, and <m>C_3</m> is the line from
+                            <m>(1,1)</m> to <m>(3,3)</m>.
+                        </p>
+                    </description>
+                </image>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                <m>C_1</m>: parameterization <m>x=x, y=1, 1\le x\le 3</m>. So 
+                <m>dx = dx, dy=0</m>. 
+                <md>
+                  \lineint{C_1}{F} = \int_1^3 x^2 dx + x(1)(0)=\left.\frac13 x^3\right|_1^3 = 9-\frac13=\frac{26}{3}
+                </md>
+                
+              </p>
+              <p>
+                <m>C_2</m>: parameterization <m>x=3, y=y, 1\le y\le 3</m>. So 
+                <m>dx = 0, dy=dy</m>. 
+                <md>
+                  \lineint{C_2}{F} = \int_1^3 9(0) + 3ydy=\left.\frac32 y^2\right|_1^3 = \frac32(9-1)=12
+                </md>
+                
+              </p>
+              <p>
+                <m>C_3</m>: parameterization <m>x=x, y=x, 1\le y\le 3</m>. So 
+                <m>dx = dx, dy=dy</m>. 
+                <md>
+                  \lineint{C_3}{F} = \int_1^3 x^2dx + x^2dx=\left.\frac23 x^3\right|_1^3 = \frac23(27-1)=\frac{52}{3}
+                </md>
+                
+              </p>
+              <p>
+                Could also have parameterized with <m>t</m> or another way!
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find <m>\lineint{C}{F}</m> if <m>C</m> is the curve
+                    traversing the triangle in the counter-clockwise direction.
+                </p>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                <m>\lineint{C}{F} = \lineint{C_1}{F}+\lineint{C_2}{F}-\lineint{C_3}{F}</m>
+              </p>
+              <p>
+                <m>=\frac{26}{3} + 12 - \frac{52}{3} = \frac{10}{3}</m>
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Notice that the combined path of <m>C_1+C_2</m> starts and
+                    stops at the same points as the path of <m>C_3</m>.
+                    Does <m>\lineint{C_1+C_2}{F} = \lineint{C_3}{F}</m>?
+                    That is, does the path matter or are all line integrals
+                    independent of path?
+                </p>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                No they are not the same.  The path seems to matter here.
+              </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider the field <m>{\mathbf F}(x,y) = (x,y)</m> and suppose
+                that <m>C_1</m> is the upper half of the unit circle traversed
+                in the counter-clockwise direction starting at <m>(1,0)</m> and
+                ending at <m>(-1,0)</m>.
+                Suppose that <m>C_2</m> is the straight line segment beginning
+                at <m>(1,0)</m> and ending at <m>(-1,0)</m>.
+            </p>
+        </introduction>
+
+        <task workspace="3.5in">
+            <statement>
+                <p>
+                    Find the line integrals:
+                    <md>
+                        \lineint{C_1}{F}, ~~~
   \lineint{C_2}{F}.
-  </md></p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Give a geometric explanation for the line integral along <m>C_1</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Find the line integral <m>\lineint{C}{F}</m> where <m>C</m> is the contour
-  that begins at <m>(1,0)</m>, traverses the upper half of the unit circle
-  to <m>(-1,0)</m> and then returns to <m>(1,0)</m> along the <m>x</m>-axis.</p>
-      </statement>
-    </task>
-  </exercise>
+                    </md>
+                </p>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                <m>C_1</m>:  Parameterization <m>x = \cos(t), y=\sin(t)</m> (or <m>\vec{r}(t)=(\cos(t),\sin(t))</m>), with
+                <m>0\le t \le \pi</m>.  Then <m>dx = -\sin(t)dt, dy=\cos(t)dt</m> (or <m>d\vec{r}(t)=(-\sin(t)dt,\cos(t)dt)</m>), so 
+                the integral becomes <md>\lineint{C_1}{F}=\int_{C_1}xdx + ydy = \int_0^{\pi} \cos(t)(-\sin t) + \sin t(\cos t) dt =0</md>
+              </p>
+              <p>
+                <m>C_2</m>:  Parameterization <m>x = x, y=0</m> (or <m>\vec{r}(x)=(x,0)</m>), with
+                <m>x \rightarrow 1 \rightarrow -1</m>.  Then <m>dx = dx, dy=0</m> (or <m>d\vec{r}(x)=(dx,0)</m>), so 
+                the integral becomes <md>\lineint{C_2}{F}=\int_{C_2}xdx + ydy = \int_1^{-1} xdx+0= \left.\frac12 x^2 \right|_1^{-1} = \frac12(1-1) =0</md>
+              </p>
+            </solution>
+        </task>
 
-  <exercise>
-    <introduction>
-      <p>Consider the field <m>{\mathbf F}(x,y) = (y^2, 2xy+3)</m>.</p>
-    </introduction>
-    <task workspace="3.0in">
-      <statement>
-        <p>Evaluate
-  the line integrals
-  <md>
-  \lineint{C_1+C_2}{F}, ~~~
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Give a geometric explanation for the line integral along
+                    <m>C_1</m>.
+                </p>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                On the unit circle (the path along <m>C_1</m>), <m>d\vec{r}</m> points tangent to the unit circle, and 
+                <m>\vec{F}</m> points outward, orthogonal to the <m>d\vec{r}</m>.  So <m>\vec{F}</m> and <m>d\vec{r}</m>
+                have a dot product of 0 along the whole curve, so the sum is also naturally zero.
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Find the line integral <m>\lineint{C}{F}</m> where <m>C</m>
+                    is the contour that begins at <m>(1,0)</m>, traverses the
+                    upper half of the unit circle to <m>(-1,0)</m> and then
+                    returns to <m>(1,0)</m> along the <m>x</m>-axis.
+                </p>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                <m>\lineint{C}{F} = \lineint{C_1}{F} - \lineint{C_2}{F} = 0-0=0</m>
+              </p>
+            </solution>
+        </task>
+        
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider the field <m>{\mathbf F}(x,y) = (y^2, 2xy+3)</m>.
+            </p>
+        </introduction>
+
+        <task workspace="3.0in">
+            <statement>
+                <p>
+                    Evaluate the line integrals
+                    <md>
+                        \lineint{C_1+C_2}{F}, ~~~
   \lineint{C_3}{F},
-  </md>
-  where <m>C_1</m>, <m>C_2</m>, and <m>C_3</m> are the curves from the first
-  problem.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Is it possible to write <m>{\mathbf F} = \nabla f</m>?</p>
-      </statement>
-    </task>
-  </exercise>
+                    </md>
+                    where <m>C_1</m>, <m>C_2</m>, and <m>C_3</m> are the curves
+                    from the first problem.
+                </p>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                <m>C_1</m>: parameterization <m>x=x, y=1, 1\le x\le 3</m>. So 
+                <m>dx = dx, dy=0</m>. 
+                <md>
+                  \lineint{C_1}{F} = \int_{C_1} y^2 dx + (2xy+3)dy=
+                  \int_1^3 1 dx + 0=\left.x\right|_1^3 = 2
+                </md>
+                
+              </p>
+              <p>
+                <m>C_2</m>: parameterization <m>x=3, y=y, 1\le y\le 3</m>. So 
+                <m>dx = 0, dy=dy</m>. 
+                <md>
+                  \lineint{C_2}{F} = \int_1^3 0 + 2*3*y+3dy=\left.(3 y^2 + 3y)\right|_1^3 = 30
+                </md>
+                
+              </p>
+              <p>
+                Thus <md>
+                  \lineint{C_1+C_2}{F} = \lineint{C_1}{F}+\lineint{C_2}{F} = 2 + 30 = 32.
+                </md>
+                
+              </p>
+              <p>
+                <m>C_3</m>: parameterization <m>x=x, y=x, 1\le y\le 3</m>. So 
+                <m>dx = dx, dy=dy</m>. 
+                <md>
+                  \lineint{C_3}{F} = \int_1^3 x^2+2x^2+3dx= \left.(x^3+3x)\right|_1^3 = 32
+                </md>
+                
+              </p>
+              <p>
+                They're the same... interesting.  Could also have parameterized with <m>t</m> or another way!
+              </p>
+            </solution>
+        </task>
 
-  <exercise workspace="4in">
-    <statement>
-      <p>Suppose that
-  <md>
-  {\mathbf F}(x,y) = \left(-\frac{y}{x^2+y^2},
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Is it possible to write <m>{\mathbf F} = \nabla f</m>?
+                </p>
+            </statement>
+            <solution component="show-soln">
+              <p>
+                If so, then <m>\mathbf F = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}) = (y^2, 2xy+3)</m>.
+                One possibility seems to be <md>f = xy^2+3y</md>.  (Could add any constant.)
+              </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace="4in">
+        <statement>
+            <p>
+                Suppose that
+                <md>
+                    {\mathbf F}(x,y) = \left(-\frac{y}{x^2+y^2},
     \frac{x}{x^2+y^2}\right)
-  </md>
-  and <m>C</m> is the unit circle traversed one time in the
-  counter-clockwise direction.  Find the line integral <m>\lineint{C}{F}</m>.</p>
-    </statement>
-  </exercise>
-
-
+                </md>
+                and <m>C</m> is the unit circle traversed one time in the
+                counter-clockwise direction.
+                Find the line integral <m>\lineint{C}{F}</m>.
+            </p>
+        </statement>
+        <solution component="show-soln">
+          <p>
+            Parameterization <md>x = \cos(t), y=\sin(t)</md> (or <m>\vec{r}(t)=(\cos(t),\sin(t))</m>), with
+                <m>0\le t \le 2\pi</m>.  Then <m>dx = -\sin(t)dt, dy=\cos(t)dt</m> (or <m>d\vec{r}(t)=(-\sin(t)dt,\cos(t)dt)</m>), 
+                but also <md>x^2+y^2 = \cos^2(t)+\sin^2(t)=1</md> so 
+                the integral becomes <md>\lineint{C}{F}=\int_{C}\frac{-y}{x^2+y^2}dx + \frac{x}{x^2+y^2}dy </md>
+                <md>=
+                   \int_0^{2\pi} -\sin t(-\sin t) + \cos t(\cos t) dt 
+                </md><md>= \int_0^{2\pi} \sin^2(t) + \cos^2(t) dt
+                </md><md>  = \int_0^{2\pi} 1 dt</md><md> = 2\pi</md>
+          </p>
+          <p>
+            Notice it is not zero.  This is an important example.  We'll come back to this.
+          </p>
+        </solution>
+    </exercise>
 </worksheet>
