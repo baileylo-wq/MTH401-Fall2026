@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Lab: Heat Visualization</title>
+    <title>Lab: Operators Intuition</title>
 
-    <alert>
-        MTH 401
-    </alert>
 
     <introduction>
+        <p>
+    <alert>
+        MTH 401
+    </alert></p>
+    
         <p>
             Let's get some intuition behind gradient, divergence, curl, and the
             Laplacian.

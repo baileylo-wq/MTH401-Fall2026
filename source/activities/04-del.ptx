@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>1.3. The operator ``del''</title>
-  
+  <p>
   <alert>MTH 401</alert>
-
+  </p>
 
 <definition xml:id="def-divergence">
   <statement>
@@ -60,6 +60,11 @@
          divergence <m>\nabla\cdot \mbf F</m>, and notice that the divergence is a
          function, rather than a field.</p>
     </statement>
+    <solution component="aaa-soln">
+      <p>
+        <m>\ds \nabla\cdot \mbf F = \frac{\partial}{\partial x}(xy+yz)+\frac{\partial}{\partial y}(3x+2yz)+\frac{\partial}{\partial z}(2xy+z^2)=y+2z+2z=y+4z</m>
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="2in">
@@ -68,7 +73,16 @@
   Find <m>\nabla\times\mbf F</m> where <m>\mbf F = (xy+yz, 3x+2yz, 2xy +
   z^2)</m>, and notice that the result in this case is a new field.</p>
     </statement>
-  </exercise>
+  <solution component="aaa-soln">
+      <p>
+        <md>
+          <mrow>\nabla\times\mbf F \amp = \left(\frac{\partial}{\partial x}(2xy+z^2)-\frac{\partial}{\partial z}(3x+2yz), \frac{\partial}{\partial z}(xy+yz)-\frac{\partial}{\partial x}(2xy+z^2), \frac{\partial}{\partial x}(3x+2yz)-\frac{\partial}{\partial y}(xy+yz) \right) </mrow>
+          <mrow> \amp = (2x-2y, y-2y, 3-x-z) </mrow>
+          <mrow> \amp = (2x-2y, -y, 3-x-z) </mrow>
+        </md>
+        
+      </p>
+    </solution></exercise>
 
   <exercise workspace="1in">
     <statement>
@@ -85,7 +99,11 @@
   <md>\nabla \times \mbf F = \pd{F_2}{x}-\pd{F_1}{y}.</md></p>
       <p>Find <m>\nabla\times\mbf F</m> if <m>\mbf F(x,y) = (-y, x)</m>.</p>
     </statement>
-  </exercise>
+  <solution component="aaa-soln">
+      <p>
+        <m>\nabla\times \mbf F = \frac{\partial}{\partial x}(x)-\frac{\partial}{\partial y}(-y) = 1+1 = 2</m> (in direction <m>\vec{k}</m>)
+      </p>
+    </solution></exercise>
 
   <exercise workspace="1in">
     <introduction>
@@ -98,26 +116,69 @@
         <p>Start with the function <m>f(x,y,z)</m> and write the gradient <m>\nabla
   f</m>.</p>
       </statement>
+      <solution component="aaa-soln">
+        <p>
+          <m>\ds \nabla f = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)</m>
+        </p>
+      </solution>
     </task>
     <task workspace="2in">
       <statement>
         <p>Then find the curl of the gradient:  <m>\nabla\times\nabla f</m>.  (It's
   kind of a gross computation, but just be patient!)</p>
       </statement>
+      <solution component="aaa-soln">
+        <p>
+          <md>
+            <mrow>\nabla\times\nabla f \amp = \left(\frac{\partial}{\partial y}(\frac{\partial f}{\partial z}) - \frac{\partial}{\partial z}(\frac{\partial f}{\partial y}), 
+              \frac{\partial}{\partial z}(\frac{\partial f}{\partial x}) - \frac{\partial}{\partial x}(\frac{\partial f}{\partial z}), 
+              \frac{\partial}{\partial x}(\frac{\partial f}{\partial y}) - \frac{\partial}{\partial y}(\frac{\partial f}{\partial x}) \right) </mrow>
+              <mrow> \amp = \left(\frac{\partial^2 f}{\partial y\partial z}-\frac{\partial^2 f}{\partial z\partial y}, 
+                \frac{\partial^2 f}{\partial z\partial x}-\frac{\partial^2 f}{\partial x\partial z} , 
+                \frac{\partial^2 f}{\partial x\partial y} -\frac{\partial^2 f}{\partial y\partial x} \right) </mrow>
+                <mrow> \amp = (0,0,0) </mrow>
+          </md>
+          since mixed partials are equal!  Well that worked out...
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>What does this say about the curl <m>\nabla\times\mbf F</m> of a
   conservative field?</p>
       </statement>
+      <solution component="aaa-soln">
+        <p>
+          If <m>\mbf F</m> is a conservative field, then <m>\mbf F = \nabla f</m>, so 
+          <m>\nabla \times \mbf F = \nabla \times (\nabla f) = \vec{0}</m>. (That is, 
+          conservative fields have curl zero.)
+        </p>
+      </solution>
     </task>
-  </exercise>
+ </exercise>
 
   <exercise workspace="2in">
     <statement>
       <p>Now suppose that <m>\mbf F=(F_1, F_2, F_3)</m> and find the
   divergence of the curl: <m>\nabla\cdot(\nabla\times\mbf F)</m>.</p>
     </statement>
+    <solution component="aaa-soln">
+      <p>Note again, mixed partial derivatives don't matter which order we differentiate...
+        <md>
+          <mrow>\nabla \cdot (\nabla\times \mbf F) \amp = 
+            \left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}  \right) \cdot 
+          \left( \frac{\partial F_3}{\partial y}-\frac{\partial F_2}{\partial z}, 
+          \frac{\partial F_1}{\partial z}-\frac{\partial F_3}{\partial x}, 
+          \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y}  \right) </mrow>
+          <mrow> \amp =  \frac{\partial^2 F_3}{\partial x \partial y} -\frac{\partial^2 F_2}{\partial x \partial y}
+            +\frac{\partial^2 F_1}{\partial y \partial z} - \frac{\partial^2 F_3}{\partial y \partial x}
+            +\frac{\partial^2 F_2}{\partial z \partial x} - \frac{\partial^2 F_1}{\partial z \partial y}
+          </mrow>
+          <mrow> \amp = 0 </mrow>
+        </md>
+        So for any field, the divergence of the curl of a field is 0.
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="2.5in">
@@ -130,15 +191,37 @@
       <statement>
         <p>If <m>f(x,y,z)</m> is a function, find an expression for the
   divergence of the gradient: <m>\nabla\cdot\nabla f</m>.</p>
-        <p>We call this the <em>Laplacian</em> of <m>f</m> and denote it as
+        <p><em>Note:</em> We call this the <em>Laplacian</em> of <m>f</m> and denote it as
   <m>\nabla^2f = \nabla\cdot\nabla f</m>.  It will play an important role
   later in the course.</p>
       </statement>
+      <solution component="aaa-soln">
+        <p>
+          <md>
+            <mrow> \nabla \cdot \nabla f \amp = 
+              \left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}  \right) \cdot \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z}  \right) </mrow>
+              <mrow> \amp =  \frac{\partial^2 f}{\partial x^2} +  \frac{\partial^2 f}{\partial y^2} +  \frac{\partial^2 f}{\partial z^2}</mrow>
+          </md>
+          
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Find <m>\displaystyle \nabla^2 \ln(x^2+y^2)</m>.</p>
       </statement>
+      <solution component="aaa-soln">
+        <p>
+          <md>
+            <mrow> \nabla^2 \ln(x^2+y^2) \amp =  \frac{\partial^2}{\partial x^2}\left(\ln(x^2+y^2)\right) +\frac{\partial^2}{\partial y^2}\left(\ln(x^2+y^2)\right)  </mrow>
+            <mrow> \amp = \frac{\partial}{\partial x}\left(\frac{2x}{x^2+y^2} \right) +\frac{\partial}{\partial y}\left(\frac{2y}{x^2+y^2} \right)  </mrow>
+            <mrow> \amp = \frac{(x^2+y^2)(2) - 2x(2x)}{(x^2+y^2)^2} + \frac{(x^2+y^2)(2) - 2y(2y)}{(x^2+y^2)^2} </mrow>
+            <mrow> \amp = \frac{2x^2 + 2y^2 - 4x^2+2x^2+2y^2-4y^2}{(x^2+y^2)^2}  </mrow>
+            <mrow> \amp = 0 </mrow>
+          </md>
+          
+        </p>
+      </solution>
     </task>
   </exercise>
 
@@ -151,6 +234,26 @@
   \right)</m>.
   Find <m>\nabla\times\mbf F</m> and <m>\nabla \cdot \mbf F</m>.</p>
     </statement>
+    <solution component="aaa-soln">
+      <p>
+        First the curl.
+        <md>
+          <mrow>\nabla\times\mbf F \amp = \left(0,0,  \frac{\partial}{\partial x}\left(\frac{x}{x^2+y^2} \right) -\frac{\partial}{\partial y}\left(\frac{-y}{x^2+y^2} \right)  \right)</mrow>
+          <mrow> \amp =  \left(0,0,  \frac{x^2+y^2-2x^2}{(x^2+y^2)^2}  -\left(\frac{(x^2+y^2)(-1)+y(2y)}{(x^2+y^2)^2} \right)  \right)</mrow>
+          <mrow> \amp = \left(0,0, \frac{-x^2+y^2-(-x^2+y^2)}{(x^2+y^2)^2}   \right) </mrow>
+          <mrow> \amp = 0 </mrow>
+        </md>
+        Now the divergence.
+        <md>
+          <mrow>\nabla\cdot\mbf F \amp = \frac{\partial}{\partial x}\left(\frac{-y}{x^2+y^2} \right) +\frac{\partial}{\partial y}\left(\frac{x}{x^2+y^2} \right) </mrow>
+          <mrow> \amp =  \frac{(x^2+y^2)(0)-y(2x)}{(x^2+y^2)^2}  + \frac{0-x(2y)}{(x^2+y^2)^2}</mrow>
+          <mrow> \amp =  \frac{2xy-2xy}{(x^2+y^2)^2}  </mrow>
+          <mrow> \amp = 0 </mrow>
+        </md>
+        
+        
+      </p>
+    </solution>
   </exercise>
 
 </worksheet>
