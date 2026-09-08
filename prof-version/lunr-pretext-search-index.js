@@ -15,8 +15,8 @@ var ptx_lunr_docs = [
   "url": "labs-3.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Lab: Heat Visualization",
-  "body": " Lab: Heat Visualization  MTH 401   Let's get some intuition behind gradient, divergence, curl, and the Laplacian.    Gradient  Imagine you are hiking on a hill. The gradient is the steepest way to climb the hill. In this case, the hill is a surface with an and coordinates, and the elevation would be a function of and . The gradient of , , points in the direction of steepest ascent.     If you are standing on the hill at the location and you know that , then which direction should you go to take the steepest path up the hill?      Check out the graph below of on the left, and it's gradient field to the right.    The 3 dimensional plot of the function.    The gradient field of the function.       Why do the two peaks of the function correspond to points on the gradient field plot where the surrounding arrows are pointed inwards towards those points?      What would the gradient field of a function look like near the local minimum of the function?       Recall that the gradient is always perpendicular to the level curves. (A level curve of a function is where the function value is equal to the same constant everywhere along that curve.) Let's explore why this is true, using the function graphed below on the left, and the contour map showing the level curves with the gradient field plotted below on the right.    The 3 dimensional graph of the function.    The gradient field of the function.    To see why the gradient is always perpendicular to the level curves, let's take a particular contour line and zoom in. For example, let's take the contour line where . We know points in the direction in which increases the most rapidly, so we can think of this direction in two ways:   Choose a fixed step size, and find the direction in which that step size increases the most.  Choose a fixed increase in , and find the direction in which the path to increase by that amount is the shortest.     Given steps of equal size in all directions, which one increases the function value the most?    Of all the steps that increase the function value by a specific amount, which one is the shortest?    Either way, you're trying to maximize the rise over run of , either by maximizing the rise as in method on the left, or minimizing the run as in method on the right.     If we zoom in close enough, the contour lines start to look like what?      What is the shortest path from one line to another that is parallel to it?      So why will the gradient always be perpendicular to the contour lines?      Divergence  The divergence is the flux density, or the amount of flux (flow) entering or leaving a point. In other words, it's the tendency of a field to flow outward (positive divergence) or inward (negative divergence) to a point. So it's almost like what happens on average around that point. A source would have a positive divergence, a sink would have a negative divergence.  If you measure flux in bananas, a positive divergence means your location is a source of bananas, “the Donkey Kong jackpot”.     Take the following field shown below:  The gradient field.  If we imagine placing particles on a grid covering the plot as shown on the bottom left, and press ``Play'' so that the particles ``flow\" along the trajectory of the arrows, then regions that tend to become less dense (i.e. the particles scatter or ``diverge'') have a positive divergence. Regions that tend to become more dense (i.e. the particles collect and attract in this region) have a negative divergence. The picture below on the right shows the particles after a second of ``flow'' along the vector field.    The initial trajectory of particles placed evenly spaced on a grid under this field.    The particles on the grid after a short time where the particles have \"flowed\" along the vector field.       What region(s) looks to have a positive divergence? What region(s) look to have a negative divergence?       On the following dots, draw an example of a field with positive divergence, one with negative divergence, and one with a divergence of zero.    A dot on which you are asked to draw a field with positive divergence.    A dot on which you are asked to draw a field with negative divergence.    A dot on which you are asked to draw a field with zero divergence.      Note that we can also visualize divergence in 3 dimensions. However, we can calculate the divergence in any dimension, it just doesn't have a nice picture to go along with it.   Curl  The curl is the ``circulation density\" of your field. Imagine sticking a propeller in the middle of your vector field. The curl is the tendency of the propeller to be turned by the vector field (think torque), and the propeller will turn in the direction of your curl.  We could also imagine making a cup of tea. The faster you stir the tea in your teacup, the larger your curl. And a tiny propeller will turn in the direction of that curl as well.     A conservative field is ``fair,\" that is the amount of work to move between two points is the same no matter what path you take. So in other words, if you go from point to point , the amount of work you ``put in'' is the same you ``get back'' by going back from point to point . Gravity for example is conservative - you might need to work to get up a hill, but you get the same amount of work back (or a ``free ride'') falling back down the hill.     With that point of view, is a river flowing downstream a conservative field? Why or why not? (You can think of it in terms of energy spent.)      Is a whirlpool a conservative field? Why or why not?      Will a conservative field have a curl?       Wrap your fingers of your right-hand around so the curve inward, and your thumb will point in the direction of the curl (by convention). So if the curl indicates motion in the counter-clockwise direction, is the curl positive or negative?      As we saw, the divergence of the curl of a field is always 0. Let's take a look at why this is true in 2 dimensions - picture a very small circular disk. The curl of the field is the part of the field that ``rotates'' an object around the center of the disk. If we picture fluid on a grid within the disk, the curl measures the rotational part of field within the disk. Note, that the rotational part of the field doesn't have anything to do with carrying the fluid out of the disk.  The divergence measures how the fluid flows out of the disk given the flow of the vector field. So why would the divergence of the curl be 0?     Laplacian  Imagine again that we're making tea. Initially you fill your teacup with hot water, and put your teabag inside. Over time, the water starts getting darker. That is, the tea is starting to diffuse. The laplacian tells you how homogeneous your mixture is. Over time the tea will become more and more ``well-mixed'', that is more and more homogenous, and your laplacian will get smaller.     The Laplacian of a function is the divergence of the gradient of , that is . It's kind of like a second derivative (how your function bends at a point).  Recall the gradient of tells you the direction in which is .  The divergence of a vector field tells you the flow, or how much the fluid particles are diverging away from that spot.     So let's look at some hills, and let's look at the lowest point at that hill to be our point (a local minimum). The direction of steepest ascent is uphill everywhere around that point, so the gradient field of at the local minimum will have the arrows pointing outward, or away from out point. If we picture that field, the point looks like a source. So will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Now take the highest point on our hill (a local maximum). Everywhere around that point is lower than our point, so direction of steepest ascent will point inwards, towards our point. If we picture the gradient field, our point will look like a sink. Will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Let's look at the analogous 2-dimensional calculus example of the second derivative. The graph below has a local maximum at and a local minimum at about .   The graph of a cubic polynomial with roots at 0 and 2.    f(x) = x^2*(x-2)            Is the second derivative positive, negative, or zero at ?      Is the second derivative positive, negative, or zero at ?      Does this match with the Laplacian (the divergence of the gradient) of our 2-dimensional hill?      So the Laplacian is measuring a ``change in change''. When the field goes from a small amount of change at one point, to a huge amount of change at another point, the Laplacian will be large (there is a large change in change). When the field is changing by amount the same amount as points nearby, the Laplacian will be small (there is a small change in change).  "
+  "title": "Lab: Operators Intuition",
+  "body": " Lab: Operators Intuition    MTH 401  Let's get some intuition behind gradient, divergence, curl, and the Laplacian.    Gradient  Imagine you are hiking on a hill. The gradient is the steepest way to climb the hill. In this case, the hill is a surface with an and coordinates, and the elevation would be a function of and . The gradient of , , points in the direction of steepest ascent.     If you are standing on the hill at the location and you know that , then which direction should you go to take the steepest path up the hill?      Check out the graph below of on the left, and it's gradient field to the right.    The 3 dimensional plot of the function.    The gradient field of the function.       Why do the two peaks of the function correspond to points on the gradient field plot where the surrounding arrows are pointed inwards towards those points?      What would the gradient field of a function look like near the local minimum of the function?       Recall that the gradient is always perpendicular to the level curves. (A level curve of a function is where the function value is equal to the same constant everywhere along that curve.) Let's explore why this is true, using the function graphed below on the left, and the contour map showing the level curves with the gradient field plotted below on the right.    The 3 dimensional graph of the function.    The gradient field of the function.    To see why the gradient is always perpendicular to the level curves, let's take a particular contour line and zoom in. For example, let's take the contour line where . We know points in the direction in which increases the most rapidly, so we can think of this direction in two ways:   Choose a fixed step size, and find the direction in which that step size increases the most.  Choose a fixed increase in , and find the direction in which the path to increase by that amount is the shortest.     Given steps of equal size in all directions, which one increases the function value the most?    Of all the steps that increase the function value by a specific amount, which one is the shortest?    Either way, you're trying to maximize the rise over run of , either by maximizing the rise as in method on the left, or minimizing the run as in method on the right.     If we zoom in close enough, the contour lines start to look like what?      What is the shortest path from one line to another that is parallel to it?      So why will the gradient always be perpendicular to the contour lines?      Divergence  The divergence is the flux density, or the amount of flux (flow) entering or leaving a point. In other words, it's the tendency of a field to flow outward (positive divergence) or inward (negative divergence) to a point. So it's almost like what happens on average around that point. A source would have a positive divergence, a sink would have a negative divergence.  If you measure flux in bananas, a positive divergence means your location is a source of bananas, “the Donkey Kong jackpot”.     Take the following field shown below:  The gradient field.  If we imagine placing particles on a grid covering the plot as shown on the bottom left, and press ``Play'' so that the particles ``flow\" along the trajectory of the arrows, then regions that tend to become less dense (i.e. the particles scatter or ``diverge'') have a positive divergence. Regions that tend to become more dense (i.e. the particles collect and attract in this region) have a negative divergence. The picture below on the right shows the particles after a second of ``flow'' along the vector field.    The initial trajectory of particles placed evenly spaced on a grid under this field.    The particles on the grid after a short time where the particles have \"flowed\" along the vector field.       What region(s) looks to have a positive divergence? What region(s) look to have a negative divergence?       On the following dots, draw an example of a field with positive divergence, one with negative divergence, and one with a divergence of zero.    A dot on which you are asked to draw a field with positive divergence.    A dot on which you are asked to draw a field with negative divergence.    A dot on which you are asked to draw a field with zero divergence.      Note that we can also visualize divergence in 3 dimensions. However, we can calculate the divergence in any dimension, it just doesn't have a nice picture to go along with it.   Curl  The curl is the ``circulation density\" of your field. Imagine sticking a propeller in the middle of your vector field. The curl is the tendency of the propeller to be turned by the vector field (think torque), and the propeller will turn in the direction of your curl.  We could also imagine making a cup of tea. The faster you stir the tea in your teacup, the larger your curl. And a tiny propeller will turn in the direction of that curl as well.     A conservative field is ``fair,\" that is the amount of work to move between two points is the same no matter what path you take. So in other words, if you go from point to point , the amount of work you ``put in'' is the same you ``get back'' by going back from point to point . Gravity for example is conservative - you might need to work to get up a hill, but you get the same amount of work back (or a ``free ride'') falling back down the hill.     With that point of view, is a river flowing downstream a conservative field? Why or why not? (You can think of it in terms of energy spent.)      Is a whirlpool a conservative field? Why or why not?      Will a conservative field have a curl?       Wrap your fingers of your right-hand around so the curve inward, and your thumb will point in the direction of the curl (by convention). So if the curl indicates motion in the counter-clockwise direction, is the curl positive or negative?      As we saw, the divergence of the curl of a field is always 0. Let's take a look at why this is true in 2 dimensions - picture a very small circular disk. The curl of the field is the part of the field that ``rotates'' an object around the center of the disk. If we picture fluid on a grid within the disk, the curl measures the rotational part of field within the disk. Note, that the rotational part of the field doesn't have anything to do with carrying the fluid out of the disk.  The divergence measures how the fluid flows out of the disk given the flow of the vector field. So why would the divergence of the curl be 0?     Laplacian  Imagine again that we're making tea. Initially you fill your teacup with hot water, and put your teabag inside. Over time, the water starts getting darker. That is, the tea is starting to diffuse. The laplacian tells you how homogeneous your mixture is. Over time the tea will become more and more ``well-mixed'', that is more and more homogenous, and your laplacian will get smaller.     The Laplacian of a function is the divergence of the gradient of , that is . It's kind of like a second derivative (how your function bends at a point).  Recall the gradient of tells you the direction in which is .  The divergence of a vector field tells you the flow, or how much the fluid particles are diverging away from that spot.     So let's look at some hills, and let's look at the lowest point at that hill to be our point (a local minimum). The direction of steepest ascent is uphill everywhere around that point, so the gradient field of at the local minimum will have the arrows pointing outward, or away from out point. If we picture that field, the point looks like a source. So will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Now take the highest point on our hill (a local maximum). Everywhere around that point is lower than our point, so direction of steepest ascent will point inwards, towards our point. If we picture the gradient field, our point will look like a sink. Will the divergence be large at this point, or small at this point? Will it be positive or negative or zero?      Let's look at the analogous 2-dimensional calculus example of the second derivative. The graph below has a local maximum at and a local minimum at about .   The graph of a cubic polynomial with roots at 0 and 2.    f(x) = x^2*(x-2)            Is the second derivative positive, negative, or zero at ?      Is the second derivative positive, negative, or zero at ?      Does this match with the Laplacian (the divergence of the gradient) of our 2-dimensional hill?      So the Laplacian is measuring a ``change in change''. When the field goes from a small amount of change at one point, to a huge amount of change at another point, the Laplacian will be large (there is a large change in change). When the field is changing by amount the same amount as points nearby, the Laplacian will be small (there is a small change in change).  "
 },
 {
   "id": "subsec-gradient-2",
@@ -28,81 +28,81 @@ var ptx_lunr_docs = [
   "body": "gradient "
 },
 {
-  "id": "labs-3-5",
+  "id": "labs-3-4",
   "level": "2",
-  "url": "labs-3.html#labs-3-5",
+  "url": "labs-3.html#labs-3-4",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  If you are standing on the hill at the location and you know that , then which direction should you go to take the steepest path up the hill?   "
 },
 {
-  "id": "labs-3-6",
+  "id": "labs-3-5",
   "level": "2",
-  "url": "labs-3.html#labs-3-6",
+  "url": "labs-3.html#labs-3-5",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Check out the graph below of on the left, and it's gradient field to the right.    The 3 dimensional plot of the function.    The gradient field of the function.       Why do the two peaks of the function correspond to points on the gradient field plot where the surrounding arrows are pointed inwards towards those points?      What would the gradient field of a function look like near the local minimum of the function?    "
 },
 {
-  "id": "labs-3-7",
+  "id": "labs-3-6",
   "level": "2",
-  "url": "labs-3.html#labs-3-7",
+  "url": "labs-3.html#labs-3-6",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
   "body": "  Recall that the gradient is always perpendicular to the level curves. (A level curve of a function is where the function value is equal to the same constant everywhere along that curve.) Let's explore why this is true, using the function graphed below on the left, and the contour map showing the level curves with the gradient field plotted below on the right.    The 3 dimensional graph of the function.    The gradient field of the function.    To see why the gradient is always perpendicular to the level curves, let's take a particular contour line and zoom in. For example, let's take the contour line where . We know points in the direction in which increases the most rapidly, so we can think of this direction in two ways:   Choose a fixed step size, and find the direction in which that step size increases the most.  Choose a fixed increase in , and find the direction in which the path to increase by that amount is the shortest.     Given steps of equal size in all directions, which one increases the function value the most?    Of all the steps that increase the function value by a specific amount, which one is the shortest?    Either way, you're trying to maximize the rise over run of , either by maximizing the rise as in method on the left, or minimizing the run as in method on the right.     If we zoom in close enough, the contour lines start to look like what?      What is the shortest path from one line to another that is parallel to it?      So why will the gradient always be perpendicular to the contour lines?    "
 },
 {
-  "id": "labs-3-9",
+  "id": "labs-3-8",
   "level": "2",
-  "url": "labs-3.html#labs-3-9",
+  "url": "labs-3.html#labs-3-8",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
   "body": "  Take the following field shown below:  The gradient field.  If we imagine placing particles on a grid covering the plot as shown on the bottom left, and press ``Play'' so that the particles ``flow\" along the trajectory of the arrows, then regions that tend to become less dense (i.e. the particles scatter or ``diverge'') have a positive divergence. Regions that tend to become more dense (i.e. the particles collect and attract in this region) have a negative divergence. The picture below on the right shows the particles after a second of ``flow'' along the vector field.    The initial trajectory of particles placed evenly spaced on a grid under this field.    The particles on the grid after a short time where the particles have \"flowed\" along the vector field.       What region(s) looks to have a positive divergence? What region(s) look to have a negative divergence?    "
 },
 {
-  "id": "labs-3-10",
+  "id": "labs-3-9",
   "level": "2",
-  "url": "labs-3.html#labs-3-10",
+  "url": "labs-3.html#labs-3-9",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
   "body": "  On the following dots, draw an example of a field with positive divergence, one with negative divergence, and one with a divergence of zero.    A dot on which you are asked to draw a field with positive divergence.    A dot on which you are asked to draw a field with negative divergence.    A dot on which you are asked to draw a field with zero divergence.     "
 },
 {
-  "id": "labs-3-13",
+  "id": "labs-3-12",
   "level": "2",
-  "url": "labs-3.html#labs-3-13",
+  "url": "labs-3.html#labs-3-12",
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
   "body": "  A conservative field is ``fair,\" that is the amount of work to move between two points is the same no matter what path you take. So in other words, if you go from point to point , the amount of work you ``put in'' is the same you ``get back'' by going back from point to point . Gravity for example is conservative - you might need to work to get up a hill, but you get the same amount of work back (or a ``free ride'') falling back down the hill.     With that point of view, is a river flowing downstream a conservative field? Why or why not? (You can think of it in terms of energy spent.)      Is a whirlpool a conservative field? Why or why not?      Will a conservative field have a curl?    "
 },
 {
-  "id": "labs-3-14",
+  "id": "labs-3-13",
   "level": "2",
-  "url": "labs-3.html#labs-3-14",
+  "url": "labs-3.html#labs-3-13",
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
   "body": "  Wrap your fingers of your right-hand around so the curve inward, and your thumb will point in the direction of the curl (by convention). So if the curl indicates motion in the counter-clockwise direction, is the curl positive or negative?   "
 },
 {
-  "id": "labs-3-15",
+  "id": "labs-3-14",
   "level": "2",
-  "url": "labs-3.html#labs-3-15",
+  "url": "labs-3.html#labs-3-14",
   "type": "Worksheet Exercise",
   "number": "8",
   "title": "",
   "body": "  As we saw, the divergence of the curl of a field is always 0. Let's take a look at why this is true in 2 dimensions - picture a very small circular disk. The curl of the field is the part of the field that ``rotates'' an object around the center of the disk. If we picture fluid on a grid within the disk, the curl measures the rotational part of field within the disk. Note, that the rotational part of the field doesn't have anything to do with carrying the fluid out of the disk.  The divergence measures how the fluid flows out of the disk given the flow of the vector field. So why would the divergence of the curl be 0?   "
 },
 {
-  "id": "labs-3-17",
+  "id": "labs-3-16",
   "level": "2",
-  "url": "labs-3.html#labs-3-17",
+  "url": "labs-3.html#labs-3-16",
   "type": "Worksheet Exercise",
   "number": "9",
   "title": "",
@@ -457,7 +457,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "1.3. The operator ``del’’",
-  "body": " 1.3. The operator ``del''  MTH 401    Let . The divergence of is given by       Let . The curl of is       Suppose that Find the divergence , and notice that the divergence is a function, rather than a field.      Find where , and notice that the result in this case is a new field.      The divergence can be defined for fields in any dimension, but the curl only works in dimension three. However, if we have a two-dimensional field , we can view it as a three-dimensional field by setting the third component to 0: . Then we have which we often just think of as the function  Find if .      Just as we found second derivatives in Calculus I, we can differentiate twice using provided that we interpret appropriately.     Start with the function and write the gradient .      Then find the curl of the gradient: . (It's kind of a gross computation, but just be patient!)      What does this say about the curl of a conservative field?       Now suppose that and find the divergence of the curl: .      There is a very important operation we will use often, called the Laplacian . Let's explore.     If is a function, find an expression for the divergence of the gradient: .  We call this the Laplacian of and denote it as . It will play an important role later in the course.      Find .       Suppose that . Find and .    "
+  "body": " 1.3. The operator ``del''   MTH 401     Let . The divergence of is given by       Let . The curl of is       Suppose that Find the divergence , and notice that the divergence is a function, rather than a field.           Find where , and notice that the result in this case is a new field.          The divergence can be defined for fields in any dimension, but the curl only works in dimension three. However, if we have a two-dimensional field , we can view it as a three-dimensional field by setting the third component to 0: . Then we have which we often just think of as the function  Find if .     (in direction )     Just as we found second derivatives in Calculus I, we can differentiate twice using provided that we interpret appropriately.     Start with the function and write the gradient .           Then find the curl of the gradient: . (It's kind of a gross computation, but just be patient!)     since mixed partials are equal! Well that worked out...      What does this say about the curl of a conservative field?    If is a conservative field, then , so . (That is, conservative fields have curl zero.)       Now suppose that and find the divergence of the curl: .    Note again, mixed partial derivatives don't matter which order we differentiate... So for any field, the divergence of the curl of a field is 0.      There is a very important operation we will use often, called the Laplacian . Let's explore.     If is a function, find an expression for the divergence of the gradient: .  Note: We call this the Laplacian of and denote it as . It will play an important role later in the course.           Find .            Suppose that . Find and .    First the curl. Now the divergence.     "
 },
 {
   "id": "def-divergence",
@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that Find the divergence , and notice that the divergence is a function, rather than a field.   "
+  "body": "  Suppose that Find the divergence , and notice that the divergence is a function, rather than a field.        "
 },
 {
   "id": "activities-6-6",
@@ -493,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Find where , and notice that the result in this case is a new field.   "
+  "body": "  Find where , and notice that the result in this case is a new field.       "
 },
 {
   "id": "activities-6-7",
@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  The divergence can be defined for fields in any dimension, but the curl only works in dimension three. However, if we have a two-dimensional field , we can view it as a three-dimensional field by setting the third component to 0: . Then we have which we often just think of as the function  Find if .   "
+  "body": "  The divergence can be defined for fields in any dimension, but the curl only works in dimension three. However, if we have a two-dimensional field , we can view it as a three-dimensional field by setting the third component to 0: . Then we have which we often just think of as the function  Find if .     (in direction )  "
 },
 {
   "id": "activities-6-8",
@@ -511,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Just as we found second derivatives in Calculus I, we can differentiate twice using provided that we interpret appropriately.     Start with the function and write the gradient .      Then find the curl of the gradient: . (It's kind of a gross computation, but just be patient!)      What does this say about the curl of a conservative field?    "
+  "body": "  Just as we found second derivatives in Calculus I, we can differentiate twice using provided that we interpret appropriately.     Start with the function and write the gradient .           Then find the curl of the gradient: . (It's kind of a gross computation, but just be patient!)     since mixed partials are equal! Well that worked out...      What does this say about the curl of a conservative field?    If is a conservative field, then , so . (That is, conservative fields have curl zero.)    "
 },
 {
   "id": "activities-6-9",
@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Now suppose that and find the divergence of the curl: .   "
+  "body": "  Now suppose that and find the divergence of the curl: .    Note again, mixed partial derivatives don't matter which order we differentiate... So for any field, the divergence of the curl of a field is 0.   "
 },
 {
   "id": "activities-6-10",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "  There is a very important operation we will use often, called the Laplacian . Let's explore.     If is a function, find an expression for the divergence of the gradient: .  We call this the Laplacian of and denote it as . It will play an important role later in the course.      Find .    "
+  "body": "  There is a very important operation we will use often, called the Laplacian . Let's explore.     If is a function, find an expression for the divergence of the gradient: .  Note: We call this the Laplacian of and denote it as . It will play an important role later in the course.           Find .         "
 },
 {
   "id": "activities-6-11",
@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
-  "body": "  Suppose that . Find and .   "
+  "body": "  Suppose that . Find and .    First the curl. Now the divergence.    "
 },
 {
   "id": "activities-7",
@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "1.4. The Divergence Theorem",
-  "body": " 1.4. The Divergence Theorem  MTH 401    The flux of a field across a curve is where is the outward normal vector to the curve.      If the curve is closed, then the Divergence Theorem in two dimensions tells us where is the two-dimensional region inside the closed curve . That is, the total outward flux of a field across a closed curve is equivalent to the double integral of the divergence of that field over the enclosed region.  However, it's important to remember that  must be closed for the Divergence Theorem to apply.      Suppose that and is the line segment joining the points and with normal vector pointing up.     Find the flux of through in the direction , the upward pointing normal.   The flux going through a curve, see description below.              C    \\hat \\nvec       A curve is shown that is the straight line between and , and the normal vector to the curve pointing upwards is also shown.        Suppose now that is the closed curve shown below. Use the divergence theorem to find the flux of across in the outward normal direction.   The flux going through a closed curve, see description below.         C       A curve is shown that consists of the straight line between and , and the half circle centered at the origin with a radius of 1 located in quadrants III and IV.        Using the two results you've found so far, find the flux of across only the lower semi-circle (the bottom half of the unit circle).       Consider the field and the curve , which is the circle of radius 3 centered at . Use the divergence theorem to find the flux of out of .      Each of the fields below has a constant divergence. Identify the field with a positive divergence, the one with zero divergence, and the one with negative divergence.    A vector field, all vectors point radially away from the origin.    f(x,y) = (x,y)          A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.    f(x,y) = (-y,x)          A vector field, all arrows point point horizontally towards the y-axis.    f(x,y) = (-x,0)            The Divergence Theorem holds in more than just two dimensions.    If is a field in three dimensions across a closed surface which enclosed the three dimensional region , the Divergence Theorem in three dimensions, (also called Gauss's Theorem ), says that the total outward flux of the field through is equal to the triple integral of the divergence of the field over . That is,       Find the flux of the field out of the sphere of radius 2 centered at the origin.      Find the flux of the field out of the upper hemisphere of radius one sitting on the plane . The Divergence Theorem will be helpful here, but be careful because the surface given is not closed. Can you add a piece to form a closed surface?      Suppose that the field measures the velocity of a stream of water under everyday conditions (say, the Grand River).     Use the Divergence Theorem to explain why you should expect that .      Explain why fields satisfying are called incompressible .       Suppose that is a closed surface bounding a 3-dimensional region . If is a function, explain why the flux of out of , that is , is equal to      Consider the field and suppose that is the unit cube where Evaluate the triple integral .    "
+  "body": " 1.4. The Divergence Theorem   MTH 401    The flux of a field across a curve is where is the outward normal vector to the curve.      If the curve is closed, then the Divergence Theorem in two dimensions tells us where is the two-dimensional region inside the closed curve . That is, the total outward flux of a field across a closed curve is equivalent to the double integral of the divergence of that field over the enclosed region.  However, it's important to remember that  must be closed for the Divergence Theorem to apply.      Suppose that and is the line segment joining the points and with normal vector pointing up.     Find the flux of through in the direction , the upward pointing normal.   The flux going through a curve, see description below.              C    \\hat \\nvec       A curve is shown that is the straight line between and , and the normal vector to the curve pointing upwards is also shown.       , so plugging in:         Suppose now that is the closed curve shown below. Use the divergence theorem to find the flux of across in the outward normal direction.   The flux going through a closed curve, see description below.         C       A curve is shown that consists of the straight line between and , and the half circle centered at the origin with a radius of 1 located in quadrants III and IV.       , so         Using the two results you've found so far, find the flux of across only the lower semi-circle (the bottom half of the unit circle).       Since and , then rearranging gives        Consider the field and the curve , which is the circle of radius 3 centered at . Use the divergence theorem to find the flux of out of .    If is the interior of our closed curve, then it's just the area of a circle with radius 3, or area . Using the divergence theorem, and the fact that , then       Each of the fields below has a constant divergence. Identify the field with a positive divergence, the one with zero divergence, and the one with negative divergence.    A vector field, all vectors point radially away from the origin.    f(x,y) = (x,y)          A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.    f(x,y) = (-y,x)          A vector field, all arrows point point horizontally towards the y-axis.    f(x,y) = (-x,0)            Think of closed curves, and look at the flux out of the closed curve, since the flux out of a closed curve is equal to the divergence.  First field: think of a square centered at the origin. Then on every edge of that square, since and point in similar directions. So since , then divergence theorem tells us that , which means . So positive divergence.  Second field, think of a circle centered at the origin. Then is always orthogonal to , so , so the flux is 0. According to the divergence theorem, the divergence is also 0.  Third field, think of a rectangle with the center at the origin and each side either parallel to the x-axis or the y-axis. On the top and bottom of the rectangle, points entirely vertically while points entirely horizontally, so . On the left and right of the rectangle though, points out and points in, so they are parallel but in opposite directions. So . Since flux is negative, divergence is negative.    The Divergence Theorem holds in more than just two dimensions.    If is a field in three dimensions across a closed surface which enclosed the three dimensional region , the Divergence Theorem in three dimensions, (also called Gauss's Theorem ), says that the total outward flux of the field through is equal to the triple integral of the divergence of the field over . That is,       Find the flux of the field out of the sphere of radius 2 centered at the origin.    Let be the volume inside our surface, and be the surface of our sphere. Then Then according to the divergence theorem,       Find the flux of the field out of the upper hemisphere of radius one sitting on the plane . The Divergence Theorem will be helpful here, but be careful because the surface given is not closed. Can you add a piece to form a closed surface?     The upper hemisphere of radius 1 sitting on the plane z=1.         \\vec{n}  S  B  z=1      The disk shown is not included, so add it in as the bottom of the surface , use the divergence theorem on the closed surface, then break it apart.  For alone, so in this plane, and , so the flux through becomes If we include and use the divergence theorem, and replace pieces carefully: and rearranging gives       Suppose that the field measures the velocity of a stream of water under everyday conditions (say, the Grand River).     Use the Divergence Theorem to explain why you should expect that .    Consider a small circle in the river. Divergence is the rate at which \"density\" exits the circle, but we wouldn't expect the density of fluid within the circle to change. That is, the water isn't diverging or converging within in the circle.      Explain why fields satisfying are called incompressible .    If somewhere, then there is a small circle in which the flux is negative across the boundary, and the density of that circle changes such that the fluid is being compressed into the region inside.       Suppose that is a closed surface bounding a 3-dimensional region . If is a function, explain why the flux of out of , that is , is equal to    The divergence theorem in 3d says , and .      Consider the field and suppose that is the unit cube where Evaluate the triple integral .    You could do either actually, find that triple integral or use the divergence theorem and find the flux through each surface. We'll choose to use the divergence theorem.   The unit cub sitting on the origin, described in the problem.            y  x  z      See the picture for each of the faces. We need to do all 6.  Front face: , while both go between 0 and 1. But plugging in we have , so so the flux is 0 through the front face.  Back face: . Again, , so , so the flux is also 0 through the back.  Right face: . Now , so , so the flux is also 0 through the right.  Left face: . Now , so , so the flux is also 0 through the left.  Top face: . Now , so , so the flux is also 0 through the top.  Bottom face: . Now !!!! So (the flux is finally not zero!). And so flux is 1 through the bottom!  Add them all together, apply divergence theorem,     "
 },
 {
   "id": "def-flux",
@@ -574,7 +574,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Suppose that and is the line segment joining the points and with normal vector pointing up.     Find the flux of through in the direction , the upward pointing normal.   The flux going through a curve, see description below.              C    \\hat \\nvec       A curve is shown that is the straight line between and , and the normal vector to the curve pointing upwards is also shown.        Suppose now that is the closed curve shown below. Use the divergence theorem to find the flux of across in the outward normal direction.   The flux going through a closed curve, see description below.         C       A curve is shown that consists of the straight line between and , and the half circle centered at the origin with a radius of 1 located in quadrants III and IV.        Using the two results you've found so far, find the flux of across only the lower semi-circle (the bottom half of the unit circle).    "
+  "body": "  Suppose that and is the line segment joining the points and with normal vector pointing up.     Find the flux of through in the direction , the upward pointing normal.   The flux going through a curve, see description below.              C    \\hat \\nvec       A curve is shown that is the straight line between and , and the normal vector to the curve pointing upwards is also shown.       , so plugging in:         Suppose now that is the closed curve shown below. Use the divergence theorem to find the flux of across in the outward normal direction.   The flux going through a closed curve, see description below.         C       A curve is shown that consists of the straight line between and , and the half circle centered at the origin with a radius of 1 located in quadrants III and IV.       , so         Using the two results you've found so far, find the flux of across only the lower semi-circle (the bottom half of the unit circle).       Since and , then rearranging gives     "
 },
 {
   "id": "activities-7-6",
@@ -583,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Consider the field and the curve , which is the circle of radius 3 centered at . Use the divergence theorem to find the flux of out of .   "
+  "body": "  Consider the field and the curve , which is the circle of radius 3 centered at . Use the divergence theorem to find the flux of out of .    If is the interior of our closed curve, then it's just the area of a circle with radius 3, or area . Using the divergence theorem, and the fact that , then    "
 },
 {
   "id": "activities-7-7",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Each of the fields below has a constant divergence. Identify the field with a positive divergence, the one with zero divergence, and the one with negative divergence.    A vector field, all vectors point radially away from the origin.    f(x,y) = (x,y)          A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.    f(x,y) = (-y,x)          A vector field, all arrows point point horizontally towards the y-axis.    f(x,y) = (-x,0)           "
+  "body": "  Each of the fields below has a constant divergence. Identify the field with a positive divergence, the one with zero divergence, and the one with negative divergence.    A vector field, all vectors point radially away from the origin.    f(x,y) = (x,y)          A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.    f(x,y) = (-y,x)          A vector field, all arrows point point horizontally towards the y-axis.    f(x,y) = (-x,0)            Think of closed curves, and look at the flux out of the closed curve, since the flux out of a closed curve is equal to the divergence.  First field: think of a square centered at the origin. Then on every edge of that square, since and point in similar directions. So since , then divergence theorem tells us that , which means . So positive divergence.  Second field, think of a circle centered at the origin. Then is always orthogonal to , so , so the flux is 0. According to the divergence theorem, the divergence is also 0.  Third field, think of a rectangle with the center at the origin and each side either parallel to the x-axis or the y-axis. On the top and bottom of the rectangle, points entirely vertically while points entirely horizontally, so . On the left and right of the rectangle though, points out and points in, so they are parallel but in opposite directions. So . Since flux is negative, divergence is negative.   "
 },
 {
   "id": "activities-7-8",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Find the flux of the field out of the sphere of radius 2 centered at the origin.   "
+  "body": "  Find the flux of the field out of the sphere of radius 2 centered at the origin.    Let be the volume inside our surface, and be the surface of our sphere. Then Then according to the divergence theorem,    "
 },
 {
   "id": "activities-7-11",
@@ -628,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Find the flux of the field out of the upper hemisphere of radius one sitting on the plane . The Divergence Theorem will be helpful here, but be careful because the surface given is not closed. Can you add a piece to form a closed surface?   "
+  "body": "  Find the flux of the field out of the upper hemisphere of radius one sitting on the plane . The Divergence Theorem will be helpful here, but be careful because the surface given is not closed. Can you add a piece to form a closed surface?     The upper hemisphere of radius 1 sitting on the plane z=1.         \\vec{n}  S  B  z=1      The disk shown is not included, so add it in as the bottom of the surface , use the divergence theorem on the closed surface, then break it apart.  For alone, so in this plane, and , so the flux through becomes If we include and use the divergence theorem, and replace pieces carefully: and rearranging gives    "
 },
 {
   "id": "activities-7-12",
@@ -637,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "  Suppose that the field measures the velocity of a stream of water under everyday conditions (say, the Grand River).     Use the Divergence Theorem to explain why you should expect that .      Explain why fields satisfying are called incompressible .    "
+  "body": "  Suppose that the field measures the velocity of a stream of water under everyday conditions (say, the Grand River).     Use the Divergence Theorem to explain why you should expect that .    Consider a small circle in the river. Divergence is the rate at which \"density\" exits the circle, but we wouldn't expect the density of fluid within the circle to change. That is, the water isn't diverging or converging within in the circle.      Explain why fields satisfying are called incompressible .    If somewhere, then there is a small circle in which the flux is negative across the boundary, and the density of that circle changes such that the fluid is being compressed into the region inside.    "
 },
 {
   "id": "activities-7-13",
@@ -646,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
-  "body": "  Suppose that is a closed surface bounding a 3-dimensional region . If is a function, explain why the flux of out of , that is , is equal to   "
+  "body": "  Suppose that is a closed surface bounding a 3-dimensional region . If is a function, explain why the flux of out of , that is , is equal to    The divergence theorem in 3d says , and .   "
 },
 {
   "id": "activities-7-14",
@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "8",
   "title": "",
-  "body": "  Consider the field and suppose that is the unit cube where Evaluate the triple integral .   "
+  "body": "  Consider the field and suppose that is the unit cube where Evaluate the triple integral .    You could do either actually, find that triple integral or use the divergence theorem and find the flux through each surface. We'll choose to use the divergence theorem.   The unit cub sitting on the origin, described in the problem.            y  x  z      See the picture for each of the faces. We need to do all 6.  Front face: , while both go between 0 and 1. But plugging in we have , so so the flux is 0 through the front face.  Back face: . Again, , so , so the flux is also 0 through the back.  Right face: . Now , so , so the flux is also 0 through the right.  Left face: . Now , so , so the flux is also 0 through the left.  Top face: . Now , so , so the flux is also 0 through the top.  Bottom face: . Now !!!! So (the flux is finally not zero!). And so flux is 1 through the bottom!  Add them all together, apply divergence theorem,    "
 },
 {
   "id": "activities-8",
