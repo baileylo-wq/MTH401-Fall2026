@@ -60,7 +60,7 @@
          divergence <m>\nabla\cdot \mbf F</m>, and notice that the divergence is a
          function, rather than a field.</p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
       <p>
         <m>\ds \nabla\cdot \mbf F = \frac{\partial}{\partial x}(xy+yz)+\frac{\partial}{\partial y}(3x+2yz)+\frac{\partial}{\partial z}(2xy+z^2)=y+2z+2z=y+4z</m>
       </p>
@@ -73,7 +73,7 @@
   Find <m>\nabla\times\mbf F</m> where <m>\mbf F = (xy+yz, 3x+2yz, 2xy +
   z^2)</m>, and notice that the result in this case is a new field.</p>
     </statement>
-  <solution component="aaa-soln">
+  <solution component="show-soln">
       <p>
         <md>
           <mrow>\nabla\times\mbf F \amp = \left(\frac{\partial}{\partial x}(2xy+z^2)-\frac{\partial}{\partial z}(3x+2yz), \frac{\partial}{\partial z}(xy+yz)-\frac{\partial}{\partial x}(2xy+z^2), \frac{\partial}{\partial x}(3x+2yz)-\frac{\partial}{\partial y}(xy+yz) \right) </mrow>
@@ -99,7 +99,7 @@
   <md>\nabla \times \mbf F = \pd{F_2}{x}-\pd{F_1}{y}.</md></p>
       <p>Find <m>\nabla\times\mbf F</m> if <m>\mbf F(x,y) = (-y, x)</m>.</p>
     </statement>
-  <solution component="aaa-soln">
+  <solution component="show-soln">
       <p>
         <m>\nabla\times \mbf F = \frac{\partial}{\partial x}(x)-\frac{\partial}{\partial y}(-y) = 1+1 = 2</m> (in direction <m>\vec{k}</m>)
       </p>
@@ -116,7 +116,7 @@
         <p>Start with the function <m>f(x,y,z)</m> and write the gradient <m>\nabla
   f</m>.</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
         <p>
           <m>\ds \nabla f = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)</m>
         </p>
@@ -127,7 +127,7 @@
         <p>Then find the curl of the gradient:  <m>\nabla\times\nabla f</m>.  (It's
   kind of a gross computation, but just be patient!)</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
         <p>
           <md>
             <mrow>\nabla\times\nabla f \amp = \left(\frac{\partial}{\partial y}(\frac{\partial f}{\partial z}) - \frac{\partial}{\partial z}(\frac{\partial f}{\partial y}), 
@@ -147,7 +147,7 @@
         <p>What does this say about the curl <m>\nabla\times\mbf F</m> of a
   conservative field?</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
         <p>
           If <m>\mbf F</m> is a conservative field, then <m>\mbf F = \nabla f</m>, so 
           <m>\nabla \times \mbf F = \nabla \times (\nabla f) = \vec{0}</m>. (That is, 
@@ -162,7 +162,7 @@
       <p>Now suppose that <m>\mbf F=(F_1, F_2, F_3)</m> and find the
   divergence of the curl: <m>\nabla\cdot(\nabla\times\mbf F)</m>.</p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
       <p>Note again, mixed partial derivatives don't matter which order we differentiate...
         <md>
           <mrow>\nabla \cdot (\nabla\times \mbf F) \amp = 
@@ -195,7 +195,7 @@
   <m>\nabla^2f = \nabla\cdot\nabla f</m>.  It will play an important role
   later in the course.</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
         <p>
           <md>
             <mrow> \nabla \cdot \nabla f \amp = 
@@ -210,7 +210,7 @@
       <statement>
         <p>Find <m>\displaystyle \nabla^2 \ln(x^2+y^2)</m>.</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
         <p>
           <md>
             <mrow> \nabla^2 \ln(x^2+y^2) \amp =  \frac{\partial^2}{\partial x^2}\left(\ln(x^2+y^2)\right) +\frac{\partial^2}{\partial y^2}\left(\ln(x^2+y^2)\right)  </mrow>
@@ -234,7 +234,7 @@
   \right)</m>.
   Find <m>\nabla\times\mbf F</m> and <m>\nabla \cdot \mbf F</m>.</p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
       <p>
         First the curl.
         <md>

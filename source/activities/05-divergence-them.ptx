@@ -74,7 +74,7 @@ apply.
   </image>  
 
   </statement>
-  <solution component="aaa-soln">
+  <solution component="show-soln">
     <p>
       <m>\mbf F \cdot \nvec = (x,-2)\cdot (0,1) = -2</m>, so plugging in:
     </p>
@@ -112,7 +112,7 @@ apply.
   </image>  
 
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
     <p>
       <m>\nabla \cdot \mbf F = \frac{\partial}{\partial x}(x)+\frac{\partial}{\partial y}(-2)=1</m>, so
     </p>
@@ -127,7 +127,7 @@ apply.
   across only the
   lower semi-circle (the bottom half of the unit circle).</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
     <p>
       <m>\oint_C \mbf F \cdot \nvec ds = \int_{C_1} \mbf F \cdot \nvec ds + \int _{C_2} \mbf F \cdot \nvec ds = 
         \iint_D \nabla \cdot \mbf F dA
@@ -151,7 +151,7 @@ apply.
   divergence theorem to find
   the flux of <m>\mbf F</m> out of <m>C</m>.</p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
     <p>
       If <m>D</m> is the interior of our closed curve, then it's just the area of a circle with radius 3, or 
       area <m>9\pi</m>.  Using the divergence theorem, and the fact that <m>{\nabla \cdot \mbf F = \frac{\partial}{\partial x}(x) + \frac{\partial}{\partial y}(y)=2}</m>, then
@@ -211,7 +211,7 @@ apply.
 
   
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
     <p>
       Think of closed curves, and look at the flux out of the closed curve, since the flux out of a closed curve is equal to the divergence. 
       
@@ -259,7 +259,7 @@ apply.
   the flux of the field <m>\mbf F(x,y,z) = (2x,y,-z)</m> out of the sphere of
   radius 2 centered at the origin.</p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
     <p>
       Let <m>E</m> be the volume inside our surface, and <m>S</m> be the surface of our sphere. 
       Then 
@@ -289,7 +289,7 @@ apply.
   the surface given is not closed.  Can you add a piece to form a
   closed surface?</p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
       <image width="40%">
                             <shortdescription>The upper hemisphere of radius 1 sitting on the plane z=1.                            </shortdescription>
                             <prefigure xmlns="https://prefigure.org" label="prefigure-diver-thm-soln-1">
@@ -341,7 +341,7 @@ apply.
         <p>Use the Divergence Theorem to explain why you should expect
   that <m>\nabla\cdot\mbf F = 0</m>.</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
     <p>
       Consider a small circle in the river. Divergence is the rate at which "density" exits the circle, 
       but we wouldn't expect the density of fluid within the circle to change.  That is, 
@@ -353,7 +353,7 @@ apply.
       <statement>
         <p>Explain why fields satisfying <m>\nabla\cdot\mbf F=0</m> are called <em>incompressible</em>.</p>
       </statement>
-      <solution component="aaa-soln">
+      <solution component="show-soln">
     <p>
       If <m>\nabla\cdot\mbf F \lt 0</m> somewhere, then there is a small circle in which the flux is negative across the boundary, and the density of that 
       circle changes such that the fluid is being compressed into the region inside. 
@@ -371,7 +371,7 @@ apply.
   \iiint_E \nabla^2f~dV.
   </md></p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
     <p>
       The divergence theorem in 3d says <m>\oiint_S\nabla f\cdot {\mathbf n}~ dA  = \iiint_E \nabla\cdot (\nabla f)~dV </m>, 
       and <m> \iiint_E \nabla\cdot (\nabla f)~dV =  \iiint_E \nabla^2 f~dV</m>.
@@ -390,7 +390,7 @@ apply.
   </md>
   Evaluate the triple integral <m>\iiint_E \nabla\cdot \mbf F~ dV</m>.</p>
     </statement>
-    <solution component="aaa-soln">
+    <solution component="show-soln">
     <p>
       You could do either actually, find that triple integral or use the divergence theorem and find the flux through each surface. 
       We'll choose to use the divergence theorem.  

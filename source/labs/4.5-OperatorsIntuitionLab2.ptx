@@ -3,13 +3,13 @@
 <worksheet>
     <title>Lab: Operators Intuition</title>
 
-
     <introduction>
         <p>
-    <alert>
+            <alert>
         MTH 401
-    </alert></p>
-    
+    </alert>
+        </p>
+
         <p>
             Let's get some intuition behind gradient, divergence, curl, and the
             Laplacian.
@@ -65,9 +65,8 @@
         <task workspace="1cm">
             <statement>
                 <p>
-                    Why do the two peaks of the function correspond to points on
-                    the gradient field plot where the surrounding arrows are
-                    pointed inwards towards those points?
+                    What do the two peaks of the function correspond to on
+                    the gradient field plot?  Why?
                 </p>
             </statement>
         </task>
@@ -75,7 +74,7 @@
         <task workspace="1cm">
             <statement>
                 <p>
-                    What would the gradient field of a function look like near
+                    What does the gradient field of a function look like near
                     the local minimum of the function?
                 </p>
             </statement>
@@ -110,8 +109,7 @@
             </sidebyside>
 
             <p>
-                To see why the gradient is always perpendicular to the level
-                curves, let's take a particular contour line and zoom in.
+                Let's take a particular contour line and zoom in.
                 For example, let's take the contour line where
                 <m>{f(x,y) = 2}</m>.
                 We know <m>\nabla f</m> points in the direction in which
@@ -209,15 +207,15 @@
                 <image source="images/flow.png" width="30%">
                     <shortdescription>The gradient field.</shortdescription>
                 </image>
-                If we imagine placing particles on a grid covering the plot as
-                shown on the bottom left, and press ``Play'' so that the
-                particles ``flow" along the trajectory of the arrows, then
+                Imagine placing particles on a grid covering the plot (shown bottom left), 
+                and pressing ``Play'' so that the
+                particles ``flow" along the trajectory of the arrows. <!--, then
                 regions that tend to become less dense (i.e.
                 the particles scatter or ``diverge'') have a positive
                 divergence.
                 Regions that tend to become more dense (i.e.
                 the particles collect and attract in this region) have a
-                negative divergence.
+                negative divergence.-->
                 The picture below on the right shows the particles after a
                 second of ``flow'' along the vector field.
             </p>
@@ -283,9 +281,7 @@
     </exercise>
 
     <p>
-        Note that we can also visualize divergence in 3 dimensions.
-        However, we can calculate the divergence in any dimension, it just
-        doesn't have a nice picture to go along with it.
+        (We can also visualize divergence in 3 dimensions, but we can calculate the divergence in any dimension.)
     </p>
 
     <subsection xml:id="subsec-curl">
@@ -300,7 +296,7 @@
         </p>
 
         <p>
-            We could also imagine making a cup of tea.
+            Or imagine making a cup of tea.
             The faster you stir the tea in your teacup, the larger your curl.
             And a tiny propeller will turn in the direction of that curl as
             well.
@@ -313,9 +309,10 @@
                 A conservative field is ``fair," that is the amount of work to
                 move between two points is the same no matter what path you
                 take.
-                So in other words, if you go from point <m>A</m> to point <m>B</m>, the
-                amount of work you ``put in'' is the same you ``get back'' by
-                going back from point <m>B</m> to point <m>A</m>.
+                So in other words, if you go from point <m>A</m> to point
+                <m>B</m>, the amount of work you ``put in'' is the same you
+                ``get back'' by going back from point <m>B</m> to point
+                <m>A</m>.
                 Gravity for example is conservative - you might need to work to
                 get up a hill, but you get the same amount of work back (or a
                 ``free ride'') falling back down the hill.
@@ -367,7 +364,8 @@
         <statement>
             <p>
                 As we saw, the divergence of the curl of a field is always 0.
-                Let's take a look at why this is true in 2 dimensions - picture
+                Let's take a look at why this is true in 2 dimensions. 
+            </p><p>Picture
                 a very small circular disk.
                 The curl of the field is the part of the field that ``rotates''
                 an object around the center of the disk.
@@ -393,10 +391,10 @@
             Initially you fill your teacup with hot water, and put your teabag
             inside.
             Over time, the water starts getting darker.
-            That is, the tea is starting to diffuse.
+            The tea is starting to diffuse.
             The laplacian tells you how homogeneous your mixture is.
-            Over time the tea will become more and more ``well-mixed'', that is
-            more and more homogenous, and your laplacian will get smaller.
+            Over time the tea will become more and more ``well-mixed''
+            (homogenous), and your laplacian will get smaller.
         </p>
     </subsection>
 
@@ -410,8 +408,8 @@
             </p>
 
             <p>
-                Recall the gradient of <m>f</m> tells you the direction in which <m>f</m>
-                is <fillin characters="10" />.
+                Recall the gradient of <m>f</m> tells you the direction in which
+                <m>f</m> is <fillin characters="10"/>.
             </p>
 
             <p>
@@ -458,8 +456,8 @@
                 <p>
                     Let's look at the analogous 2-dimensional calculus example
                     of the second derivative.
-                    The graph below has a local maximum at <m>x=0</m> and a local
-                    minimum at about <m>x=2</m>.
+                    The graph below has a local maximum at <m>x=0</m> and a
+                    local minimum at about <m>x=2</m>.
                 </p>
 
                 <image width="35%">
