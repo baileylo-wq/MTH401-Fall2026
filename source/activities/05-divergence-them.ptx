@@ -246,7 +246,7 @@ apply.
         the <term>Divergence Theorem</term> in three dimensions, (also called <term>Gauss's Theorem</term>), says that the total outward flux of the field through <m>S</m> is equal to the triple integral of the divergence of the field over <m>E</m>.
         That is, 
         <md>
-          \ds \oiint_C \mbf F \cdot \hat \nvec ~dA = \iiint_E \nabla \cdot \mbf F ~dV
+          \ds \oiint_S \mbf F \cdot \hat \nvec ~dA = \iiint_E \nabla \cdot \mbf F ~dV
         </md>
         
       </p>
@@ -269,7 +269,7 @@ apply.
       </md>
       Then according to the divergence theorem, 
       <md>
-        <mrow>\oiint_C \mbf F \cdot \hat \nvec ~dA = \amp \iiint_E \nabla \cdot \mbf F ~dV</mrow>
+        <mrow>\oiint_S \mbf F \cdot \hat \nvec ~dA = \amp \iiint_E \nabla \cdot \mbf F ~dV</mrow>
         <mrow> =  \amp \iiint_E 2 dV </mrow>
         <mrow> =  \amp 2(volume \ of \ sphere) </mrow>
         <mrow> =  \amp 2(\frac43 \pi 2^3) </mrow>
