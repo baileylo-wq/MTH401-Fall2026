@@ -269,7 +269,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -348,12 +351,37 @@ F_1 \amp  F_2 \amp  F_3 \\
 <article class="exercise exercise-like" id="activities-6-5"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para" id="activities-6-5-1-1">Suppose that <span class="process-math">\(\displaystyle \mbf F = (xy+yz, 3x+2yz, 2xy + z^2).\)</span>  Find the divergence <span class="process-math">\(\nabla\cdot \mbf F\text{,}\)</span> and notice that the divergence is a function, rather than a field.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-6-5-2-1">
+<span class="process-math">\(\ds \nabla\cdot \mbf F = \frac{\partial}{\partial x}(xy+yz)+\frac{\partial}{\partial y}(3x+2yz)+\frac{\partial}{\partial z}(2xy+z^2)=y+2z+2z=y+4z\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#activities-6-5-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="2in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activities-6-5" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-6-6"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para" id="activities-6-6-1-1">Find <span class="process-math">\(\nabla\times\mbf F\)</span> where <span class="process-math">\(\mbf F = (xy+yz, 3x+2yz, 2xy +
 z^2)\text{,}\)</span> and notice that the result in this case is a new field.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-6-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-6-6-2-1">
+<div class="displaymath process-math" id="activities-6-6-2-1-1">
+\begin{align*}
+\nabla\times\mbf F \amp = \left(\frac{\partial}{\partial x}(2xy+z^2)-\frac{\partial}{\partial z}(3x+2yz), \frac{\partial}{\partial z}(xy+yz)-\frac{\partial}{\partial x}(2xy+z^2), \frac{\partial}{\partial x}(3x+2yz)-\frac{\partial}{\partial y}(xy+yz) \right) \\
+\amp = (2x-2y, y-2y, 3-x-z) \\
+\amp = (2x-2y, -y, 3-x-z) 
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#activities-6-6-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="2in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#activities-6-6" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
@@ -379,6 +407,15 @@ F(x,y)=(F_1(x,y), F_2(x,y))\text{,}\)</span> we can view it as a three-dimension
 </div> 
 <div class="para" id="activities-6-7-1-2">Find <span class="process-math">\(\nabla\times\mbf F\)</span> if <span class="process-math">\(\mbf F(x,y) = (-y, x)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-6-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-6-7-2-1">
+<span class="process-math">\(\nabla\times \mbf F = \frac{\partial}{\partial x}(x)-\frac{\partial}{\partial y}(-y) = 1+1 = 2\)</span> (in direction <span class="process-math">\(\vec{k}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#activities-6-7-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-6-7" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
 </article>
@@ -391,11 +428,41 @@ F(x,y)=(F_1(x,y), F_2(x,y))\text{,}\)</span> we can view it as a three-dimension
 <div class="para" id="activities-6-8-2-1-1">Start with the function <span class="process-math">\(f(x,y,z)\)</span> and write the gradient <span class="process-math">\(\nabla
 f\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-6-8-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-6-8-2-2-1">
+<span class="process-math">\(\ds \nabla f = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.a.1"><a tabindex="-1" href="#activities-6-8-2-2" title="Copy heading and permalink for Solution 4.a.1" aria-label="Copy heading and permalink for Solution 4.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#activities-6-8-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-6-8-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-6-8-3-1-1">Then find the curl of the gradient:  <span class="process-math">\(\nabla\times\nabla f\text{.}\)</span>  (It’s kind of a gross computation, but just be patient!)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-6-8-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-6-8-3-2-1">
+<div class="displaymath process-math" id="activities-6-8-3-2-1-1">
+\begin{align*}
+\nabla\times\nabla f \amp = \left(\frac{\partial}{\partial y}(\frac{\partial f}{\partial z}) - \frac{\partial}{\partial z}(\frac{\partial f}{\partial y}), 
+\frac{\partial}{\partial z}(\frac{\partial f}{\partial x}) - \frac{\partial}{\partial x}(\frac{\partial f}{\partial z}), 
+\frac{\partial}{\partial x}(\frac{\partial f}{\partial y}) - \frac{\partial}{\partial y}(\frac{\partial f}{\partial x}) \right) \\
+\amp = \left(\frac{\partial^2 f}{\partial y\partial z}-\frac{\partial^2 f}{\partial z\partial y}, 
+\frac{\partial^2 f}{\partial z\partial x}-\frac{\partial^2 f}{\partial x\partial z} , 
+\frac{\partial^2 f}{\partial x\partial y} -\frac{\partial^2 f}{\partial y\partial x} \right) \\
+\amp = (0,0,0) 
+\end{align*}
+</div>
+<div class="para">since mixed partials are equal!  Well that worked out...</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-8-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.b.1"><a tabindex="-1" href="#activities-6-8-3-2" title="Copy heading and permalink for Solution 4.b.1" aria-label="Copy heading and permalink for Solution 4.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="2in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#activities-6-8-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
@@ -403,12 +470,44 @@ f\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description
 <article class="task exercise-like" id="activities-6-8-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="activities-6-8-4-1-1">What does this say about the curl <span class="process-math">\(\nabla\times\mbf F\)</span> of a conservative field?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-6-8-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-6-8-4-2-1">If <span class="process-math">\(\mbf F\)</span> is a conservative field, then <span class="process-math">\(\mbf F = \nabla f\text{,}\)</span> so <span class="process-math">\(\nabla \times \mbf F = \nabla \times (\nabla f) = \vec{0}\text{.}\)</span> (That is, conservative fields have curl zero.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-8-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.c.1"><a tabindex="-1" href="#activities-6-8-4-2" title="Copy heading and permalink for Solution 4.c.1" aria-label="Copy heading and permalink for Solution 4.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#activities-6-8-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#activities-6-8" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-6-9"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para" id="activities-6-9-1-1">Now suppose that <span class="process-math">\(\mbf F=(F_1, F_2, F_3)\)</span> and find the divergence of the curl: <span class="process-math">\(\nabla\cdot(\nabla\times\mbf F)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-6-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-6-9-2-1">
+<div class="para">Note again, mixed partial derivatives don’t matter which order we differentiate...</div>
+<div class="displaymath process-math" id="activities-6-9-2-1-1">
+\begin{align*}
+\nabla \cdot (\nabla\times \mbf F) \amp = 
+\left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}  \right) \cdot 
+\left( \frac{\partial F_3}{\partial y}-\frac{\partial F_2}{\partial z}, 
+\frac{\partial F_1}{\partial z}-\frac{\partial F_3}{\partial x}, 
+\frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y}  \right) \\
+\amp =  \frac{\partial^2 F_3}{\partial x \partial y} -\frac{\partial^2 F_2}{\partial x \partial y}
++\frac{\partial^2 F_1}{\partial y \partial z} - \frac{\partial^2 F_3}{\partial y \partial x}
++\frac{\partial^2 F_2}{\partial z \partial x} - \frac{\partial^2 F_1}{\partial z \partial y}\\
+\amp = 0 
+\end{align*}
+</div>
+<div class="para">So for any field, the divergence of the curl of a field is 0.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#activities-6-9-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="2in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#activities-6-9" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
@@ -424,11 +523,45 @@ f\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description
 <div class="para" id="activities-6-10-2-1-2">
 <em class="emphasis">Note:</em> We call this the <em class="emphasis">Laplacian</em> of <span class="process-math">\(f\)</span> and denote it as <span class="process-math">\(\nabla^2f = \nabla\cdot\nabla f\text{.}\)</span>  It will play an important role later in the course.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-10-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-6-10-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-6-10-2-2-1">
+<div class="displaymath process-math" id="activities-6-10-2-2-1-1">
+\begin{align*}
+\nabla \cdot \nabla f \amp = 
+\left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}  \right) \cdot \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z}  \right) \\
+\amp =  \frac{\partial^2 f}{\partial x^2} +  \frac{\partial^2 f}{\partial y^2} +  \frac{\partial^2 f}{\partial z^2}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.a.1"><a tabindex="-1" href="#activities-6-10-2-2" title="Copy heading and permalink for Solution 6.a.1" aria-label="Copy heading and permalink for Solution 6.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="2in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#activities-6-10-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-6-10-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-6-10-3-1-1">Find <span class="process-math">\(\displaystyle \nabla^2 \ln(x^2+y^2)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-10-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-6-10-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-6-10-3-2-1">
+<div class="displaymath process-math" id="activities-6-10-3-2-1-1">
+\begin{align*}
+\nabla^2 \ln(x^2+y^2) \amp =  \frac{\partial^2}{\partial x^2}\left(\ln(x^2+y^2)\right) +\frac{\partial^2}{\partial y^2}\left(\ln(x^2+y^2)\right)  \\
+\amp = \frac{\partial}{\partial x}\left(\frac{2x}{x^2+y^2} \right) +\frac{\partial}{\partial y}\left(\frac{2y}{x^2+y^2} \right)  \\
+\amp = \frac{(x^2+y^2)(2) - 2x(2x)}{(x^2+y^2)^2} + \frac{(x^2+y^2)(2) - 2y(2y)}{(x^2+y^2)^2} \\
+\amp = \frac{2x^2 + 2y^2 - 4x^2+2x^2+2y^2-4y^2}{(x^2+y^2)^2}  \\
+\amp = 0 
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-10-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.b.1"><a tabindex="-1" href="#activities-6-10-3-2" title="Copy heading and permalink for Solution 6.b.1" aria-label="Copy heading and permalink for Solution 6.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#activities-6-10-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
@@ -440,6 +573,33 @@ f\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description
 -\frac{y}{x^2+y^2},
 \frac{x}{x^2+y^2}
 \right)\text{.}\)</span> Find <span class="process-math">\(\nabla\times\mbf F\)</span> and <span class="process-math">\(\nabla \cdot \mbf F\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-6-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-6-11-2-1">
+<div class="para">First the curl.</div>
+<div class="displaymath process-math" id="activities-6-11-2-1-1">
+\begin{align*}
+\nabla\times\mbf F \amp = \left(0,0,  \frac{\partial}{\partial x}\left(\frac{x}{x^2+y^2} \right) -\frac{\partial}{\partial y}\left(\frac{-y}{x^2+y^2} \right)  \right)\\
+\amp =  \left(0,0,  \frac{x^2+y^2-2x^2}{(x^2+y^2)^2}  -\left(\frac{(x^2+y^2)(-1)+y(2y)}{(x^2+y^2)^2} \right)  \right)\\
+\amp = \left(0,0, \frac{-x^2+y^2-(-x^2+y^2)}{(x^2+y^2)^2}   \right) \\
+\amp = 0 
+\end{align*}
+</div>
+<div class="para">Now the divergence.</div>
+<div class="displaymath process-math" id="activities-6-11-2-1-2">
+\begin{align*}
+\nabla\cdot\mbf F \amp = \frac{\partial}{\partial x}\left(\frac{-y}{x^2+y^2} \right) +\frac{\partial}{\partial y}\left(\frac{x}{x^2+y^2} \right) \\
+\amp =  \frac{(x^2+y^2)(0)-y(2x)}{(x^2+y^2)^2}  + \frac{0-x(2y)}{(x^2+y^2)^2}\\
+\amp =  \frac{2xy-2xy}{(x^2+y^2)^2}  \\
+\amp = 0 
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-6-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1"><a tabindex="-1" href="#activities-6-11-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 7"><a tabindex="-1" href="#activities-6-11" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
