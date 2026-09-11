@@ -185,7 +185,7 @@
         <title>Divergence</title>
 
         <p>
-            The divergence is the flux density, or the amount of flux (flow)
+            The <term>divergence</term> is the flux density, or the amount of flux (flow)
             entering or leaving a point.
             In other words, it's the tendency of a field to flow outward
             (positive divergence) or inward (negative divergence) to a point.
@@ -208,16 +208,16 @@
                     <shortdescription>The gradient field.</shortdescription>
                 </image>
                 Imagine placing particles on a grid covering the plot (shown bottom left), 
-                and pressing ``Play'' so that the
-                particles ``flow" along the trajectory of the arrows. <!--, then
+                and pressing "Play" so that the
+                particles "flow" along the trajectory of the arrows. <!--, then
                 regions that tend to become less dense (i.e.
-                the particles scatter or ``diverge'') have a positive
+                the particles scatter or "diverge") have a positive
                 divergence.
                 Regions that tend to become more dense (i.e.
                 the particles collect and attract in this region) have a
                 negative divergence.-->
                 The picture below on the right shows the particles after a
-                second of ``flow'' along the vector field.
+                second of "flow" along the vector field.
             </p>
 
             <sidebyside widths="45% 45%">
@@ -288,7 +288,7 @@
         <title>Curl</title>
 
         <p>
-            The curl is the ``circulation density" of your field.
+            The <term>curl</term> is the "circulation density" of your field.
             Imagine sticking a propeller in the middle of your vector field.
             The curl is the tendency of the propeller to be turned by the vector
             field (think torque), and the propeller will turn in the direction
@@ -306,16 +306,16 @@
     <exercise>
         <introduction>
             <p>
-                A conservative field is ``fair," that is the amount of work to
+                A conservative field is "fair," that is the amount of work to
                 move between two points is the same no matter what path you
                 take.
                 So in other words, if you go from point <m>A</m> to point
-                <m>B</m>, the amount of work you ``put in'' is the same you
-                ``get back'' by going back from point <m>B</m> to point
+                <m>B</m>, the amount of work you "put in" is the same you
+                "get back" by going back from point <m>B</m> to point
                 <m>A</m>.
                 Gravity for example is conservative - you might need to work to
                 get up a hill, but you get the same amount of work back (or a
-                ``free ride'') falling back down the hill.
+                "free ride") falling back down the hill.
             </p>
         </introduction>
 
@@ -367,7 +367,7 @@
                 Let's take a look at why this is true in 2 dimensions. 
             </p><p>Picture
                 a very small circular disk.
-                The curl of the field is the part of the field that ``rotates''
+                The curl of the field is the part of the field that "rotates"
                 an object around the center of the disk.
                 If we picture fluid on a grid within the disk, the curl measures
                 the rotational part of field within the disk.
@@ -392,8 +392,8 @@
             inside.
             Over time, the water starts getting darker.
             The tea is starting to diffuse.
-            The laplacian tells you how homogeneous your mixture is.
-            Over time the tea will become more and more ``well-mixed''
+            The <term>laplacian</term> tells you how homogeneous your mixture is.
+            Over time the tea will become more and more "well-mixed"
             (homogenous), and your laplacian will get smaller.
         </p>
     </subsection>
@@ -401,8 +401,8 @@
     <exercise>
         <introduction>
             <p>
-                The Laplacian of a function <m>f</m> is the divergence of the
-                gradient of <m>f</m>, that is <m>{\nabla \cdot \nabla f}</m>.
+                The <term>Laplacian</term> of a function <m>f</m> is the divergence of the
+                gradient of <m>f</m>, that is <m>{\nabla \cdot \nabla f}</m> or <m>{\nabla^2 f}</m>.
                 It's kind of like a second derivative (how your function bends
                 at a point).
             </p>
@@ -460,7 +460,7 @@
                     local minimum at about <m>x=2</m>.
                 </p>
 
-                <image width="35%">
+                <image width="30%">
                     <shortdescription>
                         The graph of a cubic polynomial with roots at 0 and 2.
                     </shortdescription>
@@ -508,7 +508,7 @@
     </exercise>
 
     <p>
-        So the Laplacian is measuring a ``change in change''.
+        So the Laplacian is measuring a "change in change".
         When the field goes from a small amount of change at one point, to a
         huge amount of change at another point, the Laplacian will be large
         (there is a large change in change).

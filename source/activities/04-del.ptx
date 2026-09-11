@@ -96,7 +96,7 @@
   \nabla \times \mbf F = \left(0,0,\pd{F_2}{x}-\pd{F_1}{y}\right),
   </md>
   which we often just think of as the function
-  <md>\nabla \times \mbf F = \pd{F_2}{x}-\pd{F_1}{y}.</md></p>
+  <md>\nabla \times \mbf F = \pd{F_2}{x}-\pd{F_1}{y}</md> in the <m>\vec{k}</m> direction.</p>
       <p>Find <m>\nabla\times\mbf F</m> if <m>\mbf F(x,y) = (-y, x)</m>.</p>
     </statement>
   <solution component="show-soln">

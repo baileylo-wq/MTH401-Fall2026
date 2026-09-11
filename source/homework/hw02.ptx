@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 2</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, September 21 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <alert>Instructions:</alert>
+        </p>
+
+        <p>
+            Homework submissions should represent your very best work.
+            Your work should be neat, clearly presented and complete.
+            In particular, include complete sentences, where appropriate, to
+            explain your thinking.
+            Include the problems in the order given below and be sure to allow
+            plenty of room for your work.
+            You will generally be marked on the methods used to solve a problem
+            rather than just the final answer; answers alone will receive little
+            credit.
+        </p>
+    </introduction>
+
+    <exercise>
+        <introduction>
+            <p>
+                Remember how you spend a lot of time learning how to
+                differentiate in calc 1?
+                Well, <m>\nabla</m> is shorthand for differentiation in other
+                contexts, so it's important to develop some comfort in computing
+                with <m>\nabla</m>.
+                Though it may feel like "busy work," that's what this first
+                exercise is all about.
+                You wil need these identities in subsequent exercises.
+            </p>
+
+            <p>
+                In class, we saw that <m>\nabla \times \nabla \phi = \vec{0}</m>
+                and <m>\nabla \cdot \nabla \times \phi = 0</m>.
+            </p>
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    As we saw in class, we usually abbreviate
+                    <m>\nabla \cdot \nabla \times \phi</m> as
+                    <m>\nabla^2 \phi</m> and call it the <term>Laplacian</term>
+                    of <m>\phi</m>.
+                    Compute the Laplacian of <m>\phi</m> for
+                    <md>
+                        \phi(x,y)=x^2-y^2+2xy.
+                    </md>
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Be patient, and show that for some general field
+                    <m>\mbf F</m>:
+                    <md>
+                        \nabla^2 \mbf F = \nabla(\nabla \cdot \mbf F) - \nabla \times (\nabla \times \mbf F).
+                    </md>
+                    In this expression, <m>\nabla^2 \mbf F</m> is
+                    <m>(\nabla^2 F_1, \nabla^2 F_2, \nabla^2 F_3)</m> for
+                    <m>\mbf F = (F_1, F_2, F_3)</m>.
+                </p>
+
+                <p>
+                    If you are comfortable with the notation, you could let
+                    <m>\mbf F = (P,Q, R)</m> where <m>P,Q,R</m> are all
+                    functions of <m>x,y,z</m>, and denote
+                    <m>\frac{\partial P}{\partial x} = P_x, \ldots</m>,
+                    otherwise ignore this comment.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If <m>\mbf F</m> depends on time <m>t</m> as well as
+                    position <m>(x,y,z)</m>, show that
+                    <md>
+                        \frac{\partial}{\partial t}(\nabla \times \mbf F) = \nabla \times \frac{\partial}{\partial t}\mbf F.
+                    </md>
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    The previous question showed a formula for how the time
+                    derivative impacts the curl of a field <m>\mbf F</m>.
+                    State similar formulas for the gradient and divergence.
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    If <m>f</m> is a function, show the following product rule:
+                    <md>
+                        \nabla \cdot (f\nabla g) = f\nabla^2 g + \nabla f \cdot \nabla g.
+                    </md>
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                In a vacuum, Maxwell's equations state that
+                <md>
+                    <mrow>\nabla \cdot \mbf E \amp = 0 </mrow>
+                    <mrow>\nabla \times \mbf E \amp = -\frac{\partial \mbf B}{\partial t} </mrow>
+                    <mrow>\nabla \cdot \mbf B \amp = 0 </mrow>
+                    <mrow>\nabla \times \mbf B \amp = \frac{1}{c^2}\frac{\partial \mbf E}{\partial t} </mrow>
+                </md>
+                where <m>\mbf E</m> and <m>\mbf B</m> represent the
+                time-dependent electric and magnetic field in a region and
+                <m>c</m> is the speed of light.
+            </p>
+
+            <p>
+                Using the results of problem 1, show that
+                <md>
+                    \nabla^2 \mbf E = \frac{1}{c^2} \frac{\partial^2 \mbf E}{\partial t^2} \ \ \ \text{     and    } \ \ \ \nabla^2 \mbf B = \frac{1}{c^2} \frac{\partial^2 \mbf B}{\partial t^2}.
+                </md>
+            </p>
+
+            <p>
+                (We'll see later that this says <m>\mbf E</m> and <m>B</m>
+                satisfy the <term>wave equation</term>.)
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Suppose that <m>\mbf F(x,y,z) = (x,y,z)</m> and <m>\sigma</m> is
+                the sphere of radius 2 centered at the origin (
+                <m>{x^2 + y^2 + z^2 = 4}</m>), and <m>\vec n</m> is the outward
+                normal vector.
+                Evaluate the flux of <m>\mbf F</m> through <m>\sigma</m> in the
+                direction of <m>\vec n</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the flux of the field <m>\mbf F=(x,y,0)</m> through the
+                surface <m>{z=4-x^2-y^2}</m> that lies above the <m>xy-</m> plane
+                with outward normal <m>\vec n</m> that points upward.
+                This surface is not closed!
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
