@@ -84,7 +84,7 @@
                     </description>
                 </image>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 <m>C_1</m>: parameterization <m>x=x, y=1, 1\le x\le 3</m>. So 
                 <m>dx = dx, dy=0</m>. 
@@ -122,7 +122,7 @@
                     traversing the triangle in the counter-clockwise direction.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 <m>\lineint{C}{F} = \lineint{C_1}{F}+\lineint{C_2}{F}-\lineint{C_3}{F}</m>
               </p>
@@ -142,7 +142,7 @@
                     independent of path?
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 No they are not the same.  The path seems to matter here.
               </p>
@@ -172,7 +172,7 @@
                     </md>
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 <m>C_1</m>:  Parameterization <m>x = \cos(t), y=\sin(t)</m> (or <m>\vec{r}(t)=(\cos(t),\sin(t))</m>), with
                 <m>0\le t \le \pi</m>.  Then <m>dx = -\sin(t)dt, dy=\cos(t)dt</m> (or <m>d\vec{r}(t)=(-\sin(t)dt,\cos(t)dt)</m>), so 
@@ -193,7 +193,7 @@
                     <m>C_1</m>.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 On the unit circle (the path along <m>C_1</m>), <m>d\vec{r}</m> points tangent to the unit circle, and 
                 <m>\vec{F}</m> points outward, orthogonal to the <m>d\vec{r}</m>.  So <m>\vec{F}</m> and <m>d\vec{r}</m>
@@ -211,7 +211,7 @@
                     returns to <m>(1,0)</m> along the <m>x</m>-axis.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 <m>\lineint{C}{F} = \lineint{C_1}{F} - \lineint{C_2}{F} = 0-0=0</m>
               </p>
@@ -239,7 +239,7 @@
                     from the first problem.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 <m>C_1</m>: parameterization <m>x=x, y=1, 1\le x\le 3</m>. So 
                 <m>dx = dx, dy=0</m>. 
@@ -283,7 +283,7 @@
                     Is it possible to write <m>{\mathbf F} = \nabla f</m>?
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-1-soln">
               <p>
                 If so, then <m>\mathbf F = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}) = (y^2, 2xy+3)</m>.
                 One possibility seems to be <md>f = xy^2+3y</md>.  (Could add any constant.)
@@ -305,7 +305,7 @@
                 Find the line integral <m>\lineint{C}{F}</m>.
             </p>
         </statement>
-        <solution component="show-soln">
+        <solution component="S1-1-soln">
           <p>
             Parameterization <md>x = \cos(t), y=\sin(t)</md> (or <m>\vec{r}(t)=(\cos(t),\sin(t))</m>), with
                 <m>0\le t \le 2\pi</m>.  Then <m>dx = -\sin(t)dt, dy=\cos(t)dt</m> (or <m>d\vec{r}(t)=(-\sin(t)dt,\cos(t)dt)</m>), 

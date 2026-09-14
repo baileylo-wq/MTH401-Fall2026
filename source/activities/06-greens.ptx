@@ -1,245 +1,542 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>1.5. Green's Theorem</title>
-  <alert>MTH 401</alert>
+    <title>1.5. Green's Theorem</title>
 
-  <theorem xml:id="thm-Greens-theorem">
-    <statement>
+    <p>
+        <alert>MTH 401</alert>
+    </p>
+
+    <theorem xml:id="thm-Greens-theorem">
+        <statement>
+            <p>
+                <term>Green's Theorem: </term> For a two-dimensional field
+                <m>\mbf F = (P,Q)</m> and a closed curve <m>C</m> that is
+                oriented counterclockwise (positively oriented) and that
+                encloses the region <m>D</m>, the work done by <m>\mbf F</m>
+                along <m>C</m> is
+                <md>
+                    \ds \oint_C \mbf F \cdot ~d\mbf r = \iint_D  \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)~dA = \iint_D \nabla \times \mbf F~dA
+                </md>.
+            </p>
+        </statement>
+    </theorem>
+
+    <exercise workspace="1in">
+        <statement>
+            <p>
+                Use Green's Theorem to evaluate the line integral
+                <m>\ds \oint_C -y~dx + x~dy</m> where <m>C</m> is the unit
+                circle oriented in the counterclockwise direction.
+            </p>
+        </statement>
+
+        <solution component="S1-5-soln">
+            <p>
+              We have <m>P=-y, \ Q = x</m>, so <m>\frac{\partial P}{\partial y} = -1</m> and 
+              <m>\frac{\partial Q}{\partial x} = 1</m>, so <m>\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=1-(-1)=2</m>
+              <md>
+                \oint_C -y~dx + x~dy = \iint_D 2dA = 2(area \ of \ D) = 2\pi.
+              </md>
+              
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="0.4in">
+        <statement>
+            <p>
+                Evaluate the line integral <m>\ds \oint_C y^2~dx + 3xy~dy</m>
+                where <m>C</m> is the curve shown below.
+                You may want to integrate in polar coordinates.
+            </p>
+
+            <image width="25%" margins="0% 75%">
+                <shortdescription>
+                    A closed curve, see description below.
+                </shortdescription>
+                <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve1">
+                    <diagram dimensions="(200,200)" margins="0">
+                        <coordinates bbox="(-2.5,-1.5,2.5,3.5)">
+                            <grid-axes spacings="((-2,0.5,2),(-1,0.5,3))" xlabel="x" ylabel="y"/>
+                            <path start="(1,0)" stroke="blue" arrows="1" thickness="4">
+                                <lineto point="(2,0)"/>
+                                <arc center="(0,0)" radius="2" range="(0,180)"/>
+                                <lineto point="(-1,0)"/>
+                                <arc center="(0,0)" radius="1" range="(180,0)"/>
+                                \
+                            </path>
+                            <label anchor="(1.5,1.5)" alignment="n" offset="(0,5)">
+                                <m>
+                                    C
+                                </m>
+                            </label>
+                        </coordinates>
+                    </diagram>
+                </prefigure>
+
+                <description>
+                    <p>
+                        A closed curve <m>C</m> that starts at <m>(1,0)</m>,
+                        moves in a straight line to <m>(2,0)</m>, continues in a
+                        half circle centered at the origin with radius <m>2</m>
+                        in the upper half plane until the point <m>(-2,0)</m>,
+                        then goes in a straight line to the point <m>(-1,0)</m>,
+                        and then traverses the half circle centered at the
+                        origin with a radius of 1 located in upper half plane to
+                        end back at the point <m>(1,0)</m>.
+                    </p>
+                </description>
+            </image>
+        </statement>
+
+        <solution component="S1-5-soln">
+            <p>
+              We have <m>P=y^2, \ Q = 3xy</m>, so <m>\frac{\partial P}{\partial y} = 2y</m> and 
+              <m>\frac{\partial Q}{\partial x} = 3y</m>, so <m>\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=3y-2y=y</m>, so then
+              <md>
+                \oint_C y^2~dx + 3xy~dy = \iint_D y dA.
+              </md>
+              Let's use polar coordinates, <m>x=r\cos{\theta}, \ y=r\sin{\theta}</m>, and 
+              <m>dA = r dr d\theta</m> where <m>{1\le r \le 2}</m> and 
+              <m>{0\le \theta \le \pi}</m>.  Plugging everything in to the integral:
+              <md>
+                <mrow>\iint_D y dA \amp = \int_{\theta=0}^{\pi}\int_{r=1}^2 r\sin{\theta} r dr d\theta </mrow>
+                <mrow> \amp = \int_{\theta=0}^{\pi} \left. \frac13 r^3 \right|_{1}^2 \sin{\theta} d\theta</mrow>
+                <mrow> \amp = \int_{\theta=0}^{\pi} \frac73\sin\theta d\theta </mrow>
+                <mrow> \amp = \left. -\frac73 \cos\theta \right|_{0}^{\pi} </mrow>
+                <mrow> \amp = \frac{14}{3}</mrow>
+              </md>
+              
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise workspace="1in">
+        <introduction>
+            <p>
+                Suppose that <m>\ds \mbf F= (xy, \arctan y)</m> and <m>C</m> is
+                the simple closed curve shown below.
+            </p>
+        </introduction>
+
+        <task workspace="0.3in">
+            <statement>
+                <p>
+                    Evaluate the line integral <m>\owork{C}{F}</m>.
+                </p>
+
+                <image width="25%" margins="0% 75%">
+                    <shortdescription>
+                        A closed curve, see description below.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve2">
+                        <diagram dimensions="(200,200)" margins="0">
+                            <coordinates bbox="(-4,-4,4,4)">
+                                <grid-axes spacings="((-4,1,4),(-4,1,4))" xlabel="x" ylabel="y"/>
+                                <path start="(3,0)" stroke="blue" arrows="1" thickness="4">
+                                    <arc center="(0,0)" radius="3" range="(0,180)"/>
+                                    <lineto point="(3,0)"/>
+                                    \
+                                </path>
+                                <label anchor="(2,2)" alignment="ne" offset="(0,5)">
+                                    <m>
+                                        C
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+
+                    <description>
+                        <p>
+                            A closed curve <m>C</m> that starts at <m>(3,0)</m>,
+                            continues in a half circle centered at the origin
+                            with radius <m>3</m> in the upper half plane until
+                            the point <m>(-3,0)</m>, then returns in a straight
+                            line along the x-axis to the point <m>(3,0)</m>.
+                        </p>
+                    </description>
+                </image>
+            </statement>
+
+            <solution component="S1-5-soln">
+                <p>
+                  We have <m>P=xy, \ Q = \arctan{y}</m>, so <m>\frac{\partial P}{\partial y} = x</m> and 
+              <m>\frac{\partial Q}{\partial x} = 0</m>, so <m>\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=0-x = -x.</m>
+              Then <m>\owork{C}{F} = \iint_D -x dA</m>.  Polar coordinates would be good:
+              <m>x=r\cos{\theta}, \ y=r\sin{\theta}</m>, and 
+              <m>dA = r dr d\theta</m> where <m>{0\le r \le 3}</m> and 
+              <m>{0\le \theta \le \pi}</m>.  Plugging everything in to the integral:
+              <md>
+                <mrow>\owork{C}{F} \amp =\int_{\theta=0}^{\pi} \int_{r=0}^3 -r\cos\theta r dr d\theta</mrow>
+                <mrow> \amp = \int_{\theta=0}^{\pi} \left. -\frac13 r^3 \right|_{r=0}^3 \cos\theta d \theta</mrow>
+                <mrow> \amp = \int_{\theta=0}^{\pi} -9\cos\theta d\theta</mrow>
+                <mrow> \amp = \left. -9\sin\theta\right|_0^{\pi} </mrow>
+                <mrow> \amp = 0. </mrow>
+              </md>
+              
+                </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Use your result to find the line integral
+                    <m>\ds \work{C'}{F}</m> where <m>C'</m> is just the upper
+                    semi-circle of radius 3 without the straight line along the
+                    x-axis.
+                </p>
+            </statement>
+
+            <solution component="S1-5-soln">
+                <p>
+                  The line is easier, since <m>y=0</m> on the line then the 
+                  field simplifies to
+                  <m>\mbf F = (0,0) </m>, so <m>\lineint{line}{F} = 0</m>.  Since 
+                  the total work for the closed curve is 0, and the work over the line is 0, 
+                  then the work over the part we want is the difference of those two. But that's <m>0-0=0</m>. 
+                </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace="0.3in">
+        <statement>
+            <p>
+                Each of the fields below has a constant curl.
+                For each, state whether the curl is negative, zero, or positive.
+            </p>
+
+            <sidebyside widths="25% 25% 25%">
+                <image>
+                    <shortdescription>
+                        A vector field, all vectors point radially away from the
+                        origin.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve3">
+                        <diagram dimensions="(180,180)" margins="5">
+                            <definition>
+                                f(x,y) = (x,y)
+                            </definition>
+                            <coordinates bbox="[-4,-4,4,4]">
+                                <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+                                <vector-field function="f"/>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                </image>
+
+                <image>
+                    <shortdescription>
+                        A vector field, all arrows points counter-clockwise in a
+                        co-centric circles centered around the origin.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve4">
+                        <diagram dimensions="(180,180)" margins="5">
+                            <definition>
+                                f(x,y) = (-y,x)
+                            </definition>
+                            <coordinates bbox="[-4,-4,4,4]">
+                                <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+                                <vector-field function="f"/>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                </image>
+
+                <image>
+                    <shortdescription>
+                        A vector field, all arrows point point horizontally
+                        towards the y-axis.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve5">
+                        <diagram dimensions="(180,180)" margins="5">
+                            <definition>
+                                f(x,y) = (-x,0)
+                            </definition>
+                            <coordinates bbox="[-4,-4,4,4]">
+                                <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+                                <vector-field function="f" thickness="2"/>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                </image>
+            </sidebyside>
+        </statement>
+        <solution component = "S1-5-soln">
       <p>
-        <term>Green's Theorem: </term> For a two-dimensional field <m>\mbf F = (P,Q)</m>
-        and a closed curve <m>C</m> that is oriented counterclockwise (positively oriented) and that encloses the region <m>D</m>, the work done by <m>\mbf F</m>
-        along <m>C</m> is 
+        Use Green's Theorem here, so the curl is related to the work done around a closed curve.
+        
+      </p>
+      <p>
+        First picture. Think of a circle centered at the origin that goes counterclockwise. 
+        Then <m>\mbf F</m> is always orthogonal to <m>d\mbf r</m>, so their dot product 
+        is always 0, so Green's Theorem then implies the curl <m>\nabla \times \mbf F = \mbf 0</m>. 
+      </p>
+      <p>
+        Second picture. Think of a circle centered at the origin that goes counterclockwise. 
+        Then <m>\mbf F</m> is always in the same direction as <m>d\mbf r</m>, so the work
+        is positive, and thus the curl is positive.
+      </p>
+      <p>
+        Third picture.  Think of a rectangle centered at the original and oriented up and down. 
+        Then on the left and right sides <m>\mbf F</m> is always orthogonal to <m>d\mbf r</m>, and 
+        on the top and bottom sides the work cancels out, so the work is 0 which 
+        implies the curl is 0.
+      </p>
+    </solution>
+    </exercise>
+
+    <exercise workspace="1in">
+        <introduction>
+            <p>
+                Let's make some connections.
+            </p>
+        </introduction>
+
+        <task workspace="0.01in">
+            <statement>
+                <p>
+                    Sketch the vector field <m>\mbf F(x,y) = (y,0)</m> below.
+                    (Ignore the curve already drawn for now.)
+                </p>
+
+                <image width="25%" margins="0% 75%">
+                    <shortdescription>
+                        A closed curve on a graph, see description below.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve6">
+                        <diagram dimensions="(200,200)" margins="0">
+                            <coordinates bbox="(-4,-4,4,4)">
+                                <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+                                <path start="(1,1)" stroke="blue" arrows="1" thickness="4">
+                                    <lineto point="(1,-1)"/>
+                                    <lineto point="(3,-1)"/>
+                                    <lineto point="(3,1)"/>
+                                    <lineto point="(1,1)"/>
+                                    
+                                </path>
+                                <label anchor="(2,1)" alignment="ne" offset="(0,3)">
+                                    <m>
+                                        C
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+
+                    <description>
+                        <p>
+                            A grid to sketch a vector field on.
+                            Also included is a closed curve <m>C</m> in the
+                            shape of a square oriented counterclockwise through
+                            the points <m>(1,1), (1,-1), (3,-1), (3,1)</m>.
+                        </p>
+                    </description>
+                </image>
+            </statement>
+            <solution component = "S1-5-soln">
+      <image width="30%">
+        <shortdescription>The vector field points only in the x-direction, but has magnitude y.</shortdescription>
+        <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve6-soln">
+                        <diagram dimensions="(200,200)" margins="0">
+                    <definition> f(x,y) = (y,0)</definition>
+
+                            <coordinates bbox="(-4,-4,4,4)">
+                                <grid-axes xlabel="x" ylabel="y" decorations="no"/>
+                                <path start="(1,1)" stroke="blue" arrows="1" thickness="4">
+                                    <lineto point="(1,-1)"/>
+                                    <lineto point="(3,-1)"/>
+                                    <lineto point="(3,1)"/>
+                                    <lineto point="(1,1)"/>
+                                    
+                                </path>
+                                <label anchor="(2,1)" alignment="ne" offset="(0,3)">
+                                    <m>
+                                        C
+                                    </m>
+                                </label>
+                                <vector-field function="f" stroke="red"/>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+      </image>
+      <p>
+        Note the field gets larger in magnitude as you move away from the x-axis.
+      </p>
+    </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Judging from your sketch, is the circulation (the work)
+                    around the curve positive or negative?
+                    Explain your thinking.
+                </p>
+            </statement>
+            <solution component = "S1-5-soln">
+      <p>
+        Think Green's Theorem, <m> \ds \oint_C \mbf F \cdot ~d\mbf r = \iint_D \nabla \times \mbf F~dA</m>, 
+        but along the sides of the square we are moving orthogonal to the field, 
+        and on the top and bottom of the square we are moving against the field, 
+        so on the top and bottom we have <m>\mbf F \cdot d\mbf r \lt 0</m>. Since 
+        the work is negative, then the curl is also negative, so the circulation
+        around the curve is negative.
+      </p>
+    </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What about if the curve were shifted vertically?
+                </p>
+            </statement>
+            <solution component = "S1-5-soln">
+      <p>
+        The top field is stronger than the bottom, so even if the 
+        bottom has positive work, the top will have negative work and 
+        overpower the bottom, so we will still have negative work and 
+        thus negative curl.
+      </p>
+    </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Compute <m>\nabla\times\mbf F</m> and explain how the curl
+                    is connected to the response to the previous two questions.
+                </p>
+            </statement>
+            <solution component = "S1-5-soln">
+      <p>
+        <m>\nabla\times\mbf F =\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}=-1 </m>, 
+        so we'll actually end up with 
         <md>
-          \ds \oint_C \mbf F \cdot ~d\mbf r = \iint_D  \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)~dA = \iint_D |\nabla \times \mbf F|~dA
-        </md>.        
+          \oint_C \mbf F \cdot d\mbf r = \iint_D -1 dA = -1(area \ of \ domain \ bounded \ by \ C)
+        </md>
+        
       </p>
-    </statement>
-  </theorem>
-  
-  <exercise workspace="1in">
-    <statement>
-      <p>Use Green's Theorem to evaluate the line integral <m>\ds \oint_C -y~dx + x~dy</m> where <m>C</m> is the unit circle oriented in the
-        counterclockwise direction.</p>
-    </statement>
-  </exercise>
+    </solution>
+        </task>
+    </exercise>
 
-  <exercise workspace="0.4in">
-    <statement>
-      <p>Evaluate the line integral <m>\ds \oint_C y^2~dx + 3xy~dy</m> where <m>C</m>
-  is the curve shown below.  You may want to integrate in polar
-  coordinates.</p>
-      <image width="25%" margins="0% 75%">
-        <shortdescription>A closed curve, see description below.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve1">
-        <diagram dimensions="(200,200)" margins="0">
-          <coordinates bbox="(-2.5,-1.5,2.5,3.5)">
-            <grid-axes spacings="((-2,0.5,2),(-1,0.5,3))" xlabel="x" ylabel="y"/>
-            <path start="(1,0)" stroke="blue" arrows="1" thickness="4">
-              <lineto point="(2,0)"/>
-              <arc center="(0,0)" radius="2" range="(0,180)"/>
-              <lineto point="(-1,0)"/>
-              <arc center="(0,0)" radius="1" range="(180,0)"/>
-\            </path>
-            <label anchor="(1.5,1.5)" alignment="n" offset="(0,5)">
-              <m>C</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description>
-        <p>
-          A closed curve <m>C</m> that starts at <m>(1,0)</m>, moves in a straight line to <m>(2,0)</m>,
-          continues in a half circle centered at the origin with radius <m>2</m> in the upper half plane until the point <m>(-2,0)</m>,
-          then goes in a straight line to the point <m>(-1,0)</m>,
-          and then traverses the half circle centered at the origin with a radius of 1 located in upper half plane to end back at the point <m>(1,0)</m>.
-        </p>
-      </description>
-  </image>  
-    </statement>
-  </exercise>
+    <exercise workspace="1in">
+        <introduction>
+            <p>
+                Consider the field
+                <m>\ds \mbf F(x,y) = \frac12\left(-y,x\right)</m> and suppose
+                that <m>C</m> is a closed curve bounding a region <m>D</m>.
+            </p>
+        </introduction>
 
-  <exercise workspace="1in">
-    <introduction>
-      <p>Suppose that <m>\ds \mbf F= (xy, \arctan y)</m> and 
-  <m>C</m> is the simple closed curve shown below.</p>
-    </introduction>
-    <task workspace="0.3in">
-      <statement>
-        <p>Evaluate the line
-  integral <m>\owork{C}{F}</m>.</p>
-        <image width="25%" margins="0% 75%">
-        <shortdescription>A closed curve, see description below.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve2">
-        <diagram dimensions="(200,200)" margins="0">
-          <coordinates bbox="(-4,-4,4,4)">
-            <grid-axes spacings="((-4,1,4),(-4,1,4))" xlabel="x" ylabel="y"/>
-            <path start="(3,0)" stroke="blue" arrows="1" thickness="4">
-              <arc center="(0,0)" radius="3" range="(0,180)"/>
-              <lineto point="(3,0)"/>
-\            </path>
-            <label anchor="(2,2)" alignment="ne" offset="(0,5)">
-              <m>C</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description>
-        <p>
-          A closed curve <m>C</m> that starts at <m>(3,0)</m>, continues in a half circle centered at the origin with radius <m>3</m> in the upper half plane until the point <m>(-3,0)</m>, 
-          then returns in a straight line along the x-axis to the point <m>(3,0)</m>.  
-        </p>
-      </description>
-  </image>  
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Use your result to find the line integral <m>\ds \work{C'}{F}</m> where <m>C'</m>
-  is just the upper semi-circle of radius 3 without the straight line along the x-axis.</p>
-      </statement>
-    </task>
-  </exercise>
-
-  <exercise workspace="0.3in">
-    <statement>
-      <p>Each of the fields below has a constant curl.  For each, state
-  whether the curl is negative, zero, or positive.</p>
-      <sidebyside widths="25% 25% 25%">
-    <image>
-      <shortdescription>A vector field, all vectors point radially away from the origin.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve3">
-        <diagram dimensions="(180,180)" margins="5">
-          <definition>f(x,y) = (x,y)</definition>
-          <coordinates bbox="[-4,-4,4,4]">
-            <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <vector-field function="f"/>
-          </coordinates>
-        </diagram>
-      </prefigure>
-    </image>
-    <image>
-        <shortdescription>A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve4">
-        <diagram dimensions="(180,180)" margins="5">
-          <definition>f(x,y) = (-y,x)</definition>
-          <coordinates bbox="[-4,-4,4,4]">
-            <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <vector-field function="f"/>
-          </coordinates>
-        </diagram>
-      </prefigure>
-    </image>
-        <image>
-        <shortdescription>A vector field, all arrows point point horizontally towards the y-axis.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve5">
-        <diagram dimensions="(180,180)" margins="5">
-          <definition>f(x,y) = (-x,0)</definition>
-          <coordinates bbox="[-4,-4,4,4]">
-            <grid-axes xlabel="x" ylabel="y" decorations="no" />
-            <vector-field function="f" thickness="2"/>
-          </coordinates>
-        </diagram>
-      </prefigure>
-    </image>
-  </sidebyside>
-
-    </statement>
-  </exercise>
-
-  <exercise workspace="1in">
-    <introduction>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Explain why <m>\ds \oint_C \mbf F\cdot d\mbf r</m> measures
+                    the area of <m>D</m>.
+                </p>
+            </statement>
+            <solution component = "S1-5-soln">
       <p>
-        Let's make some connections.
+        <md>\oint_C \mbf F\cdot d\mbf r = \iint_D\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)dA 
+          = \iint_D (\frac12 - (-\frac12))dA = \iint_D 1 dA = (area \ of \ D)
+        </md>
       </p>
-    </introduction>
-    <task workspace="0.01in">
-      <statement>
-        <p>Sketch the vector field <m>\mbf F(x,y) = (y,0)</m> below. (Ignore the curve already drawn for now.)</p>
-        <image width="25%" margins="0% 75%">
-        <shortdescription>A closed curve on a graph, see description below.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-6-curve6">
-        <diagram dimensions="(200,200)" margins="0">
-          <coordinates bbox="(-4,-4,4,4)">
-            <grid-axes  xlabel="x" ylabel="y" decorations="no"/>
-            <path start="(1,1)" stroke="blue" arrows="1" thickness="4">
-              <lineto point="(1,-1)"/>
-              <lineto point="(3,-1)"/>
-              <lineto point="(3,1)"/>
-              <lineto point="(1,1)"/>
-\            </path>
-            <label anchor="(2,1)" alignment="ne" offset="(0,3)">
-              <m>C</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description>
-        <p>
-          A grid to sketch a vector field on.  Also included is a closed curve <m>C</m> in the shape of a square oriented 
-          counterclockwise through the points <m>(1,1), (1,-1), (3,-1), (3,1)</m>.  
-        </p>
-      </description>
-  </image>  
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Judging from your sketch, is the circulation (the work) around the curve 
-  positive or negative?  Explain your thinking.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What about if the curve were shifted vertically?</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Compute <m>\nabla\times\mbf F</m> and explain how the curl is connected
-  to the response to the previous two questions.</p>
-      </statement>
-    </task>
-  </exercise>
+    </solution>
+        </task>
 
-  <exercise workspace="1in">
-    <introduction>
-      <p>Consider the field <m>\ds \mbf F(x,y) = \frac12\left(-y,x\right)</m> and suppose that <m>C</m>
-  is a closed curve bounding a region <m>D</m>.</p>
-    </introduction>
-    <task workspace="1in">
-      <statement>
-        <p>Explain why <m>\ds \oint_C \mbf F\cdot d\mbf r</m> measures the area of <m>D</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Verify this is the case by evaluating the line integral directly
-  where <m>C</m> is the circle of radius <m>R</m> centered at the origin.</p>
-      </statement>
-    </task>
-  </exercise>
-
-  <exercise>
-    <introduction>
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Verify this is the case by evaluating the line integral
+                    directly where <m>C</m> is the circle of radius <m>R</m>
+                    centered at the origin.
+                </p>
+            </statement>
+            <solution component = "S1-5-soln">
       <p>
-        Closed curves and a field with zero curl.
+        Have to parameterize here!  And not use Green's Theorem. So we'll
+        take <md>x = R\cos{t}, y=r\sin{t},</md> then 
+        <m>{dx = -R\sin{t}~dt}</m>, and <m>{dy = R\cos{t}~dt}</m>, where 
+        <m>t\rightarrow 0 \rightarrow 2\pi</m> is the only variable and <m>R</m> is 
+        a constant. So the integral becomes
+        <md>
+          <mrow> \oint_C \mbf F\cdot d\mbf r \amp = \oint_C -\frac12 y ~dx + \frac12 x~dy </mrow>
+          <mrow> \amp = \int_{0}^{2\pi} -\frac12(R\sin t)(-R\sin t)~dt + \frac12(R\cos t)(R\cos t)~dt </mrow>
+          <mrow> \amp = \int_0^{2\pi} \frac12 R^2 \sin^2 t + \frac12 R^2 \cos^2 t ~dt </mrow>
+          <mrow> \amp =\int_0^{2\pi} \frac12 R^2 ~dt</mrow>
+          <mrow> \amp = \frac12 R^2 (2\pi) </mrow>
+          <mrow> \amp = \pi R^2.</mrow>
+        </md>
+        
       </p>
-    </introduction>
-    <task workspace="1.5in">
-      <statement>
-        <p>Suppose that <m>C_1</m> and <m>C_2</m> are two paths that begin at the
-  same point and end at the same point and that <m>\nabla\times \mbf F = 0</m>
-  in the region in between <m>C_1</m> and <m>C_2</m>.  Explain why <m>\ds \int_{C_1}
-  \mbf F\cdot d\mbf r = \int_{C_2} \mbf F\cdot d\mbf r</m>.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>If <m>C</m> is a closed curve and <m>\nabla \times \mbf F = 0</m> in the
-  region <m>D</m> bounded by <m>C</m>, explain why <m>\ds \oint_C \mbf F \cdot d\mbf r =
-  0</m>.</p>
-      </statement>
-    </task>
-  </exercise>
+    </solution>
+        </task>
+    </exercise>
 
+    <exercise>
+        <introduction>
+            <p>
+                Closed curves and a field with zero curl.
+            </p>
+        </introduction>
+
+        <task workspace="1.5in">
+            <statement>
+                <p>
+                    Suppose that <m>C_1</m> and <m>C_2</m> are two paths that
+                    begin at the same point and end at the same point and that
+                    <m>\nabla\times \mbf F = 0</m> in the region in between
+                    <m>C_1</m> and <m>C_2</m>.
+                    Explain why
+                    <m>\ds \int_{C_1}
+  \mbf F\cdot d\mbf r = \int_{C_2} \mbf F\cdot d\mbf r</m>.
+                </p>
+            </statement>
+            <solution component = "S1-5-soln">
+      <p>
+        Since they begin and end at the same point, then we can travel around 
+        <m>C_1</m> and then backwards along <m>C_2</m> and have a closed curve.
+        Then according to Green's Theorem
+        <md>
+          \oint_{C_1 - C_2} \mbf F \cdot d\mbf r = \iint_D \nabla \times \mbf F dA = 0
+        </md>
+        since the curl is 0 inside this region.  Then we can break apart 
+        <md>
+          \oint_{C_1 - C_2} \mbf F \cdot d\mbf r = \oint_{C_1} \mbf F \cdot d\mbf r - \oint_{C_2} \mbf F \cdot d\mbf r
+        </md>
+        so setting it equal to 0 gives <md>
+          \oint_{C_1} \mbf F \cdot d\mbf r = \oint_{C_2} \mbf F \cdot d\mbf r.
+        </md>
+        
+      </p>
+    </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    If <m>C</m> is a closed curve and
+                    <m>\nabla \times \mbf F = 0</m> in the region <m>D</m>
+                    bounded by <m>C</m>, explain why
+                    <m>\ds \oint_C \mbf F \cdot d\mbf r =
+  0</m>.
+                </p>
+            </statement>
+            <solution component = "S1-5-soln">
+      <p>
+        By Green's Theorem!
+        <md>
+          \oint_{C} \mbf F \cdot d\mbf r = \iint_D \nabla \times \mbf F dA = \iint_D 0 dA = 0.
+        </md>
+        
+      </p>
+    </solution>
+        </task>
+    </exercise>
 </worksheet>

@@ -53,7 +53,7 @@
                     Find the coordinates of the field <m>{\mathbf F}</m>.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 <m>\ds \mathbf F= \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)=(6xy-\cos x, 3x^2+e^y)</m>
               </p>
@@ -68,7 +68,7 @@
                     counter-clockwise direction.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 <md>\lineint{C_1}{F}=\lineint{C_1}{\nabla f} = f(-1,0) - f(1,0)</md>
                 <md>
@@ -87,7 +87,7 @@
                     straight line segment from <m>(1,0)</m> to <m>(-1,0)</m>.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 It's a conservative field so path doesn't matter.  It's still <m>2\sin(1)</m>.
               </p>
@@ -144,7 +144,7 @@
                 </description>
             </image>
         </statement>
-        <solution component="show-soln">
+        <solution component="S1-2-soln">
               <p>
                 If <m>\mathbf F</m> is conservative, this problem becomes nicer!  And it is! 
                 <md>
@@ -178,7 +178,7 @@
                     closed.) Explain your response.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 If we have a closed curve <m>C</m>, it starts and ends at the same point <m>P</m>. 
                 Since <m>\mathbf F</m> is conservative, there exists some function <m>f</m> such that 
@@ -202,7 +202,7 @@
                     (You did this last worksheet.)
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 See last worksheet and spare yourself busy work.  But it looks like this:
               </p>
@@ -229,7 +229,7 @@
                     Explain your response.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 Nope!  If it was a conservative field this integral would be 0 since it's a closed curve.
               </p>
@@ -249,7 +249,7 @@
                 </md>
             </p>
         </statement>
-        <solution component="show-soln">
+        <solution component="S1-2-soln">
               <p>
                 Let's try the conservative trick because that seems much nicer than integration by parts five times. 
                 Picking apart the integral which is <m>\lineint{C}{F}</m>, we are looking for <md>\mathbf F =
@@ -309,7 +309,7 @@
                 </image>
             </sidebyside>
         </statement>
-        <solution component="show-soln">
+        <solution component="S1-2-soln">
               <p>
                 Think about closed curves, and the work done on them. For the first picture, it 
                 seems that any closed curve you could draw would have the work be zero, but the second 
@@ -395,7 +395,7 @@
                     and <m>F_2</m>?
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 So we must have <m>\nabla f = (F_1, F_2)</m>, which means <m>{F_1 = \frac{\partial f}{\partial x}}</m>
                 and <m>{F_2 = \frac{\partial f}{\partial y}}</m>. Since the second mixed partial derivatives are equal, then
@@ -422,7 +422,7 @@
                     problems 1 and 2.
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 Problem 1: <m>\ds \mathbf F= (6xy-\cos x, 3x^2+e^y)</m>, 
                 <md>
@@ -446,7 +446,7 @@
                     Does this relationship hold for the field in problem 3?
                 </p>
             </statement>
-            <solution component="show-soln">
+            <solution component="S1-2-soln">
               <p>
                 <m>\ds \mathbf F= \left(-\frac{y}{x^2+y^2},
     \frac{x}{x^2+y^2}\right)</m>, so
