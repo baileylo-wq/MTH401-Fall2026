@@ -58,7 +58,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.10';
+eBookConfig.runestone_version = '8.2.12';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -66,7 +66,7 @@ eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.561f7165d9bf3626.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -272,7 +272,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -291,7 +294,9 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">1.5. Green’s Theorem</span><div class="print-links"><a href="?printpreview=activities-8" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<em class="alert">MTH 401</em>
+<div class="para" id="activities-8-2">
+<em class="alert">MTH 401</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm-Greens-theorem"><h2 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h2>
@@ -300,7 +305,7 @@ eBookConfig.enable_chatcodes =  false;
 <dfn class="terminology">Green’s Theorem:</dfn> For a two-dimensional field <span class="process-math">\(\mbf F = (P,Q)\)</span> and a closed curve <span class="process-math">\(C\)</span> that is oriented counterclockwise (positively oriented) and that encloses the region <span class="process-math">\(D\text{,}\)</span> the work done by <span class="process-math">\(\mbf F\)</span> along <span class="process-math">\(C\)</span> is</div>
 <div class="displaymath process-math" id="thm-Greens-theorem-1-1-7">
 \begin{equation*}
-\ds \oint_C \mbf F \cdot ~d\mbf r = \iint_D  \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)~dA = \iint_D |\nabla \times \mbf F|~dA\text{.}
+\ds \oint_C \mbf F \cdot ~d\mbf r = \iint_D  \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)~dA = \iint_D \nabla \times \mbf F~dA\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#thm-Greens-theorem-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -310,15 +315,56 @@ eBookConfig.enable_chatcodes =  false;
 <article class="exercise exercise-like" id="activities-8-4"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para" id="activities-8-4-1-1">Use Green’s Theorem to evaluate the line integral <span class="process-math">\(\ds \oint_C -y~dx + x~dy\)</span> where <span class="process-math">\(C\)</span> is the unit circle oriented in the counterclockwise direction.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-8-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-4-2-1">
+<div class="para">We have <span class="process-math">\(P=-y, \ Q = x\text{,}\)</span> so <span class="process-math">\(\frac{\partial P}{\partial y} = -1\)</span> and <span class="process-math">\(\frac{\partial Q}{\partial x} = 1\text{,}\)</span> so <span class="process-math">\(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=1-(-1)=2\)</span>
+</div>
+<div class="displaymath process-math" id="activities-8-4-2-1-5">
+\begin{equation*}
+\oint_C -y~dx + x~dy = \iint_D 2dA = 2(area \ of \ D) = 2\pi.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#activities-8-4-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activities-8-4" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-8-5"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activities-8-5-1-1">Evaluate the line integral <span class="process-math">\(\ds \oint_C y^2~dx + 3xy~dy\)</span> where <span class="process-math">\(C\)</span> is the curve shown below.  You may want to integrate in polar coordinates.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-8-5-1-1">Evaluate the line integral <span class="process-math">\(\ds \oint_C y^2~dx + 3xy~dy\)</span> where <span class="process-math">\(C\)</span> is the curve shown below. You may want to integrate in polar coordinates.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="image-box" style="width: 25%; margin-left: 0%; margin-right: 75%;">
 <img src="generated/prefigure/prefigure-6-curve1.svg" role="img" class="contained" alt="A closed curve, see description below."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="activities-8-5-1-2-description">
 <div class="para" id="activities-8-5-1-2-3-1">A closed curve <span class="process-math">\(C\)</span> that starts at <span class="process-math">\((1,0)\text{,}\)</span> moves in a straight line to <span class="process-math">\((2,0)\text{,}\)</span> continues in a half circle centered at the origin with radius <span class="process-math">\(2\)</span> in the upper half plane until the point <span class="process-math">\((-2,0)\text{,}\)</span> then goes in a straight line to the point <span class="process-math">\((-1,0)\text{,}\)</span> and then traverses the half circle centered at the origin with a radius of 1 located in upper half plane to end back at the point <span class="process-math">\((1,0)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-5-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+</div></details>
+</div>
+<div class="solutions">
+<details id="activities-8-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-5-2-1">
+<div class="para">We have <span class="process-math">\(P=y^2, \ Q = 3xy\text{,}\)</span> so <span class="process-math">\(\frac{\partial P}{\partial y} = 2y\)</span> and <span class="process-math">\(\frac{\partial Q}{\partial x} = 3y\text{,}\)</span> so <span class="process-math">\(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=3y-2y=y\text{,}\)</span> so then</div>
+<div class="displaymath process-math" id="activities-8-5-2-1-5">
+\begin{equation*}
+\oint_C y^2~dx + 3xy~dy = \iint_D y dA.
+\end{equation*}
+</div>
+<div class="para">Let’s use polar coordinates, <span class="process-math">\(x=r\cos{\theta}, \ y=r\sin{\theta}\text{,}\)</span> and <span class="process-math">\(dA = r dr d\theta\)</span> where <span class="process-math">\({1\le r \le 2}\)</span> and <span class="process-math">\({0\le \theta \le \pi}\text{.}\)</span>  Plugging everything in to the integral:</div>
+<div class="displaymath process-math" id="activities-8-5-2-1-10">
+\begin{align*}
+\iint_D y dA \amp = \int_{\theta=0}^{\pi}\int_{r=1}^2 r\sin{\theta} r dr d\theta \\
+\amp = \int_{\theta=0}^{\pi} \left. \frac13 r^3 \right|_{1}^2 \sin{\theta} d\theta\\
+\amp = \int_{\theta=0}^{\pi} \frac73\sin\theta d\theta \\
+\amp = \left. -\frac73 \cos\theta \right|_{0}^{\pi} \\
+\amp = \frac{14}{3}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#activities-8-5-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
 <div class="workspace" data-space="0.4in"></div>
@@ -337,18 +383,45 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div></details>
 </div>
+<div class="solutions">
+<details id="activities-8-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-6-2-2-1">
+<div class="para">We have <span class="process-math">\(P=xy, \ Q = \arctan{y}\text{,}\)</span> so <span class="process-math">\(\frac{\partial P}{\partial y} = x\)</span> and <span class="process-math">\(\frac{\partial Q}{\partial x} = 0\text{,}\)</span> so <span class="process-math">\(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=0-x = -x.\)</span> Then <span class="process-math">\(\owork{C}{F} = \iint_D -x dA\text{.}\)</span>  Polar coordinates would be good: <span class="process-math">\(x=r\cos{\theta}, \ y=r\sin{\theta}\text{,}\)</span> and <span class="process-math">\(dA = r dr d\theta\)</span> where <span class="process-math">\({0\le r \le 3}\)</span> and <span class="process-math">\({0\le \theta \le \pi}\text{.}\)</span>  Plugging everything in to the integral:</div>
+<div class="displaymath process-math" id="activities-8-6-2-2-1-10">
+\begin{align*}
+\owork{C}{F} \amp =\int_{\theta=0}^{\pi} \int_{r=0}^3 -r\cos\theta r dr d\theta\\
+\amp = \int_{\theta=0}^{\pi} \left. -\frac13 r^3 \right|_{r=0}^3 \cos\theta d \theta\\
+\amp = \int_{\theta=0}^{\pi} -9\cos\theta d\theta\\
+\amp = \left. -9\sin\theta\right|_0^{\pi} \\
+\amp = 0. 
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.a.1"><a tabindex="-1" href="#activities-8-6-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="0.3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activities-8-6-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-8-6-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-8-6-3-1-1">Use your result to find the line integral <span class="process-math">\(\ds \work{C'}{F}\)</span> where <span class="process-math">\(C'\)</span> is just the upper semi-circle of radius 3 without the straight line along the x-axis.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-8-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-8-6-3-2-1">The line is easier, since <span class="process-math">\(y=0\)</span> on the line then the field simplifies to <span class="process-math">\(\mbf F = (0,0) \text{,}\)</span> so <span class="process-math">\(\lineint{line}{F} = 0\text{.}\)</span>  Since the total work for the closed curve is 0, and the work over the line is 0, then the work over the part we want is the difference of those two. But that’s <span class="process-math">\(0-0=0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.b.1"><a tabindex="-1" href="#activities-8-6-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activities-8-6-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-8-6" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-8-7"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="activities-8-7-1-1">Each of the fields below has a constant curl.  For each, state whether the curl is negative, zero, or positive.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-8-7-1-1">Each of the fields below has a constant curl. For each, state whether the curl is negative, zero, or positive.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <div class="sidebyside">
 <div class="sbsrow" style="margin-left:4.166666666666667%;margin-right:4.166666666666667%;grid-template-columns:27.2727272727273% 27.2727272727273% 27.2727272727273%;column-gap:8.333333333333332%;">
@@ -356,6 +429,20 @@ eBookConfig.enable_chatcodes =  false;
 <div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/prefigure-6-curve4.svg" role="img" class="contained" alt="A vector field, all arrows points counter-clockwise in a co-centric circles centered around the origin."></div></div>
 <div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/prefigure/prefigure-6-curve5.svg" role="img" class="contained" alt="A vector field, all arrows point point horizontally towards the y-axis."></div></div>
 </div>
+</div>
+<div class="solutions">
+<details id="activities-8-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-8-7-2-1">Use Green’s Theorem here, so the curl is related to the work done around a closed curve.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-8-7-2-2">First picture. Think of a circle centered at the origin that goes counterclockwise. Then <span class="process-math">\(\mbf F\)</span> is always orthogonal to <span class="process-math">\(d\mbf r\text{,}\)</span> so their dot product is always 0, so Green’s Theorem then implies the curl <span class="process-math">\(\nabla \times \mbf F = \mbf 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-8-7-2-3">Second picture. Think of a circle centered at the origin that goes counterclockwise. Then <span class="process-math">\(\mbf F\)</span> is always in the same direction as <span class="process-math">\(d\mbf r\text{,}\)</span> so the work is positive, and thus the curl is positive.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-8-7-2-4">Third picture.  Think of a rectangle centered at the original and oriented up and down. Then on the left and right sides <span class="process-math">\(\mbf F\)</span> is always orthogonal to <span class="process-math">\(d\mbf r\text{,}\)</span> and on the top and bottom sides the work cancels out, so the work is 0 which implies the curl is 0.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-7-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#activities-8-7-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="0.3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#activities-8-7" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
@@ -369,15 +456,32 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="activities-8-8-2-1-1">Sketch the vector field <span class="process-math">\(\mbf F(x,y) = (y,0)\)</span> below. (Ignore the curve already drawn for now.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="image-box" style="width: 25%; margin-left: 0%; margin-right: 75%;">
 <img src="generated/prefigure/prefigure-6-curve6.svg" role="img" class="contained" alt="A closed curve on a graph, see description below."><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="activities-8-8-2-1-2-description">
-<div class="para" id="activities-8-8-2-1-2-3-1">A grid to sketch a vector field on.  Also included is a closed curve <span class="process-math">\(C\)</span> in the shape of a square oriented counterclockwise through the points <span class="process-math">\((1,1), (1,-1), (3,-1), (3,1)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-8-8-2-1-2-3-1">A grid to sketch a vector field on. Also included is a closed curve <span class="process-math">\(C\)</span> in the shape of a square oriented counterclockwise through the points <span class="process-math">\((1,1), (1,-1), (3,-1), (3,1)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+</div></details>
+</div>
+<div class="solutions">
+<details id="activities-8-8-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="generated/prefigure/prefigure-6-curve6-soln.svg" role="img" class="contained" alt="The vector field points only in the x-direction, but has magnitude y."></div>
+<div class="para" id="activities-8-8-2-2-2">Note the field gets larger in magnitude as you move away from the x-axis.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.a.1"><a tabindex="-1" href="#activities-8-8-2-2" title="Copy heading and permalink for Solution 5.a.1" aria-label="Copy heading and permalink for Solution 5.a.1">🔗</a></div>
 </div></details>
 </div>
 <div class="workspace" data-space="0.01in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.a"><a tabindex="-1" href="#activities-8-8-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-8-8-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="activities-8-8-3-1-1">Judging from your sketch, is the circulation (the work) around the curve positive or negative?  Explain your thinking.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-8-8-3-1-1">Judging from your sketch, is the circulation (the work) around the curve positive or negative? Explain your thinking.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-8-8-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-8-8-3-2-1">Think Green’s Theorem, <span class="process-math">\(\ds \oint_C \mbf F \cdot ~d\mbf r = \iint_D \nabla \times \mbf F~dA\text{,}\)</span> but along the sides of the square we are moving orthogonal to the field, and on the top and bottom of the square we are moving against the field, so on the top and bottom we have <span class="process-math">\(\mbf F \cdot d\mbf r \lt 0\text{.}\)</span> Since the work is negative, then the curl is also negative, so the circulation around the curve is negative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.b.1"><a tabindex="-1" href="#activities-8-8-3-2" title="Copy heading and permalink for Solution 5.b.1" aria-label="Copy heading and permalink for Solution 5.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.b"><a tabindex="-1" href="#activities-8-8-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
@@ -385,11 +489,35 @@ eBookConfig.enable_chatcodes =  false;
 <article class="task exercise-like" id="activities-8-8-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="activities-8-8-4-1-1">What about if the curve were shifted vertically?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-8-8-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-8-8-4-2-1">The top field is stronger than the bottom, so even if the bottom has positive work, the top will have negative work and overpower the bottom, so we will still have negative work and thus negative curl.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.c.1"><a tabindex="-1" href="#activities-8-8-4-2" title="Copy heading and permalink for Solution 5.c.1" aria-label="Copy heading and permalink for Solution 5.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.c"><a tabindex="-1" href="#activities-8-8-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-8-8-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
 <div class="para" id="activities-8-8-5-1-1">Compute <span class="process-math">\(\nabla\times\mbf F\)</span> and explain how the curl is connected to the response to the previous two questions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-8-8-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-8-5-2-1">
+<div class="para">
+<span class="process-math">\(\nabla\times\mbf F =\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}=-1 \text{,}\)</span> so we’ll actually end up with</div>
+<div class="displaymath process-math" id="activities-8-8-5-2-1-2">
+\begin{equation*}
+\oint_C \mbf F \cdot d\mbf r = \iint_D -1 dA = -1(area \ of \ domain \ bounded \ by \ C)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-8-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.d.1"><a tabindex="-1" href="#activities-8-8-5-2" title="Copy heading and permalink for Solution 5.d.1" aria-label="Copy heading and permalink for Solution 5.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 5.d"><a tabindex="-1" href="#activities-8-8-5" title="Copy heading and permalink for Task 5.d" aria-label="Copy heading and permalink for Task 5.d">🔗</a></div>
@@ -403,11 +531,52 @@ eBookConfig.enable_chatcodes =  false;
 <article class="task exercise-like" id="activities-8-9-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activities-8-9-2-1-1">Explain why <span class="process-math">\(\ds \oint_C \mbf F\cdot d\mbf r\)</span> measures the area of <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-9-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-8-9-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-9-2-2-1">
+<div class="displaymath process-math" id="activities-8-9-2-2-1-1">
+\begin{equation*}
+\oint_C \mbf F\cdot d\mbf r = \iint_D\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)dA 
+= \iint_D (\frac12 - (-\frac12))dA = \iint_D 1 dA = (area \ of \ D)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-9-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.a.1"><a tabindex="-1" href="#activities-8-9-2-2" title="Copy heading and permalink for Solution 6.a.1" aria-label="Copy heading and permalink for Solution 6.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#activities-8-9-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-8-9-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-8-9-3-1-1">Verify this is the case by evaluating the line integral directly where <span class="process-math">\(C\)</span> is the circle of radius <span class="process-math">\(R\)</span> centered at the origin.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-9-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-8-9-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-9-3-2-1">
+<div class="para">Have to parameterize here!  And not use Green’s Theorem. So we’ll take</div>
+<div class="displaymath process-math" id="activities-8-9-3-2-1-1">
+\begin{equation*}
+x = R\cos{t}, y=r\sin{t},
+\end{equation*}
+</div>
+<div class="para">then <span class="process-math">\({dx = -R\sin{t}~dt}\text{,}\)</span> and <span class="process-math">\({dy = R\cos{t}~dt}\text{,}\)</span> where <span class="process-math">\(t\rightarrow 0 \rightarrow 2\pi\)</span> is the only variable and <span class="process-math">\(R\)</span> is a constant. So the integral becomes</div>
+<div class="displaymath process-math" id="activities-8-9-3-2-1-6">
+\begin{align*}
+\oint_C \mbf F\cdot d\mbf r \amp = \oint_C -\frac12 y ~dx + \frac12 x~dy \\
+\amp = \int_{0}^{2\pi} -\frac12(R\sin t)(-R\sin t)~dt + \frac12(R\cos t)(R\cos t)~dt \\
+\amp = \int_0^{2\pi} \frac12 R^2 \sin^2 t + \frac12 R^2 \cos^2 t ~dt \\
+\amp =\int_0^{2\pi} \frac12 R^2 ~dt\\
+\amp = \frac12 R^2 (2\pi) \\
+\amp = \pi R^2.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-9-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.b.1"><a tabindex="-1" href="#activities-8-9-3-2" title="Copy heading and permalink for Solution 6.b.1" aria-label="Copy heading and permalink for Solution 6.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#activities-8-9-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
@@ -419,8 +588,35 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <article class="task exercise-like" id="activities-8-10-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activities-8-10-2-1-1">Suppose that <span class="process-math">\(C_1\)</span> and <span class="process-math">\(C_2\)</span> are two paths that begin at the same point and end at the same point and that <span class="process-math">\(\nabla\times \mbf F = 0\)</span> in the region in between <span class="process-math">\(C_1\)</span> and <span class="process-math">\(C_2\text{.}\)</span>  Explain why <span class="process-math">\(\ds \int_{C_1}
+<div class="para" id="activities-8-10-2-1-1">Suppose that <span class="process-math">\(C_1\)</span> and <span class="process-math">\(C_2\)</span> are two paths that begin at the same point and end at the same point and that <span class="process-math">\(\nabla\times \mbf F = 0\)</span> in the region in between <span class="process-math">\(C_1\)</span> and <span class="process-math">\(C_2\text{.}\)</span> Explain why <span class="process-math">\(\ds \int_{C_1}
 \mbf F\cdot d\mbf r = \int_{C_2} \mbf F\cdot d\mbf r\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-8-10-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-10-2-2-1">
+<div class="para">Since they begin and end at the same point, then we can travel around <span class="process-math">\(C_1\)</span> and then backwards along <span class="process-math">\(C_2\)</span> and have a closed curve. Then according to Green’s Theorem</div>
+<div class="displaymath process-math" id="activities-8-10-2-2-1-3">
+\begin{equation*}
+\oint_{C_1 - C_2} \mbf F \cdot d\mbf r = \iint_D \nabla \times \mbf F dA = 0
+\end{equation*}
+</div>
+<div class="para">since the curl is 0 inside this region.  Then we can break apart</div>
+<div class="displaymath process-math" id="activities-8-10-2-2-1-4">
+\begin{equation*}
+\oint_{C_1 - C_2} \mbf F \cdot d\mbf r = \oint_{C_1} \mbf F \cdot d\mbf r - \oint_{C_2} \mbf F \cdot d\mbf r
+\end{equation*}
+</div>
+<div class="para">so setting it equal to 0 gives</div>
+<div class="displaymath process-math" id="activities-8-10-2-2-1-5">
+\begin{equation*}
+\oint_{C_1} \mbf F \cdot d\mbf r = \oint_{C_2} \mbf F \cdot d\mbf r.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.a.1"><a tabindex="-1" href="#activities-8-10-2-2" title="Copy heading and permalink for Solution 7.a.1" aria-label="Copy heading and permalink for Solution 7.a.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.a"><a tabindex="-1" href="#activities-8-10-2" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div>
@@ -428,6 +624,21 @@ eBookConfig.enable_chatcodes =  false;
 <article class="task exercise-like" id="activities-8-10-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-8-10-3-1-1">If <span class="process-math">\(C\)</span> is a closed curve and <span class="process-math">\(\nabla \times \mbf F = 0\)</span> in the region <span class="process-math">\(D\)</span> bounded by <span class="process-math">\(C\text{,}\)</span> explain why <span class="process-math">\(\ds \oint_C \mbf F \cdot d\mbf r =
 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-10-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-8-10-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-8-10-3-2-1">
+<div class="para">By Green’s Theorem!</div>
+<div class="displaymath process-math" id="activities-8-10-3-2-1-1">
+\begin{equation*}
+\oint_{C} \mbf F \cdot d\mbf r = \iint_D \nabla \times \mbf F dA = \iint_D 0 dA = 0.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-8-10-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.b.1"><a tabindex="-1" href="#activities-8-10-3-2" title="Copy heading and permalink for Solution 7.b.1" aria-label="Copy heading and permalink for Solution 7.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 7.b"><a tabindex="-1" href="#activities-8-10-3" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div>
