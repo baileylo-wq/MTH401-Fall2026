@@ -1,286 +1,526 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
-  <title>1.6. Finding potentials</title>
+    <title>1.6. Finding potentials</title>
 
-  <alert>MTH 401</alert>
+    <p><alert>
+        MTH 401
+    </alert></p>
 
-  <theorem xml:id="thm-conservative-implies-curl">
-    <statement>
-      <p>
-        If <m>\mbf F</m> is a conservative vector field (i.e. if <m>\mbf F = \nabla f</m> for some 
-        <m>f</m>), then <md>
-          \nabla \times \mbf F = \nabla \times (\nabla f) = \zerovec
-        </md>.
-      </p>
-    </statement>
-  </theorem>
+    <theorem xml:id="thm-conservative-implies-curl">
+        <statement>
+            <p>
+                If <m>\mbf F</m> is a conservative vector field (i.e.
+                if <m>\mbf F = \nabla f</m> for some <m>f</m> ), then
+                <md>
+                    \nabla \times \mbf F = \nabla \times (\nabla f) = \zerovec
+                </md>.
+            </p>
+        </statement>
+    </theorem>
+    <p><alert>
+        However, the reverse is not always true without an additional condition!
+    </alert></p>
 
-  <alert>However, the reverse is not always true without an additional condition!</alert>
-  
-  <theorem xml:id="thm-curl-implies-conservative">
-    <statement>  
-      <p>
-        If <m>\nabla \times \mbf F = \zerovec</m> in a simply connected domain <m>D</m>, then 
-        <m>\mbf F</m> is a conservative field within <m>D</m> and we can find a potential function in <m>D</m> such that <m>
+    <theorem xml:id="thm-curl-implies-conservative">
+        <statement>
+            <p>
+                If <m>\nabla \times \mbf F = \zerovec</m> in a simply connected
+                domain <m>D</m>, then <m>\mbf F</m> is a conservative field
+                within <m>D</m> and we can find a potential function in <m>D</m>
+                such that <m>
           \mbf F = \nabla f
-        </m> within the domain <m>D</m>. 
-      </p>
-    </statement>
-  </theorem>
+        </m> within
+                the domain <m>D</m>.
+            </p>
+        </statement>
+    </theorem>
 
-      <p>
-        To find the <term>potential function <m>f</m></term>, choose an arbitrary basepoint <m>*</m> 
-        and integrate over any path from that basepoint to some point 
-        <m>(x_0,y_0)</m>. Then the potential function is <md>f(x_0,y_0)= \work{C}{F}</md>.
-      </p>
-  
+    <p>
+        To find the <term>potential function <m>f</m></term>, choose an
+        arbitrary basepoint <m>*</m> and integrate over any path from that
+        basepoint to some point <m>(x_0,y_0)</m>.
+        Then the potential function is
+        <md>
+            f(x_0,y_0)= \work{C}{F}
+        </md>.
+    </p>
 
-  <exercise workspace="0in">
-    <introduction>
-      <p>Let's consider the field <m>\mbf F(x,y) = (2xy,x^2)</m>.</p>
-    </introduction>
-    <task workspace="0.7in">
-      <statement>
-        <p>Verify that
-  <m>\nabla\times \mbf F = 0</m>.</p>
-      </statement>
-    </task>
-    <task workspace="0.7in">
-      <statement>
-        <p>Suppose that <m>C_1</m> and <m>C_2</m> are two paths with the same initial and
-  final points, explain why <m>\ds \work{C_1}{F} = \work{C_2}{F}</m>.</p>
-      </statement>
-    </task>
-    <task workspace="0in">
-      <statement>
-        <p>Let's find a potential function for <m>F</m> by choosing the basepoint <m>*
-  = (0,0)</m>.  For a point <m>(x_0, y_0)</m>, integrate over this curve <m>C</m>
-  to define
-  <md>
-  \ds f(x_0,y_0) = \work{C}{F}.
-  </md></p>
-       <image width="20%" margins="0% 80%">
-      <shortdescription>The curve in which we integrate over, see description.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic1">
-        <diagram dimensions="(150,150)" margins="0">
-    
-          <coordinates bbox="(-1,-1,4,4)">
-            <axes xlabel="x" ylabel="y" decorations="no" />
-            <path start="(0,0)" stroke="blue" arrows="1" thickness="3">
-              <lineto point="(3,0)"/>
-              <lineto point="(3,2)"/>
-            </path>
-            <point p="(0,0)" stroke="blue" fill="blue"></point>
-            <point p="(3,2)" stroke="blue" fill="blue"/>
-            <label anchor="(0,0)" alignment = "nw" offset="(-5,3)">
-              <m>* </m>
-            </label>
-            <label anchor="(3,2)" alignment="nw" offset="(-3,3)">
-              <m>(x_0, y_0)</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description> 
-        <p> The path begins at the origin, travels along the x-axis until some value <m>x_0</m>, 
-      then travels vertically until it reaches the point <m>(x_0,y_0)</m>.</p>
-      </description>
-    </image>
-      </statement>
-    </task>
-    <task workspace="0.7in">
-      <statement>
-        <p>Verify that the function <m>f(x,y)</m> that you have found is a potential
-  for <m>\mbf F</m>.</p>
-      </statement>
-    </task>
-  </exercise>
+    <exercise workspace="0in">
+        <introduction>
+            <p>
+                Let's consider the field <m>\mbf F(x,y) = (2xy,x^2)</m>.
+            </p>
+        </introduction>
 
-  <exercise workspace="0in">
-    <introduction>
-      <p>Consider the field
-  <md> 
-    \ds \mbf F(x,y) = \left(-\frac{y}{x^2+y^2}, \frac{x}{x^2+y^2}\right).
-  </md>
-  We have seen that <m>\nabla\times \mbf F = 0</m> but that the field is not
-  defined at the origin <m>(0,0)</m> so that the domain of the field is not
-  simply connected.</p>
-    </introduction>
-    <task workspace="0.5in">
-      <statement>
-        <p>Let's attempt to find a potential function by integrating.  Choose the
-  basepoint to be <m>(1,0)</m>.  To define <m>\ds f(x_0, y_0)</m>, integrate along
-  the positive <m>x</m>-axis and then along a circular arc traversed in the
-  counterclockwise direction. (Polar coordinates could be useful for part of this...) 
-  </p>
-        <image width="25%" margins="0% 75%">
-      <shortdescription>The curve in which we integrate over to find a potential function, see description.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic2">
-        <diagram dimensions="(150,150)" margins="5">
-    
-          <coordinates bbox="(-1,-1,7,7)">
-            <axes  decorations="no" />
-            <path start="(1,0)" stroke="blue" arrows="1" thickness="3">
-              <lineto point="(6,0)"/>
-              <arc center="(0,0)" radius="6" range="(0,60)"/>
-            </path>
-            <point p="(1,0)" stroke="blue" fill="blue"></point>
-            <point p="(6*cos(pi/3),6*sin(pi/3))" stroke="blue" fill="blue"></point>
+        <task workspace="0.7in">
+            <statement>
+                <p>
+                    Verify that <m>\nabla\times \mbf F = 0</m>.
+                </p>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                <md>
+                  \nabla\times \mbf F = \frac{\partial}{\partial x}(x^2) - \frac{\partial}{\partial y}(2xy) = 2x-2x=0.
+                </md>
+                Check.
+              </p>
+            </solution>
+        </task>
 
-            <label anchor="(1,0)" alignment = "s" offset="(25,-3)">
-              <m>* = (1,0) </m>
-            </label>
-            <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
-              <m>(x_0, y_0)</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description> 
-        <p>The path begins at the a basepoint <m>(1,0)</m>, travels right along the <m>x</m>-axis for some time, 
-      then travels along a circular arc centered at the origin until it reaches the point <m>(x_0,y_0)</m>.</p>
-      </description>
-    </image>
-  </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>
-          What do you
-  find for <m>f(2,0)</m>?  <m>f(0,2)</m>?  <m>f(-2,0)</m>?  <m>f(0,-2)</m>?
-        </p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>What is a general expression for <m>f(x_0, y_0)</m>?  It may be
-  helpful to think in terms of polar coordinates.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>Why doesn't <m>f</m> define a potential function for <m>\mbf F</m> in the region
-  where <m>\mbf F</m> is defined?</p>
-      </statement>
-    </task>
-    <task workspace="0in">
-      <statement>
-        <p>Hmmm... Let's try to avoid the problem (the origin) by literally going around the problem.  If <m>C</m> is the curve shown below, what is <m>\work{C}{F}</m>?</p>
-        <image width="25%" margins="0% 75%">
-      <shortdescription>The closed curve in which we integrate over to find the work, see description.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic3">
-        <diagram dimensions="(150,150)" margins="5">
-    
-          <coordinates bbox="(-7,-7,7,7)">
-            <axes  decorations="no" />
-            <path start="(6,0)" stroke="blue" arrows="1" thickness="3">
-              <arc center="(0,0)" radius="6" range="(0,345)"/>
-              <lineto point="(2*cos(345),2*sin(345))"/>
-            </path>
-            <path start="(2*cos(345),2*sin(345))" stroke="blue" arrows="1" thickness="3">
-              <arc center="(0,0)" radius="2" range="(345,0)"/>
-              <lineto point="(6,0)"/>
-            </path>
-            <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
-              <m>C</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description> 
-        <p>The path begins at a point on the positive <m>x</m>-axis, travels right along the <m>x</m>-axis for some time, 
-      then travels counterclockwise along a circular arc centered at the origin until it almost goes full circle, 
-      then it cuts left until just to the left and below the initial starting point on the positive <m>x</m>-axis,
-      then travels clockwise along a circular arc centered at the origin until it connects back with the initial point.
-      </p>
-      </description>
-    </image>
-      </statement>
-    </task>
-    <task workspace="0.1in">
-      <statement>
-        <p>Now imagine the two radial pieces of <m>C</m> merging together and explain
-  why <m>\ds \work{C_1}{F} = \work{C_2}{F}</m> where <m>C_1</m> and <m>C_2</m> are the
-  two circles below.</p>
-    <image width="20%" margins="0% 80%">
-      <shortdescription>Two co-centric circles around the origin traveling counterclockwise.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic4">
-        <diagram dimensions="(150,150)" margins="5">
-    
-          <coordinates bbox="(-7,-7,7,7)">
-            <axes  decorations="no" />
-            <arc center="(0,0)" radius="2" range="(40,400)" arrows="1"
-                stroke="blue" thickness="3" reverse="no" arrow-location="3"/>
-            <arc center="(0,0)" radius="6" range="(40,405)" arrows="1"
-                stroke="blue" thickness="3" reverse="no"/>
-            <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
-              <m>C_1</m>
-            </label>
-            <label anchor="(2,2)" offset="(5,0)">
-              <m>C_2</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-      <description> 
-        <p>
-          Two circles are centered at the origin and oriented counterclockwise, 
-          with <m>C_1</m> the circle with a smaller radius and <m>C_2</m> the larger radius.
-      </p></description>
-    </image>
-      </statement>
-    </task>
-    <task workspace="0.1in">
-      <statement>
-        <p>If <m>C_1</m> and <m>C_2</m> are the two curves shown below, explain why
-  <m>\ds \work{C_1}{F} = \work{C_2}{F}</m>.</p>
+        <task workspace="0.7in">
+            <statement>
+                <p>
+                    Suppose that <m>C_1</m> and <m>C_2</m> are two paths with
+                    the same initial and final points, explain why
+                    <m>\ds \work{C_1}{F} = \work{C_2}{F}</m>.
+                </p>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                Consider <m>\oint_{C_1-C_2}\mbf F \cdot d\mbf r = \iint_D \nabla\times \mbf F ~dA = 0</m>
+                since we have a simply connected domain and the curl is 0.  (<m>D</m> is the interior.)
+                That implies 
+                <m>\oint_{C_1}\mbf F \cdot d\mbf r  - \oint_{C_2}\mbf F \cdot d\mbf r =0</m>
+                and thus
+                <md>
+                  \oint_{C_1}\mbf F \cdot d\mbf r  = \oint_{C_2}\mbf F \cdot d\mbf r.
+                </md>
+                
+              </p>
+            </solution>
+        </task>
 
-  <image width="25%" margins="0% 75%">
-      <shortdescription>Two "squiggly" co-centric curves around the origin traveling counterclockwise.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic5">
-        <diagram dimensions="(150,150)" margins="5">
-    
-          <coordinates bbox="(-7,-7,7,7)">
-            <axes  decorations="no" />
-            <spline points="((2,0),(2,1),(1,2),(-1,2),(-2,0),(-1,-2),(1,-1),(2,0))"
-            closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="2"/>
-            <spline points="((5,0),(4,4),(1,4),(-1,5),(-4,0),(-1,-5),(1,-3),(5,0))"
-            closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="1"/>
-            <label anchor="(4,3)" alignment="ne" offset="(4,3)">
-              <m>C_1</m>
-            </label>
-            <label anchor="(3,1)" offset="(1,4)">
-              <m>C_2</m>
-            </label>
-          </coordinates>
-        </diagram>
-      </prefigure>
-    </image>
-      </statement>
-    </task>
-    <task workspace="0.1in">
-      <statement>
-        <p>Find <m>\ds \work{C}{F}</m> if <m>C</m> is the curve below.</p>
-        <image width="25%" margins="0% 75%">
-      <shortdescription>One squiggly curve traversing the origin counterclockwise three times before crossing itself to connect back to its initial point.</shortdescription>
-      <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic6">
-        <diagram dimensions="(150,150)" margins="5">
-    
-          <coordinates bbox="(-7,-7,7,7)">
-            <axes  decorations="no" />
-            <spline points="((1,1),(0.5,2),(-1,2),(-2,0),(-1,-2),(1,-2),(3,-1), (3,1),(1,4),(-2,3),(-4,0),(-2,-2),(0,-5),(3,-2),(5,0),(4,4),(1,6),(-3,5),(-6,0),(-3,-6),(1,-6),(4,-4),(6,0),(6,5),(4,6),(2.5,1),(1,1))"
-            closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="22.6"/>
-        
-            <label anchor="(-5,4)" alignment="ne" offset="(-4,3)">
-              <m>C</m>
-            </label>
-    
-          </coordinates>
-        </diagram>
-      </prefigure>
-    </image>
-      </statement>
-    </task>
-  </exercise>
+        <task workspace="0in">
+            <statement>
+                <p>
+                    Let's find a potential function for <m>F</m> by choosing the
+                    basepoint <m>*
+  = (0,0)</m>.
+                    For a point <m>(x_0, y_0)</m>, integrate over this curve
+                    <m>C</m> to define
+                    <md>
+                        \ds f(x_0,y_0) = \work{C}{F}.
+                    </md>
+                </p>
 
+                <image width="20%" margins="0% 80%">
+                    <shortdescription>
+                        The curve in which we integrate over, see description.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic1">
+                        <diagram dimensions="(150,150)" margins="0">
+                            <coordinates bbox="(-1,-1,4,4)">
+                                <axes xlabel="x" ylabel="y" decorations="no"/>
+                                <path start="(0,0)" stroke="blue" arrows="1" thickness="3">
+                                    <lineto point="(3,0)"/>
+                                    <lineto point="(3,2)"/>
+                                </path>
+                                <point p="(0,0)" stroke="blue" fill="blue"/>
+                                <point p="(3,2)" stroke="blue" fill="blue"/>
+                                <label anchor="(0,0)" alignment="nw" offset="(-5,3)">
+                                    <m>
+                                        *
+                                    </m>
+                                </label>
+                                <label anchor="(3,2)" alignment="nw" offset="(-3,3)">
+                                    <m>
+                                        (x_0, y_0)
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+
+                    <description>
+                        <p>
+                            The path begins at the origin, travels along the
+                            x-axis until some value <m>x_0</m>, then travels
+                            vertically until it reaches the point
+                            <m>(x_0,y_0)</m>.
+                        </p>
+                    </description>
+                </image>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                Note that <m>\ds f(x_0,y_0) = \work{C}{F} = \int_C 2xy ~dx + x^2 ~dy</m>.
+                If <m>C_1</m> is the horizontal part, then we can parameterize with 
+                <m>x=x, y=0</m> as <m>x\rightarrow 0 \rightarrow x_0</m>, and the integral is 0.
+                
+              </p>
+              <p>
+                If <m>C_2</m> is the vertical part of the curve, we can parameterize 
+                <m>x=x_0, y=y</m> as <m>y\rightarrow 0 \rightarrow y_0</m>, so plugging in 
+                <m>\work{C_2}{F} = \int_0^{y_0} 0 + x_0^2~dy = x_0^2 y_0</m>.
+                Then adding them together, 
+                <md>
+                  f(x_0,y_0) = 0 + x_0^2 y_0.
+                </md>
+                (or <m>f(x,y)=x^2y</m>.)
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="0.7in">
+            <statement>
+                <p>
+                    Verify that the function <m>f(x,y)</m> that you have found
+                    is a potential for <m>\mbf F</m>.
+                </p>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                <m>\nabla f(x,y) = (2xy,x^2) = \mbf F</m>.  Check.
+              </p>
+            </solution>
+        </task>
+    </exercise>
+
+    <exercise workspace="0in">
+        <introduction>
+            <p>
+                Consider the field
+                <md>
+                    \ds \mbf F(x,y) = \left(-\frac{y}{x^2+y^2}, \frac{x}{x^2+y^2}\right).
+                </md>
+                We have seen that <m>\nabla\times \mbf F = 0</m> but that the
+                field is not defined at the origin <m>(0,0)</m> so that the
+                domain of the field is not simply connected.
+            </p>
+        </introduction>
+
+        <task workspace="0.5in">
+            <statement>
+                <p>
+                    Let's attempt to find a potential function by integrating.
+                    Choose the basepoint to be <m>(1,0)</m>.
+                    To define <m>\ds f(x_0, y_0)</m>, integrate along the
+                    positive <m>x</m>-axis and then along a circular arc
+                    traversed in the counterclockwise direction.
+                    (Polar coordinates could be useful for part of this...)
+                </p>
+
+                <image width="25%" margins="0% 75%">
+                    <shortdescription>
+                        The curve in which we integrate over to find a potential
+                        function, see description.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic2">
+                        <diagram dimensions="(150,150)" margins="5">
+                            <coordinates bbox="(-1,-1,7,7)">
+                                <axes decorations="no"/>
+                                <path start="(1,0)" stroke="blue" arrows="1" thickness="3">
+                                    <lineto point="(6,0)"/>
+                                    <arc center="(0,0)" radius="6" range="(0,60)"/>
+                                </path>
+                                <point p="(1,0)" stroke="blue" fill="blue"/>
+                                <point p="(6*cos(pi/3),6*sin(pi/3))" stroke="blue" fill="blue"/>
+                                <label anchor="(1,0)" alignment="s" offset="(25,-3)">
+                                    <m>
+                                        * = (1,0)
+                                    </m>
+                                </label>
+                                <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
+                                    <m>
+                                        (x_0, y_0)
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+
+                    <description>
+                        <p>
+                            The path begins at the a basepoint <m>(1,0)</m>,
+                            travels right along the <m>x</m>-axis for some time,
+                            then travels along a circular arc centered at the
+                            origin until it reaches the point <m>(x_0,y_0)</m>.
+                        </p>
+                    </description>
+                </image>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                Note first that <m>\work{C}{F} = \int_C \frac{-y}{x^2+y^2}~dx + \frac{x}{x^2+y^2}~dy</m>.
+              </p>
+              <p>
+                Parameterize <m>C_1</m>, the horizontal piece, as 
+                <m>x=x, y=0</m>.  Then <m>\work{C_1}{F} = \int 0+0 = 0</m>.
+              </p>
+              <p>
+                If <m>C_2</m> is the curved arc with radius some constant <m>R</m> and the 
+                angle from the origin to our point is some constant <m>\theta_0</m>, we can parameterize 
+                <m>x=R\cos \theta</m> and <m>y=R\sin \theta</m> where <m>\theta \rightarrow 0 \rightarrow \theta_0</m>. 
+                Then <m>dx = -R\sin \theta ~d\theta</m> and <m>dy=R\cos \theta ~d\theta</m>. So the integral becomes
+                <md>
+                  <mrow> \work{C_2}{F} \amp = \int_{\theta=0}^{\theta_0} \frac{-R\sin \theta (-R\sin \theta)}{R^2\cos^2\theta + R^2\sin^2\theta}~d\theta +
+                  \frac{R\cos\theta (R\cos\theta)}{R^2\cos^2\theta + R^2\sin^2\theta}~d\theta </mrow>
+                  <mrow> \amp = \int_{\theta=0}^{\theta_0} \frac{R^2\sin^2\theta}{R^2} + \frac{R^2\cos^2\theta}{R^2}~d\theta </mrow>
+                  <mrow> \amp = \int_{\theta=0}^{\theta_0} 1 ~d\theta </mrow>
+                  <mrow> \amp = \theta_0 </mrow>
+                </md>
+                So if we think of <m>f</m> in terms of polar coordinates, we would 
+                have <m>f(r,\theta) = \theta</m>.
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What do you find for <m>f(2,0)</m>?
+                    <m>f(0,2)</m>?
+                    <m>f(-2,0)</m>?
+                    <m>f(0,-2)</m>?
+                </p>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                At <m>(2,0)</m>, the angle <m>\theta = 0</m>, or <m>2\pi, -2\pi, 4\pi, \ldots</m>, so 
+                <m>f(2,0)</m> would depend which angle you call <m>\theta</m>.
+              </p>
+              <p>
+                Similarly, <m>f(0,2)</m> could be considered <m>\theta=\frac{\pi}{2}</m> or...
+              </p>
+              <p>
+                You could consider <m>(-2,0)</m> to be <m>\theta=\pi</m> (or ...)
+              </p>
+              <p>
+                And <m>f(0,-2)</m> could be <m>\theta=\frac{3\pi}{2}</m> (or...)
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    What is a general expression for <m>f(x_0, y_0)</m>?
+                    It may be helpful to think in terms of polar coordinates.
+                </p>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                Let's keep <m>f = \theta</m>!  Technically speaking, <m>\theta = \arctan(\frac{y_0}{x_0})</m>, 
+                where <m>x_0^2+y_0^2 = R^2</m>... but polar coordinates is simpler here.
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="1in">
+            <statement>
+                <p>
+                    Why doesn't <m>f</m> define a potential function for
+                    <m>\mbf F</m> in the region where <m>\mbf F</m> is defined?
+                </p>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                It's not a function. One input such as the point <m>(2,0)</m> has many possible outputs
+                because <m>\theta</m> has infinitely many choices that correspond to that point.
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="0in">
+            <statement>
+                <p>
+                    Hmmm...
+                    Let's try to avoid the problem (the origin) by literally
+                    going around the problem.
+                    If <m>C</m> is the curve shown below, what is
+                    <m>\work{C}{F}</m>?
+                </p>
+
+                <image width="25%" margins="0% 75%">
+                    <shortdescription>
+                        The closed curve in which we integrate over to find the
+                        work, see description.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic3">
+                        <diagram dimensions="(150,150)" margins="5">
+                            <coordinates bbox="(-7,-7,7,7)">
+                                <axes decorations="no"/>
+                                <path start="(6,0)" stroke="blue" arrows="1" thickness="3">
+                                    <arc center="(0,0)" radius="6" range="(0,345)"/>
+                                    <lineto point="(2*cos(345),2*sin(345))"/>
+                                </path>
+                                <path start="(2*cos(345),2*sin(345))" stroke="blue" arrows="1" thickness="3">
+                                    <arc center="(0,0)" radius="2" range="(345,0)"/>
+                                    <lineto point="(6,0)"/>
+                                </path>
+                                <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
+                                    <m>
+                                        C
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+
+                    <description>
+                        <p>
+                            The path begins at a point on the positive
+                            <m>x</m>-axis, travels right along the <m>x</m>-axis
+                            for some time, then travels counterclockwise along a
+                            circular arc centered at the origin until it almost
+                            goes full circle, then it cuts left until just to
+                            the left and below the initial starting point on the
+                            positive <m>x</m>-axis, then travels clockwise along
+                            a circular arc centered at the origin until it
+                            connects back with the initial point.
+                        </p>
+                    </description>
+                </image>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                <m>\work{C}{F} = \iint_D \nabla \times \mbf F ~dA = 0</m>.
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="0.1in">
+            <statement>
+                <p>
+                    Now imagine the two radial pieces of <m>C</m> merging
+                    together and explain why
+                    <m>\ds \work{C_1}{F} = \work{C_2}{F}</m> where <m>C_1</m>
+                    and <m>C_2</m> are the two circles below.
+                </p>
+
+                <image width="20%" margins="0% 80%">
+                    <shortdescription>
+                        Two co-centric circles around the origin traveling
+                        counterclockwise.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic4">
+                        <diagram dimensions="(150,150)" margins="5">
+                            <coordinates bbox="(-7,-7,7,7)">
+                                <axes decorations="no"/>
+                                <arc center="(0,0)" radius="2" range="(40,400)" arrows="1" stroke="blue" thickness="3" reverse="no" arrow-location="3"/>
+                                <arc center="(0,0)" radius="6" range="(40,405)" arrows="1" stroke="blue" thickness="3" reverse="no"/>
+                                <label anchor="(5,5)" alignment="nw" offset="(-3,3)">
+                                    <m>
+                                        C_1
+                                    </m>
+                                </label>
+                                <label anchor="(2,2)" offset="(5,0)">
+                                    <m>
+                                        C_2
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+
+                    <description>
+                        <p>
+                            Two circles are centered at the origin and oriented
+                            counterclockwise, with <m>C_1</m> the circle with a
+                            smaller radius and <m>C_2</m> the larger radius.
+                        </p>
+                    </description>
+                </image>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                We have a <m>C_3</m> along the connected section on the x-axis on the right.  Then we can treat it as a closed curve similarly to
+                above, where
+                <md>
+                  \oint_{C_1+C_3-C_2-C_3} \mbf F \cdot d\mbf r = \iint_D \nabla\times \mbf F~dA = 0.
+                </md>
+                (Along the connected section, <m>C_3</m> and <m>-C_3</m>, the work cancels out.). So we can simplify to
+                <md>
+                  \oint_{C_1-C_2} \mbf F \cdot d\mbf r = 0,
+                </md>
+                which implies <m>\oint_{C_1} \mbf F \cdot d\mbf r=\oint_{C_2} \mbf F \cdot d\mbf r</m>.
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="0.1in">
+            <statement>
+                <p>
+                    If <m>C_1</m> and <m>C_2</m> are the two curves shown below,
+                    explain why <m>\ds \work{C_1}{F} = \work{C_2}{F}</m>.
+                </p>
+
+                <image width="25%" margins="0% 75%">
+                    <shortdescription>
+                        Two "squiggly" co-centric curves around the origin
+                        traveling counterclockwise.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic5">
+                        <diagram dimensions="(150,150)" margins="5">
+                            <coordinates bbox="(-7,-7,7,7)">
+                                <axes decorations="no"/>
+                                <spline points="((2,0),(2,1),(1,2),(-1,2),(-2,0),(-1,-2),(1,-1),(2,0))" closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="2"/>
+                                <spline points="((5,0),(4,4),(1,4),(-1,5),(-4,0),(-1,-5),(1,-3),(5,0))" closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="1"/>
+                                <label anchor="(4,3)" alignment="ne" offset="(4,3)">
+                                    <m>
+                                        C_1
+                                    </m>
+                                </label>
+                                <label anchor="(3,1)" offset="(1,4)">
+                                    <m>
+                                        C_2
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                </image>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                Same idea, draw in a connected section that you travel in both directions
+                to turn this into one closed curve.  The connected section cancels 
+                itself out, and we have the same argument as above.
+              </p>
+            </solution>
+        </task>
+
+        <task workspace="0.1in">
+            <statement>
+                <p>
+                    Find <m>\ds \work{C}{F}</m> if <m>C</m> is the curve below.
+                </p>
+
+                <image width="25%" margins="0% 75%">
+                    <shortdescription>
+                        One squiggly curve traversing the origin
+                        counterclockwise three times before crossing itself to
+                        connect back to its initial point.
+                    </shortdescription>
+                    <prefigure xmlns="https://prefigure.org" label="prefigure-7-pic6">
+                        <diagram dimensions="(150,150)" margins="5">
+                            <coordinates bbox="(-7,-7,7,7)">
+                                <axes decorations="no"/>
+                                <spline points="((1,1),(0.5,2),(-1,2),(-2,0),(-1,-2),(1,-2),(3,-1), (3,1),(1,4),(-2,3),(-4,0),(-2,-2),(0,-5),(3,-2),(5,0),(4,4),(1,6),(-3,5),(-6,0),(-3,-6),(1,-6),(4,-4),(6,0),(6,5),(4,6),(2.5,1),(1,1))" closed="yes" stroke="blue" arrows="1" N="1000" arrow-location="22.6"/>
+                                <label anchor="(-5,4)" alignment="ne" offset="(-4,3)">
+                                    <m>
+                                        C
+                                    </m>
+                                </label>
+                            </coordinates>
+                        </diagram>
+                    </prefigure>
+                </image>
+            </statement>
+            <solution component="S1-6-soln">
+              <p>
+                We know from previous work that <m>\oint_{unit \ circle} \mbf F \cdot d\mbf r = 2\pi</m>.
+                We can separate out this picture as 3 different squiggly "circles", all
+                having the same work as the work over the unit circle.  (The points where the 
+                curve crosses itself becomes where the squiggle "circles" separate.)
+                Then we add them all up, <md>
+                  \oint_C \mbf F \cdot d\mbf r = 2\pi + 2\pi + 2\pi = 6\pi.
+                </md>
+                
+              </p>
+            </solution>
+        </task>
+    </exercise>
 </worksheet>
