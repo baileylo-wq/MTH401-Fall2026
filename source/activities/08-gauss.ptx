@@ -121,7 +121,10 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                Rotational symmetry must hold. If there was any horizontal component
+                to the field, it would not be symmetrical under rotation, so it must 
+                be completely vertical.  Since the charge is positive, the field
+                points away from the plate (up/down if you are above/below the plate).
               </p>
             </solution>
         </task>
@@ -137,7 +140,10 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                Charge density is 13 Coulombs per square meter, so charge is the 
+                charge density times the area.  The area with charge inside our Gaussian
+                surface is just the disk within the plate that has area <m>\pi r^2</m>, so 
+                charge is <m>13 \pi r^2</m>.
               </p>
             </solution>
         </task>
@@ -154,7 +160,16 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                <m>\oiint_S \mbf D \cdot \nvec ~dA = charge = 13\pi r^2</m>.  Working on the 
+                left hand side:  note on the sides of the cylinder, <m>\mbf D</m> is orthogonal 
+                to <m>\nvec</m>, so we only need to focus on the top and bottom circles 
+                of our Gaussian surface.  Across those circles, <m>\mbf D</m> is a constant, and <m>\nvec</m>
+                is a unit vector in the same direction, so <m>\mbf D \cdot \nvec = |\mbf D| |\nvec| = |\mbf D|</m>. 
+                So <md>
+                  \oiint_S \mbf D \cdot \nvec ~dA = \iint_{2 \ circles} |\mbf D| ~dA = |\mbf D| (2\pi r^2).
+                </md>
+                Then plugging back in to Gauss' Law: <m>|\mbf D| (2\pi r^2) = 13 \pi r^2</m>. Solving for 
+                the displacement we have <m>|\mbf D| = \frac{13}2</m>.  (The strength.)
               </p>
             </solution>
         </task>
@@ -172,7 +187,17 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                Choose basepoint on the plate, and go straight up to some <m>h</m> meters above the 
+                plate.  That's our curve <m>C</m>.  We can also think of the plate lying on the 
+                xy-plane, and so we go up to some distance <m>z</m> above the plane. Then
+                <m>\mbf D = \epsilon_0 \mbf E</m>, and we know <m>\mbf D</m> from above, thus 
+                <m>\mbf E = \frac{13}{2\epsilon_0} \widehat k</m> above the plate since 
+                the direction is straight upwards in the <m>\widehat k</m> direction.  (It would 
+                be <m>- \frac{13}{2\epsilon_0} \widehat k</m> below the plate).  So, 
+                <md>
+                  f = \int_C \mbf E \cdot d \mbf r = \int \frac{13}{2\epsilon_0} dz = \frac{13}{2\epsilon_0}z
+                </md>
+                above the plate.  (<m>-\frac{13}{2\epsilon_0}z</m> below the plate.)
               </p>
             </solution>
         </task>
