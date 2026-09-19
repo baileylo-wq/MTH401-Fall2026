@@ -197,7 +197,8 @@
                 <md>
                   f = \int_C \mbf E \cdot d \mbf r = \int \frac{13}{2\epsilon_0} dz = \frac{13}{2\epsilon_0}z
                 </md>
-                above the plate.  (<m>-\frac{13}{2\epsilon_0}z</m> below the plate.)
+                above the plate.  (<m>-\frac{13}{2\epsilon_0}z</m> below the plate.). If we are sticking 
+                to the <m>h</m> in the problem (oops) it would be <m>\frac{13}{2\epsilon_0} h</m>.
               </p>
             </solution>
         </task>
@@ -252,7 +253,8 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                We'll say that cylinder has radius <m>r</m> and height <m>h</m>.  Then the 
+                charge = (charge density) * (length of wire inside Gaussian surface) = <m>\lambda h</m>.
               </p>
             </solution>
         </task>
@@ -266,7 +268,7 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                It must point radially away from the wire, away from the vertical axis.
               </p>
             </solution>
         </task>
@@ -280,7 +282,19 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                Since the field points radially outward, then <m>\mbf D\cdot \nvec = \mbf E \cdot \nvec = 0</m> on the 
+                top and bottom of the Gaussian surface.  But they point in the same direction on the sides. 
+                Also, due to symmetry, <m>|\mbf D|</m> is the same everywhere on the side of 
+                the Gaussian surface, so
+                Gauss' Law simplifies as:
+                <md>
+                  <mrow>\oiint_S \mbf D \cdot \nvec~dA \amp = charge \ inside \ S</mrow>
+                  <mrow>\iint_{sides} |\mbf D|~dA  \amp = \lambda h </mrow>
+                  <mrow>|\mbf D| \iint_{sides}~dA \amp = \lambda h </mrow>
+                  <mrow>|\mbf D| 2\pi r h \amp = \lambda h </mrow>
+                </md>
+                which we can solve for <m>|\mbf D| = \frac{\lambda}{2\pi r}</m>.  The electric
+                field is the same but scaled by <m>\frac1{\epsilon_0}</m>, so <m>|\mbf E| = \frac{\lambda}{2\pi\epsilon_0 r}</m>.
               </p>
             </solution>
         </task>
@@ -296,7 +310,13 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                The field is pointing in the outward radial direction, the same direction as <m>d\mbf r</m>. Thus
+                <m>\mbf E \cdot d\mbf r = |\mbf E| dr</m>
+                So we choose the basepoint 1 meter away from the wire and head straight horizontally
+                out to some point <m>r</m> meters away from the wire, and that's our curve <m>C</m>. 
+                So potential is 
+                <md>f(r) = \int_C \mbf E \cdot d\mbf r = \int_C |\mbf E| dr = \int_{1}^r \frac{\lambda}{2\pi\epsilon_0 r} ~dr = \left. \frac{\lambda}{2\pi\epsilon_0}\ln(r)\right|_1^r = \frac{\lambda}{2\pi\epsilon_0}\ln(r)-0</md>
+                So <m>f(r) = \frac{\lambda}{2\pi\epsilon_0}\ln(r)</m>.
               </p>
             </solution>
         </task>
@@ -322,7 +342,10 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                Units: <m>\rho</m> is <m>kg / m^3</m>, and <m>dV</m> is a little bit of 
+                volume in units <m>m^3</m>. Then the product <m>\rho ~dV</m> is 
+               has units
+                <m>(kg/m^3)(m^3) = kg</m>.  Then <m>\iiint_E \rho ~dV </m> is the total mass in kg inside E.
               </p>
             </solution>
         </task>
@@ -336,7 +359,8 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                Again units, the field is velocity in units <m>m/s</m>, and so 
+                <m>\mbf U=\rho \mbf F</m> has units <m>(\frac{kg}{m^3})(\frac{m}{s}) = \frac{kg}{m^2s}</m>.  Less intuitive.
               </p>
             </solution>
         </task>
@@ -353,6 +377,11 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
+                Units, there aren't any for <m>\nvec</m>.  But 
+                <m>\mbf U \cdot \hat n~dA</m> would have units 
+                <m>(\frac{kg}{m^2s})(m^2) = \frac{kg}{s}</m> since <m>dA</m> would be an area in square meters.
+                So <m>\iint_S \mbf U \cdot\hat n~dA</m> is the rate at 
+                which mass flows across the surface <m>S</m> in the direction <m>\hat n</m>.
                 
               </p>
             </solution>
@@ -370,7 +399,15 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
-                
+                The left side is a partial derivative of the mass inside E, 
+                so it is the rate of change of mass inside E.  Then 
+                <m>\oiint_S \mbf U\cdot\hat \nvec~dA</m> is the rate of mass flowing out of E
+                through the surface S, and so <m>-\oiint_S \mbf U\cdot\hat \nvec~dA</m> is 
+                the rate of mass flowing into E through it's surface S.  
+              </p>
+              <p>
+                That is, the rate of change of mass in E is equal to the rate of mass flowing into
+                our region E through the surface of the region S.
               </p>
             </solution>
         </task>
@@ -388,6 +425,26 @@
             </statement>
             <solution component="S1-7-soln">
               <p>
+                By the Divergence theorem, <md>\oiint_S\mbf U\cdot \hat n~dA 
+                  = \iiint_E \nabla \cdot \mbf U~dV
+                </md>.  By the previous problem, 
+                <md>
+                  \ds \frac{d}{dt}\iiint_E \rho ~dV = -\oiint_S \mbf U\cdot\hat \nvec~dA.
+                </md>
+                Well, there is no reason we can't switch the order of the derivative and triple integral, 
+                since the 
+                density isn't changing over time.  So 
+                <m>\ds \frac{d}{dt}\iiint_E \rho ~dV = \iiint_E \frac{\partial }{\partial t}(\rho) ~dV = \iiint_E \frac{\partial \rho}{\partial t}~dV</m>, 
+                and so rearranging the previous problem and making this substitution along with substituting via the Divergence theorem, we have 
+                <md>
+                  <mrow> \frac{d}{dt} \iiint_E \rho~dV + \oiint_S \mbf U \cdot \hat n ~dA \amp = 0 </mrow>
+                  <mrow> \iiint_E \frac{\partial \rho}{\partial t}~dV + \iiint_E \nabla \cdot \mbf U ~dV \amp = 0 </mrow>
+                 <mrow>\iiint_E \left(\frac{\partial \rho}{\partial t} + \nabla \cdot \mbf U \right)~dV \amp = 0 </mrow>
+                </md>
+                Since we made no assumptions on E, this is true for all 3-dimensional regions
+                E, and so the only way to make this true is if <md>
+                  \frac{\partial \rho}{\partial t} + \nabla \cdot \mbf U = 0.
+                </md>
                 
               </p>
             </solution>

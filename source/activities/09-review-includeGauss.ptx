@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>1.8. Review of Vector Calculus</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
   <p>
     Review of section 1: Vector Calculus.  You are free to skip to the problems you struggled with most.
@@ -12,6 +12,11 @@
 what you found when we did that:
 <md>\nabla \times \nabla f, \quad\quad \nabla \cdot (\nabla \times {\bf F}), \quad \quad \nabla \cdot (\nabla f)</md></p>
     </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise>
@@ -22,16 +27,31 @@ what you found when we did that:
       <statement>
         <p>Find <m>\nabla \times {\bf F}</m>.</p>
       </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
     </task>
     <task workspace="3cm">
       <statement>
         <p>Is <term>F</term> a conservative field?  Explain your response.</p>
       </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>If <m>S</m> is the upper hemisphere of radius 1 centered at the origin, and <m>{\hat \nvec}</m> is the normal direction to the curve with the vertical component pointing upward, find the flux of <m>{\bf F}</m> through <m>S</m> in the direction of <m>{\hat \nvec}</m>.</p>
       </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
     </task>
   </exercise>
 
@@ -39,6 +59,11 @@ what you found when we did that:
     <statement>
       <p>Suppose that <m>{\bf F} (x,y,z) = (x^3yz, xy^3z,xyz^3)</m> and that <m>S</m> is the sphere of radius 3 centered at the origin.  Find the flux of <m>\nabla \times {\bf F}</m> through <m>S</m> in the outward direction, that is find <md>\oiint_S (\nabla \times {\bf F}) \cdot {\hat \nvec} ~dA</md></p>
     </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="0.0in">
@@ -69,6 +94,11 @@ what you found when we did that:
       </description>
     </image>
     </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="0in">
@@ -98,6 +128,11 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
       </description>
     </image>
     </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise>
@@ -110,11 +145,21 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
       <statement>
         <p>Find the work done by the force <m>{\bf F}(x,y) = (xy,y^2)</m> in moving an object along the straight line segment from <m>(0,0)</m> to <m>(2,4)</m>.</p>
       </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Find the work done by the same force when moving an object from the origin to <m>(2,0)</m> and then <m>(2,4)</m> along straight line segments.</p>
       </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
     </task>
   </exercise>
 
@@ -122,12 +167,22 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
     <statement>
       <p>Find the work done by the force <m>{\bf F}(x,y) = (xy,y^2)</m> in moving an object along the rectangle whose vertices are <m>(0,0), (3,0), (3,2), (0,2)</m> in the counter-clockwise direction.</p>
     </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="1in">
     <statement>
       <p>Suppose that <m>S</m> is the curvy part of the cylinder defined by <m>x^2+y^2 = 4</m> and <m>0\le z \le 2</m> (this is an open cylinder).  Find the flux of the field <m>{\bf F}(x,y,z) = (x,y,z)</m> through <m>S</m> in the outward direction.</p>
     </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="0.4in">
@@ -176,6 +231,11 @@ What is <m>\oint_{C} {\bf F}\cdot ~d{\bf r}</m>?
       </description>
     </image>
     </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise>
@@ -186,11 +246,21 @@ What is <m>\oint_{C} {\bf F}\cdot ~d{\bf r}</m>?
       <statement>
         <p>Find the electric field both within the hollow sphere, and outside of the hollow sphere.</p>
       </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Find the electric potential at a distance <m>r</m> from the center of the sphere.</p>
       </statement>
+    <solution component="S1-8-soln">
+      <p>
+        
+      </p>
+    </solution>
     </task>
   </exercise>
 

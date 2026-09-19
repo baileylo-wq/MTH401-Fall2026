@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 3 fix</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, September 28 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <alert>Instructions:</alert>
+        </p>
+
+        <p>
+            Homework submissions should represent your very best work.
+            Your work should be neat, clearly presented and complete.
+            In particular, include complete sentences, where appropriate, to
+            explain your thinking.
+            Include the problems in the order given below and be sure to allow
+            plenty of room for your work.
+            You will generally be marked on the methods used to solve a problem
+            rather than just the final answer; answers alone will receive little
+            credit.
+        </p>
+    </introduction>
+
+    <exercise>
+        <statement>
+            <p>
+                Evaluate <m>\oint_C xy~dx + x^2~dy</m> where <m>C</m> is the curve shown and
+  oriented in the counterclockwise direction.
+            </p>
+
+        </statement>
+
+        
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                In a vacuum, Maxwell's equations state that
+                <md>
+                    <mrow>\nabla \cdot \mbf E \amp = 0 </mrow>
+                    <mrow>\nabla \times \mbf E \amp = -\frac{\partial \mbf B}{\partial t} </mrow>
+                    <mrow>\nabla \cdot \mbf B \amp = 0 </mrow>
+                    <mrow>\nabla \times \mbf B \amp = \frac{1}{c^2}\frac{\partial \mbf E}{\partial t} </mrow>
+                </md>
+                where <m>\mbf E</m> and <m>\mbf B</m> represent the
+                time-dependent electric and magnetic field in a region and
+                <m>c</m> is the speed of light.
+            </p>
+
+            <p>
+                Using the results of problem 1, show that
+                <md>
+                    \nabla^2 \mbf E = \frac{1}{c^2} \frac{\partial^2 \mbf E}{\partial t^2} \ \ \ \text{     and    } \ \ \ \nabla^2 \mbf B = \frac{1}{c^2} \frac{\partial^2 \mbf B}{\partial t^2}.
+                </md>
+            </p>
+
+            <p>
+                (We'll see later that this says <m>\mbf E</m> and <m>\mbf B</m>
+                satisfy the <term>wave equation</term>.)
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Suppose that <m>\mbf F(x,y,z) = (x,y,z)</m> and <m>\sigma</m> is
+                the sphere of radius 2 centered at the origin (
+                <m>{x^2 + y^2 + z^2 = 4}</m>), and <m>\vec n</m> is the outward
+                normal vector.
+                Evaluate the flux of <m>\mbf F</m> through <m>\sigma</m> in the
+                direction of <m>\vec n</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the flux of the field <m>\mbf F=(x,y,0)</m> through the
+                surface <m>{z=4-x^2-y^2}</m> that lies above the <m>xy-</m> plane
+                with outward normal <m>\vec n</m> that points upward.
+                This surface is not closed!
+            </p>
+        </statement>
+    </exercise>
+</worksheet>
