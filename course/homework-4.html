@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homework 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: true,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="MTH 401: Math for the Physical Sciences">
+<meta property="og:title" content="MTH 401: Math for the Physical Sciences">
+<meta property="book:title" content="MTH 401: Math for the Physical Sciences">
+<meta name="twitter:description" content="Fall 2026">
+<meta property="og:description" content="Fall 2026">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.c838822d59bc26bc.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b9fedab97dee3c2a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">MTH 401: Math for the Physical Sciences</span> <span class="subtitle">Fall 2026</span></a></div>
+<p class="byline">Lora Bailey</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="homework-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="homework.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\mbf}[1]{{\mathbf #1}}
+\newcommand{\vs}[1]{\vspace{#1in}}
+\newcommand{\work}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\owork}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{r}}
+\newcommand{\flux}[2]{\int_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\oflux}[2]{\oint_{#1}\mbf{#2}\cdot d\mbf{s}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdtwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\fourier}{{\cal F}}
+\newcommand{\cu}{{\cal U}}
+\newcommand{\ds}{\displaystyle}
+\renewcommand{\arg}{\text{Arg}}
+\newcommand{\re}{\text{Real}}
+\newcommand{\res}{\text{Res}}
+\newcommand{\lineint}[2]{\int_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\olineint}[2]{\oint_{#1}~{\mathbf #2}\cdot d{\mathbf r}}
+\newcommand{\nvec}{\mathbf{n}}
+\newcommand{\zerovec}{\mathbf{0}}
+\newcommand{\oiint}{∯}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabus" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#subsec-First-Things" class="internal"><span class="title">First Things First</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#subsec-" class="internal"><span class="title">About this course</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#subsec-Other-Information" class="internal"><span class="title">Other Information</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="labs.html" class="internal"><span class="title">Labs</span></a></div>
+<ul id="ptx-toc-group-labs" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="labs-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="labs-3.html" class="internal"><span class="title">Lab: Operators Intuition</span></a></div>
+<ul id="ptx-toc-group-labs-3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-gradient" class="internal"><span class="title">Gradient</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-divergence" class="internal"><span class="title">Divergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-curl" class="internal"><span class="title">Curl</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-3.html#subsec-laplacian" class="internal"><span class="title">Laplacian</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-4.html" class="internal"><span class="title">Lab: Heat Intuition</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="labs-5.html" class="internal"><span class="title">Lab: Heat Visualization</span></a></div>
+<ul id="ptx-toc-group-labs-5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-5.html#subsec-1-dimension" class="internal"><span class="title">One Dimension</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-5.html#subsec-Higher-Dimensions" class="internal"><span class="title">Higher Dimensions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-6.html" class="internal"><span class="title">Lab</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-7.html" class="internal"><span class="title">28: Method of characteristics (Lab)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul id="ptx-toc-group-activities" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="activities-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">0. Review of Calculus III</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-4.html" class="internal"><span class="title">1.1. Evaluating line integrals</span></a></div>
+<ul id="ptx-toc-group-activities-4" class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-4.html#subsubsec-vector-calculus" class="internal"><span class="title">Section 1: Vector Calculus</span></a></div>
+<ul id="ptx-toc-group-subsubsec-vector-calculus" class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-4.html#subsubsec-vector-calculus-2" class="internal"><span class="title">Part 1.1: Line Integrals</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-5.html" class="internal"><span class="title">1.2. The FTC of line integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-6.html" class="internal"><span class="title">1.3. The operator ``del’’</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-7.html" class="internal"><span class="title">1.4. The Divergence Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-8.html" class="internal"><span class="title">1.5. Green’s Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-9.html" class="internal"><span class="title">1.6. Finding potentials</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-10.html" class="internal"><span class="title">1.7. Gauss’ Law and the Divergence Theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-11.html" class="internal"><span class="title">1.8. Review of Vector Calculus</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-12.html" class="internal"><span class="title">2.1. Intro to PDEs and the heat equation</span></a></div>
+<ul id="ptx-toc-group-activities-12" class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-12.html#subsubsec-heat-wave" class="internal"><span class="title">Section 2: Partial Differential Equations in the context of the Heat and Wave Equations</span></a></div>
+<ul id="ptx-toc-group-subsubsec-heat-wave" class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-12.html#subsubsec-heat-wave-2" class="internal"><span class="title">Part 2.1: Introduction to the Heat Equation in One Dimension</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-13.html" class="internal"><span class="title">2.2. Solving a Sturm-Liouville problem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-14.html" class="internal"><span class="title">2.3. Fourier Sine and Cosine series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-15.html" class="internal"><span class="title">2.4 Solving the heat equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-16.html" class="internal"><span class="title">2.5. The wave equation Intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-17.html" class="internal"><span class="title">2.6. The wave equation continued</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-18.html" class="internal"><span class="title">2.7. General Fourier series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-19.html" class="internal"><span class="title">2.8. Laplace’s equation in rectangular coordinates</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-20.html" class="internal"><span class="title">2.9. Laplace’s equation in a disk</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-21.html" class="internal"><span class="title">2.10. Higher dimensional equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-22.html" class="internal"><span class="title">2.11. Poisson’s equation</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-23.html" class="internal"><span class="title">2.12. Series solutions of ODEs intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-24.html" class="internal"><span class="title">2.13. Series solutions of famous ODEs</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-25.html" class="internal"><span class="title">2.14. Bessel functions of the first kind</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-26.html" class="internal"><span class="title">2.15. PDEs on cylinders</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-27.html" class="internal"><span class="title">2.16. Putting it all together - Laplace’s equation on a cylinder</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-28.html" class="internal"><span class="title">2.17. The Fourier transform intro</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-29.html" class="internal"><span class="title">2.18. The final Fourier transform applied to Laplace’s Equation</span></a></div></li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-30.html" class="internal"><span class="title">3.1. Complex arithmetic</span></a></div>
+<ul id="ptx-toc-group-activities-30" class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="activities-30.html#subsubsec-complex-analysis" class="internal"><span class="title">Section 3: Complex Analysis</span></a></div>
+<ul id="ptx-toc-group-subsubsec-complex-analysis" class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="activities-30.html#subsubsec-complex-analysis-2" class="internal"><span class="title">Part 3.1: Complex Arithmetic</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-31.html" class="internal"><span class="title">3.2. Complex functions</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-32.html" class="internal"><span class="title">3.3. Cauchy-Riemann equations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-33.html" class="internal"><span class="title">3.4. Cauchy-Riemann equations part 2</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-34.html" class="internal"><span class="title">3.5. Contour integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-35.html" class="internal"><span class="title">3.6. Cauchy’s Integral Formula</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-36.html" class="internal"><span class="title">3.7. Taylor Series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-37.html" class="internal"><span class="title">3.8. Laurent Series</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-38.html" class="internal"><span class="title">3.9. Residues</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-39.html" class="internal"><span class="title">3.10. Trigonometric Integrals</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-40.html" class="internal"><span class="title">3.11. Fourier Transforms</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activities-41.html" class="internal"><span class="title">3.12. Principal Values of Integrals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-homework">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Homework 1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 2</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 3</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="homework-4" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h1 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Homework 3</span><div class="print-links"><a href="?printpreview=homework-4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<section class="introduction" id="homework-4-2">
+<div class="para" id="homework-4-2-1">
+<em class="alert">MTH 401</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="homework-4-2-2">
+<em class="alert">Due: Monday, September 28 at the beginning of class.  You will turn in a paper copy!</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="homework-4-2-3">
+<em class="alert">Instructions:</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="homework-4-2-4">Homework submissions should represent your very best work. Your work should be neat, clearly presented and complete. In particular, include complete sentences, where appropriate, to explain your thinking. Include the problems in the order given below and be sure to allow plenty of room for your work. You will generally be marked on the methods used to solve a problem rather than just the final answer; answers alone will receive little credit.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="exercise exercise-like" id="homework-4-3"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="homework-4-3-1-1">Evaluate <span class="process-math">\(\oint_C xy~dx + x^2~dy\)</span> where <span class="process-math">\(C\)</span> is the curve shown and oriented in the counterclockwise direction.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="generated/prefigure/prefigure-401-hw3-1.svg" role="img" class="contained" alt="A curve C oriented in the counterclockwise direction."></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#homework-4-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="homework-4-4"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="homework-4-4-1-1">Use Green’s theorem to evaluate <span class="process-math">\(\ds \int_C e^x\cos y~dx - e^x\sin
+y~dy\)</span> where <span class="process-math">\(C\)</span> is the curve composed of two straight line segments from <span class="process-math">\(A(\ln 2, 0)\)</span> to <span class="process-math">\(B(0,1)\)</span> and from <span class="process-math">\(B(0,1)\)</span> to <span class="process-math">\(C(-\ln 2,0)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#homework-4-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="homework-4-5"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="homework-4-5-1">
+<div class="para" id="homework-4-5-1-1">Suppose that <span class="process-math">\(C\)</span> is a simple closed curve in the plane that bounds the region <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="homework-4-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para logical" id="homework-4-5-2-1-1">
+<div class="para">Explain why the integral</div>
+<div class="displaymath process-math" id="homework-4-5-2-1-1-1">
+\begin{equation*}
+\frac12\oint_C -y~dx+ x~dy = \mbox{Area}(D).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#homework-4-5-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para logical" id="homework-4-5-3-1-1">
+<div class="para">Suppose that <span class="process-math">\(C\)</span> is the line segment from <span class="process-math">\((x_1,y_1)\)</span> to <span class="process-math">\((x_2,y_2)\text{.}\)</span>  Show that</div>
+<div class="displaymath process-math" id="homework-4-5-3-1-1-4">
+\begin{equation*}
+\int_C -y~dx + x~dy = x_1y_2 - x_2y_1 = 
+\left|\begin{array}{cc}
+x_1 \amp x_2 \\
+y_1 \amp y_2
+\end{array}\right|.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#homework-4-5-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-5-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para logical" id="homework-4-5-4-1-1">
+<div class="para">Suppose that <span class="process-math">\(P\)</span> is a polygon in the plane whose vertices, traversed in counterclockwise order, are <span class="process-math">\((x_1,y_1)\text{,}\)</span> <span class="process-math">\((x_2,y_2)\text{,}\)</span> ... <span class="process-math">\((x_n,y_n)\text{.}\)</span>  Show (hint use part b) that the area of <span class="process-math">\(P\)</span> is</div>
+<div class="displaymath process-math" id="homework-4-5-4-1-1-6">
+\begin{equation*}
+\frac12\left[(x_1y_2-x_2y_1) + (x_2y_3-x_3y_2) + \ldots +
+(x_{n-1}y_n-x_ny_{n-1}) + (x_ny_1-x_1y_n)\right].
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#homework-4-5-4" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-5-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<div class="para" id="homework-4-5-5-1-1">Sketch the pentagon whose vertices are <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((2,1)\text{,}\)</span> <span class="process-math">\((1,3)\text{,}\)</span> <span class="process-math">\((0,2)\)</span> and <span class="process-math">\((-1,0)\)</span> and find its area. (Hint use part c.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.d"><a tabindex="-1" href="#homework-4-5-5" title="Copy heading and permalink for Task 3.d" aria-label="Copy heading and permalink for Task 3.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-5-6"><h3 class="heading"><span class="codenumber">(e)</span></h3>
+<div class="para" id="homework-4-5-6-1-1">An ellipse whose semi-axes have length <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> may be parametrized by <span class="process-math">\(x=a\cos t\)</span> and <span class="process-math">\(y=b\sin t\)</span> where <span class="process-math">\(0\le t\le 2\pi\text{.}\)</span>  Show that this ellipse has area <span class="process-math">\(\pi ab\text{.}\)</span> (Hint use part a.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.e"><a tabindex="-1" href="#homework-4-5-6" title="Copy heading and permalink for Task 3.e" aria-label="Copy heading and permalink for Task 3.e">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#homework-4-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="homework-4-6"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="homework-4-6-1">
+<div class="para" id="homework-4-6-1-1">Let’s explore a different identity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="homework-4-6-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para logical" id="homework-4-6-2-1-1">
+<div class="para">Show <em class="emphasis">Green’s first identity</em>, assuming the usual notation: <span class="process-math">\(C\)</span> is a simple closed curve and <span class="process-math">\(D\)</span> is the region it bounds:</div>
+<div class="displaymath process-math" id="homework-4-6-2-1-1-4">
+\begin{equation*}
+\oint_C f(\nabla g)\cdot \mbf n~ds = \iint_D f\nabla^2 g ~dA + \iint_D \nabla f \cdot \nabla g ~dA.
+\end{equation*}
+</div>
+<div class="para">You will use this identity in parts (b) and (c).  Hint: Recall from homework 2 you proved an identity that may be very helpful here.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.a"><a tabindex="-1" href="#homework-4-6-2" title="Copy heading and permalink for Task 4.a" aria-label="Copy heading and permalink for Task 4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-6-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para logical" id="homework-4-6-3-1-1">
+<div class="para">A <em class="emphasis">harmonic function</em> <span class="process-math">\(g\)</span> is one for which <span class="process-math">\(\nabla^2 g = 0\text{.}\)</span>  Using part (a) and choosing <span class="process-math">\(f\)</span> very carefully, show that, if <span class="process-math">\(g\)</span> is harmonic then</div>
+<div class="displaymath process-math" id="homework-4-6-3-1-1-6">
+\begin{equation*}
+\oint_C \nabla g \cdot \mbf n~ ds = 0.
+\end{equation*}
+</div>
+<div class="para">We will see later that the steady-state temperature distribution in a region is a harmonic function.  We’ll also see that the fact above shows the intuitively obvious fact that, in the steady-state, the net flow of heat into the region must be zero.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#homework-4-6-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-6-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para logical" id="homework-4-6-4-1-1">
+<div class="para">Suppose that <span class="process-math">\(f\)</span> is harmonic and <span class="process-math">\(f(x,y) = 0\)</span> on the curve <span class="process-math">\(C\text{.}\)</span>  Show that</div>
+<div class="displaymath process-math" id="homework-4-6-4-1-1-4">
+\begin{equation*}
+\iint_D|\nabla f|^2~dA = 0.
+\end{equation*}
+</div>
+<div class="para">and explain why this means that <span class="process-math">\(f(x,y) = 0\)</span> at every point inside the region <span class="process-math">\(D\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="homework-4-6-4-1-2">Again, this makes intuitive sense: if the steady-state temperature is constantly zero on the boundary of a region, we should expect that the temperature is zero at every point inside the region.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-6-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 4.c"><a tabindex="-1" href="#homework-4-6-4" title="Copy heading and permalink for Task 4.c" aria-label="Copy heading and permalink for Task 4.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#homework-4-6" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="homework-4-7"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="homework-4-7-1">
+<div class="para" id="homework-4-7-1-1">Consider the vector field <span class="process-math">\(\mbf F = (y, x-3)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="homework-4-7-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="homework-4-7-2-1-1">Verify that <span class="process-math">\(\nabla\times \mbf F = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.a"><a tabindex="-1" href="#homework-4-7-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-7-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="homework-4-7-3-1-1">After choosing the basepoint <span class="process-math">\(*=(0,0)\text{,}\)</span> create a potential function <span class="process-math">\(f(x,y)\)</span> by integrating from the basepoint to a general point <span class="process-math">\((x,y)\text{.}\)</span> (You can probably guess what <span class="process-math">\(f\)</span> is, but I would like for you to find it by integrating.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.b"><a tabindex="-1" href="#homework-4-7-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-7-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="homework-4-7-4-1-1">If one of your classmates were to choose a different basepoint, how would your two functions differ?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.c"><a tabindex="-1" href="#homework-4-7-4" title="Copy heading and permalink for Task 5.c" aria-label="Copy heading and permalink for Task 5.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#homework-4-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="homework-4-8"><h2 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="introduction" id="homework-4-8-1">
+<div class="para" id="homework-4-8-1-1">Suppose we have an infinitely long electrically charged cylindrical pipe whose charge density is <span class="process-math">\(\rho\)</span> Coulombs per cubic meter.  That is, supposed we have a <em class="emphasis">solid</em> cylinder with charge equally distributed <em class="emphasis">throughout the whole cylinder</em>.  Assume <span class="process-math">\(\rho\)</span> is positive (electric field points away from positive charge and towards negative charge), and assume the radius of the cylinder is <span class="process-math">\(R\)</span> (and just to emphasize, the cylinder is not hollow).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="homework-4-8-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="homework-4-8-2-1-1">Find the electric field <span class="process-math">\(\vec{E}\)</span> outside the cylindrical solid.  (What would be a useful choice for the Gaussian surface?)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#homework-4-8-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-8-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="homework-4-8-3-1-1">Find the electric field <span class="process-math">\(\vec E\)</span> inside the cylindrical solid. (What would be a useful choice for the Gaussian surface?)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#homework-4-8-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="homework-4-8-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="homework-4-8-4-1-1">Find a continuous potential function <span class="process-math">\(f\)</span> so that <span class="process-math">\(\vec{E} = \nabla f\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="homework-4-8-4-1-2">Note:  You will want to create the potential by integrating so that the potential you find is continuous.  What may be a good basepoint?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-4-8-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.c"><a tabindex="-1" href="#homework-4-8-4" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#homework-4-8" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Homework 3"><a tabindex="-1" href="#homework-4" title="Copy heading and permalink for Worksheet: Homework 3" aria-label="Copy heading and permalink for Worksheet: Homework 3">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="homework-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
