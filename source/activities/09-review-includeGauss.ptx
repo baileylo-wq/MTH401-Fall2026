@@ -14,8 +14,9 @@ what you found when we did that:
     </statement>
     <solution component="S1-8-soln">
       <p>
-        
-      </p>
+       <md><mrow>\nabla \times \nabla f \amp = \vec 0,</mrow>
+        <mrow>  \nabla \cdot (\nabla \times {\bf F})\amp = 0,  </mrow> 
+        <mrow> \nabla \cdot (\nabla f)\amp =\nabla^2 f = \frac{\partial^2 f}{\partial x^2}+\frac{\partial^2 f}{\partial y^2}+\frac{\partial^2 f}{\partial z^2}</mrow></md></p>
     </solution>
   </exercise>
 
@@ -29,6 +30,9 @@ what you found when we did that:
       </statement>
     <solution component="S1-8-soln">
       <p>
+        <md>
+          =(x-e^zx, -y+y\sin z, e^z+\cos z)
+        </md>
         
       </p>
     </solution>
@@ -39,7 +43,10 @@ what you found when we did that:
       </statement>
     <solution component="S1-8-soln">
       <p>
-        
+        Nope.  If it was, then <m>\mbf F = \nabla f</m> for some <m>f</m>, 
+        and 
+      <m>\nabla \times (\nabla f)=0</m>.  Since the curl is not zero, it's not 
+      conservative.
       </p>
     </solution>
     </task>
@@ -49,7 +56,24 @@ what you found when we did that:
       </statement>
     <solution component="S1-8-soln">
       <p>
-        
+        Add in the bottom disk to make it a closed surface.  Then the whole 
+        closed surface would be 
+        <md>
+          \oiint_S \mbf F \cdot \hat \nvec ~dA = \iiint_E \nabla \cdot \mbf F~dV = \iiint_E 0~dV = 0.
+        </md>
+        Thank you divergence theorem.  Through the bottom part you added, the normal
+        vector is <m>\mbf n = (0,0,-1)</m>, so the flux through that piece would be
+        <md>
+          \iint_{disk} \mbf F \cdot \hat \nvec~dA = \iint_{disk} -xy~dA = 
+          \int_{\theta=0}^{2\pi} \int_{r=0}^1 -r\cos\theta r \sin\theta r~drd\theta = 0.
+        </md>
+        (Would need to parameterize with polar coordinates here, <m>x=r\cos\theta, y=r\sin\theta</m> with
+        <m>0\le r \le 1, 0\le \theta\le 2\pi</m>, and can use an integral solver to do that integral
+        unless you conveniently remember the double angle formula (not required.)).
+      </p>
+      <p>
+        So the flux through the top is the flux through the whole thing minus the flux 
+        through the bottom disk.  All of which are 0.
       </p>
     </solution>
     </task>
@@ -61,14 +85,19 @@ what you found when we did that:
     </statement>
     <solution component="S1-8-soln">
       <p>
-        
+        Flux through a closed surface, seems divergence-theorem-esk.  And indeed,
+        <md>
+          \oiint_S (\nabla\times\mbf F)\cdot \hat \nvec~dA = \iiint_E \nabla \cdot (\nabla \times \mbf F)~dV = 0
+        </md>
+        see the first problem - the divergence of the curl.  Well that seems easier than not using the divergence theorem...
       </p>
     </solution>
   </exercise>
 
   <exercise workspace="0.0in">
     <statement>
-      <p>Suppose that <m>{\bf F}(x,y) = (x,1)</m> and <m>C</m> is the curve shown with normal <m>{\hat \nvec}</m>.  Find the flux of <m>{\bf F}</m> through <m>C</m> in the direction <m>{\hat \nvec}</m>.
+      <p>Suppose that <m>{\bf F}(x,y) = (x,1)</m> and <m>C</m> is the 
+        curve shown with normal <m>{\hat \nvec}</m>.  Find the flux of <m>{\bf F}</m> through <m>C</m> in the direction <m>{\hat \nvec}</m>.
       </p>
       <image width="25%" margins="0% 75%">
       <shortdescription>The curve drawn in the plane, see description.</shortdescription>
@@ -77,8 +106,8 @@ what you found when we did that:
     
           <coordinates bbox="(-2,-1,2,3)">
             <grid-axes xlabel="x" ylabel="y"/>
-            <line p1="(-1,0)" p2="(0,2)" stroke="blue"/>
-            <line p1="(1,0)" p2="(0,2)" stroke="blue"/>
+            <line p1="(-1,0)" p2="(0,2)" stroke="blue" thickness="5"/>
+            <line p1="(1,0)" p2="(0,2)" stroke="blue" thickness="5"/>
             <vector tail="(0.5,1)" v="(2/sqrt(5),1/sqrt(5))" stroke="red" thickness="2" />
             <label anchor="(1,1)" >
               <m>\hat \nvec</m>
@@ -96,6 +125,22 @@ what you found when we did that:
     </statement>
     <solution component="S1-8-soln">
       <p>
+        Could find the <m>\hat \nvec</m> for the two pieces, and the flux through 
+        the two pieces.  
+      </p><p>Or could close the curve by adding a path <m>C_1</m> along the x-axis
+        that connects <m>(-1,0)</m> and <m>(1,0)</m>.  In that case, along that added path
+        <m>C_1</m>, <md>\int_{C_1} \mbf F \cdot \hat \nvec~ds =\int_{C_1}(x,1)\cdot (0,-1)~ds = \int_{C_1}-1~ds = -1 (length \ of \ C_1)=-2. </md>
+
+      </p>
+      <p>
+        Then <m>\iint_D \nabla\cdot \mbf F ~dA = 1~dA = 2(2)(\frac12)=2</m>.
+      </p>
+      <p>
+        Also, 
+        <md>
+          \int_{C_1} \mbf F \cdot \hat \nvec ~ds + \int_C \mbf F \hat\nvec~ds=\iint_D \nabla\cdot \mbf F ~dA,
+        </md>
+        So rearranging, <m>\int_C \mbf F \cdot \hat\nvec~ds = 2-(-2)=4.</m>
         
       </p>
     </solution>
@@ -130,6 +175,19 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
     </statement>
     <solution component="S1-8-soln">
       <p>
+        There are many ways to do this.  BUT the FTC of line integrals says that 
+        <md>
+          \int_C \nabla f\cdot d\vec{r} = f(end) - f(start)
+        </md>
+        (because <m>\mbf F = \nabla f</m> is a conservative field by 
+        definition so the path doesn't matter!) and we also know
+        that <m>end</m> is when <m>t=2\pi</m>, which is equivalent to the point
+        <m>r(2\pi) = (e^{\pi/5}, 0)</m>.  Then
+        <m>f(end) = f(e^{\pi}{5},0) = e^{2\pi/5}+2</m>.  Similarly we <m>start</m> at <m>t=0</m> which
+        corresponds to <m>r(0)=(1,0)</m>, so <m>f(start)=f(1,0)=1^2+2</m>.  So all together
+        <md>
+          \int_C \nabla f\cdot d\vec{r} = e^{2\pi/5}+2 - 3 = e^{2\pi/5}-1.
+        </md>
         
       </p>
     </solution>
@@ -147,6 +205,16 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
       </statement>
     <solution component="S1-8-soln">
       <p>
+        Feel free to draw the curve. It is a line that can be parameterized 
+        by <m>y = 2x</m> (and <m>x=x</m>) as <m>x\rightarrow 0 \rightarrow 2</m>. 
+        Then <m>dy = 2dx</m>, and we have
+        <md>
+          <mrow> W = \int_C \mbf F \cdot d\vec r \amp 
+           = \int_C xy dx + y^2 dy</mrow>
+           <mrow> \amp =\int_0^2 x(2x)dx + (2x)^2(2)dx</mrow>
+           <mrow> \amp = \int_0^2 10x^2dx </mrow>
+           <mrow> \amp = \frac{80}{3} </mrow>
+        </md>
         
       </p>
     </solution>
@@ -157,7 +225,18 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
       </statement>
     <solution component="S1-8-soln">
       <p>
-        
+        Two pieces, draw a picture.  If <m>C_1</m> is the horizontal leg with 
+        <m>x=x</m> and <m>y=0</m>, then <m>W = 
+          \int_{C_1} xydx+y^2dy = 0
+        </m>.
+      </p>
+      <p>
+        If <m>C_2</m> is the vertical leg, it happens at 
+        <m>x=2</m> and <m>y=y</m> where <m>y</m> goes from 0 to 4. 
+        So <md>
+          W = \int_{C_2} xydx + y^2 dy = \int_0^4 2y(0)+y^2dy = \frac{64}{3}.
+        </md>
+        Then total work is <m>0+\frac{64}{3} = \frac{64}{3}</m>.
       </p>
     </solution>
     </task>
@@ -169,6 +248,18 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
     </statement>
     <solution component="S1-8-soln">
       <p>
+        It's a closed curve, so Green's theorem could probably be lovely here!
+        <md>
+          \oint_C \mbf F \cdot d\vec r = \oint_C P~dx+Q~dy = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)~dA
+        </md>
+        <md>
+          = \iint_D \left( \frac{\partial}{\partial x}(y^2) - \frac{\partial}{\partial y}(xy)\right)~dA
+        </md>
+        <md>
+          =-x~dA = \int_{y=0}^2\int_{x=0}^3 -x ~dxdy = -9.
+        </md>
+        
+        
         
       </p>
     </solution>
@@ -180,6 +271,36 @@ where <m>0\le t\le 2\pi</m>.  Find <m>\int_C \nabla f\cdot ~dr</m>.
     </statement>
     <solution component="S1-8-soln">
       <p>
+        Add the top and bottom disks to close the surface. 
+      </p>
+      <p>
+        The top has <m>\hat \nvec = (0,0,1)</m> so <m>\mbf F\cdot \hat \nvec = z = 2</m> since 
+        the top is in the plane <m>z=2</m>.  So 
+        <md>
+          \iint_{top} \mbf F \cdot \hat \nvec~dA = \iint_{top} 2~dA = 8\pi.
+        </md>
+        
+      </p>
+      <p>
+        The bottom has <m>\hat \nvec = (0,0,-1)</m> so <m>\mbf F\cdot \hat \nvec = -z = 0</m> since 
+        the bottom is in the plane <m>z=0</m>.  So 
+        <md>
+          \iint_{bottom} \mbf F \cdot \hat \nvec~dA = \iint_{bottom} 0~dA = 0.
+        </md>
+        
+      </p>
+      <p>
+        Then the divergence part:
+        <md>
+          \iiint_E \nabla \cdot \mbf F ~dV = \iiint_E 3~dV = 24\pi.
+        </md>
+        
+      </p>
+      <p>
+        All together now...
+        <md>
+          \iint_S \mbf F \cdot \hat \nvec ~dA = \iiint_E \nabla\cdot \mbf F dV - \iint_{top}\mbf F \cdot \hat \nvec ~dA -\iint_{bottom}\mbf F \cdot \hat \nvec ~dA =24\pi-8\pi-0=16\pi.
+        </md>
         
       </p>
     </solution>
@@ -233,14 +354,20 @@ What is <m>\oint_{C} {\bf F}\cdot ~d{\bf r}</m>?
     </statement>
     <solution component="S1-8-soln">
       <p>
-        
+        If we connect <m>C_1</m> and <m>C_2</m> via a path there and back with an
+        infinitely small gap between them, then connect <m>C_1</m> and <m>C</m> in the same way, 
+        then the inside of that resulting fun shape is simply connected and within on closed curve, 
+        <md>
+           \oint_{C-C_1-C_2} \mbf F \cdot d\vec r = \iint_D \nabla \times \mbf F ~dA = 0.
+        </md>
+        This implies that <m>\oint_C \mbf F \cdot d\vec r = \int_{C_1}  \mbf F \cdot d\vec r +\int_{C_2}  \mbf F \cdot d\vec r =3+(-7)=-4.</m>
       </p>
     </solution>
   </exercise>
 
   <exercise>
     <introduction>
-      <p>Let <m>S</m> be a hollow conducting sphere with radius <m>R</m>, with charge density of <m>\sigma</m> distributed equally across the surface of the sphere where <m>\sigma</m> is positive.  (Just a reminder that the sphere is hollow and all charge lives on the surface of the sphere!)</p>
+      <p>Let <m>T</m> be a hollow conducting sphere with radius <m>R</m>, with charge density of <m>\sigma</m> distributed equally across the surface of the sphere where <m>\sigma</m> is positive.  (Just a reminder that the sphere is hollow and all charge lives on the surface of the sphere!)</p>
     </introduction>
     <task workspace="2in">
       <statement>
@@ -248,7 +375,47 @@ What is <m>\oint_{C} {\bf F}\cdot ~d{\bf r}</m>?
       </statement>
     <solution component="S1-8-soln">
       <p>
-        
+        Gauss! Break up into two pieces.
+      </p>
+      <p>
+        Inside the hollow sphere: the Gaussian surface is just a smaller sphere that shares the same 
+        center point but nests completely inside.  But, the Gaussian surface has 
+        no charge within it, since all the charge is on the surface of the hollow sphere which is outside 
+        of the Gaussian surface.  So no charge enclosed means Gauss' Law says 
+        <m>\vec {\mbf E} = \vec 0</m> within the sphere.
+      </p>
+      <p>
+        Outside the hollow sphere.  The Gaussian surface is still a sphere with a bigger radius, give it radius
+        <m>r\gt R</m>.  So we will want to use Gauss' Law:
+        <md>
+          \oiint_S \vec{\mbf E}\cdot \hat \nvec~dA = \frac{(total \ charge \ within \ S)}{\epsilon_0}
+        </md>
+        The left: symmetry (yay) says the electric field is constant on the surface of the Gaussian 
+        surface <m>S</m>, and the area of <m>S</m> is the surface area of a sphere with 
+        radius <m>r</m>, which is <m>4\pi r^2</m>.  Also the 
+        electric field and normal vector point the same way.  So 
+        <md>
+          \oiint_S \vec{\mbf E}\cdot \hat \nvec~dA = \oiint_S |\vec{\mbf E}|~dA = |\vec{\mbf E}|(area \ of \ S) = |\vec{\mbf E}|(4\pi r^2).
+        </md>
+        The right: Charge inside the Gaussian surface is just all the 
+        charge on the original hollow sphere, which is the charge times the surface area of the hollow sphere (not the Gaussian surface!), 
+        or <m>\sigma (4\pi R^2)</m>.
+      </p>
+      <p>
+        All together.... (equate the two using Gauss:)
+        <md>
+          |\vec{\mbf E}|(4\pi r^2) = \frac{\sigma (4\pi R^2)}{\epsilon_0}
+        </md>
+        and rearrange:
+        <md>
+          |\vec{\mbf E}| = \frac{\sigma R^2}{\epsilon_0 r^2}.
+        </md>
+        We also know that <m>\vec{\mbf E}</m> will be in the outward normal direction, so
+        <m>{\vec{\mbf E} = \frac{\sigma R^2}{\epsilon_0 r^2} \hat \nvec}</m>
+      </p>
+      <p>
+        Thus, including inside and outside, <m>\vec{\mbf E} = \begin{cases} 0, \amp r \lt R \\ 
+           \frac{\sigma R^2}{\epsilon_0 r^2} \hat \nvec , \amp r \ge R \end{cases} </m>
       </p>
     </solution>
     </task>
@@ -258,6 +425,29 @@ What is <m>\oint_{C} {\bf F}\cdot ~d{\bf r}</m>?
       </statement>
     <solution component="S1-8-soln">
       <p>
+        Note, <m>\vec{\mbf E}</m> and <m>d\vec r</m> point the same way, and 
+        so <m>\vec{\mbf E} \cdot d\vec r = |\vec{\mbf E}| dr</m>. We'll actually still have two pieces, inside and outside the hollow sphere.
+        <md>
+          f(r) = \int_C \vec{\mbf E} \cdot d\vec r = \int_{0}^R |\vec{\mbf E}|dr + \int_{R}^{r} |\vec{\mbf E}|dr
+        </md>
+        <md>
+          = 0 + \int_R^r  \frac{\sigma R^2}{\epsilon_0 r^2} ~dr =  \frac{\sigma R^2}{\epsilon_0}\int_R^r \frac1{r^2}~dr
+        </md>
+        <md>
+          = \frac{\sigma R^2}{\epsilon_0 }\left.\left(-\frac1r\right)\right|_R^r 
+
+        </md>
+        <md>
+          =  \frac{\sigma R^2}{\epsilon_0}\left(-\frac1r + \frac1R\right).
+        </md>
+        Note that if <m>r\lt R</m>, you're inside the sphere, and you never get to the 
+        non-zero electric field.  That is you never get to the second integral from <m>R</m> 
+        to <m>r</m>, so putting it together we have 
+        <md>
+          f(r) = \begin{cases} 0 , \amp r \lt R \\ 
+            \frac{\sigma R^2}{\epsilon_0}\left(-\frac1r + \frac1R\right), \amp r \ge R\end{cases}
+        </md>
+        Though it may be piecewise, it is continuous...
         
       </p>
     </solution>
