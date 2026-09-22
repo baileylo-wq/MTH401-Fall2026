@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>Homework 3 fix</title>
+    <title>Homework 3</title>
 
     <introduction>
         <p>
@@ -35,6 +35,23 @@
                 Evaluate <m>\oint_C xy~dx + x^2~dy</m> where <m>C</m> is the curve shown and
   oriented in the counterclockwise direction.
             </p>
+             <image width="35%">
+            <shortdescription>A curve C oriented in the counterclockwise direction.</shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-401-hw3-1">
+                <diagram dimensions="(300,180)" margins="5">
+                  <definition>g(x)=1/sqrt(x)</definition>
+                    <coordinates bbox="(-1,-1,5,1.5)">
+                        <grid-axes />
+                       <line endpoints="((1,1),(1,0))" stroke="blue" thickness="4"/>
+                       <line endpoints="((1,0),(4,0))" stroke="blue" thickness="4" arrows="1"/>
+                       <line endpoints="((4,0),(4,0.5))" stroke="blue" thickness="4"/>
+                       <graph function="g" thickness="4" domain="(1,4)"/>
+                       <label anchor="(2.5,1)"><m>y = \frac1{\sqrt{x}}</m></label>
+
+                    </coordinates>
+                </diagram>
+            </prefigure>
+           </image>
 
         </statement>
 
@@ -44,53 +61,210 @@
     <exercise>
         <statement>
             <p>
-                In a vacuum, Maxwell's equations state that
-                <md>
-                    <mrow>\nabla \cdot \mbf E \amp = 0 </mrow>
-                    <mrow>\nabla \times \mbf E \amp = -\frac{\partial \mbf B}{\partial t} </mrow>
-                    <mrow>\nabla \cdot \mbf B \amp = 0 </mrow>
-                    <mrow>\nabla \times \mbf B \amp = \frac{1}{c^2}\frac{\partial \mbf E}{\partial t} </mrow>
-                </md>
-                where <m>\mbf E</m> and <m>\mbf B</m> represent the
-                time-dependent electric and magnetic field in a region and
-                <m>c</m> is the speed of light.
+                Use Green's theorem to evaluate <m>\ds \int_C e^x\cos y~dx - e^x\sin
+  y~dy</m> where <m>C</m> is the curve composed of two straight line segments from
+  <m>A(\ln 2, 0)</m> to <m>B(0,1)</m> and from <m>B(0,1)</m> to <m>C(-\ln 2,0)</m>.
             </p>
 
-            <p>
-                Using the results of problem 1, show that
-                <md>
-                    \nabla^2 \mbf E = \frac{1}{c^2} \frac{\partial^2 \mbf E}{\partial t^2} \ \ \ \text{     and    } \ \ \ \nabla^2 \mbf B = \frac{1}{c^2} \frac{\partial^2 \mbf B}{\partial t^2}.
-                </md>
-            </p>
-
-            <p>
-                (We'll see later that this says <m>\mbf E</m> and <m>\mbf B</m>
-                satisfy the <term>wave equation</term>.)
-            </p>
+        
         </statement>
     </exercise>
 
     <exercise>
-        <statement>
+        <introduction>
             <p>
-                Suppose that <m>\mbf F(x,y,z) = (x,y,z)</m> and <m>\sigma</m> is
-                the sphere of radius 2 centered at the origin (
-                <m>{x^2 + y^2 + z^2 = 4}</m>), and <m>\vec n</m> is the outward
-                normal vector.
-                Evaluate the flux of <m>\mbf F</m> through <m>\sigma</m> in the
-                direction of <m>\vec n</m>.
+                Suppose that <m>C</m> is a simple closed curve in the plane that
+  bounds the region <m>D</m>.  
+
             </p>
-        </statement>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain why the integral
+  <md>
+  \frac12\oint_C -y~dx+ x~dy = \mbox{Area}(D).
+  </md>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Suppose that <m>C</m> is the line segment from <m>(x_1,y_1)</m> to
+  <m>(x_2,y_2)</m>.  Show that
+<md>
+  \int_C -y~dx + x~dy = x_1y_2 - x_2y_1 = 
+  \left|\begin{array}{cc}
+      x_1 \amp x_2 \\
+      y_1 \amp y_2
+      \end{array}\right|.
+</md>
+
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Suppose that <m>P</m> is a polygon in the plane whose vertices, traversed
+  in counterclockwise order, are <m>(x_1,y_1)</m>, <m>(x_2,y_2)</m>, ...
+  <m>(x_n,y_n)</m>.  Show (hint use part b) that the area of <m>P</m> is
+  <md>
+  \frac12\left[(x_1y_2-x_2y_1) + (x_2y_3-x_3y_2) + \ldots +
+  (x_{n-1}y_n-x_ny_{n-1}) + (x_ny_1-x_1y_n)\right].
+  </md>
+
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Sketch the pentagon whose vertices are <m>(0,0)</m>, <m>(2,1)</m>,
+  <m>(1,3)</m>, <m>(0,2)</m> and <m>(-1,0)</m> and find its area. (Hint use part c.)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    An ellipse whose semi-axes have length <m>a</m> and <m>b</m> may be
+  parametrized by <m>x=a\cos t</m> and <m>y=b\sin t</m> where <m>0\le t\le 2\pi</m>.  Show that this ellipse
+  has area <m>\pi ab</m>. (Hint use part a.)
+                </p>
+            </statement>
+        </task>
     </exercise>
 
     <exercise>
-        <statement>
+        <introduction>
             <p>
-                Find the flux of the field <m>\mbf F=(x,y,0)</m> through the
-                surface <m>{z=4-x^2-y^2}</m> that lies above the <m>xy-</m> plane
-                with outward normal <m>\vec n</m> that points upward.
-                This surface is not closed!
+                Let's explore a different identity.
             </p>
-        </statement>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Show <em>Green's first identity</em>, assuming 
+                    the usual notation: <m>C</m> is a simple closed curve and <m>D</m>
+                    is the region it bounds:
+                    <md>
+                        \oint_C f(\nabla g)\cdot \mbf n~ds = \iint_D f\nabla^2 g ~dA + \iint_D \nabla f \cdot \nabla g ~dA.
+                    </md>
+                    You will use this identity in parts (b) and (c).  Hint: Recall from homework 2 
+                    you proved an identity that may be very helpful here.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    A <em>harmonic function</em> <m>g</m> is one for which <m>\nabla^2 g = 0</m>.  Using 
+                    part (a) and choosing <m>f</m> very carefully, show that, if <m>g</m> is harmonic then
+                    <md>
+                        \oint_C \nabla g \cdot \mbf n~ ds = 0.
+                    </md>
+                    We will see later that the steady-state temperature distribution 
+  in a region is a harmonic function.  We'll also see that
+  the fact above shows the intuitively obvious fact that, in the
+  steady-state, the net flow of heat into the region must be zero.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Suppose that <m>f</m> is harmonic and <m>f(x,y) = 0</m> on the
+  curve <m>C</m>.  Show that
+  <md>
+  \iint_D|\nabla f|^2~dA = 0.
+  </md>
+  and explain why this means that <m>f(x,y) = 0</m> at every point inside the
+  region <m>D</m>.
+</p><p>
+
+  Again, this makes intuitive sense: if the steady-state temperature
+  is constantly zero on the boundary of a region, we should expect
+  that the temperature is zero at every point inside the region.
+
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                Consider the vector field <m>\mbf F = (y, x-3)</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Verify that <m>\nabla\times \mbf F = 0</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    After choosing the basepoint <m>*=(0,0)</m>,
+  create a potential function <m>f(x,y)</m> by integrating from the
+  basepoint to a general point <m>(x,y)</m>.
+  (You can probably guess what <m>f</m> is, but I would like for you
+  to find it by integrating.)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                     If one of your classmates were to choose a different
+  basepoint, how would your two functions differ?
+                </p>
+            </statement>
+        </task>
+    </exercise>
+    <exercise>
+        <introduction>
+            <p>
+                Suppose we have an infinitely long electrically
+  charged cylindrical pipe whose charge density is <m>\rho</m> Coulombs
+  per cubic meter.  That is, supposed we have a 
+  <em>solid</em> cylinder with charge equally distributed 
+  <em>throughout the whole cylinder</em>.  Assume <m>\rho</m> 
+  is positive (electric field points away from positive charge and 
+  towards negative charge), and assume the radius of the cylinder is 
+  <m>R</m> (and just to emphasize, the cylinder is not hollow). 
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Find the electric field <m>\vec{E}</m> outside the
+  cylindrical solid.  (What would be a useful choice for the Gaussian surface?)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find the electric field <m>\vec E</m> inside the cylindrical solid. 
+                     (What would be a useful choice for the Gaussian surface?)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Find a continuous potential function <m>f</m> so that
+  <m>\vec{E} = \nabla f</m>.
+                </p><p>
+  Note:  You will want to create the potential by integrating so that
+  the potential you find is continuous.  What may be a good basepoint?
+                </p>
+            </statement>
+        </task>
     </exercise>
 </worksheet>
