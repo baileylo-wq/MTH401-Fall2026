@@ -58,14 +58,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.0';
+eBookConfig.runestone_version = '8.3.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.c838822d59bc26bc.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b9fedab97dee3c2a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.6ad113829064d43a.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.02090e9f6a81e70e.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -260,6 +260,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-2.html" class="internal"><span class="title">Homework 1</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 2</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 3</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Midterm 1</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
@@ -273,7 +274,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -292,7 +296,9 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.1. Intro to PDEs and the heat equation</span><div class="print-links"><a href="?printpreview=activities-12" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<em class="alert">MTH 401</em>
+<div class="para" id="activities-12-2">
+<em class="alert">MTH 401</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <section class="subsection" id="subsubsec-heat-wave">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 2: Partial Differential Equations in the context of the Heat and Wave Equations</span>
@@ -301,9 +307,9 @@ eBookConfig.enable_chatcodes =  false;
 <h3 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Part 2.1: Introduction to the Heat Equation in One Dimension</span>
 </h3>
-<section class="introduction" id="subsubsec-heat-wave-2-2">
-<div class="para" id="subsubsec-heat-wave-2-2-1">We’ll spend some time focusing on partial differential equations and how to solve them, specifically focusing on the heat and the wave equations (which use similar methods to solve).  In this worksheet we’ll begin by focusing on the heat equation, and investigate solutions and steady-states.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-heat-wave-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" aria-hidden="true" data-description="Subsubsection: Part 2.1: Introduction to the Heat Equation in One Dimension"><a tabindex="-1" href="#subsubsec-heat-wave-2" title="Copy heading and permalink for Subsubsection: Part 2.1: Introduction to the Heat Equation in One Dimension" aria-label="Copy heading and permalink for Subsubsection: Part 2.1: Introduction to the Heat Equation in One Dimension">🔗</a></div>
+<div class="para" id="subsubsec-heat-wave-2-2">We’ll spend some time focusing on partial differential equations and how to solve them, specifically focusing on the heat and the wave equations (which use similar methods to solve).  In this worksheet we’ll begin by focusing on the heat equation, and investigate solutions and steady-states.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-heat-wave-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsubsection: Part 2.1: Introduction to the Heat Equation in One Dimension"><a tabindex="-1" href="#subsubsec-heat-wave-2" title="Copy heading and permalink for Subsubsection: Part 2.1: Introduction to the Heat Equation in One Dimension" aria-label="Copy heading and permalink for Subsubsection: Part 2.1: Introduction to the Heat Equation in One Dimension">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Subsection: Section 2: Partial Differential Equations in the context of the Heat and Wave Equations"><a tabindex="-1" href="#subsubsec-heat-wave" title="Copy heading and permalink for Subsection: Section 2: Partial Differential Equations in the context of the Heat and Wave Equations" aria-label="Copy heading and permalink for Subsection: Section 2: Partial Differential Equations in the context of the Heat and Wave Equations">🔗</a></div>
 </section>
 <article class="definition definition-like" id="def-heat-eqn-1d"><h2 class="heading">
@@ -352,6 +358,36 @@ u(10, t) \amp  =   0
 <div class="para" id="activities-12-5-2-1-1">Verify that <span class="process-math">\(\ds u_1(x,t) = e^{-7\pi^2t/100}\sin\left(\frac{\pi
 x}{10}\right)\)</span> is a solution (this means a solution to the differential equation and the boundary conditions).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-12-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-5-2-2-1">
+<div class="para">Take derivatives of the <span class="process-math">\(u_1(x,t)\)</span> and plug them in to the PDE and boundary conditions to see if they hold true.</div>
+<div class="displaymath process-math" id="activities-12-5-2-2-1-2">
+\begin{align*}
+\frac{\partial u_1}{\partial t} \amp = \frac{-7\pi^2}{100}e^{-\frac{7\pi^2 t}{100}}\sin(\frac{\pi x}{10}) \\
+\frac{\partial u_1}{\partial x} \amp = e^{-\frac{7\pi^2 t}{100}}\cos(\frac{\pi x}{10})(\frac{\pi}{10}) \\
+\frac{\partial^2 u_1}{\partial x^2} \amp = e^{-\frac{7\pi^2 t}{100}}\sin(\frac{\pi x}{10})(\frac{\pi}{10})^2 
+\end{align*}
+</div>
+<div class="para">So all together,</div>
+<div class="displaymath process-math" id="activities-12-5-2-2-1-3">
+\begin{equation*}
+\frac{\partial u_1}{\partial t}  = \frac{-7\pi^2}{100}e^{-\frac{7\pi^2 t}{100}}\sin(\frac{\pi x}{10}) = 7 \frac{\partial^2 u_1}{\partial x^2}.
+\end{equation*}
+</div>
+<div class="para">Additionally the boundary conditions:</div>
+<div class="displaymath process-math" id="activities-12-5-2-2-1-4">
+\begin{equation*}
+u_1(0,t) = ...\sin(0)=0, \quad \quad u_1(10,t) = ... \sin(\pi) = 0.
+\end{equation*}
+</div>
+<div class="para">Check.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.a.1"><a tabindex="-1" href="#activities-12-5-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1.3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#activities-12-5-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
@@ -359,17 +395,87 @@ x}{10}\right)\)</span> is a solution (this means a solution to the differential 
 <div class="para" id="activities-12-5-3-1-1">Also verify that <span class="process-math">\(\ds u_2(x,t) = e^{-28\pi^2t/100}\sin\left(\frac{2\pi
 x}{10}\right)\)</span> is a solution.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-12-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-5-3-2-1">
+<div class="para">Same process. Take derivatives of the <span class="process-math">\(u_2(x,t)\)</span> and plug them in to the PDE and boundary conditions to see if they hold true.</div>
+<div class="displaymath process-math" id="activities-12-5-3-2-1-2">
+\begin{align*}
+\frac{\partial u_2}{\partial t} \amp = \frac{-28\pi^2}{100}e^{-\frac{28\pi^2 t}{100}}\sin(\frac{2\pi x}{10}) \\
+\frac{\partial u_2}{\partial x} \amp = e^{-\frac{28\pi^2 t}{100}}\cos(\frac{2\pi x}{10})(\frac{2\pi}{10}) \\
+\frac{\partial^2 u_2}{\partial x^2} \amp = e^{-\frac{28\pi^2 t}{100}}\sin(\frac{2\pi x}{10})(\frac{2\pi}{10})^2 
+\end{align*}
+</div>
+<div class="para">So all together,</div>
+<div class="displaymath process-math" id="activities-12-5-3-2-1-3">
+\begin{equation*}
+\frac{\partial u_2}{\partial t}  = \frac{-28\pi^2}{100}e^{-\frac{28\pi^2 t}{100}}\sin(\frac{2\pi x}{10}) = 7 \frac{\partial^2 u_2}{\partial x^2}.
+\end{equation*}
+</div>
+<div class="para">Additionally the boundary conditions:</div>
+<div class="displaymath process-math" id="activities-12-5-3-2-1-4">
+\begin{equation*}
+u_2(0,t) = ...\sin(0)=0, \quad \quad u_2(10,t) = ... \sin(2\pi) = 0.
+\end{equation*}
+</div>
+<div class="para">Check.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.b.1"><a tabindex="-1" href="#activities-12-5-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1.1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#activities-12-5-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-12-5-4"><h3 class="heading"><span class="codenumber">(c)</span></h3>
 <div class="para" id="activities-12-5-4-1-1">Do you see a pattern that can help you identify other solutions?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-12-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-5-4-2-1">
+<div class="displaymath process-math" id="activities-12-5-4-2-1-1">
+\begin{equation*}
+u_k(x,t) = e^{-\frac{7 k^2 \pi^2 t}{100}} \sin(\frac{k \pi x}{10})
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.c.1"><a tabindex="-1" href="#activities-12-5-4-2" title="Copy heading and permalink for Solution 1.c.1" aria-label="Copy heading and permalink for Solution 1.c.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#activities-12-5-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-12-5-5"><h3 class="heading"><span class="codenumber">(d)</span></h3>
-<div class="para" id="activities-12-5-5-1-1">Now verify that <span class="process-math">\(c_1u_1(x,t) + c_2u_2(x,t)\)</span> is a solution for any constants <span class="process-math">\(c_1\)</span> and <span class="process-math">\(c_2\text{.}\)</span>  This is called the <em class="emphasis">principle of superposition</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-12-5-5-1-1">Now verify that <span class="process-math">\(u(x,t) = c_1u_1(x,t) + c_2u_2(x,t)\)</span> is a solution for any constants <span class="process-math">\(c_1\)</span> and <span class="process-math">\(c_2\text{.}\)</span>  This is called the <em class="emphasis">principle of superposition</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-12-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-5-5-2-1">
+<div class="para">So...</div>
+<div class="displaymath process-math" id="activities-12-5-5-2-1-1">
+\begin{align*}
+\frac{\partial u}{\partial t} \amp = c_1 \frac{\partial u_1}{\partial t} + c_2 \frac{\partial u_2}{\partial t} \\
+\amp= c_1(7 \frac{\partial^2 u_1}{\partial x^2}) + c_2(7 \frac{\partial^2 u_2}{\partial x^2}) \\
+\amp = 7(c_1 \frac{\partial^2 u_1}{\partial x^2}+c_2 \frac{\partial^2 u_1}{\partial x^2})\\
+\amp = 7  \frac{\partial^2 u}{\partial x^2}.
+\end{align*}
+</div>
+<div class="para">Boundaries:</div>
+<div class="displaymath process-math" id="activities-12-5-5-2-1-2">
+\begin{align*}
+u(0,t)\amp = c_1u_1(0,t)+c_2u_2(0,t) = 0, \\
+u(10,t) \amp= c_1u_1(10,t)+c_2u_2(10,t)=0.
+\end{align*}
+</div>
+<div class="para">Check!</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.d.1"><a tabindex="-1" href="#activities-12-5-5-2" title="Copy heading and permalink for Solution 1.d.1" aria-label="Copy heading and permalink for Solution 1.d.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#activities-12-5-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
@@ -402,17 +508,62 @@ u(2,t) \amp  =   80
 </div>
 <div class="para" id="activities-12-7-1-2">Notice the boundary conditions are not homogeneous (not equal zero).  This will actually present a problem for us later if we try to solve it directly.  So we need to find a workaround using something called the steady-state solution.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="activities-12-7-1-3">A time-independent solution is called a <em class="emphasis">steady-state</em> solution <span class="process-math">\(\ds u_{ss}\text{;}\)</span>  that is, <span class="process-math">\(\ds \frac{\partial u_{ss}}{\partial t} = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-12-7-1-3">A time-independent solution is called a <em class="emphasis">steady-state</em> solution <span class="process-math">\(\ds u_{ss}\text{;}\)</span>  that is, <span class="process-math">\(\ds {\frac{\partial u_{ss}}{\partial t} = 0}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 <article class="task exercise-like" id="activities-12-7-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activities-12-7-2-1-1">Find the steady-state solution <span class="process-math">\(u_{ss}\)</span> to the heat equation with these boundary conditions. Hint: start from what it means to be the steady state solution and work backwards using simple antiderivatives to find <span class="process-math">\(u_ss\text{,}\)</span> then make sure the constants satisfy the boundary conditions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-12-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-7-2-2-1">
+<div class="para">The heat equation says <span class="process-math">\(\ds {\frac{\partial u_{ss}}{\partial t} = 4\frac{\partial^2 u_{ss}}{\partial x^2}}\text{,}\)</span> and since <span class="process-math">\(\ds {\frac{\partial u_{ss}}{\partial t} = 0}\)</span> then we really are solving</div>
+<div class="displaymath process-math" id="activities-12-7-2-2-1-3">
+\begin{equation*}
+0 = 4 \frac{\partial^2 u_{ss}}{\partial x^2},
+\end{equation*}
+</div>
+<div class="para">which has the general solution <span class="process-math">\({u_{ss} = Ax+B}\text{.}\)</span>  To find <span class="process-math">\(A, B\)</span> we use the boundary conditions.</div>
+<div class="displaymath process-math" id="activities-12-7-2-2-1-6">
+\begin{align*}
+u_{ss}(0,t) \amp = 50 = A(0)+B \\
+u_{ss}(2,t) \amp = 80 = A(2)+B 
+\end{align*}
+</div>
+<div class="para">which has solution <span class="process-math">\(A=15, B=50\text{.}\)</span> So the steady-state solution is</div>
+<div class="displaymath process-math" id="activities-12-7-2-2-1-8">
+\begin{equation*}
+u_{ss}(x) = 15x+50.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.a.1"><a tabindex="-1" href="#activities-12-7-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activities-12-7-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-12-7-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-12-7-3-1-1">Suppose that <span class="process-math">\(u\)</span> is a solution to the equation and boundary conditions above and <span class="process-math">\(u_{ss}\)</span> is the steady-state solution that you found.  Define a new function <span class="process-math">\(v\)</span> by <span class="process-math">\(v = u- u_{ss}\text{.}\)</span>  What boundary conditions are satisfied by <span class="process-math">\(v\text{?}\)</span>  That is, what is <span class="process-math">\(v(0,t)\)</span> and <span class="process-math">\(v(2,t)\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-12-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-7-3-2-1">
+<div class="para">Plug in,</div>
+<div class="displaymath process-math" id="activities-12-7-3-2-1-1">
+\begin{align*}
+v(0,t) \amp = u(0,t) - u_{ss}(0,t) =  50-50 = 0. \\
+v(2,t) \amp = u(2,t) - u_{ss}(2,t) = 80-80 = 0. 
+\end{align*}
+</div>
+<div class="para">The new function <span class="process-math">\(v\)</span>has homogeneous boundary conditions!</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.b.1"><a tabindex="-1" href="#activities-12-7-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1.25in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#activities-12-7-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
@@ -421,6 +572,27 @@ u(2,t) \amp  =   80
 <div class="para" id="activities-12-7-4-1-1">Find a partial differential equation (PDE) satisfied by <span class="process-math">\(v\text{.}\)</span>  You could do this by expressing <span class="process-math">\(\ds \frac{\partial v}{\partial t}\)</span> in terms of <span class="process-math">\(\ds \frac{\partial u}{\partial t}\)</span> and <span class="process-math">\(\ds \frac{\partial^2
 v}{\partial^2 x}\)</span> in terms of <span class="process-math">\(\ds \frac{\partial^2 u}{\partial^2
 x}\)</span> and using the fact that <span class="process-math">\(u\)</span> satisfies a PDE.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-12-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-7-4-2-1">
+<div class="displaymath process-math" id="activities-12-7-4-2-1-1">
+\begin{equation*}
+\frac{\partial v}{\partial t} = \frac{\partial u}{\partial t}-\frac{\partial u_{ss}}{\partial t} = \frac{\partial u}{\partial t} - 0 = 4\frac{\partial^2 u}{\partial x^2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-12-7-4-2-1-2">
+\begin{equation*}
+\frac{\partial^2 v}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u_{ss}}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - 0
+\end{equation*}
+</div>
+<div class="para">So combining: <span class="process-math">\({\frac{\partial v}{\partial t} = 4 \frac{\partial^2 v}{\partial x^2} }\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-7-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.c.1"><a tabindex="-1" href="#activities-12-7-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#activities-12-7-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
@@ -448,11 +620,50 @@ u(1, t)  \amp =   100.
 <article class="task exercise-like" id="activities-12-8-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activities-12-8-2-1-1">Find the steady-state solution <span class="process-math">\(u_{ss}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-12-8-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-8-2-2-1">
+<div class="para">
+<span class="process-math">\(0 = \frac{\partial^2 u_{ss}}{\partial x^2}+x \text{.}\)</span> That is <span class="process-math">\({\frac{\partial^2 u_{ss}}{\partial x^2} = -x}\text{.}\)</span> Taking antiderivatives: <span class="process-math">\({\frac{\partial u_{ss}}{\partial x} = -\frac{x^2}{2}+A}\text{,}\)</span> and one more time: <span class="process-math">\({u_{ss} = -\frac{x^3}{6} + Ax + B}\text{.}\)</span>  Plugging in boundary conditions: <span class="process-math">\({\frac{\partial u_{ss}}{\partial x}(0,t) = 0 = A}\text{,}\)</span> and <span class="process-math">\({u_{ss}(1,t) = 100 = -\frac16+B}\)</span> which gives <span class="process-math">\({B=\frac{601}{6}}\text{.}\)</span>  Thus</div>
+<div class="displaymath process-math" id="activities-12-8-2-2-1-8">
+\begin{equation*}
+u_{ss} = -\frac{x^3}6 + \frac{601}6.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.a.1"><a tabindex="-1" href="#activities-12-8-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#activities-12-8-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-12-8-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para" id="activities-12-8-3-1-1">Use the steady-state solution to form a new equation and boundary conditions for the function <span class="process-math">\(v = u-u_{ss}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-12-8-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-12-8-3-2-1">
+<div class="displaymath process-math" id="activities-12-8-3-2-1-1">
+\begin{equation*}
+\frac{\partial v}{\partial t} = \frac{\partial u}{\partial t}-\frac{\partial u_{ss}}{\partial t} = \frac{\partial u}{\partial t} - 0 = \frac{\partial^2 u}{\partial x^2} + x
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-12-8-3-2-1-2">
+\begin{equation*}
+\frac{\partial^2 v}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u_{ss}}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - (-x) = \frac{\partial^2 u}{\partial x^2}+x
+\end{equation*}
+</div>
+<div class="para">So combining: <span class="process-math">\({\frac{\partial v}{\partial t} = \frac{\partial^2 v}{\partial x^2} }\text{.}\)</span> Boundary conditions <span class="process-math">\({\frac{\partial v}{\partial t} (0,t) = 0}\text{,}\)</span> <span class="process-math">\(v(1,t) = 0\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-8-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-12-8-3-2-2">We’ve created a homogeneous equation with homogeneous boundary conditions!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-12-8-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.b.1"><a tabindex="-1" href="#activities-12-8-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="1in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#activities-12-8-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
