@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Midterm 1</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, October 5 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <alert>Instructions:</alert>
+        </p>
+
+        <p>
+            You can use your book (the optional ones if you got them), class notes, and a calculator, 
+            Mathematica, Desmos, or Worlfram Alpha.  Please show all your work and explain
+            your thinking. Your only other allowed resource is your professor. 
+            I want to know what you know, not AI.
+        </p>
+    </introduction>
+
+    <exercise>
+        <statement>
+            <p>
+                Suppose that <m>S</m> is the open, upside down cone with vertex at 
+                the point <m>(0,0,3)</m> and the widest part of the cone given by <m>x^2+y^2=16, \ z=0</m>.  Find the flux of 
+                <md>
+                    \mbf F(x,y,z)=(x+3, y+2, z+1)
+                </md>
+                through <m>S</m> in the "outward" direction where the <m>z</m> component is positive.
+            </p>
+
+        </statement>
+
+        
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                The simplest model of an atomic nucleus is a <em>solid ball</em>
+                of radius <m>R</m> having uniform charge density <m>\rho</m>.  (Uniform
+                throughout the entire volume of the nucleus.)
+            </p>
+
+        
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Find the electric field <m>\mbf E</m> at all points, that is find the electric field both inside 
+                    and outside the solid ball.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Take the center of the ball to be the origin.  By integrating 
+                    appropriately, find the continuous potential function <m>\phi</m>
+                    such that <m>\phi = 0</m> at the origin.  Note, you may have a piecewise solution.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the work done by a force 
+                <md>
+                    \mbf F(x,y) = (x^2-y, 3x+2y)
+                </md>
+                as it moves an object. along the straight line from <m>(-1,0)</m>
+                to <m>(1,0)</m>, then along part of the unit circle from 
+                <m>(1,0)</m> to <m>(0,1)</m>, then along the straight line 
+                from <m>(0,1)</m> to <m>(-1,0)</m>.
+
+            </p>
+        </statement>
+       
+        
+   
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the work done by the force <m>\mbf F(x,y) = (1,4y)</m>
+                as it moves an object along the spiral parameterized as 
+                <m>\mbf r(t) = (\frac{t}4\cos t, \frac{t}4\sin t)</m> where 
+                <m>0\le t \le 4\pi</m>.
+            </p>
+                       <image width="25%">
+            <shortdescription>The spiral parameterized in the problem.</shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-midterm1">
+                <diagram dimensions="(300,180)" margins="5">
+                  <definition>f(x)=(x/4*cos(x), x/4*sin(x))</definition>
+                    <coordinates bbox="(-3,-3,3.5,2.6)">
+                        <grid-axes />
+                
+                      <parametric-curve function="f" domain="(0,4*pi)"
+                      N="200" closed="no" arrows="1"/>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+           </image>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                If you agree with the following statement, write it at the end of your exam. "The work presented here is entirely my own." ]
+                Then sign your name. If not, 
+                discuss with your professor.
+            </p>
+        </statement>
+    </exercise>
+</worksheet>

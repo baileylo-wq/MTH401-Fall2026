@@ -112,6 +112,7 @@
       <xi:include href="./homework/hw01.ptx"/>
       <xi:include href="./homework/hw02.ptx"/>
       <xi:include href="./homework/hw03.ptx"/>
+      <xi:include href="./homework/midterm1.ptx"/>
 
     </chapter>
 

@@ -306,8 +306,7 @@
 
             <p>
                 Show that both fields are conservative and find a potential for
-                <m>\vec{F}_{near}</m>.  Bonus points if you can also find a potential for
-                <m>\vec{F}_{far}</m>.
+                <m>\vec{F}_{near}</m>.
             </p>
         </statement>
     </exercise>

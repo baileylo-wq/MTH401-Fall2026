@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.1. Intro to PDEs and the heat equation</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
     <subsection xml:id="subsubsec-heat-wave">
     <title>Section 2: Partial Differential Equations in the context of the Heat and Wave Equations</title>
@@ -9,13 +9,13 @@
       <title>Part 2.1: Introduction to the Heat Equation in One Dimension
       </title>
       
-      <introduction>
+      
         <p>
           We'll spend some time focusing on partial differential equations and how to solve them, 
         specifically focusing on the heat and the wave equations (which use similar methods to solve).  In this worksheet we'll begin by focusing on the heat equation, and investigate 
         solutions and steady-states.
         </p>
-      </introduction>
+     
     </subsubsection>
   </subsection>
 
@@ -58,24 +58,88 @@
         x}{10}\right)</m> is a solution (this means a solution to the
     differential equation and the boundary conditions).</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          Take derivatives of the <m>u_1(x,t)</m> and plug them in to the 
+          PDE and boundary conditions to see if they hold true. 
+          <md>
+            <mrow> \frac{\partial u_1}{\partial t} \amp = \frac{-7\pi^2}{100}e^{-\frac{7\pi^2 t}{100}}\sin(\frac{\pi x}{10}) </mrow>
+            <mrow> \frac{\partial u_1}{\partial x} \amp = e^{-\frac{7\pi^2 t}{100}}\cos(\frac{\pi x}{10})(\frac{\pi}{10}) </mrow>
+            <mrow> \frac{\partial^2 u_1}{\partial x^2} \amp = e^{-\frac{7\pi^2 t}{100}}\sin(\frac{\pi x}{10})(\frac{\pi}{10})^2 </mrow>
+          </md>
+          So all together, 
+          <md>
+            \frac{\partial u_1}{\partial t}  = \frac{-7\pi^2}{100}e^{-\frac{7\pi^2 t}{100}}\sin(\frac{\pi x}{10}) = 7 \frac{\partial^2 u_1}{\partial x^2}.
+          </md>
+          Additionally the boundary conditions:
+          <md>
+            u_1(0,t) = ...\sin(0)=0, \quad \quad u_1(10,t) = ... \sin(\pi) = 0.
+          </md>
+          Check.
+          
+        </p>
+      </solution>
     </task>
     <task workspace="1.1in">
       <statement>
         <p>Also verify that <m>\ds u_2(x,t) = e^{-28\pi^2t/100}\sin\left(\frac{2\pi
         x}{10}\right)</m> is a solution.</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          Same process. Take derivatives of the <m>u_2(x,t)</m> and plug them in to the 
+          PDE and boundary conditions to see if they hold true. 
+          <md>
+            <mrow> \frac{\partial u_2}{\partial t} \amp = \frac{-28\pi^2}{100}e^{-\frac{28\pi^2 t}{100}}\sin(\frac{2\pi x}{10}) </mrow>
+            <mrow> \frac{\partial u_2}{\partial x} \amp = e^{-\frac{28\pi^2 t}{100}}\cos(\frac{2\pi x}{10})(\frac{2\pi}{10}) </mrow>
+            <mrow> \frac{\partial^2 u_2}{\partial x^2} \amp = e^{-\frac{28\pi^2 t}{100}}\sin(\frac{2\pi x}{10})(\frac{2\pi}{10})^2 </mrow>
+          </md>
+          So all together, 
+          <md>
+            \frac{\partial u_2}{\partial t}  = \frac{-28\pi^2}{100}e^{-\frac{28\pi^2 t}{100}}\sin(\frac{2\pi x}{10}) = 7 \frac{\partial^2 u_2}{\partial x^2}.
+          </md>
+          Additionally the boundary conditions:
+          <md>
+            u_2(0,t) = ...\sin(0)=0, \quad \quad u_2(10,t) = ... \sin(2\pi) = 0.
+          </md>
+          Check.
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Do you see a pattern that can help you identify other solutions?</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          <md>u_k(x,t) = e^{-\frac{7 k^2 \pi^2 t}{100}} \sin(\frac{k \pi x}{10})</md>
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
-        <p>Now verify that <m>c_1u_1(x,t) + c_2u_2(x,t)</m> is a solution for any
+        <p>Now verify that <m>u(x,t) = c_1u_1(x,t) + c_2u_2(x,t)</m> is a solution for any
         constants <m>c_1</m> and <m>c_2</m>.  This is called the <em>principle
           of superposition</em>.</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          So... 
+          <md>
+            <mrow>\frac{\partial u}{\partial t} \amp = c_1 \frac{\partial u_1}{\partial t} + c_2 \frac{\partial u_2}{\partial t} </mrow>
+          <mrow> \amp= c_1(7 \frac{\partial^2 u_1}{\partial x^2}) + c_2(7 \frac{\partial^2 u_2}{\partial x^2}) </mrow>
+          <mrow>
+            \amp = 7(c_1 \frac{\partial^2 u_1}{\partial x^2}+c_2 \frac{\partial^2 u_1}{\partial x^2})</mrow>
+            <mrow> \amp = 7  \frac{\partial^2 u}{\partial x^2}.
+            </mrow></md>
+          Boundaries:
+          <md>
+            <mrow>u(0,t)\amp = c_1u_1(0,t)+c_2u_2(0,t) = 0, </mrow><mrow> u(10,t) \amp= c_1u_1(10,t)+c_2u_2(10,t)=0.</mrow>
+          </md>
+          Check!
+          
+        </p>
+      </solution>
     </task>
   </exercise>
 
@@ -107,7 +171,7 @@
         we need to find a workaround using something called the steady-state solution.
       </p>
       <p>A time-independent solution is called a <em>steady-state</em>
-    solution <m>\ds u_{ss}</m>;  that is, <m>\ds \frac{\partial u_{ss}}{\partial t} = 0</m>.</p>
+    solution <m>\ds u_{ss}</m>;  that is, <m>\ds {\frac{\partial u_{ss}}{\partial t} = 0}</m>.</p>
     </introduction>
     <task workspace="1.5in">
       <statement>
@@ -115,6 +179,26 @@
     these boundary conditions. Hint: start from what it means to be the steady state solution and work backwards using simple antiderivatives to 
   find <m>u_ss</m>, then make sure the constants satisfy the boundary conditions.</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          The heat equation says <m>\ds {\frac{\partial u_{ss}}{\partial t} = 4\frac{\partial^2 u_{ss}}{\partial x^2}}</m>, and since 
+          <m>\ds {\frac{\partial u_{ss}}{\partial t} = 0}</m> then we really are solving
+          <md>
+            0 = 4 \frac{\partial^2 u_{ss}}{\partial x^2},
+          </md>
+          which has the general solution <m>{u_{ss} = Ax+B}</m>.  To find <m>A, B</m> 
+          we use the boundary conditions. 
+          <md>
+            <mrow>u_{ss}(0,t) \amp = 50 = A(0)+B </mrow>
+            <mrow>u_{ss}(2,t) \amp = 80 = A(2)+B </mrow>
+          </md>
+          which has solution <m>A=15, B=50</m>. So the steady-state solution is 
+          <md>
+            u_{ss}(x) = 15x+50.
+          </md>
+          
+        </p>
+      </solution>
     </task>
     <task workspace="1.25in">
       <statement>
@@ -124,6 +208,16 @@
     by <m>v = u- u_{ss}</m>.  What boundary conditions are satisfied by
     <m>v</m>?  That is, what is <m>v(0,t)</m> and <m>v(2,t)</m>?</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          Plug in, 
+          <md>
+            <mrow>v(0,t) \amp = u(0,t) - u_{ss}(0,t) =  50-50 = 0. </mrow>
+            <mrow>v(2,t) \amp = u(2,t) - u_{ss}(2,t) = 80-80 = 0. </mrow>
+          </md>
+          The new function <m>v</m>has homogeneous boundary conditions!
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
@@ -133,6 +227,17 @@
       v}{\partial^2 x}</m> in terms of <m>\ds \frac{\partial^2 u}{\partial^2
       x}</m> and using the fact that <m>u</m> satisfies a PDE.</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          <md>
+            \frac{\partial v}{\partial t} = \frac{\partial u}{\partial t}-\frac{\partial u_{ss}}{\partial t} = \frac{\partial u}{\partial t} - 0 = 4\frac{\partial^2 u}{\partial x^2}
+          </md>
+          <md>
+            \frac{\partial^2 v}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u_{ss}}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - 0
+          </md>
+          So combining: <m>{\frac{\partial v}{\partial t} = 4 \frac{\partial^2 v}{\partial x^2} }</m>.
+        </p>
+      </solution>
     </task>
   </exercise>
 
@@ -153,12 +258,43 @@
       <statement>
         <p>Find the steady-state solution <m>u_{ss}</m>.</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          <m>0 = \frac{\partial^2 u_{ss}}{\partial x^2}+x </m>. That is
+          <m>{\frac{\partial^2 u_{ss}}{\partial x^2} = -x}</m>. Taking antiderivatives:
+          <m>{\frac{\partial u_{ss}}{\partial x} = -\frac{x^2}{2}+A}</m>, and one more time:
+          <m>{u_{ss} = -\frac{x^3}{6} + Ax + B}</m>.  Plugging in boundary conditions:
+          <m>{\frac{\partial u_{ss}}{\partial x}(0,t) = 0 = A}</m>, and 
+          <m>{u_{ss}(1,t) = 100 = -\frac16+B}</m> which gives 
+          <m>{B=\frac{601}{6}}</m>.  Thus
+          <md>
+            u_{ss} = -\frac{x^3}6 + \frac{601}6.
+          </md>
+          
+        </p>
+      </solution>
     </task>
     <task workspace="1in">
       <statement>
         <p>Use the steady-state solution to form a new equation and
     boundary conditions for the function <m>v = u-u_{ss}</m>.</p>
       </statement>
+      <solution component="S2-1-soln">
+        <p>
+          <md>
+            \frac{\partial v}{\partial t} = \frac{\partial u}{\partial t}-\frac{\partial u_{ss}}{\partial t} = \frac{\partial u}{\partial t} - 0 = \frac{\partial^2 u}{\partial x^2} + x
+          </md>
+          <md>
+            \frac{\partial^2 v}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u_{ss}}{\partial x^2} = \frac{\partial^2 u}{\partial x^2} - (-x) = \frac{\partial^2 u}{\partial x^2}+x
+          </md>
+          So combining: <m>{\frac{\partial v}{\partial t} = \frac{\partial^2 v}{\partial x^2} }</m>.
+          Boundary conditions <m>{\frac{\partial v}{\partial t} (0,t) = 0}</m>, 
+          <m>v(1,t) = 0</m>. 
+        </p>
+        <p>
+          We've created a homogeneous equation with homogeneous boundary conditions!
+        </p>
+      </solution>
     </task>
   </exercise>
 
