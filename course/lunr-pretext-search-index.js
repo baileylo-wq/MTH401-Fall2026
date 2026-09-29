@@ -178,7 +178,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Lab: Heat Visualization",
-  "body": " Lab: Heat Visualization   One Dimension    Let's visualize worksheet 13 and see what is actually going on with our solution to the heat equation.  For each one of these problems, we have a beam of length , and we have the same properties of the materials to give use . Those are fixed, and we look at the effect of changing other aspects of the problem.  Run the code cell below to set up the animation. It will print \"Done!\" when it has finished. You want to make sure you evaluate this initial cell, so that the necessary libraries and functions are loaded and defined. Then continue on to run animations for the problems from the previous worksheet. (Note, some of the code may take a bit to run, \"patience young grasshopper!\")      The code below shows the solution to problem 2: Run the code to animate the solution over time. Then think about the following questions...      What's the only difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the curve over time?      Where does all the heat go over time? Why? What happens to the endpoints?       The code below shows the solution to problem 3: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference with the bounds of this problem and the previous problem? These bounds mean the beam is insulated at both ends.       Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?       The code below shows the solution to problem 4: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?       The code below shows the solution to problem 5: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous one?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why does the heat behave so differently than all the other problems so far?      Higher Dimensions     Eventually, we will look in 2 or 3 dimensions. So let's explore numerical solutions to the heat equation in 2 dimensions.     To start, let's take a square plate of length , and for each time step we'll numerically solve the heat equation and put it all together. Let's assume that the left, right, and bottom of the plate are fixed at a temperature of , and the top of the plate is fixed at a temperature of . It's not super realistic, but it's a good starting point. Run the cell below to animate the plate and show the heat over time. (Note - it'll take a literal 30 seconds, but it's worth the wait!)      What happens to the heat over time?  For more details about how we solve this numerically, check out: . (Note, the code is adapted and not the same, but the methods are the same.)      "
+  "body": " Lab: Heat Visualization   MTH 401    One Dimension    Let's visualize worksheet 13 and see what is actually going on with our solution to the heat equation. We will go to the Colab file shared with you on Blackboard, also linked here .  For each one of these problems, we have a beam of length , and we have the same properties of the materials to give use . Those are fixed, and we look at the effect of changing other aspects of the problem.  Note, some of the code may take a bit to run, \"patience young grasshopper!\" It may be a good idea to run everything at the beginning, so find the \"Run All\" button at the top and click it. The first code cell sets up the animation. It will print \"Done!\" when it has finished.  Each code cell will animate the solution to the appropriate problem over time, and I'll ask you to think about some things as we go.      The code in Colab shows the solution to problem 1: Use the animated solution in Colab to think about the following questions...      Does the solution look like initially?      What happens to the curve over time?       The code in Colab shows the solution to problem 2: Use the animated solution in Colab to think about the following questions...      What's the only difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the curve over time?      Where does all the heat go over time? Why? What happens to the endpoints?       The code in Colab shows the solution to problem 3: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference with the bounds of this problem and the previous problem? These bounds mean the beam is insulated at both ends.       Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?       The code in Colab shows the solution to problem 4: Run the code to animate the solution over time. Then think about the following questions...      Other than the initial condition being multiplied by -1, what's the big difference between this problem and problem 2?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why? Why doesn't the heat disappear like in problem 2?       The code below shows the solution to problem 5: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and problem 4?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why does the heat behave so differently than all the other problems so far?      Higher Dimensions   Eventually, we will look in 2 or 3 dimensions. So let's explore numerical solutions to the heat equation in 2 dimensions.    To start, let's take a square plate of length , and for each time step we'll numerically solve the heat equation and put it all together. Let's assume that the left, right, and bottom of the plate are fixed at a temperature of , and the top of the plate is fixed at a temperature of . It's not super realistic, but it's a good starting point. The cell in Colab animates the plate and shows the heat over time. It'll show an animated picture first, and then a still. Just focus on the animation. (Note - if you haven't run it yet, it'll take a literal 30 seconds, but it's worth the wait!)      What happens to the heat over time?  For more details about how we solve this numerically, check out: . (Note, the code is adapted and not the same, but the methods are the same.)       Similar, but more interesting. Now let's keep the same square plate. Let's assume that all four edges of the plate are fixed at a temperature of 0 instead of just three of the four edges, and let's start with random temperatures inside the plate between 28.5 and 55.5 degrees. The code shows the animation over time. Think about the following:     What happens to the heat over time?      Why was this one so different than the last one?       Different initial conditions. What happens if we do the same thing but the random temperatures inside the plate now start a lot hotter, between 78.5 and 100 degrees?     What was different about this example compared to the last one?       What happens if we keep the random temperatures inside the plate between 78.5 and 100 degrees, but fix the top of the plate at 100 degrees?     Final thoughts?     What would you want to see next?  "
 },
 {
   "id": "labs-5-5",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  The code below shows the solution to problem 2: Run the code to animate the solution over time. Then think about the following questions...      What's the only difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the curve over time?      Where does all the heat go over time? Why? What happens to the endpoints?    "
+  "body": "  The code in Colab shows the solution to problem 1: Use the animated solution in Colab to think about the following questions...      Does the solution look like initially?      What happens to the curve over time?    "
 },
 {
   "id": "labs-5-6",
@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  The code below shows the solution to problem 3: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference with the bounds of this problem and the previous problem? These bounds mean the beam is insulated at both ends.       Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?    "
+  "body": "  The code in Colab shows the solution to problem 2: Use the animated solution in Colab to think about the following questions...      What's the only difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the curve over time?      Where does all the heat go over time? Why? What happens to the endpoints?    "
 },
 {
   "id": "labs-5-7",
@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  The code below shows the solution to problem 4: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous problem?      Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?    "
+  "body": "  The code in Colab shows the solution to problem 3: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference with the bounds of this problem and the previous problem? These bounds mean the beam is insulated at both ends.       Does the solution look like initially?      What happens to the bounds over time? Does this mess with the boundary conditions?      What happens to the curve over time?      Why doesn't the heat go to 0 over time like in previous problems? Where does the heat go?    "
 },
 {
   "id": "labs-5-8",
@@ -214,16 +214,52 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  The code below shows the solution to problem 5: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and the previous one?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why does the heat behave so differently than all the other problems so far?    "
+  "body": "  The code in Colab shows the solution to problem 4: Run the code to animate the solution over time. Then think about the following questions...      Other than the initial condition being multiplied by -1, what's the big difference between this problem and problem 2?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why? Why doesn't the heat disappear like in problem 2?    "
 },
 {
-  "id": "labs-5-10",
+  "id": "labs-5-9",
   "level": "2",
-  "url": "labs-5.html#labs-5-10",
+  "url": "labs-5.html#labs-5-9",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Eventually, we will look in 2 or 3 dimensions. So let's explore numerical solutions to the heat equation in 2 dimensions.     To start, let's take a square plate of length , and for each time step we'll numerically solve the heat equation and put it all together. Let's assume that the left, right, and bottom of the plate are fixed at a temperature of , and the top of the plate is fixed at a temperature of . It's not super realistic, but it's a good starting point. Run the cell below to animate the plate and show the heat over time. (Note - it'll take a literal 30 seconds, but it's worth the wait!)      What happens to the heat over time?  For more details about how we solve this numerically, check out: . (Note, the code is adapted and not the same, but the methods are the same.)     "
+  "body": "  The code below shows the solution to problem 5: Run the code to animate the solution over time. Then think about the following questions...      What's the big difference between this problem and problem 4?      What does the in the equation mean in the physical context of the beam?      Does the solution look like initially?      What happens to the curve over time? Why does the heat behave so differently than all the other problems so far?    "
+},
+{
+  "id": "labs-5-12",
+  "level": "2",
+  "url": "labs-5.html#labs-5-12",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  To start, let's take a square plate of length , and for each time step we'll numerically solve the heat equation and put it all together. Let's assume that the left, right, and bottom of the plate are fixed at a temperature of , and the top of the plate is fixed at a temperature of . It's not super realistic, but it's a good starting point. The cell in Colab animates the plate and shows the heat over time. It'll show an animated picture first, and then a still. Just focus on the animation. (Note - if you haven't run it yet, it'll take a literal 30 seconds, but it's worth the wait!)      What happens to the heat over time?  For more details about how we solve this numerically, check out: . (Note, the code is adapted and not the same, but the methods are the same.)    "
+},
+{
+  "id": "labs-5-13",
+  "level": "2",
+  "url": "labs-5.html#labs-5-13",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Similar, but more interesting. Now let's keep the same square plate. Let's assume that all four edges of the plate are fixed at a temperature of 0 instead of just three of the four edges, and let's start with random temperatures inside the plate between 28.5 and 55.5 degrees. The code shows the animation over time. Think about the following:     What happens to the heat over time?      Why was this one so different than the last one?    "
+},
+{
+  "id": "labs-5-14",
+  "level": "2",
+  "url": "labs-5.html#labs-5-14",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Different initial conditions. What happens if we do the same thing but the random temperatures inside the plate now start a lot hotter, between 78.5 and 100 degrees?     What was different about this example compared to the last one?    "
+},
+{
+  "id": "labs-5-15",
+  "level": "2",
+  "url": "labs-5.html#labs-5-15",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "",
+  "body": "  What happens if we keep the random temperatures inside the plate between 78.5 and 100 degrees, but fix the top of the plate at 100 degrees?     Final thoughts?    "
 },
 {
   "id": "labs-6",
