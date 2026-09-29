@@ -2,6 +2,9 @@
 
 <worksheet>
     <title>Lab: Heat Visualization</title>
+    <p>
+        <alert>MTH 401</alert>
+    </p>
 
     <subsection xml:id="subsec-1-dimension">
         <title>One Dimension</title>
@@ -11,7 +14,8 @@
     <introduction>
         <p>
             Let's visualize worksheet 13 and see what is actually going on with
-            our solution to the heat equation.
+            our solution to the heat equation.  We will go to the <url href="https://colab.research.google.com/drive/1w7ALGWN-HWoOn0Wk8bOf4lIPO-QeLIAU?usp=sharing">Colab
+            file shared with you on Blackboard, also linked here</url>.
         </p>
 
         <p>
@@ -23,17 +27,20 @@
         </p>
 
         <p>
-            Run the code cell below to set up the animation.
+            
+            Note, some of the code may take a bit to run, "patience young
+            grasshopper!"  It may be a good idea to run everything at the beginning, 
+            so find the "Run All" button at the top and click it.  The first code 
+            cell sets up the animation.
             It will print "Done!" when it has finished.
-            You want to make sure you evaluate this initial cell, so that the
-            necessary libraries and functions are loaded and defined.
-            Then continue on to run animations for the problems from the
-            previous worksheet.
-            (Note, some of the code may take a bit to run, "patience young
-            grasshopper!")
+            
+        </p>
+        <p>
+            Each code cell will animate the solution to the appropriate problem over time, and 
+            I'll ask you to think about some things as we go.
         </p>
     </introduction>
-    <sage language="sage">
+    <!--<sage language="sage">
         <input>
             import numpy as np
             import matplotlib.pyplot as plt
@@ -55,22 +62,21 @@
                 #ax.set_aspect('equal', adjustable='box')
             print('Done!')
         </input>
-    </sage>
+    </sage>-->
 
-    <exercise workspace="0cm">
+ <exercise workspace="0cm">
         <introduction>
             <p>
-                The code below shows the solution to problem 2:
+                The code in Colab shows the solution to problem 1:
                 <md>
-                    <mrow>\frac{\partial u}{\partial t} \amp = \alpha \frac{\partial^2 u}{\partial x^2} </mrow>
+                    <mrow>\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} </mrow>
                     <mrow>u(0,t) \amp = 0 </mrow>
                     <mrow>u(5,t) \amp = 0 </mrow>
-                    <mrow>u(x,0) \amp = x^2 - 5x </mrow>
+                    <mrow>u(x,0) \amp = 3\sin\left(\frac{\pi x}{5}\right) </mrow>
                 </md>
-                Run the code to animate the solution over time.
-                Then think about the following questions...
+                Use the animated solution in Colab to think about the following questions...
             </p>
-            <sage language="sage">
+            <!--<sage language="sage">
                 <input>
                     def u(x,t):
                         N=range(1,10)
@@ -86,7 +92,58 @@
                     ani
 
                 </input>
-            </sage>
+            </sage>-->
+        </introduction>
+
+   
+        <task>
+            <statement>
+                <p>
+                    Does the solution look like <m>u(x,0)</m> initially?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What happens to the curve over time?
+                </p>
+            </statement>
+        </task>
+
+   
+    </exercise>
+
+    <exercise workspace="0cm">
+        <introduction>
+            <p>
+                The code in Colab shows the solution to problem 2:
+                <md>
+                    <mrow>\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} </mrow>
+                    <mrow>u(0,t) \amp = 0 </mrow>
+                    <mrow>u(5,t) \amp = 0 </mrow>
+                    <mrow>u(x,0) \amp = x^2 - 5x </mrow>
+                </md>
+                Use the animated solution in Colab to think about the following questions...
+            </p>
+            <!--<sage language="sage">
+                <input>
+                    def u(x,t):
+                        N=range(1,10)
+                        u_n=[]
+                        for n in N:
+                            u_n.append(100*(-1+(-1)**n)/(n**3*np.pi**3)*np.exp(-4*(np.pi/5)**2*t)*np.sin(np.pi*x/5))
+                        return np.sum(u_n,axis=0)
+
+                    ylim=[-8,1]
+                    x=np.linspace(0,5,100)
+
+                    ani = FuncAnimation(fig, animate, frames=25, interval=500, repeat=False)
+                    ani
+
+                </input>
+            </sage>-->
         </introduction>
 
         <task>
@@ -128,7 +185,7 @@
     <exercise workspace="0cm">
         <introduction>
             <p>
-                The code below shows the solution to problem 3:
+                The code in Colab shows the solution to problem 3:
                 <md>
                     <mrow>\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} </mrow>
                     <mrow>\frac{\partial u}{\partial x}(0,t) \amp = 0 </mrow>
@@ -138,7 +195,7 @@
                 Run the code to animate the solution over time.
                 Then think about the following questions...
             </p>
-            <sage language="sage">
+            <!--<sage language="sage">
                 <input>
                     def u(x,t):
                         N=range(1,30)
@@ -154,7 +211,7 @@
                     ani
 
                 </input>
-            </sage>
+            </sage>-->
         </introduction>
 
         <task>
@@ -206,7 +263,7 @@
     <exercise workspace="0cm">
         <introduction>
             <p>
-                The code below shows the solution to problem 4:
+                The code in Colab shows the solution to problem 4:
                 <md>
                     <mrow>\frac{\partial u}{\partial t} \amp = 4 \frac{\partial^2 u}{\partial x^2} +8 </mrow>
                     <mrow>u(0,t) \amp = 0 </mrow>
@@ -216,7 +273,7 @@
                 Run the code to animate the solution over time.
                 Then think about the following questions...
             </p>
-            <sage language="sage">
+            <!--<sage language="sage">
                 <input>
                     def u(x,t):
                         return -x**2+5*x
@@ -229,14 +286,21 @@
                     ani
 
                 </input>
-            </sage>
+            </sage>-->
         </introduction>
 
         <task>
             <statement>
                 <p>
-                    What's the big difference between this problem
-                    and the previous problem?
+                    Other than the initial condition being multiplied by -1, what's the big difference between this problem and problem 2?
+                </p>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    What does the <m>+8</m> in the equation mean in the physical context of the beam?
                 </p>
             </statement>
         </task>
@@ -252,29 +316,12 @@
         <task>
             <statement>
                 <p>
-                    What happens to the bounds over time?
-                    Does this mess with the boundary conditions?
+                    What happens to the curve over time?  Why?  Why doesn't the heat disappear like in problem 2?
                 </p>
             </statement>
         </task>
 
-        <task>
-            <statement>
-                <p>
-                    What happens to the curve over time?
-                </p>
-            </statement>
-        </task>
-
-        <task>
-            <statement>
-                <p>
-                    Why doesn't the heat go to 0 over time like in previous
-                    problems?
-                    Where does the heat go?
-                </p>
-            </statement>
-        </task>
+    
     </exercise>
 
     <exercise workspace="0cm">
@@ -290,7 +337,7 @@
                 Run the code to animate the solution over time.
                 Then think about the following questions...
             </p>
-            <sage language="sage">
+            <!--<sage language="sage">
                 <input>
                     def u(x,t):
                         N=range(1,10)
@@ -307,15 +354,13 @@
                     ani
 
                 </input>
-            </sage>
+            </sage>-->
         </introduction>
 
         <task>
             <statement>
                 <p>
-                    What's the big difference between this problem and the
-                    previous one?
-                </p>
+What's the big difference between this problem and problem 4?                </p>
             </statement>
         </task>
 
@@ -351,16 +396,13 @@
         <title>Higher Dimensions</title>
     </subsection>
        
-
-        <exercise>
-            <introduction>
                  <p>
             Eventually, we will look in 2 or 3 dimensions.
             So let's explore numerical solutions to the heat equation in 2
             dimensions.
-        </p>
-            </introduction>
-        <task>
+                 </p>
+     
+        <exercise>
             <introduction>
                 <p>
                     
@@ -371,11 +413,15 @@
             at a temperature of <m>0</m>, and the top of the plate is fixed at a
             temperature of <m>100</m>.
             It's not super realistic, but it's a good starting point.
-            Run the cell below to animate the plate and show the heat over time.
-            (Note - it'll take a literal 30 seconds, but it's worth the wait!)
+            
+                </p><p>
+            The cell in Colab animates the plate and shows the heat over time.
+            It'll show an animated picture first, and then a still.  Just focus on 
+            the animation.
+            (Note - if you haven't run it yet, it'll take a literal 30 seconds, but it's worth the wait!)
                     </p>
      
-        <sage>
+        <!--<sage>
             <input>
                 import numpy as np
                 import matplotlib.pyplot as plt
@@ -432,7 +478,7 @@
                 anim
                 print('Done!')
             </input>
-        </sage>
+        </sage>-->
     </introduction>
             <task>
                 <statement>
@@ -447,12 +493,67 @@
                 </statement>
             </task>
             
-        </task>
-
-
-    
-
-
         </exercise>
+        <exercise>
+            <introduction>
+                <p>
+                    Similar, but more interesting.
+
+Now let's keep the same square plate.  Let's assume that all four edges of the plate are fixed at a temperature of 0 instead of just three of the four edges, and let's start with random temperatures inside the plate between 28.5 and 55.5 degrees.  The code 
+shows the animation over time.  Think about the following:
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        What happens to the heat over time? 
+                    </p>
+                </statement>
+
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Why was this one so different than the last one?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+        <exercise>
+            <introduction>
+                <p>
+                    Different initial conditions.  What happens if we do the same thing but the random temperatures inside the plate now start a lot hotter, between 78.5 and 100 degrees?
+
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        What was different about this example compared to the last one?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+
+        <exercise>
+            <introduction>
+                <p>
+                    What happens if we keep the random temperatures inside the plate between 78.5 and 100 degrees, but fix the top of the plate at 100 degrees?
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Final thoughts?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+      
+                <p>
+                    What would you want to see next?
+                </p>
+         
+
     
 </worksheet>
