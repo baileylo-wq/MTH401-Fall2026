@@ -55,7 +55,7 @@
     <!-- In this example, we include the w1s components from the sample activity to show solutions. -->
       <version include="show-soln aaa-soln S0-0-soln S1-1-soln S1-2-soln 
       S1-3-soln S1-4-soln S1-5-soln S1-6-soln S1-7-soln S1-8-soln 
-      S2-1-soln"/>
+      S2-1-soln S2-2-soln S2-3-soln S2-4-soln"/>
 
   </source>
 

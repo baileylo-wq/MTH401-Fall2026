@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.2. Solving a Sturm-Liouville problem</title>
-
+<p>
   <alert>MTH 401</alert>
+</p>
 
 
 
@@ -62,6 +63,38 @@ are insulated, i.e.
   differential equation for <m>T</m>, (b) an ordinary differential equation
   for <m>X</m>, and (c) two boundary conditions for <m>X</m>.</p>
     </statement>
+    <solution component="S2-2-soln">
+      <p>
+        Separation of variables: assume the solution separates as 
+        <m>{u(x,t) = X(x)T(t)}</m> and try to find it by plugging it in. 
+        Then 
+        <m>
+          {\pd{u}{t} = XT'}</m>,  <m>{\pdtwo{u}{x} = X''T}</m>, 
+        so the PDE says <m>{XT' = 6X''T'}</m>. Dividing by <m>6XT</m> we rearrange to get 
+        <md>
+          \frac16 \frac{T'}{T} = \frac{X''}{X}
+        </md>
+        and since a function of time only equals a function of space only, 
+        they both must be equal to a constant, <m>-k</m>.  So we get two 
+        ordinary differential equations:
+        <md>
+          T' = -6kT, \quad \quad X''=-kX.
+        </md>
+        Boundary conditions when plugging in our solution <m>{u(x,t)=X(x)T(t)}</m>, 
+        we have 
+        <md>
+          \pd{u}{x}(0,t) = 0 = X'(0)T(t)
+        </md>
+        and since <m>T(t)</m> is not <m>0</m> then <m>X'(0)=0</m>. 
+        Similarly
+        <md>
+          \pd{u}{x}(10,t) = 0 = X'(10)T(t)
+        </md>
+        so <m>X'(10)=0</m>.  
+        
+        
+      </p>
+    </solution>
   </task>
 
 
@@ -78,6 +111,23 @@ are insulated, i.e.
   and decaying exponential.
     </p>
   </statement>
+    <solution component="S2-2-soln">
+      <p>
+        So <m>X(x) = Ae^{mx}+Be^{-mx}</m> and thus <m>{X'(x) = Ame^{mx}-Bme^{-mx}}</m>.
+        Boundary Conditions (B.C.):
+        <md>
+          X'(0)=0 = Am-Bm = m(A-B).
+        </md>
+        By assumption, <m>m\ne 0</m>, so <m>A = B</m>.  The 2nd B.C.:
+        <md>
+          X'(10) = 0 = Ame^{10m}-Ame^{-10m} = Am\left(e^{10m}-\frac{1}{e^{10m}}\right)
+        </md>
+        but the only way <m>e^{10m}-\frac{1}{e^{10m}} = 0</m> is if <m>m=0</m>, which 
+        again cannot happen in this case.  So <m>A = 0</m> and thus 
+        <m>B = 0</m> and thus <m>X(x) = 0</m> (and thus <m>{u(x,t)=X(x)T(t) = 0}</m>) 
+        and that helps us not at all.  So there are no negative eigenvalues.
+      </p>
+    </solution>
 </task>
 <task workspace="1.8in">
   <statement>
@@ -86,6 +136,15 @@ are insulated, i.e.
   <m>X''=0</m>.
     </p>
   </statement>
+    <solution component="S2-2-soln">
+      <p>
+        So <m>X'' = 0 \implies X'(x) = A \implies X(x) = Ax+B</m>.  B.C.:
+        <m>{X'(0)=0 = A}</m> so <m>{A=0}</m>.  Similarly
+        <m>{X'(10)=0=A}</m>.  No new info there.  So <m>B</m> can 
+        be any constant really, and so we'll let <m>B = 1</m> for simplicity. 
+        Then <m>k=0</m> is an eigenvalue with eigenfunction <m>X(x) = 1</m>.
+      </p>
+    </solution>
 </task>
 <task workspace="1.8in">
   <statement>
@@ -95,9 +154,35 @@ are insulated, i.e.
   a cosine function.
     </p>
   </statement>
+    <solution component="S2-2-soln">
+      <p>
+        So <m>X(x) = A\sin(mx)+B\cos(mx)</m> and thus 
+        <m>{X'(x) = Am\cos(mx)-Bm\sin(mx)}</m>. B.C.:
+        <m> {X'(0) = 0 = Am \implies A = 0}</m>.  Also
+        <md>
+          X'(10) = 0 = -Bm\sin(10m).
+        </md>
+        Now the fun part.  Choose <m>m</m> so that 
+        <m>{\sin(10m) = 0}</m>, otherwise you have a trivial solution
+        which we don't care about.  The sine function is 0 when evaluated 
+        at <m>{n\pi}</m> for integers <m>n</m>, so we will take 
+        <m>{10m = n\pi}</m>.  Since we only care about <m>m\gt 0</m> in this case
+        then this is true for <m>n=1,2,\ldots</m>. Then
+        <md>
+          k = m^2 = \left(\frac{n\pi}{10}\right)^2
+        </md>
+        are the eigenvalues.  The corresponding eigenfunctions (we know 
+        nothing about <m>B</m> so it can be any constant, we'll let <m>{B = 1}</m>)
+        are <md>
+          X_n(x) = \cos\left(\frac{n\pi x}{10}\right).
+        </md>
+        
+      </p>
+    </solution>
 </task>
     
     </statement>
+
   </task>
 
   <task workspace="1in">
@@ -112,6 +197,14 @@ are insulated, i.e.
   \end{aligned}
   </md></p>
     </statement>
+    <solution component="S2-2-soln">
+      <p>
+        (We'll add subscripts for ease of naming:) Eigenvalue <m>k=0</m> with eigenfunction <m>{X_0(x) = 1}</m>. And 
+        eigenvalues <m>{\ds k = \left(\frac{n\pi}{L}\right)^2}</m> with 
+        eigenfunctions <m>{X_n(x)= \cos\left(\frac{n\pi x}{L}\right)}</m> for 
+        <m>{n = 1, 2, \ldots}</m>.
+      </p>
+    </solution>
   </task>
 
   <task workspace="1.5in">
@@ -119,12 +212,112 @@ are insulated, i.e.
       <p>When <m>L=10</m>, sketch the graphs of the eigenfunctions
   corresponding to the three smallest eigenvalues.</p>
     </statement>
+    <solution component="S2-2-soln">
+
+      <sidebyside widths="30% 30% 30%">
+        <stack>
+          <p>
+            <m>k=0,</m>
+          </p>
+          <p>
+            <m> X_0(x) = 1</m>
+          </p>
+          <image>
+            <shortdescription>The first eigenfunction X=1 which corresponds to the smallest 
+              eigenvalue k=0.
+            </shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-401-2-2-a">
+                <diagram dimensions="(300,300)" margins="5">
+                   <definition>f(x)=cos(0*pi*x/10)</definition>
+                    <coordinates bbox="(-1,-1.5,11,1.45)">
+                      <axes decorations="no" 
+                      xlabel="x" ylabel="X_0(x)"/>
+                      <label anchor="(0,72.5)" alignment="w"><m>72.5</m></label>
+                      <label anchor="(10,0)" alignment="s"><m>10</m></label>
+                      <label anchor="(0,1)" alignment="w" offset="(-5,0)"><m>1</m></label>
+                      <graph function="f" domain="(0,10)"/>
+                      <point p="(0,f(0))"/>
+                      <point p="(10,f(10))"/>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+           </image>
+        </stack>
+        <stack>
+          <p>
+            <m>n=1 </m></p><p><m>\implies k=(\frac{\pi}{10})^2, </m>
+          </p>
+          <p>
+            <m>X_1(x) = \cos\left(\frac{\pi x}{10}\right)</m>
+          </p>
+          <image>
+            <shortdescription>The second eigenfunction X=cos(pi/10) which corresponds to the 2nd smallest 
+              eigenvalue k=(pi/10)^2.
+            </shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-401-2-2-b">
+                <diagram dimensions="(300,300)" margins="5">
+                   <definition>f(x)=cos(1*pi*x/10)</definition>
+                    <coordinates bbox="(-1,-1.5,11,1.45)">
+                      <axes decorations="no" 
+                      xlabel="x" ylabel="X_0(x)"/>
+                      <label anchor="(0,72.5)" alignment="w"><m>72.5</m></label>
+                      <label anchor="(10,0)" alignment="s"><m>10</m></label>
+                      <label anchor="(0,1)" alignment="w" offset="(-5,0)"><m>1</m></label>
+                      <graph function="f" domain="(0,10)"/>
+                      <point p="(0,f(0))"/>
+                      <point p="(10,f(10))"/>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+           </image>
+        </stack>
+        <stack>
+          <p>
+            <m>n=2</m></p><p><m> \implies k=(\frac{2\pi}{10})^2, </m>
+          </p>
+          <p>
+            <m>X_2(x) = \cos\left(\frac{2\pi x}{10}\right)</m>
+          </p>
+          <image>
+            <shortdescription>The third eigenfunction X=cos(2*pi/10) which corresponds to the 3rd smallest 
+              eigenvalue k=(2*pi/10)^2.
+            </shortdescription>
+            <prefigure xmlns="https://prefigure.org" label="prefigure-401-2-2-c">
+                <diagram dimensions="(300,300)" margins="5">
+                   <definition>f(x)=cos(2*pi*x/10)</definition>
+                    <coordinates bbox="(-1,-1.5,11,1.45)">
+                      <axes decorations="no" 
+                      xlabel="x" ylabel="X_0(x)"/>
+                      <label anchor="(0,72.5)" alignment="w"><m>72.5</m></label>
+                      <label anchor="(10,0)" alignment="s"><m>10</m></label>
+                      <label anchor="(0,1)" alignment="w" offset="(-5,0)"><m>1</m></label>
+                      <graph function="f" domain="(0,10)"/>
+                      <point p="(0,f(0))"/>
+                      <point p="(10,f(10))"/>
+                    </coordinates>
+                </diagram>
+            </prefigure>
+           </image>
+        </stack>
+      </sidebyside>
+    </solution>
   </task>
 
   <task workspace="1.5in">
     <statement>
       <p>For each eigenvalue, solve the differential equation for <m>T(t)</m>.</p>
     </statement>
+    <solution component="S2-2-soln">
+      <p>
+        For <m>k=0</m>: <m>T' = 0 \implies T = constant</m>, so choose 
+        <m>{T(t) = 1}</m>. 
+      </p>
+      <p>
+        For <m>\ds k = \left(\frac{n\pi}{10}\right)^2</m>: 
+        <m>{\ds T' = -6\left(\frac{n\pi}{10}\right)^2T}</m>
+        so <m>{T(t) = e^{-6 (\frac{n\pi}{10})^2 t}}</m>.
+      </p>
+    </solution>
   </task>
 
   <task workspace="1in">
@@ -132,6 +325,17 @@ are insulated, i.e.
       <p>Write the general solution to the original heat equation with boundary
   conditions given on the first page.</p>
     </statement>
+    <solution component="S2-2-soln">
+      <p>
+        Since <m>u(x,t) = X(x)T(t)</m> and <m>X_0T_0</m>, <m>X_1T_1</m>, ... 
+        are all solutions, then superposition says a linear combination of them is the 
+        general solution:
+        <md>
+          u(x,t) = A_0 + \sum_{n=1}^{\infty} A_n e^{-6(\frac{n\pi}{10})^2 t}\cos\left(\frac{n\pi x}{10}\right).
+        </md>
+        
+      </p>
+    </solution>
   </task>
   </exercise>
 
