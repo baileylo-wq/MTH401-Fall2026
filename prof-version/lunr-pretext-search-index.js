@@ -2969,6 +2969,51 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "",
   "body": "  If you agree with the following statement, write it at the end of your exam. \"The work presented here is entirely my own.\" ] Then sign your name. If not, discuss with your professor.   "
+},
+{
+  "id": "homework-6",
+  "level": "1",
+  "url": "homework-6.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 4",
+  "body": " Homework 4    MTH 401    Due: Monday, October 12 at the beginning of class. You will turn in a paper copy!    Instructions: Homework submissions should represent your very best work. Your work should be neat, clearly presented and complete. In particular, include complete sentences, where appropriate, to explain your thinking. Include the problems in the order given below and be sure to allow plenty of room for your work. You will generally be marked on the methods used to solve a problem rather than just the final answer; answers alone will receive little credit.     Suppose that the ends of a beam are insulated and that there is a constant source term:      Thinking about the physical situation, explain why there should be no stead-state solution.      What happens mathematically when we try to find a steady-state solution?      We saw in a video that the total heat energy in a three-dimensional region is where is the specific heat and is the mass density. If we apply this to a one-dimensional beam whose cross sectional area is , we find the total heat energy For convenience, we choose units so that , , and so the total heat energy is just By differentiating the expression above (for the total heat energy) with respect to time, and applying the heat equation given in this problem, describe how the total heat energy is changing over time.      If is a solution to the equation and boundary conditions, explain why solves a homogeneous equation with homogeneous boundary conditions.       The following Sturm-Liouville problem arises when we consider the homoogeneous one- dimensional heat equation with the temperature fixed on one end and the other end insulated. Note this is not something we've seen exactly before.     Solve the Sturm-Liouville problem by finding the eigenvalues and eigenfunctions .      Draw graphs of the first three eigenfunctions and verify that they satisfy the boundary conditions.       Solve the heat equation with boundary and initial conditions in a beam of length . Recall, we first need to make it homogeneous by performing the trick . Be careful - the initial condition for is different then the initial condition for .      Solve the heat equation with boundary and initial conditions in a beam of length .     "
+},
+{
+  "id": "homework-6-3",
+  "level": "2",
+  "url": "homework-6.html#homework-6-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose that the ends of a beam are insulated and that there is a constant source term:      Thinking about the physical situation, explain why there should be no stead-state solution.      What happens mathematically when we try to find a steady-state solution?      We saw in a video that the total heat energy in a three-dimensional region is where is the specific heat and is the mass density. If we apply this to a one-dimensional beam whose cross sectional area is , we find the total heat energy For convenience, we choose units so that , , and so the total heat energy is just By differentiating the expression above (for the total heat energy) with respect to time, and applying the heat equation given in this problem, describe how the total heat energy is changing over time.      If is a solution to the equation and boundary conditions, explain why solves a homogeneous equation with homogeneous boundary conditions.    "
+},
+{
+  "id": "homework-6-4",
+  "level": "2",
+  "url": "homework-6.html#homework-6-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  The following Sturm-Liouville problem arises when we consider the homoogeneous one- dimensional heat equation with the temperature fixed on one end and the other end insulated. Note this is not something we've seen exactly before.     Solve the Sturm-Liouville problem by finding the eigenvalues and eigenfunctions .      Draw graphs of the first three eigenfunctions and verify that they satisfy the boundary conditions.    "
+},
+{
+  "id": "homework-6-5",
+  "level": "2",
+  "url": "homework-6.html#homework-6-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Solve the heat equation with boundary and initial conditions in a beam of length . Recall, we first need to make it homogeneous by performing the trick . Be careful - the initial condition for is different then the initial condition for .   "
+},
+{
+  "id": "homework-6-6",
+  "level": "2",
+  "url": "homework-6.html#homework-6-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Solve the heat equation with boundary and initial conditions in a beam of length .    "
 }
 ]
 
