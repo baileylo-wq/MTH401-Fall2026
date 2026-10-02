@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 4</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, October 12 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+
+
+        <p>
+            <em>Instructions:</em> Homework submissions should represent your very best work.
+            Your work should be neat, clearly presented and complete.
+            In particular, include complete sentences, where appropriate, to
+            explain your thinking.
+            Include the problems in the order given below and be sure to allow
+            plenty of room for your work.
+            You will generally be marked on the methods used to solve a problem
+            rather than just the final answer; answers alone will receive little
+            credit.
+        </p>
+    </introduction>
+
+    <exercise>
+        <introduction>
+            <p>
+                Suppose that the ends of a beam are insulated and that there is a constant source term:
+                <md>
+                    <mrow>\pd{u}{t} \amp = \pdtwo{u}{x} + 1 </mrow>
+                    <mrow>\pd{u}{x}(0,t) \amp = 0 </mrow>
+                    <mrow>\pd{u}{x}(L,t) \amp = 0 </mrow>
+                </md>
+                
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Thinking about the physical situation, explain why there should be no stead-state solution.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What happens mathematically when we try to find a steady-state solution?
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    We saw in a video that the total heat energy in a three-dimensional region <m>E</m> is
+                    <md>
+                        \iiint_E c\rho u (x,y,z,t)~dV
+                    </md>
+                    where <m>c</m> is the specific heat and <m>\rho</m> is the mass density.  If we 
+                    apply this to a one-dimensional beam whose cross sectional area is <m>A</m>, we find the 
+                    total heat energy
+                    <md>
+                        \int_0^L A c \rho u(x,t)~dx.
+                    </md>
+                    For convenience, we choose units so that <m>A = 1</m>, <m>c = 1</m>, and <m>\rho = 1</m> so
+the total heat energy is just 
+                    <md>
+                        \int_0^L u(x,t)~dx.
+                    </md>
+                    By differentiating the expression above (for the total heat energy) with respect to time,
+and applying the heat equation given in this problem, describe how the total heat energy is changing over time.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    If <m>u(x,t)</m> is a solution to the equation and boundary conditions, explain why
+                    <m>{v(x,t) = u(x,t)-t}</m> solves a homogeneous equation with homogeneous boundary conditions.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+    <exercise>
+        <introduction>
+            <p>
+                The following Sturm-Liouville problem arises when we consider the homoogeneous one-
+dimensional heat equation with the temperature fixed on one end and the other end insulated.
+                <md>
+                    <mrow>X'' \amp = -kX </mrow>
+                    <mrow>X(0) \amp =0</mrow>
+                    <mrow>X'(L) \amp =0 </mrow>
+                </md>
+                Note this is not something we've seen exactly before.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Solve the Sturm-Liouville problem by finding the eigenvalues <m>k</m> and 
+                    eigenfunctions <m>X(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Draw graphs of the first three eigenfunctions and verify that they satisfy the boundary
+conditions.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+
+    <exercise>
+        <statement>
+            <p>
+                Solve the heat equation with boundary and initial conditions in a beam of length <m>L=1</m>.
+                <md>
+                    <mrow>\pd{u}{t} \amp = \pdtwo{u}{x} + 6 </mrow>
+                    <mrow>u(0,t) \amp = 0 </mrow>
+                    <mrow>u(1,t) \amp = 8 </mrow>
+                    <mrow>u(x,0) \amp = 10 </mrow>
+                </md>
+                Recall, we first need to make it homogeneous by performing the trick <m>{v=u-u_{ss}}</m>. Be careful
+- the initial condition for <m>v</m> is different then the initial condition for <m>u</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Solve the heat equation with boundary and initial conditions in a beam of length <m>L=1</m>.
+                <md>
+                    <mrow>\pd{u}{t} \amp = \pdtwo{u}{x} </mrow>
+                    <mrow>\pd{u}{x}(0,t) \amp = 0 </mrow>
+                    <mrow>\pd{u}{x}(1,t) \amp = 0 </mrow>
+                    <mrow>u(x,0) \amp = x^2 </mrow>
+                </md>
+            </p>
+        </statement>
+    </exercise>
+    
+   
+</worksheet>
