@@ -1,115 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <worksheet>
   <title>2.4 Solving the heat equation</title>
-  <alert>MTH 401</alert>
 
-<remark>
   <p>
-    General steps to solving the heat equation:
-    <dl>
-      <li>
-        <title>Step 1:</title>
-        <p>
-          Is it a homogeneous equation with homogeneous boundary conditions? If not, make it so.
-        </p>
-      </li>
-      <li>
-        <title>Step 2:</title>
-        <p>
-          Separation of variables.
-        </p>
-      </li>
-      <li>
-        <title>Step 3:</title>
-        <p>
-          Identify and solve the Sturm-Lioville problem.
-        </p>
-      </li>
-      <li>
-        <title>Step 4:</title>
-        <p>
-          Solve temporal differential equation, write product solutions, use superposition to write general solution.
-        </p>
-      </li>
-      <li>
-        <title>Step 5:</title>
-        <p>
-          Find Fourier Coefficients.
-        </p>
-      </li>
-    </dl>
+    <alert>MTH 401</alert>
   </p>
-</remark>
 
-  <introduction>
-    <p>Here are some examples of the heat equation along with boundary and
-initial conditions.  Find a solution for each and graph it using
-Mathematica (recommended, can use other technology).</p>
-  </introduction>
+  <remark>
+    <p>
+      General steps to solving the heat equation:
+      <dl>
+        <li>
+          <title>Step 1:</title>
 
-   <exercise workspace="3in">
+          <p>
+            Is it a homogeneous equation with homogeneous boundary conditions?
+            If not, make it so.
+          </p>
+        </li>
+
+        <li>
+          <title>Step 2:</title>
+
+          <p>
+            Separation of variables.
+          </p>
+        </li>
+
+        <li>
+          <title>Step 3:</title>
+
+          <p>
+            Identify and solve the Sturm-Lioville problem.
+          </p>
+        </li>
+
+        <li>
+          <title>Step 4:</title>
+
+          <p>
+            Solve temporal differential equation, write product solutions, use
+            superposition to write general solution.
+          </p>
+        </li>
+
+        <li>
+          <title>Step 5:</title>
+
+          <p>
+            Find Fourier Coefficients.
+          </p>
+        </li>
+      </dl>
+    </p>
+  </remark>
+
+  <p>
+    Here are some examples of the heat equation along with boundary and initial
+    conditions.
+    Note, they each have the same <m>\alpha</m> (same materials) and describe a
+    beam of length <m>5</m>, but they have different boundary and initial
+    conditions.
+    Find a solution for each and graph it using Mathematica (recommended, can
+    use other technology).
+  </p>
+
+  <exercise workspace="3in">
     <statement>
-      <p><md>
-  \begin{aligned}
+      <p>
+        <md>
+          \begin{aligned}
     \pd{u}{t} \amp  = 4 \pdtwo{u}{x} \\
     u(0, t) \amp  = 0 \\
     u(5, t) \amp  = 0 \\
     u(x, 0) \amp  = 3\sin\left(\frac{\pi x}{5}\right)
   \end{aligned}
-  </md></p>
+        </md>
+      </p>
     </statement>
+
+    <solution component="S2-4-soln">
+      <p>
+        General solution (which we have previously found for the heat equation
+        with fixed boundary conditions):
+        <md>
+          u(x,t) = \sum_{n=1}^{\infty} A_n e^{-4\left(\frac{n\pi}{5}\right)^2 t} \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+        Now the initial temperature for <m>t=0</m>, plug it in:
+        <md>
+          u(x,0) = 3\sin\left(\frac{\pi x}{5}\right) = \sum_{n=1}^{\infty} A_n (1) \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+        Note the left side is a sine term of <m>\frac{1\pi x}{5}</m> and the
+        right side is a bunch of sine terms of <m>\frac{n\pi x}{5}</m>.
+        The only way this is true is if <m>n=1</m> survives and all else
+        vanishes.
+        In particular, <m>A_1 = 3</m> and <m>A_n = 0</m> for
+        <m>n=2, 3, \ldots</m>.
+        Thus the specific solution is
+        <md>
+          u(x,t) = 3 e^{-4\left(\frac{1\pi}{5}\right)^2 t} \sin\left(\frac{1\pi x}{5}\right).
+        </md>
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="5in">
     <statement>
-      <p><md>
-  \begin{aligned}
+      <p>
+        <md>
+          \begin{aligned}
     \pd{u}{t} \amp  = 4 \pdtwo{u}{x} \\
     u(0, t) \amp  = 0 \\
     u(5, t) \amp  = 0 \\
     u(x, 0) \amp  = x^2 - 5x
   \end{aligned}
-  </md></p>
+        </md>
+      </p>
     </statement>
+
+    <solution component="S2-4-soln">
+      <p>
+        General solution (which we have previously found for the heat equation
+        with fixed boundary conditions):
+        <md>
+          u(x,t) = \sum_{n=1}^{\infty} A_n e^{-4\left(\frac{n\pi}{5}\right)^2 t} \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+        Now the initial temperature for <m>t=0</m>, plug it in:
+        <md>
+          u(x,0) = x^2 - 5x = \sum_{n=1}^{\infty} A_n (1) \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+        This is a Fourier Sine Series with Fourier Sine Coefficients:
+        <md>
+          A_n = \frac25 \int_0^5 (x^2 - 5x)\sin\left(\frac{n\pi x}{5}\right)~dx = \frac{100(-1+(-1)^n)}{n^3\pi^3}.
+        </md>
+        Thus the specific solution is
+        <md>
+          u(x,t) = \sum_{n=1}^{\infty}\frac{100(-1+(-1)^n)}{n^3\pi^3} e^{-4\left(\frac{n\pi}{5}\right)^2 t} \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="5in">
     <statement>
-      <p><md>
-  \begin{aligned}
+      <p>
+        <md>
+          \begin{aligned}
     \pd{u}{t} \amp  = 4 \pdtwo{u}{x} \\
     \pd{u}{x}(0, t) \amp  = 0 \\
     \pd{u}{x}(5, t) \amp  = 0 \\
     u(x, 0) \amp  = x
   \end{aligned}
-  </md></p>
+        </md>
+      </p>
     </statement>
+
+    <solution component="S2-4-soln">
+      <p>
+        General solution (which we have previously found for the heat equation
+        with insulated boundary conditions (NOT FIXED!)):
+        <md>
+          u(x,t) = A_0 + \sum_{n=1}^{\infty} A_n e^{-4\left(\frac{n\pi}{5}\right)^2 t} \cos\left(\frac{n\pi x}{5}\right).
+        </md>
+        Now the initial temperature for <m>t=0</m>, plug it in:
+        <md>
+          u(x,0) = x = A_0 + \sum_{n=1}^{\infty} A_n (1) \cos\left(\frac{n\pi x}{5}\right).
+        </md>
+        This is a Fourier Cosine Series with Fourier Cosine Coefficients:
+        <md>
+          <mrow>A_0 \amp = \frac15 \int_0^5 x~dx = \frac52 </mrow>
+          <mrow>A_n \amp = \frac25 \int_0^5 (x)\cos\left(\frac{n\pi x}{5}\right)~dx = \frac{10(-1+(-1)^n)}{n^2\pi^2}.</mrow>
+        </md>
+        Thus the specific solution is
+        <md>
+          u(x,t) = \frac52+\sum_{n=1}^{\infty} \frac{10(-1+(-1)^n)}{n^2\pi^2} e^{-4\left(\frac{n\pi}{5}\right)^2 t} \cos\left(\frac{n\pi x}{5}\right).
+        </md>
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="5in">
     <statement>
-      <p><md>
-  \begin{aligned}
+      <p>
+        <md>
+          \begin{aligned}
     \pd{u}{t} \amp  = 4 \pdtwo{u}{x} + 8\\
     u(0, t) \amp  = 0 \\
     u(5, t) \amp  = 0 \\
     u(x, 0) \amp  = 5x - x^2 
   \end{aligned}
-  </md></p>
+        </md>
+      </p>
     </statement>
+
+    <solution component="S2-4-soln">
+      <p>
+        This is not homogeneous because there is a non-zero source term in our
+        PDE.
+        So we need to find the steady-state solution <m>u_{ss}</m> which is when
+        <m>{\pd{u_ss}{t} = 0}</m>.
+        According to our PDE, this means <m>{0 = \pdtwo{u_{ss}}{x}+8}</m>, or in
+        other words <m>{\pdtwo{u_{ss}}{x} = -2}</m>.
+        Integrating up once gives <m>{\pd{u_{ss}}{x} = -2x + A}</m> and
+        integrating again gives <m>u_{ss} = -x^2 + Ax + B</m>.
+        Plugging in the boundary conditions: <m>{u_{ss}(0,t) = 0 = B}</m> and
+        <m>{u_{ss}(5,t) = 0 = -25+5A}</m> so <m>{A=5}</m>.
+        So the steady-state solution is
+        <md>
+          u_{ss} = -x^2+5x.
+        </md>
+        Define <m>v = u-u_{ss}</m>.
+        This will give us the homogeneous PDE with homogeneous B.C.:
+        <md>
+          <mrow> \pd{v}{t} \amp = 4 \pdtwo{v}{x} </mrow>
+          <mrow>v(0,t) \amp = 0 </mrow>
+          <mrow>v(5,t) \amp = 0 </mrow>
+          <mrow>v(x,0) \amp  = u(x,0) = u_{ss}(x,0) =5x-x^2 - (-x^2+5x) = 0</mrow>
+        </md>
+        We can find the general solution and all that jazz, but the initial
+        temperature is 0, which means when we go to solve the Fourier Sine
+        Series we will be taking
+        <md>
+          A_n = \frac25 \int_{0}^5 (0)~dx = 0
+        </md>
+        for all <m>n</m>.
+        And so <m>v(x,t) = 0</m>.
+        That means that <m>{u(x,t) = v(x,t) + u_{ss}(x,t) = 0+(-x^2+5x)}</m> or
+        our specific solution is actually the steady-state and doesn't change in
+        time!
+        <m>u(x,t) = -x^2+5x</m>.
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="5in">
     <statement>
-      <p><md>
-  \begin{aligned}
+      <p>
+        <md>
+          \begin{aligned}
     \pd{u}{t} \amp  = 4 \pdtwo{u}{x} + 8\\
     u(0, t) \amp  = 0 \\
     u(5, t) \amp  = 0 \\
     u(x, 0) \amp  = 0
   \end{aligned}
-  </md></p>
+        </md>
+      </p>
     </statement>
-  </exercise>
 
+    <solution component="S2-4-soln">
+      <p>
+        This is not homogeneous because there is a non-zero source term in our
+        PDE.
+        So we need to find the steady-state solution <m>u_{ss}</m> which is when
+        <m>{\pd{u_ss}{t} = 0}</m>.
+        We just did this in the previous problem, finding the steady-state
+        solution is
+        <md>
+          u_{ss} = -x^2+5x.
+        </md>
+        Define <m>v = u-u_{ss}</m>.
+        This will give us the homogeneous PDE with homogeneous B.C.:
+        <md>
+          <mrow> \pd{v}{t} \amp = 4 \pdtwo{v}{x} </mrow>
+          <mrow>v(0,t) \amp = 0 </mrow>
+          <mrow>v(5,t) \amp = 0 </mrow>
+          <mrow>v(x,0) \amp  = u(x,0) = u_{ss}(x,0) = 0 - (-x^2+5x) = x^2-5x</mrow>
+        </md>
+        The only difference between this and the last problem is the initial
+        temperature, which is no longer zero.
+        General solution (which we have previously found for the heat equation
+        with fixed boundary conditions):
+        <md>
+          v(x,t) = \sum_{n=1}^{\infty} A_n e^{-4\left(\frac{n\pi}{5}\right)^2 t} \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+        Now the initial temperature for <m>t=0</m>, plug it in:
+        <md>
+          v(x,0) = x^2 - 5x = \sum_{n=1}^{\infty} A_n (1) \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+        This is a Fourier Sine Series with Fourier Sine Coefficients we already
+        found in part (b):
+        <md>
+          A_n = \frac25 \int_0^5 (x^2 - 5x)\sin\left(\frac{n\pi x}{5}\right)~dx = \frac{100(-1+(-1)^n)}{n^3\pi^3}.
+        </md>
+        So
+        <md>
+          v(x,t) = \sum_{n=1}^{\infty}\frac{100(-1+(-1)^n)}{n^3\pi^3} e^{-4\left(\frac{n\pi}{5}\right)^2 t} \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+        But we want <m>u(x,t)</m>.
+        Since <m>u(x,t) = v(x,t) + u_{ss}</m> (and I'll put the <m>u_{ss}</m>
+        first for easier reading), the final specific solution is
+        <md>
+          u(x,t) = -x^2 + 5x + \sum_{n=1}^{\infty}\frac{100(-1+(-1)^n)}{n^3\pi^3} e^{-4\left(\frac{n\pi}{5}\right)^2 t} \sin\left(\frac{n\pi x}{5}\right).
+        </md>
+      </p>
+    </solution>
+  </exercise>
 </worksheet>

@@ -2,7 +2,7 @@
 <worksheet>
   <title>2.3. Fourier Sine and Cosine series</title>
 
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
   <definition xml:id="def-fourier-sine-series">
     <statement>
@@ -35,6 +35,16 @@
   <m>[0,\pi]</m>.  Start with a small number of terms, say <m>n=1,\ldots,10</m>,
   and then add more in.</p>
     </statement>
+    <solution component = "S2-3-soln">
+      <p>
+        <md>
+          A_n = \frac{2}\pi \int_0^\infty (x^2 - \pi x)\sin(nx)~dx = \frac{4(-1+(-1)^n)}{n^3 \pi}
+        </md>
+        Thank you Mathematica.  (Wolfram Alpha will look a little grosser but will give you the same thing).
+        Both look like <m>{x^2 - \pi x}</m> (they overlap and match really quite well), that is a parabola with zeros at 
+        <m>0, \pi</m>.
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="3in">
@@ -63,7 +73,7 @@
   \int_0^L X_n(x)X_m(x)~dx = \left.
     \begin{cases}
       0, \amp  n \neq m \\
-      \frac L2 \amp  n = m &gt; 0 \\
+      \frac L2 \amp  n = m \gt 0 \\
       L \amp  n = m = 0
     \end{cases}
   \right.
@@ -78,6 +88,25 @@
   coefficients <m>A_n</m> (<m>A_0</m> will be a little
   different than <m>A_n</m> with <m>n &gt; 0</m>).</p>
     </statement>
+    <solution component = "S2-3-soln">
+      <p>
+        <m>f(x) = A_0(1) + A_1X_1 + A_2 X_2 + A_3X_3+\cdots</m> where <m>A_i = \cos(\frac{n\pi x}{L})</m>.  Multiply 
+        both sides by <m>X_n</m> and integrate from <m>0</m> to <m>L</m> and apply orthogonality:
+        <md>
+          \int_0^L f(x)X_n~dx = A_n \int_0^L X_nX_n~Dx + 0 
+          = \begin{cases} 
+          A_0 L , \amp \text{ if } n=0 \\
+          A_n \frac{L}{2} \amp \text{ if } n\gt 0\end{cases}
+        </md>
+        And so
+        <md>
+          <mrow>A_0 \amp  = \frac1L \int_0^L f(x)~dx</mrow>
+          <mrow>A_n \amp  = \frac2L \int_0^L f(x)\cos\left(\frac{n\pi x}{L}\right)~dx, \ n = 1, 2, \ldots</mrow>
+        </md>
+        
+
+      </p>
+    </solution>
   </exercise>
 
 
@@ -114,6 +143,21 @@
   <m>[0,10]</m>.  Start with a small number of terms, say <m>n=1,\ldots,10</m>,
   and then add more in.</p>
     </statement>
+    <solution component = "S2-3-soln">
+      <p>
+        <m>A_0=\frac1{10} \int_0^{10} x~dx = 5</m>
+      </p>
+      <p>
+        <m>A_n = \frac2{10}\int_0^{10} x\cos\left(\frac{n\pi x}{10}\right)~dx = \frac{20(-1+(-1)^n)}{n^2\pi^2}</m>
+      </p>
+      <p>
+        <md>
+          <mrow> x  \amp = A_0 + \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi x}{10}\right)</mrow>
+          <mrow> \amp = 5 + \sum_{n=1}^{\infty} \frac{20(-1+(-1)^n)}{n^2\pi^2} \cos\left(\frac{n\pi x}{10}\right) </mrow>
+        </md>
+        and with enough terms in the sum, the graphs begin to look the same.
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="3in">
@@ -123,6 +167,36 @@
   an approximation of your series.  Then find the Fourier cosine
   series for the same function over the same interval.</p>
     </statement>
+    <solution component = "S2-3-soln">
+      <p>
+        For a Fourier Sine Series, we are solving <m>{1 = \sum_{n=1}^{\infty} A_n \sin(nx)}</m>, which 
+        gives 
+        <md>
+          A_n = \frac2\pi \int_0^\pi (1) \sin(nx)~dx = \frac{-2(-1+(-1^n))}{n\pi}
+        </md>
+        so then we are saying the two are equivalent:
+        <md>
+          1 = \sum_{n=1}^{\infty}\frac{-2(-1+(-1^n))}{n\pi}\sin(nx).
+        </md>
+        
+      </p>
+      <p>
+        For a Fourier Cosine Series, we are solving <m>{1 = A_0 + \sum_{n=1}^{\infty} A_n \cos(nx)}</m>, which 
+        gives 
+        <md>
+          A_0 = \frac1\pi \int_0^\pi (1)~dx = 1
+        </md>
+        and 
+        <md>
+          A_n = \frac2\pi \int_0^\pi (1) \cos(nx)~dx = 0
+        </md>
+        so then we are saying the two are equivalent:
+        <md>
+          1 = 1 + \sum_{n=1}^{\infty}0.
+        </md>
+        The second one seems much more straight forward...
+      </p>
+    </solution>
   </exercise>
 
 </worksheet>
