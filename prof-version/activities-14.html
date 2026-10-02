@@ -274,7 +274,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -293,7 +296,9 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.3. Fourier Sine and Cosine series</span><div class="print-links"><a href="?printpreview=activities-14" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<em class="alert">MTH 401</em>
+<div class="para" id="activities-14-2">
+<em class="alert">MTH 401</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-fourier-sine-series"><h2 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h2>
@@ -325,6 +330,22 @@ f(x) = \sum_{n=1}^\infty A_n\sin(nx).
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <div class="para" id="activities-14-4-1-2">Find the Fourier coefficients <span class="process-math">\(A_n\)</span> (perhaps with technology?) and graph the function <span class="process-math">\(f(x)\)</span> and an approximation to your Fourier series over the interval <span class="process-math">\([0,\pi]\text{.}\)</span>  Start with a small number of terms, say <span class="process-math">\(n=1,\ldots,10\text{,}\)</span> and then add more in.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-14-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-14-4-2-1">
+<div class="displaymath process-math" id="activities-14-4-2-1-1">
+\begin{equation*}
+A_n = \frac{2}\pi \int_0^\infty (x^2 - \pi x)\sin(nx)~dx = \frac{4(-1+(-1)^n)}{n^3 \pi}
+\end{equation*}
+</div>
+<div class="para">Thank you Mathematica.  (Wolfram Alpha will look a little grosser but will give you the same thing). Both look like <span class="process-math">\({x^2 - \pi x}\)</span> (they overlap and match really quite well), that is a parabola with zeros at <span class="process-math">\(0, \pi\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#activities-14-4-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="2in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activities-14-4" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
@@ -358,7 +379,7 @@ k = \left(\frac {n\pi}{L}\right)^2, ~~~ \amp  X_n =
 \int_0^L X_n(x)X_m(x)~dx = \left.
 \begin{cases}
 0, \amp  n \neq m \\
-\frac L2 \amp  n = m &gt; 0 \\
+\frac L2 \amp  n = m \gt 0 \\
 L \amp  n = m = 0
 \end{cases}
 \right.
@@ -376,6 +397,32 @@ f(x) = A_0 +
 </div>
 <div class="para">Use the fact that <span class="process-math">\(\ds X_n = \cos\left(\frac{n\pi x}{L}\right)\)</span> thus <span class="process-math">\(\ds f(x) = A_0X_0 + \sum_{n=1}^{\infty} A_n X_n\)</span> along with orthogonality to find an expression for the Fourier coefficients <span class="process-math">\(A_n\)</span> (<span class="process-math">\(A_0\)</span> will be a little different than <span class="process-math">\(A_n\)</span> with <span class="process-math">\(n &gt; 0\)</span>).</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-14-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-14-5-2-1">
+<div class="para">
+<span class="process-math">\(f(x) = A_0(1) + A_1X_1 + A_2 X_2 + A_3X_3+\cdots\)</span> where <span class="process-math">\(A_i = \cos(\frac{n\pi x}{L})\text{.}\)</span>  Multiply both sides by <span class="process-math">\(X_n\)</span> and integrate from <span class="process-math">\(0\)</span> to <span class="process-math">\(L\)</span> and apply orthogonality:</div>
+<div class="displaymath process-math" id="activities-14-5-2-1-6">
+\begin{equation*}
+\int_0^L f(x)X_n~dx = A_n \int_0^L X_nX_n~Dx + 0 
+= \begin{cases} 
+A_0 L , \amp \text{ if } n=0 \\
+A_n \frac{L}{2} \amp \text{ if } n\gt 0\end{cases}
+\end{equation*}
+</div>
+<div class="para">And so</div>
+<div class="displaymath process-math" id="activities-14-5-2-1-7">
+\begin{align*}
+A_0 \amp  = \frac1L \int_0^L f(x)~dx\\
+A_n \amp  = \frac2L \int_0^L f(x)\cos\left(\frac{n\pi x}{L}\right)~dx, \ n = 1, 2, \ldots
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#activities-14-5-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#activities-14-5" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
@@ -406,12 +453,77 @@ f(x) = A_0 +
 <article class="exercise exercise-like" id="activities-14-8"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para" id="activities-14-8-1-1">Find the Fourier cosine coefficients for the function <span class="process-math">\(f(x) = x\)</span> on the interval <span class="process-math">\([0,10]\)</span> and graph the function <span class="process-math">\(f(x)\)</span> and an approximation to your Fourier series over the interval <span class="process-math">\([0,10]\text{.}\)</span>  Start with a small number of terms, say <span class="process-math">\(n=1,\ldots,10\text{,}\)</span> and then add more in.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-14-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-14-8-2-1">
+<span class="process-math">\(A_0=\frac1{10} \int_0^{10} x~dx = 5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activities-14-8-2-2">
+<span class="process-math">\(A_n = \frac2{10}\int_0^{10} x\cos\left(\frac{n\pi x}{10}\right)~dx = \frac{20(-1+(-1)^n)}{n^2\pi^2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-14-8-2-3">
+<div class="displaymath process-math" id="activities-14-8-2-3-1">
+\begin{align*}
+x  \amp = A_0 + \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi x}{10}\right)\\
+\amp = 5 + \sum_{n=1}^{\infty} \frac{20(-1+(-1)^n)}{n^2\pi^2} \cos\left(\frac{n\pi x}{10}\right) 
+\end{align*}
+</div>
+<div class="para">and with enough terms in the sum, the graphs begin to look the same.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#activities-14-8-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="3.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-14-8" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="activities-14-9"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
 <div class="para" id="activities-14-9-1-1">Find the Fourier sine series for the constant function <span class="process-math">\(f(x) =
 1\)</span> on the interval <span class="process-math">\([0,\pi]\)</span> and create a graph of the function and an approximation of your series.  Then find the Fourier cosine series for the same function over the same interval.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-14-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-14-9-2-1">
+<div class="para">For a Fourier Sine Series, we are solving <span class="process-math">\({1 = \sum_{n=1}^{\infty} A_n \sin(nx)}\text{,}\)</span> which gives</div>
+<div class="displaymath process-math" id="activities-14-9-2-1-2">
+\begin{equation*}
+A_n = \frac2\pi \int_0^\pi (1) \sin(nx)~dx = \frac{-2(-1+(-1^n))}{n\pi}
+\end{equation*}
+</div>
+<div class="para">so then we are saying the two are equivalent:</div>
+<div class="displaymath process-math" id="activities-14-9-2-1-3">
+\begin{equation*}
+1 = \sum_{n=1}^{\infty}\frac{-2(-1+(-1^n))}{n\pi}\sin(nx).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-14-9-2-2">
+<div class="para">For a Fourier Cosine Series, we are solving <span class="process-math">\({1 = A_0 + \sum_{n=1}^{\infty} A_n \cos(nx)}\text{,}\)</span> which gives</div>
+<div class="displaymath process-math" id="activities-14-9-2-2-2">
+\begin{equation*}
+A_0 = \frac1\pi \int_0^\pi (1)~dx = 1
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" id="activities-14-9-2-2-3">
+\begin{equation*}
+A_n = \frac2\pi \int_0^\pi (1) \cos(nx)~dx = 0
+\end{equation*}
+</div>
+<div class="para">so then we are saying the two are equivalent:</div>
+<div class="displaymath process-math" id="activities-14-9-2-2-4">
+\begin{equation*}
+1 = 1 + \sum_{n=1}^{\infty}0.
+\end{equation*}
+</div>
+<div class="para">The second one seems much more straight forward...</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-14-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#activities-14-9-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#activities-14-9" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
