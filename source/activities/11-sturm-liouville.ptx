@@ -99,10 +99,11 @@ are insulated, i.e.
 
 
   <task>
-    <statement>
+    <introduction>
       <p>The differential equation and boundary conditions for <m>X</m> are
   called a <em>Sturm-Liouville</em> problem.  As in the video, look for
   eigenvalues <m>k</m> and eigenfunctions <m>X</m> by considering</p>
+      </introduction>
 <task workspace="1.8in">
   <statement>
     <p>
@@ -181,7 +182,7 @@ are insulated, i.e.
     </solution>
 </task>
     
-    </statement>
+    
 
   </task>
 

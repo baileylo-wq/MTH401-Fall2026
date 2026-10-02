@@ -65,7 +65,7 @@
                                 <arc center="(0,0)" radius="2" range="(0,180)"/>
                                 <lineto point="(-1,0)"/>
                                 <arc center="(0,0)" radius="1" range="(180,0)"/>
-                                \
+                                
                             </path>
                             <label anchor="(1.5,1.5)" alignment="n" offset="(0,5)">
                                 <m>
