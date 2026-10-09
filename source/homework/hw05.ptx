@@ -38,6 +38,9 @@
                             </md>
                             where the length of the string is <m>\pi</m>, the ends are clamped (fixed) at <m>0</m>, the initial position of the string is <m>{\pi x - x^2}</m>, and the initial velocity is <m>0</m>.
                         </p>
+                        <p>
+                            You will need to clearly identify all boundary and initial conditions.
+                        </p>
                    
                             <p>
                                 Use your favorite plotting software to plot the solution when <m>{t=0}</m> and when <m>{t=1.0}</m> on the same plot, and sketch the plot. (These are 1 dimensional plots since <m>t</m> is fixed.)
