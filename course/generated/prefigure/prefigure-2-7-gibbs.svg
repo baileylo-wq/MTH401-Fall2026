@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-2-7-gibbs-figure" width="250" height="250" viewBox="0 0 250 250">
+  <defs>
+    <clipPath id="prefigure-2-7-gibbs-clipPath-0">
+      <rect x="25.0" y="25.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <clipPath id="prefigure-2-7-gibbs-clipPath-1">
+      <rect x="25.0" y="25.0" width="200.0" height="200.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-2-7-gibbs-grid-axes">
+    <g id="prefigure-2-7-gibbs-grid" stroke="#ccc" stroke-width="1">
+      <line x1="125.0" y1="225.0" x2="125.0" y2="25.0"/>
+      <line x1="225.0" y1="225.0" x2="225.0" y2="25.0"/>
+      <line x1="25.0" y1="177.4" x2="225.0" y2="177.4"/>
+    </g>
+    <g id="prefigure-2-7-gibbs-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-2-7-gibbs-line-3" x1="25.0" y1="177.4" x2="225.0" y2="177.4" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-2-7-gibbs-line-4" x1="225.0" y1="180.4" x2="225.0" y2="174.4"/>
+      </g>
+      <line id="prefigure-2-7-gibbs-line-5" x1="125.0" y1="225.0" x2="125.0" y2="25.0" stroke="black" stroke-width="2"/>
+      <g/>
+    </g>
+    <g id="prefigure-2-7-gibbs-label-0" transform="translate(225.0,188.4) translate(-4.5,-0.0)">
+      <g id="prefigure-2-7-gibbs-g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-gibbs-MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit" data-semantic-id="0" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-2-7-gibbs-MJX-2-TEX-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-2-7-gibbs-graph-0" stroke="blue" stroke-width="2" fill="none" d="M 25.0 82.9 L 27.0 123.8 L 29.0 140.0 L 31.0 134.3 L 33.0 128.7 L 35.0 132.9 L 37.0 137.9 L 39.0 136.4 L 41.0 133.9 L 43.0 136.0 L 45.0 139.2 L 47.0 138.7 L 49.0 136.9 L 51.0 138.2 L 53.0 140.6 L 55.0 140.5 L 57.0 139.0 L 59.0 139.8 L 61.0 141.7 L 63.0 141.6 L 65.0 140.4 L 67.0 140.7 L 69.0 142.2 L 71.0 142.2 L 73.0 141.0 L 75.0 141.0 L 77.0 142.2 L 79.0 142.2 L 81.0 141.0 L 83.0 140.7 L 85.0 141.6 L 87.0 141.6 L 89.0 140.4 L 91.0 139.8 L 93.0 140.4 L 95.0 140.4 L 97.0 139.1 L 99.0 138.3 L 101.0 138.7 L 103.0 138.6 L 105.0 137.2 L 107.0 136.2 L 109.0 136.3 L 111.0 136.1 L 113.0 134.7 L 115.0 133.4 L 117.0 133.3 L 119.0 133.1 L 121.0 131.6 L 123.0 130.1 L 125.0 129.7 L 127.0 129.4 L 129.0 127.8 L 131.0 126.1 L 133.0 125.6 L 135.0 125.1 L 137.0 123.5 L 139.0 121.5 L 141.0 120.8 L 143.0 120.3 L 145.0 118.5 L 147.0 116.4 L 149.0 115.3 L 151.0 114.8 L 153.0 113.0 L 155.0 110.6 L 157.0 109.3 L 159.0 108.7 L 161.0 106.8 L 163.0 104.2 L 165.0 102.6 L 167.0 102.0 L 169.0 100.1 L 171.0 97.2 L 173.0 95.3 L 175.0 94.7 L 177.0 92.8 L 179.0 89.5 L 181.0 87.4 L 183.0 86.7 L 185.0 84.9 L 187.0 81.3 L 189.0 78.8 L 191.0 78.2 L 193.0 76.5 L 195.0 72.5 L 197.0 69.5 L 199.0 69.1 L 201.0 67.6 L 203.0 63.0 L 205.0 59.3 L 207.0 59.4 L 209.0 58.5 L 211.0 52.8 L 213.0 47.8 L 215.0 49.3 L 217.0 50.3 L 219.0 41.3 L 221.0 31.5 L 223.0 43.8 L 225.0 82.9" clip-path="url(#prefigure-2-7-gibbs-clipPath-1)"/>
+</svg>

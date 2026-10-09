@@ -1240,7 +1240,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.5. The wave equation Intro",
-  "body": " 2.5. The wave equation Intro  MTH 401    The wave equation representing the height of the string in one dimension with wave speed (representing the propagation speed of the wave), constant horizontal tension (i.e. the string is perfectly elastic ), and density , is: In three dimensions the wave equation becomes where is the Laplacian of .      Let's consider the wave equation in a string of length where both ends are clamped: Find the general solution to this equation. (We use the steps steps as if to solve the heat equation. What technique do you think you can apply here? What technique do we usually turn to?)      The wave equation describes the acceleration of the string so we need to specify its initial position and initial velocity.     How does the form of the solution simplify when the string is initially at rest: .      How does the form of the solution simplify when the string is initially at equilibrium: .       Suppose that the string is initially at rest and . The double angle formulas say that Use this fact to show that the wave breaks into two pieces: a left- and right-traveling wave.      How do the solutions change if the ends are ``free'' rather than clamped:    "
+  "body": " 2.5. The wave equation Intro  MTH 401    The wave equation representing the height of the string in one dimension with wave speed (representing the propagation speed of the wave), constant horizontal tension (i.e. the string is perfectly elastic ), and density , is: In three dimensions the wave equation becomes where is the Laplacian of .      Let's consider the wave equation in a string of length where both ends are clamped: Find the general solution to this equation. (We use the steps steps as if to solve the heat equation. What technique do you think you can apply here? What technique do we usually turn to?)    Separation of variables: , plug in and rearrange to get which separates into and with (the Sturm-Liouville problem). This has solutions for with . Plugging back into we have solutions Thus by superposition the general solution is:       The wave equation describes the acceleration of the string so we need to specify its initial position and initial velocity.     How does the form of the solution simplify when the string is initially at rest: .     so Since are non-zero constants and sine is a function that is not zero for every , then for all . Thus the general solution would simplify to       What if we had a different initial condition instead of the initial velocity being 0? How does the form of the solution simplify when the string is initially at equilibrium: .     which means for all and thus the solution would simplify to        Suppose that the string is initially at rest and . The double angle formulas say that Use this fact to show that the wave breaks into two pieces: a left- and right-traveling wave.    Since the string is initially at rest, that means and so we simplify to part 2a, Then applying the double angle formula with and we have  and since then       How do the solutions change if the ends are ``free'' rather than clamped:    The Sturm-Liouville problem becomes which has solution and .  Then the temporal differential equation also splits into two pieces: when we are solving which has solution . Then for we are solving which has solutions of sine and cosine, or . So the general solution is     "
 },
 {
   "id": "def-wave-eqn-1d",
@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let's consider the wave equation in a string of length where both ends are clamped: Find the general solution to this equation. (We use the steps steps as if to solve the heat equation. What technique do you think you can apply here? What technique do we usually turn to?)   "
+  "body": "  Let's consider the wave equation in a string of length where both ends are clamped: Find the general solution to this equation. (We use the steps steps as if to solve the heat equation. What technique do you think you can apply here? What technique do we usually turn to?)    Separation of variables: , plug in and rearrange to get which separates into and with (the Sturm-Liouville problem). This has solutions for with . Plugging back into we have solutions Thus by superposition the general solution is:    "
 },
 {
   "id": "activities-16-5",
@@ -1267,7 +1267,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  The wave equation describes the acceleration of the string so we need to specify its initial position and initial velocity.     How does the form of the solution simplify when the string is initially at rest: .      How does the form of the solution simplify when the string is initially at equilibrium: .    "
+  "body": "  The wave equation describes the acceleration of the string so we need to specify its initial position and initial velocity.     How does the form of the solution simplify when the string is initially at rest: .     so Since are non-zero constants and sine is a function that is not zero for every , then for all . Thus the general solution would simplify to       What if we had a different initial condition instead of the initial velocity being 0? How does the form of the solution simplify when the string is initially at equilibrium: .     which means for all and thus the solution would simplify to     "
 },
 {
   "id": "activities-16-6",
@@ -1276,7 +1276,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Suppose that the string is initially at rest and . The double angle formulas say that Use this fact to show that the wave breaks into two pieces: a left- and right-traveling wave.   "
+  "body": "  Suppose that the string is initially at rest and . The double angle formulas say that Use this fact to show that the wave breaks into two pieces: a left- and right-traveling wave.    Since the string is initially at rest, that means and so we simplify to part 2a, Then applying the double angle formula with and we have  and since then    "
 },
 {
   "id": "activities-16-7",
@@ -1285,7 +1285,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  How do the solutions change if the ends are ``free'' rather than clamped:   "
+  "body": "  How do the solutions change if the ends are ``free'' rather than clamped:    The Sturm-Liouville problem becomes which has solution and .  Then the temporal differential equation also splits into two pieces: when we are solving which has solution . Then for we are solving which has solutions of sine and cosine, or . So the general solution is    "
 },
 {
   "id": "activities-17",
@@ -1294,7 +1294,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.6. The wave equation continued",
-  "body": " 2.6. The wave equation continued  MTH 401  Let's put a few things together now. We want to solve the equation with both specified boundary conditions AND initial conditions.   Words of wisdom: It is generally a good idea to start by identifying which are the boundary conditions and which are the initial conditions, what is the length of the string, and also determine if any part of this, such as the equation with the corresponding boundary conditions, is something we have previously solved...     Solve the wave equation with fixed boundary conditions (the ends of the string are clamped) and initial conditions where both initial position and initial velocity are non-zero.      When an end is fixed or clamped at the boundary , the boundary condition is . We've seen this a lot.  When the end is free instead, we have a different boundary condition: .      Find the general solution to the following wave equation when the ends are free rather than clamped. (Note no initial conditions are given so alas we can only find the general solution here.)      Let's go back to the first problem and make one small change. Instead of clamped ends, we'll assume both ends are free. Though we'll keep the wave speed and initial conditions the same.  That is, solve the wave equation with the following boundary conditions and initial conditions:     "
+  "body": " 2.6. The wave equation continued  MTH 401  Let's put a few things together now. We want to solve the equation with both specified boundary conditions AND initial conditions.   Words of wisdom: It is generally a good idea to start by identifying which are the boundary conditions and which are the initial conditions, what is the length of the string, and also determine if any part of this, such as the equation with the corresponding boundary conditions, is something we have previously solved...     Solve the wave equation with fixed boundary conditions (the ends of the string are clamped) and initial conditions where both initial position and initial velocity are non-zero.    So and and this is a wave equation with fixed ends. We already have the general solution from the last worksheet where now we will simplify and : Now we need to apply the initial conditions.  Start with which is a Fourier Sine series with coefficients:   Now the second initial condition needs . so then This is a Fourier Sine series with coefficients and not just ! So So . Then the specific solution is       When an end is fixed or clamped at the boundary , the boundary condition is . We've seen this a lot.  When the end is free instead, we have a different boundary condition: .      Find the general solution to the following wave equation when the ends are free rather than clamped. (Note no initial conditions are given so alas we can only find the general solution here.)    We already did this on the previous worksheet. We could do it again from scratch if we want to. Either way we'll get       Let's go back to the first problem and make one small change. Instead of clamped ends, we'll assume both ends are free. Though we'll keep the wave speed and initial conditions the same.  That is, solve the wave equation with the following boundary conditions and initial conditions:     Take the general solution from the previous problem with and : The first initial condition: (we usually see called but it's just a different name.) This is a Fourier Cosine Series with solutions   The second initial condition relies on where so then plugging in And we have the Fourier Cosine series with solutions: so . All together now:     "
 },
 {
   "id": "activities-17-4",
@@ -1312,7 +1312,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Solve the wave equation with fixed boundary conditions (the ends of the string are clamped) and initial conditions where both initial position and initial velocity are non-zero.   "
+  "body": "  Solve the wave equation with fixed boundary conditions (the ends of the string are clamped) and initial conditions where both initial position and initial velocity are non-zero.    So and and this is a wave equation with fixed ends. We already have the general solution from the last worksheet where now we will simplify and : Now we need to apply the initial conditions.  Start with which is a Fourier Sine series with coefficients:   Now the second initial condition needs . so then This is a Fourier Sine series with coefficients and not just ! So So . Then the specific solution is    "
 },
 {
   "id": "def-free-ends",
@@ -1330,7 +1330,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Find the general solution to the following wave equation when the ends are free rather than clamped. (Note no initial conditions are given so alas we can only find the general solution here.)   "
+  "body": "  Find the general solution to the following wave equation when the ends are free rather than clamped. (Note no initial conditions are given so alas we can only find the general solution here.)    We already did this on the previous worksheet. We could do it again from scratch if we want to. Either way we'll get    "
 },
 {
   "id": "activities-17-8",
@@ -1339,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Let's go back to the first problem and make one small change. Instead of clamped ends, we'll assume both ends are free. Though we'll keep the wave speed and initial conditions the same.  That is, solve the wave equation with the following boundary conditions and initial conditions:    "
+  "body": "  Let's go back to the first problem and make one small change. Instead of clamped ends, we'll assume both ends are free. Though we'll keep the wave speed and initial conditions the same.  That is, solve the wave equation with the following boundary conditions and initial conditions:     Take the general solution from the previous problem with and : The first initial condition: (we usually see called but it's just a different name.) This is a Fourier Cosine Series with solutions   The second initial condition relies on where so then plugging in And we have the Fourier Cosine series with solutions: so . All together now:    "
 },
 {
   "id": "activities-18",
@@ -1402,7 +1402,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.8. Laplace’s equation in rectangular coordinates",
-  "body": " 2.8. Laplace's equation in rectangular coordinates  MTH 401     Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. It is given by where for in two dimensions.  Solutions of Laplace's equation are called harmonic functions .      Suppose we have a rectangular plate whose dimensions are . Then Laplace's equation describes the steady state temperature distribution in the plate (steady state of the heat equation here). Solve Laplace's equation in the rectangle with the boundary conditions shown. In particular, on the top and on the other sides.     A rectangle with the bottom left corner at the origin extending 10 units right and 5 units up.        0    0    0    1               Suppose that you have an infinite rectangular plate; that is, the plate is between and . Solve Laplace's equation in this plate with the boundary conditions given.    An open rectangle with the bottom left corner at the origin extending pi units right and infinite units up.          1    0    0    o                  How would the solution to the first problem be different if we change the boundary conditions? (P.S. Can you identify what the boundary conditions mean physically?)     "
+  "body": " 2.8. Laplace's equation in rectangular coordinates  MTH 401     Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. It is given by where for in two dimensions.  Solutions of Laplace's equation are called harmonic functions .      Suppose we have a rectangular plate whose dimensions are . Then Laplace's equation describes the steady state temperature distribution in the plate (steady state of the heat equation here). Solve Laplace's equation in the rectangle with the boundary conditions shown. In particular, on the top and on the other sides.     A rectangle with the bottom left corner at the origin extending 10 units right and 5 units up.        0    0    0    1               Suppose that you have an infinite rectangular plate; that is, the plate is between and . Solve Laplace's equation in this plate with the boundary conditions given.    An open rectangle with the bottom left corner at the origin extending pi units right and infinite units up.          1    0    0    o    \\pi                  How would the solution to the first problem be different if we change the boundary conditions? (P.S. Can you identify what the boundary conditions mean physically?)     "
 },
 {
   "id": "def-laplace-eqn",
@@ -1429,7 +1429,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Suppose that you have an infinite rectangular plate; that is, the plate is between and . Solve Laplace's equation in this plate with the boundary conditions given.    An open rectangle with the bottom left corner at the origin extending pi units right and infinite units up.          1    0    0    o               "
+  "body": "  Suppose that you have an infinite rectangular plate; that is, the plate is between and . Solve Laplace's equation in this plate with the boundary conditions given.    An open rectangle with the bottom left corner at the origin extending pi units right and infinite units up.          1    0    0    o    \\pi               "
 },
 {
   "id": "activities-19-6",
@@ -3014,6 +3014,51 @@ var ptx_lunr_docs = [
   "number": "4",
   "title": "",
   "body": "  Solve the heat equation with boundary and initial conditions in a beam of length .    "
+},
+{
+  "id": "homework-7",
+  "level": "1",
+  "url": "homework-7.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 5",
+  "body": " Homework 5    MTH 401    Due: Monday, October 19 at the beginning of class. You will turn in a paper copy!    Instructions: Homework submissions should represent your very best work. Your work should be neat, clearly presented and complete. In particular, include complete sentences, where appropriate, to explain your thinking. Include the problems in the order given below and be sure to allow plenty of room for your work. You will generally be marked on the methods used to solve a problem rather than just the final answer; answers alone will receive little credit.     Solve the wave equation: where the length of the string is , the ends are clamped (fixed) at 0, the initial position of the string is , and the initial velocity is 0.  Use your favorite plotting software to plot the solution when and when on the same plot, and sketch the plot. (These are 1 dimensional plots since is fixed.)   Optional: For a more informative picture, plot the solution in 2D over the time 0 to 4.      Solve the wave equation:       For the function on the interval , do the following:     Find the general Fourier series of on that interval.      Plot your solution for the previous task using any plotting software and an appropriate number of terms, and sketch the plot.      Does the Gibbs phenomenon occur? Why or why not?       For the function that is periodic with period 6, do the following:     Find the general Fourier series of on that interval.      Plot your solution for the previous task using any plotting software and an appropriate number of terms, and sketch the plot.      Does the Gibbs phenomenon occur? Why or why not?     "
+},
+{
+  "id": "homework-7-3",
+  "level": "2",
+  "url": "homework-7.html#homework-7-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Solve the wave equation: where the length of the string is , the ends are clamped (fixed) at 0, the initial position of the string is , and the initial velocity is 0.  Use your favorite plotting software to plot the solution when and when on the same plot, and sketch the plot. (These are 1 dimensional plots since is fixed.)   Optional: For a more informative picture, plot the solution in 2D over the time 0 to 4.   "
+},
+{
+  "id": "homework-7-4",
+  "level": "2",
+  "url": "homework-7.html#homework-7-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Solve the wave equation:    "
+},
+{
+  "id": "homework-7-5",
+  "level": "2",
+  "url": "homework-7.html#homework-7-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  For the function on the interval , do the following:     Find the general Fourier series of on that interval.      Plot your solution for the previous task using any plotting software and an appropriate number of terms, and sketch the plot.      Does the Gibbs phenomenon occur? Why or why not?    "
+},
+{
+  "id": "homework-7-6",
+  "level": "2",
+  "url": "homework-7.html#homework-7-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  For the function that is periodic with period 6, do the following:     Find the general Fourier series of on that interval.      Plot your solution for the previous task using any plotting software and an appropriate number of terms, and sketch the plot.      Does the Gibbs phenomenon occur? Why or why not?    "
 }
 ]
 

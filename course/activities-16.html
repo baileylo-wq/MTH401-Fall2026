@@ -58,15 +58,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.3';
+eBookConfig.runestone_version = '8.3.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.dd07797f77620576.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.11d27cdc38930c2c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/prefix-runtime.7e4cb14f24eb489b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.54371ed119fe41be.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.40d828091d93b733.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -262,6 +262,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-4.html" class="internal"><span class="title">Homework 3</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-5.html" class="internal"><span class="title">Midterm 1</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-6.html" class="internal"><span class="title">Homework 4</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-7.html" class="internal"><span class="title">Homework 5</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
@@ -275,7 +276,10 @@ eBookConfig.enable_chatcodes =  false;
         </label><label><input type="radio" name="papersize" value="letter">Letter
         </label>
 </form>
-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
 <div class="header-option">
 <span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
@@ -294,7 +298,9 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">2.5. The wave equation Intro</span><div class="print-links"><a href="?printpreview=activities-16" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<em class="alert">MTH 401</em>
+<div class="para" id="activities-16-2">
+<em class="alert">MTH 401</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-wave-eqn-1d"><h2 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h2>
@@ -331,6 +337,33 @@ u(L,t) \amp  =  0
 <div class="para">Find the general solution to this equation. (We use the steps steps as if to solve the heat equation. What technique do you think you can apply here? What technique do we usually turn to?)</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-16-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-16-4-2-1">
+<div class="para">Separation of variables: <span class="process-math">\(u(x,t) = X(x)T(t)\text{,}\)</span> plug in and rearrange to get</div>
+<div class="displaymath process-math" id="activities-16-4-2-1-2">
+\begin{equation*}
+\frac{1}{v^2} \frac{T''}{T} = \frac{X''}{X} = -k
+\end{equation*}
+</div>
+<div class="para">which separates into <span class="process-math">\(T''=-kv^2T\)</span> and <span class="process-math">\(X''=-kX\)</span> with <span class="process-math">\({X(0)=0, X(L)=0}\)</span> (the Sturm-Liouville problem). This has solutions <span class="process-math">\({k=(\frac{n\pi}{L})^2}\)</span> for <span class="process-math">\({n=1,2,\ldots}\)</span> with <span class="process-math">\({X_n = \sin(\frac{n\pi x}{L})}\text{.}\)</span>  Plugging back into <span class="process-math">\({T'' = -(\frac{n\pi v}{L})^2T}\)</span> we have solutions</div>
+<div class="displaymath process-math" id="activities-16-4-2-1-10">
+\begin{equation*}
+T_n = A_n \cos(\frac{n\pi v t}{L})+B_n \sin(\frac{n\pi v t}{L}).
+\end{equation*}
+</div>
+<div class="para">Thus by superposition the general solution is:</div>
+<div class="displaymath process-math" id="activities-16-4-2-1-11">
+\begin{equation*}
+u(x,t) = \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) +  B_n \sin\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#activities-16-4-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="2in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#activities-16-4" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
@@ -342,11 +375,57 @@ u(L,t) \amp  =  0
 <article class="task exercise-like" id="activities-16-5-2"><h3 class="heading"><span class="codenumber">(a)</span></h3>
 <div class="para" id="activities-16-5-2-1-1">How does the form of the solution simplify when the string is initially at rest: <span class="process-math">\(\ds \frac{\partial u}{\partial t}(x,0) = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-16-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-16-5-2-2-1">
+<div class="displaymath process-math" id="activities-16-5-2-2-1-1">
+\begin{equation*}
+\pd{u}{t}=\sum_{n=1}^{\infty} -A_n \left(\frac{n\pi v}{L}\right)\sin\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) +  B_n \left(\frac{n \pi v}{L}\right)\cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right)
+\end{equation*}
+</div>
+<div class="para">so</div>
+<div class="displaymath process-math" id="activities-16-5-2-2-1-2">
+\begin{equation*}
+\pd{u}{t}(x,0)=\sum_{n=1}^{\infty} 0 +  B_n \left(\frac{n \pi v}{L}\right)\sin\left(\frac{n\pi x}{L}\right) = 0
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(n, v, L\)</span> are non-zero constants and sine is a function that is not zero for every <span class="process-math">\(x\text{,}\)</span> then <span class="process-math">\({B_n=0}\)</span> for all <span class="process-math">\(n\text{.}\)</span>  Thus the general solution would simplify to</div>
+<div class="displaymath process-math" id="activities-16-5-2-2-1-7">
+\begin{equation*}
+u(x,t) = \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) 
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.a.1"><a tabindex="-1" href="#activities-16-5-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="3.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#activities-16-5-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="activities-16-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="activities-16-5-3-1-1">How does the form of the solution simplify when the string is initially at equilibrium: <span class="process-math">\(u(x,0) = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activities-16-5-3-1-1">What if we had a different initial condition instead of the initial velocity being 0?  How does the form of the solution simplify when the string is initially at equilibrium: <span class="process-math">\(u(x,0) = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-16-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-16-5-3-2-1">
+<div class="displaymath process-math" id="activities-16-5-3-2-1-1">
+\begin{equation*}
+u(x,0) = \sum_{n=1}^{\infty} A_n \sin\left(\frac{n\pi x}{L}\right) +  0 = 0
+\end{equation*}
+</div>
+<div class="para">which means <span class="process-math">\({A_n = 0}\)</span> for all <span class="process-math">\(n\)</span> and thus the solution would simplify to</div>
+<div class="displaymath process-math" id="activities-16-5-3-2-1-4">
+\begin{equation*}
+u(x,t) = \sum_{n=1}^{\infty}  B_n \sin\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.b.1"><a tabindex="-1" href="#activities-16-5-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#activities-16-5-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
@@ -370,6 +449,38 @@ f(x)\text{.}\)</span>  The double angle formulas say that</div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="activities-16-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activities-16-6-2-1">
+<div class="para">Since the string is initially at rest, that means <span class="process-math">\(\pd u t(x,0) = 0\)</span> and so we simplify to part 2a,</div>
+<div class="displaymath process-math" id="activities-16-6-2-1-2">
+\begin{equation*}
+u(x,t) = \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) 
+\end{equation*}
+</div>
+<div class="para">Then applying the double angle formula with <span class="process-math">\({\alpha = \frac{n\pi x}{L}}\)</span> and <span class="process-math">\({\beta = \frac{n\pi v t}L}\)</span> we have</div>
+<div class="displaymath process-math" id="activities-16-6-2-1-5">
+\begin{equation*}
+u(x,t) = \sum_{n=1}^\infty A_n \frac12 \left[\sin\left(\frac{n\pi x}{L} + \frac{n \pi v t}{L}\right) + \sin\left(\frac{n\pi x}{L} - \frac{n \pi v t}{L}\right) \right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activities-16-6-2-1-6">
+\begin{equation*}
+= \sum_{n=1}^\infty \frac{A_n}{2} \left[\sin\left(\frac{n\pi}{L}(x+vt)\right) + \sin\left(\frac{n\pi }{L} (x-vt)\right) \right]
+\end{equation*}
+</div>
+<div class="para">and since <span class="process-math">\(u(x,0) = f(x)=\sum_{n=1}^\infty A_n \sin\left(\frac{n\pi}{L}(x)\right)\)</span> then</div>
+<div class="displaymath process-math" id="activities-16-6-2-1-8">
+\begin{equation*}
+u(x,t) = \frac12(f(x+vt) + f(x-vt)).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#activities-16-6-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
 <div class="workspace" data-space="2.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#activities-16-6" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
 </article>
@@ -383,6 +494,23 @@ f(x)\text{.}\)</span>  The double angle formulas say that</div>
 \end{align*}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activities-16-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activities-16-7-2-1">The Sturm-Liouville problem becomes <span class="process-math">\({X''=-kX, X'(0)=0, X'(L)=0}\)</span> which has solution <span class="process-math">\({k=0, X_0 = 1}\)</span> and <span class="process-math">\({k=\left(\frac{n\pi}L\right)^2, X_n = \cos\left(\frac{n\pi x}L\right)}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activities-16-7-2-2">
+<div class="para">Then the temporal differential equation also splits into two pieces: when <span class="process-math">\({k=0}\)</span> we are solving <span class="process-math">\(T_0 '' = 0\)</span> which has solution <span class="process-math">\({T_0 = A_0t+B_0}\text{.}\)</span>  Then for <span class="process-math">\({n=1,2,...}\)</span> we are solving <span class="process-math">\({T_n'' = -\left(\frac{n\pi v}L\right)^2 T_n}\)</span> which has solutions of sine and cosine, <span class="process-math">\(\cos\left(\frac{n\pi v t}L\right)\)</span> or <span class="process-math">\(\sin\left(\frac{n\pi v t}L\right)\text{.}\)</span> So the general solution is</div>
+<div class="displaymath process-math" id="activities-16-7-2-2-8">
+\begin{equation*}
+u(x,t) =A_0t + B_0 + \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\cos\left(\frac{n\pi x}{L}\right) +  B_n \sin\left(\frac{n\pi v t}{L}\right)\cos\left(\frac{n\pi x}{L}\right)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activities-16-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#activities-16-7-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
 </div>
 <div class="workspace" data-space="2.5in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#activities-16-7" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>

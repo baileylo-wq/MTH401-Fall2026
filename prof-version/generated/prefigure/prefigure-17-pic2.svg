@@ -123,5 +123,21 @@
       </svg>
     </g>
   </g>
+  <g id="prefigure-17-pic2-label-6" transform="translate(156.2,179.0) translate(-5.2,-0.0)">
+    <g id="prefigure-17-pic2-g-7">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.320px" height="8.000px" role="img" focusable="false" viewBox="0 -431 570 442" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-17-pic2-MJX-8-TEX-I-1D70B" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple" data-semantic-id="0" data-semantic-speech="pi">
+              <use data-c="1D70B" xlink:href="#prefigure-17-pic2-MJX-8-TEX-I-1D70B"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
   <path id="prefigure-17-pic2-path-0" d="M 105.0 55.0 L 105.0 45.0 L 102.9 44.3 L 100.9 43.7 L 99.1 43.0 L 97.6 42.3 L 96.3 41.7 L 95.5 41.0 L 95.1 40.3 L 95.1 39.7 L 95.5 39.0 L 96.3 38.3 L 97.6 37.7 L 99.1 37.0 L 100.9 36.3 L 102.9 35.7 L 105.0 35.0 L 107.1 34.3 L 109.1 33.7 L 110.9 33.0 L 112.4 32.3 L 113.7 31.7 L 114.5 31.0 L 114.9 30.3 L 114.9 29.7 L 114.5 29.0 L 113.7 28.3 L 112.4 27.7 L 110.9 27.0 L 109.1 26.3 L 107.1 25.7 L 105.0 25.0 L 105.0 25.0 L 105.0 15.0" stroke="black" stroke-width="3" fill="none" clip-path="url(#prefigure-17-pic2-clipPath-1)" marker-end="url(#prefigure-17-pic2-arrow-head-end-3_None_24_60-black)"/>
 </svg>
