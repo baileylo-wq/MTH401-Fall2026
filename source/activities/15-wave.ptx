@@ -2,7 +2,7 @@
 <worksheet>
   <title>2.6. The wave equation continued</title>
 
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
   <p>
     Let's put a few things together now.  We want to solve the equation with both specified boundary
     conditions AND initial conditions.  
@@ -31,6 +31,46 @@
 <mrow>\pd{u}{t}(x,0)  \amp  =  x</mrow>
 </md></p>
     </statement>
+    <solution component="S2-6-soln">
+      <p>
+        So <m>L = \pi</m> and <m>v=2</m> and this is a wave equation with 
+        fixed ends.  We already have the general solution from the last worksheet where now 
+        we will simplify <m>\frac{n\pi v}{L} = nv</m> and <m>\frac{n\pi}{L}=n</m>:
+        <md>
+          u(x,t) = \sum_{n=1}^{\infty} A_n \cos\left(2nt\right)\sin\left(nx\right) +  B_n \sin\left(2nt\right)\sin\left(nx\right).
+         </md>
+         Now we need to apply the initial conditions.  
+      </p>
+      <p>
+        Start with <m>u(x,0) = \pi x-x^2 = \sum_{n=1}^{\infty} A_n\sin(nx)+0</m>
+        which is a Fourier Sine series with coefficients:
+        <md>
+          A_n=\frac2\pi \int_0^\pi (\pi x - x^2)\sin(nx)~dx= -\frac{4(-1+(-1)^n)}{n^3\pi}
+        </md>
+        
+      </p>
+      <p>
+        Now the second initial condition needs <m>\pd u t</m>. 
+        <md>
+          \pd ut =\sum_{n=1}^{\infty} -2n A_n \sin\left(2nt\right)\sin\left(nx\right) +  2nB_n \cos\left(2nt\right)\sin\left(nx\right)
+        
+        </md>
+        so then 
+        <md>
+          \pd ut(x,0) =x = \sum_{n=1}^{\infty}  2nB_n \sin\left(nx\right)
+        
+        </md>
+        This is a Fourier Sine series with coefficients <m>2nB_n</m> and not just <m>B_n</m>! So
+        <md>
+          2nB_n = \frac2\pi \int_0^\pi x \sin(nx)~dx = \frac{-2(-1)^n}{n}
+        </md>
+        So <m>{B_n = \frac{-(-1)^n}{n^2}}</m>.  Then the specific solution is 
+        <md>
+          u(x,t) = \sum_{n=1}^{\infty} -\frac{4(-1+(-1)^n)}{n^3\pi} \cos\left(2nt\right)\sin\left(nx\right) +  \frac{-(-1)^n}{n^2}\sin\left(2nt\right)\sin\left(nx\right).
+         </md>
+
+      </p>
+    </solution>
   </exercise>
 
 
@@ -57,6 +97,14 @@
 <mrow>\frac{\partial u}{\partial x}(L,t) \amp  =   0</mrow>
 </md></p>
     </statement>
+    <solution component="S2-6-soln">
+      <p>
+        We already did this on the previous worksheet.  We could do it again from scratch if we want to.  Either way we'll get 
+        <md>
+          u(x,t) =A_0t + B_0 + \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\cos\left(\frac{n\pi x}{L}\right) +  B_n \sin\left(\frac{n\pi v t}{L}\right)\cos\left(\frac{n\pi x}{L}\right)
+        </md>
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="4in">
@@ -79,6 +127,46 @@
         
       </p>
     </statement>
+    <solution component="S2-6-soln">
+      <p>
+        Take the general solution from the previous problem with <m>L =\pi</m> and <m>v=2</m>:
+        <md>
+          u(x,t) =A_0t + B_0 + \sum_{n=1}^{\infty} A_n \cos\left(2nt\right)\cos\left(nx\right) +  B_n \sin\left(2nt\right)\cos\left(nx\right)
+        </md>
+        The first initial condition:
+        <md>
+          u(x,0) = \pi x - x^2 = B_0 + \sum_{n=1}^\infty A_n\cos(nx)+0
+        </md>
+        (we usually see <m>B_0</m> called <m>A_0</m> but it's just a different name.)
+        This is a Fourier Cosine Series with solutions
+        <md>
+                    <mrow>B_0 \amp = \frac1\pi \int_0^\pi(\pi x - x^2)~dx = \frac{\pi^2}{6} </mrow>
+                    <mrow>A_n \amp = \frac2\pi\int_0^\pi(\pi x - x^2)\cos(nx)~dx = \frac{-2(1+(-1)^n)}{n^2} </mrow>
+        </md>
+      
+      </p>
+      <p>
+        The second initial condition relies on <m>\pd ut</m> where 
+        <md>
+          \pd ut = A_0 + \sum_{n=1}^{\infty} -2n A_n \sin\left(2nt\right)\cos\left(nx\right) +  2nB_n \cos\left(2nt\right)\cos\left(nx\right)
+        </md>
+        so then plugging in 
+        <md>
+          \pd ut(x,0) x = = A_0 + \sum_{n=1}^{\infty} 2nB_n \cos\left(2nt\right)\cos\left(nx\right)
+        </md>
+        And we have the Fourier Cosine series with solutions:
+        <md>
+                    <mrow>A_0 \amp = \frac1\pi \int_0^\pi(x)~dx = \frac{\pi}{2} </mrow>
+                    <mrow>2nB_n \amp = \frac2\pi\int_0^\pi(x)\cos(nx)~dx = \frac{2(-1+(-1)^n)}{n^2 \pi} </mrow>
+        </md>
+        so <m>{B_n = \frac{-1+(-1)^n}{n^3\pi}}</m>.  All together now:
+
+        <md>
+          u(x,t) =\frac{\pi}{2}t + \frac{\pi^2}{6} + \sum_{n=1}^{\infty} \frac{-2(1+(-1)^n)}{n^2}\cos\left(2nt\right)\cos\left(nx\right) +  \frac{-1+(-1)^n}{n^3\pi} \sin\left(2nt\right)\cos\left(nx\right)
+        </md>
+        
+      </p>
+    </solution>
   </exercise>
 
 </worksheet>

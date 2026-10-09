@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.5. The wave equation Intro</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
 
 
@@ -38,6 +38,27 @@
 </md>
   Find the general solution to this equation. (We use the steps steps as if to solve the heat equation. What technique do you think you can apply here? What technique do we usually turn to?)</p>
     </statement>
+    <solution component="S2-5-soln">
+      <p>
+        Separation of variables: <m>u(x,t) = X(x)T(t)</m>, plug in and rearrange to get 
+        <md>
+          \frac{1}{v^2} \frac{T''}{T} = \frac{X''}{X} = -k
+        </md>
+        which separates into <m>T''=-kv^2T</m> and 
+        <m>X''=-kX</m> with <m>{X(0)=0, X(L)=0}</m> (the Sturm-Liouville problem). 
+        This has solutions <m>{k=(\frac{n\pi}{L})^2}</m> for <m>{n=1,2,\ldots}</m> with
+        <m>{X_n = \sin(\frac{n\pi x}{L})}</m>.  Plugging back into <m>{T'' = -(\frac{n\pi v}{L})^2T}</m> we have
+        solutions 
+        <md>
+          T_n = A_n \cos(\frac{n\pi v t}{L})+B_n \sin(\frac{n\pi v t}{L}).
+        </md>
+         Thus by superposition the general solution is:
+         <md>
+          u(x,t) = \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) +  B_n \sin\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right)
+         </md>
+         
+      </p>
+    </solution>
   </exercise>
 
   <exercise>
@@ -50,12 +71,42 @@
         <p>How does the form of the solution simplify when the string is
   initially at rest: <m>\ds \frac{\partial u}{\partial t}(x,0) = 0</m>.</p>
       </statement>
+    <solution component="S2-5-soln">
+      <p>
+        <md>
+          \pd{u}{t}=\sum_{n=1}^{\infty} -A_n \left(\frac{n\pi v}{L}\right)\sin\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) +  B_n \left(\frac{n \pi v}{L}\right)\cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right)
+        </md>
+        so 
+        <md>
+          \pd{u}{t}(x,0)=\sum_{n=1}^{\infty} 0 +  B_n \left(\frac{n \pi v}{L}\right)\sin\left(\frac{n\pi x}{L}\right) = 0
+        </md>
+        Since <m>n, v, L</m> are non-zero constants and sine is a function that is not zero for every <m>x</m>, then
+        <m>{B_n=0}</m> for all <m>n</m>.  Thus the general solution would simplify to
+        <md>
+          u(x,t) = \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) 
+         </md>
+      </p>
+    </solution>
     </task>
     <task workspace="3in">
       <statement>
-        <p>How does the form of the solution simplify when the string is
+        <p>What if we had a different initial condition instead of the initial velocity being 0?  How does the form of the solution simplify when the string is
   initially at equilibrium: <m>u(x,0) = 0</m>.</p>
       </statement>
+    <solution component="S2-5-soln">
+      <p>
+        <md>
+          u(x,0) = \sum_{n=1}^{\infty} A_n \sin\left(\frac{n\pi x}{L}\right) +  0 = 0
+         </md>
+         which means <m>{A_n = 0}</m> for all <m>n</m> and thus the solution would 
+         simplify to 
+        
+          <md>
+          u(x,t) = \sum_{n=1}^{\infty}  B_n \sin\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right)
+         </md>
+         
+      </p>
+    </solution>
     </task>
   </exercise>
 
@@ -73,6 +124,27 @@
   \ds u(x,t) = \frac12(f(x+vt) + f(x-vt)).
   </md></p>
     </statement>
+    <solution component="S2-5-soln">
+      <p>
+        Since the string is initially at rest, that means <m>\pd u t(x,0) = 0</m> and so we simplify to part 2a,  
+        <md>
+          u(x,t) = \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\sin\left(\frac{n\pi x}{L}\right) 
+         </md>
+         Then applying the double angle formula with <m>{\alpha = \frac{n\pi x}{L}}</m>
+         and <m>{\beta = \frac{n\pi v t}L}</m> we have
+         <md>
+          u(x,t) = \sum_{n=1}^\infty A_n \frac12 \left[\sin\left(\frac{n\pi x}{L} + \frac{n \pi v t}{L}\right) + \sin\left(\frac{n\pi x}{L} - \frac{n \pi v t}{L}\right) \right]
+        </md>
+        <md>
+          = \sum_{n=1}^\infty \frac{A_n}{2} \left[\sin\left(\frac{n\pi}{L}(x+vt)\right) + \sin\left(\frac{n\pi }{L} (x-vt)\right) \right]
+        </md>
+        and since <m>u(x,0) = f(x)=\sum_{n=1}^\infty A_n \sin\left(\frac{n\pi}{L}(x)\right)</m>
+        then <md>
+          u(x,t) = \frac12(f(x+vt) + f(x-vt)).
+        </md>
+        
+      </p>
+    </solution>
   </exercise>
 
   <exercise workspace="2.5in">
@@ -84,6 +156,25 @@
 <mrow>\ds \frac{\partial u}{\partial x}(L,t) \amp  =  0</mrow>
 </md></p>
     </statement>
+    <solution component="S2-5-soln">
+      <p>
+        The Sturm-Liouville problem becomes <m>{X''=-kX, X'(0)=0, X'(L)=0}</m>
+        which has solution 
+        <m>{k=0, X_0 = 1}</m> and <m>{k=\left(\frac{n\pi}L\right)^2, X_n = \cos\left(\frac{n\pi x}L\right)}</m>. 
+        </p>
+      <p>
+        Then the temporal differential equation also splits into two pieces:
+        when <m>{k=0}</m> we are solving <m>T_0 '' = 0</m> which has solution
+        <m>{T_0 = A_0t+B_0}</m>.  Then for <m>{n=1,2,...}</m> we are solving 
+        <m>{T_n'' = -\left(\frac{n\pi v}L\right)^2 T_n}</m> which has solutions of 
+        sine and cosine, <m>\cos\left(\frac{n\pi v t}L\right)</m> or <m>\sin\left(\frac{n\pi v t}L\right)</m>. 
+        So the general solution is 
+        <md>
+          u(x,t) =A_0t + B_0 + \sum_{n=1}^{\infty} A_n \cos\left(\frac{n\pi v t}{L}\right)\cos\left(\frac{n\pi x}{L}\right) +  B_n \sin\left(\frac{n\pi v t}{L}\right)\cos\left(\frac{n\pi x}{L}\right)
+        </md>
+        
+      </p>
+    </solution>
   </exercise>
 
 </worksheet>

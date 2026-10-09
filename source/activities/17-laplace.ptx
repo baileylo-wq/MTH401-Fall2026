@@ -107,6 +107,9 @@
           <label anchor="(pi/2,7)" alignment="ne" offset="(1,14)">
            <m>o</m>
           </label>
+          <label anchor="(pi,0)" alignment="s">
+           <m>\pi</m>
+           </label>
 
           <path start="(pi/2,6)" closed="no" arrows="1" stroke="black" thickness="3">
       <rlineto point="(0,2)"
