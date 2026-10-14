@@ -1447,7 +1447,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.9. Laplace’s equation in a disk",
-  "body": " 2.9. Laplace's equation in a disk  MTH 401     Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. For in polar coordinates for a two dimensional disk, Laplace's equation becomes   For a disk of radius , the boundary condition then becomes for some function . The implicit boundary conditions due to the periodicity of are and , along with representing no singularities at the origin.      Find the solution to Laplace's equation in a disk of radius 2 assuming that the function on the boundary is      Let's see what it looks like.     You can graph your solution using Mathematica. However, because the result is expressed in terms of polar coordinates, you can do this using the ParametericPlot3D command. To plot a function for a radius that goes from and an angle that goes between , type   ParametricPlot3D[ {r*Cos[theta], r*Sin[theta], function, {r, 0, a}, {theta, b, c}]}       Thinking of as a steady-state temperature distribution, where is the warmest point on the disk? Where is the coldest point?      What is the value at the center of the disk? How can you easily determine it from the boundary values ?     "
+  "body": " 2.9. Laplace's equation in a disk  MTH 401     Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. For in polar coordinates for a two dimensional disk, Laplace's equation becomes   For a disk of radius , the boundary condition then becomes for some function . The implicit boundary conditions due to the periodicity of are and , along with representing no singularities at the origin.      Find the solution to Laplace's equation in a disk of radius 2 assuming that the function on the boundary is      Let's see what it looks like.     You can graph your solution using Mathematica. However, because the result is expressed in terms of polar coordinates, you can do this using the ParametericPlot3D command. To plot a function for a radius that goes from and an angle that goes between , type   ParametricPlot3D[ {r*Cos[theta], r*Sin[theta], function}, {r, 0, a}, {theta, b, c}]       Thinking of as a steady-state temperature distribution, where is the warmest point on the disk? Where is the coldest point?      What is the value at the center of the disk? How can you easily determine it from the boundary values ?     "
 },
 {
   "id": "def-laplace-eqn-polar",
@@ -1474,7 +1474,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Let's see what it looks like.     You can graph your solution using Mathematica. However, because the result is expressed in terms of polar coordinates, you can do this using the ParametericPlot3D command. To plot a function for a radius that goes from and an angle that goes between , type   ParametricPlot3D[ {r*Cos[theta], r*Sin[theta], function, {r, 0, a}, {theta, b, c}]}       Thinking of as a steady-state temperature distribution, where is the warmest point on the disk? Where is the coldest point?      What is the value at the center of the disk? How can you easily determine it from the boundary values ?    "
+  "body": "  Let's see what it looks like.     You can graph your solution using Mathematica. However, because the result is expressed in terms of polar coordinates, you can do this using the ParametericPlot3D command. To plot a function for a radius that goes from and an angle that goes between , type   ParametricPlot3D[ {r*Cos[theta], r*Sin[theta], function}, {r, 0, a}, {theta, b, c}]       Thinking of as a steady-state temperature distribution, where is the warmest point on the disk? Where is the coldest point?      What is the value at the center of the disk? How can you easily determine it from the boundary values ?    "
 },
 {
   "id": "activities-21",
@@ -2923,7 +2923,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Midterm 1",
-  "body": " Midterm 1    MTH 401    Due: Monday, October 5 at the beginning of class. You will turn in a paper copy!    Instructions:   You can use your book (the optional ones if you got them), class notes, and a calculator, Mathematica, Desmos, or Worlfram Alpha. Please show all your work and explain your thinking. Your only other allowed resource is your professor. I want to know what you know, not AI.     Suppose that is the open, upside down cone with vertex at the point and the widest part of the cone given by . Find the flux of through in the \"outward\" direction where the component is positive.      The simplest model of an atomic nucleus is a solid ball of radius having uniform charge density . (Uniform throughout the entire volume of the nucleus.)     Find the electric field at all points, that is find the electric field both inside and outside the solid ball.      Take the center of the ball to be the origin. By integrating appropriately, find the continuous potential function such that at the origin. Note, you may have a piecewise solution.       Find the work done by a force as it moves an object. along the straight line from to , then along part of the unit circle from to , then along the straight line from to .      Find the work done by the force as it moves an object along the spiral parameterized as where .   The spiral parameterized in the problem.    f(x)=(x\/4*cos(x), x\/4*sin(x))             If you agree with the following statement, write it at the end of your exam. \"The work presented here is entirely my own.\" ] Then sign your name. If not, discuss with your professor.    "
+  "body": " Midterm 1    MTH 401    Due: Monday, October 5 at the beginning of class. You will turn in a paper copy!    Instructions:   You can use your book (the optional ones if you got them), class notes, and a calculator, Mathematica, Desmos, or Wolfram Alpha. Please show all your work and explain your thinking. Your only other allowed resource is your professor. I want to know what you know, not AI or your friend.     Suppose that is the open, upside down cone with vertex at the point and the widest part of the cone given by . Find the flux of through in the \"outward\" direction where the component is positive.      The simplest model of an atomic nucleus is a solid ball of radius having uniform charge density . (Uniform throughout the entire volume of the nucleus.)     Find the electric field at all points, that is find the electric field both inside and outside the solid ball.      Take the center of the ball to be the origin. By integrating appropriately, find the continuous potential function such that at the origin. Note, you may have a piecewise solution.       Find the work done by a force as it moves an object along the straight line from to , then along part of the unit circle from to , then along the straight line from to .      Find the work done by the force as it moves an object along the spiral parameterized as where .   The spiral parameterized in the problem.    f(x)=(x\/4*cos(x), x\/4*sin(x))              Honor Code. If you agree with the following statement, write it at the end of your exam. \"The work presented here is entirely my own.\" Then sign your name. If not, discuss with your professor.    "
 },
 {
   "id": "homework-5-3",
@@ -2950,7 +2950,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Find the work done by a force as it moves an object. along the straight line from to , then along part of the unit circle from to , then along the straight line from to .   "
+  "body": "  Find the work done by a force as it moves an object along the straight line from to , then along part of the unit circle from to , then along the straight line from to .   "
 },
 {
   "id": "homework-5-6",
@@ -2968,7 +2968,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  If you agree with the following statement, write it at the end of your exam. \"The work presented here is entirely my own.\" ] Then sign your name. If not, discuss with your professor.   "
+  "body": "   Honor Code. If you agree with the following statement, write it at the end of your exam. \"The work presented here is entirely my own.\" Then sign your name. If not, discuss with your professor.   "
 },
 {
   "id": "homework-6",
