@@ -179,7 +179,7 @@
     <p>
       <md>
       \begin{aligned}
-        \frac{\partial u}{\partial t} \amp  = 4 \nabla^2 u \\
+        \frac{\partial^2 u}{\partial t^2} \amp  = 4 \nabla^2 u \\
         u(x,0) \amp  = 0 \\
         u(0,y) \amp  = 0 \\
         u(10,y) \amp  = 0 \\

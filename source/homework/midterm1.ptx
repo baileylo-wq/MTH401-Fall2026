@@ -18,9 +18,9 @@
 
         <p>
             You can use your book (the optional ones if you got them), class notes, and a calculator, 
-            Mathematica, Desmos, or Worlfram Alpha.  Please show all your work and explain
+            Mathematica, Desmos, or Wolfram Alpha.  Please show all your work and explain
             your thinking. Your only other allowed resource is your professor. 
-            I want to know what you know, not AI.
+            I want to know what you know, not AI or your friend.
         </p>
     </introduction>
 
@@ -76,7 +76,7 @@
                 <md>
                     \mbf F(x,y) = (x^2-y, 3x+2y)
                 </md>
-                as it moves an object. along the straight line from <m>(-1,0)</m>
+                as it moves an object along the straight line from <m>(-1,0)</m>
                 to <m>(1,0)</m>, then along part of the unit circle from 
                 <m>(1,0)</m> to <m>(0,1)</m>, then along the straight line 
                 from <m>(0,1)</m> to <m>(-1,0)</m>.
@@ -116,7 +116,7 @@
     <exercise>
         <statement>
             <p>
-                If you agree with the following statement, write it at the end of your exam. "The work presented here is entirely my own." ]
+                <em>Honor Code.</em> If you agree with the following statement, write it at the end of your exam. "The work presented here is entirely my own." 
                 Then sign your name. If not, 
                 discuss with your professor.
             </p>

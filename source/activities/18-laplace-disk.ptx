@@ -52,7 +52,7 @@
       </p>
       <p>
       <c>
-        ParametricPlot3D[ {r*Cos[theta], r*Sin[theta], function, {r, 0, a}, {theta, b, c}]}
+        ParametricPlot3D[ {r*Cos[theta], r*Sin[theta], function}, {r, 0, a}, {theta, b, c}]
   </c>
   </p>
       </statement>
