@@ -1654,7 +1654,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.13. Series solutions of famous ODEs",
-  "body": " 2.13. Series solutions of famous ODEs  MTH 401    The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials.      Find the polynomial solutions when .       The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer.      The Laguerre polynomial  is this polynomial normalized so that . Find , , and .       The Legendre equation is where is a constant.     Find two linearly independent solutions of the Legendre equation.      Show that is is a nonnegative even integer , then one solution reduces to a polynomial of degree (called a Legendre polynomial ). Find the polynomials corresponding to and .      Show that if is a positive odd integer , then one solution reduces to a polynomial of degree . Find the polynomial solutions with and .       The original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation     "
+  "body": " 2.13. Series solutions of famous ODEs  MTH 401    The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials.      Find the polynomial solutions when .       The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer.      The Laguerre polynomial  is this polynomial normalized so that . Find , , and .       The Legendre equation is where is a constant.     Find two linearly independent solutions of the Legendre equation.      Show that is is a nonnegative even integer , then one solution reduces to a polynomial of degree (called a Legendre polynomial ). Find the polynomials corresponding to and .      Show that if is a positive odd integer , then one solution reduces to a polynomial of degree . Find the polynomial solutions with and .       Our original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation     "
 },
 {
   "id": "activities-24-3",
@@ -1690,7 +1690,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  The original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation    "
+  "body": "  Our original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation    "
 },
 {
   "id": "activities-25",
@@ -3059,6 +3059,60 @@ var ptx_lunr_docs = [
   "number": "4",
   "title": "",
   "body": "  For the function that is periodic with period 6, do the following:     Find the general Fourier series of on that interval.      Plot your solution for the previous task using any plotting software and an appropriate number of terms, and sketch the plot.      Does the Gibbs phenomenon occur? Why or why not?    "
+},
+{
+  "id": "homework-8",
+  "level": "1",
+  "url": "homework-8.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 6",
+  "body": " Homework 6    MTH 401    Due: Monday, November 2 at the beginning of class. You will turn in a paper copy!    Instructions: Homework submissions should represent your very best work. Your work should be neat, clearly presented and complete. In particular, include complete sentences, where appropriate, to explain your thinking. Include the problems in the order given below and be sure to allow plenty of room for your work. You will generally be marked on the methods used to solve a problem rather than just the final answer; answers alone will receive little credit.   Make sure you show me enough work and include enough explanation so I know what you are doing! Be careful of skipping too many steps that your assumptions are no longer valid!      Find the solution to Laplace's equation in a rectangle where and where along the top, bottom, and left, and .      Find the solution to Laplace's equation in a disk of radius 3 where the boundary condition is       Find the solution to the wave equation on a square drum where on the boundary (the membrane is clamped), the membrane is initially at rest ( ), and the initial position of the membrane is given by:       Solve Laplace's equation for the function in a 3-dimensional cube whose sides have length 2. Assume that on five of the sides, and .      Consider a rectangular flag that has length and height . (Fun fact, there are strict requirements for US flags, and this ratio is one of them.) Assume the left side of the flag is fixed at 0, while the other three sides are free. That is we have the wave equation with the following boundary conditions: Find the general solution. A huge help to you - on Homework 4 you did a problem in one-dimension that results in a Sturm-Liouville problem that may be of interest to you. There should be two Sturm-Liouville problems that pop up in this solution, and they are not the same...    "
+},
+{
+  "id": "homework-8-3",
+  "level": "2",
+  "url": "homework-8.html#homework-8-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Find the solution to Laplace's equation in a rectangle where and where along the top, bottom, and left, and .   "
+},
+{
+  "id": "homework-8-4",
+  "level": "2",
+  "url": "homework-8.html#homework-8-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find the solution to Laplace's equation in a disk of radius 3 where the boundary condition is    "
+},
+{
+  "id": "homework-8-5",
+  "level": "2",
+  "url": "homework-8.html#homework-8-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Find the solution to the wave equation on a square drum where on the boundary (the membrane is clamped), the membrane is initially at rest ( ), and the initial position of the membrane is given by:    "
+},
+{
+  "id": "homework-8-6",
+  "level": "2",
+  "url": "homework-8.html#homework-8-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Solve Laplace's equation for the function in a 3-dimensional cube whose sides have length 2. Assume that on five of the sides, and .   "
+},
+{
+  "id": "homework-8-7",
+  "level": "2",
+  "url": "homework-8.html#homework-8-7",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Consider a rectangular flag that has length and height . (Fun fact, there are strict requirements for US flags, and this ratio is one of them.) Assume the left side of the flag is fixed at 0, while the other three sides are free. That is we have the wave equation with the following boundary conditions: Find the general solution. A huge help to you - on Homework 4 you did a problem in one-dimension that results in a Sturm-Liouville problem that may be of interest to you. There should be two Sturm-Liouville problems that pop up in this solution, and they are not the same...   "
 }
 ]
 
