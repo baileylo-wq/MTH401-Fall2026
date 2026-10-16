@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 6</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, November 2 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <em>Instructions:</em> Homework submissions should represent your
+            very best work.
+            Your work should be neat, clearly presented and complete.
+            In particular, include complete sentences, where appropriate, to
+            explain your thinking.
+            Include the problems in the order given below and be sure to allow
+            plenty of room for your work.
+            You will generally be marked on the methods used to solve a problem
+            rather than just the final answer; answers alone will receive little
+            credit.
+        </p>
+        <p>
+            <em>Make sure you show me enough work and include enough explanation so I know what 
+                you are doing!  Be careful of skipping too many steps that your
+                assumptions are no longer valid!
+            </em>
+        </p>
+    </introduction>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the solution <m>u(x,y)</m> to Laplace's equation
+                <m>{\nabla^2 u = 0}</m> in a <m>4\times 8</m> rectangle where
+                <m>{0\le x\le 4}</m> and <m>{0\le y \le 8}</m> where <m>u=0</m>
+                along the top, bottom, and left, and <m>{u(4,y) = y}</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the solution <m>u(r,\theta)</m> to Laplace's equation
+                <m>\nabla^2 u=0</m> in a disk of radius 3 where the boundary
+                condition is
+                <md>
+                    f(\theta) = \begin{cases} 2\pi-\theta &amp; \text{if } 0\leq \theta \leq \pi \\ \theta &amp; \text{if } -\pi \leq \theta \leq 0 \end{cases}
+                </md>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the solution <m>u(x,y,t)</m> to the wave equation
+                <md>
+                    \pdtwo{u}{t} = \nabla^2u
+                </md>
+                on a <m>5\times5</m> square drum where <m>u = 0</m> on the
+                boundary (the membrane is clamped), the membrane is initially at
+                rest (<m>{\frac{\partial u}{\partial t}(x,y,0) = 0}</m>), and
+                the initial position of the membrane is given by:
+                <md>
+                    u(x,y,0) = \sin\left({\pi x}\right) \sin\left(\frac{\pi y}{5}\right).
+                </md>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Solve Laplace's equation <m>{\nabla^2u=0}</m> for the function
+                <m>{u(x,y,z)}</m> in a 3-dimensional cube whose sides have length
+                2.
+                Assume that <m>u=0</m> on five of the sides, and
+                <m>{u(x,y,2) = 1}</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Consider a rectangular flag that has length <m>19</m> and 
+                height <m>10</m>.  (Fun fact, there are strict requirements for 
+                US flags, and this ratio is one of them.)
+                Assume the left side of the flag is fixed at 0, while the other three 
+                sides are free.  That is we have the wave equation with the following 
+                boundary conditions:
+                <md>
+                    <mrow>\pdtwo{u}{t} \amp = \pdtwo{u}{x} </mrow>
+                    <mrow>u(0,y)\amp = 0 </mrow>
+                    <mrow>\pd{u}{x}(19, y) \amp = 0</mrow>
+                    <mrow> \pd{u}{y}(x,0)\amp =0 </mrow>
+                    <mrow>\pd{u}{y}(x,10) \amp = 0</mrow>
+                </md>
+                Find the general solution.  A huge help to you - on Homework 4 you 
+                did a problem in one-dimension that results in a Sturm-Liouville problem
+                that may be of interest to you.  There should be two Sturm-Liouville
+                problems that pop up in this solution, and they are not the same...
+            </p>
+        </statement>
+    </exercise>
+</worksheet>

@@ -90,7 +90,7 @@
   <exercise>
     <introduction>
       <p>
-        The original purpose of using power series to solve differential equations 
+        Our original purpose of using power series to solve differential equations 
         was to solve Bessel's equation, which came up when trying to solve the wave 
         equation in a disk.  Let's return to that...
       </p>
