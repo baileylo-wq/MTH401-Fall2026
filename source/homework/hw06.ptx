@@ -96,7 +96,7 @@
                 sides are free.  That is we have the wave equation with the following 
                 boundary conditions:
                 <md>
-                    <mrow>\pdtwo{u}{t} \amp = \pdtwo{u}{x} </mrow>
+                    <mrow>\pdtwo{u}{t} \amp = \nabla^2 u </mrow>
                     <mrow>u(0,y)\amp = 0 </mrow>
                     <mrow>\pd{u}{x}(19, y) \amp = 0</mrow>
                     <mrow> \pd{u}{y}(x,0)\amp =0 </mrow>
@@ -109,4 +109,21 @@
             </p>
         </statement>
     </exercise>
+
+    <p>
+        <em>Optional read, and only if it interests you!</em>  Fun fact: problem 5 is a simplified version of Boundary Conditions of the Third Kind, 
+        where <m>{X(0) = 0}</m> but <m>{X'(L) = -h X(L)}</m>.  For the heat equation, 
+        <m>{h\gt 0}</m> corresponds to Newton's Law of Cooling and so has physical 
+        relevance, and similar for the wave equation <m>{h\gt 0}</m> has the physical 
+        meaning of a restoring force, the so-called elastic boundary condition.  So in 
+        physical problems we would focus on <m>{h\ge 0}</m>.  Though mathematically there 
+        is some interesting behavior with <m>{h \lt 0}</m>.  For instance, 
+        this would correspond to a vibrating string with a destabilizing force 
+        at the right end, or for the heat equation you can think of it 
+        as thermal energy being constantly put into the rod through the right end.
+        To solve this Sturm-Liouville problem you would still 
+        need to separately check if <m>k \lt 0, k = 0, k \gt 0</m>, but you 
+        have an extra complexity where you also need to account for <m>h</m> 
+        being being positive (a physical situation) or not (a non-physical situation).
+    </p>
 </worksheet>
