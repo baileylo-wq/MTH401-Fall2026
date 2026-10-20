@@ -354,7 +354,7 @@ u(x,y,0) = \sin\left({\pi x}\right) \sin\left(\frac{\pi y}{5}\right).
 <div class="para">Consider a rectangular flag that has length <span class="process-math">\(19\)</span> and height <span class="process-math">\(10\text{.}\)</span>  (Fun fact, there are strict requirements for US flags, and this ratio is one of them.) Assume the left side of the flag is fixed at 0, while the other three sides are free.  That is we have the wave equation with the following boundary conditions:</div>
 <div class="displaymath process-math" id="homework-8-7-1-1-3">
 \begin{align*}
-\pdtwo{u}{t} \amp = \pdtwo{u}{x} \\
+\pdtwo{u}{t} \amp = \nabla^2 u \\
 u(0,y)\amp = 0 \\
 \pd{u}{x}(19, y) \amp = 0\\
 \pd{u}{y}(x,0)\amp =0 \\
@@ -365,7 +365,11 @@ u(0,y)\amp = 0 \\
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-8-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#homework-8-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Homework 6"><a tabindex="-1" href="#homework-8" title="Copy heading and permalink for Worksheet: Homework 6" aria-label="Copy heading and permalink for Worksheet: Homework 6">🔗</a></div>
+</article>
+<div class="para" id="homework-8-8">
+<em class="emphasis">Optional read, and only if it interests you!</em>  Fun fact: problem 5 is a simplified version of Boundary Conditions of the Third Kind, where <span class="process-math">\({X(0) = 0}\)</span> but <span class="process-math">\({X'(L) = -h X(L)}\text{.}\)</span>  For the heat equation, <span class="process-math">\({h\gt 0}\)</span> corresponds to Newton’s Law of Cooling and so has physical relevance, and similar for the wave equation <span class="process-math">\({h\gt 0}\)</span> has the physical meaning of a restoring force, the so-called elastic boundary condition.  So in physical problems we would focus on <span class="process-math">\({h\ge 0}\text{.}\)</span>  Though mathematically there is some interesting behavior with <span class="process-math">\({h \lt 0}\text{.}\)</span>  For instance, this would correspond to a vibrating string with a destabilizing force at the right end, or for the heat equation you can think of it as thermal energy being constantly put into the rod through the right end. To solve this Sturm-Liouville problem you would still need to separately check if <span class="process-math">\(k \lt 0, k = 0, k \gt 0\text{,}\)</span> but you have an extra complexity where you also need to account for <span class="process-math">\(h\)</span> being being positive (a physical situation) or not (a non-physical situation).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-8-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet: Homework 6"><a tabindex="-1" href="#homework-8" title="Copy heading and permalink for Worksheet: Homework 6" aria-label="Copy heading and permalink for Worksheet: Homework 6">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
