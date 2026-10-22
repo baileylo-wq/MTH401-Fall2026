@@ -21,12 +21,7 @@
       <statement>
         <p>If <m>\alpha</m> is a nonnegative integer <m>n</m>, explain why there is a
   polynomial solution.  When normalized according to some convention,
-  these polynomials are known as <term>Chebyshev</term> polynomials.</p>
-      </statement>
-    </task>
-    <task workspace="0.8in">
-      <statement>
-        <p>Find the polynomial solutions when <m>n=0,1,2,3</m>.</p>
+  these polynomials are known as <term>Chebyshev</term> polynomials.  Then find the polynomial solutions when <m>n=0,1,2,3</m>.</p>
       </statement>
     </task>
   </exercise>
@@ -47,12 +42,7 @@
     <task workspace="0.5in">
       <statement>
         <p>Explain why your solution is a polynomial if <m>\lambda = m</m>, a
-  non-negative integer.</p>
-      </statement>
-    </task>
-    <task workspace="1in">
-      <statement>
-        <p>The <term>Laguerre polynomial</term> <m>L_m(x)</m> is this
+  non-negative integer.  The <term>Laguerre polynomial</term> <m>L_m(x)</m> is this
   polynomial normalized so that <m>L_m(0) = 1</m>.
   Find <m>L_0(x)</m>, <m>L_1(x)</m>, <m>L_2(x)</m> and <m>L_3(x)</m>.</p>
       </statement>
@@ -71,14 +61,14 @@
         <p>Find two linearly independent solutions of the Legendre equation.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.3in">
       <statement>
         <p>Show that is <m>\alpha</m> is a nonnegative even integer <m>2n</m>, then one
   solution reduces to a polynomial of degree <m>2n</m> (called a <term>Legendre polynomial</term>).  Find the polynomials
   corresponding to <m>\alpha=0,2</m> and <m>4</m>.</p>
       </statement>
     </task>
-    <task workspace="1in">
+    <task workspace="0.3in">
       <statement>
         <p>Show that if <m>\alpha</m> is a positive odd integer <m>2n+1</m>,
   then one solution reduces to a polynomial of degree <m>2n+1</m>.  Find the

@@ -97,10 +97,10 @@
                 boundary conditions:
                 <md>
                     <mrow>\pdtwo{u}{t} \amp = \nabla^2 u </mrow>
-                    <mrow>u(0,y)\amp = 0 </mrow>
-                    <mrow>\pd{u}{x}(19, y) \amp = 0</mrow>
-                    <mrow> \pd{u}{y}(x,0)\amp =0 </mrow>
-                    <mrow>\pd{u}{y}(x,10) \amp = 0</mrow>
+                    <mrow>u(0,y,t)\amp = 0 </mrow>
+                    <mrow>\pd{u}{x}(19, y,t) \amp = 0</mrow>
+                    <mrow> \pd{u}{y}(x,0,t)\amp =0 </mrow>
+                    <mrow>\pd{u}{y}(x,10,t) \amp = 0</mrow>
                 </md>
                 Find the general solution.  A huge help to you - on Homework 4 you 
                 did a problem in one-dimension that results in a Sturm-Liouville problem
