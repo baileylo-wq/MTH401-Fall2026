@@ -1654,7 +1654,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.13. Series solutions of famous ODEs",
-  "body": " 2.13. Series solutions of famous ODEs  MTH 401    The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials.      Find the polynomial solutions when .       The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer.      The Laguerre polynomial  is this polynomial normalized so that . Find , , and .       The Legendre equation is where is a constant.     Find two linearly independent solutions of the Legendre equation.      Show that is is a nonnegative even integer , then one solution reduces to a polynomial of degree (called a Legendre polynomial ). Find the polynomials corresponding to and .      Show that if is a positive odd integer , then one solution reduces to a polynomial of degree . Find the polynomial solutions with and .       Our original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation     "
+  "body": " 2.13. Series solutions of famous ODEs  MTH 401    The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials. Then find the polynomial solutions when .       The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer. The Laguerre polynomial  is this polynomial normalized so that . Find , , and .       The Legendre equation is where is a constant.     Find two linearly independent solutions of the Legendre equation.      Show that is is a nonnegative even integer , then one solution reduces to a polynomial of degree (called a Legendre polynomial ). Find the polynomials corresponding to and .      Show that if is a positive odd integer , then one solution reduces to a polynomial of degree . Find the polynomial solutions with and .       Our original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation     "
 },
 {
   "id": "activities-24-3",
@@ -1663,7 +1663,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials.      Find the polynomial solutions when .    "
+  "body": "  The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials. Then find the polynomial solutions when .    "
 },
 {
   "id": "activities-24-4",
@@ -1672,7 +1672,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer.      The Laguerre polynomial  is this polynomial normalized so that . Find , , and .    "
+  "body": "  The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer. The Laguerre polynomial  is this polynomial normalized so that . Find , , and .    "
 },
 {
   "id": "activities-24-5",
@@ -1743,8 +1743,8 @@ var ptx_lunr_docs = [
   "url": "activities-26.html",
   "type": "Worksheet",
   "number": "",
-  "title": "2.15. PDEs on cylinders",
-  "body": " 2.15. PDEs on cylinders  MTH 401    Together we found the general solution to the wave equation on a disk. Using that same process, find the general solution to the heat equation on a disk of radius assuming the temperature on the boundary is constantly zero.      Find the general solution to Laplace's equation in a cylinder of radius and height assuming that on the bottom of the cylinder and the curvy side but not necessarily the top. (What kind of coordinates would be good here?)      Find the general solution to the wave equation in a cylinder of radius and height assuming that on the boundary of the cylinder.    "
+  "title": "2.15. PDEs on cylinders - the easier version",
+  "body": " 2.15. PDEs on cylinders - the easier version  MTH 401    Together we found the general solution to the wave equation on a disk. Using that same process, find the general solution to the heat equation on a disk of radius assuming the temperature on the boundary is constantly zero.      Find the general solution to Laplace's equation in a cylinder of radius and height assuming that on the bottom of the cylinder and the curvy side but not necessarily the top. (What kind of coordinates would be good here?)      Find the general solution to the wave equation in a cylinder of radius and height assuming that on the boundary of the cylinder.    "
 },
 {
   "id": "activities-26-3",
