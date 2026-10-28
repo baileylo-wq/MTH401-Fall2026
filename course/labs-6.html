@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Lab</title>
+<title>Lab: The Wave Equation - Applied to Anything</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -186,8 +186,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="labs-5.html#subsec-Higher-Dimensions" class="internal"><span class="title">Higher Dimensions</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="labs-6.html" class="internal"><span class="title">Lab</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-7.html" class="internal"><span class="title">28: Method of characteristics (Lab)</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="labs-6.html" class="internal"><span class="title">Lab: The Wave Equation - Applied to Anything</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-7.html" class="internal"><span class="title">Lab: The Wave Equation - Applied to Anything</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="labs-8.html" class="internal"><span class="title">28: Method of characteristics (Lab)</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -294,106 +295,118 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <section class="worksheet" id="labs-6" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h1 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lab</span><div class="print-links"><a href="?printpreview=labs-6" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lab: The Wave Equation - Applied to Anything</span><div class="print-links"><a href="?printpreview=labs-6" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
 <section class="introduction" id="labs-6-2">
-<div class="para" id="labs-6-2-1">{\Large <dfn class="terminology">The Wave Equation - Applied</dfn><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section>
-<article class="exercise exercise-like" id="labs-6-3"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
-<div class="para" id="labs-6-3-1-1">here<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-2">You’ve probably heard this before, but everything is a simple harmonic oscillator!  Thus everything uses the wave equation.  Why don’t we see wave-like behaviors too often in everyday life?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-3">De Broglie figured out that particles of mass <span class="process-math">\(m\)</span> (in kg), traveling with velocity <span class="process-math">\(v\)</span> (in m/s) have a wavelength <span class="process-math">\(\lambda\)</span> (called a ``de Broglie wavelength’’) given by<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="labs-6-3-1-4">
-<div class="displaymath process-math" id="labs-6-3-1-4-1">
+<div class="para" id="labs-6-2-1">
+<em class="alert">MTH 401</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-2-2">You’ve probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don’t we see wave-like behaviors too often in everyday life?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-6-2-3">
+<div class="para">De Broglie figured out that particles of mass <span class="process-math">\(m\)</span> (in kg), traveling with velocity <span class="process-math">\(v\)</span> (in m/s) have a wavelength <span class="process-math">\(\lambda\)</span> (called a ``de Broglie wavelength’’) given by</div>
+<div class="displaymath process-math" id="labs-6-2-3-4">
 \begin{equation*}
 \lambda = \frac{h}{mv}
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(h = 6.626 \times 10^{-34}\)</span> kg*m<span class="process-math">\(^2\)</span>/s (Planck’s constant!).</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-5">Sanity check:  If the fastest baseball pitch ever recorded is <span class="process-math">\(46.7\)</span> m/s, and a baseball has a mass of <span class="process-math">\(0.145\)</span> kg, what is the wavelength in meters?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-6">Keeping in mind the diameter of a proton is around <span class="process-math">\(0.84 \times 10^{-15}\)</span> meters, should we expect to see wave-like behavior from a baseball pitch?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-7">An electron on the other hand has mass on the order of <span class="process-math">\(10^{-31}\text{.}\)</span>  Should we expect to see wave-like behavior of an electron?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-8">Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.’’  In the ground-state energy, an electron has a velocity of <span class="process-math">\(2.2 \times 10^{6}\)</span> m/s.  If the mass of an electron is about <span class="process-math">\(9.1 \times 10^{-31}\)</span> kg, what is the de Broglie wavelength for an electron in the ground state?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-9">Note, the diameter of a hydrogen atom is about <span class="process-math">\(1.2 \times 10^{-10}\)</span> meters.  Given the wavelength of an electron in it’s ground-state, is the electron likely to demonstrate wavelike behavior?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-10">Standing waves, like a string fixed at both ends, are also quantized.  Only certain wavelengths are allowed, which makes it similar to electrons.  Similar to the wave equation we’ve been studying in class, Schrodinger’s equation models electrons as matter waves.  If we are in just one spatial dimension <span class="process-math">\(x\text{,}\)</span> Schrodinger’s equation says<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="labs-6-3-1-11">
-<div class="displaymath process-math" id="labs-6-3-1-11-1">
+<div class="para">where <span class="process-math">\(h = 6.626 \times 10^{-34}\)</span> kg*m <span class="process-math">\(^2\)</span> /s (Planck’s constant!).</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="onepage" id="labs-6-3">
+<article class="exercise exercise-like" id="labs-6-3-1"><h2 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="labs-6-3-1-1-1">Sanity check: If the fastest baseball pitch ever recorded is <span class="process-math">\(46.7\)</span> m/s, and a baseball has a mass of <span class="process-math">\(0.145\)</span> kg, what is the wavelength in meters?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1cm"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#labs-6-3-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-6-3-2"><h2 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="labs-6-3-2-1-1">Keeping in mind the diameter of a proton is around <span class="process-math">\(0.84 \times 10^{-15}\)</span> meters, should we expect to see wave-like behavior from a baseball pitch?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1cm"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#labs-6-3-2" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-6-3-3"><h2 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="labs-6-3-3-1-1">An electron on the other hand has mass on the order of <span class="process-math">\(10^{-31}\text{.}\)</span> Should we expect to see wave-like behavior of an electron?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1cm"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#labs-6-3-3" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-6-3-4"><h2 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="labs-6-3-4-1-1">Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.’’ In the ground-state energy, an electron has a velocity of <span class="process-math">\(2.2 \times 10^{6}\)</span> m/s. If the mass of an electron is about <span class="process-math">\(9.1 \times 10^{-31}\)</span> kg, what is the de Broglie wavelength for an electron in the ground state?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1cm"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#labs-6-3-4" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="labs-6-3-5"><h2 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="labs-6-3-5-1-1">Note, the diameter of a hydrogen atom is about <span class="process-math">\(1.2 \times 10^{-10}\)</span> meters. Given the wavelength of an electron in it’s ground-state, is the electron likely to demonstrate wavelike behavior?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1cm"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#labs-6-3-5" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article></section><section class="onepage" id="labs-6-4">
+<div class="para" id="labs-6-4-1">Standing waves, like a string fixed at both ends, are also quantized. Only certain wavelengths are allowed, which makes it similar to electrons. Similar to the wave equation we’ve been studying in class, Schrodinger’s equation models electrons as matter waves. If we are in just one spatial dimension <span class="process-math">\(x\text{,}\)</span> Schrodinger’s equation says<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-6-4-2">
+<div class="displaymath process-math" id="labs-6-4-2-1">
 \begin{equation*}
 i\hbar\frac{\partial}{\partial t} \Psi(x,t) = \left[ -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V(x,t) \right]\Psi(x,t).
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-12">Does this look at all familiar?  <span class="process-math">\(\Psi(x,t)\)</span> is a wave function and actually produces a complex number, where <span class="process-math">\(|\Psi^2(x,t)|\)</span> gives a probability density function, the probability of finding an electron within a specific region of space.  <span class="process-math">\(V(x,t)\)</span> is the potential, which represents which state the particle is existing in.   Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate.  A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates.  Sound familiar?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-13">An electron acts like a wave where it doesn’t exist in anyone particular location but it is spread out through an entire atom.  Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-14">A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0\% probability of being found.  The shapes of orbitals are shown below:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-15">\includegraphics[scale=1]{orbitals}<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-16">For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where <span class="process-math">\(\Psi(r,\theta,\phi)\text{,}\)</span> and the solution of Schrodinger’s equation can be solved by separation of all three variables,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="labs-6-3-1-17">
-<div class="displaymath process-math" id="labs-6-3-1-17-1">
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-3">Does this look at all familiar? <span class="process-math">\(\Psi(x,t)\)</span> is a wave function and actually produces a complex number, where <span class="process-math">\(|\Psi^2(x,t)|\)</span> gives a probability density function, the probability of finding an electron within a specific region of space. <span class="process-math">\(V(x,t)\)</span> is the potential, which represents which state the particle is existing in. Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate. A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates. Sound familiar?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-4">An electron acts like a wave where it doesn’t exist in any one particular location but it is spread out through an entire atom. Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-5">A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0% probability of being found. The shapes of orbitals are shown below:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/images/orbitals.png" class="contained" alt="Orbitals for an electron."></div>
+<div class="para" id="labs-6-4-7">For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where <span class="process-math">\(\Psi(r,\theta,\phi)\text{,}\)</span> and the solution of Schrodinger’s equation can be solved by separation of all three variables,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-6-4-8">
+<div class="displaymath process-math" id="labs-6-4-8-1">
 \begin{equation*}
 \Psi(r, \theta,\phi )= R(r)\Theta(\theta)\Phi(\phi),
 \end{equation*}
 </div>
 <div class="para">or just separating the radial piece <span class="process-math">\(R(r)\)</span> from the other two variables <span class="process-math">\(\theta\)</span> and <span class="process-math">\(\phi\)</span> where <span class="process-math">\(Y_{\ell}^m(\theta,\phi)\)</span> are called the spherical harmonics of degree <span class="process-math">\(\ell\)</span> and order <span class="process-math">\(m\)</span> (looks a lot like Bessel’s function!) we then have</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="labs-6-3-1-18">
-<div class="displaymath process-math" id="labs-6-3-1-18-1">
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-6-4-9">
+<div class="displaymath process-math" id="labs-6-4-9-1">
 \begin{equation*}
 \Psi(r, \theta,\phi )= R(r)Y_{\ell}^m(\theta,\phi).
 \end{equation*}
 </div>
-<div class="para">This is the only atom for which we have an exact solution currently.  Each solution state is given by</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="labs-6-3-1-19">
-<div class="displaymath process-math" id="labs-6-3-1-19-1">
+<div class="para">This is the only atom for which we have an exact solution currently. Each solution state is given by</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="labs-6-4-10">
+<div class="displaymath process-math" id="labs-6-4-10-1">
 \begin{equation*}
-\Psi_{n,\ell,m}(r,\theta,\phi) = \sqrt{\left(\frac{2}{na_0}\right)^3 \frac{n-\ell-1)!}{2n[(n+\ell)!]}}e^{-r/na_0} \left(\frac{2r}{na_0}\right)^{\ell} L_{n-\ell-1}^{2\ell+1}\left(\frac{2r}{na_0}\right) Y_{\ell}^m(\theta,\phi).
+\Psi_{n,\ell,m}(r,\theta,\phi) = \sqrt{\left(\frac{2}{na_0}\right)^3 \frac{(n-\ell-1)!}{2n[(n+\ell)!]}}e^{-r/na_0} \left(\frac{2r}{na_0}\right)^{\ell} L_{n-\ell-1}^{2\ell+1}\left(\frac{2r}{na_0}\right) Y_{\ell}^m(\theta,\phi).
 \end{equation*}
 </div>
-<div class="para">(<span class="process-math">\(a_0\)</span> is the Bohr radius).  Interestingly, <span class="process-math">\(L_{n-\ell-1}^{2\ell+1}(\cdots)\)</span> are Laguerre polynomials (we looked at those when finding power series solutions!), <span class="process-math">\(n = 1,2, \ldots\text{,}\)</span> <span class="process-math">\(\ell=0, 1, \ldots n-1\text{,}\)</span> <span class="process-math">\(m=-\ell, \ldots, \ell\text{.}\)</span>
+<div class="para">(<span class="process-math">\(a_0\)</span> is the Bohr radius). Interestingly, <span class="process-math">\(L_{n-\ell-1}^{2\ell+1}(\cdots)\)</span> are Laguerre polynomials (we looked at those when finding power series solutions!), <span class="process-math">\(n = 1,2, \ldots\text{,}\)</span> <span class="process-math">\(\ell=0, 1, \ldots n-1\text{,}\)</span> <span class="process-math">\(m=-\ell, \ldots, \ell\text{.}\)</span>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-20">See any similarities to what we’ve been studying?  Don’t worry, I won’t make you solve it by hand.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-21">................. Switching gears here, let’s talk about resonance.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-22">Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate.  We could force it to vibrate at a different frequency, but that is not it’s natural frequency.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-23">Even a metal plate has natural frequencies.  If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines.  For an analogous picture - think about a one-dimensional string fixed at the ends.  And location where the string doesn’t go up or down is a node.  So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on.  When we extend this to a two-dimensional plate, those nodal locations are now lines.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-24">So the sand will move away from the vibrating regions and cluster along the nodal lines.  And this movement happens almost instantly.  These are called Chladni figures, and different natural resonant frequencies will produce different figures.  See some below:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-25">\includegraphics[scale=1]{Chladni}<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-26">Story time (not well-verified by Dr. Bailey but perhaps you’ll find it interesting enough to look into it?).  The ancient Egyptians knew all about resonate frequencies.  In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1/seconds).  The exact value depends on your position and altitude on Earth.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-27">The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic).  And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz!  Matching the earth’s natural frequency!  And the King’s Chamber was built so that it’s resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="labs-6-3-1-28">So earth acts as a tuning fork, and Giza is tuned to it.  To help capture it, Giza had pure quartz disks permanently placed to ``carry’’ the natural frequency, just like the first radios used crystal receivers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-3-1-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="2cm"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#labs-6-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Lab"><a tabindex="-1" href="#labs-6" title="Copy heading and permalink for Worksheet: Lab" aria-label="Copy heading and permalink for Worksheet: Lab">🔗</a></div>
+<div class="para" id="labs-6-4-11">See any similarities to what we’ve been studying? Don’t worry, I won’t make you solve it by hand.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-12">................. Switching gears here, let’s talk about resonance.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-13">Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate. We could force it to vibrate at a different frequency, but that is not it’s natural frequency.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-14">Even a metal plate has natural frequencies. If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines. For an analogous picture - think about a one-dimensional string fixed at the ends. And location where the string doesn’t go up or down is a node. So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on. When we extend this to a two-dimensional plate, those nodal locations are now lines.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-15">So the sand will move away from the vibrating regions and cluster along the nodal lines. And this movement happens almost instantly. These are called Chladni figures, and different natural resonant frequencies will produce different figures. See some below:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/images/Chladni.png" class="contained" alt="Chladni figures from a metal plate forced to vibrate at different frequencies."></div>
+<div class="para" id="labs-6-4-17">Story time (not well-verified by Dr. Bailey but perhaps you’ll find it interesting enough to look into it?). The ancient Egyptians knew all about resonate frequencies. In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1/seconds). The exact value depends on your position and altitude on Earth.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-18">The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic). And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz! Matching the earth’s natural frequency! And the King’s Chamber was built so that it’s resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="labs-6-4-19">So earth acts as a tuning fork, and Giza is tuned to it. To help capture it, Giza had pure quartz disks permanently placed to "carry" the natural frequency, just like the first radios used crystal receivers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#labs-6-4-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Lab: The Wave Equation - Applied to Anything"><a tabindex="-1" href="#labs-6" title="Copy heading and permalink for Worksheet: Lab: The Wave Equation - Applied to Anything" aria-label="Copy heading and permalink for Worksheet: Lab: The Wave Equation - Applied to Anything">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

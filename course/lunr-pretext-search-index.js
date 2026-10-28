@@ -267,26 +267,53 @@ var ptx_lunr_docs = [
   "url": "labs-6.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Lab",
-  "body": " Lab   {\\Large The Wave Equation - Applied     here  You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by  where kg*m \/s (Planck's constant!).  Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?  Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?  An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?  Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?  Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?  Standing waves, like a string fixed at both ends, are also quantized. Only certain wavelengths are allowed, which makes it similar to electrons. Similar to the wave equation we've been studying in class, Schrodinger's equation models electrons as matter waves. If we are in just one spatial dimension , Schrodinger's equation says   Does this look at all familiar? is a wave function and actually produces a complex number, where gives a probability density function, the probability of finding an electron within a specific region of space. is the potential, which represents which state the particle is existing in. Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate. A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates. Sound familiar?  An electron acts like a wave where it doesn't exist in anyone particular location but it is spread out through an entire atom. Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.  A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0\\% probability of being found. The shapes of orbitals are shown below:  \\includegraphics[scale=1]{orbitals}  For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where , and the solution of Schrodinger's equation can be solved by separation of all three variables,  or just separating the radial piece from the other two variables and where are called the spherical harmonics of degree and order (looks a lot like Bessel's function!) we then have  This is the only atom for which we have an exact solution currently. Each solution state is given by  ( is the Bohr radius). Interestingly, are Laguerre polynomials (we looked at those when finding power series solutions!), , , .  See any similarities to what we've been studying? Don't worry, I won't make you solve it by hand.  ................. Switching gears here, let's talk about resonance.  Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate. We could force it to vibrate at a different frequency, but that is not it's natural frequency.  Even a metal plate has natural frequencies. If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines. For an analogous picture - think about a one-dimensional string fixed at the ends. And location where the string doesn't go up or down is a node. So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on. When we extend this to a two-dimensional plate, those nodal locations are now lines.  So the sand will move away from the vibrating regions and cluster along the nodal lines. And this movement happens almost instantly. These are called Chladni figures, and different natural resonant frequencies will produce different figures. See some below:  \\includegraphics[scale=1]{Chladni}  Story time (not well-verified by Dr. Bailey but perhaps you'll find it interesting enough to look into it?). The ancient Egyptians knew all about resonate frequencies. In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1\/seconds). The exact value depends on your position and altitude on Earth.  The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic). And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz! Matching the earth's natural frequency! And the King's Chamber was built so that it's resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!  So earth acts as a tuning fork, and Giza is tuned to it. To help capture it, Giza had pure quartz disks permanently placed to ``carry'' the natural frequency, just like the first radios used crystal receivers.    "
+  "title": "Lab: The Wave Equation - Applied to Anything",
+  "body": " Lab: The Wave Equation - Applied to Anything    MTH 401   You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by where kg*m \/s (Planck's constant!).      Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?      Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?      An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?      Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?      Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?      Standing waves, like a string fixed at both ends, are also quantized. Only certain wavelengths are allowed, which makes it similar to electrons. Similar to the wave equation we've been studying in class, Schrodinger's equation models electrons as matter waves. If we are in just one spatial dimension , Schrodinger's equation says     Does this look at all familiar? is a wave function and actually produces a complex number, where gives a probability density function, the probability of finding an electron within a specific region of space. is the potential, which represents which state the particle is existing in. Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate. A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates. Sound familiar?  An electron acts like a wave where it doesn't exist in any one particular location but it is spread out through an entire atom. Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.  A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0% probability of being found. The shapes of orbitals are shown below:   Orbitals for an electron.   For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where , and the solution of Schrodinger's equation can be solved by separation of all three variables,   or just separating the radial piece from the other two variables and where are called the spherical harmonics of degree and order (looks a lot like Bessel's function!) we then have   This is the only atom for which we have an exact solution currently. Each solution state is given by   ( is the Bohr radius). Interestingly, are Laguerre polynomials (we looked at those when finding power series solutions!), , , .  See any similarities to what we've been studying? Don't worry, I won't make you solve it by hand.  ................. Switching gears here, let's talk about resonance.  Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate. We could force it to vibrate at a different frequency, but that is not it's natural frequency.  Even a metal plate has natural frequencies. If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines. For an analogous picture - think about a one-dimensional string fixed at the ends. And location where the string doesn't go up or down is a node. So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on. When we extend this to a two-dimensional plate, those nodal locations are now lines.  So the sand will move away from the vibrating regions and cluster along the nodal lines. And this movement happens almost instantly. These are called Chladni figures, and different natural resonant frequencies will produce different figures. See some below:   Chladni figures from a metal plate forced to vibrate at different frequencies.   Story time (not well-verified by Dr. Bailey but perhaps you'll find it interesting enough to look into it?). The ancient Egyptians knew all about resonate frequencies. In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1\/seconds). The exact value depends on your position and altitude on Earth.  The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic). And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz! Matching the earth's natural frequency! And the King's Chamber was built so that it's resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!  So earth acts as a tuning fork, and Giza is tuned to it. To help capture it, Giza had pure quartz disks permanently placed to \"carry\" the natural frequency, just like the first radios used crystal receivers.   "
 },
 {
-  "id": "labs-6-2-1",
+  "id": "labs-6-3-1",
   "level": "2",
-  "url": "labs-6.html#labs-6-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "The Wave Equation - Applied "
-},
-{
-  "id": "labs-6-3",
-  "level": "2",
-  "url": "labs-6.html#labs-6-3",
+  "url": "labs-6.html#labs-6-3-1",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  here  You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by  where kg*m \/s (Planck's constant!).  Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?  Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?  An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?  Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?  Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?  Standing waves, like a string fixed at both ends, are also quantized. Only certain wavelengths are allowed, which makes it similar to electrons. Similar to the wave equation we've been studying in class, Schrodinger's equation models electrons as matter waves. If we are in just one spatial dimension , Schrodinger's equation says   Does this look at all familiar? is a wave function and actually produces a complex number, where gives a probability density function, the probability of finding an electron within a specific region of space. is the potential, which represents which state the particle is existing in. Without going into too many details, a wave function is an eigenvector of position, momentum, energy, and spin - in which case we call it an eigenstate. A quantum state is a linear combination of the eigenstates, or in other words, the superposition of eigenstates. Sound familiar?  An electron acts like a wave where it doesn't exist in anyone particular location but it is spread out through an entire atom. Instead of a specific location, we know the probability that an electron is in a specific region, called an orbital.  A node for an orbital, analogous to nodes in standing waves, are regions where an electron has 0\\% probability of being found. The shapes of orbitals are shown below:  \\includegraphics[scale=1]{orbitals}  For a hydrogen atom, (one proton and one electron), we consider spherical coordinates where , and the solution of Schrodinger's equation can be solved by separation of all three variables,  or just separating the radial piece from the other two variables and where are called the spherical harmonics of degree and order (looks a lot like Bessel's function!) we then have  This is the only atom for which we have an exact solution currently. Each solution state is given by  ( is the Bohr radius). Interestingly, are Laguerre polynomials (we looked at those when finding power series solutions!), , , .  See any similarities to what we've been studying? Don't worry, I won't make you solve it by hand.  ................. Switching gears here, let's talk about resonance.  Every object has a natural, resonant, frequency (or a set of frequencies that are multiples of each other) at which it wants to vibrate. We could force it to vibrate at a different frequency, but that is not it's natural frequency.  Even a metal plate has natural frequencies. If we cover a metal plate with small particles like sand, and we force the metal plate to vibrate, the plate will only vibrate in certain regions, and in between those are nodal lines. For an analogous picture - think about a one-dimensional string fixed at the ends. And location where the string doesn't go up or down is a node. So the first natural frequency looks like half a sine wave where the ends are both nodes, the second looks like one period of a since wave where there is a third node directly in the middle, and so on. When we extend this to a two-dimensional plate, those nodal locations are now lines.  So the sand will move away from the vibrating regions and cluster along the nodal lines. And this movement happens almost instantly. These are called Chladni figures, and different natural resonant frequencies will produce different figures. See some below:  \\includegraphics[scale=1]{Chladni}  Story time (not well-verified by Dr. Bailey but perhaps you'll find it interesting enough to look into it?). The ancient Egyptians knew all about resonate frequencies. In 1952 Winfried Schumann discovered that there are resonating electromagnetic waves in the atmosphere that have a frequency of around 8 Hertz (recall a Hertz is 1\/seconds). The exact value depends on your position and altitude on Earth.  The Schumann frequency for the position of the Pyramid of Giza is 8.1 Hertz (this is the first harmonic). And Giza was built so that the resonant frequency of the whole pyramid was 8.1 Hertz! Matching the earth's natural frequency! And the King's Chamber was built so that it's resonant frequency was 16.2 Hertz, exactly doubled from the first harmonic which is the second harmonic!  So earth acts as a tuning fork, and Giza is tuned to it. To help capture it, Giza had pure quartz disks permanently placed to ``carry'' the natural frequency, just like the first radios used crystal receivers.   "
+  "body": "  Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?   "
+},
+{
+  "id": "labs-6-3-2",
+  "level": "2",
+  "url": "labs-6.html#labs-6-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?   "
+},
+{
+  "id": "labs-6-3-3",
+  "level": "2",
+  "url": "labs-6.html#labs-6-3-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?   "
+},
+{
+  "id": "labs-6-3-4",
+  "level": "2",
+  "url": "labs-6.html#labs-6-3-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?   "
+},
+{
+  "id": "labs-6-3-5",
+  "level": "2",
+  "url": "labs-6.html#labs-6-3-5",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?   "
 },
 {
   "id": "labs-7",
@@ -294,40 +321,94 @@ var ptx_lunr_docs = [
   "url": "labs-7.html",
   "type": "Worksheet",
   "number": "",
+  "title": "Lab: The Wave Equation - Applied to Anything",
+  "body": " Lab: The Wave Equation - Applied to Anything    MTH 401   You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by where kg*m \/s (Planck's constant!).      Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?      Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?      An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?      Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?      Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?       Orbitals for an electron.   Orbitals for an electron.    Chladni figures.   Chladni figures from a metal plate forced to vibrate at different frequencies.     "
+},
+{
+  "id": "labs-7-3-1",
+  "level": "2",
+  "url": "labs-7.html#labs-7-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?   "
+},
+{
+  "id": "labs-7-3-2",
+  "level": "2",
+  "url": "labs-7.html#labs-7-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?   "
+},
+{
+  "id": "labs-7-3-3",
+  "level": "2",
+  "url": "labs-7.html#labs-7-3-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?   "
+},
+{
+  "id": "labs-7-3-4",
+  "level": "2",
+  "url": "labs-7.html#labs-7-3-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?   "
+},
+{
+  "id": "labs-7-3-5",
+  "level": "2",
+  "url": "labs-7.html#labs-7-3-5",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?   "
+},
+{
+  "id": "labs-8",
+  "level": "1",
+  "url": "labs-8.html",
+  "type": "Worksheet",
+  "number": "",
   "title": "28: Method of characteristics (Lab)",
   "body": " 28: Method of characteristics (Lab)   We're going to see an application of the wave equation, in traffic! Specifically, we're going to determine how traffic is actually a {\\underline{shock wave}}!  \\section*{Traffic Flows}  Let's take a 1-way highway, and look at a stretch of road.  \\begin{center} \\includegraphics[scale = 0.6]{highway} \\end{center}  Define:     = density of cars at position at time , units = {\\underline{}}     = velocity of the cars at position at time , units = {\\underline{}}    So a car that begins at ends up at after some short time interval .  Then the product:   = {\\underline{}} , units = {\\underline{}}  We're going to focus on the density function, , and come up with a mathematical model. We find something useful if we consider the number of cars in an interval .  \\begin{center} \\includegraphics[scale = 0.6]{N} \\end{center}  We can get by integrating the density over the interval :   If is the total number of cars in the interval, then the rate of change of the number of cars in this interval is (switch the order of the operators and put everything under an integral):     We can approach this same quantity from a different perspective, a law of conservation. The rate of change of the number of cars in is the difference in the rate at which cars enter the interval on the left at , and the rate at which cars leave on the right at . Can we write this also as an integral from to ?     Altogether we have   Rearrange 2 parts of the equation above to get an integral equal to 0.   Since this is true for EVERY interval , then it must be true that the integrand itself is zero, and we end up with the following equation:   This is the partial differential equation we want to focus on. And we can think of the density function as a wave, the highway is like our string, and the value of the density function is like the height of the string. Of course there is a maximum density of traffic on the road, but we can divide by the maximum density and thus we can assume here that .     {\\underline{}} corresponds to max density: bumper-to-bumper traffic.     {\\underline{}} corresponds to min density: almost no cars on the road.     may correspond to an example such as {\\underline{}}    Let's examine velocity here... It is certainly reasonable to assume velocity depends on density of traffic . When there are no cars on the road ( {\\underline{}}), traffic will move at its maximum speed. Let   We expect that when density increases, the speed will decrease, and that when there is bumper-to-bumper traffic, ( {\\underline{}}), no one is moving and so . Draw a linear possibility on the graph below and determine the equation for that corresponds to it.  \\begin{center} \\includegraphics[scale = 0.5]{vgraph} \\hspace{2cm} $v(\\rho) = {\\underline{\\hspace{3cm}}}$ \\end{center}  This may seem like an overly simplistic assumption, but Lighthill and Whitham describe experimental evidence that justifies its use. (See references.)  Ok, we have an equation for . Let's plug that in to our PDE. We now have: Calculus to the rescue, our final expression is:   \\section*{Method of Characteristics} How do we solve this? Let's assume we have an initial density function . We want to describe how for later times. (Note: this is not the movement of individual cars, but the density which is an aggregated measure of all the cars positions.)    Start at some initial point .    We are used to: fixing and seeing how changes over time at position . What we do instead: we fix , and determine the path we need to take over time to keep that constant value of density, . That is, we find such that ! (Think of density as a wave, so we look for the path of the point starting at so the height of the wave doesn't change! Like a level curve...)    But, since , a CONSTANT, so with the help of multivariable calculus we know:   Compare this to the final expression we had just before we entered the territory of Method of Characteristics. In order to match the two equations, we must have: This is the speed of our wave!  Because we are looking for where , we can sub in for , meaning that the path our point takes is So an initial point moves to the left or right with speed ( is the max velocity possible of the cars, the wave has speed ).   Context check:     If (minimum density), then moves with speed {\\underline{}} to the {\\underline{}}.    If (middle density), then moves with speed {\\underline{}} to the {\\underline{}}.    If (maximum density), then moves with speed {\\underline{}} to the {\\underline{}}.    At what initial density do we move to the right as fast as possible? {\\underline{}}  At what initial density do we move to the left as fast as possible? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  We finally get to apply all we know. Since the speed of our density ``wave'' depends on , we need an initial density ``wave'', i.e. an initial curve for . Let's look at several examples and apply the Method of Characteristics.     Take the initial density to be as shown below, one point is marked.  \\begin{center} \\includegraphics[scale = 0.5]{d0_2} \\end{center}  As time passes, the value will stay the same (so the -coordinate will stay the same), while the -coordinate will move left or right with a speed of . Since is just smaller than 0.25, what is the velocity that corresponds to this initial point ? Does our -coordinate move left or right? Draw an arrow in the graph above representing this movement.  Then look at various other initial points, and determine if that initial point will move left or right in the same. Draw in arrows representing the movement of this initial ``wave.'' Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of should be about twice as long as an arrow representing a speed of .  Connect the tips of the arrows to show how the wave has changed over time, that is sketch .  You should notice the wave ``shears''; this is called the shear rule .  Think about a situation where everyone is stopped at a traffic light, as shown below.  \\begin{center} \\includegraphics[scale = 0.5]{stop_1} \\end{center}  Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave''? Draw the ``wave'' at a later time.      Well that's cool and all, but I did promise you shock waves. Consider the following initial density curve, , where now our curve is increasing.  \\begin{center} \\includegraphics[scale = 0.5]{d0_3} \\end{center}  As before, we consider the density at later times. Draw in the arrows to show which way each point on the curve moves at a later time, and sketch a later curve. (It should shear in a similar way.)  If we let enough time pass, we may notice that we have faster moving points on the wave that trail slower moving points. Eventually, the faster moving points overtake the slower points, leading to some points that appear to take on 3 distinct densities! Is this possible?  So, we've introduced a discontinuity, and this is our shock wave! Where multiple values try to happen all at once. On the bottom of the discontinuity we have some density , and at the top of the discontinuity we have some other density .  \\begin{center} \\includegraphics[scale = 0.5]{d0_5} \\end{center}  Context: You're traveling down a one-lane highway; what does this situation represent?  It turns out that the shock waves moves with a speed that is equal to the average of the speeds on either side of the shock, so the average of the speed at and . This, along with the shear rule, tells us how traffic moves when the stop light suddenly turns red. We'll see two resulting shock waves, as traffic piles up behind the light and clears out in front of the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_2} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_3} \\end{center}  If we turn the light green, the shear rule will apply to the second shock wave where traffic is piled up, and the traffic (the shock wave) will begin to move to the right through the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_4} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_5} \\end{center}  If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.    "
 },
 {
-  "id": "labs-7-2-28-2-1",
+  "id": "labs-8-2-28-2-1",
   "level": "2",
-  "url": "labs-7.html#labs-7-2-28-2-1",
+  "url": "labs-8.html#labs-8-2-28-2-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "What we do instead: "
 },
 {
-  "id": "labs-7-2-32",
+  "id": "labs-8-2-32",
   "level": "2",
-  "url": "labs-7.html#labs-7-2-32",
+  "url": "labs-8.html#labs-8-2-32",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Context check: "
 },
 {
-  "id": "labs-7-3",
+  "id": "labs-8-3",
   "level": "2",
-  "url": "labs-7.html#labs-7-3",
+  "url": "labs-8.html#labs-8-3",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Take the initial density to be as shown below, one point is marked.  \\begin{center} \\includegraphics[scale = 0.5]{d0_2} \\end{center}  As time passes, the value will stay the same (so the -coordinate will stay the same), while the -coordinate will move left or right with a speed of . Since is just smaller than 0.25, what is the velocity that corresponds to this initial point ? Does our -coordinate move left or right? Draw an arrow in the graph above representing this movement.  Then look at various other initial points, and determine if that initial point will move left or right in the same. Draw in arrows representing the movement of this initial ``wave.'' Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of should be about twice as long as an arrow representing a speed of .  Connect the tips of the arrows to show how the wave has changed over time, that is sketch .  You should notice the wave ``shears''; this is called the shear rule .  Think about a situation where everyone is stopped at a traffic light, as shown below.  \\begin{center} \\includegraphics[scale = 0.5]{stop_1} \\end{center}  Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave''? Draw the ``wave'' at a later time.   "
 },
 {
-  "id": "labs-7-4",
+  "id": "labs-8-4",
   "level": "2",
-  "url": "labs-7.html#labs-7-4",
+  "url": "labs-8.html#labs-8-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
