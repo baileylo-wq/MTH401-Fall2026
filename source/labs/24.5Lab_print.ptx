@@ -132,12 +132,23 @@
             </p>
 
 -->         
-            <p>
-                Orbitals for an electron.
+            <p> Schrodinger's
+                equation in 1D:
+            
+                <m>
+                    \quad i\hbar\frac{\partial}{\partial t} \Psi(x,t) = \left[ -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V(x,t) \right]\Psi(x,t).
+                </m>
             </p>
-            <image source="images/orbitals.png" width="85%">
+            <p>
+                Orbitals for an electron:
+            </p>
+            <image source="images/orbitals.png" width="65%">
                   <shortdescription>Orbitals for an electron.</shortdescription>
             </image>
+<p> Hydrogen atom solution states for <m>\Psi(r,\theta,\phi) = R(r) Y_{\ell}^m(\theta,\phi)</m>
+            <md>
+                    \Psi_{n,\ell,m}(r,\theta,\phi) = \sqrt{\left(\frac{2}{na_0}\right)^3 \frac{(n-\ell-1)!}{2n[(n+\ell)!]}}e^{-r/na_0} \left(\frac{2r}{na_0}\right)^{\ell} L_{n-\ell-1}^{2\ell+1}\left(\frac{2r}{na_0}\right) Y_{\ell}^m(\theta,\phi).
+                </md></p>
 <!--
             <p>
                 For a hydrogen atom, (one proton and one electron), we consider
@@ -222,9 +233,9 @@
 
         -->
             <p>
-                Chladni figures.
+                Chladni figures:
             </p>
-            <image source="images/Chladni.png" width="85%">
+            <image source="images/Chladni.png" width="75%">
                   <shortdescription>Chladni figures from a metal plate forced to vibrate at different 
                     frequencies.</shortdescription>
                 </image>

@@ -3,6 +3,9 @@
   <title>2.16. Putting it all together - Laplace's equation on a cylinder</title>
 
   <introduction>
+    <p>
+  <alert>MTH 410</alert>
+</p>
     <p>Last time we looked at a homogeneous system on a cylinder. 
       Today we're going to look at a final example just to see how
 everything fits together. In particular, we'll consider a nonhomogeneous boundary conditions.  

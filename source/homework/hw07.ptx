@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 7</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, November 9 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <em>Make sure you show me enough work and include enough explanation so I know what 
+                you are doing!  Be careful of skipping too many steps that your
+                assumptions are no longer valid!
+            </em>
+        </p>
+    </introduction>
+
+   <exercise>
+  <introduction>
+    <p>
+      A general Sturm-Liouville problem is written in terms of
+      functions <m>p(x)</m>, <m>q(x)</m> and <m>\sigma(x)</m> as
+      <md>
+        \frac{d}{d x}\left[p(x)\frac{d u}{d x}\right] + q(x)u = -k\sigma(x)u
+      </md>
+      along with some boundary conditions.  We want to understand
+      eigenvalues <m>k</m> and nontrivial eigenfunctions <m>u(x)</m>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Our most familiar Sturm-Liouville problem is
+        <m>\frac{d^2u}{d x^2} = -ku</m>.  For this example, identify
+        <m>p(x)</m>, <m>q(x)</m>, and <m>\sigma(x)</m>.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Bessel's equation of order <m>0</m>,
+        (<m>x^2y''+xy'+x^2y=0</m>) rearranged and divided by <m>x</m> becomes
+        <md>
+          <mrow>x\frac{d^2u}{d x^2} + \frac{d u}{d x} = -kxu,</mrow>
+        </md>
+        which is also a Sturm-Liouville problem.
+        Identify <m>p(x)</m>, <m>q(x)</m>, and <m>\sigma(x)</m> in this case.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Given a general Sturm-Liouville problem, we will use the shorthand
+        <md>
+          <mrow>L(u) = \frac{d}{d x}\left[p(x)\frac{d u}{d x}\right] + q(x)u.</mrow>
+        </md>
+        So <m>L</m> is an operation applied to <m>u</m>.  Verify Lagrange's
+        identity:
+        <md>
+          <mrow>uL(v) - vL(u) =
+          \frac{d}{d x}\left[p\left(u\frac{d v}{d x}-v\frac{d u}{d x}\right)\right].</mrow>
+        </md>
+        Hint:
+        For <m>L(v)</m>, replace <m>u</m> with <m>v</m> in <m>L(u)</m>,
+        work on both sides, and don't forget the product rule.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Use this to verify Green's formula:
+        <md>
+          <mrow>\int_a^b\left[uL(v) - vL(u)\right]\,dx =\left.
+          p\left(u\frac{d v}{d x}-v\frac{d u}{d x}\right)\right|_a^b.</mrow>
+        </md>
+      </p>
+    </statement>
+  </task>
+
+   <task>
+    <statement>
+      <p>
+        Use Green's formula to verify that eigenfunctions having
+        different eigenvalues are orthogonal with weight <m>\sigma</m>.
+        That is, suppose that
+        <md>
+          <mrow>L(u) \amp = -k\sigma(x) u(x)</mrow>
+          <mrow>L(v) \amp = -l \sigma(x) v(x),</mrow>
+        </md>
+        where <m>k\neq l</m>, so <m>k</m> and <m>l</m> are the different
+        eigenvalues. Suppose that we have also imposed boundary conditions,
+        such as
+        <md>
+          <mrow>u(a) \amp = 0, \qquad u(b) = 0</mrow>
+          <mrow>v(a) \amp = 0, \qquad v(b) = 0.</mrow>
+        </md>
+        We need to show that
+        <m>\int_a^b u(x)v(x)\sigma(x)\,dx = 0</m>.
+      </p>
+      <p>
+        To do this, begin with Green's formula, and note that
+        <md>
+          <mrow>\int_a^b -vL(u)\,dx = \int_a^b -L(u)v(x)\,dx = \int_a^b ku(x)v(x)\sigma(x)\,dx.</mrow>
+        </md>
+        What else can we say using Green's formula?
+      </p>
+    </statement>
+  </task>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Find the solution to Poisson's equation
+      <md>
+        <mrow>\nabla^2 u = y(1-y)x^3</mrow>
+      </md>
+      in the unit square <m>0\leq x \leq 1</m>, <m>0\leq y \leq 1</m>
+      where <m>u=0</m> on the four sides.
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <introduction>
+    <p>
+      The equation
+      <md>
+        <mrow>y''-2xy'+\lambda y=0,</mrow>
+      </md>
+      where <m>\lambda</m> is a constant, is known as the Hermite equation and
+      is important in mathematical physics.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Find the first four terms in each of two linearly independent
+        solutions.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Notice that if <m>\lambda</m> is a nonnegative even integer, then one
+        of the solutions terminates and becomes a polynomial.  Find the
+        polynomial solutions for <m>\lambda=0,2,4</m>, and <m>6</m>.  (Note
+        that the polynomial is determined only up to a multiplicative
+        constant.  The Hermite polynomial <m>H_n(x)</m> is defined to be the
+        polynomial solution of the Hermite equation with <m>\lambda=2n</m> for
+        which the coefficient of <m>x^n</m> is <m>2^n</m>.)
+      </p>
+    </statement>
+  </task>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Find a solution to the Bessel equation of order two:
+      <md>
+        <mrow>x^2y'' + xy' + (x^2-4)y = 0</mrow>
+      </md>
+      that is bounded at the origin.
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Solve the wave equation
+      <md>
+        <mrow>\frac{\partial^2 u}{\partial t^2} = 9\nabla^2u</mrow>
+      </md>
+      for the circular membrane of radius 6.  The membrane is clamped on the
+      boundary of the disk so that <m>u=0</m> on the boundary.  Let the initial
+      velocity be 0
+      (i.e. <m>\frac{\partial u}{\partial t}(r,\theta,0) = 0</m>),
+      and the initial position be given by
+      <md>
+        <mrow>u(r,\theta,0) = -5J_0\left(\frac{z_{0,3}r}{6}\right) + 2 J_2\left(\frac{z_{2,3}r}{6}\right)\cos(2\theta)</mrow>
+      </md>
+      where <m>z_{n,m}</m> is the <m>m^{th}</m> zero of <m>J_n(x)</m>.
+    </p>
+  </statement>
+</exercise>
+    
+</worksheet>
