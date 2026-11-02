@@ -322,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Lab: The Wave Equation - Applied to Anything",
-  "body": " Lab: The Wave Equation - Applied to Anything    MTH 401   You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by where kg*m \/s (Planck's constant!).      Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?      Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?      An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?      Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?      Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?       Orbitals for an electron.   Orbitals for an electron.    Chladni figures.   Chladni figures from a metal plate forced to vibrate at different frequencies.     "
+  "body": " Lab: The Wave Equation - Applied to Anything    MTH 401   You've probably heard this before, but everything is a simple harmonic oscillator! Thus everything uses the wave equation. Why don't we see wave-like behaviors too often in everyday life?  De Broglie figured out that particles of mass (in kg), traveling with velocity (in m\/s) have a wavelength (called a ``de Broglie wavelength'') given by where kg*m \/s (Planck's constant!).      Sanity check: If the fastest baseball pitch ever recorded is m\/s, and a baseball has a mass of kg, what is the wavelength in meters?      Keeping in mind the diameter of a proton is around meters, should we expect to see wave-like behavior from a baseball pitch?      An electron on the other hand has mass on the order of . Should we expect to see wave-like behavior of an electron?      Electrons are funny - they can only exist within an atom at certain atomic radii and energies, hence the term ``quantized.'' In the ground-state energy, an electron has a velocity of m\/s. If the mass of an electron is about kg, what is the de Broglie wavelength for an electron in the ground state?      Note, the diameter of a hydrogen atom is about meters. Given the wavelength of an electron in it's ground-state, is the electron likely to demonstrate wavelike behavior?       Schrodinger's equation in 1D:   Orbitals for an electron:   Orbitals for an electron.   Hydrogen atom solution states for    Chladni figures:   Chladni figures from a metal plate forced to vibrate at different frequencies.     "
 },
 {
   "id": "labs-7-3-1",
@@ -1861,7 +1861,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.16. Putting it all together - Laplace’s equation on a cylinder",
-  "body": " 2.16. Putting it all together - Laplace's equation on a cylinder   Last time we looked at a homogeneous system on a cylinder. Today we're going to look at a final example just to see how everything fits together. In particular, we'll consider a nonhomogeneous boundary conditions.  For the rest of this worksheet we will be focusing on the following problem:  Consider Laplace's equation in a cylinder of radius and height where we require on the top and bottoms ``lids'' and allow to be possibly non-zero on the curvy side. Since this is Laplace's equation on a cylinder which represent the system at a steady-state, time is not one of our variables and we want to use cylindrical coordinates, so .     State the boundary conditions carefully.      Now we're going to separate variables so let's try     What differential equations do we find with separation of variables?      How do the boundary conditions translate into conditions on either or ?      Where is the Sturm-Liouville problem? Is this a familiar Sturm-Liouville problem? Find the eigenvalues and eigenfunctions.       Let's move on the other equation. It ALMOST looks like something we've done before...     Begin solving it by applying the separation of variables, letting .      Where is the Sturm-Liouville problem? Is this a familiar Sturm-Liouville problem? Find the eigenvalues and eigenfunctions.      There is one final differential equation for us to solve. What is it? Is this a familiar equation?       So close to familiar. Find the solutions to this equation that are bounded in the cylinder.      Put everything together to write the general solution of the equation.      Suppose we know that . How would we find the solution?    "
+  "body": " 2.16. Putting it all together - Laplace's equation on a cylinder    MTH 410   Last time we looked at a homogeneous system on a cylinder. Today we're going to look at a final example just to see how everything fits together. In particular, we'll consider a nonhomogeneous boundary conditions.  For the rest of this worksheet we will be focusing on the following problem:  Consider Laplace's equation in a cylinder of radius and height where we require on the top and bottoms ``lids'' and allow to be possibly non-zero on the curvy side. Since this is Laplace's equation on a cylinder which represent the system at a steady-state, time is not one of our variables and we want to use cylindrical coordinates, so .     State the boundary conditions carefully.      Now we're going to separate variables so let's try     What differential equations do we find with separation of variables?      How do the boundary conditions translate into conditions on either or ?      Where is the Sturm-Liouville problem? Is this a familiar Sturm-Liouville problem? Find the eigenvalues and eigenfunctions.       Let's move on the other equation. It ALMOST looks like something we've done before...     Begin solving it by applying the separation of variables, letting .      Where is the Sturm-Liouville problem? Is this a familiar Sturm-Liouville problem? Find the eigenvalues and eigenfunctions.      There is one final differential equation for us to solve. What is it? Is this a familiar equation?       So close to familiar. Find the solutions to this equation that are bounded in the cylinder.      Put everything together to write the general solution of the equation.      Suppose we know that . How would we find the solution?    "
 },
 {
   "id": "activities-27-3",
@@ -3194,6 +3194,60 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "",
   "body": "  Consider a rectangular flag that has length and height . (Fun fact, there are strict requirements for US flags, and this ratio is one of them.) Assume the left side of the flag is fixed at 0, while the other three sides are free. That is we have the wave equation with the following boundary conditions: Find the general solution. A huge help to you - on Homework 4 you did a problem in one-dimension that results in a Sturm-Liouville problem that may be of interest to you. There should be two Sturm-Liouville problems that pop up in this solution, and they are not the same...   "
+},
+{
+  "id": "homework-9",
+  "level": "1",
+  "url": "homework-9.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 7",
+  "body": " Homework 7    MTH 401    Due: Monday, November 9 at the beginning of class. You will turn in a paper copy!    Make sure you show me enough work and include enough explanation so I know what you are doing! Be careful of skipping too many steps that your assumptions are no longer valid!      A general Sturm-Liouville problem is written in terms of functions , and as along with some boundary conditions. We want to understand eigenvalues and nontrivial eigenfunctions .     Our most familiar Sturm-Liouville problem is . For this example, identify , , and .      Bessel's equation of order , ( ) rearranged and divided by becomes which is also a Sturm-Liouville problem. Identify , , and in this case.      Given a general Sturm-Liouville problem, we will use the shorthand So is an operation applied to . Verify Lagrange's identity: Hint: For , replace with in , work on both sides, and don't forget the product rule.      Use this to verify Green's formula:       Use Green's formula to verify that eigenfunctions having different eigenvalues are orthogonal with weight . That is, suppose that where , so and are the different eigenvalues. Suppose that we have also imposed boundary conditions, such as We need to show that .  To do this, begin with Green's formula, and note that What else can we say using Green's formula?       Find the solution to Poisson's equation in the unit square , where on the four sides.      The equation where is a constant, is known as the Hermite equation and is important in mathematical physics.     Find the first four terms in each of two linearly independent solutions.      Notice that if is a nonnegative even integer, then one of the solutions terminates and becomes a polynomial. Find the polynomial solutions for , and . (Note that the polynomial is determined only up to a multiplicative constant. The Hermite polynomial is defined to be the polynomial solution of the Hermite equation with for which the coefficient of is .)       Find a solution to the Bessel equation of order two: that is bounded at the origin.      Solve the wave equation for the circular membrane of radius 6. The membrane is clamped on the boundary of the disk so that on the boundary. Let the initial velocity be 0 (i.e. ), and the initial position be given by where is the zero of .    "
+},
+{
+  "id": "homework-9-3",
+  "level": "2",
+  "url": "homework-9.html#homework-9-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A general Sturm-Liouville problem is written in terms of functions , and as along with some boundary conditions. We want to understand eigenvalues and nontrivial eigenfunctions .     Our most familiar Sturm-Liouville problem is . For this example, identify , , and .      Bessel's equation of order , ( ) rearranged and divided by becomes which is also a Sturm-Liouville problem. Identify , , and in this case.      Given a general Sturm-Liouville problem, we will use the shorthand So is an operation applied to . Verify Lagrange's identity: Hint: For , replace with in , work on both sides, and don't forget the product rule.      Use this to verify Green's formula:       Use Green's formula to verify that eigenfunctions having different eigenvalues are orthogonal with weight . That is, suppose that where , so and are the different eigenvalues. Suppose that we have also imposed boundary conditions, such as We need to show that .  To do this, begin with Green's formula, and note that What else can we say using Green's formula?    "
+},
+{
+  "id": "homework-9-4",
+  "level": "2",
+  "url": "homework-9.html#homework-9-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find the solution to Poisson's equation in the unit square , where on the four sides.   "
+},
+{
+  "id": "homework-9-5",
+  "level": "2",
+  "url": "homework-9.html#homework-9-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  The equation where is a constant, is known as the Hermite equation and is important in mathematical physics.     Find the first four terms in each of two linearly independent solutions.      Notice that if is a nonnegative even integer, then one of the solutions terminates and becomes a polynomial. Find the polynomial solutions for , and . (Note that the polynomial is determined only up to a multiplicative constant. The Hermite polynomial is defined to be the polynomial solution of the Hermite equation with for which the coefficient of is .)    "
+},
+{
+  "id": "homework-9-6",
+  "level": "2",
+  "url": "homework-9.html#homework-9-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Find a solution to the Bessel equation of order two: that is bounded at the origin.   "
+},
+{
+  "id": "homework-9-7",
+  "level": "2",
+  "url": "homework-9.html#homework-9-7",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Solve the wave equation for the circular membrane of radius 6. The membrane is clamped on the boundary of the disk so that on the boundary. Let the initial velocity be 0 (i.e. ), and the initial position be given by where is the zero of .   "
 }
 ]
 
