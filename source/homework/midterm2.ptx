@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Midterm 2</title>
+
+    <page>
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, November 16 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <alert>Instructions:</alert>
+        </p>
+
+        <p>
+            You can use your book (the optional ones if you got them), class notes, and a calculator, 
+            Mathematica, Desmos, or Wolfram Alpha.  And you can ask Dr. Bailey any and all questions!
+            I want to know what you know, not AI or your friend.
+        </p>
+        <p>
+            <em>Show all your work and explain
+            your thinking.  I should not need to guess at anything you are doing.  If you at any point <q>jump</q> to a specific part of the 
+        problem, then make sure I know that you did that, and make sure I know that you know why you can do that.</em>
+        </p>
+    </introduction>
+
+    <exercise>
+  <introduction>
+    <p>
+      One specific form of the Romanovski differential equation is
+      <md>
+        <mrow>(1+x^2)y'' - n(n-1) y = 0.</mrow>
+      </md>
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Find two linearly independent solutions to this equation by using our
+        power series method.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Explain why there is a polynomial solution if <m>n = m</m>, a
+        non-negative integer.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Find the polynomial solutions when <m>n=m=2,3,4,5</m>.
+      </p>
+    </statement>
+  </task>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Solve the wave equation
+      <md>
+        <mrow>\frac{\partial^2u}{\partial t^2} = 16\nabla^2 u</mrow>
+      </md>
+      for the circular membrane of radius 5.  
+      The membrane is clamped on the
+      boundary of the disk so that <m>{u = 0}</m> on the boundary.  The initial
+      velocity is zero and the initial position is
+      <md>
+        <mrow>u(r,\theta, 0) = 2J_1(z_{1,4}r/5)\sin(\theta) + 6J_3(z_{3,1}r/5)\sin(3\theta)-J_4(z_{4,4}r/5)\cos(4\theta)</mrow>
+      </md>
+      where <m>z_{n,m}</m> is the <m>m^{th}</m> zero of <m>J_n(x)</m>.
+    </p>
+    <p>
+      You should be able to obtain an explicit solution given this information.
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Find the general solution to Laplace's equation
+      <m>{\nabla^2 u = 0}</m> in a cylinder of radius 3 and height 2 assuming
+      that <m>{u=0}</m> on the <q>curvy</q> side and the bottom of the cylinder,
+      but not necessarily the top.
+    </p>
+  </statement>
+</exercise>
+
+<p>
+    (Continued on the next page.)
+</p>
+</page>
+<page>
+<exercise>
+  <statement>
+    <p>
+      Suppose a friend calls to say that she
+      bought a non-square, rectangular drum at a flea market.  When she hits
+      it for you, you detect that the lowest frequency is 40 Hz and the
+      second lowest frequency is 60 Hz.
+      After thinking about it for a
+      minute, you tell her the ratio of the longer side to the shorter side
+      of the drum.  What is this ratio and how did you find it?
+    </p>
+    <p>
+      Remember that the vibrations of the drum are determined
+      by the wave equation
+      <md>
+        <mrow>\frac{\partial^2 u}{\partial t^2} = v^2\nabla^2 u,</mrow>
+      </md>
+      where the boundary of the drum is clamped, a frequency of one Hz is one
+      cycle per second, and the function <m>\cos(\omega t)</m> has a frequency
+      of <m>\omega/2\pi</m> Hz when <m>t</m> is measured in seconds.
+    </p>
+  </statement>
+</exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                <em>Honor Code.</em> If you agree with the following statement, write it at the end of your exam. <q>The work presented here is entirely my own.</q> 
+                Then sign your name. If not, 
+                discuss with your professor.
+            </p>
+        </statement>
+    </exercise>
+
+    </page>
+</worksheet>

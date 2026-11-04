@@ -31,7 +31,7 @@ Recall
         </li>
         <li>Fourier transform applied to Gaussian Distributions:
           <md>
-            \mathcal{F}[\frac{\pi}{m}e^{\frac{-x^2}{4m}}] = e^{-m\omega^2}
+            \mathcal{F}[\sqrt{\frac{\pi}{m}}e^{\frac{-x^2}{4m}}] = e^{-m\omega^2}
           </md>
         </li>
         <li>Fourier transform of convolution of functions:

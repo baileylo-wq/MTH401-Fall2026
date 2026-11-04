@@ -40,7 +40,7 @@
       <xi:include href="./labs/13.5Viz.ptx"/>
       <xi:include href="./labs/24.5Lab.ptx"/>
       <xi:include href="./labs/24.5Lab_print.ptx"/>
-      <xi:include href="./labs/28-characteristics.ptx"/>
+      <xi:include href="./labs/28Lab_characteristics.ptx"/>
       
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
@@ -118,6 +118,7 @@
       <xi:include href="./homework/hw05.ptx"/>
       <xi:include href="./homework/hw06.ptx"/>
       <xi:include href="./homework/hw07.ptx"/>
+      <xi:include href="./homework/midterm2.ptx"/>
 
     </chapter>
 

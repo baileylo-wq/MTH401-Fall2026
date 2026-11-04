@@ -2,8 +2,13 @@
 
 <worksheet>
     <title>28: Method of characteristics (Lab)</title>
+    
 
     <introduction>
+        <p>
+        <alert>MTH 401
+        </alert>
+    </p>
         <p>
             We're going to see an application of the wave equation, in traffic!
             Specifically, we're going to determine how traffic is actually a
