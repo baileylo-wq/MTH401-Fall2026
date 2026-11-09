@@ -375,44 +375,89 @@ var ptx_lunr_docs = [
   "url": "labs-8.html",
   "type": "Worksheet",
   "number": "",
-  "title": "28: Method of characteristics (Lab)",
-  "body": " 28: Method of characteristics (Lab)    MTH 401   We're going to see an application of the wave equation, in traffic! Specifically, we're going to determine how traffic is actually a {\\underline{shock wave}}!  \\section*{Traffic Flows}  Let's take a 1-way highway, and look at a stretch of road.  \\begin{center} \\includegraphics[scale = 0.6]{highway} \\end{center}  Define:     = density of cars at position at time , units = {\\underline{}}     = velocity of the cars at position at time , units = {\\underline{}}    So a car that begins at ends up at after some short time interval .  Then the product:   = {\\underline{}} , units = {\\underline{}}  We're going to focus on the density function, , and come up with a mathematical model. We find something useful if we consider the number of cars in an interval .  \\begin{center} \\includegraphics[scale = 0.6]{N} \\end{center}  We can get by integrating the density over the interval :   If is the total number of cars in the interval, then the rate of change of the number of cars in this interval is (switch the order of the operators and put everything under an integral):     We can approach this same quantity from a different perspective, a law of conservation. The rate of change of the number of cars in is the difference in the rate at which cars enter the interval on the left at , and the rate at which cars leave on the right at . Can we write this also as an integral from to ?     Altogether we have   Rearrange 2 parts of the equation above to get an integral equal to 0.   Since this is true for EVERY interval , then it must be true that the integrand itself is zero, and we end up with the following equation:   This is the partial differential equation we want to focus on. And we can think of the density function as a wave, the highway is like our string, and the value of the density function is like the height of the string. Of course there is a maximum density of traffic on the road, but we can divide by the maximum density and thus we can assume here that .     {\\underline{}} corresponds to max density: bumper-to-bumper traffic.     {\\underline{}} corresponds to min density: almost no cars on the road.     may correspond to an example such as {\\underline{}}    Let's examine velocity here... It is certainly reasonable to assume velocity depends on density of traffic . When there are no cars on the road ( {\\underline{}}), traffic will move at its maximum speed. Let   We expect that when density increases, the speed will decrease, and that when there is bumper-to-bumper traffic, ( {\\underline{}}), no one is moving and so . Draw a linear possibility on the graph below and determine the equation for that corresponds to it.  \\begin{center} \\includegraphics[scale = 0.5]{vgraph} \\hspace{2cm} $v(\\rho) = {\\underline{\\hspace{3cm}}}$ \\end{center}  This may seem like an overly simplistic assumption, but Lighthill and Whitham describe experimental evidence that justifies its use. (See references.)  Ok, we have an equation for . Let's plug that in to our PDE. We now have: Calculus to the rescue, our final expression is:   \\section*{Method of Characteristics} How do we solve this? Let's assume we have an initial density function . We want to describe how for later times. (Note: this is not the movement of individual cars, but the density which is an aggregated measure of all the cars positions.)    Start at some initial point .    We are used to: fixing and seeing how changes over time at position . What we do instead: we fix , and determine the path we need to take over time to keep that constant value of density, . That is, we find such that ! (Think of density as a wave, so we look for the path of the point starting at so the height of the wave doesn't change! Like a level curve...)    But, since , a CONSTANT, so with the help of multivariable calculus we know:   Compare this to the final expression we had just before we entered the territory of Method of Characteristics. In order to match the two equations, we must have: This is the speed of our wave!  Because we are looking for where , we can sub in for , meaning that the path our point takes is So an initial point moves to the left or right with speed ( is the max velocity possible of the cars, the wave has speed ).   Context check:     If (minimum density), then moves with speed {\\underline{}} to the {\\underline{}}.    If (middle density), then moves with speed {\\underline{}} to the {\\underline{}}.    If (maximum density), then moves with speed {\\underline{}} to the {\\underline{}}.    At what initial density do we move to the right as fast as possible? {\\underline{}}  At what initial density do we move to the left as fast as possible? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  At initial densities , does the initial move to the right or left? {\\underline{}}  We finally get to apply all we know. Since the speed of our density ``wave'' depends on , we need an initial density ``wave'', i.e. an initial curve for . Let's look at several examples and apply the Method of Characteristics.     Take the initial density to be as shown below, one point is marked.  \\begin{center} \\includegraphics[scale = 0.5]{d0_2} \\end{center}  As time passes, the value will stay the same (so the -coordinate will stay the same), while the -coordinate will move left or right with a speed of . Since is just smaller than 0.25, what is the velocity that corresponds to this initial point ? Does our -coordinate move left or right? Draw an arrow in the graph above representing this movement.  Then look at various other initial points, and determine if that initial point will move left or right in the same. Draw in arrows representing the movement of this initial ``wave.'' Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of should be about twice as long as an arrow representing a speed of .  Connect the tips of the arrows to show how the wave has changed over time, that is sketch .  You should notice the wave ``shears''; this is called the shear rule .  Think about a situation where everyone is stopped at a traffic light, as shown below.  \\begin{center} \\includegraphics[scale = 0.5]{stop_1} \\end{center}  Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave''? Draw the ``wave'' at a later time.      Well that's cool and all, but I did promise you shock waves. Consider the following initial density curve, , where now our curve is increasing.  \\begin{center} \\includegraphics[scale = 0.5]{d0_3} \\end{center}  As before, we consider the density at later times. Draw in the arrows to show which way each point on the curve moves at a later time, and sketch a later curve. (It should shear in a similar way.)  If we let enough time pass, we may notice that we have faster moving points on the wave that trail slower moving points. Eventually, the faster moving points overtake the slower points, leading to some points that appear to take on 3 distinct densities! Is this possible?  So, we've introduced a discontinuity, and this is our shock wave! Where multiple values try to happen all at once. On the bottom of the discontinuity we have some density , and at the top of the discontinuity we have some other density .  \\begin{center} \\includegraphics[scale = 0.5]{d0_5} \\end{center}  Context: You're traveling down a one-lane highway; what does this situation represent?  It turns out that the shock waves moves with a speed that is equal to the average of the speeds on either side of the shock, so the average of the speed at and . This, along with the shear rule, tells us how traffic moves when the stop light suddenly turns red. We'll see two resulting shock waves, as traffic piles up behind the light and clears out in front of the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_2} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_3} \\end{center}  If we turn the light green, the shear rule will apply to the second shock wave where traffic is piled up, and the traffic (the shock wave) will begin to move to the right through the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_4} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_5} \\end{center}  If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.    "
+  "title": "Lab: Method of Characteristics and Shock Waves",
+  "body": " Lab: Method of Characteristics and Shock Waves    MTH 401    We're going to see an application of the wave equation, in traffic! Specifically, we're going to determine how traffic is actually a shock wave !   Method of Characteristics  A technique for solving specific PDEs, reducing a PDE to to a family of ODEs which can then be solved along what are called characteristic curves that we can then transform into a solution of the original PDE.    An example with a constant speed   Let's consider again the wave equation in one dimension (rearranged): Note that is a constant! (We won't use here to avoid confusion later.) We do a little algebra trick to factor this and we end up at an alternative view of the wave equation:    Fix a constant output and determine the path with some initial .  If is constant, then we know Multivariable calculus to the rescue!   Looking back at the alternative view of the wave equation, this means which has the general solution: but the initial condition means the solution becomes   Let's draw these characteristics and an example.    A non-linear example  Now something a little more interesting, and an example frequent in real-life: Note that the term is non-linear, so the super-position principle doesn't work. Let's again try the Method of Characteristics and look for a path that starts at and where is a constant, i.e. .  Calc 3 and derivative knowledge tells us that so comparing our initial equation we know which has the solution: Since is the , it depends directly on .     Dispersion is the physical phenomenon where things travel at different speeds.    Example of dispersion:    A shock wave occurs when a discontinuity happens, that is when different characteristics meet, and we have a sonic boom .    Shock wave example:  See a Shock Wave Video Explanation and Sonic Boom Volcano     Traffic!  Let's take a 1-way highway, and look at a stretch of road.   A stretch of one-way highway.            We'll set up the problem below and use the Method of Characteristics to solve it!   Define the following:    as density of cars at position at time , units =      as velocity of the cars at position at time , units =    So a car that begins at ends up at after some short time interval . (We'll assume all cars at position have the same speed in a multi-lane highway. Note: this is not the movement of individual cars, but the density which is an aggregated measure of all the cars positions.)  Then the product:   is , units =   We're going to focus on the density function, , and come up with a mathematical model. We find something useful if we consider the number of cars in an interval .   A stretch of one-way highway from a to b.        a   b       We can get by integrating the density over the interval :   If is the total number of cars in the interval, then the rate of change of the number of cars in this interval is (switch the order of the operators and put everything under an integral):   We can approach this same quantity from a different perspective, a law of conservation. The rate of change of the number of cars in is the difference in the rate at which cars enter the interval on the left at , and the rate at which cars leave on the right at . Can we write this also as an integral from to ?   Altogether we have   Rearrange two parts of the equation above to get an integral equal to 0.   Since this is true for EVERY interval , then it must be true that the integrand itself is zero, and we end up with the following equation:   This is the partial differential equation we want to focus on. And we can think of the density function as a wave, the highway is like our string, and the value of the density function is like the height of the string. Of course there is a maximum density of traffic on the road, but we can divide by the maximum density and thus we can assume here that .     corresponds to max density: bumper-to-bumper traffic.      corresponds to min density: almost no cars on the road.     may correspond to an example such as      Let's examine velocity here... It is certainly reasonable to assume velocity depends on density of traffic . When there are no cars on the road (  ), traffic will move at its maximum speed. Let   We expect that when density increases, the speed will decrease, and that when there is bumper-to-bumper traffic, ( ), no one is moving and so .  Draw a linear possibility on the graph below and determine the equation for as a function of that corresponds to it.    Blank axes with density on the horizontal axis and velocity on the vertical axis.      c = max velocity           This may seem like an overly simplistic assumption, but Lighthill and Whitham describe experimental evidence that justifies its use. (See references.)  Ok, we have an equation for . Let's plug that in to our PDE. We now have: Calculus to the rescue, our final expression is:    Quick return to the Method of Characteristics:   Assume density is constant, so .    (Think of density as a wave; we look for the path of the point starting at that doesn't change the height of the wave, like a level curve...)    We want to track the path that keeps constant, that is .    Calculus tells us the derivative in time must be 0, that is:       So matching the equations, we know: This is the speed of our density \"wave\"!  Because we are looking for where , we can sub in for , meaning that the path our point takes is So an initial point moves to the left or right with speed .  Note the difference between speeds :    is the max velocity possible of the cars,     is the speed of the wave.      Context check:    If (min density), , then moves with speed to the .    If (middle density), , then moves .    If (maximum density), , then moves with speed to the .     At what initial density do we move to the right as fast as possible?   At what initial density do we move to the left as fast as possible?   At initial densities , does the initial move to the right or left?   At initial densities , does the initial move to the right or left?   Since the speed of our density wave depends on , we need an initial density wave , i.e. an initial curve for . Let's look at some examples and apply what we know!   Shear Rule Example  Let's look at the following initial density curve. Draw arrows on the curve at various points indicating if the x-coordinate will move left or right with a speed of . Make sure the lengths of your arrows represent the speed (faster should correspond to longer arrows). Connect the tips of the arrows to show how the wave changes over time. On the right, draw the characteristics.    An initial density curve with x on the horizontal axis and density on the vertical axis.    f(x)=1\/(1+e^(ln(200)*(x-1)))          A blank graph with x-axis x and y-axis t to draw the characteristics.           Any guesses as to why it's called the Shear Rule?  Think about a situation where everyone is stopped at a traffic light, as shown below.   Cars stopped at a traffic light, with density 1 before the light and 0 past it.   Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density wave ? Draw the wave at a later time.    Shock Wave Example  Well that's cool and all, but I did promise you shock waves. Consider the following initial density curve, , where now our curve is increasing. Just like before, draw in arrows on the density curve to indicate direction, and on the right draw characteristics.    An initial density curve with x on the horizontal axis and density on the vertical axis.    f(x)=1\/(1+e^(-ln(200)*(x-1)))          A blank graph with x-axis x and y-axis t to draw the characteristics.           Let enough time pass, what happens? A discontinuity! A shock wave! We can draw this density curve where the discontinuity will become a vertical line:   An initial density curve with x on the horizontal axis and density on the vertical axis.          What does this situation correspond to in real life?   On the bottom of the discontinuity we have some density , and at the top we have some density . The shock wave moves with a speed that is the average of the speeds on either side of the shock wave. So the speed of the shock wave is     Shear Rule + Shock Waves  We can combine both situations to understand what happens when a traffic light changes from green to red.  Suppose the density is initial constant (say around ) with a green light, so traffic is moving smoothly (left picture). when suddenly the light turns red. Traffic past the light will keep going and clear out, but cars will pile up before the light (right picture).    Traffic just after the light turns red.     Traffic piling up behind the red light as two shock waves form.    Now let's turn the light green again. The Shear Rule will apply to the second shock wave where traffic is piled up, and the traffic (aka the shock wave) will begin to move to the right through the light, as pictured below.    Traffic just after the light turns green.     The shock wave moving to the right through the light.    If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.   See the article by Dr. David Austin for more details about the timing of stop lights, and for animated pictures: You're in for a Shock .   References  Paul Richards. Shock Waves on the Highway. Operations Research. Vol. 4, No. 1 (February, 1956), 42-51.  Richards introduced the model for traffic flow that we considered here and described the shear rule and the evolution of shock waves.    M.J. Lighthill and G.B. Whitham. On kinematics waves I. Flood movement in long rivers. Proceedings of the Royal Society A. 229 (1955) 281-316.  M.J. Lighthill and G.B. Whitham. On kinematics waves II. A theory of traffic flow on long crowded roads. Proceedings of the Royal Society A. 229 (1955) 317-345.  This pair of papers presents a general theory of wave motion and includes traffic flow as a detailed example. The second paper considers the question of how the velocity depends on the density and provides some evidence for the model used here: .    Helge Holden and Nils Henrik Risebro. A mathematical model of traffic flow on a network of unidirectional roads. In Nonlinear Hyperbolic Problems: Theoretical, Applied, and Computational Aspects. A. Dontao, F. Oliveri (editors). Vieweg+Teubner Verlag. 1993.  Here is a more sophisticated model of traffic flow on a network of interconnected roads.    Richard Haberman. Mathematical Models: Mechanical Vibrations, Population Dynamics, and Traffic Flow. Society of Industrial and Applied Mathematics. Philadelphia. 1998.  Gerald Whitham. Linear and Nonlinear Waves. Wiley. New York. 1999.   "
 },
 {
-  "id": "labs-8-2-29-2-1",
+  "id": "def-dispersion",
   "level": "2",
-  "url": "labs-8.html#labs-8-2-29-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "What we do instead: "
-},
-{
-  "id": "labs-8-2-33",
-  "level": "2",
-  "url": "labs-8.html#labs-8-2-33",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Context check: "
-},
-{
-  "id": "labs-8-3",
-  "level": "2",
-  "url": "labs-8.html#labs-8-3",
-  "type": "Worksheet Exercise",
+  "url": "labs-8.html#def-dispersion",
+  "type": "Definition",
   "number": "1",
   "title": "",
-  "body": "  Take the initial density to be as shown below, one point is marked.  \\begin{center} \\includegraphics[scale = 0.5]{d0_2} \\end{center}  As time passes, the value will stay the same (so the -coordinate will stay the same), while the -coordinate will move left or right with a speed of . Since is just smaller than 0.25, what is the velocity that corresponds to this initial point ? Does our -coordinate move left or right? Draw an arrow in the graph above representing this movement.  Then look at various other initial points, and determine if that initial point will move left or right in the same. Draw in arrows representing the movement of this initial ``wave.'' Make sure the lengths of the arrows represent the speed, so an arrow representing a speed of should be about twice as long as an arrow representing a speed of .  Connect the tips of the arrows to show how the wave has changed over time, that is sketch .  You should notice the wave ``shears''; this is called the shear rule .  Think about a situation where everyone is stopped at a traffic light, as shown below.  \\begin{center} \\includegraphics[scale = 0.5]{stop_1} \\end{center}  Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density ``wave''? Draw the ``wave'' at a later time.   "
+  "body": "   Dispersion is the physical phenomenon where things travel at different speeds.   "
 },
 {
-  "id": "labs-8-4",
+  "id": "def-ShockWave",
   "level": "2",
-  "url": "labs-8.html#labs-8-4",
-  "type": "Worksheet Exercise",
+  "url": "labs-8.html#def-ShockWave",
+  "type": "Definition",
   "number": "2",
   "title": "",
-  "body": "  Well that's cool and all, but I did promise you shock waves. Consider the following initial density curve, , where now our curve is increasing.  \\begin{center} \\includegraphics[scale = 0.5]{d0_3} \\end{center}  As before, we consider the density at later times. Draw in the arrows to show which way each point on the curve moves at a later time, and sketch a later curve. (It should shear in a similar way.)  If we let enough time pass, we may notice that we have faster moving points on the wave that trail slower moving points. Eventually, the faster moving points overtake the slower points, leading to some points that appear to take on 3 distinct densities! Is this possible?  So, we've introduced a discontinuity, and this is our shock wave! Where multiple values try to happen all at once. On the bottom of the discontinuity we have some density , and at the top of the discontinuity we have some other density .  \\begin{center} \\includegraphics[scale = 0.5]{d0_5} \\end{center}  Context: You're traveling down a one-lane highway; what does this situation represent?  It turns out that the shock waves moves with a speed that is equal to the average of the speeds on either side of the shock, so the average of the speed at and . This, along with the shear rule, tells us how traffic moves when the stop light suddenly turns red. We'll see two resulting shock waves, as traffic piles up behind the light and clears out in front of the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_2} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_3} \\end{center}  If we turn the light green, the shear rule will apply to the second shock wave where traffic is piled up, and the traffic (the shock wave) will begin to move to the right through the light.  \\begin{center} \\includegraphics[scale = 0.38]{stop_4} $\\rightarrow$ \\includegraphics[scale = 0.38]{stop_5} \\end{center}  If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.   "
+  "body": "  A shock wave occurs when a discontinuity happens, that is when different characteristics meet, and we have a sonic boom .   "
+},
+{
+  "id": "labs-8-7",
+  "level": "2",
+  "url": "labs-8.html#labs-8-7",
+  "type": "Exploration",
+  "number": "3",
+  "title": "Traffic!",
+  "body": " Traffic!  Let's take a 1-way highway, and look at a stretch of road.   A stretch of one-way highway.            We'll set up the problem below and use the Method of Characteristics to solve it!  "
+},
+{
+  "id": "labs-8-36",
+  "level": "2",
+  "url": "labs-8.html#labs-8-36",
+  "type": "Exploration",
+  "number": "4",
+  "title": "Shear Rule Example.",
+  "body": " Shear Rule Example  Let's look at the following initial density curve. Draw arrows on the curve at various points indicating if the x-coordinate will move left or right with a speed of . Make sure the lengths of your arrows represent the speed (faster should correspond to longer arrows). Connect the tips of the arrows to show how the wave changes over time. On the right, draw the characteristics.    An initial density curve with x on the horizontal axis and density on the vertical axis.    f(x)=1\/(1+e^(ln(200)*(x-1)))          A blank graph with x-axis x and y-axis t to draw the characteristics.           Any guesses as to why it's called the Shear Rule?  Think about a situation where everyone is stopped at a traffic light, as shown below.   Cars stopped at a traffic light, with density 1 before the light and 0 past it.   Density past the light is 0 (cars have cleared out), and before the light is 1 (bumper-to-bumper, no one is moving). According to intuition AND the method of characteristics, once the light turns green, what would happen to this density wave ? Draw the wave at a later time.  "
+},
+{
+  "id": "labs-8-37",
+  "level": "2",
+  "url": "labs-8.html#labs-8-37",
+  "type": "Exploration",
+  "number": "5",
+  "title": "Shock Wave Example.",
+  "body": " Shock Wave Example  Well that's cool and all, but I did promise you shock waves. Consider the following initial density curve, , where now our curve is increasing. Just like before, draw in arrows on the density curve to indicate direction, and on the right draw characteristics.    An initial density curve with x on the horizontal axis and density on the vertical axis.    f(x)=1\/(1+e^(-ln(200)*(x-1)))          A blank graph with x-axis x and y-axis t to draw the characteristics.           Let enough time pass, what happens? A discontinuity! A shock wave! We can draw this density curve where the discontinuity will become a vertical line:   An initial density curve with x on the horizontal axis and density on the vertical axis.          What does this situation correspond to in real life?   On the bottom of the discontinuity we have some density , and at the top we have some density . The shock wave moves with a speed that is the average of the speeds on either side of the shock wave. So the speed of the shock wave is   "
+},
+{
+  "id": "labs-8-38",
+  "level": "2",
+  "url": "labs-8.html#labs-8-38",
+  "type": "Exploration",
+  "number": "6",
+  "title": "Shear Rule + Shock Waves.",
+  "body": " Shear Rule + Shock Waves  We can combine both situations to understand what happens when a traffic light changes from green to red.  Suppose the density is initial constant (say around ) with a green light, so traffic is moving smoothly (left picture). when suddenly the light turns red. Traffic past the light will keep going and clear out, but cars will pile up before the light (right picture).    Traffic just after the light turns red.     Traffic piling up behind the red light as two shock waves form.    Now let's turn the light green again. The Shear Rule will apply to the second shock wave where traffic is piled up, and the traffic (aka the shock wave) will begin to move to the right through the light, as pictured below.    Traffic just after the light turns green.     The shock wave moving to the right through the light.    If we turn the light red before the shock wave clears, we have reached a badly timed traffic light. Thus, this model can help us time the traffic lights so the shock clears the stop light.  "
+},
+{
+  "id": "references-traffic-2-1",
+  "level": "2",
+  "url": "labs-8.html#references-traffic-2-1",
+  "type": "Note",
+  "number": "1.1",
+  "title": "",
+  "body": " Richards introduced the model for traffic flow that we considered here and described the shear rule and the evolution of shock waves.  "
+},
+{
+  "id": "references-traffic-4-1",
+  "level": "2",
+  "url": "labs-8.html#references-traffic-4-1",
+  "type": "Note",
+  "number": "3.1",
+  "title": "",
+  "body": " This pair of papers presents a general theory of wave motion and includes traffic flow as a detailed example. The second paper considers the question of how the velocity depends on the density and provides some evidence for the model used here: .  "
+},
+{
+  "id": "references-traffic-5-1",
+  "level": "2",
+  "url": "labs-8.html#references-traffic-5-1",
+  "type": "Note",
+  "number": "4.1",
+  "title": "",
+  "body": " Here is a more sophisticated model of traffic flow on a network of interconnected roads.  "
 },
 {
   "id": "activities-3",
@@ -527,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-5.html#def-conservative-field",
   "type": "Definition",
-  "number": "1",
+  "number": "10",
   "title": "",
   "body": "  A field is conservative if there exists some function for which . The function is called the potential function for .  (Note that physicists usually use , but it is essentially the same.)   "
 },
@@ -536,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-5.html#thm-conservative-FTC",
   "type": "Theorem",
-  "number": "2",
+  "number": "11",
   "title": "",
   "body": "  The FTC for line integrals : if is conservative and , then where goes from point to point .   "
 },
@@ -608,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-6.html#def-divergence",
   "type": "Definition",
-  "number": "3",
+  "number": "12",
   "title": "",
   "body": "  Let . The divergence of is given by    "
 },
@@ -617,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-6.html#def-curl",
   "type": "Definition",
-  "number": "4",
+  "number": "13",
   "title": "",
   "body": "  Let . The curl of is    "
 },
@@ -698,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-7.html#def-flux",
   "type": "Definition",
-  "number": "5",
+  "number": "14",
   "title": "",
   "body": "  The flux of a field across a curve is where is the outward normal vector to the curve.   "
 },
@@ -707,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-7.html#thm-2d-divergence",
   "type": "Theorem",
-  "number": "6",
+  "number": "15",
   "title": "",
   "body": "  If the curve is closed, then the Divergence Theorem in two dimensions tells us where is the two-dimensional region inside the closed curve . That is, the total outward flux of a field across a closed curve is equivalent to the double integral of the divergence of that field over the enclosed region.  However, it's important to remember that  must be closed for the Divergence Theorem to apply.   "
 },
@@ -752,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-7.html#thm-3d-divergence-theorem",
   "type": "Theorem",
-  "number": "7",
+  "number": "16",
   "title": "",
   "body": "  If is a field in three dimensions across a closed surface which enclosed the three dimensional region , the Divergence Theorem in three dimensions, (also called Gauss's Theorem ), says that the total outward flux of the field through is equal to the triple integral of the divergence of the field over . That is,    "
 },
@@ -815,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-8.html#thm-Greens-theorem",
   "type": "Theorem",
-  "number": "8",
+  "number": "17",
   "title": "",
   "body": "   Green's Theorem: For a two-dimensional field and a closed curve that is oriented counterclockwise (positively oriented) and that encloses the region , the work done by along is .   "
 },
@@ -896,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-9.html#thm-conservative-implies-curl",
   "type": "Theorem",
-  "number": "9",
+  "number": "18",
   "title": "",
   "body": "  If is a conservative vector field (i.e. if for some ), then .   "
 },
@@ -905,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-9.html#thm-curl-implies-conservative",
   "type": "Theorem",
-  "number": "10",
+  "number": "19",
   "title": "",
   "body": "  If in a simply connected domain , then is a conservative field within and we can find a potential function in such that within the domain .   "
 },
@@ -950,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-10.html#thm-gauss-law",
   "type": "Theorem",
-  "number": "11",
+  "number": "20",
   "title": "",
   "body": "   Gauss' Law . Consider an electric field through a closed surface which encloses the total charge . Then the electric flux out of is equal to the total charge enclosed scaled by the permittivity constant, that is where is the free space permittivity constant ( Farads\/meter) and is the outward normal vector .  The electric displacement, , is given by , thus equivalently Using the divergence theorem where is the total volume charge density (charge per unit volume), the differential form of Gauss' Law is: .   "
 },
@@ -1112,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-12.html#def-heat-eqn-1d",
   "type": "Definition",
-  "number": "12",
+  "number": "21",
   "title": "",
   "body": "  The heat equation with constant and heat source is: where is the Laplacian of .  If the equation is called homogeneous .  In one dimension the heat equation simplifies to    "
 },
@@ -1130,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-12.html#principle-superposition",
   "type": "Principle",
-  "number": "13",
+  "number": "22",
   "title": "",
   "body": "  The Superposition Principal states that if and are independent solutions to a linear partial differential equation, then a linear combination of and is also a solution.   "
 },
@@ -1166,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-13.html#def-sturm-liouville",
   "type": "Definition",
-  "number": "14",
+  "number": "23",
   "title": "",
   "body": "  A general Sturm-Liouville problem has the form where are the extreme boundary conditions of . Solving a problem means finding the the eigenvalues , , that correspond to non-trivial solutions, and then find the corresponding solutions or eigenfunctions  associated to each .   "
 },
@@ -1175,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-13.html#activities-13-4",
   "type": "Remark",
-  "number": "15",
+  "number": "24",
   "title": "",
   "body": " We'll mostly focus on the simpler form of the problem: (not always called !):   "
 },
@@ -1202,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-14.html#def-fourier-sine-series",
   "type": "Definition",
-  "number": "16",
+  "number": "25",
   "title": "",
   "body": "  For , a Fourier Sine Series has the form where are the Fourier Sine Coefficients for , given by    "
 },
@@ -1229,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-14.html#def-fourier-cosine-series",
   "type": "Definition",
-  "number": "17",
+  "number": "26",
   "title": "",
   "body": "  For , a Fourier Cosine Series has the form with and with called the Fourier Cosine Coefficients for given by    "
 },
@@ -1265,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-15.html#activities-15-3",
   "type": "Remark",
-  "number": "18",
+  "number": "27",
   "title": "",
   "body": " General steps to solving the heat equation:   Step 1:  Is it a homogeneous equation with homogeneous boundary conditions? If not, make it so.    Step 2:  Separation of variables.    Step 3:  Identify and solve the Sturm-Lioville problem.    Step 4:  Solve temporal differential equation, write product solutions, use superposition to write general solution.    Step 5:  Find Fourier Coefficients.     "
 },
@@ -1328,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-16.html#def-wave-eqn-1d",
   "type": "Definition",
-  "number": "19",
+  "number": "28",
   "title": "",
   "body": "  The wave equation representing the height of the string in one dimension with wave speed (representing the propagation speed of the wave), constant horizontal tension (i.e. the string is perfectly elastic ), and density , is: In three dimensions the wave equation becomes where is the Laplacian of .   "
 },
@@ -1382,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-17.html#activities-17-4",
   "type": "Remark",
-  "number": "20",
+  "number": "29",
   "title": "",
   "body": " Words of wisdom: It is generally a good idea to start by identifying which are the boundary conditions and which are the initial conditions, what is the length of the string, and also determine if any part of this, such as the equation with the corresponding boundary conditions, is something we have previously solved...  "
 },
@@ -1400,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-17.html#def-free-ends",
   "type": "Definition",
-  "number": "21",
+  "number": "30",
   "title": "",
   "body": "  When an end is fixed or clamped at the boundary , the boundary condition is . We've seen this a lot.  When the end is free instead, we have a different boundary condition: .   "
 },
@@ -1436,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-18.html#def-general-fourier-series",
   "type": "Definition",
-  "number": "22",
+  "number": "31",
   "title": "",
   "body": "  Let be a function on the interval . Then the fourier series for on is with coefficients and for given by    "
 },
@@ -1445,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-18.html#def-odd-even-functions",
   "type": "Definition",
-  "number": "23",
+  "number": "32",
   "title": "",
   "body": "  Recall is an even function if , and is an odd function if .   "
 },
@@ -1490,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-19.html#def-laplace-eqn",
   "type": "Definition",
-  "number": "24",
+  "number": "33",
   "title": "",
   "body": "   Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. It is given by where for in two dimensions.  Solutions of Laplace's equation are called harmonic functions .   "
 },
@@ -1535,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-20.html#def-laplace-eqn-polar",
   "type": "Definition",
-  "number": "25",
+  "number": "34",
   "title": "",
   "body": "   Laplace's equation describes a system in a steady-state, or a state of equilibrium, which does not depend on time. For in polar coordinates for a two dimensional disk, Laplace's equation becomes   For a disk of radius , the boundary condition then becomes for some function . The implicit boundary conditions due to the periodicity of are and , along with representing no singularities at the origin.   "
 },
@@ -1580,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-21.html#def-double-fourier-sine-series",
   "type": "Definition",
-  "number": "26",
+  "number": "35",
   "title": "",
   "body": "  Let be a function for on the interval and on the interval . Then the double Fourier sine series for is with coefficients    "
 },
@@ -1589,7 +1634,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-21.html#activities-21-5",
   "type": "Remark",
-  "number": "27",
+  "number": "36",
   "title": "",
   "body": " Note, the double Fourier sine series is helpful when you are looking for the specific solution, not a general solution. (Do you know why?)  "
 },
@@ -1643,7 +1688,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-22.html#def-Poisson-equation",
   "type": "Definition",
-  "number": "28",
+  "number": "37",
   "title": "",
   "body": "  Poisson's equation is the steady-state heat equation (no change in time) with a source term  :    "
 },
@@ -1652,7 +1697,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-22.html#activities-22-4",
   "type": "Remark",
-  "number": "29",
+  "number": "38",
   "title": "",
   "body": " To solve Poisson's equation, you first find the solution to the associated problem , then plug that solution into and solve for the coefficients that make it true.  "
 },
@@ -1787,7 +1832,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-25.html#def-bessel-function",
   "type": "Definition",
-  "number": "30",
+  "number": "39",
   "title": "",
   "body": "  Recall that Bessel's equation of order is Solutions are found using the Method of Frobenius, that is assuming it has the form for some unknown and solving for the coefficients.  For Bessel's functions of the first kind we take . We find that all odd coefficients are zero ( ), the coefficient is a free variable, and the other even coefficients are for . The solution to the order equation is denoted .   "
 },
@@ -1931,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#fact-eulers-formula",
   "type": "Fact",
-  "number": "31",
+  "number": "40",
   "title": "",
   "body": "   Euler's Formula states (some rearrangment)    "
 },
@@ -1940,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#def-fourier-transform",
   "type": "Definition",
-  "number": "32",
+  "number": "41",
   "title": "",
   "body": "  The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is    "
 },
@@ -1949,7 +1994,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#fact-fourier-derivative-property",
   "type": "Fact",
-  "number": "33",
+  "number": "42",
   "title": "",
   "body": "   Differentiation property of the Fourier Transform: for a function , Derivatives in spatial land are simply multiplications in frequency land!   "
 },
@@ -1967,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-28.html#thm-shift-theorem",
   "type": "Theorem",
-  "number": "34",
+  "number": "43",
   "title": "",
   "body": "  The Shift Theorem states that This an important theorem for the Fourier Transforms, suggesting you can shift the input variable by some amount before applying a Fourier Transform, and it results in multiplied by the Fourier Transform of the unshifted function.   "
 },
@@ -1994,7 +2039,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-29.html#def-fourier-transform-",
   "type": "Definition",
-  "number": "35",
+  "number": "44",
   "title": "",
   "body": "  The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is    "
 },
@@ -2003,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-29.html#fact-fourier-transform-properties",
   "type": "Fact",
-  "number": "36",
+  "number": "45",
   "title": "",
   "body": "   Properties of the Fourier Transform:   Spatial derivatives become multiplication:   Fourier transform applied to Gaussian Distributions:   Fourier transform of convolution of functions:   Temporal derivative independent of Fourier transform:      "
 },
@@ -2012,7 +2057,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-29.html#activities-29-5",
   "type": "Remark",
-  "number": "37",
+  "number": "46",
   "title": "",
   "body": " To solve the heat or wave equation using Fourier Transforms:   Step 1  Take the Fourier Transform of both sides.    Step 2  Solve in frequency world: .    Step 3  Apply the Inverse Fourier Transform to both sides to get .     "
 },
@@ -2041,14 +2086,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "3.1. Complex arithmetic",
-  "body": " 3.1. Complex arithmetic  MTH 401   Section 3: Complex Analysis   Part 3.1: Complex Arithmetic   The last portion of this class will complex analysis. In particular, here we will focus on complex arithmetic.       Recall some facts. Firstly the imaginary number  where . Recall Euler's formula :  Cartesian form of a complex number: , where the real part of is and the imaginary part is . (Note the imaginary part is a real number!) The polar form is where is the modulus and is the argument .      Going between Cartesian and Polar form.     For both complex numbers and , plot the number below and determine its modulus and argument. Then express it in polar form .   Coordinates to plot complex numbers.              For both complex numbers and , plot the number below and determine its modulus and argument. Then express it in Cartesian form .   Coordinates to plot complex numbers.               Find the products and .      The conjugate of a complex number is the new complex number .     Plot the complex number and its conjugate . Then plot the complex number and its conjugate .   Coordinates to plot complex numbers.              How can you write the conjugate in polar form?      Find the product . How is this quantity related to the modulus ?      Explain why .      Find the reciprocal of and the reciprocal of .      Find the reciprocal of . More generally, what is the reciprocal of ?       Let's think about the function .     Writing , write in Cartesian form and identify functions and such that .      If , write .      What are the conditions on and for ? Remember that is not restricted to lie in the interval .       Different functions.     Suppose that . Find and plot all the complex numbers where . If may be a good idea to think in terms of the polar form of .      Find and plot all the complex numbers where .       Separate the real and imaginary parts.     If we define , find functions and such that .      Suppose that . What can you say about the relationship between and ?     "
+  "body": " 3.1. Complex arithmetic  MTH 401   Section 3: Complex Analysis   Part 3.1: Complex Arithmetic  The last portion of this class will complex analysis. In particular, here we will focus on complex arithmetic.      Recall some facts. Firstly the imaginary number  where . Recall Euler's formula :  Cartesian form of a complex number: , where the real part of is and the imaginary part is . (Note the imaginary part is a real number!) The polar form is where is the modulus and is the argument .      Going between Cartesian and Polar form.     For both complex numbers and , plot the number below and determine its modulus and argument. Then express it in polar form .   Coordinates to plot complex numbers.              For both complex numbers and , plot the number below and determine its modulus and argument. Then express it in Cartesian form .   Coordinates to plot complex numbers.               Find the products and .      The conjugate of a complex number is the new complex number .     Plot the complex number and its conjugate . Then plot the complex number and its conjugate .   Coordinates to plot complex numbers.              How can you write the conjugate in polar form?      Find the product . How is this quantity related to the modulus ?      Explain why .      Find the reciprocal of and the reciprocal of .      Find the reciprocal of . More generally, what is the reciprocal of ?       Let's think about the function .     Writing , write in Cartesian form and identify functions and such that .      If , write .      What are the conditions on and for ? Remember that is not restricted to lie in the interval .       Different functions.     Suppose that . Find and plot all the complex numbers where . If may be a good idea to think in terms of the polar form of .      Find and plot all the complex numbers where .       Separate the real and imaginary parts.     If we define , find functions and such that .      Suppose that . What can you say about the relationship between and ?       Challenge: Recall . Define . Find and such that .    "
 },
 {
   "id": "fact-euler-again",
   "level": "2",
   "url": "activities-30.html#fact-euler-again",
   "type": "Fact",
-  "number": "38",
+  "number": "47",
   "title": "",
   "body": "  Recall some facts. Firstly the imaginary number  where . Recall Euler's formula :  Cartesian form of a complex number: , where the real part of is and the imaginary part is . (Note the imaginary part is a real number!) The polar form is where is the modulus and is the argument .   "
 },
@@ -2105,6 +2150,15 @@ var ptx_lunr_docs = [
   "number": "6",
   "title": "",
   "body": "  Separate the real and imaginary parts.     If we define , find functions and such that .      Suppose that . What can you say about the relationship between and ?    "
+},
+{
+  "id": "activities-30-11",
+  "level": "2",
+  "url": "activities-30.html#activities-30-11",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Challenge: Recall . Define . Find and such that .   "
 },
 {
   "id": "activities-31",
@@ -2174,7 +2228,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-32.html#def-cauchy-riemann-eqns",
   "type": "Definition",
-  "number": "39",
+  "number": "48",
   "title": "",
   "body": "  For a complex function for , the Cauchy-Riemann equations are .   "
 },
@@ -2183,7 +2237,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-32.html#thm-complex-diff",
   "type": "Theorem",
-  "number": "40",
+  "number": "49",
   "title": "",
   "body": "  Let . A complex function is complex differentiable (i.e. analytic i.e. holomorphic ) if and only if the Cauchy-Riemann equations hold. (It works both ways!) The complex derivative of , if it exists, is    "
 },
@@ -2210,7 +2264,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-32.html#def-harmonic",
   "type": "Definition",
-  "number": "41",
+  "number": "50",
   "title": "",
   "body": "  A harmonic function  is a twice-continuously differentiable function that satisfies Laplace's equation , i.e. , or in other words    "
 },
@@ -2255,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-33.html#activities-33-3",
   "type": "Remark",
-  "number": "42",
+  "number": "51",
   "title": "",
   "body": " Recall the Cauchy-Riemann equations for a complex function with are .  "
 },
@@ -2291,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-33.html#def-polya-vector",
   "type": "Definition",
-  "number": "43",
+  "number": "52",
   "title": "",
   "body": "  If we have a complex function , we can define its associated Polya vector field :    "
 },
@@ -2327,7 +2381,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-34.html#def-contour-integral",
   "type": "Definition",
-  "number": "44",
+  "number": "53",
   "title": "",
   "body": "  For a function where , a contour integral on a curve has the form (in rectangular coordinates)    "
 },
@@ -2381,7 +2435,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-35.html#thm-Cauchy-Integral-Formula",
   "type": "Theorem",
-  "number": "45",
+  "number": "54",
   "title": "",
   "body": "   Cauchy's Integral Formula says that if is a complex differentiable function inside a closed curve , then the following hold (where is the derivative of ):    "
 },
@@ -2435,7 +2489,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-36.html#activities-36-3",
   "type": "Remark",
-  "number": "46",
+  "number": "55",
   "title": "",
   "body": " Here are four common Taylor series we will want to use: Note the last one is the geometric series, and holds only if . All work for complex numbers too!  "
 },
@@ -2453,7 +2507,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-36.html#def-zero-order-k",
   "type": "Definition",
-  "number": "47",
+  "number": "56",
   "title": "",
   "body": "  If , then the Taylor series can be written as: for some . In this case, we say that has a zero of order .   "
 },
@@ -2489,7 +2543,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-laurent-series",
   "type": "Definition",
-  "number": "48",
+  "number": "57",
   "title": "",
   "body": "  A Laurent series centered at represents a complex function as an infinite series of both positive and negative powers of . It has the form with all negative powers collectively forming the principal part and the nonnegative powers collectively forming the Taylor series .  Coefficients in the principal part with can be found using while coefficients in the Taylor series part with are    "
 },
@@ -2498,7 +2552,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#activities-37-4",
   "type": "Remark",
-  "number": "49",
+  "number": "58",
   "title": "",
   "body": " We rarely use those formulas to find the coefficients , rather we usually use our Taylor series knowledge instead.  Recall again the following Taylor series :   "
 },
@@ -2507,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-residue",
   "type": "Definition",
-  "number": "50",
+  "number": "59",
   "title": "",
   "body": "  The coefficient in the Laurent series of a complex function is called the residue of at z-z_0 , denoted If has only one singularity at and is inside , then    "
 },
@@ -2543,7 +2597,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-singularities",
   "type": "Definition",
-  "number": "51",
+  "number": "60",
   "title": "",
   "body": "  There are three types of singularities that can be classified by their Laurent series given by The three types are classified by how many coefficients corresponding to negative powers ( ) are nonzero.      Removable singularity:  if .     Pole: There are only finitely many nonzero with negative.     Essential singularity: There are infinitely many nonzero with negative.      "
 },
@@ -2552,7 +2606,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-37.html#def-order",
   "type": "Definition",
-  "number": "52",
+  "number": "61",
   "title": "",
   "body": "  The order of a pole (see definition above) is the smallest positive integer where if .   "
 },
@@ -2588,7 +2642,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-38.html#def-simple-pole",
   "type": "Definition",
-  "number": "53",
+  "number": "62",
   "title": "",
   "body": "  A simple pole is a pole of order 1, that is the Laurent series has only the coefficient in the principal part.   "
 },
@@ -2597,7 +2651,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-38.html#thm-identify-simple-pole",
   "type": "Theorem",
-  "number": "54",
+  "number": "63",
   "title": "",
   "body": "  For a complex function that can be written as a rational function , has a simple pole at if the following hold:                 In this case (and only this case!), the residue for a simple pole is    "
 },
@@ -2606,7 +2660,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-38.html#thm-ML-inequality",
   "type": "Theorem",
-  "number": "55",
+  "number": "64",
   "title": "",
   "body": "  Consider a curve such that the length of is , and a function such that the modulus . Then the ML inequality states that    "
 },
@@ -2669,7 +2723,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-39.html#activities-39-4",
   "type": "Remark",
-  "number": "56",
+  "number": "65",
   "title": "",
   "body": " Specifically on the unit circle we have where , and thus . Therefore we can further rewrite Euler's formula:   "
 },
@@ -2714,7 +2768,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-40.html#thm-fourier-complex",
   "type": "Theorem",
-  "number": "57",
+  "number": "66",
   "title": "",
   "body": "  If is a rational function with , and then    "
 },
@@ -2723,7 +2777,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-40.html#activities-40-5",
   "type": "Remark",
-  "number": "58",
+  "number": "67",
   "title": "",
   "body": " That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!  "
 },
@@ -2759,7 +2813,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-41.html#fact-fourier-easier",
   "type": "Fact",
-  "number": "59",
+  "number": "68",
   "title": "",
   "body": "  Often, an \"easier\" way to solve real integrals is to make them complex integrals. With trig integrals, it is also generally \"easier\" to solve the Fourier transform first, and then take the real or imaginary part appropriately using Euler's formula.  That is,    "
 },
@@ -2768,7 +2822,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activities-41.html#activities-41-4",
   "type": "Remark",
-  "number": "60",
+  "number": "69",
   "title": "",
   "body": " The Cauchy principal value is a method for assigning values to specific improper integrals that would otherwise be undefined. For us, this means we want to evaluate an integral that has a singularity that falls on the real line.  The value of this otherwise undefined integral is called the principal value . We can turn the real integral into a contour integral that travels the upper half plane. Then singularities in the upper half plane (and not on the real line) contribute times their residues, as we have previously seen. Singularities on the real line contribute to the contour integral halfway between and , or just . That is,   "
 },

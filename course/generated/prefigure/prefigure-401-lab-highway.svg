@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-401-lab-highway-figure" width="314" height="64" viewBox="0 0 314 64">
+  <defs>
+    <clipPath id="prefigure-401-lab-highway-clipPath-0">
+      <rect x="7.0" y="7.0" width="300.0" height="50.0"/>
+    </clipPath>
+    <clipPath id="prefigure-401-lab-highway-clipPath-1">
+      <rect x="7.0" y="7.0" width="300.0" height="50.0"/>
+    </clipPath>
+    <marker id="prefigure-401-lab-highway-arrow-head-end-1_None_24_60-black" markerWidth="4.5" markerHeight="4.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="3.3" refY="2.0">
+      <path d="M 4.5 2.0L 0.0 4.0L 0.9 2.5L 0.9 1.5L 0.0 0.0Z" fill="black" stroke="none"/>
+    </marker>
+    <marker id="prefigure-401-lab-highway-arrow-head-end-1_None_24_60-black-outline" markerWidth="8.5" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="5.3" refY="4.0">
+      <path d="M 7.3 5.8 L 2.8 7.8 A 2 2 0 0 1 0.0 6.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 7.3 2.2 A 2 2 0 0 1 7.3 5.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <line id="prefigure-401-lab-highway-line-0" x1="7.0" y1="57.0" x2="307.0" y2="57.0" stroke="black" stroke-width="2" fill="none"/>
+  <line id="prefigure-401-lab-highway-line-1" x1="7.0" y1="7.0" x2="307.0" y2="7.0" stroke="black" stroke-width="2" fill="none"/>
+  <line id="prefigure-401-lab-highway-line-2" x1="132.0" y1="32.0" x2="180.8" y2="32.0" stroke="black" stroke-width="1" fill="none" marker-end="url(#prefigure-401-lab-highway-arrow-head-end-1_None_24_60-black)"/>
+</svg>
