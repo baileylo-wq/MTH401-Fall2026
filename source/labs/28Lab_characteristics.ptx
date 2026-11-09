@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>28: Method of characteristics (Lab)</title>
+    <title>Lab: Method of Characteristics and Shock Waves</title>
     
 
     <introduction>
@@ -9,472 +9,725 @@
         <alert>MTH 401
         </alert>
     </p>
-        <p>
-            We're going to see an application of the wave equation, in traffic!
-            Specifically, we're going to determine how traffic is actually a
-            {\underline{shock wave}}!
-        </p>
-
-        <p>
-            \section*{Traffic Flows}
-        </p>
-
-        <p>
-            Let's take a 1-way highway, and look at a stretch of road.
-        </p>
-
-        <p>
-            \begin{center} \includegraphics[scale = 0.6]{highway} \end{center}
-        </p>
-
-        <p>
-            Define:
-        </p>
-
-        <ul>
-            <li>
-                <p>
-                    <m>\rho(x,t)</m> = density of cars at position <m>x</m> at
-                    time <m>t</m>, units = {\underline{}}
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    <m>v(x,t)</m> = velocity of the cars at position <m>x</m> at
-                    time <m>t</m>, units = {\underline{}}
-                </p>
-            </li>
-        </ul>
-
-        <p>
-            So a car that begins at <m>x</m> ends up at <m>x+v \Delta t</m>
-            after some short time interval <m>\Delta t</m>.
-        </p>
-
-        <p>
-            Then the product:
-        </p>
-
-        <p>
-            <m>\rho(x,t) v(x,t)</m> = {\underline{}} , units = {\underline{}}
-        </p>
-
-        <p>
-            We're going to focus on the density function, <m>\rho(x,t)</m>, and
-            come up with a mathematical model.
-            We find something useful if we consider the number <m>N</m> of cars
-            in an interval <m>\left[a,b\right]</m>.
-        </p>
-
-        <p>
-            \begin{center} \includegraphics[scale = 0.6]{N} \end{center}
-        </p>
-
-        <p>
-            We can get <m>N</m> by integrating the density over the interval
-            <m>\left[a,b\right]</m>:
-            <md>
-                N(t) = \int_a^b \rho(x,t) \ dx.
-            </md>
-        </p>
-
-        <p>
-            If <m>N</m> is the total number of cars in the interval, then the
-            rate of change of the number of cars in this interval is (switch the
-            order of the operators and put everything under an integral):
-        </p>
-
-        <p>
-            <md>
-                \frac{dN}{dt} =  {\underline{~~~}} =  {\underline{~~~}}
-            </md>
-        </p>
-
-        <p>
-            We can approach this same quantity from a different perspective, a
-            law of conservation.
-            The rate of change of the number of cars in <m>\left[a,b\right]</m>
-            is the difference in the rate at which cars enter the interval on
-            the left at <m>a</m>, and the rate at which cars leave on the right
-            at <m>b</m>.
-            Can we write this also as an integral from <m>a</m> to <m>b</m>?
-        </p>
-
-        <p>
-            <md>
-                \frac{dN}{dt} = (\rho v)|_{x=a} - (\rho v)|_{x = b} =  -\left((\rho v)|_{x=b} - (\rho v)|_{x = a}\right) = {\underline{~~~}}
-            </md>
-        </p>
-
-        <p>
-            Altogether we have
-            <md>
-                \frac{dN}{dt} = \int_a^b \frac{\partial \rho}{\partial t} \ dx = -  \int_a^b \frac{\partial (\rho v)}{\partial x} \ dx.
-            </md>
-        </p>
-
-        <p>
-            Rearrange 2 parts of the equation above to get an integral equal to
-            0.
-            <md>
-                {\underline{~~~}} = 0
-            </md>
-        </p>
-
-        <p>
-            Since this is true for EVERY interval <m>\left[a,b\right]</m>, then
-            it must be true that the integrand itself is zero, and we end up
-            with the following equation:
-            <md>
-                {\underline{~~~}} = 0
-            </md>
-        </p>
-
-        <p>
-            This is the partial differential equation we want to focus on.
-            And we can think of the density function as a wave, the highway is
-            like our string, and the value of the density function is like the
-            height of the string.
-            Of course there is a maximum density of traffic on the road, but we
-            can divide by the maximum density and thus we can assume here that
-            <m>0\le \rho\le 1</m>.
-        </p>
-
-        <ul>
-            <li>
-                <p>
-                    <m>\rho = </m> {\underline{}} corresponds to max density:
-                    bumper-to-bumper traffic.
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    <m>\rho \approx </m> {\underline{}} corresponds to min
-                    density: almost no cars on the road.
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    <m>\rho = \frac14</m> may correspond to an example such as
-                    {\underline{}}
-                </p>
-            </li>
-        </ul>
-
-        <p>
-            Let's examine velocity here...
-            It is certainly reasonable to assume velocity <m>v</m> depends on
-            density of traffic <m>\rho</m>.
-            When there are no cars on the road ( <m>\rho  = </m>
-            {\underline{}}), traffic will move at its maximum speed.
-            Let
-            <md>
-                c = \text{ max speed of traffic.}
-            </md>
-        </p>
-
-        <p>
-            We expect that when density increases, the speed <m>v</m> will
-            decrease, and that when there is bumper-to-bumper traffic, (
-            <m>\rho = </m> {\underline{}}), no one is moving and so
-            <m>v = {\underline{~~~}}</m>.
-            Draw a linear possibility on the graph below and determine the
-            equation for <m>v(\rho)</m> that corresponds to it.
-        </p>
-
-        <p>
-            \begin{center} \includegraphics[scale = 0.5]{vgraph} \hspace{2cm}
-            $v(\rho) = {\underline{\hspace{3cm}}}$ \end{center}
-        </p>
-
-        <p>
-            This may seem like an overly simplistic assumption, but Lighthill
-            and Whitham describe experimental evidence that justifies its use.
-            (See references.)
-        </p>
-
-        <p>
-            Ok, we have an equation for <m>v</m>.
-            Let's plug that in to our PDE.
-            We now have:
-            <md>
-                \frac{\partial \rho}{\partial t} + \frac{\partial (c(1-\rho)\rho)}{\partial x} = 0.
-            </md>
-            Calculus to the rescue, our final expression is:
-            <md>
-                \frac{\partial \rho}{\partial t} + c(1-2\rho) \frac{\partial \rho}{\partial x} = 0.
-            </md>
-        </p>
-
-        <p>
-            \section*{Method of Characteristics} How do we solve this?
-            Let's assume we have an initial density function <m>\rho(x,0)</m>.
-            We want to describe how <m>\rho(x,t)</m> for later times.
-            (Note: this is not the movement of individual cars, but the density
-            which is an aggregated measure of all the cars positions.)
-        </p>
-
-        <ul>
-            <li>
-                <p>
-                    Start at some initial point <m>(x_0,\rho_0)</m>.
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    We are used to: fixing <m>x_0</m> and seeing how
-                    <m>\rho(x,t)</m> changes over time at position <m>x_0</m>.
-                    <term>What we do instead:</term> we fix <m>\rho_0</m>, and
-                    determine the path <m>x(t)</m> we need to take over time to
-                    keep that constant value of density, <m>\rho_0</m>.
-                    That is, we find <m>x(t)</m> such that
-                    <m>\rho(x(t), t) = \rho_0</m>!
-                    (Think of density <m>\rho</m> as a wave, so we look for the
-                    path of the point starting at <m>(x_0,\rho_0)</m> so the
-                    height of the wave doesn't change!
-                    Like a level curve...)
-                </p>
-            </li>
-        </ul>
-
-        <p>
-            But, since <m>\rho(x(t),t) = \rho_0</m>, a CONSTANT, so with the
-            help of multivariable calculus we know:
-            <md>
-                \frac{d\rho}{dt} = \frac{\partial \rho}{\partial t} + \frac{dx}{dt}\frac{\partial \rho}{\partial x} = {\underline{~~~}}
-            </md>
-        </p>
-
-        <p>
-            Compare this to the final expression we had just before we entered
-            the territory of Method of Characteristics.
-            In order to match the two equations, we must have:
-            <md>
-                {\underline{~~~}} =  {\underline{~~~}}
-            </md>
-            This is the speed of our wave!
-        </p>
-
-        <p>
-            Because we are looking for where <m>\rho(x(t),t) = \rho_0</m>, we
-            can sub in <m>\rho_0</m> for <m>\rho</m>, meaning that the path our
-            point takes is
-            <md>
-                x(t) = c(1-2\rho_0)t + x_0.
-            </md>
-            So an initial point <m>x_0</m> moves to the left or right with speed
-            <m>c(1-2\rho_0)</m> ( <m>c</m> is the max velocity possible of the
-            cars, the wave has speed <m>c(1-2\rho_0)</m> ).
-        </p>
-
-        <p>
-            <term>Context check:</term>
-        </p>
-
-        <ul>
-            <li>
-                <p>
-                    If <m>\rho_0 = 0</m> (minimum density), then <m>x_0</m>
-                    moves with speed {\underline{}} to the {\underline{}}.
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    If <m>\rho_0 = 1/2</m> (middle density), then <m>x_0</m>
-                    moves with speed {\underline{}} to the {\underline{}}.
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    If <m>\rho_0 = 1</m> (maximum density), then <m>x_0</m>
-                    moves with speed {\underline{}} to the {\underline{}}.
-                </p>
-            </li>
-        </ul>
-
-        <p>
-            At what initial density do we move to the right as fast as possible?
-            {\underline{}}
-        </p>
-
-        <p>
-            At what initial density do we move to the left as fast as possible?
-            {\underline{}}
-        </p>
-
-        <p>
-            At initial densities <m>0&lt;\rho_0 &lt; 1/2</m>, does the initial
-            <m>x_0</m> move to the right or left?
-            {\underline{}}
-        </p>
-
-        <p>
-            At initial densities <m>1/2&lt;\rho_0 &lt; 1</m>, does the initial
-            <m>x_0</m> move to the right or left?
-            {\underline{}}
-        </p>
-
-        <p>
-            We finally get to apply all we know.
-            Since the speed of our density ``wave'' depends on <m>\rho_0</m>, we
-            need an initial density ``wave'', i.e.
-            an initial curve for <m>\rho(x,0)</m>.
-            Let's look at several examples and apply the Method of
-            Characteristics.
-        </p>
     </introduction>
+     <p>
+    We're going to see an application of the wave equation, in traffic!
+    Specifically, we're going to determine how traffic is actually a
+    <alert>shock wave</alert>!
+     </p>
+     <assemblage>
+        <title>Method of Characteristics</title>
+        
+        <p>
+            A technique for solving specific PDEs, reducing a PDE to to a 
+            family of ODEs which can then be solved along what are called 
+            <q>characteristic curves</q> that we can then transform into a 
+            solution of the original PDE.
+        </p>
+        </assemblage>
 
-    <exercise workspace="1in">
-        <statement>
-            <p>
-                Take the initial density to be <m>\rho(x,0)</m> as shown below,
-                one point <m>(x_0,\rho_0)</m> is marked.
-            </p>
+<paragraphs>
+    <title>An example with a constant <q>speed</q> <m>c</m></title>
+    
 
-            <p>
-                \begin{center} \includegraphics[scale = 0.5]{d0_2} \end{center}
-            </p>
+        <p>
+            Let's consider again the wave equation in one dimension (rearranged):
+            <md>
+                \pdtwo{u}{t} - c^2 \pdtwo{u}{x} = 0.
+            </md>
+            Note that <m>c</m> is a constant!  (We won't use <m>v</m> here to avoid confusion later.) We do a little algebra trick to <q>factor</q> this
+            <md>
+               <mrow> (<fillin characters="5" />)(<fillin characters="5"/>) \amp = 0</mrow>
+               <mrow> (<fillin characters="5"/>)(<fillin characters="3"/>)\amp = 0 </mrow>
 
-            <p>
-                As time passes, the value <m>\rho_0</m> will stay the same (so
-                the <m>y</m>-coordinate will stay the same), while the
-                <m>x</m>-coordinate will move left or right with a speed of
-                <m>c(1-\rho_0)</m>.
-                Since <m>\rho_0</m> is just smaller than 0.25, what is the
-                velocity that corresponds to this initial point
-                <m>(x_0,\rho_0)</m>?
-                Does our <m>x</m>-coordinate move left or right?
-                Draw an arrow in the graph above representing this movement.
-            </p>
+            </md>
+            and we end up at an alternative view of the wave equation: 
+        </p>
+        <p workspace="1in">
+            
+        </p>
+        <p>
+            Fix a constant output <m>w(x,t) = w(x(t),t)=h_0</m> and determine the path <m>{x(t)}</m>
+            with some initial <m>x(0)=x_0</m>.
+        </p>
+        <p>
+            If <m>w(x(t),t) = h_0</m> is constant, then we know
+            <md>
+                <fillin characters="8" /> = <fillin characters="2" />
+            </md>
+         Multivariable calculus to the rescue!
+         <md>
+            \frac{d}{dt}(w(x(t),t)) = \pd{w}{t} +\frac{dx}{dt} \pd{w}{x} = <fillin characters="2" />.
+         </md>
+         </p>
+         <p>
 
-            <p>
-                Then look at various other initial points, and determine if that
-                initial point will move left or right in the same.
-                Draw in arrows representing the movement of this initial
-                ``wave.'' Make sure the lengths of the arrows represent the
-                speed, so an arrow representing a speed of <m>c</m> should be
-                about twice as long as an arrow representing a speed of
-                <m>c/2</m>.
-            </p>
+            Looking back at the alternative view of the wave equation, this means 
+            <md>
+                \frac{dx}{dt} = <fillin characters="3" />
+            </md>
+            which has the general solution:
+            <md>
+                x(t)   = <fillin characters="5" /> 
+            </md>
+            but the initial condition <m>x(0)=x_0</m> means the solution becomes
+            <md>
+                x(t) = <fillin characters="5" />.
+            </md>
+            
+        </p>
+        <p workspace="1in">
+            Let's draw these characteristics and an example.
 
-            <p>
-                Connect the tips of the arrows to show how the wave has changed
-                over time, that is sketch <m>\rho(x,1)</m>.
-            </p>
+        </p>
 
-            <p>
-                You should notice the wave ``shears''; this is called the
-                <term>shear rule</term>.
-            </p>
+    </paragraphs>
+    <paragraphs>
+        <title>A non-linear example</title>
+        <p>
+            Now something a little more interesting, and an example frequent in real-life:
+            <md>
+                \pd{u}{t} + u \pd{u}{x} = 0.
+            </md>
+            Note that the term <m>u\pd{u}{x}</m> is non-linear, so the super-position 
+            principle doesn't work.  Let's again try the Method of Characteristics and look for a path <m>x(t)</m> 
+            that starts at <m>{x(0)=x_0}</m> and where
+            <m>u</m> is a constant, i.e. <m>{u(x(t),t) = u_0}</m>.
+        </p>
+        <p>
+            Calc 3 and derivative knowledge tells us that 
+            <md>
+                \frac{d}{dt}[u(x(t),t)] = \pd{u}{t} + \frac{dx}{dt}\pd{u}{x} = 0
+            </md>
+            so comparing our initial equation we know 
+            <md>
+                \frac{dx}{dt} = <fillin characters="5" /> = <fillin characters="5" />
+            </md>
+            which has the solution:
+            <md>
+                x(t) = <fillin characters="8" />
+            </md>
+            Since <m>\frac{dx}{dt}</m> is the <fillin characters="5" />, it 
+            depends directly on <fillin characters="30" />.
+        </p>
+        <definition xml:id="def-dispersion">
+            <statement>
+                <p>
+                    <term>Dispersion</term> is the physical phenomenon where things travel at different speeds.
+                </p>
+            </statement>
+        </definition>
+        <p workspace="1in">
+            Example of dispersion:
+            
 
-            <p>
-                Think about a situation where everyone is stopped at a traffic
-                light, as shown below.
-            </p>
+        </p>
+        <definition xml:id="def-ShockWave">
+            <statement>
+                <p>
+                    A <term>shock wave</term> occurs when a discontinuity happens, that 
+                    is when different characteristics meet, and we have a <term>sonic boom</term>.
+                </p>
+            </statement>
+        </definition>
+       
+        <p workspace="in">
+            Shock wave example:
+        </p>
 
-            <p>
-                \begin{center} \includegraphics[scale = 0.5]{stop_1}
-                \end{center}
-            </p>
+         <p>
+            See a <url href="https://www.youtube.com/watch?v=If-yK7sQE8Q">Shock Wave Video Explanation</url> and 
+            <url href="https://www.youtube.com/watch?v=BUREX8aFbMs">Sonic Boom Volcano</url>
+        </p>
+    </paragraphs>
 
-            <p>
-                Density past the light is 0 (cars have cleared out), and before
-                the light is 1 (bumper-to-bumper, no one is moving).
-                According to intuition AND the method of characteristics, once
-                the light turns green, what would happen to this density
-                ``wave''?
-                Draw the ``wave'' at a later time.
-            </p>
-        </statement>
-    </exercise>
 
-    <exercise workspace="1in">
-        <statement>
-            <p>
-                Well that's cool and all, but I did promise you shock waves.
-                Consider the following initial density curve, <m>\rho(x,0)</m>,
-                where now our curve is increasing.
-            </p>
 
-            <p>
-                \begin{center} \includegraphics[scale = 0.5]{d0_3} \end{center}
-            </p>
+<exploration>
+    <title>Traffic!</title>
+    
+    
+  <p>
+    Let's take a 1-way highway, and look at a stretch of road.
+  </p>
 
-            <p>
-                As before, we consider the density at later times.
-                Draw in the arrows to show which way each point on the curve
-                moves at a later time, and sketch a later curve.
-                (It should shear in a similar way.)
-            </p>
 
-            <p>
-                If we let enough time pass, we may notice that we have faster
-                moving points on the wave that trail slower moving points.
-                Eventually, the faster moving points overtake the slower points,
-                leading to some points that appear to take on 3 distinct
-                densities!
-                Is this possible?
-            </p>
+  <image width="40%">
+      <shortdescription>
+        A stretch of one-way highway.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-highway">
+        <diagram dimensions="(300,50)" margins="7">
 
-            <p>
-                So, we've introduced a discontinuity, and this is our shock
-                wave!
-                Where multiple values try to happen all at once.
-                On the bottom of the discontinuity we have some density
-                <m>\rho_1</m>, and at the top of the discontinuity we have some
-                other density <m>\rho_2</m>.
-            </p>
+          <coordinates bbox="(0,0,12,2)">
+              <line endpoints="((0,0),(12,0))"/>
+              <line endpoints="((0,2),(12,2))"/>
+              <line endpoints="((5,1),(7,1))" arrows="1" thickness="1"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+  <p>
+    We'll set up the problem below and use the Method of Characteristics to solve it!
+  </p>
+  </exploration>
 
-            <p>
-                \begin{center} \includegraphics[scale = 0.5]{d0_5} \end{center}
-            </p>
+  <p>
+    Define the following:
+    <ul>
+      <li>
+        <p>
+          <m>\rho(x,t)</m> as density of cars at position <m>x</m> at time
+          <m>t</m>, units = <fillin characters="8"/>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>v(x,t)</m> as velocity of the cars at position <m>x</m> at time
+          <m>t</m>, units = <fillin characters="8"/>
+        </p>
+      </li>
+    </ul>
+    So a car that begins at <m>x</m> ends up at <m>x+v \Delta t</m> after some
+    short time interval <m>\Delta t</m>.  (We'll assume all cars 
+    at position <m>x</m> have the same speed in a multi-lane highway.  Note: this is not the movement of individual cars, but the density which
+    is an aggregated measure of all the cars positions.)
+  </p>
 
-            <p>
-                Context: You're traveling down a one-lane highway; what does
-                this situation represent?
-            </p>
+  <p>
+    Then the product:
+  </p>
 
-            <p>
-                It turns out that the shock waves moves with a speed that is
-                equal to the average of the speeds on either side of the shock,
-                so the average of the speed at <m>\rho_1</m> and <m>\rho_2</m>.
-                This, along with the shear rule, tells us how traffic moves when
-                the stop light suddenly turns red.
-                We'll see two resulting shock waves, as traffic piles up behind
-                the light and clears out in front of the light.
-            </p>
+  <p>
+    <m>\rho(x,t) v(x,t)</m> is <fillin characters="40"/>,
+    units = <fillin characters="8"/>
+  </p>
 
-            <p>
-                \begin{center} \includegraphics[scale = 0.38]{stop_2}
-                $\rightarrow$ \includegraphics[scale = 0.38]{stop_3}
-                \end{center}
-            </p>
+  <p>
+    We're going to focus on the density function, <m>\rho(x,t)</m>, and come
+    up with a mathematical model.  We find something useful if we consider the
+    number <m>N</m> of cars in an interval <m>\left[a,b\right]</m>.
+  </p>
 
-            <p>
-                If we turn the light green, the shear rule will apply to the
-                second shock wave where traffic is piled up, and the traffic
-                (the shock wave) will begin to move to the right through the
-                light.
-            </p>
+  <image width="40%">
+      <shortdescription>
+        A stretch of one-way highway from a to b.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-highway2">
+        <diagram dimensions="(300,50)" margins="7">
 
-            <p>
-                \begin{center} \includegraphics[scale = 0.38]{stop_4}
-                $\rightarrow$ \includegraphics[scale = 0.38]{stop_5}
-                \end{center}
-            </p>
+          <coordinates bbox="(0,-1,12,2)">
+              <line endpoints="((0,0),(12,0))"/>
+              <line endpoints="((0,2),(12,2))"/>
+              <rectangle lower-left="(2,0)" dimensions="(8,2)"
+               fill="pink" />
+               <label anchor="(2,-0.5)"><m>a</m> </label>
+               <label anchor="(10,-0.5)"><m>b</m> </label>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
 
+  <p>
+    We can get <m>N</m> by integrating the density over the interval
+    <m>\left[a,b\right]</m>:
+    <md>
+      <mrow>N(t) = \int_a^b \rho(x,t) \,dx.</mrow>
+    </md>
+  </p>
+
+  <p>
+    If <m>N</m> is the total number of cars in the interval, then the rate of
+    change of the number of cars in this interval is (switch the order of the
+    operators and put everything under an integral):
+    <md>
+      <mrow>\frac{dN}{dt} = <fillin characters="12"/> = <fillin characters="12"/></mrow>
+    </md>
+  </p>
+
+  <p>
+    We can approach this same quantity from a different perspective, a law of
+    conservation.  The rate of change of the number of cars in
+    <m>\left[a,b\right]</m> is the difference in the rate at which cars enter
+    the interval on the left at <m>a</m>, and the rate at which cars leave on
+    the right at <m>b</m>.  Can we write this also as an integral from
+    <m>a</m> to <m>b</m>?
+    <md>
+      <mrow>\frac{dN}{dt} = (\rho v)|_{x=a} - (\rho v)|_{x = b} =  -\left((\rho v)|_{x=b} - (\rho v)|_{x = a}\right) = <fillin characters="12"/></mrow>
+    </md>
+  </p>
+
+  <p>
+    Altogether we have
+    <md>
+      <mrow>\frac{dN}{dt} = \int_a^b \frac{\partial \rho}{\partial t} \,dx = -  \int_a^b \frac{\partial (\rho v)}{\partial x} \,dx.</mrow>
+    </md>
+  </p>
+
+  <p>
+    Rearrange two parts of the equation above to get an integral equal to 0.
+    <md>
+      <mrow><fillin characters="20"/> = 0</mrow>
+    </md>
+  </p>
+
+  <p>
+    Since this is true for EVERY interval <m>\left[a,b\right]</m>, then it
+    must be true that the integrand itself is zero, and we end up with the
+    following equation:
+    <md>
+      <mrow><fillin characters="20"/> = 0</mrow>
+    </md>
+  </p>
+
+  <p>
+    This is the partial differential equation we want to focus on. And we can
+    think of the density function as a wave, the highway is like our string,
+    and the value of the density function is like the height of the string.
+    Of course there is a maximum density of traffic on the road, but we can
+    divide by the maximum density and thus we can assume here that
+    <m>0\le \rho\le 1</m>.
+    <ul>
+      <li>
+        <p>
+          <m>\rho = </m> <fillin characters="4"/> corresponds to max density:
+          bumper-to-bumper traffic.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\rho \approx </m> <fillin characters="4"/> corresponds to min
+          density: almost no cars on the road.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\rho = \frac14</m> may correspond to an example such as
+          <fillin characters="28"/>
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <p>
+    Let's examine velocity here...  It is certainly reasonable to assume
+    velocity <m>v</m> depends on density of traffic <m>\rho</m>.  When there
+    are no cars on the road (<m>\rho  = </m> <fillin characters="4"/>),
+    traffic will move at its maximum speed.  Let
+    <md>
+      <mrow>c = \text{ max speed of traffic.}</mrow>
+    </md>
+  </p>
+
+  <p>
+    We expect that when density increases, the speed <m>v</m> will decrease,
+    and that when there is bumper-to-bumper traffic,
+    (<m>{\rho = <fillin characters="4"/>}</m>), no one is moving and so
+    <m>{v =  <fillin characters="4"/>}</m>.
+  </p>
+  <p>
+    Draw a linear possibility on the
+    graph below and determine the equation for <m>v</m> as a function of <m>\rho</m> that corresponds
+    to it.
+  </p>
+
+  <sidebyside widths="30% 40%" margins="auto" valign="middle">
+    <image>
+      <shortdescription>
+        Blank axes with density on the horizontal axis and velocity on the vertical axis.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-velocity">
+        <diagram dimensions="(300,200)" margins="13">
+
+          <coordinates bbox="(-1.2,-0.3,1.7,1.5)">
+            <axes xlabel="density" ylabel="velocity" vlabels="(3,5,5)"/>
+            <point p="(0,.8)" alignment="w"><m>c = </m>max velocity</point>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <p>
+      <m>v(\rho) = </m> <fillin characters="20"/>
+    </p>
+  </sidebyside>
+
+  <p>
+    This may seem like an overly simplistic assumption, but Lighthill and
+    Whitham describe experimental evidence that justifies its use.  (See
+    references.)
+  </p>
+
+  <p>
+    Ok, we have an equation for <m>v</m>.  Let's plug that in to our PDE.  We
+    now have:
+    <md>
+      <mrow>\frac{\partial \rho}{\partial t} + \frac{\partial (c(1-\rho)\rho)}{\partial x} = 0.</mrow>
+    </md>
+    Calculus to the rescue, our final expression is:
+    <md>
+      <mrow>\frac{\partial \rho}{\partial t} + c(1-2\rho) \frac{\partial \rho}{\partial x} = 0.</mrow>
+    </md>
+  </p>
+
+
+<aside>
+    <p>
+        Quick return to the Method of Characteristics:
+        <ul>
+            <li>
+                <p>
+                    Assume density <m>\rho</m> is constant, so <m>\rho(x(t),t) = \rho(x_0,t) = \rho_0</m>.
+
+                </p>
+            </li>
+            <li>
+                <p>
+                    (Think of density <m>\rho</m> as a wave; we look for the path of 
+                    the point starting at <m>{(x_0,\rho_0)}</m> that doesn't change 
+                    the height of the wave, like a level curve...)
+                </p>
+            </li>
+            <li>
+                <p>
+                    We want to track the path <m>x(t)</m> that keeps <m>\rho=\rho_0</m> constant, that is 
+                    <m>{\rho(x(t),t) = \rho_0}</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Calculus tells us the derivative in time must be 0, that is:
+                    <md>
+                        \pd{\rho}{t} + \frac{dx}{dt}\pd{\rho}{x} = 0.
+                    </md>
+                    
+                </p>
+            </li>
+        </ul>
+    </p>
+</aside>
+  
+
+  
+   
+  <p>
+    So matching the equations, we know:
+    <md>
+      <mrow>\frac{dx}{dt} =  <fillin characters="16"/></mrow>
+    </md>
+    This is the speed of our density "wave"!
+  </p>
+
+  <p>
+    Because we are looking for where <m>\rho(x(t),t) = \rho_0</m>, we can sub
+    in <m>\rho_0</m> for <m>\rho</m>, meaning that the path our point takes is
+    <md>
+      <mrow>x(t) = c(1-2\rho_0)t + x_0.</mrow>
+    </md>
+    So an initial point <m>x_0</m> moves to the left or right with speed
+    <m>{\frac{dx}{dt}=c(1-2\rho_0)}</m>.
+  </p>
+  <p>
+    Note the difference between <q>speeds</q>:
+    <ul>
+        <li>
             <p>
-                If we turn the light red before the shock wave clears, we have
-                reached a badly timed traffic light.
-                Thus, this model can help us time the traffic lights so the
-                shock clears the stop light.
+                <m>c</m> is the max velocity possible of the cars,
             </p>
-        </statement>
-    </exercise>
+        </li>
+        <li>
+            <p>
+                <m>\frac{dx}{dt} = c(1-2\rho_0)</m> is the speed of the wave.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    <alert>Context check:</alert>
+    <ul>
+      <li>
+        <p>
+          If <m>\rho_0 = 0</m> (min density), <m>\frac{dx}{dt} = <fillin characters="2" /></m>, then <m>x_0</m> moves with
+          speed <fillin characters="8"/> to the <fillin characters="8"/>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>\rho_0 = 1/2</m> (middle density), <m>\frac{dx}{dt} = <fillin characters="2" /></m>, then <m>x_0</m> moves <fillin characters="8"/>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>\rho_0 = 1</m> (maximum density), <m>\frac{dx}{dt} = <fillin characters="2" /></m>, then <m>x_0</m> moves with
+          speed <fillin characters="8"/> to the <fillin characters="8"/>.
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <p>
+    At what initial density do we move to the right as fast as possible?
+    <fillin characters="8"/>
+  </p>
+
+  <p>
+    At what initial density do we move to the left as fast as possible?
+    <fillin characters="8"/>
+  </p>
+
+  <p>
+    At initial densities <m>0&lt;\rho_0 &lt; 1/2</m>, does the initial
+    <m>x_0</m> move to the right or left?  <fillin characters="8"/>
+  </p>
+
+  <p>
+    At initial densities <m>1/2&lt;\rho_0 &lt; 1</m>, does the initial
+    <m>x_0</m> move to the right or left?  <fillin characters="8"/>
+  </p>
+
+  <p>
+    Since the speed of our density
+    <q>wave</q> depends on <m>\rho_0</m>, we need an initial density
+    <q>wave</q>, i.e. an initial curve for <m>\rho(x,0)</m>.  Let's look at some examples and apply what we know!
+  </p>
+
+<exploration>
+    <title>Shear Rule Example</title>
+    <p>
+        Let's look at the following initial density curve. Draw arrows on the curve at various points indicating 
+        if the x-coordinate will move left or right with a speed of <m>c(1-\rho_0)</m>.
+        Make sure the lengths of your arrows represent the speed (faster should 
+        correspond to longer arrows). Connect the tips of the arrows to show how the wave changes over time.  On the right, 
+        draw the characteristics.
+
+    </p>
+
+    <sidebyside widths="40% 40%">
+        <image>
+      <shortdescription>
+        An initial density curve with x on the horizontal axis and density on the vertical axis.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-density1">
+        <diagram dimensions="(300,150)" margins="7">
+          <definition>f(x)=1/(1+e^(ln(200)*(x-1)))</definition>
+          <coordinates bbox="(-1/2,-1/2,2.2,1.3)">
+            <axes xlabel="x" ylabel="\rho_0" vlabels="(0,1/2,5)" hlabels="(3,3,5)" hticks="(0,1,1)"/>
+            <graph function="f"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <image>
+      <shortdescription>
+        A blank graph with x-axis x and y-axis t to draw the characteristics.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-char1">
+        <diagram dimensions="(300,150)" margins="7">
+          <coordinates bbox="(-1,-1/2,2.2,1.3)">
+            <axes decorations="no" xlabel="x" ylabel="t" />
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    </sidebyside>
+    <p>
+        Any guesses as to why it's called the Shear Rule?
+    </p>
+    <p>
+        Think about a situation where everyone is stopped at a traffic light,
+        as shown below.
+      </p>
+      <image source="images/stop_1.png" width="50%">
+        <shortdescription>Cars stopped at a traffic light, with density 1 before the light and 0 past it.</shortdescription>
+      </image>
+      <p>
+        Density past the light is 0 (cars have cleared out), and before the
+        light is 1 (bumper-to-bumper, no one is moving).  According to
+        intuition AND the method of characteristics, once the light turns
+        green, what would happen to this density <q>wave</q>?  Draw the
+        <q>wave</q> at a later time.
+      </p>
+</exploration>
+
+
+  <exploration>
+    <title>Shock Wave Example</title>
+    <p>
+        Well that's cool and all, but I did promise you shock waves.
+        Consider the following initial density curve, <m>\rho(x,0)</m>, where
+        now our curve is increasing.  Just like before, draw in arrows on the 
+        density curve to indicate direction, and on the right draw characteristics.
+      </p>
+
+      <sidebyside widths="50% 40%">
+      
+      <image width="40%">
+      <shortdescription>
+        An initial density curve with x on the horizontal axis and density on the vertical axis.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-density2">
+        <diagram dimensions="(300,150)" margins="7">
+          <definition>f(x)=1/(1+e^(-ln(200)*(x-1)))</definition>
+          <coordinates bbox="(-1/2,-1/2,2.2,1.3)">
+            <axes xlabel="x" ylabel="\rho_0" vlabels="(0,1/2,5)" hlabels="(3,3,5)" hticks="(0,1,1)"/>
+            <graph function="f"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+ <image>
+      <shortdescription>
+        A blank graph with x-axis x and y-axis t to draw the characteristics.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-char2">
+        <diagram dimensions="(300,150)" margins="7">
+          <coordinates bbox="(-1,-1/2,2.2,1.3)">
+            <axes decorations="no" xlabel="x" ylabel="t" />
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+      
+      </sidebyside>
+    <p>
+        Let enough time pass, what happens?  A discontinuity!  A shock wave!
+        We can draw this density curve where the discontinuity will become a vertical line:
+    </p>
+    <image width="35%">
+      <shortdescription>
+        An initial density curve with x on the horizontal axis and density on the vertical axis.
+      </shortdescription>
+      <prefigure xmlns="https://prefigure.org" label="prefigure-401-lab-density22">
+        <diagram dimensions="(300,150)" margins="7">
+          <coordinates bbox="(-1/2,-1/2,2.2,1.3)">
+            <axes xlabel="x" ylabel="\rho_0" vlabels="(0,1/2,5)" hlabels="(3,3,5)" hticks="(0,1,1)"/>
+          </coordinates>
+        </diagram>
+      </prefigure>
+    </image>
+    <p>
+        What does this situation correspond to in real life? <fillin characters="20" />
+    </p>
+    <p>
+        On the bottom of the discontinuity we have some density <m>\rho_1</m>, 
+        and at the top we have some density <m>\rho_2</m>. The 
+        shock wave moves with a speed that is the average of the speeds on either 
+        side of the shock wave.  So the speed of the shock wave is 
+        <md>
+            \frac{c(1-2\rho_1)+c(1-2\rho_2)}{2} = c-(\rho_1+\rho_2)
+        </md>
+        
+    </p>
+  </exploration>
+      
+<exploration>
+    <title>Shear Rule + Shock Waves</title>
+    <p>
+        We can combine both situations to understand what happens when a traffic 
+        light changes from green to red.
+    </p>
+    <p>
+        Suppose the density is initial constant (say around <m>1/4</m>) with 
+        a green light, so 
+        traffic is moving smoothly (left picture). when suddenly the light turns red. Traffic 
+        past the light will keep going and clear out, but cars will pile up before the light (right picture).
+    </p>
+    <sidebyside widths="40% 6% 40%" margins="auto" valign="middle">
+        <image source="images/stop_2.png">
+          <shortdescription>Traffic just after the light turns red.</shortdescription>
+        </image>
+        <p><m>\rightarrow</m></p>
+        <image source="images/stop_3.png">
+          <shortdescription>Traffic piling up behind the red light as two shock waves form.</shortdescription>
+        </image>
+      </sidebyside>
+
+      <p>
+        Now let's turn the light green again.  The Shear Rule will apply to the 
+        second shock wave where traffic is piled up, and the traffic (aka the shock wave)
+        will begin to move to the right through the light, as pictured below.
+      </p>
+      <sidebyside widths="38% 6% 38%" margins="auto" valign="middle">
+        <image source="images/stop_4.png">
+          <shortdescription>Traffic just after the light turns green.</shortdescription>
+        </image>
+        <p><m>\rightarrow</m></p>
+        <image source="images/stop_5.png">
+          <shortdescription>The shock wave moving to the right through the light.</shortdescription>
+        </image>
+      </sidebyside>
+      <p>
+        If we turn the light red before the shock wave clears, we have reached
+        a badly timed traffic light. Thus, this model can help us time the
+        traffic lights so the shock clears the stop light.
+      </p>
+ 
+</exploration>
+
+  
+  <p>
+    See the article by Dr. David Austin for more details about the timing of stop lights, and for animated 
+    pictures:
+    <url href="https://www.ams.org/publicoutreach/feature-column/fc-2019-12">You're in for a Shock</url>.
+  </p>
+
+
+<references xml:id="references-traffic">
+  <title>References</title>
+
+  <biblio type="raw">
+    Paul Richards. Shock Waves on the Highway. Operations Research. Vol. 4,
+    No. 1 (February, 1956), 42-51.
+    <note>
+      <p>
+        Richards introduced the model for traffic flow that we considered here
+        and described the shear rule and the evolution of shock waves.
+      </p>
+    </note>
+  </biblio>
+
+  <biblio type="raw">
+    M.J. Lighthill and G.B. Whitham. On kinematics waves I. Flood movement in
+    long rivers. Proceedings of the Royal Society A. 229 (1955) 281-316.
+  </biblio>
+
+  <biblio type="raw">
+    M.J. Lighthill and G.B. Whitham. On kinematics waves II. A theory of
+    traffic flow on long crowded roads. Proceedings of the Royal Society A.
+    229 (1955) 317-345.
+    <note>
+      <p>
+        This pair of papers presents a general theory of wave motion and
+        includes traffic flow as a detailed example. The second paper
+        considers the question of how the velocity depends on the density and
+        provides some evidence for the model used here:
+        <m>v = c(1-2\rho)</m>.
+      </p>
+    </note>
+  </biblio>
+
+  <biblio type="raw">
+    Helge Holden and Nils Henrik Risebro. A mathematical model of traffic flow
+    on a network of unidirectional roads. In Nonlinear Hyperbolic Problems:
+    Theoretical, Applied, and Computational Aspects. A. Dontao, F. Oliveri
+    (editors). Vieweg+Teubner Verlag. 1993.
+    <note>
+      <p>
+        Here is a more sophisticated model of traffic flow on a network of
+        interconnected roads.
+      </p>
+    </note>
+  </biblio>
+
+  <biblio type="raw">
+    Richard Haberman. Mathematical Models: Mechanical Vibrations, Population
+    Dynamics, and Traffic Flow. Society of Industrial and Applied Mathematics.
+    Philadelphia. 1998.
+  </biblio>
+
+  <biblio type="raw">
+    Gerald Whitham. Linear and Nonlinear Waves. Wiley. New York. 1999.
+  </biblio>
+</references>
+  
 </worksheet>

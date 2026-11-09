@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>3.1. Complex arithmetic</title>
-  <alert>MTH 401</alert>
+  <introduction><p><alert>MTH 401</alert></p></introduction>
 
   <subsection xml:id="subsubsec-complex-analysis">
     <title>Section 3: Complex Analysis</title>
     <subsubsection>
       <title>Part 3.1: Complex Arithmetic</title>
       
-      <introduction>
+     
         <p>
           The last portion of this class will complex analysis.
           In particular, here we will focus on complex arithmetic.
         </p>
-      </introduction>
+  
     </subsubsection>
   </subsection>
 
@@ -199,6 +199,16 @@
   relationship between <m>z_1</m> and <m>z_2</m>?</p>
       </statement>
     </task>
+  </exercise>
+
+  <exercise workspace="1in">
+    <statement>
+      <p>
+        Challenge:  Recall <m>\ds \cos(\theta) = \frac{e^{i\theta}+e^{-i\theta}}{2}</m>.  Define 
+        <m>{\cos(z)= \frac{e^{iz}+e^{-iz}}{2}}</m>.  Find <m>{u(x,y)}</m> 
+        and <m>{v(x,y)}</m> such that <m>{\cos(x+iy) = u(x,y)+iv(x,y)}</m>.
+      </p>
+    </statement>
   </exercise>
 
 </worksheet>
