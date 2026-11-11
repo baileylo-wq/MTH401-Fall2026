@@ -67,12 +67,12 @@
         So <m>L</m> is an operation applied to <m>u</m>.  Verify Lagrange's
         identity:
         <md>
-          <mrow>uL(v) - vL(u) =
-          \frac{d}{d x}\left[p\left(u\frac{d v}{d x}-v\frac{d u}{d x}\right)\right].</mrow>
+          <mrow>uL(w) - wL(u) =
+          \frac{d}{d x}\left[p\left(u\frac{d w}{d x}-w\frac{d u}{d x}\right)\right].</mrow>
         </md>
         Hint:
-        For <m>L(v)</m>, replace <m>u</m> with <m>v</m> in <m>L(u)</m>,
-        work on both sides, and don't forget the product rule.
+        For <m>L(w)</m>, replace <m>u</m> with <m>w</m> in <m>L(u)</m>,
+        work on both sides if it helps, and don't forget the product rule.
       </p>
     </statement>
   </task>
@@ -82,8 +82,8 @@
       <p>
         Use this to verify Green's formula:
         <md>
-          <mrow>\int_a^b\left[uL(v) - vL(u)\right]\,dx =\left.
-          p\left(u\frac{d v}{d x}-v\frac{d u}{d x}\right)\right|_a^b.</mrow>
+          <mrow>\int_a^b\left[uL(w) - wL(u)\right]\,dx =\left.
+          p\left(u\frac{d w}{d x}-w\frac{d u}{d x}\right)\right|_a^b.</mrow>
         </md>
       </p>
     </statement>
@@ -97,22 +97,22 @@
         That is, suppose that
         <md>
           <mrow>L(u) \amp = -k\sigma(x) u(x)</mrow>
-          <mrow>L(v) \amp = -l \sigma(x) v(x),</mrow>
+          <mrow>L(w) \amp = -l \sigma(x) w(x),</mrow>
         </md>
         where <m>k\neq l</m>, so <m>k</m> and <m>l</m> are the different
         eigenvalues. Suppose that we have also imposed boundary conditions,
         such as
         <md>
           <mrow>u(a) \amp = 0, \qquad u(b) = 0</mrow>
-          <mrow>v(a) \amp = 0, \qquad v(b) = 0.</mrow>
+          <mrow>w(a) \amp = 0, \qquad w(b) = 0.</mrow>
         </md>
         We need to show that
-        <m>\int_a^b u(x)v(x)\sigma(x)\,dx = 0</m>.
+        <m>\int_a^b u(x)w(x)\sigma(x)\,dx = 0</m>.
       </p>
       <p>
         To do this, begin with Green's formula, and note that
         <md>
-          <mrow>\int_a^b -vL(u)\,dx = \int_a^b -L(u)v(x)\,dx = \int_a^b ku(x)v(x)\sigma(x)\,dx.</mrow>
+          <mrow>\int_a^b -wL(u)\,dx = \int_a^b -L(u)w(x)\,dx = \int_a^b ku(x)w(x)\sigma(x)\,dx.</mrow>
         </md>
         What else can we say using Green's formula?
       </p>
@@ -163,7 +163,8 @@
         that the polynomial is determined only up to a multiplicative
         constant.  The Hermite polynomial <m>H_n(x)</m> is defined to be the
         polynomial solution of the Hermite equation with <m>\lambda=2n</m> for
-        which the coefficient of <m>x^n</m> is <m>2^n</m>.)
+        which the coefficient of <m>x^n</m> is <m>2^n</m>, but you do not have 
+        to do that here, unless you want to!)
       </p>
     </statement>
   </task>
