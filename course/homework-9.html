@@ -354,11 +354,11 @@ L(u) = \frac{d}{d x}\left[p(x)\frac{d u}{d x}\right] + q(x)u.
 <div class="para">So <span class="process-math">\(L\)</span> is an operation applied to <span class="process-math">\(u\text{.}\)</span>  Verify Lagrange’s identity:</div>
 <div class="displaymath process-math" id="homework-9-3-4-1-1-4">
 \begin{gather*}
-uL(v) - vL(u) =
-\frac{d}{d x}\left[p\left(u\frac{d v}{d x}-v\frac{d u}{d x}\right)\right].
+uL(w) - wL(u) =
+\frac{d}{d x}\left[p\left(u\frac{d w}{d x}-w\frac{d u}{d x}\right)\right].
 \end{gather*}
 </div>
-<div class="para">Hint: For <span class="process-math">\(L(v)\text{,}\)</span> replace <span class="process-math">\(u\)</span> with <span class="process-math">\(v\)</span> in <span class="process-math">\(L(u)\text{,}\)</span> work on both sides, and don’t forget the product rule.</div>
+<div class="para">Hint: For <span class="process-math">\(L(w)\text{,}\)</span> replace <span class="process-math">\(u\)</span> with <span class="process-math">\(w\)</span> in <span class="process-math">\(L(u)\text{,}\)</span> work on both sides if it helps, and don’t forget the product rule.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-9-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#homework-9-3-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
@@ -368,8 +368,8 @@ uL(v) - vL(u) =
 <div class="para">Use this to verify Green’s formula:</div>
 <div class="displaymath process-math" id="homework-9-3-5-1-1-1">
 \begin{gather*}
-\int_a^b\left[uL(v) - vL(u)\right]\,dx =\left.
-p\left(u\frac{d v}{d x}-v\frac{d u}{d x}\right)\right|_a^b.
+\int_a^b\left[uL(w) - wL(u)\right]\,dx =\left.
+p\left(u\frac{d w}{d x}-w\frac{d u}{d x}\right)\right|_a^b.
 \end{gather*}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-9-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -382,17 +382,17 @@ p\left(u\frac{d v}{d x}-v\frac{d u}{d x}\right)\right|_a^b.
 <div class="displaymath process-math" id="homework-9-3-6-1-1-2">
 \begin{align*}
 L(u) \amp = -k\sigma(x) u(x)\\
-L(v) \amp = -l \sigma(x) v(x),
+L(w) \amp = -l \sigma(x) w(x),
 \end{align*}
 </div>
 <div class="para">where <span class="process-math">\(k\neq l\text{,}\)</span> so <span class="process-math">\(k\)</span> and <span class="process-math">\(l\)</span> are the different eigenvalues. Suppose that we have also imposed boundary conditions, such as</div>
 <div class="displaymath process-math" id="homework-9-3-6-1-1-6">
 \begin{align*}
 u(a) \amp = 0, \qquad u(b) = 0\\
-v(a) \amp = 0, \qquad v(b) = 0.
+w(a) \amp = 0, \qquad w(b) = 0.
 \end{align*}
 </div>
-<div class="para">We need to show that <span class="process-math">\(\int_a^b u(x)v(x)\sigma(x)\,dx = 0\text{.}\)</span>
+<div class="para">We need to show that <span class="process-math">\(\int_a^b u(x)w(x)\sigma(x)\,dx = 0\text{.}\)</span>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-9-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -400,7 +400,7 @@ v(a) \amp = 0, \qquad v(b) = 0.
 <div class="para">To do this, begin with Green’s formula, and note that</div>
 <div class="displaymath process-math" id="homework-9-3-6-1-2-1">
 \begin{gather*}
-\int_a^b -vL(u)\,dx = \int_a^b -L(u)v(x)\,dx = \int_a^b ku(x)v(x)\sigma(x)\,dx.
+\int_a^b -wL(u)\,dx = \int_a^b -L(u)w(x)\,dx = \int_a^b ku(x)w(x)\sigma(x)\,dx.
 \end{gather*}
 </div>
 <div class="para">What else can we say using Green’s formula?</div>
@@ -441,7 +441,7 @@ y''-2xy'+\lambda y=0,
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#homework-9-5-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
 <article class="task exercise-like" id="homework-9-5-3"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="homework-9-5-3-1-1">Notice that if <span class="process-math">\(\lambda\)</span> is a nonnegative even integer, then one of the solutions terminates and becomes a polynomial.  Find the polynomial solutions for <span class="process-math">\(\lambda=0,2,4\text{,}\)</span> and <span class="process-math">\(6\text{.}\)</span>  (Note that the polynomial is determined only up to a multiplicative constant.  The Hermite polynomial <span class="process-math">\(H_n(x)\)</span> is defined to be the polynomial solution of the Hermite equation with <span class="process-math">\(\lambda=2n\)</span> for which the coefficient of <span class="process-math">\(x^n\)</span> is <span class="process-math">\(2^n\text{.}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-9-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="homework-9-5-3-1-1">Notice that if <span class="process-math">\(\lambda\)</span> is a nonnegative even integer, then one of the solutions terminates and becomes a polynomial.  Find the polynomial solutions for <span class="process-math">\(\lambda=0,2,4\text{,}\)</span> and <span class="process-math">\(6\text{.}\)</span>  (Note that the polynomial is determined only up to a multiplicative constant.  The Hermite polynomial <span class="process-math">\(H_n(x)\)</span> is defined to be the polynomial solution of the Hermite equation with <span class="process-math">\(\lambda=2n\)</span> for which the coefficient of <span class="process-math">\(x^n\)</span> is <span class="process-math">\(2^n\text{,}\)</span> but you do not have to do that here, unless you want to!)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#homework-9-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#homework-9-5-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#homework-9-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
