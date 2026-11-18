@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 8</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, November 23 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <em>Make sure you show me enough work and include enough explanation so I know what 
+                you are doing!  Be careful of skipping too many steps that your
+                assumptions are no longer valid!
+            </em>
+        </p>
+    </introduction>
+
+   <exercise>
+  <introduction>
+    <p>
+      We're going to look at the <term>convection equation</term>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Use the Fourier transform to solve the
+                
+                convection equation:
+                <md>
+                    \frac{\partial u}{\partial t}= k\frac{\partial^{2} u}{\partial x^{2}}+ c\frac{\partial u}{\partial x}
+                </md>
+                for <m>-\infty &lt; x &lt; \infty</m> and <m>u(x,0) = f(x)</m>.
+                You will want to use the following:
+                <ul>
+                    <li>
+                        <p>
+                            The four properties of the Fourier Transform discussed in class
+                        </p>
+                    </li>
+        
+                    <li>
+                        <p>
+                            The shift theorem found on one of the worksheets that gives
+                            <m>{\fourier[f(x-\beta)] = e^{i\omega\beta}\fourier[f(x)]}</m>.
+                            (NOTE: this applies when you have ONE <m>\fourier[...]</m>
+                            multiplied by <m>e^{i\omega\beta}</m>, if you have two
+                            <m>\fourier[...]\fourier[...]</m> multiplied by
+                            <m>e^{i\omega\beta}</m>, you will need to FIRST combine the two
+                            Fourier Transform pieces into one using the convolution property,
+                            and then apply the shift theorem to EVERYTHING in
+                            <m>\fourier[...]</m>.)
+                        </p>
+                    </li>
+        
+                    <li>
+                        <p>
+                            Convolution
+                            <m>f(x) * g(x) = \int_{-\infty}^{\infty}f(u) g(x-u)du</m>
+                        </p>
+                    </li>
+        
+                    <li>
+                        <p>
+                            Hint 1: follow the notes for how we solved the heat equation using
+                            the Fourier Transform and adapt when necessary
+                        </p>
+                    </li>
+        
+                    <li>
+                        <p>
+                            Hint 2: the Fourier Transform is really just an integral, how does a
+                            sum break up under an integral?
+                        </p>
+                    </li>
+                </ul>
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+       Given your solution to part (a) above, find the appropriate influence function
+              <m>G(x,t; z, 0)</m>.
+              Consider the initial condition
+              <md>
+                  f(x) = \delta_{0}(x)
+              </md>
+              which means <m>f(x)=0</m> for all <m>x\ne 0</m> and
+              <m>\int_{-\infty}^{\infty}\delta_{0}(x)~ dx = 1</m>.
+              Sketch the corresponding solution <m>u(x,t)</m> for various values of
+              <m>t&gt;0</m>.
+              What is the significance of the term <m>c\frac{\partial u}{\partial x}</m> in
+              the equation?
+      </p>
+    </statement>
+  </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Find the 6 complex numbers <m>z</m> such that <m>z^{6} = -1</m> and show where
+                they are located in the complex plane.
+      </p>
+    </statement>
+  </exercise>
+
+  
+
+    
+</worksheet>

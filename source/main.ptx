@@ -100,11 +100,12 @@
       <xi:include href="./activities/40-pv.ptx"/>
     </chapter>
 
-    <chapter xml:id="handouts">
+    <!--<chapter xml:id="handouts">
       <title>Handouts</title>
-      <!-- Include handouts -->
-      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
-    </chapter>
+  
+      <xi:include href="./handouts/handout-template.ptx"/>
+      <p></p>
+    </chapter>-->
 
     <chapter xml:id="homework">
       <title>Homework</title>
@@ -119,6 +120,7 @@
       <xi:include href="./homework/hw06.ptx"/>
       <xi:include href="./homework/hw07.ptx"/>
       <xi:include href="./homework/midterm2.ptx"/>
+      <xi:include href="./homework/hw08.ptx"/>
 
     </chapter>
 

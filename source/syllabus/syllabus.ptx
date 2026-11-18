@@ -3,11 +3,12 @@
 <section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Syllabus</title>
 
-    <alert>
-        MTH 401
-    </alert>
+  
 
     <introduction>
+         <p> <alert>
+        MTH 401
+    </alert></p>
         <p/>
     </introduction>
     <!-- Include chapters -->
@@ -321,15 +322,15 @@
           <em>Your Brain on ChatGPT</em>.
         </url>
                 From the abstract:
-                <blockquote>
-                    <em>
+               
+                    <em><q>
                         Over four months, LLM users consistently underperformed at
             neural, linguistic, and behavioral levels. These results
             raise concerns about the long-term educational
             implications of LLM reliance and underscore the need for
             deeper inquiry into AI's role in learning.
-                    </em>
-                </blockquote>
+                    </q></em>
+               
             </p>
         </paragraphs>
 
