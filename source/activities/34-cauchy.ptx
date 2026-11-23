@@ -115,7 +115,7 @@
                 If <m>C_1</m>, <m>C_2</m>, and <m>C_3</m> are the same circles
                 as in the last problem, evaluate
                 <md>
-                    \int_{C_j}\frac{\sin z}{z^2+1}
+                    \int_{C_j}\frac{\sin z}{z^2+1}~dz
                 </md>
                 for these three circles.
             </p>
@@ -126,6 +126,19 @@
         <statement>
             <p>
                 Where is the function <m>f(z) = \frac{1}{z^4+1}</m> singular?
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise workspace="2in">
+        <statement>
+            <p>
+                Challenge if you want it: Use the previous question to factor 
+                <m>z^4+1</m> into four factors that have the form <m>(z-r_1)</m>. 
+                Then use the knowledge from the worksheet to find <m>\ds \oint_C \frac{\sin(z)}{z^4+1}~dz</m>
+                where <m>C</m> is the circle of radius 2 centered at the origin.  (I'd recommend
+                leaving the answers from the previous problem in polar form, and worrying about 
+                Cartesian form at the very very end (or never).)
             </p>
         </statement>
     </exercise>
