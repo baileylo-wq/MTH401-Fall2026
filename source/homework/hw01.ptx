@@ -305,8 +305,10 @@
             </p>
 
             <p>
-                Show that both fields are conservative and find a potential for
-                <m>\vec{F}_{near}</m>.
+                Show that both fields are conservative by finding a potential function for
+                each.  (Hint for <m>\vec{F}_{far}</m>, focus on one component (like the x-component)
+                and think about derivatives and antiderivatives or power functions, then try to extend this to the
+                three-dimensional case.)
             </p>
         </statement>
     </exercise>
