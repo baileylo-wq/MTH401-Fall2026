@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-6-curve5-figure" width="190" height="190" viewBox="0 0 190 190">
+  <defs>
+    <clipPath id="prefigure-6-curve5-__clipPath-0">
+      <rect x="5.0" y="5.0" width="180.0" height="180.0"/>
+    </clipPath>
+    <clipPath id="prefigure-6-curve5-__clipPath-1">
+      <rect x="5.0" y="5.0" width="180.0" height="180.0"/>
+    </clipPath>
+    <marker id="prefigure-6-curve5-arrow-head-end-2_None_24_60-blue" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="prefigure-6-curve5-arrow-head-end-2_None_24_60-blue-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-6-curve5-arrow-head-start-2_None_24_60-blue" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="2.5" refY="4.0">
+      <g transform="rotate(180, 4.5, 4.0)">
+        <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-6-curve5-arrow-head-start-2_None_24_60-blue-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.5" refY="6.0">
+      <g transform="rotate(180, 6.5, 6.0)">
+        <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="prefigure-6-curve5-grid-axes">
+    <g id="prefigure-6-curve5-grid" stroke="#ccc" stroke-width="1">
+      <line x1="5.0" y1="185.0" x2="5.0" y2="5.0"/>
+      <line x1="27.5" y1="185.0" x2="27.5" y2="5.0"/>
+      <line x1="50.0" y1="185.0" x2="50.0" y2="5.0"/>
+      <line x1="72.5" y1="185.0" x2="72.5" y2="5.0"/>
+      <line x1="95.0" y1="185.0" x2="95.0" y2="5.0"/>
+      <line x1="117.5" y1="185.0" x2="117.5" y2="5.0"/>
+      <line x1="140.0" y1="185.0" x2="140.0" y2="5.0"/>
+      <line x1="162.5" y1="185.0" x2="162.5" y2="5.0"/>
+      <line x1="185.0" y1="185.0" x2="185.0" y2="5.0"/>
+      <line x1="5.0" y1="185.0" x2="185.0" y2="185.0"/>
+      <line x1="5.0" y1="162.5" x2="185.0" y2="162.5"/>
+      <line x1="5.0" y1="140.0" x2="185.0" y2="140.0"/>
+      <line x1="5.0" y1="117.5" x2="185.0" y2="117.5"/>
+      <line x1="5.0" y1="95.0" x2="185.0" y2="95.0"/>
+      <line x1="5.0" y1="72.5" x2="185.0" y2="72.5"/>
+      <line x1="5.0" y1="50.0" x2="185.0" y2="50.0"/>
+      <line x1="5.0" y1="27.5" x2="185.0" y2="27.5"/>
+      <line x1="5.0" y1="5.0" x2="185.0" y2="5.0"/>
+    </g>
+    <g id="prefigure-6-curve5-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-6-curve5-__line-18" x1="5.0" y1="95.0" x2="185.0" y2="95.0" stroke="black" stroke-width="2"/>
+      <line id="prefigure-6-curve5-__line-19" x1="95.0" y1="185.0" x2="95.0" y2="5.0" stroke="black" stroke-width="2"/>
+    </g>
+    <g id="prefigure-6-curve5-__label-0" transform="translate(181.0,91.0) translate(-10.4,-8.2)">
+      <g id="prefigure-6-curve5-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-6-curve5-MJX-2-NCM-I-1D465" d="M527 373C527 419 482 442 432 442C389 442 355 419 329 373C308 419 273 442 222 442C173 442 133 419 101 374C74 335 60 306 60 287C60 278 65 273 75 273C84 273 90 278 92 287C111 345 153 413 220 413C253 413 269 392 269 351C269 330 251 252 216 118C199 51 169 18 126 18C112 18 99 21 88 26C114 36 127 54 127 80C127 106 114 119 87 119C54 119 29 91 29 58C29 12 76-11 125-11C167-11 201 12 228 58C247 12 283-11 335-11C383-11 423 12 455 57C482 96 496 125 496 144C496 153 491 158 481 158C472 158 467 153 464 144C447 87 402 18 337 18C304 18 287 38 287 79C287 92 292 120 303 165L337 300C356 375 387 413 431 413C445 413 458 410 469 405C442 396 429 378 429 351C429 325 443 312 470 312C502 312 527 341 527 373Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:x" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-6-curve5-MJX-2-NCM-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-6-curve5-__label-1" transform="translate(99.0,9.0) translate(0.0,-0.0)">
+      <g id="prefigure-6-curve5-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-6-curve5-MJX-3-NCM-I-1D466" d="M163 442C118 442 83 417 58 367C39 328 29 301 29 286C29 277 34 272 45 272C59 272 60 278 64 293C87 372 119 412 160 412C173 412 180 403 180 385C180 369 175 346 164 317C126 214 107 145 107 108C107 32 154-13 231-13C264-13 295-1 323 23C288-109 233-175 158-175C124-175 101-164 89-142C129-140 149-121 149-85C149-60 136-47 109-47C72-47 50-78 50-115C50-170 100-205 158-205C273-205 367-99 392-1L486 377C489 388 490 396 490 401C490 421 479 431 458 431C442 431 429 423 420 408C414 387 409 369 406 354L342 97C332 61 279 16 234 16C196 16 177 41 177 92C177 134 194 198 227 284C240 319 247 343 247 357C247 406 212 442 163 442Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:y" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-6-curve5-MJX-3-NCM-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <g id="prefigure-6-curve5-__vector-field-0">
+    <line id="prefigure-6-curve5-__line-20" x1="5.0" y1="185.0" x2="19.5" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-21" x1="5.0" y1="162.5" x2="19.5" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-22" x1="5.0" y1="140.0" x2="19.5" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-23" x1="5.0" y1="117.5" x2="19.5" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-24" x1="5.0" y1="95.0" x2="19.5" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-25" x1="5.0" y1="72.5" x2="19.5" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-26" x1="5.0" y1="50.0" x2="19.5" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-27" x1="5.0" y1="27.5" x2="19.5" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-28" x1="5.0" y1="5.0" x2="19.5" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-29" x1="27.5" y1="185.0" x2="37.8" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-30" x1="27.5" y1="162.5" x2="37.8" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-31" x1="27.5" y1="140.0" x2="37.8" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-32" x1="27.5" y1="117.5" x2="37.8" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-33" x1="27.5" y1="95.0" x2="37.8" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-34" x1="27.5" y1="72.5" x2="37.8" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-35" x1="27.5" y1="50.0" x2="37.8" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-36" x1="27.5" y1="27.5" x2="37.8" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-37" x1="27.5" y1="5.0" x2="37.8" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-38" x1="50.0" y1="185.0" x2="56.0" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-39" x1="50.0" y1="162.5" x2="56.0" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-40" x1="50.0" y1="140.0" x2="56.0" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-41" x1="50.0" y1="117.5" x2="56.0" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-42" x1="50.0" y1="95.0" x2="56.0" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-43" x1="50.0" y1="72.5" x2="56.0" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-44" x1="50.0" y1="50.0" x2="56.0" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-45" x1="50.0" y1="27.5" x2="56.0" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-46" x1="50.0" y1="5.0" x2="56.0" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-47" x1="72.5" y1="185.0" x2="74.3" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-48" x1="72.5" y1="162.5" x2="74.3" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-49" x1="72.5" y1="140.0" x2="74.3" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-50" x1="72.5" y1="117.5" x2="74.3" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-51" x1="72.5" y1="95.0" x2="74.3" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-52" x1="72.5" y1="72.5" x2="74.3" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-53" x1="72.5" y1="50.0" x2="74.3" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-54" x1="72.5" y1="27.5" x2="74.3" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-55" x1="72.5" y1="5.0" x2="74.3" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-56" x1="117.5" y1="185.0" x2="115.7" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-57" x1="117.5" y1="162.5" x2="115.7" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-58" x1="117.5" y1="140.0" x2="115.7" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-59" x1="117.5" y1="117.5" x2="115.7" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-60" x1="117.5" y1="95.0" x2="115.7" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-61" x1="117.5" y1="72.5" x2="115.7" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-62" x1="117.5" y1="50.0" x2="115.7" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-63" x1="117.5" y1="27.5" x2="115.7" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-64" x1="117.5" y1="5.0" x2="115.7" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-65" x1="140.0" y1="185.0" x2="134.0" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-66" x1="140.0" y1="162.5" x2="134.0" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-67" x1="140.0" y1="140.0" x2="134.0" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-68" x1="140.0" y1="117.5" x2="134.0" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-69" x1="140.0" y1="95.0" x2="134.0" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-70" x1="140.0" y1="72.5" x2="134.0" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-71" x1="140.0" y1="50.0" x2="134.0" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-72" x1="140.0" y1="27.5" x2="134.0" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-73" x1="140.0" y1="5.0" x2="134.0" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-74" x1="162.5" y1="185.0" x2="152.2" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-75" x1="162.5" y1="162.5" x2="152.2" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-76" x1="162.5" y1="140.0" x2="152.2" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-77" x1="162.5" y1="117.5" x2="152.2" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-78" x1="162.5" y1="95.0" x2="152.2" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-79" x1="162.5" y1="72.5" x2="152.2" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-80" x1="162.5" y1="50.0" x2="152.2" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-81" x1="162.5" y1="27.5" x2="152.2" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-82" x1="162.5" y1="5.0" x2="152.2" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-83" x1="185.0" y1="185.0" x2="170.5" y2="185.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-84" x1="185.0" y1="162.5" x2="170.5" y2="162.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-85" x1="185.0" y1="140.0" x2="170.5" y2="140.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-86" x1="185.0" y1="117.5" x2="170.5" y2="117.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-87" x1="185.0" y1="95.0" x2="170.5" y2="95.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-88" x1="185.0" y1="72.5" x2="170.5" y2="72.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-89" x1="185.0" y1="50.0" x2="170.5" y2="50.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-90" x1="185.0" y1="27.5" x2="170.5" y2="27.5" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+    <line id="prefigure-6-curve5-__line-91" x1="185.0" y1="5.0" x2="170.5" y2="5.0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve5-arrow-head-end-2_None_24_60-blue)"/>
+  </g>
+</svg>

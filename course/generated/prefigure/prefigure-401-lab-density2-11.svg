@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-401-lab-density2-figure" width="314" height="164" viewBox="0 0 314 164">
+  <defs>
+    <clipPath id="prefigure-401-lab-density2-__clipPath-0">
+      <rect x="7.0" y="7.0" width="300.0" height="150.0"/>
+    </clipPath>
+    <clipPath id="prefigure-401-lab-density2-__clipPath-1">
+      <rect x="7.0" y="7.0" width="300.0" height="150.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-401-lab-density2-axes" stroke="black" stroke-width="2">
+    <line id="prefigure-401-lab-density2-__line-0" x1="7.0" y1="115.3" x2="307.0" y2="115.3" stroke="black" stroke-width="2"/>
+    <g id="prefigure-401-lab-density2-__g-0">
+      <line id="prefigure-401-lab-density2-__line-1" x1="173.7" y1="118.3" x2="173.7" y2="112.3"/>
+    </g>
+    <line id="prefigure-401-lab-density2-__line-2" x1="62.6" y1="157.0" x2="62.6" y2="7.0" stroke="black" stroke-width="2"/>
+    <g>
+      <line id="prefigure-401-lab-density2-__line-3" x1="59.6" y1="73.7" x2="65.6" y2="73.7"/>
+      <line id="prefigure-401-lab-density2-__line-4" x1="59.6" y1="32.0" x2="65.6" y2="32.0"/>
+    </g>
+  </g>
+  <g id="prefigure-401-lab-density2-__label-0" transform="translate(303.0,111.3) translate(-10.4,-8.2)">
+    <g id="prefigure-401-lab-density2-__g-1">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-401-lab-density2-MJX-2-NCM-I-1D465" d="M527 373C527 419 482 442 432 442C389 442 355 419 329 373C308 419 273 442 222 442C173 442 133 419 101 374C74 335 60 306 60 287C60 278 65 273 75 273C84 273 90 278 92 287C111 345 153 413 220 413C253 413 269 392 269 351C269 330 251 252 216 118C199 51 169 18 126 18C112 18 99 21 88 26C114 36 127 54 127 80C127 106 114 119 87 119C54 119 29 91 29 58C29 12 76-11 125-11C167-11 201 12 228 58C247 12 283-11 335-11C383-11 423 12 455 57C482 96 496 125 496 144C496 153 491 158 481 158C472 158 467 153 464 144C447 87 402 18 337 18C304 18 287 38 287 79C287 92 292 120 303 165L337 300C356 375 387 413 431 413C445 413 458 410 469 405C442 396 429 378 429 351C429 325 443 312 470 312C502 312 527 341 527 373Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:x" data-semantic-speech="x">
+              <use data-c="1D465" xlink:href="#prefigure-401-lab-density2-MJX-2-NCM-I-1D465"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-401-lab-density2-__label-1" transform="translate(66.6,11.0) translate(0.0,-0.0)">
+    <g id="prefigure-401-lab-density2-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.912px" width="17.256px" height="11.912px" role="img" focusable="false" viewBox="0 -442 953.6 658" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-401-lab-density2-MJX-3-NCM-I-1D70C" d="M361 442C248 442 154 320 129 220L33-169C31-177 30-182 30-185C30-206 40-216 61-216C76-216 89-208 99-193L160 46C183 7 215-13 256-13C322-13 380 19 431 84C478 145 502 210 502 277C502 368 449 442 361 442M359 412C402 412 423 381 423 319C423 292 417 257 406 212C384 127 353 70 314 40C293 24 274 16 255 16C236 16 219 23 206 36C185 57 175 79 175 100C176 107 178 119 182 136C205 231 225 292 241 320C276 381 315 412 359 412Z"/>
+          <path id="prefigure-401-lab-density2-MJX-3-NCM-N-30" d="M249-22C390-22 460 92 460 320C460 473 428 575 365 625C330 652 291 666 250 666C109 666 39 551 39 320C39 136 88-22 249-22M361 524C368 489 371 425 371 332C371 240 367 172 360 128C347 48 310 8 249 8C226 8 203 17 182 34C155 57 139 104 132 176C129 201 128 253 128 332C128 419 131 480 136 513C145 568 163 603 191 618C213 630 232 636 249 636C314 636 350 583 361 524Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="msub" data-semantic-type="subscript" data-semantic-role="greekletter" data-semantic-annotation="depth:1" data-semantic-id="2" data-semantic-children="0,1" data-semantic-attributes="latex:\rho_0" data-semantic-speech="rho 0">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="greekletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number;depth:2" data-semantic-id="0" data-semantic-parent="2" data-semantic-attributes="latex:\rho" data-semantic-speech="rho" data-semantic-prefix="Base">
+                <use data-c="1D70C" xlink:href="#prefigure-401-lab-density2-MJX-3-NCM-I-1D70C"/>
+              </g>
+              <g data-mml-node="mn" transform="translate(550,-150) scale(0.707)" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="clearspeak:simple;depth:2" data-semantic-id="1" data-semantic-parent="2" data-semantic-attributes="latex:0" data-semantic-speech="0" data-semantic-prefix="Subscript">
+                <use data-c="30" xlink:href="#prefigure-401-lab-density2-MJX-3-NCM-N-30"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-401-lab-density2-__label-2" transform="translate(51.6,73.7) translate(-23.1,-6.2)">
+    <g id="prefigure-401-lab-density2-__g-3">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="23.128px" height="12.456px" role="img" focusable="false" viewBox="0 -666 1278 688" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-401-lab-density2-MJX-4-NCM-N-30" d="M249-22C390-22 460 92 460 320C460 473 428 575 365 625C330 652 291 666 250 666C109 666 39 551 39 320C39 136 88-22 249-22M361 524C368 489 371 425 371 332C371 240 367 172 360 128C347 48 310 8 249 8C226 8 203 17 182 34C155 57 139 104 132 176C129 201 128 253 128 332C128 419 131 480 136 513C145 568 163 603 191 618C213 630 232 636 249 636C314 636 350 583 361 524Z"/>
+          <path id="prefigure-401-lab-density2-MJX-4-NCM-N-2E" d="M192 53C192 82 168 106 139 106C110 106 86 82 86 53C86 24 110 0 139 0C168 0 192 24 192 53Z"/>
+          <path id="prefigure-401-lab-density2-MJX-4-NCM-N-35" d="M118 315C123 315 129 319 134 326C164 371 205 393 257 393C292 393 319 373 337 332C348 305 354 264 354 209C354 146 346 102 331 76C306 35 272 14 229 14C162 14 109 62 91 114C94 113 96 114 100 114C130 114 155 137 155 167C155 198 130 219 100 219C65 219 50 200 50 163C50 63 131-22 231-22C292-22 344 0 386 44C428 88 449 141 449 202C449 260 432 310 398 353C361 400 315 423 259 423C212 423 171 408 138 378L138 556C165 548 191 544 218 544C264 544 304 555 338 578C369 597 390 616 402 634C408 642 411 648 411 651C411 661 406 666 396 666C341 645 294 634 256 634C211 634 168 643 127 662C122 664 118 665 114 665C105 665 100 656 100 637L100 345C100 324 100 315 118 315Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{0.5}" data-semantic-speech="0.5">
+              <use data-c="30" xlink:href="#prefigure-401-lab-density2-MJX-4-NCM-N-30"/>
+              <use data-c="2E" xlink:href="#prefigure-401-lab-density2-MJX-4-NCM-N-2E" transform="translate(500,0)"/>
+              <use data-c="35" xlink:href="#prefigure-401-lab-density2-MJX-4-NCM-N-35" transform="translate(778,0)"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-401-lab-density2-__label-3" transform="translate(51.6,32.0) translate(-9.0,-6.0)">
+    <g id="prefigure-401-lab-density2-__g-4">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-401-lab-density2-MJX-5-NCM-N-31" d="M269 666C228 624 168 603 89 603L89 564C141 564 184 572 217 588L217 82C217 64 213 52 204 47C195 42 170 39 130 39L95 39L95 0C120 2 174 3 257 3C340 3 394 2 419 0L419 39L384 39C343 39 318 42 310 47C302 52 297 64 297 82L297 636C297 660 295 666 269 666Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mtext" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="general:text;clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{1}" data-semantic-speech="1">
+              <use data-c="31" xlink:href="#prefigure-401-lab-density2-MJX-5-NCM-N-31"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <path id="prefigure-401-lab-density2-__path-0" stroke="blue" stroke-width="2" fill="none" d="M 7.0 115.3 L 10.0 115.3 L 13.0 115.3 L 16.0 115.3 L 19.0 115.3 L 22.0 115.3 L 25.0 115.3 L 28.0 115.3 L 31.0 115.2 L 34.0 115.2 L 37.0 115.2 L 40.0 115.2 L 43.0 115.2 L 46.0 115.1 L 49.0 115.1 L 52.0 115.1 L 55.0 115.0 L 58.0 115.0 L 61.0 114.9 L 64.0 114.9 L 67.0 114.8 L 70.0 114.7 L 73.0 114.7 L 76.0 114.5 L 79.0 114.4 L 82.0 114.3 L 85.0 114.1 L 88.0 114.0 L 91.0 113.7 L 94.0 113.5 L 97.0 113.2 L 100.0 112.9 L 103.0 112.6 L 106.0 112.2 L 109.0 111.7 L 112.0 111.2 L 115.0 110.5 L 118.0 109.9 L 121.0 109.1 L 124.0 108.2 L 127.0 107.2 L 130.0 106.1 L 133.0 104.9 L 136.0 103.5 L 139.0 101.9 L 142.0 100.3 L 145.0 98.4 L 148.0 96.4 L 151.0 94.2 L 154.0 91.9 L 157.0 89.4 L 160.0 86.8 L 163.0 84.0 L 166.0 81.2 L 169.0 78.3 L 172.0 75.3 L 175.0 72.3 L 178.0 69.4 L 181.0 66.5 L 184.0 63.6 L 187.0 60.8 L 190.0 58.2 L 193.0 55.7 L 196.0 53.4 L 199.0 51.2 L 202.0 49.1 L 205.0 47.3 L 208.0 45.6 L 211.0 44.0 L 214.0 42.6 L 217.0 41.4 L 220.0 40.2 L 223.0 39.2 L 226.0 38.3 L 229.0 37.6 L 232.0 36.9 L 235.0 36.2 L 238.0 35.7 L 241.0 35.2 L 244.0 34.8 L 247.0 34.5 L 250.0 34.1 L 253.0 33.9 L 256.0 33.6 L 259.0 33.4 L 262.0 33.2 L 265.0 33.1 L 268.0 32.9 L 271.0 32.8 L 274.0 32.7 L 277.0 32.6 L 280.0 32.5 L 283.0 32.5 L 286.0 32.4 L 289.0 32.3 L 292.0 32.3 L 295.0 32.3 L 298.0 32.2 L 301.0 32.2 L 304.0 32.2 L 307.0 32.1" clip-path="url(#prefigure-401-lab-density2-__clipPath-1)"/>
+</svg>

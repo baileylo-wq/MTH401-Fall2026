@@ -2383,7 +2383,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "3.6. Cauchy’s Integral Formula",
-  "body": " 3.6. Cauchy's Integral Formula  MTH 401     Cauchy's Integral Formula says that if is a complex differentiable function inside a closed curve , then the following hold (where is the derivative of ):       Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the integrals      .       .       .       Consider the function .     Where is the function singular? That is, where is ?      Let's be clever and use Cauchy's Integral Formula. We can write Evaluate if is the circle of radius 1 centered at . (Hint: Determine which part of this rewritten formula is complex differentiable inside .)      In the same way, evaluate if is the circle of radius 1 centered at .      Suppose that is the circle of 2 centered at 0. Evaluate .       If , , and are the same circles as in the last problem, evaluate for these three circles.      Where is the function singular?    "
+  "body": " 3.6. Cauchy's Integral Formula  MTH 401     Cauchy's Integral Formula says that if is a complex differentiable function inside a closed curve , then the following hold (where is the derivative of ):       Suppose that is the unit circle oriented in the counterclockwise direction. Evaluate the integrals      .       .       .       Consider the function .     Where is the function singular? That is, where is ?      Let's be clever and use Cauchy's Integral Formula. We can write Evaluate if is the circle of radius 1 centered at . (Hint: Determine which part of this rewritten formula is complex differentiable inside .)      In the same way, evaluate if is the circle of radius 1 centered at .      Suppose that is the circle of 2 centered at 0. Evaluate .       If , , and are the same circles as in the last problem, evaluate for these three circles.      Where is the function singular?      Challenge if you want it: Use the previous question to factor into four factors that have the form . Then use the knowledge from the worksheet to find where is the circle of radius 2 centered at the origin. (I'd recommend leaving the answers from the previous problem in polar form, and worrying about Cartesian form at the very very end (or never).)    "
 },
 {
   "id": "thm-Cauchy-Integral-Formula",
@@ -2429,6 +2429,15 @@ var ptx_lunr_docs = [
   "number": "4",
   "title": "",
   "body": "  Where is the function singular?   "
+},
+{
+  "id": "activities-35-8",
+  "level": "2",
+  "url": "activities-35.html#activities-35-8",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Challenge if you want it: Use the previous question to factor into four factors that have the form . Then use the knowledge from the worksheet to find where is the circle of radius 2 centered at the origin. (I'd recommend leaving the answers from the previous problem in polar form, and worrying about Cartesian form at the very very end (or never).)   "
 },
 {
   "id": "activities-36",
