@@ -16,7 +16,8 @@
         </p>
     </introduction>
 
-    <subsection xml:id="subsec-gradient">
+    <!--<subsection xml:id="subsec-gradient">-->
+    <paragraphs>
         <title>Gradient</title>
 
         <p>
@@ -28,7 +29,8 @@
             The gradient of <m>h</m>, <m>\nabla h(x,y)</m>, points in the
             direction of steepest ascent.
         </p>
-    </subsection>
+        </paragraphs>
+    <!--</subsection>-->
 
     <exercise workspace="1cm">
         <statement>
@@ -181,8 +183,7 @@
         </task>
     </exercise>
 
-    <subsection xml:id="subsec-divergence">
-        <title>Divergence</title>
+<paragraphs>        <title>Divergence</title>
 
         <p>
             The <term>divergence</term> is the flux density, or the amount of flux (flow)
@@ -198,7 +199,7 @@
             If you measure flux in bananas, a positive divergence means your
             location is a source of bananas, “the Donkey Kong jackpot”.
         </p>
-    </subsection>
+    </paragraphs>
 
     <exercise>
         <introduction>

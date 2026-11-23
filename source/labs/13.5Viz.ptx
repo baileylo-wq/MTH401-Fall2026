@@ -6,12 +6,16 @@
         <alert>MTH 401</alert>
     </p>
 
-    <subsection xml:id="subsec-1-dimension">
-        <title>One Dimension</title>
+    <paragraphs>
+          <title>One Dimension</title>
+        <p>
+            
+        </p>
+    </paragraphs>
+      
 
-    </subsection>
+  
 
-    <introduction>
         <p>
             Let's visualize worksheet 2.4 and see what is actually going on with
             our solution to the heat equation.  We will go to the <url href="https://colab.research.google.com/drive/1w7ALGWN-HWoOn0Wk8bOf4lIPO-QeLIAU?usp=sharing">Colab
@@ -39,7 +43,7 @@
             Each code cell will animate the solution to the appropriate problem over time, and 
             I'll ask you to think about some things as we go.
         </p>
-    </introduction>
+    
     <!--<sage language="sage">
         <input>
             import numpy as np

@@ -3,9 +3,9 @@
 <worksheet>
     <title>3.8. Laurent Series</title>
 
-    <alert>
+    <p><alert>
         MTH 401
-    </alert>
+    </alert></p>
 
     <definition xml:id="def-laurent-series">
         <statement>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.9. Laplace's equation in a disk</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
 <definition xml:id="def-laplace-eqn-polar">
     <statement>

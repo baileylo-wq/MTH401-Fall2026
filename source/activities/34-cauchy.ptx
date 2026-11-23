@@ -3,9 +3,9 @@
 <worksheet>
     <title>3.6. Cauchy's Integral Formula</title>
 
-    <alert>
+    <p><alert>
         MTH 401
-    </alert>
+    </alert></p>
 
     <theorem xml:id="thm-Cauchy-Integral-Formula">
       <statement>

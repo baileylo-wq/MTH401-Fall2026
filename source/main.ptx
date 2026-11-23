@@ -42,6 +42,63 @@
       <xi:include href="./labs/24.5Lab_print.ptx"/>
       <xi:include href="./labs/28Lab_characteristics.ptx"/>
       
+      <references xml:id="references-traffic">
+        <title>References</title>
+
+        <biblio type="raw">
+          Paul Richards. Shock Waves on the Highway. Operations Research. Vol. 4,
+          No. 1 (February, 1956), 42-51.
+          <note>
+            <p>
+              Richards introduced the model for traffic flow that we considered here
+              and described the shear rule and the evolution of shock waves.
+            </p>
+          </note>
+        </biblio>
+
+        <biblio type="raw">
+          M.J. Lighthill and G.B. Whitham. On kinematics waves I. Flood movement in
+          long rivers. Proceedings of the Royal Society A. 229 (1955) 281-316.
+        </biblio>
+
+        <biblio type="raw">
+          M.J. Lighthill and G.B. Whitham. On kinematics waves II. A theory of
+          traffic flow on long crowded roads. Proceedings of the Royal Society A.
+          229 (1955) 317-345.
+          <note>
+            <p>
+              This pair of papers presents a general theory of wave motion and
+              includes traffic flow as a detailed example. The second paper
+              considers the question of how the velocity depends on the density and
+              provides some evidence for the model used here:
+              <m>v = c(1-2\rho)</m>.
+            </p>
+          </note>
+        </biblio>
+
+        <biblio type="raw">
+          Helge Holden and Nils Henrik Risebro. A mathematical model of traffic flow
+          on a network of unidirectional roads. In Nonlinear Hyperbolic Problems:
+          Theoretical, Applied, and Computational Aspects. A. Dontao, F. Oliveri
+          (editors). Vieweg+Teubner Verlag. 1993.
+          <note>
+            <p>
+              Here is a more sophisticated model of traffic flow on a network of
+              interconnected roads.
+            </p>
+          </note>
+        </biblio>
+
+        <biblio type="raw">
+          Richard Haberman. Mathematical Models: Mechanical Vibrations, Population
+          Dynamics, and Traffic Flow. Society of Industrial and Applied Mathematics.
+          Philadelphia. 1998.
+        </biblio>
+
+        <biblio type="raw">
+          Gerald Whitham. Linear and Nonlinear Waves. Wiley. New York. 1999.
+        </biblio>
+      </references>
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
 

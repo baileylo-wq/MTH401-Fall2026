@@ -3,7 +3,7 @@
 <worksheet>
     <title>Midterm 2</title>
 
-    <page>
+    <!--<page>-->
     <introduction>
         <p>
             <alert>MTH 401</alert>
@@ -102,8 +102,8 @@
 <p>
     (Continued on the next page.)
 </p>
-</page>
-<page>
+<!--</page>
+<page>-->
 <exercise>
   <statement>
     <p>
@@ -138,5 +138,5 @@
         </statement>
     </exercise>
 
-    </page>
+    <!--</page>-->
 </worksheet>

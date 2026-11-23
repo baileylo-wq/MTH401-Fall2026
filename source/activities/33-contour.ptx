@@ -87,7 +87,8 @@
                 <p>
                     Parameterize the unit circle as <m>z(t) = e^{it}</m> to
                     evaluate the following:
-                </p>
+                
+
                 <ul>
                     <li>
                         <p>
@@ -110,6 +111,7 @@
                         </p>
                     </li>
                 </ul>
+            </p>
             </statement>
 
     

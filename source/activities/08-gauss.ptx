@@ -70,8 +70,8 @@
 
                 <image width="45%" margins="0% 55%">
                     <shortdescription>
-                        Arrows indicate the <m>x,y,z</m>-axes.
-                        A plane shown on the left in the <m>x,y</m>-plane, and
+                        Arrows indicate the x,y,z-axes.
+                        A plane shown on the left in the x,y-plane, and
                         on the right is a copy of the plane with a cylinder
                         oriented such that the plane cuts the cylinder exactly
                         in half and so that the plane makes a circular slice
@@ -95,7 +95,7 @@
                                 g(x)=-0.1*sqrt(1 - ((x-8.8)/(0.8))^2)+1.45
                             </definition>
                             <coordinates bbox="(0,0,12,3)">
-                                <axes decorations="no" axes="none"/>
+                                
                                 <polygon points="points" stroke="black" closed="yes" fill="gray" fill-opacity="0.2"/>
                                 <polygon points="points2" stroke="black" closed="yes" fill="gray" fill-opacity="0.2"/>
                                 <path start="(8.0,2.1)" stroke="none" closed="yes" fill="white">
@@ -244,14 +244,14 @@
 
                 <image width="20%" margins="0% 80%">
                     <shortdescription>
-                        Arrows indicate the <m>x,y,z</m>-axes.
+                        Arrows indicate the x,y,z-axes.
                         A wire extends vertically, and a cylinder gaussian
                         surface is wrapped symmetrically around the wire.
                     </shortdescription>
                     <prefigure xmlns="https://prefigure.org" label="prefigure-8-gauss2">
                         <diagram dimensions="(200,200)" margins="5">
                             <coordinates bbox="(7,1,10.5,2.5)">
-                                <axes decorations="no" axes="none"/>
+                                
                                 <definition>
                                     f(x)=-0.1*sqrt(1 - ((x-8.8)/(0.8))^2)+1.45
                                 </definition>
