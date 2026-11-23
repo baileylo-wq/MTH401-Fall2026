@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-2-7-fourier-cosine-x2-figure" width="250" height="250" viewBox="0 0 250 250">
+  <defs>
+    <clipPath id="prefigure-2-7-fourier-cosine-x2-__clipPath-0">
+      <rect x="25.0" y="25.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <clipPath id="prefigure-2-7-fourier-cosine-x2-__clipPath-1">
+      <rect x="25.0" y="25.0" width="200.0" height="200.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-2-7-fourier-cosine-x2-grid-axes">
+    <g id="prefigure-2-7-fourier-cosine-x2-grid" stroke="#ccc" stroke-width="1">
+      <line x1="25.0" y1="225.0" x2="25.0" y2="25.0"/>
+      <line x1="50.0" y1="225.0" x2="50.0" y2="25.0"/>
+      <line x1="75.0" y1="225.0" x2="75.0" y2="25.0"/>
+      <line x1="100.0" y1="225.0" x2="100.0" y2="25.0"/>
+      <line x1="125.0" y1="225.0" x2="125.0" y2="25.0"/>
+      <line x1="150.0" y1="225.0" x2="150.0" y2="25.0"/>
+      <line x1="175.0" y1="225.0" x2="175.0" y2="25.0"/>
+      <line x1="200.0" y1="225.0" x2="200.0" y2="25.0"/>
+      <line x1="225.0" y1="225.0" x2="225.0" y2="25.0"/>
+      <line x1="25.0" y1="177.4" x2="225.0" y2="177.4"/>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-2-7-fourier-cosine-x2-__line-10" x1="25.0" y1="177.4" x2="225.0" y2="177.4" stroke="black" stroke-width="2"/>
+      <g>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-11" x1="25.0" y1="180.4" x2="25.0" y2="174.4"/>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-12" x1="50.0" y1="180.4" x2="50.0" y2="174.4"/>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-13" x1="75.0" y1="180.4" x2="75.0" y2="174.4"/>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-14" x1="100.0" y1="180.4" x2="100.0" y2="174.4"/>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-15" x1="150.0" y1="180.4" x2="150.0" y2="174.4"/>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-16" x1="175.0" y1="180.4" x2="175.0" y2="174.4"/>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-17" x1="200.0" y1="180.4" x2="200.0" y2="174.4"/>
+        <line id="prefigure-2-7-fourier-cosine-x2-__line-18" x1="225.0" y1="180.4" x2="225.0" y2="174.4"/>
+      </g>
+      <line id="prefigure-2-7-fourier-cosine-x2-__line-19" x1="125.0" y1="225.0" x2="125.0" y2="25.0" stroke="black" stroke-width="2"/>
+      <g/>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-0" transform="translate(25.0,188.4) translate(-7.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.256px" role="img" focusable="false" viewBox="0 -677 833 677" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-2-NCM-N-2D" d="M11 187L276 187L276 245L11 245Z"/>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-2-NCM-N-34" d="M353 677C344 677 336 672 330 663L28 199L28 163L289 163L289 81C289 63 285 51 278 46C271 41 252 39 219 39L194 39L194 0C223 2 269 3 331 3C393 3 439 2 468 0L468 39L443 39C410 39 391 41 384 46C377 51 373 63 373 81L373 163L471 163L471 202L373 202L373 660C373 670 366 677 353 677M295 553L295 202L67 202Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{-4}" data-semantic-speech="minus 4">
+                <use data-c="2D" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-2-NCM-N-2D"/>
+                <use data-c="34" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-2-NCM-N-34" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-1" transform="translate(50.0,188.4) translate(-7.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="15.080px" height="12.456px" role="img" focusable="false" viewBox="0 -666 833 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-3-NCM-N-2D" d="M11 187L276 187L276 245L11 245Z"/>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-3-NCM-N-33" d="M303 353C369 378 431 441 431 526C431 569 410 604 369 631C333 654 292 666 246 666C201 666 162 654 127 631C88 605 68 571 68 528C68 495 90 472 122 472C154 472 176 495 176 527C176 560 157 578 119 580C145 615 186 633 242 633C302 633 332 598 332 527C332 485 324 450 309 421C282 373 245 364 183 364C171 362 165 357 165 348C165 333 172 333 192 333L235 333C310 333 348 280 348 173C348 88 317 14 241 14C176 14 128 36 99 80C134 79 160 105 160 139C160 173 135 198 101 198C62 198 42 178 42 137C42 88 64 49 108 18C147-9 193-22 244-22C301-22 350-3 393 34C436 71 457 117 457 173C457 267 383 332 303 353Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{-3}" data-semantic-speech="minus 3">
+                <use data-c="2D" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-3-NCM-N-2D"/>
+                <use data-c="33" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-3-NCM-N-33" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-2" transform="translate(75.0,188.4) translate(-7.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-2">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-4-NCM-N-2D" d="M11 187L276 187L276 245L11 245Z"/>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-4-NCM-N-32" d="M237 666C186 666 143 648 106 612C69 576 50 534 50 483C50 449 75 424 106 424C136 424 161 450 161 480C161 513 137 536 105 536C102 536 100 536 98 535C117 584 161 627 224 627C306 627 352 556 352 470C352 403 318 331 250 255L62 43C49 28 50 29 50 0L421 0L450 180L417 180C409 129 402 100 396 91C391 86 361 84 306 84L139 84L236 179C304 243 390 312 419 365C439 400 449 435 449 470C449 588 357 666 237 666Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{-2}" data-semantic-speech="minus 2">
+                <use data-c="2D" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-4-NCM-N-2D"/>
+                <use data-c="32" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-4-NCM-N-32" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-3" transform="translate(100.0,188.4) translate(-7.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="15.080px" height="12.056px" role="img" focusable="false" viewBox="0 -666 833 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-5-NCM-N-2D" d="M11 187L276 187L276 245L11 245Z"/>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-5-NCM-N-31" d="M269 666C228 624 168 603 89 603L89 564C141 564 184 572 217 588L217 82C217 64 213 52 204 47C195 42 170 39 130 39L95 39L95 0C120 2 174 3 257 3C340 3 394 2 419 0L419 39L384 39C343 39 318 42 310 47C302 52 297 64 297 82L297 636C297 660 295 666 269 666Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="text" data-semantic-role="unknown" data-semantic-font="normal" data-semantic-annotation="clearspeak:unit;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{-1}" data-semantic-speech="minus 1">
+                <use data-c="2D" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-5-NCM-N-2D"/>
+                <use data-c="31" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-5-NCM-N-31" transform="translate(333,0)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-4" transform="translate(150.0,188.4) translate(-4.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-6-NCM-N-31" d="M269 666C228 624 168 603 89 603L89 564C141 564 184 572 217 588L217 82C217 64 213 52 204 47C195 42 170 39 130 39L95 39L95 0C120 2 174 3 257 3C340 3 394 2 419 0L419 39L384 39C343 39 318 42 310 47C302 52 297 64 297 82L297 636C297 660 295 666 269 666Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="general:text;clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{1}" data-semantic-speech="1">
+                <use data-c="31" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-6-NCM-N-31"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-5" transform="translate(175.0,188.4) translate(-4.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-5">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.056px" role="img" focusable="false" viewBox="0 -666 500 666" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-7-NCM-N-32" d="M237 666C186 666 143 648 106 612C69 576 50 534 50 483C50 449 75 424 106 424C136 424 161 450 161 480C161 513 137 536 105 536C102 536 100 536 98 535C117 584 161 627 224 627C306 627 352 556 352 470C352 403 318 331 250 255L62 43C49 28 50 29 50 0L421 0L450 180L417 180C409 129 402 100 396 91C391 86 361 84 306 84L139 84L236 179C304 243 390 312 419 365C439 400 449 435 449 470C449 588 357 666 237 666Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="general:text;clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{2}" data-semantic-speech="2">
+                <use data-c="32" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-7-NCM-N-32"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-6" transform="translate(200.0,188.4) translate(-4.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-6">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="9.048px" height="12.456px" role="img" focusable="false" viewBox="0 -666 500 688" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-8-NCM-N-33" d="M303 353C369 378 431 441 431 526C431 569 410 604 369 631C333 654 292 666 246 666C201 666 162 654 127 631C88 605 68 571 68 528C68 495 90 472 122 472C154 472 176 495 176 527C176 560 157 578 119 580C145 615 186 633 242 633C302 633 332 598 332 527C332 485 324 450 309 421C282 373 245 364 183 364C171 362 165 357 165 348C165 333 172 333 192 333L235 333C310 333 348 280 348 173C348 88 317 14 241 14C176 14 128 36 99 80C134 79 160 105 160 139C160 173 135 198 101 198C62 198 42 178 42 137C42 88 64 49 108 18C147-9 193-22 244-22C301-22 350-3 393 34C436 71 457 117 457 173C457 267 383 332 303 353Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="general:text;clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{3}" data-semantic-speech="3">
+                <use data-c="33" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-8-NCM-N-33"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-2-7-fourier-cosine-x2-__label-7" transform="translate(225.0,188.4) translate(-4.5,-0.0)">
+      <g id="prefigure-2-7-fourier-cosine-x2-__g-7">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.000px" width="9.048px" height="12.256px" role="img" focusable="false" viewBox="0 -677 500 677" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-2-7-fourier-cosine-x2-MJX-9-NCM-N-34" d="M353 677C344 677 336 672 330 663L28 199L28 163L289 163L289 81C289 63 285 51 278 46C271 41 252 39 219 39L194 39L194 0C223 2 269 3 331 3C393 3 439 2 468 0L468 39L443 39C410 39 391 41 384 46C377 51 373 63 373 81L373 163L471 163L471 202L373 202L373 660C373 670 366 677 353 677M295 553L295 202L67 202Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mtext" data-semantic-type="number" data-semantic-role="integer" data-semantic-font="normal" data-semantic-annotation="general:text;clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:\text{4}" data-semantic-speech="4">
+                <use data-c="34" xlink:href="#prefigure-2-7-fourier-cosine-x2-MJX-9-NCM-N-34"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-2-7-fourier-cosine-x2-__path-0" stroke="blue" stroke-width="2" fill="none" d="M 25.0 129.7 L 27.0 125.6 L 29.0 120.8 L 31.0 115.3 L 33.0 109.3 L 35.0 102.6 L 37.0 95.3 L 39.0 87.4 L 41.0 78.8 L 43.0 69.5 L 45.0 59.3 L 47.0 47.8 L 49.0 31.5 L 51.0 140.0 L 53.0 137.9 L 55.0 139.2 L 57.0 140.6 L 59.0 141.7 L 61.0 142.2 L 63.0 142.2 L 65.0 141.6 L 67.0 140.4 L 69.0 138.7 L 71.0 136.3 L 73.0 133.3 L 75.0 129.7 L 77.0 125.6 L 79.0 120.8 L 81.0 115.3 L 83.0 109.3 L 85.0 102.6 L 87.0 95.3 L 89.0 87.4 L 91.0 78.8 L 93.0 69.5 L 95.0 59.3 L 97.0 47.8 L 99.0 31.5 L 101.0 140.0 L 103.0 137.9 L 105.0 139.2 L 107.0 140.6 L 109.0 141.7 L 111.0 142.2 L 113.0 142.2 L 115.0 141.6 L 117.0 140.4 L 119.0 138.7 L 121.0 136.3 L 123.0 133.3 L 125.0 129.7 L 127.0 125.6 L 129.0 120.8 L 131.0 115.3 L 133.0 109.3 L 135.0 102.6 L 137.0 95.3 L 139.0 87.4 L 141.0 78.8 L 143.0 69.5 L 145.0 59.3 L 147.0 47.8 L 149.0 31.5 L 151.0 140.0 L 153.0 137.9 L 155.0 139.2 L 157.0 140.6 L 159.0 141.7 L 161.0 142.2 L 163.0 142.2 L 165.0 141.6 L 167.0 140.4 L 169.0 138.7 L 171.0 136.3 L 173.0 133.3 L 175.0 129.7 L 177.0 125.6 L 179.0 120.8 L 181.0 115.3 L 183.0 109.3 L 185.0 102.6 L 187.0 95.3 L 189.0 87.4 L 191.0 78.8 L 193.0 69.5 L 195.0 59.3 L 197.0 47.8 L 199.0 31.5 L 201.0 140.0 L 203.0 137.9 L 205.0 139.2 L 207.0 140.6 L 209.0 141.7 L 211.0 142.2 L 213.0 142.2 L 215.0 141.6 L 217.0 140.4 L 219.0 138.7 L 221.0 136.3 L 223.0 133.3 L 225.0 129.7" clip-path="url(#prefigure-2-7-fourier-cosine-x2-__clipPath-1)"/>
+</svg>

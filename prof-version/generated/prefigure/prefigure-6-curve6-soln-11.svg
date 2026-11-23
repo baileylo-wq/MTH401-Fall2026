@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-6-curve6-soln-figure" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="prefigure-6-curve6-soln-__clipPath-0">
+      <rect x="0.0" y="0.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <clipPath id="prefigure-6-curve6-soln-__clipPath-1">
+      <rect x="0.0" y="0.0" width="200.0" height="200.0"/>
+    </clipPath>
+    <marker id="prefigure-6-curve6-soln-arrow-head-end-4_None_24_60-blue" markerWidth="18.0" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="13.1" refY="8.0">
+      <path d="M 18.0 8.0L 0.0 16.0L 3.5 10.0L 3.5 6.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="prefigure-6-curve6-soln-arrow-head-end-4_None_24_60-blue-outline" markerWidth="22.0" markerHeight="20.0" markerUnits="userSpaceOnUse" orient="auto" refX="15.1" refY="10.0">
+      <path d="M 20.8 11.8 L 2.8 19.8 A 2 2 0 0 1 0.0 18.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 20.8 8.2 A 2 2 0 0 1 20.8 11.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.5" refY="4.0">
+      <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="red" stroke="none"/>
+    </marker>
+    <marker id="prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="8.5" refY="6.0">
+      <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="prefigure-6-curve6-soln-arrow-head-start-4_None_24_60-blue" markerWidth="18.0" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.9" refY="8.0">
+      <g transform="rotate(180, 9.0, 8.0)">
+        <path d="M 18.0 8.0L 0.0 16.0L 3.5 10.0L 3.5 6.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-6-curve6-soln-arrow-head-start-4_None_24_60-blue-outline" markerWidth="22.0" markerHeight="20.0" markerUnits="userSpaceOnUse" orient="auto" refX="6.9" refY="10.0">
+      <g transform="rotate(180, 11.0, 10.0)">
+        <path d="M 20.8 11.8 L 2.8 19.8 A 2 2 0 0 1 0.0 18.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 20.8 8.2 A 2 2 0 0 1 20.8 11.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-6-curve6-soln-arrow-head-start-2_None_24_60-red" markerWidth="9.0" markerHeight="8.0" markerUnits="userSpaceOnUse" orient="auto" refX="2.5" refY="4.0">
+      <g transform="rotate(180, 4.5, 4.0)">
+        <path d="M 9.0 4.0L 0.0 8.0L 1.7 5.0L 1.7 3.0L 0.0 0.0Z" fill="red" stroke="none"/>
+      </g>
+    </marker>
+    <marker id="prefigure-6-curve6-soln-arrow-head-start-2_None_24_60-red-outline" markerWidth="13.0" markerHeight="12.0" markerUnits="userSpaceOnUse" orient="auto" refX="4.5" refY="6.0">
+      <g transform="rotate(180, 6.5, 6.0)">
+        <path d="M 11.8 7.8 L 2.8 11.8 A 2 2 0 0 1 0.0 10.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 11.8 4.2 A 2 2 0 0 1 11.8 7.8 Z" fill="white" stroke="none"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="prefigure-6-curve6-soln-grid-axes">
+    <g id="prefigure-6-curve6-soln-grid" stroke="#ccc" stroke-width="1">
+      <line x1="0.0" y1="200.0" x2="0.0" y2="0.0"/>
+      <line x1="25.0" y1="200.0" x2="25.0" y2="0.0"/>
+      <line x1="50.0" y1="200.0" x2="50.0" y2="0.0"/>
+      <line x1="75.0" y1="200.0" x2="75.0" y2="0.0"/>
+      <line x1="100.0" y1="200.0" x2="100.0" y2="0.0"/>
+      <line x1="125.0" y1="200.0" x2="125.0" y2="0.0"/>
+      <line x1="150.0" y1="200.0" x2="150.0" y2="0.0"/>
+      <line x1="175.0" y1="200.0" x2="175.0" y2="0.0"/>
+      <line x1="200.0" y1="200.0" x2="200.0" y2="0.0"/>
+      <line x1="0.0" y1="200.0" x2="200.0" y2="200.0"/>
+      <line x1="0.0" y1="175.0" x2="200.0" y2="175.0"/>
+      <line x1="0.0" y1="150.0" x2="200.0" y2="150.0"/>
+      <line x1="0.0" y1="125.0" x2="200.0" y2="125.0"/>
+      <line x1="0.0" y1="100.0" x2="200.0" y2="100.0"/>
+      <line x1="0.0" y1="75.0" x2="200.0" y2="75.0"/>
+      <line x1="0.0" y1="50.0" x2="200.0" y2="50.0"/>
+      <line x1="0.0" y1="25.0" x2="200.0" y2="25.0"/>
+      <line x1="0.0" y1="0.0" x2="200.0" y2="0.0"/>
+    </g>
+    <g id="prefigure-6-curve6-soln-axes" stroke="black" stroke-width="2">
+      <line id="prefigure-6-curve6-soln-__line-18" x1="0.0" y1="100.0" x2="200.0" y2="100.0" stroke="black" stroke-width="2"/>
+      <line id="prefigure-6-curve6-soln-__line-19" x1="100.0" y1="200.0" x2="100.0" y2="0.0" stroke="black" stroke-width="2"/>
+    </g>
+    <g id="prefigure-6-curve6-soln-__label-0" transform="translate(196.0,96.0) translate(-10.4,-8.2)">
+      <g id="prefigure-6-curve6-soln-__g-0">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.200px" width="10.352px" height="8.200px" role="img" focusable="false" viewBox="0 -442 572 453" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-6-curve6-soln-MJX-2-NCM-I-1D465" d="M527 373C527 419 482 442 432 442C389 442 355 419 329 373C308 419 273 442 222 442C173 442 133 419 101 374C74 335 60 306 60 287C60 278 65 273 75 273C84 273 90 278 92 287C111 345 153 413 220 413C253 413 269 392 269 351C269 330 251 252 216 118C199 51 169 18 126 18C112 18 99 21 88 26C114 36 127 54 127 80C127 106 114 119 87 119C54 119 29 91 29 58C29 12 76-11 125-11C167-11 201 12 228 58C247 12 283-11 335-11C383-11 423 12 455 57C482 96 496 125 496 144C496 153 491 158 481 158C472 158 467 153 464 144C447 87 402 18 337 18C304 18 287 38 287 79C287 92 292 120 303 165L337 300C356 375 387 413 431 413C445 413 458 410 469 405C442 396 429 378 429 351C429 325 443 312 470 312C502 312 527 341 527 373Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:x" data-semantic-speech="x">
+                <use data-c="1D465" xlink:href="#prefigure-6-curve6-soln-MJX-2-NCM-I-1D465"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+    <g id="prefigure-6-curve6-soln-__label-1" transform="translate(104.0,4.0) translate(0.0,-0.0)">
+      <g id="prefigure-6-curve6-soln-__g-1">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -3.712px" width="8.872px" height="11.712px" role="img" focusable="false" viewBox="0 -442 490 647" x="0.0" y="0.0">
+          <defs>
+            <path id="prefigure-6-curve6-soln-MJX-3-NCM-I-1D466" d="M163 442C118 442 83 417 58 367C39 328 29 301 29 286C29 277 34 272 45 272C59 272 60 278 64 293C87 372 119 412 160 412C173 412 180 403 180 385C180 369 175 346 164 317C126 214 107 145 107 108C107 32 154-13 231-13C264-13 295-1 323 23C288-109 233-175 158-175C124-175 101-164 89-142C129-140 149-121 149-85C149-60 136-47 109-47C72-47 50-78 50-115C50-170 100-205 158-205C273-205 367-99 392-1L486 377C489 388 490 396 490 401C490 421 479 431 458 431C442 431 429 423 420 408C414 387 409 369 406 354L342 97C332 61 279 16 234 16C196 16 177 41 177 92C177 134 194 198 227 284C240 319 247 343 247 357C247 406 212 442 163 442Z"/>
+          </defs>
+          <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+            <g data-mml-node="math">
+              <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:y" data-semantic-speech="y">
+                <use data-c="1D466" xlink:href="#prefigure-6-curve6-soln-MJX-3-NCM-I-1D466"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </g>
+    </g>
+  </g>
+  <path id="prefigure-6-curve6-soln-__path-0" d="M 125.0 75.0 L 125.0 125.0 L 175.0 125.0 L 175.0 75.0 L 125.0 75.0" stroke="blue" stroke-width="4" fill="none" clip-path="url(#prefigure-6-curve6-soln-__clipPath-1)" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-4_None_24_60-blue)"/>
+  <g id="prefigure-6-curve6-soln-__label-2" transform="translate(154.0,68.0) translate(0.0,-13.2)">
+    <g id="prefigure-6-curve6-soln-__g-2">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: -0.400px" width="13.752px" height="13.160px" role="img" focusable="false" viewBox="0 -705 760 727" x="0.0" y="0.0">
+        <defs>
+          <path id="prefigure-6-curve6-soln-MJX-4-NCM-I-1D436" d="M148 218C148 346 204 476 267 548C318 607 406 666 505 666C609 666 660 587 660 479C660 470 657 438 657 429C657 420 663 415 676 415C681 415 685 416 688 417C693 424 696 431 698 438L760 691C760 700 755 705 745 705C741 705 735 701 727 692L662 619C623 676 568 705 497 705C442 705 388 692 333 667C222 615 141 533 89 421C63 366 50 310 50 253C50 173 75 108 126 56C177 4 242-22 322-22C401-22 473 7 538 64C565 87 588 115 607 146C634 191 648 222 648 241C648 250 643 255 632 255C623 255 618 251 616 242C595 177 562 125 517 88C460 41 400 17 338 17C218 17 148 98 148 218Z"/>
+        </defs>
+        <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+          <g data-mml-node="math">
+            <g data-mml-node="mi" data-semantic-type="identifier" data-semantic-role="latinletter" data-semantic-font="italic" data-semantic-annotation="clearspeak:simple;nemeth:number;depth:1" data-semantic-id="0" data-semantic-attributes="latex:                                         C                                     " data-semantic-speech="upper C">
+              <use data-c="1D436" xlink:href="#prefigure-6-curve6-soln-MJX-4-NCM-I-1D436"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </g>
+  </g>
+  <g id="prefigure-6-curve6-soln-__vector-field-0">
+    <line id="prefigure-6-curve6-soln-__line-20" x1="0.0" y1="200.0" x2="-16.4" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-21" x1="0.0" y1="175.0" x2="-11.7" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-22" x1="0.0" y1="150.0" x2="-7.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-23" x1="0.0" y1="125.0" x2="-2.3" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-24" x1="0.0" y1="75.0" x2="2.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-25" x1="0.0" y1="50.0" x2="7.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-26" x1="0.0" y1="25.0" x2="11.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-27" x1="0.0" y1="0.0" x2="16.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-28" x1="25.0" y1="200.0" x2="8.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-29" x1="25.0" y1="175.0" x2="13.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-30" x1="25.0" y1="150.0" x2="18.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-31" x1="25.0" y1="125.0" x2="22.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-32" x1="25.0" y1="75.0" x2="27.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-33" x1="25.0" y1="50.0" x2="32.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-34" x1="25.0" y1="25.0" x2="36.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-35" x1="25.0" y1="0.0" x2="41.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-36" x1="50.0" y1="200.0" x2="33.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-37" x1="50.0" y1="175.0" x2="38.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-38" x1="50.0" y1="150.0" x2="43.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-39" x1="50.0" y1="125.0" x2="47.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-40" x1="50.0" y1="75.0" x2="52.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-41" x1="50.0" y1="50.0" x2="57.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-42" x1="50.0" y1="25.0" x2="61.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-43" x1="50.0" y1="0.0" x2="66.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-44" x1="75.0" y1="200.0" x2="58.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-45" x1="75.0" y1="175.0" x2="63.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-46" x1="75.0" y1="150.0" x2="68.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-47" x1="75.0" y1="125.0" x2="72.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-48" x1="75.0" y1="75.0" x2="77.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-49" x1="75.0" y1="50.0" x2="82.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-50" x1="75.0" y1="25.0" x2="86.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-51" x1="75.0" y1="0.0" x2="91.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-52" x1="100.0" y1="200.0" x2="83.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-53" x1="100.0" y1="175.0" x2="88.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-54" x1="100.0" y1="150.0" x2="93.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-55" x1="100.0" y1="125.0" x2="97.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-56" x1="100.0" y1="75.0" x2="102.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-57" x1="100.0" y1="50.0" x2="107.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-58" x1="100.0" y1="25.0" x2="111.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-59" x1="100.0" y1="0.0" x2="116.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-60" x1="125.0" y1="200.0" x2="108.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-61" x1="125.0" y1="175.0" x2="113.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-62" x1="125.0" y1="150.0" x2="118.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-63" x1="125.0" y1="125.0" x2="122.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-64" x1="125.0" y1="75.0" x2="127.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-65" x1="125.0" y1="50.0" x2="132.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-66" x1="125.0" y1="25.0" x2="136.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-67" x1="125.0" y1="0.0" x2="141.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-68" x1="150.0" y1="200.0" x2="133.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-69" x1="150.0" y1="175.0" x2="138.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-70" x1="150.0" y1="150.0" x2="143.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-71" x1="150.0" y1="125.0" x2="147.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-72" x1="150.0" y1="75.0" x2="152.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-73" x1="150.0" y1="50.0" x2="157.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-74" x1="150.0" y1="25.0" x2="161.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-75" x1="150.0" y1="0.0" x2="166.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-76" x1="175.0" y1="200.0" x2="158.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-77" x1="175.0" y1="175.0" x2="163.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-78" x1="175.0" y1="150.0" x2="168.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-79" x1="175.0" y1="125.0" x2="172.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-80" x1="175.0" y1="75.0" x2="177.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-81" x1="175.0" y1="50.0" x2="182.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-82" x1="175.0" y1="25.0" x2="186.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-83" x1="175.0" y1="0.0" x2="191.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-84" x1="200.0" y1="200.0" x2="183.6" y2="200.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-85" x1="200.0" y1="175.0" x2="188.3" y2="175.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-86" x1="200.0" y1="150.0" x2="193.0" y2="150.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-87" x1="200.0" y1="125.0" x2="197.7" y2="125.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-88" x1="200.0" y1="75.0" x2="202.3" y2="75.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-89" x1="200.0" y1="50.0" x2="207.0" y2="50.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-90" x1="200.0" y1="25.0" x2="211.7" y2="25.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+    <line id="prefigure-6-curve6-soln-__line-91" x1="200.0" y1="0.0" x2="216.4" y2="0.0" stroke="red" stroke-width="2" fill="none" marker-end="url(#prefigure-6-curve6-soln-arrow-head-end-2_None_24_60-red)"/>
+  </g>
+</svg>
