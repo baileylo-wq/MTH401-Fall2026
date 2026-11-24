@@ -2725,7 +2725,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "3.11. Fourier Transforms and Contour Integrals",
-  "body": " 3.11. Fourier Transforms and Contour Integrals   MTH 401  You may recall the Fourier transform of a function had the form It is thus useful to be able to solve that integral.     If is a rational function with , and then      That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!     A specific fourier transform example for .     Evaluate the integral       What about the more general Fourier transform where ?       Evaluate the integral That is, solve the Fourier transform first, then take the imaginary part of your answer.    "
+  "body": " 3.11. Fourier Transforms and Contour Integrals   MTH 401  You may recall the Fourier transform of a function had the form It is thus useful to be able to solve that integral.     If is a rational function with , and then      That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!     We'll start with a specific fourier transform example for , and then we'll generalize. (But we'll do it on the next page because spacing...)     Evaluate the integral       What about the more general Fourier transform where ?       Evaluate the integral That is, solve the Fourier transform first, then take the imaginary part of your answer.    "
 },
 {
   "id": "activities-40-2-2",
@@ -2761,7 +2761,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  A specific fourier transform example for .     Evaluate the integral       What about the more general Fourier transform where ?    "
+  "body": "  We'll start with a specific fourier transform example for , and then we'll generalize. (But we'll do it on the next page because spacing...)     Evaluate the integral       What about the more general Fourier transform where ?    "
 },
 {
   "id": "activities-40-6",
