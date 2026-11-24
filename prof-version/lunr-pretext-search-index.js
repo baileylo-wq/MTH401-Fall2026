@@ -3347,6 +3347,51 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  Find the 6 complex numbers such that and show where they are located in the complex plane.   "
+},
+{
+  "id": "homework-12",
+  "level": "1",
+  "url": "homework-12.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Homework 9",
+  "body": " Homework 9    MTH 401    Due: Monday, December 7 at the beginning of class. You will turn in a paper copy!    Make sure you show me enough work and include enough explanation so I know what you are doing! Be careful of skipping too many steps that your assumptions are no longer valid!      For each of the following, use the Cauchy-Riemann equations to explain why the statement is true or to explain why the statement is false (it cannot be both):     If is a real-valued function (no imaginary component), and also a complex differentiable function, then is constant.      If is a real-valued function (no imaginary component), and also a complex differentiable function, then is constant.       Let be the triangle in the complex plane with vertices at the origin, at , and at oriented in the counterclockwise direction. Evaluate the following contour integrals:                           Find the residue of at and evaluate , where is the unit circle traversed in the counterclockwise direction.      Suppose . Find the singularities, find the Laurent series centered around each of your singularities (include at least the relevant principal part and at least 3 terms total), use that to determine the types of the singularities, and find each singularity's residue.    "
+},
+{
+  "id": "homework-12-3",
+  "level": "2",
+  "url": "homework-12.html#homework-12-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  For each of the following, use the Cauchy-Riemann equations to explain why the statement is true or to explain why the statement is false (it cannot be both):     If is a real-valued function (no imaginary component), and also a complex differentiable function, then is constant.      If is a real-valued function (no imaginary component), and also a complex differentiable function, then is constant.    "
+},
+{
+  "id": "homework-12-4",
+  "level": "2",
+  "url": "homework-12.html#homework-12-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let be the triangle in the complex plane with vertices at the origin, at , and at oriented in the counterclockwise direction. Evaluate the following contour integrals:                        "
+},
+{
+  "id": "homework-12-5",
+  "level": "2",
+  "url": "homework-12.html#homework-12-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Find the residue of at and evaluate , where is the unit circle traversed in the counterclockwise direction.   "
+},
+{
+  "id": "homework-12-6",
+  "level": "2",
+  "url": "homework-12.html#homework-12-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose . Find the singularities, find the Laurent series centered around each of your singularities (include at least the relevant principal part and at least 3 terms total), use that to determine the types of the singularities, and find each singularity's residue.   "
 }
 ]
 
