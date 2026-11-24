@@ -47,7 +47,8 @@
     <exercise>
         <introduction>
             <p>
-                A specific fourier transform example for <m>\omega = 2</m>.
+                We'll start with a specific fourier transform example for <m>\omega = 2</m>, and then we'll generalize. 
+                (But we'll do it on the next page because spacing...)
             </p>
         </introduction>
 

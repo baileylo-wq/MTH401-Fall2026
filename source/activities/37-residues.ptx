@@ -60,7 +60,7 @@
   
   
 
-  <exercise workspace="2in">
+  <exercise workspace="2.2in">
     <statement>
       <p>Explain why <m>\ds f(z) = \frac{\cos(2z)}{e^{3z} - 1}</m> has a simple pole
   at <m>z_0 = 0</m>.  Then find <m>\res_0 f(z)</m>.</p>
