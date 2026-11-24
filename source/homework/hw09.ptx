@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Homework 9</title>
+
+    <introduction>
+        <p>
+            <alert>MTH 401</alert>
+        </p>
+
+        <p>
+            <alert>Due: Monday, December 7 at the beginning of class.  You will turn in a paper copy!</alert>
+        </p>
+
+        <p>
+            <em>Make sure you show me enough work and include enough explanation so I know what 
+                you are doing!  Be careful of skipping too many steps that your
+                assumptions are no longer valid!
+            </em>
+        </p>
+    </introduction>
+
+   <exercise>
+  <introduction>
+    <p>
+      For each of the following, use the Cauchy-Riemann equations to explain why the statement is true or to explain why the statement is false (it cannot be both):
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+       If <m>f</m> is a real-valued function (no imaginary component), and also a
+              complex differentiable function, then <m>f</m> is constant.
+               
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+       If <m>f</m> is a real-valued function (no imaginary component), and also a
+              complex differentiable function, then <m>f</m> is constant.
+      </p>
+    </statement>
+  </task>
+  </exercise>
+
+<exercise>
+    <introduction>
+        <p>
+            Let <m>C</m> be the triangle in the complex plane with vertices at the origin,
+                        at <m>{4-4i}</m>, and at <m>{4+4i}</m> oriented in the counterclockwise direction.
+                        Evaluate the following contour integrals:
+        </p>
+    </introduction>
+
+    <task> 
+        <statement>
+        <p>
+            <m>\ds \oint \frac{e^{4z}}{z+2}~ dz</m>
+        </p>
+        </statement>
+        </task>
+         <task> 
+        <statement>
+        <p>
+            <m>\ds \oint \frac{e^{4z}}{z-2}~ dz</m>
+        </p>
+        </statement>
+        </task>
+         <task> 
+        <statement>
+        <p>
+            <m>\ds \oint \frac{e^{4z}}{(z-2)^{2}}~ dz</m>
+        </p>
+        </statement>
+        </task>
+</exercise>
+
+  
+<exercise>
+    <statement>
+        <p>
+            Find the residue of
+                        <md>
+                            f(z) = \frac{\cos(3z^{3})-1}{z^{19}}
+                        </md>
+                        at <m>z_{0} = 0</m> and evaluate <m>\ds \oint f(z)~dz</m>, where <m>C</m> is the unit
+                        circle traversed in the counterclockwise direction.
+        </p>
+    </statement>
+</exercise>
+
+<exercise>
+    <statement>
+        <p>
+            Suppose <m>\ds f(z) = \frac{z+3}{z^2(z-i)}</m>. Find the singularities, 
+            find the Laurent series centered around
+            each of your singularities (include at least the relevant principal part and at least 3 terms total), 
+            use that to determine the types of the singularities, and find each singularity's residue.
+        </p>
+    </statement>
+</exercise>
+    
+</worksheet>
