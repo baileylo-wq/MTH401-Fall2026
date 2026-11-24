@@ -1636,7 +1636,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.11. Poisson’s equation",
-  "body": " 2.11. Poisson's equation  MTH 401    Poisson's equation is the steady-state heat equation (no change in time) with a source term  :      To solve Poisson's equation, you first find the solution to the associated problem , then plug that solution into and solve for the coefficients that make it true.     Let's begin with the 1-dimensional situation ( ) that we know how to solve (and, in fact, have already solved). We'll find a function that satisfies  The associated Sturm-Liouville problem is since it is a one dimensional problem. The eigenvalues\/functions of the associated Sturm-Liouville problem are The solution we're seeking is a linear combination of those eigenfunctions and has the form For this particular problem, we need this solution to satisfy . So we plug the solution we have so far into this requirement, (which requires taking as seen on the left in what follows): This is a Fourier sine series with slightly different coefficients than we've seen! We can solve this.     Find the Fourier sine coefficients and then find for the above equation.      Plug the coefficients back into . This is the solution to this Poisson's equation in one dimension as a Fourier sine series.      Let's use a different approach and verify our solution above. Since we have a relatiely simple second derivative , we can explicitly solve this by integrating. After integrating twice to find a general function , apply the boundary conditions given to find the specific solution for this problem.      Now find the Fourier sine series of your solution and verify that it's the same series that you found earlier.       Consider Poisson's equation for a function on the square: where on the boundary of the square. We have seen that the equation (called the Hemholtz equation) on the square has eigenvalues\/functions Thus we assume the general solution to has the form     We need to plug into our specific Poisson's equation to find . Find , set it equal to . You should get a double Fourier sine series. Use that to find the coefficients .      Use Mathematica to draw a graph of the solution on the square.       Your turn. Find the solution to Poisson's equation on the unit cube .    "
+  "body": " 2.11. Poisson's equation  MTH 401    Poisson's equation is the steady-state heat equation (no change in time) with a source term  :      To solve Poisson's equation, you first find the solution to the associated problem , then plug that solution into and solve for the coefficients that make it true.     Let's begin with the 1-dimensional situation ( ) that we know how to solve (and, in fact, have already solved). We'll find a function that satisfies  The associated Sturm-Liouville problem is since it is a one dimensional problem. The eigenvalues\/functions of the associated Sturm-Liouville problem are The solution we're seeking is a linear combination of those eigenfunctions and has the form For this particular problem, we need this solution to satisfy . So we plug the solution we have so far into this requirement, (which requires taking as seen on the left in what follows): This is a Fourier sine series with slightly different coefficients than we've seen! We can solve this.     Find the Fourier sine coefficients and then find for the above equation.      Plug the coefficients back into . This is the solution to this Poisson's equation in one dimension as a Fourier sine series.      Let's use a different approach and verify our solution above. Since we have a relatively simple second derivative , we can explicitly solve this by integrating. After integrating twice to find a general function , apply the boundary conditions given to find the specific solution for this problem.      Now find the Fourier sine series of your solution and verify that it's the same series that you found earlier.       Consider Poisson's equation for a function on the square: where on the boundary of the square. We have seen that the equation (called the Hemholtz equation) on the square has eigenvalues\/functions Thus we assume the general solution to has the form     We need to plug into our specific Poisson's equation to find . Find , set it equal to . You should get a double Fourier sine series. Use that to find the coefficients .      Use Mathematica to draw a graph of the solution on the square.       Your turn. Find the solution to Poisson's equation on the unit cube .    "
 },
 {
   "id": "def-Poisson-equation",
@@ -1663,7 +1663,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  Let's begin with the 1-dimensional situation ( ) that we know how to solve (and, in fact, have already solved). We'll find a function that satisfies  The associated Sturm-Liouville problem is since it is a one dimensional problem. The eigenvalues\/functions of the associated Sturm-Liouville problem are The solution we're seeking is a linear combination of those eigenfunctions and has the form For this particular problem, we need this solution to satisfy . So we plug the solution we have so far into this requirement, (which requires taking as seen on the left in what follows): This is a Fourier sine series with slightly different coefficients than we've seen! We can solve this.     Find the Fourier sine coefficients and then find for the above equation.      Plug the coefficients back into . This is the solution to this Poisson's equation in one dimension as a Fourier sine series.      Let's use a different approach and verify our solution above. Since we have a relatiely simple second derivative , we can explicitly solve this by integrating. After integrating twice to find a general function , apply the boundary conditions given to find the specific solution for this problem.      Now find the Fourier sine series of your solution and verify that it's the same series that you found earlier.    "
+  "body": "  Let's begin with the 1-dimensional situation ( ) that we know how to solve (and, in fact, have already solved). We'll find a function that satisfies  The associated Sturm-Liouville problem is since it is a one dimensional problem. The eigenvalues\/functions of the associated Sturm-Liouville problem are The solution we're seeking is a linear combination of those eigenfunctions and has the form For this particular problem, we need this solution to satisfy . So we plug the solution we have so far into this requirement, (which requires taking as seen on the left in what follows): This is a Fourier sine series with slightly different coefficients than we've seen! We can solve this.     Find the Fourier sine coefficients and then find for the above equation.      Plug the coefficients back into . This is the solution to this Poisson's equation in one dimension as a Fourier sine series.      Let's use a different approach and verify our solution above. Since we have a relatively simple second derivative , we can explicitly solve this by integrating. After integrating twice to find a general function , apply the boundary conditions given to find the specific solution for this problem.      Now find the Fourier sine series of your solution and verify that it's the same series that you found earlier.    "
 },
 {
   "id": "activities-22-6",
@@ -1690,7 +1690,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.12. Series solutions of ODEs intro",
-  "body": " 2.12. Series solutions of ODEs intro  MTH 401  Sovling the wave equation on a disk results in Bessel's equation of order , a differential equation that requires a solution using power series . A power series centered at has the form Most often we use a power series centered around : .  We essentially \"guess\" the solution is in the form of a power series, then plug in our guess into the differential equation and solve for the constants that make it true.    Find a power series solution for the initial value problem      Find power series solutions of the following differential equation by finding the recurrence relation between the coefficients and writing the first four terms of two linear independent solutions.      Use power series to find the general solution to the differential equation    "
+  "body": " 2.12. Series solutions of ODEs intro  MTH 401  Solving the wave equation on a disk results in Bessel's equation of order , a differential equation that requires a solution using power series . A power series centered at has the form Most often we use a power series centered around : .  We essentially \"guess\" the solution is in the form of a power series, then plug in our guess into the differential equation and solve for the constants that make it true.    Find a power series solution for the initial value problem      Find power series solutions of the following differential equation by finding the recurrence relation between the coefficients and writing the first four terms of two linear independent solutions.      Use power series to find the general solution to the differential equation    "
 },
 {
   "id": "activities-23-3",
@@ -1735,7 +1735,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.13. Series solutions of famous ODEs",
-  "body": " 2.13. Series solutions of famous ODEs  MTH 401    The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials. Then find the polynomial solutions when .       The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer. The Laguerre polynomial  is this polynomial normalized so that . Find , , and .       The Legendre equation is where is a constant.     Find two linearly independent solutions of the Legendre equation.      Show that is is a nonnegative even integer , then one solution reduces to a polynomial of degree (called a Legendre polynomial ). Find the polynomials corresponding to and .      Show that if is a positive odd integer , then one solution reduces to a polynomial of degree . Find the polynomial solutions with and .       Our original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation     "
+  "body": " 2.13. Series solutions of famous ODEs  MTH 401    The following differential equation is known as the Chebyshev equation ( is a constant):     Find two linearly independent solutions using our power series method.      If is a nonnegative integer , explain why there is a polynomial solution. When normalized according to some convention, these polynomials are known as Chebyshev polynomials. Then find the polynomial solutions when .       The Laguerre differential equation is     Find one solution to this equation by writing out the first five terms.      Explain why your solution is a polynomial if , a non-negative integer. The Laguerre polynomial  is this polynomial normalized so that . Find , , and .       The Legendre equation is where is a constant.     Find two linearly independent solutions of the Legendre equation.      Show that is is a nonnegative even integer , then one solution reduces to a polynomial of degree (called a Legendre polynomial ). Find the polynomials corresponding to and .      Show that if is a positive odd integer , then one solution reduces to a polynomial of degree . Find the polynomial solutions with and .     Our original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...    What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation    "
 },
 {
   "id": "activities-24-3",
@@ -1765,13 +1765,22 @@ var ptx_lunr_docs = [
   "body": "  The Legendre equation is where is a constant.     Find two linearly independent solutions of the Legendre equation.      Show that is is a nonnegative even integer , then one solution reduces to a polynomial of degree (called a Legendre polynomial ). Find the polynomials corresponding to and .      Show that if is a positive odd integer , then one solution reduces to a polynomial of degree . Find the polynomial solutions with and .    "
 },
 {
-  "id": "activities-24-6",
+  "id": "activities-24-7",
   "level": "2",
-  "url": "activities-24.html#activities-24-6",
+  "url": "activities-24.html#activities-24-7",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Our original purpose of using power series to solve differential equations was to solve Bessel's equation, which came up when trying to solve the wave equation in a disk. Let's return to that...     What happens when you try to use power series to solve Bessel's equation of order 1 :    Well this seems like a problem. And there is a great method to overcome it, which we will discuss more next class. As a very relevant aside...    Do you remember how to solve the equation    "
+  "body": "  What happens when you try to use power series to solve Bessel's equation of order 1 :   "
+},
+{
+  "id": "activities-24-9",
+  "level": "2",
+  "url": "activities-24.html#activities-24-9",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Do you remember how to solve the equation   "
 },
 {
   "id": "activities-25",
@@ -1924,7 +1933,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.17. The Fourier transform intro",
-  "body": " 2.17. The Fourier transform intro  MTH 401   The Fourier Transform is an incredibly powerful tool that can help use solve PDEs. Some properties first...      Euler's Formula states (some rearrangment)       The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is        Differentiation property of the Fourier Transform: for a function , Derivatives in spatial land are simply multiplications in frequency land!      Explain why It may be easiest to start with the right hand side and plug in the definition of .      The Shift Theorem states that This an important theorem for the Fourier Transforms, suggesting you can shift the input variable by some amount before applying a Fourier Transform, and it results in multiplied by the Fourier Transform of the unshifted function.      Explain why the Shift Theorem is true: Suggestion: try a change of variable .    "
+  "body": " 2.17. The Fourier transform intro   MTH 401  The Fourier Transform is an incredibly powerful tool that can help use solve PDEs. Some properties first...      Euler's Formula states (some rearrangement)       The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is        Differentiation property of the Fourier Transform: for a function , Derivatives in spatial land are simply multiplications in frequency land!      Explain why It may be easiest to start with the right hand side and plug in the definition of .      The Shift Theorem states that This an important theorem for the Fourier Transforms, suggesting you can shift the input variable by some amount before applying a Fourier Transform, and it results in multiplied by the Fourier Transform of the unshifted function.      Explain why the Shift Theorem is true: Suggestion: try a change of variable .    "
 },
 {
   "id": "fact-eulers-formula",
@@ -1933,7 +1942,7 @@ var ptx_lunr_docs = [
   "type": "Fact",
   "number": "40",
   "title": "",
-  "body": "   Euler's Formula states (some rearrangment)    "
+  "body": "   Euler's Formula states (some rearrangement)    "
 },
 {
   "id": "def-fourier-transform",
@@ -1954,9 +1963,9 @@ var ptx_lunr_docs = [
   "body": "   Differentiation property of the Fourier Transform: for a function , Derivatives in spatial land are simply multiplications in frequency land!   "
 },
 {
-  "id": "activities-28-7",
+  "id": "activities-28-6",
   "level": "2",
-  "url": "activities-28.html#activities-28-7",
+  "url": "activities-28.html#activities-28-6",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
@@ -1972,9 +1981,9 @@ var ptx_lunr_docs = [
   "body": "  The Shift Theorem states that This an important theorem for the Fourier Transforms, suggesting you can shift the input variable by some amount before applying a Fourier Transform, and it results in multiplied by the Fourier Transform of the unshifted function.   "
 },
 {
-  "id": "activities-28-9",
+  "id": "activities-28-8",
   "level": "2",
-  "url": "activities-28.html#activities-28-9",
+  "url": "activities-28.html#activities-28-8",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
@@ -1987,7 +1996,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "2.18. The final Fourier transform applied to Laplace’s Equation",
-  "body": " 2.18. The final Fourier transform applied to Laplace's Equation  MTH 401 Recall   The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is        Properties of the Fourier Transform:   Spatial derivatives become multiplication:   Fourier transform applied to Gaussian Distributions:   Fourier transform of convolution of functions:   Temporal derivative independent of Fourier transform:        To solve the heat or wave equation using Fourier Transforms:   Step 1  Take the Fourier Transform of both sides.    Step 2  Solve in frequency world: .    Step 3  Apply the Inverse Fourier Transform to both sides to get .        If is a constant, explain why  Suggestion: start with      Solve Laplace's equation for the function on the upper-half plane (where ) with the boundary conditions Start by defining the Fourier transform and explain why    "
+  "body": " 2.18. The final Fourier transform applied to Laplace's Equation  MTH 401  Recall:    The Fourier Transform of a function denoted or simply is Note we input a function of and output a function of . The Inverse Fourier Transform  is        Properties of the Fourier Transform:   Spatial derivatives become multiplication:   Fourier transform applied to Gaussian Distributions:   Fourier transform of convolution of functions:   Temporal derivative independent of Fourier transform:        To solve the heat or wave equation using Fourier Transforms:   Step 1  Take the Fourier Transform of both sides.    Step 2  Solve in frequency world: .    Step 3  Apply the Inverse Fourier Transform to both sides to get .        If is a constant, explain why  Suggestion: start with      Solve Laplace's equation for the function on the upper-half plane (where ) with the boundary conditions Start by defining the Fourier transform and explain why    "
 },
 {
   "id": "def-fourier-transform-",
@@ -2008,27 +2017,27 @@ var ptx_lunr_docs = [
   "body": "   Properties of the Fourier Transform:   Spatial derivatives become multiplication:   Fourier transform applied to Gaussian Distributions:   Fourier transform of convolution of functions:   Temporal derivative independent of Fourier transform:      "
 },
 {
-  "id": "activities-29-5",
+  "id": "activities-29-6",
   "level": "2",
-  "url": "activities-29.html#activities-29-5",
+  "url": "activities-29.html#activities-29-6",
   "type": "Remark",
   "number": "46",
   "title": "",
   "body": " To solve the heat or wave equation using Fourier Transforms:   Step 1  Take the Fourier Transform of both sides.    Step 2  Solve in frequency world: .    Step 3  Apply the Inverse Fourier Transform to both sides to get .     "
 },
 {
-  "id": "activities-29-6",
+  "id": "activities-29-7",
   "level": "2",
-  "url": "activities-29.html#activities-29-6",
+  "url": "activities-29.html#activities-29-7",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  If is a constant, explain why  Suggestion: start with   "
 },
 {
-  "id": "activities-29-7",
+  "id": "activities-29-8",
   "level": "2",
-  "url": "activities-29.html#activities-29-7",
+  "url": "activities-29.html#activities-29-8",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
@@ -2329,7 +2338,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "3.5. Contour integrals",
-  "body": " 3.5. Contour integrals  MTH 401    For a function where , a contour integral on a curve has the form (in rectangular coordinates)       Evaluate where      is the straight line from to .       is the contour consisting of two straight line segments from to and from to .       Let's consider the slightly more interesting function .     Evaluate where is the unit square ( and ) traversed in the counterclockwise direction.      Suppose that is a closed contour bounding a region whose area is . Use Green's theorem to explain why .       Suppose that is the unit circle traversed in the counterclockwise direction.     Parameterize the unit circle as to evaluate the following:                            What is the general rule for ?      Now suppose that is the circle of radius centered at the origin parametrized as . What do you find for ?       Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      At the beginning of this worksheet, you evaluated around the unit square. Explain why your result shows that is not complex differntiable.      Since is differentiable if , give another explanation for why if is the unit circle.     "
+  "body": " 3.5. Contour integrals  MTH 401    For a function where , a contour integral on a curve has the form (in rectangular coordinates)       Evaluate where      is the straight line from to .       is the contour consisting of two straight line segments from to and from to .       Let's consider the slightly more interesting function .     Evaluate where is the unit square ( and ) traversed in the counterclockwise direction.      Suppose that is a closed contour bounding a region whose area is . Use Green's theorem to explain why .       Suppose that is the unit circle traversed in the counterclockwise direction.     Parameterize the unit circle as to evaluate the following:                            What is the general rule for ?      Now suppose that is the circle of radius centered at the origin parametrized as . What do you find for ?       Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      At the beginning of this worksheet, you evaluated around the unit square. Explain why your result shows that is not complex differentiable.      Since is differentiable if , give another explanation for why if is the unit circle.     "
 },
 {
   "id": "def-contour-integral",
@@ -2374,7 +2383,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      At the beginning of this worksheet, you evaluated around the unit square. Explain why your result shows that is not complex differntiable.      Since is differentiable if , give another explanation for why if is the unit circle.    "
+  "body": "  Suppose that is a closed contour and that is complex differentiable in the region inside .     Write as a line integral in terms of and . Then apply the Green's Theorem to evaluate the contour integral. What do you find for the value of ?      At the beginning of this worksheet, you evaluated around the unit square. Explain why your result shows that is not complex differentiable.      Since is differentiable if , give another explanation for why if is the unit circle.    "
 },
 {
   "id": "activities-35",
@@ -2500,7 +2509,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "3.8. Laurent Series",
-  "body": " 3.8. Laurent Series  MTH 401    A Laurent series centered at represents a complex function as an infinite series of both positive and negative powers of . It has the form with all negative powers collectively forming the principal part and the nonnegative powers collectively forming the Taylor series .  Coefficients in the principal part with can be found using while coefficients in the Taylor series part with are      We rarely use those formulas to find the coefficients , rather we usually use our Taylor series knowledge instead.  Recall again the following Taylor series :      The coefficient in the Laurent series of a complex function is called the residue of at z-z_0 , denoted If has only one singularity at and is inside , then       Consider the function .     Find the Laurent series for the function around the point .      What is ? What is if is the unit circle?       Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?       Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?       There are three types of singularities that can be classified by their Laurent series given by The three types are classified by how many coefficients corresponding to negative powers ( ) are nonzero.      Removable singularity:  if .     Pole: There are only finitely many nonzero with negative.     Essential singularity: There are infinitely many nonzero with negative.         The order of a pole (see definition above) is the smallest positive integer where if .      Identify.     The first three examples illustrate each of these types. Which is which?      What is the order of the pole from the first three examples?       Suppose that . Find the singularities, determine their types, and find their residues.    "
+  "body": " 3.8. Laurent Series  MTH 401    A Laurent series centered at represents a complex function as an infinite series of both positive and negative powers of . It has the form with all negative powers collectively forming the principal part and the nonnegative powers collectively forming the Taylor series .  Coefficients in the principal part with can be found using while coefficients in the Taylor series part with are      We rarely use those formulas to find the coefficients , rather we usually use our Taylor series knowledge instead.  Recall again the following Taylor series :      The coefficient in the Laurent series of a complex function is called the residue of at , denoted If has only one singularity at and is inside , then       Consider the function .     Find the Laurent series for the function around the point .      What is ? What is if is the unit circle?       Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?       Suppose that .     Find the Laurent series for about the point .      What is the residue ? What is if is the unit circle?       There are three types of singularities that can be classified by their Laurent series given by The three types are classified by how many coefficients corresponding to negative powers ( ) are nonzero.      Removable singularity:  if .     Pole: There are only finitely many nonzero with negative.     Essential singularity: There are infinitely many nonzero with negative.         The order of a pole (see definition above) is the smallest positive integer where if .      Identify.     The first three examples illustrate each of these types. Which is which?      What is the order of the pole from the first three examples?       Suppose that . Find the singularities, determine their types, and find their residues.    "
 },
 {
   "id": "def-laurent-series",
@@ -2527,7 +2536,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "59",
   "title": "",
-  "body": "  The coefficient in the Laurent series of a complex function is called the residue of at z-z_0 , denoted If has only one singularity at and is inside , then    "
+  "body": "  The coefficient in the Laurent series of a complex function is called the residue of at , denoted If has only one singularity at and is inside , then    "
 },
 {
   "id": "activities-37-6",
@@ -2671,39 +2680,39 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "3.10. Trigonometric Integrals",
-  "body": " 3.10. Trigonometric Integrals  MTH 401   Trig integrals are difficult (if not impossible) to solve when restricted to real numbers. But in complex land, they aren't nearly as terrible. It is wise to recall Euler's formula (and its rearrangements)     Specifically on the unit circle we have where , and thus . Therefore we can further rewrite Euler's formula:      Use residue calculus to evaluate       Use residue calculus to evaluate     "
+  "body": " 3.10. Trigonometric Integrals   MTH 401  Trig integrals are difficult (if not impossible) to solve when restricted to real numbers. But in complex land, they aren't nearly as terrible. It is wise to recall Euler's formula (and its rearrangements)     Specifically on the unit circle we have where , and thus . Therefore we can further rewrite Euler's formula:      Use residue calculus to evaluate       Use residue calculus to evaluate     "
 },
 {
-  "id": "activities-39-3-1",
+  "id": "activities-39-2-2",
   "level": "2",
-  "url": "activities-39.html#activities-39-3-1",
+  "url": "activities-39.html#activities-39-2-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Euler's formula "
 },
 {
-  "id": "activities-39-4",
+  "id": "activities-39-3",
   "level": "2",
-  "url": "activities-39.html#activities-39-4",
+  "url": "activities-39.html#activities-39-3",
   "type": "Remark",
   "number": "65",
   "title": "",
   "body": " Specifically on the unit circle we have where , and thus . Therefore we can further rewrite Euler's formula:   "
 },
 {
-  "id": "activities-39-5",
+  "id": "activities-39-4",
   "level": "2",
-  "url": "activities-39.html#activities-39-5",
+  "url": "activities-39.html#activities-39-4",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  Use residue calculus to evaluate    "
 },
 {
-  "id": "activities-39-6",
+  "id": "activities-39-5",
   "level": "2",
-  "url": "activities-39.html#activities-39-6",
+  "url": "activities-39.html#activities-39-5",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
@@ -2715,13 +2724,13 @@ var ptx_lunr_docs = [
   "url": "activities-40.html",
   "type": "Worksheet",
   "number": "",
-  "title": "3.11. Fourier Transforms",
-  "body": " 3.11. Fourier Transforms  MTH 401   You may recall the Fourier transform of a function had the form It is thus useful to be able to solve that integral.     If is a rational function with , and then      That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!     A specific fourier transform example for .     Evaluate the integral       What about the more general Fourier transform where ?       Evaluate the integral That is, solve the Fourier transform first, then take the imaginary part of your answer.    "
+  "title": "3.11. Fourier Transforms and Contour Integrals",
+  "body": " 3.11. Fourier Transforms and Contour Integrals   MTH 401  You may recall the Fourier transform of a function had the form It is thus useful to be able to solve that integral.     If is a rational function with , and then      That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!     A specific fourier transform example for .     Evaluate the integral       What about the more general Fourier transform where ?       Evaluate the integral That is, solve the Fourier transform first, then take the imaginary part of your answer.    "
 },
 {
-  "id": "activities-40-3-1",
+  "id": "activities-40-2-2",
   "level": "2",
-  "url": "activities-40.html#activities-40-3-1",
+  "url": "activities-40.html#activities-40-2-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2737,27 +2746,27 @@ var ptx_lunr_docs = [
   "body": "  If is a rational function with , and then    "
 },
 {
-  "id": "activities-40-5",
+  "id": "activities-40-4",
   "level": "2",
-  "url": "activities-40.html#activities-40-5",
+  "url": "activities-40.html#activities-40-4",
   "type": "Remark",
   "number": "67",
   "title": "",
   "body": " That is, as long as the degree of the denominator is sufficiently larger than that of the numerator, instead of solving the integral restricted to the real plane, we can turn to complex land, find the singularities of in the upper half plane, find the residues of those singularities for , then plug in and sum!  "
 },
 {
-  "id": "activities-40-6",
+  "id": "activities-40-5",
   "level": "2",
-  "url": "activities-40.html#activities-40-6",
+  "url": "activities-40.html#activities-40-5",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  A specific fourier transform example for .     Evaluate the integral       What about the more general Fourier transform where ?    "
 },
 {
-  "id": "activities-40-7",
+  "id": "activities-40-6",
   "level": "2",
-  "url": "activities-40.html#activities-40-7",
+  "url": "activities-40.html#activities-40-6",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
