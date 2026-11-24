@@ -97,9 +97,9 @@
     <statement>
         <p>
             Suppose <m>\ds f(z) = \frac{z+3}{z^2(z-i)}</m>. Find the singularities, 
-            find the Laurent series centered around
-            each of your singularities (include at least the relevant principal part and at least 3 terms total), 
-            use that to determine the types of the singularities, and find each singularity's residue.
+            for each singularity find the Laurent series centered around
+            that singularity (include at least the relevant principal part and at least 3 terms total), 
+            use that to determine the types of each of the singularities, and find each singularity's residue.
         </p>
     </statement>
 </exercise>
