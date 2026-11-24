@@ -122,8 +122,7 @@
       <xi:include href="./activities/07-potentials.ptx"/>
       <xi:include href="./activities/08-gauss.ptx"/>
       <xi:include href="./activities/09-review-includeGauss.ptx"/>
-      <!--<xi:include href="./activities/09-review-noGauss.ptx"/>
-      <xi:include href="./activities/10-review.ptx"/>-->
+     
       <xi:include href="./activities/10-heat-eqn.ptx"/>
       <xi:include href="./activities/11-sturm-liouville.ptx"/>
       <xi:include href="./activities/12-fourier.ptx"/>
@@ -178,6 +177,7 @@
       <xi:include href="./homework/hw07.ptx"/>
       <xi:include href="./homework/midterm2.ptx"/>
       <xi:include href="./homework/hw08.ptx"/>
+      <xi:include href="./homework/hw09.ptx"/>
 
     </chapter>
 
