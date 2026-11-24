@@ -3,10 +3,11 @@
 <worksheet>
     <title>3.10. Trigonometric Integrals</title>
 
-    <alert>
-        MTH 401
-    </alert>
+    
     <introduction>
+        <p><alert>
+        MTH 401
+    </alert></p>
       <p>
         Trig integrals are difficult (if not impossible) to solve when restricted to real numbers. 
         But in complex land, they aren't nearly as terrible. It is wise to recall 

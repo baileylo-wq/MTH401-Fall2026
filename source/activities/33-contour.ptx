@@ -3,9 +3,9 @@
 <worksheet>
     <title>3.5. Contour integrals</title>
 
-    <alert>
+    <p><alert>
         MTH 401
-    </alert>
+    </alert></p>
 
     <definition xml:id="def-contour-integral">
         <statement>
@@ -168,7 +168,7 @@
                     At the beginning of this worksheet, you evaluated
                     <m>\oint_C \overline{z}~dz</m> around the unit square.
                     Explain why your result shows that <m>\overline{z}</m> is
-                    not complex differntiable.
+                    not complex differentiable.
                 </p>
             </statement>
         </task>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet>
-    <title>3.11. Fourier Transforms</title>
+    <title>3.11. Fourier Transforms and Contour Integrals</title>
 
-    <alert>
-        MTH 401
-    </alert>
+    
 
     <introduction>
+        <p><alert>
+        MTH 401
+    </alert></p>
         <p>
             You may recall the <term>Fourier transform</term> of a function
             <m>f(x)</m> had the form

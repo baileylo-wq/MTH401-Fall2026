@@ -2,7 +2,7 @@
 <worksheet>
   <title>2.11. Poisson's equation</title>
 
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
   <definition xml:id="def-Poisson-equation">
     <statement>
@@ -72,7 +72,7 @@ This is a Fourier sine series with slightly different coefficients than we've se
     <task workspace="1in">
       <statement>
         <p>Let's use a different approach and verify our solution above. Since we 
-          have a relatiely simple second derivative <m>u''(x) = x</m>, 
+          have a relatively simple second derivative <m>u''(x) = x</m>, 
           we can explicitly solve this by integrating.  After integrating twice to 
           find a general function <m>u(x)</m>, apply the boundary conditions given to find the 
           specific solution for this problem.  

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>3.12. Principal Values of Integrals</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
   <fact xml:id="fact-fourier-easier">
     <statement>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.13. Series solutions of famous ODEs</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
 
   <exercise>
@@ -77,34 +77,36 @@
     </task>
   </exercise>
 
-  <exercise>
-    <introduction>
-      <p>
+  <p>
         Our original purpose of using power series to solve differential equations 
         was to solve Bessel's equation, which came up when trying to solve the wave 
         equation in a disk.  Let's return to that...
       </p>
-    </introduction>
-    <task workspace="4in">
-      <statement>
+  <exercise  workspace="4in">
+    <statement>
+      
+   
         <p>What happens when you <em>try</em> to use power series to solve <term>Bessel's equation of order 1</term>:
   <md>
   x^2y'' + xy' +(x^2 - 1^2)y = 0?
   </md></p>
+  
       </statement>
-    </task>
+      
+    </exercise>
+
     <p>
       Well this seems like a problem. And there is a great method to overcome it, which we will discuss
       more next class.  As a very relevant aside...
     </p>
-    <task workspace="1in">
+    <exercise workspace="1in">
       <statement>
         <p>Do you remember how to solve the equation
   <md>
   x^2y'' + 2xy'-3y = 0?
   </md></p>
       </statement>
-    </task>
+
   </exercise>
 
 </worksheet>

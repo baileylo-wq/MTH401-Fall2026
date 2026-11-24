@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.18. The final Fourier transform applied to Laplace's Equation</title>
-  <alert>MTH 401</alert>
-Recall
+  <p><alert>MTH 401</alert></p>
+<p>Recall:</p>
+
 <definition xml:id="def-fourier-transform-">
   <statement>
     <p>

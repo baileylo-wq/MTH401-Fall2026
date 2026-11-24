@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.14. Bessel functions of the first kind</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
   <definition xml:id="def-bessel-function">
     <statement>

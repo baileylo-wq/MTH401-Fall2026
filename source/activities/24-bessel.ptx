@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.15. PDEs on cylinders - the easier version</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
   <exercise workspace="5in">
     <statement>

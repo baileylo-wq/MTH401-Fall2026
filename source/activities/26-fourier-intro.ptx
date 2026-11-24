@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.17. The Fourier transform intro</title>
-  <alert>MTH 401</alert>
+  
 
   <introduction>
+    <p><alert>MTH 401</alert></p>
     <p>
       The Fourier Transform is an incredibly powerful tool that can help use solve PDEs.
       Some properties first...
@@ -13,7 +14,7 @@
   <fact xml:id="fact-eulers-formula">
     <statement>
       <p>
-        <term>Euler's Formula</term> states (some rearrangment)
+        <term>Euler's Formula</term> states (some rearrangement)
         <md>
           <mrow> e^{i\theta} = \cos(\theta)+i\sin(\theta), ~~~~~ \amp ~~~~~ \cos(\theta) = \frac12\left(e^{i\theta}+e^{-i\theta}\right)</mrow>
           <mrow> e^{-i\theta} = \cos(\theta)-i\sin(\theta), ~~~~~ \amp ~~~~~ \sin(\theta) = \frac1{2i}\left(e^{i\theta}-e^{-i\theta}\right)</mrow>

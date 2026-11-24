@@ -61,7 +61,7 @@
             <p>
                 The coefficient <m>c_{-1}</m> in the Laurent series of a complex
                 function <m>f(z)</m> is called the <term>residue</term> of
-                <m>f(z)</m> at <term>z-z_0</term>, denoted
+                <m>f(z)</m> at <term><m>z = z_0</m></term>, denoted
                 <md>
                     \text{Res}_{z_0} f(z).
                 </md>

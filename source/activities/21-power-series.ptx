@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <worksheet>
   <title>2.12. Series solutions of ODEs intro</title>
-  <alert>MTH 401</alert>
+  <p><alert>MTH 401</alert></p>
 
   <p>
-    Sovling the wave equation on a disk results in Bessel's equation of order 
+    Solving the wave equation on a disk results in Bessel's equation of order 
     <m>n</m>, a differential equation that requires a solution using <term>power series</term>.
     A <term>power series</term> centered at <m>x=a</m> has the form
     <md>
