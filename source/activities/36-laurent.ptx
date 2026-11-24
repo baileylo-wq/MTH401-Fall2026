@@ -202,8 +202,8 @@
         <statement>
             <p>
                 The <term>order</term> of a pole (see definition above) is the
-                smallest positive integer <m>M</m> where <m>c_k = 0</m> if
-                <m>k &lt; -M</m>.
+                smallest positive integer <m>M</m> where <m>{c_k = 0}</m> if
+                <m>{k &lt; -M}</m>.
             </p>
         </statement>
     </definition>
